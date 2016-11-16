@@ -1,0 +1,26 @@
+body, ul, li, ol, h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+img {
+    border: 0;
+}
+
+#evt_loading {
+    height: 600px;
+    width:100%;
+    text-align:center;
+    font-size: 18px;
+    font-family: "Microsoft YaHei",Tahoma,Arial;
+    line-height:600px;
+}
+
+#evt_container{
+    width:100%;
+    overflow:hidden;
+    position:relative;
+}

@@ -1,0 +1,85 @@
+#evt_container {
+  height: 1454px; }
+  #evt_container img {
+    width: 100%; }
+  #evt_container div {
+    position: absolute; }
+  #evt_container a {
+    display: block;
+    position: absolute; }
+  #evt_container .evt_content {
+    position: relative;
+    width: 1000px;
+    height: 100%;
+    margin: 0 auto; }
+  #evt_container .evt_bg {
+    width: 2059px;
+    top: 0;
+    left: 50%;
+    margin: 0 0 0 -1029px; }
+  #evt_container .logo {
+    width: 399px;
+    top: 60px;
+    left: 12px; }
+  #evt_container .pink {
+    width: 515px;
+    top: 0;
+    left: 514px; }
+    #evt_container .pink a {
+      width: 459px;
+      height: 346px;
+      top: 0;
+      left: 25px; }
+  #evt_container .mousse {
+    width: 577px;
+    top: 483px;
+    left: 23px; }
+  #evt_container .shumei {
+    width: 241px;
+    top: 479px;
+    left: 553px; }
+  #evt_container .bonbon {
+    width: 590px;
+    top: 725px;
+    left: 505px; }
+    #evt_container .bonbon a {
+      width: 425px;
+      height: 410px;
+      top: 10px;
+      left: 66px; }
+  #evt_container .milk {
+    width: 173px;
+    top: 958px;
+    left: 239px; }
+  #evt_container .crepes {
+    width: 540px;
+    top: 1152px;
+    left: 103px;
+    z-index: 2; }
+    #evt_container .crepes a {
+      width: 388px;
+      height: 307px;
+      bottom: 0;
+      left: 10px; }
+  #evt_container .rules {
+    width: 403px;
+    bottom: 0;
+    left: 624px; }
+    #evt_container .rules .words {
+      width: 100%;
+      top: 0;
+      left: 0; }
+    #evt_container .rules h2 {
+      color: #740000;
+      font-size: 18px;
+      margin: 27px 0 12px 263px; }
+    #evt_container .rules p {
+      font-size: 14px;
+      color: #303530;
+      text-indent: -21px;
+      margin: 0 0 0 64px;
+      width: 284px;
+      line-height: 18px; }
+  #evt_container area:focus {
+    border: none;
+    outline: none; }
