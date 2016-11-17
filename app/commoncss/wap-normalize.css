@@ -1,0 +1,9 @@
+html,body{margin:0; padding:0;}
+#wapWrap{position:relative;}
+#wapWrap *{  box-sizing: border-box;  background-repeat: no-repeat;  vertical-align: middle;  -webkit-tap-highlight-color: rgba(0,0,0,0);  tap-highlight-color: rgba(0,0,0,0);  -webkit-appearance: none;  -moz-appearance: none;  appearance: none;  -webkit-focus-ring-color: rgba(0,0,0,0);  focus-ring-color: rgba(0,0,0,0);  resize: none;  outline: 0;}
+#wapWrap *:before, #wapWrap *:after { box-sizing: border-box;}
+#wapWrap a:focus {outline: thin dotted;}
+#wapWrap a:active, #wapWrap a:hover {outline: 0;}
+#loading{text-align:center; margin-top:50%; position:static; color:#000000;}
+#wapWrap{width:10rem; overflow:hidden; margin:0 auto;}
+#wapWrap .wrap{width:10rem; position:relative;}

@@ -1,0 +1,92 @@
+
+
+/****** reset *****/
+@function px2rem($n) {
+  @return ($n * 10 / 750) * 1rem; //设计稿一般都是750宽
+}
+/****** reset *****/
+
+$min:150;
+#wapWrap{
+  .wrap{height:px2rem(6300-$min); background:url(../images/bg.png) repeat;
+    &>div{position:absolute;}
+    img{width:100%;}
+  }
+  .btn-minus,.btn-plus{display:inline-block;}
+  .btn-minus{width:px2rem(67); height:px2rem(51); background:url(../images/btn-minus.png) no-repeat; background-size:100%;}
+  .btn-plus{width:px2rem(69); height:px2rem(51); background:url(../images/btn-plus.png) no-repeat; background-size:100%;}
+  .btn-num{display:inline-block; width:px2rem(70); text-align:center; background:transparent; border:none; font-family:'DK Breakfast Burrito'; color:#000000; font-size:px2rem(49);}
+  .icon-add{width:px2rem(29); height:px2rem(22); margin:px2rem(35) 0 px2rem(10) px2rem(285); display:block; background:url(../images/icon-add.png); background-size:100%;}
+  .p1-bg{width:px2rem(750); left:0; top:px2rem(384-$min);}
+  .p1-hand{width:px2rem(456); top:px2rem(-$min); right:0;}
+  .p1-big{left:0; top:px2rem(-$min);
+    canvas{width:px2rem(432);}
+  }
+  .p1-cheese{width:px2rem(201); left:px2rem(72); top:px2rem(743-$min);}
+  .p1-small{width:px2rem(335); left:px2rem(119); top:px2rem(983-$min);}
+  .p1-title{width:px2rem(328); left:px2rem(393); top:px2rem(648-$min);}
+  .p2-bg{width:px2rem(750); left:0; top:px2rem(1102-$min);}
+  .catb{top:px2rem(1365-$min); left:px2rem(115);
+    canvas{width:px2rem(444);}
+  }
+  .p2-code{width:px2rem(322); left:px2rem(206); top:px2rem(1497-$min);}
+  .p2-puren{width:px2rem(182); left:px2rem(515); top:px2rem(1362-$min);}
+  .p2-text{width:px2rem(482); left:px2rem(131); top:px2rem(1914-$min);}
+  .p3-bg{width:px2rem(747); left:px2rem(3); top:px2rem(3284-$min);}
+  .p3-buy{display:block; position:absolute; width:px2rem(301); height:px2rem(96); left:px2rem(336); top:px2rem(3446-$min); background:url(../images/p3-buy.png); background-size:100%;}
+  .p3-cat-con{top:px2rem(2412-$min); left:px2rem(445);}
+  .catc{position:absolute; top:0; left:0;
+    canvas{width:px2rem(286);}
+  }
+  .p3-cat{width:px2rem(304); left:px2rem(-45); top:px2rem(178); position:absolute;}
+  .p3-cheese{width:px2rem(483); left:px2rem(26); top:px2rem(2800-$min);}
+  .p3-cream{width:px2rem(292); left:px2rem(270); top:px2rem(2980-$min);}
+  .p3-mony{width:px2rem(186); left:px2rem(112); top:px2rem(3356-$min);}
+  .p3-text{width:px2rem(353); left:px2rem(48); top:px2rem(2558-$min);}
+  .p3-num{width:px2rem(65); left:px2rem(330); top:px2rem(3326-$min);}
+  .p3-num-con{left:px2rem(420); top:px2rem(3323-$min)}
+  .p4-cat{left:px2rem(0); top:px2rem(3650-$min);
+    canvas{width:px2rem(750);}
+  }
+  .p4-count{width:px2rem(594); left:px2rem(154); top:px2rem(3690-$min);}
+  .p5-title{width:px2rem(279); left:px2rem(235); top:px2rem(4200-$min);}
+  .p5-buy{width:px2rem(324); height:px2rem(100); left:px2rem(215); bottom:px2rem(539); display:block; position:absolute; background:url(../images/p5-buy.png); background-size:100%;}
+  .pro-con{position:absolute; top:0;
+    &.left{left:px2rem(65);}
+    &.right{left:px2rem(388);}
+  }
+  .p5-num-con{margin:px2rem(-90) 0 0 px2rem(40);}
+  .p5-money{width:px2rem(153); height:px2rem(66); margin:px2rem(20) 0 0 px2rem(60); background:url(../images/p5-moneybg.png); background-size:100%;}
+  .rules{width:px2rem(750); height:px2rem(625); left:0; bottom:0; background:url(../images/rules.png) no-repeat; background-size:100%; padding:0 0 0 px2rem(112); color:#000000;
+    h2{margin:px2rem(236) 0 px2rem(15) px2rem(-36); font-size:px2rem(30);}
+    p{margin:0 0 0 0; font-size:px2rem(24); text-indent:px2rem(-36); line-height:px2rem(30);}
+  }
+  .cate{left:px2rem(558); bottom:px2rem(275);
+    canvas{width:px2rem(141);}
+  }
+  .product-area{left:px2rem(73); top:px2rem(4327-$min);
+    .product-contain{width:px2rem(667); height:px2rem(316); margin:0 0 px2rem(-20) 0; background:url(../images/p5-frame.png); background-size:100%; overflow:hidden;
+      .content{width:px2rem(545); height:px2rem(257); background:#fffaed; margin:px2rem(35) 0 0 px2rem(13); position:relative;
+        img{width:px2rem(237); height:px2rem(237); position:absolute; left:px2rem(10); top:px2rem(10)}
+        .pro-info{height:px2rem(237); width:px2rem(290); position:absolute; top:px2rem(10); right:px2rem(0); text-align:center;
+          .french-name{font-family:'DK Lemon Yellow Sun'; font-size:px2rem(27); color:#f3c05e; text-align:center; margin:px2rem(10) 0 0 0;}
+          .chinese-name{font-size:px2rem(27); text-align:center; margin:px2rem(10) 0 px2rem(10) 0; color:#000000;}
+          .price{width:px2rem(153); height:px2rem(66); line-height:px2rem(66); background:url('../images/p5-moneybg.png') no-repeat; background-size:100%; font-size:px2rem(20); text-align:center; margin:0 auto; font-family:'Abadi Mt Condensed Light'; color:#000000;
+            span{font-size:px2rem(46); vertical-align:top; font-family:'DK Lemon Yellow Sun';}
+          }
+          .pro-num{display:inline-block; margin:px2rem(10) 0 0 0;}
+        }
+      }
+    }
+  }
+}
+
+[data-dpr="1"]{
+  #loading{font-size:24px;}
+}
+[data-dpr="2"]{
+  #loading{font-size:40px;}
+}
+[data-dpr="3"]{
+  #loading{font-size:60px;}
+}

@@ -256,5 +256,5 @@
 
 
     };
-    window.scrollAnimation = bindScroll;
+    window.scrollAnimate = bindScroll;
 })()

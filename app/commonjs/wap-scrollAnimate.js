@@ -1,4 +1,5 @@
 ;(function(global){
+    var useIScroll = isIphone(),slTop=0,myScroll,wrapHeight = $(window).height();
     function isIphone(){
         var ua = navigator.userAgent.toLowerCase();
         if(/iphone/.test(ua)){
@@ -7,8 +8,35 @@
             return false;
         }
     }
-    var useIScroll = isIphone(),slTop=0,myScroll;
-    global.fixScroll = function(el, cb){
+    function compute(item, slTop){
+        if(!item.isShow && item.top-slTop<wrapHeight){
+            return true;
+        } else {
+            return false;
+        }
+    }
+    function animate(item){
+        item.isShow = true;
+        item.$dom.velocity({
+            translateX: 0,
+            translateY: 0,
+            opacity: 1
+        }, {
+            duration: typeof item.duration==='number' ? item.duration : 600,
+            delay: typeof item.delay==='number' ? item.delay : 0,
+            complete: function(){}
+        })
+    }
+
+    function scrollItems(items, top){
+        items.forEach(function(item){
+            if(compute(item, top)){
+                animate(item);
+            }
+        })
+    }
+
+    global.scrollAnimate = function(el, items){
         if(useIScroll){
             $(el).css({
                 position: 'absolute',
@@ -22,7 +50,8 @@
                 var st = -parseInt(this.y / 10) * 10;
                 if(st<slTop) return;
                 slTop = st;
-                cb(slTop);
+                scrollItems(items, slTop);
+
             })
         } else {
             var $win = $(window)
@@ -30,9 +59,9 @@
                 var st = parseInt($win.scrollTop() / 10) * 10;
                 if(st<slTop) return;
                 slTop = st;
-                cb(slTop);
+                scrollItems(items, slTop);
             }).scrollTop();
         }
-        cb(slTop);
+        scrollItems(items, slTop);
     }
 })(window)

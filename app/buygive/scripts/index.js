@@ -20,7 +20,7 @@
             fixImageSrc(loader.getAll());
             domLoad.style.display = 'none';
             document.getElementById('evt_container').style.display = 'block';
-            scrollAnimation('#evt_container');
+            scrollAnimate('#evt_container');
             correctPNG($('#evt_container').get(0));
         });
         loader.loadGroup('preload');
