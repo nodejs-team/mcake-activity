@@ -94,6 +94,19 @@ gulp.task('copy-img', function(){
 		.pipe(gulp.dest('build/'+buildConfig.projectName+'/images'))
 })
 
+gulp.task('clean-build', function(){
+	return gulp.src('build/'+buildConfig.projectName, {read: false})
+		.pipe(clean())
+})
+
+gulp.task('default', function(){
+	runSequence(['sass', 'sass:watch', 'server'])
+})
+
+gulp.task('build', function(){
+	runSequence('clean-build', 'useref', 'copy-img')
+})
+
 gulp.task('upload', function(){
 	return gulp.src('build/'+buildConfig.projectName+'/**/*')
 		.pipe(ftp({
@@ -104,19 +117,6 @@ gulp.task('upload', function(){
 		}))
 		.pipe(gutil.noop())
 
-})
-
-gulp.task('clean-build', function(){
-	return gulp.src('build/'+buildConfig.projectName, {read: false})
-		.pipe(clean())
-})
-
-gulp.task('default', function(){
-	runSequence(['sass:watch', 'server'])
-})
-
-gulp.task('build', function(){
-	runSequence('clean-build', 'useref', 'copy-img', 'upload')
 })
 
 gulp.task('removeImgSrc', function(){

@@ -1,0 +1,32 @@
+var resData = [
+    {
+        "name":"cake_png",
+        "type":"image",
+        "url":"cake.png"
+    },
+    {
+        "name":"cake2_png",
+        "type":"image",
+        "url":"cake2.png"
+    },
+    {
+        "name":"code_png",
+        "type":"image",
+        "url":"code.png"
+    },
+    {
+        "name":"step1_png",
+        "type":"image",
+        "url":"step1.png"
+    },
+    {
+        "name":"step2_png",
+        "type":"image",
+        "url":"step2.png"
+    },
+    {
+        "name":"title_png",
+        "type":"image",
+        "url":"title.png"
+    }
+];
