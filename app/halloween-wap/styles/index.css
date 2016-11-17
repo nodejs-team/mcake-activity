@@ -1,0 +1,278 @@
+/****** reset *****/
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%; }
+
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+body {
+  background: black; }
+
+.loading {
+  width: 10rem;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  display: none; }
+  .loading div > img {
+    width: 100%; }
+  .loading .bg {
+    width: 10rem;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin: -8.89333rem 0 0 0; }
+  .loading .title {
+    width: 5.01333rem;
+    position: absolute;
+    left: 50%;
+    top: 6.66667rem;
+    margin: 0 0 0 -2.50667rem; }
+  .loading .slide {
+    position: absolute;
+    top: 2.66667rem;
+    left: 50%;
+    margin: 0 0 0 -4.12rem; }
+    .loading .slide canvas {
+      width: 8.24rem; }
+  .loading .loader {
+    width: 2.8rem;
+    position: absolute;
+    bottom: 2.53333rem;
+    left: 50%;
+    margin: 0 0 0 -1.4rem;
+    text-align: center; }
+    .loading .loader .text {
+      color: #5b5b5b;
+      font-size: 26px; }
+    .loading .loader .progress {
+      width: 100%;
+      height: 0.08rem;
+      margin: 0.26667rem 0 0 0; }
+      .loading .loader .progress span {
+        display: block;
+        width: 0%;
+        height: 100%;
+        background: #ff1523; }
+
+[data-dpr="1"] .loader .text {
+  font-size: 14px; }
+
+[data-dpr="2"] .loader .text {
+  font-size: 30px; }
+
+[data-dpr="3"] .loader .text {
+  font-size: 40px; }
+
+.darkCake {
+  width: 10rem;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: black;
+  display: none;
+  -webkit-perspective: 600px;
+  perspective: 600px;
+  overflow: hidden; }
+  .darkCake div > img {
+    width: 100%; }
+  .darkCake .cakeContain {
+    width: 10rem;
+    position: relative;
+    opacity: 0;
+    margin-top: -1.06667rem;
+    /*transform:translateZ(-4000px);*/ }
+    .darkCake .cakeContain .cake {
+      width: 100%; }
+    .darkCake .cakeContain .pump {
+      width: 3.09333rem;
+      position: absolute;
+      top: 5.86667rem;
+      left: 3.93333rem;
+      height: 1.98667rem;
+      background: url(../images/darkPumpkin.png);
+      background-size: 100%; }
+    .darkCake .cakeContain .pump.light {
+      background: url(../images/lightPumpkin.png);
+      background-size: 100%; }
+    .darkCake .cakeContain .glitchCake {
+      position: absolute;
+      top: 0;
+      left: 0; }
+  .darkCake .glitch {
+    width: 10rem;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../images/glitch.png) repeat;
+    opacity: 0; }
+  .darkCake .lighting {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0; }
+    .darkCake .lighting .light-left {
+      width: 11.17333rem;
+      position: absolute;
+      top: -0.42667rem;
+      left: -1.17333rem;
+      display: none;
+      -webkit-transform-origin: 0 0;
+      transform-origin: 0 0; }
+    .darkCake .lighting .light-right {
+      width: 11.34667rem;
+      position: absolute;
+      top: -0.26667rem;
+      right: -1.34667rem;
+      display: none;
+      -webkit-transform-origin: 11.33333rem 0;
+      transform-origin: 11.33333rem 0; }
+  .darkCake .btnText {
+    width: 2.26667rem;
+    position: absolute;
+    left: 50%;
+    bottom: 3.33333rem;
+    margin: 0 0 0 -1.13333rem; }
+  .darkCake .btnImg,
+  .darkCake .glitchedBtn {
+    width: 3.90667rem; }
+  .darkCake .glitchedBtn {
+    position: absolute;
+    left: 0;
+    top: 0; }
+  .darkCake .careBtn, .darkCake .btn-glitch {
+    display: block;
+    position: absolute;
+    left: 50%;
+    margin: 0 0 0 -2.97333rem;
+    width: 5.94667rem;
+    height: 2.4rem;
+    bottom: 1.46667rem; }
+  .darkCake .btn-glitch {
+    background: url(../images/btn-glitch.png) repeat;
+    opacity: 0; }
+  .darkCake .btnContain {
+    width: 3.90667rem;
+    position: absolute;
+    left: 50%;
+    margin: 0 0 0 -1.94667rem;
+    bottom: 1.2rem; }
+
+.lightCakeWrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none; }
+
+.lightCake {
+  background: black; }
+  .lightCake div > img {
+    width: 100%; }
+  .lightCake a > img {
+    width: 100%; }
+  .lightCake .page1 {
+    height: 14.98667rem;
+    overflow: hidden;
+    position: relative; }
+    .lightCake .page1 .cakebg {
+      width: 10rem;
+      margin-top: -1.06667rem; }
+    .lightCake .page1 .cakeMovieClip {
+      position: absolute;
+      top: -2.93333rem;
+      left: 0; }
+      .lightCake .page1 .cakeMovieClip canvas {
+        width: 10rem; }
+    .lightCake .page1 .buyText {
+      position: absolute;
+      width: 7.56rem;
+      left: 50%;
+      top: 9.65333rem;
+      margin: 0 0 0 -3.77333rem; }
+    .lightCake .page1 .buyBtn {
+      display: block;
+      position: absolute;
+      width: 3.86667rem;
+      height: 1.02667rem;
+      background: url(../images/buyBtn.png);
+      background-size: 100%;
+      top: 13.22667rem;
+      left: 50%;
+      margin: 0 0 0 -1.93333rem; }
+    .lightCake .page1 .buyBtn.disable {
+      background: url(../images/buyBtn-disable.png);
+      background-size: 100%; }
+  .lightCake .page2 {
+    height: 17.76rem;
+    position: relative; }
+    .lightCake .page2 .boxbg {
+      width: 10rem; }
+    .lightCake .page2 .boxText {
+      width: 5.45333rem;
+      position: absolute;
+      top: 1.06667rem;
+      left: 50%;
+      margin: 0 0 0 -2.72rem;
+      opacity: 0; }
+    .lightCake .page2 .boxbang {
+      width: 8.09333rem;
+      position: absolute;
+      top: 3.70667rem;
+      left: 0.66667rem;
+      display: block;
+      opacity: 0; }
+    .lightCake .page2 .boxBuyText {
+      width: 6.14667rem;
+      position: absolute;
+      top: 10.66667rem;
+      left: 50%;
+      margin: 0 0 0 -3.07333rem; }
+    .lightCake .page2 .boxBuyBtn {
+      display: block;
+      position: absolute;
+      width: 3.86667rem;
+      height: 1.02667rem;
+      top: 12.34667rem;
+      left: 50%;
+      margin: 0 0 0 -1.93333rem;
+      background: url(../images/boxBuyBtn.png);
+      background-size: 100%; }
+    .lightCake .page2 .boxBuyBtn.disable {
+      background: url(../images/boxBuyBtn-disable.png);
+      background-size: 100%; }
+    .lightCake .page2 .rules {
+      color: #ffffff;
+      position: absolute;
+      top: 14.69333rem;
+      width: 7.76rem;
+      left: 50%;
+      margin: 0 0 0 -3.88rem; }
+      .lightCake .page2 .rules h2 {
+        margin: 0 0 5px 0; }
+      .lightCake .page2 .rules li {
+        line-height: 1.2; }
+
+[data-dpr="1"] .rules h2 {
+  font-size: 14px; }
+
+[data-dpr="1"] .rules li {
+  font-size: 12px; }
+
+[data-dpr="2"] .rules h2 {
+  font-size: 24px; }
+
+[data-dpr="2"] .rules li {
+  font-size: 18px; }
+
+[data-dpr="3"] .rules h2 {
+  font-size: 36px; }
+
+[data-dpr="3"] .rules li {
+  font-size: 32px; }

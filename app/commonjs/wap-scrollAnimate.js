@@ -36,7 +36,18 @@
         })
     }
 
+    function initItems(items){
+        items.forEach(function(item){
+            item.top = item.$dom.offset().top;
+            item.isShow = false;
+            $.Velocity.hook(item.$dom, 'opacity', 0);
+            $.Velocity.hook(item.$dom, 'translateX', item.x+'px');
+            $.Velocity.hook(item.$dom, 'translateY', item.y+'px');
+        })
+    }
+
     global.scrollAnimate = function(el, items){
+        initItems(items);
         if(useIScroll){
             $(el).css({
                 position: 'absolute',

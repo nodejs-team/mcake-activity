@@ -1,0 +1,87 @@
+/****** reset *****/
+@function px2rem($n) {
+  @return ($n * 10 / 750) * 1rem; //设计稿一般都是750宽
+}
+html,body{margin:0; padding:0; height:100%;}
+ul,li{list-style: none; margin:0; padding:0;}
+
+
+
+body{background:black;}
+.loading{width:px2rem(750); height:100%; overflow:hidden; position:relative; display:none;
+  div>img{width:100%;}
+  .bg{width:px2rem(750); position:absolute; left:0; top:50%; margin:px2rem(-667) 0 0 0;}
+  .title{width:px2rem(376); position:absolute; left:50%; top:px2rem(500); margin:0 0 0 px2rem(-188);}
+  .slide{position:absolute; top:px2rem(200); left:50%; margin:0 0 0 px2rem(-309);
+    canvas{width:px2rem(618);}
+  }
+  .loader{width:px2rem(210); position:absolute; bottom:px2rem(190); left:50%; margin:0 0 0 px2rem(-105); text-align:center;
+    .text{color:#5b5b5b; font-size:26px;}
+    .progress{width:100%; height:px2rem(6); margin:px2rem(20) 0 0 0;
+      span{display:block; width:0%; height:100%; background:#ff1523;}
+    }
+  }
+}
+[data-dpr="1"] .loader .text{font-size:14px;}
+[data-dpr="2"] .loader .text{font-size:30px;}
+[data-dpr="3"] .loader .text{font-size:40px;}
+
+.darkCake{
+  width:px2rem(750); height:100%; position:absolute; top:0; left:0; background:black; display:none; -webkit-perspective: 600px; perspective: 600px; overflow:hidden;
+  div>img{width:100%;}
+  .cakeContain{width:px2rem(750); position:relative; opacity:0; margin-top:px2rem(-80); /*transform:translateZ(-4000px);*/
+    .cake{width:100%;}
+    .pump{width:px2rem(232); position:absolute; top:px2rem(440); left:px2rem(295); height:px2rem(149); background:url(../images/darkPumpkin.png); background-size:100%;}
+    .pump.light{background:url(../images/lightPumpkin.png); background-size:100%;}
+    .glitchCake{position:absolute; top:0; left:0;}
+  }
+  .glitch{width:px2rem(750); height:100%; position:absolute; top:0; left:0; background:url(../images/glitch.png) repeat; opacity:0;}
+  .lighting{width:100%; height:100%; position:absolute; top:0; left:0;
+    .light-left{width:px2rem(838); position:absolute; top:px2rem(-32); left:px2rem(-88); display:none; -webkit-transform-origin:0 0; transform-origin:0 0;}
+    .light-right{width:px2rem(851); position:absolute; top:px2rem(-20); right:px2rem(-101); display:none;-webkit-transform-origin:px2rem(850) 0;transform-origin:px2rem(850) 0;}
+  }
+  .btnText{width:px2rem(170); position:absolute; left:50%; bottom:px2rem(250); margin:0 0 0 px2rem(-85);}
+  .btnImg,
+  .glitchedBtn{width:px2rem(293);}
+  .glitchedBtn{position:absolute; left:0; top:0;}
+  .careBtn,.btn-glitch{display:block;position:absolute; left:50%; margin:0 0 0 px2rem(-223); width:px2rem(446); height:px2rem(180); bottom:px2rem(110);}
+  .btn-glitch{background:url(../images/btn-glitch.png) repeat; opacity:0;}
+  .btnContain{width:px2rem(293); position:absolute; left:50%; margin:0 0 0 px2rem(-146); bottom:px2rem(90)}
+}
+
+.lightCakeWrap{position:absolute; top:0; left:0; display:none;}
+.lightCake{
+  background:black;
+  div>img{width:100%;}
+  a>img{width:100%;}
+  .page1{
+    height:px2rem(1124); overflow:hidden; position:relative;
+    .cakebg{width:px2rem(750); margin-top:px2rem(-80);}
+    .cakeMovieClip{position:absolute; top:px2rem(-140-80); left:0;
+      canvas{width:px2rem(750);}
+    }
+    .buyText{position:absolute; width:px2rem(567); left:50%; top:px2rem(804-80); margin:0 0 0 px2rem(-283)}
+    .buyBtn{display:block;position:absolute; width:px2rem(290); height:px2rem(77); background: url(../images/buyBtn.png); background-size:100%; top:px2rem(1072-80); left:50%; margin:0 0 0 px2rem(-145)}
+    .buyBtn.disable{background: url(../images/buyBtn-disable.png); background-size:100%;}
+  }
+  .page2{
+    height:px2rem(1332); position:relative;
+    .boxbg{width:px2rem(750);}
+    .boxText{width:px2rem(409); position:absolute; top:px2rem(80); left:50%; margin:0 0 0 px2rem(-204); opacity:0;}
+    .boxbang{width:px2rem(607); position:absolute; top:px2rem(278); left:px2rem(50); display:block; opacity:0;}
+    .boxBuyText{width:px2rem(461); position:absolute; top:px2rem(800); left:50%; margin:0 0 0 px2rem(-230.5);}
+    .boxBuyBtn{display:block;position:absolute;width:px2rem(290); height:px2rem(77); top:px2rem(926); left:50%; margin:0 0 0 px2rem(-145); background:url(../images/boxBuyBtn.png); background-size:100%;}
+    .boxBuyBtn.disable{background:url(../images/boxBuyBtn-disable.png); background-size:100%;}
+    .rules{
+      color:#ffffff; position:absolute; top:px2rem(1102); width:px2rem(582); left:50%; margin:0 0 0 px2rem(-291);
+      h2{margin:0 0 5px 0;}
+      li{line-height:1.2;}
+    }
+  }
+}
+[data-dpr="1"] .rules h2{font-size:14px;}
+[data-dpr="1"] .rules li{font-size:12px;}
+[data-dpr="2"] .rules h2{font-size:24px;}
+[data-dpr="2"] .rules li{font-size:18px;}
+[data-dpr="3"] .rules h2{font-size:36px;}
+[data-dpr="3"] .rules li{font-size:32px;}

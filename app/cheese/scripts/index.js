@@ -9,13 +9,6 @@
             ,{$dom: $('.p3-cheese'), x:-300, y:300}
             ,{$dom: $('.p3-cream'), x:300, y:300}
         ];
-        scrollItems.forEach(function(item){
-            item.top = item.$dom.offset().top;
-            item.isShow = false;
-            $.Velocity.hook(item.$dom, 'opacity', 0);
-            $.Velocity.hook(item.$dom, 'translateX', item.x+'px');
-            $.Velocity.hook(item.$dom, 'translateY', item.y+'px');
-        })
         scrollAnimate('#wapWrap', scrollItems)
     }
 
