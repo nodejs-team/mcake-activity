@@ -1,7 +1,8 @@
 #evt_container{ height:1454px;
+
   img{width:100%;}
   div{position:absolute;}
-  a{display:block; position:absolute;}
+  a{display:block; position:absolute; background:#ffffff; opacity:0; filter:alpha(opacity=0);}
   .evt_content{position:relative; width:1000px; height:100%; margin:0 auto;}
   .evt_bg{width:2059px; top:0; left:50%; margin:0 0 0 -1029px;}
   .logo{width:399px; top:60px; left:12px;}

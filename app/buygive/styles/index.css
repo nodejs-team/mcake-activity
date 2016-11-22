@@ -6,7 +6,10 @@
     position: absolute; }
   #evt_container a {
     display: block;
-    position: absolute; }
+    position: absolute;
+    background: #ffffff;
+    opacity: 0;
+    filter: alpha(opacity=0); }
   #evt_container .evt_content {
     position: relative;
     width: 1000px;
