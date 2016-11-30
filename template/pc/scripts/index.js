@@ -17,12 +17,9 @@
             domLoad.innerHTML = parseInt(ix/len*100) + '%';
         })
         loader.on('complete', function(groupName){
-            // $('#evt_container').append('<a class="evt_float" href="javascript:;"><img src="http://edm.mcake.com/weifengwang/common/no.jpg" alt="" src-fix="float_png"></a>')
             fixImageSrc(loader.getAll());
             domLoad.style.display = 'none';
             document.getElementById('evt_container').style.display = 'block';
-            scrollAnimate('#evt_container');
-            // correctPNG($('#evt_container').get(0));
         });
         loader.loadGroup('preload');
     }

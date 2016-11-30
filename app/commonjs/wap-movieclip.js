@@ -42,6 +42,7 @@
     }
     function MovieClip(canvas, img, frameData, options){
         var opts = options || {};
+        canvas = typeof canvas === 'string' ? document.getElementById(canvas) : canvas;
         this.ctx = canvas.getContext('2d');
         this.width = parseInt(canvas.width);
         this.height = parseInt(canvas.height);
@@ -58,7 +59,8 @@
         this.initEvent();
     }
     var proto = MovieClip.prototype;
-    proto.play = function(){
+    proto.play = function(repeatCount){
+        this.repeatCount = repeatCount;
         this.ticker.start();
     }
     proto.pause = function(){
@@ -73,6 +75,7 @@
     proto.stop = function(){
         this.ticker.stop();
         this.setFrame(this.stopFrame==='first' ? 0 : this.frames.length-1);
+        this.currentCount = 0;
     }
     proto.setFrame = function(num){
         if(num>this.frames.length-1) num = 0;
@@ -87,30 +90,27 @@
         this.currentFrame = num;
     }
     proto.initEvent = function(){
-        var self = this;
+        var self = this, tickCount = null;
         this.ticker.on('tick', function(){
-            self.tick();
+            var dur = self.frames[self.currentFrame].duration;
+            if(typeof tickCount === 'number'){
+                tickCount--;
+            } else if(!dur || dur<=1){
+                tickCount = 0;
+            } else {
+                tickCount = dur - 1;
+            }
+            if(tickCount===0){
+                tickCount = null;
+                self.next();
+                if(self.currentFrame==0){
+                    self.currentCount++;
+                }
+                if(self.repeatCount!= 0 && self.currentCount==self.repeatCount){
+                    self.stop();
+                }
+            }
         })
-    }
-    proto.tick = function(){
-        var dur = this.frames[this.currentFrame].duration;
-        if(!dur || dur<=1){
-            this.tickCount = 0;
-        } else if(typeof this.tickCount === 'number') {
-            this.tickCount--;
-        } else {
-            this.tickCount = dur-1;
-        }
-        if(this.tickCount===0){
-            this.tickCount = null;
-            this.next();
-            if(this.currentFrame==0){
-                this.currentCount++;
-            }
-            if(this.repeatCount!= 0 && this.currentCount==this.repeatCount){
-                this.stop();
-            }
-        }
     }
     return MovieClip;
 }))

@@ -24,4 +24,5 @@
     p{font-size:14px; color:#303530; text-indent:-21px; margin:0 0 0 64px; width:284px; line-height:18px;}
   }
   area:focus{border:none; outline: none;}
+  .evt_float{display:block; width:160px; position:fixed; right:10px; top:110px; z-index:10; background:transparent; opacity:1; filter:alpha(opacity=100);}
 }

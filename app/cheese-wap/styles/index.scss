@@ -7,7 +7,7 @@
 /****** reset *****/
 
 $min:150;
-#wapWrap{
+#evt_container{
   .wrap{height:px2rem(6300-$min); background:url(../images/bg.png) repeat;
     &>div{position:absolute;}
     img{width:100%;}
@@ -82,11 +82,11 @@ $min:150;
 }
 
 [data-dpr="1"]{
-  #loading{font-size:24px;}
+  #evt_loading{font-size:24px;}
 }
 [data-dpr="2"]{
-  #loading{font-size:40px;}
+  #evt_loading{font-size:40px;}
 }
 [data-dpr="3"]{
-  #loading{font-size:60px;}
+  #evt_loading{font-size:60px;}
 }

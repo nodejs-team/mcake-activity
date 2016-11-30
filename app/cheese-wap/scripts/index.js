@@ -9,7 +9,7 @@
             ,{$dom: $('.p3-cheese'), x:-300, y:300}
             ,{$dom: $('.p3-cream'), x:300, y:300}
         ];
-        scrollAnimate('#wapWrap', scrollItems)
+        scrollAnimate('#evt_container', scrollItems)
     }
 
     function initMovieClip(res){
@@ -122,7 +122,7 @@
     }
 
     function startLoading(){
-        var loader = new Loader('images/'), domLoad = document.getElementById('loading');
+        var loader = new Loader('images/'), domLoad = document.getElementById('evt_loading');
         domLoad.style.display = 'block';
         loader.addGroup('preload', resData);
         loader.on('progress', function(groupName, ix, len){
@@ -131,7 +131,7 @@
         loader.on('complete', function(groupName){
             fixImageSrc(loader.getAll());
             domLoad.parentNode.removeChild(domLoad);
-            document.getElementById('wapWrap').style.display = 'block';
+            document.getElementById('evt_container').style.display = 'block';
             initMovieClip(loader.getAll());
             initScroll();
             initNumBtn();

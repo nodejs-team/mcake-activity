@@ -43,5 +43,10 @@ var resData = [
         "name":"shumei_png",
         "type":"image",
         "url":"shumei.png"
+    },
+    {
+        "name":"float_png",
+        "type":"image",
+        "url":"float.png"
     }
 ];

@@ -86,3 +86,13 @@
   #evt_container area:focus {
     border: none;
     outline: none; }
+  #evt_container .evt_float {
+    display: block;
+    width: 160px;
+    position: fixed;
+    right: 10px;
+    top: 110px;
+    z-index: 10;
+    background: transparent;
+    opacity: 1;
+    filter: alpha(opacity=100); }

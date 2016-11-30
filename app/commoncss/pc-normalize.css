@@ -10,6 +10,17 @@ img {
     border: 0;
 }
 
+.clearfix { *zoom:1;}
+.clearfix:after{
+    content: "";     /*内容为“.”就是一个英文的句号而已。也可以不写。*/
+    display: block;   /*加入的这个元素转换为块级元素。*/
+    clear: both;     /*清除左右两边浮动。*/
+    visibility: hidden;      /*可见度设为隐藏。注意它和display:none;是有区别的。visibility:hidden;仍然占据空间，只是看不到而已；*/
+    line-height: 0;    /*行高为0；*/
+    height: 0;     /*高度为0；*/
+    font-size:0;    /*字体大小为0；*/
+}
+
 #evt_loading {
     height: 600px;
     width:100%;
@@ -23,12 +34,4 @@ img {
     width:100%;
     overflow:hidden;
     position:relative;
-}
-
-.iepngfix{
-    behavior: expression((this.pngSet?this.pngSet=true:(this.nodeName == "IMG" && this.src.toLowerCase().indexOf('.png')>-1?(this.runtimeStyle.backgroundImage = "none",
-this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.src + "', sizingMethod='image')",
-this.src = "http://edm.mcake.com/weifengwang/common/blank.gif"):(this.origBg = this.origBg? this.origBg :this.currentStyle.backgroundImage.toString().replace('url("','').replace('")',''),
-this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.origBg + "', sizingMethod='crop')",
-this.runtimeStyle.backgroundImage = "none")),this.pngSet=true));
 }

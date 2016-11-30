@@ -1,29 +1,29 @@
 /****** reset *****/
 /****** reset *****/
-#wapWrap .wrap {
+#evt_container .wrap {
   height: 82rem;
   background: url(../images/bg.png) repeat; }
-  #wapWrap .wrap > div {
+  #evt_container .wrap > div {
     position: absolute; }
-  #wapWrap .wrap img {
+  #evt_container .wrap img {
     width: 100%; }
 
-#wapWrap .btn-minus, #wapWrap .btn-plus {
+#evt_container .btn-minus, #evt_container .btn-plus {
   display: inline-block; }
 
-#wapWrap .btn-minus {
+#evt_container .btn-minus {
   width: 0.89333rem;
   height: 0.68rem;
   background: url(../images/btn-minus.png) no-repeat;
   background-size: 100%; }
 
-#wapWrap .btn-plus {
+#evt_container .btn-plus {
   width: 0.92rem;
   height: 0.68rem;
   background: url(../images/btn-plus.png) no-repeat;
   background-size: 100%; }
 
-#wapWrap .btn-num {
+#evt_container .btn-num {
   display: inline-block;
   width: 0.93333rem;
   text-align: center;
@@ -33,7 +33,7 @@
   color: #000000;
   font-size: 0.65333rem; }
 
-#wapWrap .icon-add {
+#evt_container .icon-add {
   width: 0.38667rem;
   height: 0.29333rem;
   margin: 0.46667rem 0 0.13333rem 3.8rem;
@@ -41,69 +41,69 @@
   background: url(../images/icon-add.png);
   background-size: 100%; }
 
-#wapWrap .p1-bg {
+#evt_container .p1-bg {
   width: 10rem;
   left: 0;
   top: 3.12rem; }
 
-#wapWrap .p1-hand {
+#evt_container .p1-hand {
   width: 6.08rem;
   top: -2rem;
   right: 0; }
 
-#wapWrap .p1-big {
+#evt_container .p1-big {
   left: 0;
   top: -2rem; }
-  #wapWrap .p1-big canvas {
+  #evt_container .p1-big canvas {
     width: 5.76rem; }
 
-#wapWrap .p1-cheese {
+#evt_container .p1-cheese {
   width: 2.68rem;
   left: 0.96rem;
   top: 7.90667rem; }
 
-#wapWrap .p1-small {
+#evt_container .p1-small {
   width: 4.46667rem;
   left: 1.58667rem;
   top: 11.10667rem; }
 
-#wapWrap .p1-title {
+#evt_container .p1-title {
   width: 4.37333rem;
   left: 5.24rem;
   top: 6.64rem; }
 
-#wapWrap .p2-bg {
+#evt_container .p2-bg {
   width: 10rem;
   left: 0;
   top: 12.69333rem; }
 
-#wapWrap .catb {
+#evt_container .catb {
   top: 16.2rem;
   left: 1.53333rem; }
-  #wapWrap .catb canvas {
+  #evt_container .catb canvas {
     width: 5.92rem; }
 
-#wapWrap .p2-code {
+#evt_container .p2-code {
   width: 4.29333rem;
   left: 2.74667rem;
   top: 17.96rem; }
 
-#wapWrap .p2-puren {
+#evt_container .p2-puren {
   width: 2.42667rem;
   left: 6.86667rem;
   top: 16.16rem; }
 
-#wapWrap .p2-text {
+#evt_container .p2-text {
   width: 6.42667rem;
   left: 1.74667rem;
   top: 23.52rem; }
 
-#wapWrap .p3-bg {
+#evt_container .p3-bg {
   width: 9.96rem;
   left: 0.04rem;
   top: 41.78667rem; }
 
-#wapWrap .p3-buy {
+#evt_container .p3-buy {
   display: block;
   position: absolute;
   width: 4.01333rem;
@@ -113,69 +113,69 @@
   background: url(../images/p3-buy.png);
   background-size: 100%; }
 
-#wapWrap .p3-cat-con {
+#evt_container .p3-cat-con {
   top: 30.16rem;
   left: 5.93333rem; }
 
-#wapWrap .catc {
+#evt_container .catc {
   position: absolute;
   top: 0;
   left: 0; }
-  #wapWrap .catc canvas {
+  #evt_container .catc canvas {
     width: 3.81333rem; }
 
-#wapWrap .p3-cat {
+#evt_container .p3-cat {
   width: 4.05333rem;
   left: -0.6rem;
   top: 2.37333rem;
   position: absolute; }
 
-#wapWrap .p3-cheese {
+#evt_container .p3-cheese {
   width: 6.44rem;
   left: 0.34667rem;
   top: 35.33333rem; }
 
-#wapWrap .p3-cream {
+#evt_container .p3-cream {
   width: 3.89333rem;
   left: 3.6rem;
   top: 37.73333rem; }
 
-#wapWrap .p3-mony {
+#evt_container .p3-mony {
   width: 2.48rem;
   left: 1.49333rem;
   top: 42.74667rem; }
 
-#wapWrap .p3-text {
+#evt_container .p3-text {
   width: 4.70667rem;
   left: 0.64rem;
   top: 32.10667rem; }
 
-#wapWrap .p3-num {
+#evt_container .p3-num {
   width: 0.86667rem;
   left: 4.4rem;
   top: 42.34667rem; }
 
-#wapWrap .p3-num-con {
+#evt_container .p3-num-con {
   left: 5.6rem;
   top: 42.30667rem; }
 
-#wapWrap .p4-cat {
+#evt_container .p4-cat {
   left: 0rem;
   top: 46.66667rem; }
-  #wapWrap .p4-cat canvas {
+  #evt_container .p4-cat canvas {
     width: 10rem; }
 
-#wapWrap .p4-count {
+#evt_container .p4-count {
   width: 7.92rem;
   left: 2.05333rem;
   top: 47.2rem; }
 
-#wapWrap .p5-title {
+#evt_container .p5-title {
   width: 3.72rem;
   left: 3.13333rem;
   top: 54rem; }
 
-#wapWrap .p5-buy {
+#evt_container .p5-buy {
   width: 4.32rem;
   height: 1.33333rem;
   left: 2.86667rem;
@@ -185,25 +185,25 @@
   background: url(../images/p5-buy.png);
   background-size: 100%; }
 
-#wapWrap .pro-con {
+#evt_container .pro-con {
   position: absolute;
   top: 0; }
-  #wapWrap .pro-con.left {
+  #evt_container .pro-con.left {
     left: 0.86667rem; }
-  #wapWrap .pro-con.right {
+  #evt_container .pro-con.right {
     left: 5.17333rem; }
 
-#wapWrap .p5-num-con {
+#evt_container .p5-num-con {
   margin: -1.2rem 0 0 0.53333rem; }
 
-#wapWrap .p5-money {
+#evt_container .p5-money {
   width: 2.04rem;
   height: 0.88rem;
   margin: 0.26667rem 0 0 0.8rem;
   background: url(../images/p5-moneybg.png);
   background-size: 100%; }
 
-#wapWrap .rules {
+#evt_container .rules {
   width: 10rem;
   height: 8.33333rem;
   left: 0;
@@ -212,62 +212,62 @@
   background-size: 100%;
   padding: 0 0 0 1.49333rem;
   color: #000000; }
-  #wapWrap .rules h2 {
+  #evt_container .rules h2 {
     margin: 3.14667rem 0 0.2rem -0.48rem;
     font-size: 0.4rem; }
-  #wapWrap .rules p {
+  #evt_container .rules p {
     margin: 0 0 0 0;
     font-size: 0.32rem;
     text-indent: -0.48rem;
     line-height: 0.4rem; }
 
-#wapWrap .cate {
+#evt_container .cate {
   left: 7.44rem;
   bottom: 3.66667rem; }
-  #wapWrap .cate canvas {
+  #evt_container .cate canvas {
     width: 1.88rem; }
 
-#wapWrap .product-area {
+#evt_container .product-area {
   left: 0.97333rem;
   top: 55.69333rem; }
-  #wapWrap .product-area .product-contain {
+  #evt_container .product-area .product-contain {
     width: 8.89333rem;
     height: 4.21333rem;
     margin: 0 0 -0.26667rem 0;
     background: url(../images/p5-frame.png);
     background-size: 100%;
     overflow: hidden; }
-    #wapWrap .product-area .product-contain .content {
+    #evt_container .product-area .product-contain .content {
       width: 7.26667rem;
       height: 3.42667rem;
       background: #fffaed;
       margin: 0.46667rem 0 0 0.17333rem;
       position: relative; }
-      #wapWrap .product-area .product-contain .content img {
+      #evt_container .product-area .product-contain .content img {
         width: 3.16rem;
         height: 3.16rem;
         position: absolute;
         left: 0.13333rem;
         top: 0.13333rem; }
-      #wapWrap .product-area .product-contain .content .pro-info {
+      #evt_container .product-area .product-contain .content .pro-info {
         height: 3.16rem;
         width: 3.86667rem;
         position: absolute;
         top: 0.13333rem;
         right: 0rem;
         text-align: center; }
-        #wapWrap .product-area .product-contain .content .pro-info .french-name {
+        #evt_container .product-area .product-contain .content .pro-info .french-name {
           font-family: 'DK Lemon Yellow Sun';
           font-size: 0.36rem;
           color: #f3c05e;
           text-align: center;
           margin: 0.13333rem 0 0 0; }
-        #wapWrap .product-area .product-contain .content .pro-info .chinese-name {
+        #evt_container .product-area .product-contain .content .pro-info .chinese-name {
           font-size: 0.36rem;
           text-align: center;
           margin: 0.13333rem 0 0.13333rem 0;
           color: #000000; }
-        #wapWrap .product-area .product-contain .content .pro-info .price {
+        #evt_container .product-area .product-contain .content .pro-info .price {
           width: 2.04rem;
           height: 0.88rem;
           line-height: 0.88rem;
@@ -278,19 +278,19 @@
           margin: 0 auto;
           font-family: 'Abadi Mt Condensed Light';
           color: #000000; }
-          #wapWrap .product-area .product-contain .content .pro-info .price span {
+          #evt_container .product-area .product-contain .content .pro-info .price span {
             font-size: 0.61333rem;
             vertical-align: top;
             font-family: 'DK Lemon Yellow Sun'; }
-        #wapWrap .product-area .product-contain .content .pro-info .pro-num {
+        #evt_container .product-area .product-contain .content .pro-info .pro-num {
           display: inline-block;
           margin: 0.13333rem 0 0 0; }
 
-[data-dpr="1"] #loading {
+[data-dpr="1"] #evt_loading {
   font-size: 24px; }
 
-[data-dpr="2"] #loading {
+[data-dpr="2"] #evt_loading {
   font-size: 40px; }
 
-[data-dpr="3"] #loading {
+[data-dpr="3"] #evt_loading {
   font-size: 60px; }
