@@ -62,7 +62,7 @@ gulp.task('server', function() {
 			host: getIP(),
 			directoryListing: {enable:true, path: buildConfig.server.path},
 			livereload: false,
-			open: true,
+			open: '/'+ projectName +'/index.html',
 			port: buildConfig.server.port || 8001
 		}));
 });

@@ -12,10 +12,16 @@
     width: 100%; }
   #evt_content .bg2 {
     width: 10rem; }
+    #evt_content .bg2 a {
+      text-indent: -99999px;
+      width: 7.86667rem;
+      height: 5.52rem;
+      top: 7.76rem;
+      left: 1.26667rem; }
   #evt_content .title {
     width: 7.97333rem;
     left: 0.70667rem;
-    top: -1.13333rem;
+    top: -0.46667rem;
     display: none; }
   #evt_content .text1 {
     width: 4.94667rem;
@@ -28,7 +34,8 @@
     #evt_content .pro-num a {
       width: 1.24rem;
       display: inline-block;
-      position: static; }
+      position: static;
+      text-indent: 0; }
     #evt_content .pro-num input {
       display: inline-block;
       width: 1.16rem;
@@ -40,12 +47,44 @@
       padding: 0; }
   #evt_content .pro-price {
     top: 15.06667rem;
-    left: 1.88rem;
+    left: 0;
     color: #bf0100;
-    font-size: 1.06667rem;
-    line-height: 1.06667rem; }
+    font-size: 0.8rem;
+    line-height: 1.06667rem;
+    width: 100%;
+    text-align: center; }
     #evt_content .pro-price span {
       font-size: 0.53333rem; }
+  #evt_content .cake1 a {
+    text-indent: -99999px; }
+  #evt_content .word1 a {
+    color: #ffffff;
+    font-size: 0.32rem;
+    line-height: 0.32rem; }
+  #evt_content .cake2 a {
+    text-indent: -99999px; }
+  #evt_content .word2 a {
+    color: #ffffff;
+    font-size: 0.32rem;
+    line-height: 0.32rem; }
+  #evt_content .cake3 a {
+    text-indent: -99999px; }
+  #evt_content .word3 a {
+    color: #ffffff;
+    font-size: 0.32rem;
+    line-height: 0.32rem; }
+  #evt_content .cake4 a {
+    text-indent: -99999px; }
+  #evt_content .word4 a {
+    color: #ffffff;
+    font-size: 0.32rem;
+    line-height: 0.32rem; }
+  #evt_content .cake5 a {
+    text-indent: -99999px; }
+  #evt_content .word5 a {
+    color: #ffffff;
+    font-size: 0.32rem;
+    line-height: 0.32rem; }
   #evt_content .buybtn {
     width: 6.24rem;
     top: 16.4rem;
@@ -61,6 +100,11 @@
     width: 5.49333rem;
     left: 0.57333rem;
     top: 20.82667rem; }
+    #evt_content .cake1 a {
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0; }
   #evt_content .fruit1 {
     width: 3.45333rem;
     left: 5.89333rem;
@@ -74,7 +118,7 @@
       height: 0.90667rem;
       top: 1.98667rem;
       left: 0.33333rem;
-      text-indent: -99999px; }
+      padding: 0.33333rem 0 0 0.66667rem; }
   #evt_content .i2 {
     width: 1.10667rem;
     left: 0.09333rem;
@@ -83,6 +127,11 @@
     width: 5.38667rem;
     left: 0rem;
     top: -0.84rem; }
+    #evt_content .cake2 a {
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0; }
   #evt_content .i6 {
     width: 2.52rem;
     left: 2.58667rem;
@@ -112,7 +161,7 @@
       height: 1rem;
       top: 1.66667rem;
       left: 0.53333rem;
-      text-indent: -99999px; }
+      padding: 0.33333rem 0 0 0.86667rem; }
   #evt_content .i3 {
     width: 0.64rem;
     left: 5.72rem;
@@ -125,6 +174,11 @@
     width: 4.69333rem;
     left: 3.84rem;
     top: 39.45333rem; }
+    #evt_content .cake3 a {
+      top: 0;
+      left: 0;
+      width: 4.26667rem;
+      height: 4rem; }
   #evt_content .word3 {
     width: 3.02667rem;
     left: 1.33333rem;
@@ -134,7 +188,7 @@
       height: 1.2rem;
       top: 1.06667rem;
       left: 0.26667rem;
-      text-indent: -99999px; }
+      padding: 0.57333rem 0 0 0.8rem; }
   #evt_content .i8 {
     width: 2.66667rem;
     left: -0.73333rem;
@@ -159,6 +213,11 @@
     width: 8.36rem;
     left: 0rem;
     top: 0rem; }
+    #evt_content .cake4 a {
+      top: 0;
+      left: 0;
+      width: 5.86667rem;
+      height: 5.73333rem; }
   #evt_content .ar4 {
     width: 8.36rem;
     left: 1.64rem;
@@ -172,7 +231,7 @@
       height: 1.2rem;
       top: 1.86667rem;
       left: 1.2rem;
-      text-indent: -99999px; }
+      padding: 0.53333rem 0 0 0.88rem; }
   #evt_content .i10 {
     width: 1.94667rem;
     left: 3.97333rem;
@@ -189,6 +248,11 @@
     width: 4.73333rem;
     left: 2.45333rem;
     top: 54.50667rem; }
+    #evt_content .cake5 a {
+      width: 3.33333rem;
+      height: 2.66667rem;
+      top: 0.73333rem;
+      left: 0.2rem; }
   #evt_content .word5 {
     width: 3.05333rem;
     left: 0.12rem;
@@ -198,7 +262,7 @@
       height: 1.2rem;
       top: 1.2rem;
       left: 0.26667rem;
-      text-indent: -99999px; }
+      padding: 0.53333rem 0 0 0.8rem; }
   #evt_content .i5 {
     width: 6.65333rem;
     left: 3.34667rem;

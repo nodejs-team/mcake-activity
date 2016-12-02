@@ -17,56 +17,76 @@ $ar5top:4204;
   a{display:block; position:absolute;}
   div{position:absolute;}
   img{width:100%;}
-  .bg2{width:px2rem(750);}
-  .title{width:px2rem(598); left:px2rem(53); top:px2rem(-85); display:none;}
+  .bg2{width:px2rem(750);
+    a{text-indent: -99999px; width:px2rem(590); height:px2rem(414); top:px2rem(582); left:px2rem(95)}
+  }
+  .title{width:px2rem(598); left:px2rem(53); top:px2rem(-35); display:none;}
   .text1{width:px2rem(371); left:px2rem(189); top:px2rem(1050);}
   .pro-num{left:px2rem(336); top:px2rem(1135); font-size:0;
-    a{width:px2rem(93); display:inline-block; position:static;}
+    a{width:px2rem(93); display:inline-block; position:static; text-indent:0;}
     input{display:inline-block; width:px2rem(87); border:none; background:transparent; text-align:center; color:#bf0100; font-size:px2rem(40); padding:0;}
   }
-  .pro-price{top:px2rem(1130); left:px2rem(141); color:#bf0100; font-size:px2rem(80); line-height:px2rem(80);
+  .pro-price{top:px2rem(1130); left:0; color:#bf0100; font-size:px2rem(60); line-height:px2rem(80); width:100%; text-align:center;
     span{font-size:px2rem(40);}
   }
+
+  @for $i from 1 through 5{
+    .cake#{$i} a {text-indent: -99999px;}
+    .word#{$i} a {color:#ffffff; font-size:px2rem(24); line-height:px2rem(24);}
+  }
+
+
+
   .buybtn{width:px2rem(468); top:px2rem(1230); left:px2rem(141);}
   .ronghua{width:px2rem(750); top:px2rem(1303);}
   .i1{width:px2rem(231); left:px2rem(302); top:px2rem(1531);}
-  .cake1{width:px2rem(412); left:px2rem(43); top:px2rem(1562);}
+  .cake1{width:px2rem(412); left:px2rem(43); top:px2rem(1562);
+    a{width:100%; height:100%; top:0; left:0;}
+  }
   .fruit1{width:px2rem(259); left:px2rem(442); top:px2rem(1684);}
   .word1{width:px2rem(267); left:px2rem(101); top:px2rem(1929);
-    a{width:px2rem(220); height:px2rem(68); top:px2rem(149); left:px2rem(25); text-indent:-99999px;}
+    a{width:px2rem(220); height:px2rem(68); top:px2rem(149); left:px2rem(25); padding:px2rem(25) 0 0 px2rem(50);}
   }
   .i2{width:px2rem(83); left:px2rem(7); top:px2rem(1984);}
-  .cake2{width:px2rem(404); left:px2rem(344-$ar1left); top:px2rem(2107-$ar1top);}
+  .cake2{width:px2rem(404); left:px2rem(344-$ar1left); top:px2rem(2107-$ar1top);
+    a{width:100%; height:100%; top:0; left:0;}
+  }
   .i6{width:px2rem(189); left:px2rem(538-$ar1left); top:px2rem(2031-$ar1top);}
   .ar1{width:px2rem(404); left:px2rem($ar1left); top:px2rem($ar1top);}
   .i7{width:px2rem(80); left:px2rem(149-$ar2left); top:px2rem(2314-$ar2top);}
   .fruit2{width:px2rem(214); left:px2rem(178-$ar2left); top:px2rem(2330-$ar2top);}
   .ar2{width:px2rem(214); left:px2rem($ar2left); top:px2rem($ar2top);}
   .word2{width:px2rem(318); left:px2rem(393); top:px2rem(2481);
-    a{width:px2rem(220); height:px2rem(75); top:px2rem(125); left:px2rem(40); text-indent:-99999px;}
+    a{width:px2rem(220); height:px2rem(75); top:px2rem(125); left:px2rem(40); padding:px2rem(25) 0 0 px2rem(65);}
   }
   .i3{width:px2rem(48); left:px2rem(429); top:px2rem(2886);}
   .photo1{width:px2rem(399); left:px2rem(30); top:px2rem(2729);}
-  .cake3{width:px2rem(352); left:px2rem(288); top:px2rem(2959);}
+  .cake3{width:px2rem(352); left:px2rem(288); top:px2rem(2959);
+    a{top:0; left:0; width:px2rem(320); height:px2rem(300);}
+  }
   .word3{width:px2rem(227); left:px2rem(100); top:px2rem(3184);
-    a{width:px2rem(220); height:px2rem(90); top:px2rem(80); left:px2rem(20); text-indent:-99999px;}
+    a{width:px2rem(220); height:px2rem(90); top:px2rem(80); left:px2rem(20); padding:px2rem(43) 0 0 px2rem(60);}
   }
   .i8{width:px2rem(200); left:px2rem(412-$ar3left); top:px2rem(3386-$ar3top);}
   .fruit3{width:px2rem(245); left:px2rem(467-$ar3left); top:px2rem(3432-$ar3top);}
   .ar3{width:px2rem(245); left:px2rem($ar3left); top:px2rem($ar3top);}
   .i4{width:px2rem(103); left:px2rem(152); top:px2rem(3554);}
   .i9{width:px2rem(108); left:px2rem(142-$ar4left); top:px2rem(3805-$ar4top);}
-  .cake4{width:px2rem(627); left:px2rem(123-$ar4left); top:px2rem(3489-$ar4top);}
+  .cake4{width:px2rem(627); left:px2rem(123-$ar4left); top:px2rem(3489-$ar4top);
+    a{top:0; left:0; width:px2rem(440); height:px2rem(430);}
+  }
   .ar4{width:px2rem(627); left:px2rem($ar4left); top:px2rem($ar4top);}
   .word4{width:px2rem(307); left:px2rem(356); top:px2rem(3806);
-    a{width:px2rem(220); height:px2rem(90); top:px2rem(140); left:px2rem(90); text-indent:-99999px;}
+    a{width:px2rem(220); height:px2rem(90); top:px2rem(140); left:px2rem(90); padding:px2rem(40) 0 0 px2rem(66);}
   }
   .i10{width:px2rem(146); left:px2rem(525-$ar5left); top:px2rem(4196-$ar5top);}
   .photo2{width:px2rem(401); left:px2rem(227-$ar5left); top:px2rem(4204-$ar5top);}
   .ar5{width:px2rem(401); left:px2rem($ar5left); top:px2rem($ar5top);}
-  .cake5{width:px2rem(355); left:px2rem(184); top:px2rem(4088);}
+  .cake5{width:px2rem(355); left:px2rem(184); top:px2rem(4088);
+    a{width:px2rem(250); height:px2rem(200); top:px2rem(55); left:px2rem(15);}
+  }
   .word5{width:px2rem(229); left:px2rem(9); top:px2rem(4315);
-    a{width:px2rem(220); height:px2rem(90); top:px2rem(90); left:px2rem(20); text-indent:-99999px;}
+    a{width:px2rem(220); height:px2rem(90); top:px2rem(90); left:px2rem(20); padding:px2rem(40) 0 0 px2rem(60);}
   }
   .i5{width:px2rem(499); left:px2rem(251); top:px2rem(4497);}
   .fruit4{width:px2rem(235); left:px2rem(462); top:px2rem(4642); z-index:2;}
