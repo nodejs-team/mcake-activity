@@ -22,7 +22,7 @@
             translateY: 0,
             opacity: 1
         }, {
-            duration: typeof item.duration==='number' ? item.duration : 600,
+            duration: typeof item.duration==='number' ? item.duration : 1000,
             delay: typeof item.delay==='number' ? item.delay : 0,
             complete: function(){}
         })

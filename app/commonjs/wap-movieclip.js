@@ -40,14 +40,14 @@
     Ticker.prototype.stop = function(){
         cancelAnimationFrame(this.timer);
     }
-    function MovieClip(canvas, img, frameData, options){
+    function MovieClip(canvas, img, frames, options){
         var opts = options || {};
         canvas = typeof canvas === 'string' ? document.getElementById(canvas) : canvas;
         this.ctx = canvas.getContext('2d');
         this.width = parseInt(canvas.width);
         this.height = parseInt(canvas.height);
-        this.frames = frameData.frames;
-        this.frameRate = frameData.frameRate || 10;
+        this.frames = frames;
+        this.frameRate = opts.frameRate || 10;
         this.img = img;
         this.repeatCount = opts.repeatCount || 0;
         this.stopFrame = opts.stopFrame || 0;   //代表最后停留帧,first代表第一帧,last代表最后一帧;

@@ -33,14 +33,14 @@
             var runtime = timestamp - starttime;
             if(runtime<duration){
                 requestAnimationFrame(function(timestamp){
-                    animate(timestamp || new Date().getTime())
+                    animate(timestamp || Date.now())
                 })
             } else {
                 callback();
             }
         }
         requestAnimationFrame(function(timestamp){
-            starttime = timestamp || new Date().getTime();
+            starttime = timestamp || Date.now();
             animate(starttime);
         })
     }
