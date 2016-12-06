@@ -81,8 +81,8 @@
             {"x":247,"y":0,"w":245,"h":128,"offX":0,"offY":0,"sourceW":245,"sourceH":128, duration:2}
         ]).play();
         new MovieClip('cris', res['cris_png'].data, [
-            {"x":0,"y":0,"w":291,"h":275,"offX":0,"offY":0,"sourceW":291,"sourceH":275, duration:9},
-            {"x":293,"y":0,"w":291,"h":264,"offX":0,"offY":0,"sourceW":291,"sourceH":275, duration:15}
+            {"x":0,"y":0,"w":291,"h":268,"offX":0,"offY":0,"sourceW":291,"sourceH":268, duration:9},
+            {"x":293,"y":0,"w":291,"h":257,"offX":0,"offY":0,"sourceW":291,"sourceH":268, duration:15}
         ]).play();
     }
     function fixImageSrc(res){
