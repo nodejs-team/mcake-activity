@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
     <link rel="stylesheet" type="text/css" href="http://ebsig.mcake.com/shop/theme/xth1/css/comm_header.css?v=1458723714">
 </head>
-<body>
+<body style="height:2000px;">
 <div class="header">
 
     <div class="header_top_box">
@@ -79,74 +79,23 @@
 
 <link rel="stylesheet" href="http://edm.mcake.com/shuxy/2016/MovieClip/animate.css">
 <style>
-    #evt_loading {
-        height: 600px;
-        width:100%;
-        text-align:center;
-        font-size: 18px;
-        font-family: "Microsoft YaHei",Tahoma,Arial;
-        line-height:600px;
-    }
-
-    #evt_container{
-        width:100%;
-        overflow:hidden;
-        position:relative;
-        height:888px;
-        margin-bottom:15px;
-        background:url('http://edm.mcake.com/weifengwang/christmas/images/banner-bg.jpg') 50% 0 no-repeat;
-    }
-    #evt_content{
-        width:1000px;
-        margin:0 auto;
-        position:relative;
-    }
-    #evt_content .lg-title{
-        position: absolute;
-        left: -50px;
-        top: -10px;
-        -webkit-animation-duration: 2s;
-        animation-duration: 2s;
-    }
-    #evt_content .lg-price{
-        position: absolute;
-        left: 153px;
-        top: 514px;
-    }
-    #evt_content .lighter{
-        position: absolute;
-        left: 442px;
-        top: 430px;
-    }
-    #evt_content .christmas{
-        position:fixed;
-        left:50%;
-        margin-left:260px;
-        width:230px;
-        height:220px;
-        top:45px;
-        z-index:1000;
-    }
-    #evt_content .mc-logo{
-        position:absolute;
-        right:10px;
-        top:54px;
-        width:61px;
-        height:88px;
-        background:url(http://edm.mcake.com/shuxy/2016/christmas/images/christ_logo.png) no-repeat;
-    }
-    #evt_container .bannerLink{
-        display:block;
-        width:100%;
-        height:100%;
-        position:absolute;
-        top:0;
-        left:0;
-    }
+    #evt_loading {height: 888px; width:100%; text-align:center; font-size: 18px; font-family: "Microsoft YaHei",Tahoma,Arial; line-height:600px; margin-bottom:15px;}
+    #evt_container{width:100%; overflow:hidden; position:relative; height:888px; margin-bottom:15px; background:url('http://edm.mcake.com/weifengwang/christmas/images/banner-bg.jpg') 50% 0 no-repeat;}
+    #evt_content{width:1000px; margin:0 auto; position:relative;}
+    #evt_content .lg-title{position: absolute; left: -50px; top: -10px; -webkit-animation-duration: 2s; animation-duration: 2s;}
+    #evt_content .lg-price{position: absolute; left: 153px; top: 514px;}
+    #evt_content .lighter{position: absolute; left: 442px; top: 430px;}
+    #evt_content .christmas{position:fixed; left:50%; margin-left:260px; width:230px; height:220px; top:45px; z-index:100}
+    #evt_content .christmas2{margin-left:288px; top:47px; width:138px; height:140px;}
+    #evt_content .mc-logo{position:absolute; right:10px; top:54px; width:61px; height:88px; background:url(http://edm.mcake.com/shuxy/2016/christmas/images/christ_logo.png) no-repeat;}
+    #bannerLink{display:block; width:100%; height:100%; position:absolute; top:0; left:0;}
+    .snow-container {position: fixed; top: 0; left: 0; width: 100%; z-index: 2000;}
+    .snow-container .snow {position: absolute; background-color: #fff; -webkit-border-radius: 50%; border-radius: 50%; -webkit-box-shadow: 0 0 15px rgba(255, 255, 255, 0.8); box-shadow: 0 0 15px rgba(255, 255, 255, 0.8); background: url(http://edm.mcake.com/shuxy/2016/christmas/images/snow.png) no-repeat\9;}
+    .snow-container :root .snow {background: none;}
 </style>
-<div id="evt_loading">loading: 0%</div>
+<!--<div id="evt_loading">loading: 0%</div>-->
 
-<div id="evt_container" style="display:none;">
+<div id="evt_container">
     <div id="evt_content">
         <img src="http://edm.mcake.com/shuxy/2016/christmas/images/lg_title.png" class="lg-title" data-anim="fade-in" data-delay="0" />
         <div class="lg-price" data-anim="slide-right" data-delay="0.8">
@@ -156,155 +105,18 @@
             <div id="lighter"></div>
         </div>
         <div class="christmas">
+            <!--<div id="christmas2"></div>-->
             <div id="christmas"></div>
-            <div class="mc-logo"></div>
         </div>
     </div>
-    <a href="banner链接" class="bannerLink"></a>
+    <a href="banner链接" id="bannerLink"></a>
 </div>
 
 <script type="text/javascript" src="http://www.mcake.com/shop/theme/xth1/js/index/jquery.min.js?v=1411888163"></script>
 <script src="http://edm.mcake.com/shuxy/2016/MovieClip/ec_main.js"></script>
-<script>
-    ;(function(){
-        var resData = {
-            "groups":[
-                {
-                    "keys":"christmas_png,lg_title_png,lg_price_png,lighter_png,banner-bg_jpg",
-                    "name":"preload"
-                }],
-            "resources":[
-                {
-                    "name":"christmas_png",
-                    "type":"image",
-                    "url":"http://edm.mcake.com/shuxy/2016/christmas/images/christmas.png"
-                },
-                {
-                    "name":"lg_title_png",
-                    "type":"image",
-                    "url":"http://edm.mcake.com/shuxy/2016/christmas/images/lg_title.png"
-                },
-                {
-                    "name":"lg_price_png",
-                    "type":"image",
-                    "url":"http://edm.mcake.com/shuxy/2016/christmas/images/lg_price.png"
-                },
-                {
-                    "name":"lighter_png",
-                    "type":"image",
-                    "url":"http://edm.mcake.com/shuxy/2016/christmas/images/lighter.png"
-                },
-                {
-                    "name":"christ_logo",
-                    "type":"image",
-                    "url":"http://edm.mcake.com/shuxy/2016/christmas/images/christ_logo.png"
-                },
-                {
-                    "name":"banner-bg_jpg",
-                    "type":"image",
-                    "url":"http://edm.mcake.com/weifengwang/christmas/images/banner-bg.jpg"
-                }]
-        };
-        var aniMap = {
-            "fade-in": function(el, delay, cb){
-                var $el = $(el);
-                $el.css({
-                    opacity: 0
-                });
-
-                setTimeout(function(){
-                    $el.animate({
-                        opacity: 1
-                    }, 800, cb);
-                }, delay);
-            },
-            "slide-right": function(el, delay, cb){
-                var $el = $(el);
-                $el.css({
-                    opacity: 0,
-                    marginLeft: -el.offsetWidth*0.5
-                });
-
-                setTimeout(function(){
-                    $el.animate({
-                        opacity: 1,
-                        marginLeft: 0
-                    }, 1000, 'easeOutCubic', function(){
-                        cb && cb();
-                    });
-                }, delay);
-
-            }
-        }
-        var isSupportCss3 = (function(){
-            var ret = /MSIE (\d+\.\d+)/.exec(navigator.userAgent);
-            if( !ret || ret[1] > 9 ){
-                return true;
-            }
-            return false;
-        })();
-        var setLighterMc = function () {
-            var mc = new MovieClip('lighter_png', {
-                "l1":{"x":0,"y":214,"w":194,"h":105,"offX":0,"offY":0,"sourceW":194,"sourceH":105,duration:2},
-                "l2":{"x":196,"y":214,"w":194,"h":105,"offX":0,"offY":0,"sourceW":194,"sourceH":105,duration:2},
-                "l3":{"x":196,"y":107,"w":194,"h":105,"offX":0,"offY":0,"sourceW":194,"sourceH":105,duration:2},
-                "l4":{"x":0,"y":107,"w":194,"h":105,"offX":0,"offY":0,"sourceW":194,"sourceH":105,duration:2},
-                "l5":{"x":196,"y":0,"w":194,"h":105,"offX":0,"offY":0,"sourceW":194,"sourceH":105,duration:2},
-                "l6":{"x":0,"y":0,"w":194,"h":105,"offX":0,"offY":0,"sourceW":194,"sourceH":105,duration:2}}, 'lighter_mc', "lighter");
-            mc.gotoAndPlay(1, -1);
-            return mc;
-        };
-        var setCrisMC = function(){
-            var mc = new MovieClip('christmas_png', {
-                "c1":{"x":0,"y":0,"w":224,"h":230,"offX":2,"offY":2,"sourceW":232,"sourceH":235,duration:18},
-                "c2":{"x":0,"y":232,"w":224,"h":223,"offX":6,"offY":2,"sourceW":232,"sourceH":235,duration:30}
-            }, 'christmas_mc', 'christmas');
-            mc.gotoAndPlay(1, -1);
-            return mc;
-        };
-        function bindAnimate(el, hasDelay){
-            var anim = el.getAttribute('data-anim');
-            var delay = Number(el.getAttribute('data-delay')||0)*1000;
-            var delayAdjust = Number(el.getAttribute('data-delay-adjust')||0)*1000;
-            var chain = el.getAttribute('data-chain');
-
-            delay = hasDelay ? delay : 0;
-            delay += delayAdjust;
-            if( isSupportCss3 ){
-
-                el.className = [el.className, anim].join(" ");
-                el.style['-webkit-animation-delay'] = delay + "ms";
-                el.style['animationDelay'] = delay + "ms";
-            } else {
-                if( aniMap[anim] ) {
-                    aniMap[anim].call(el, el, delay);
-                }
-            }
-        }
-        var loadResource = function(){
-            var DomLoad = Resource.el('#evt_loading');
-            var loadComplete = function () {
-                DomLoad.style.display = "none";
-                Resource.el('#evt_container').style.display = 'block';
-                bindAnimate($('#evt_content .lg-price').get(0), false);
-                bindAnimate($('#evt_content .lg-title').get(0), false);
-                setCrisMC();
-                setLighterMc();
-            };
-            var loader = new Resource.loadGroup("preload", resData);
-
-
-            loader.addEvent("progress", function (loaded, total) {
-                DomLoad.innerHTML = "loading: " + Math.floor(loaded / total * 100) + "%";
-            });
-
-            loader.addEvent("complete", loadComplete);
-        };
-        $(function(){
-            loadResource();
-        })
-    })()
-</script>
+<!-- build:js scripts/banner.js -->
+<script src="scripts/banner.js"></script>
+<!-- endbuild -->
 
 </body>
 </html>

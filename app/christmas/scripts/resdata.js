@@ -178,5 +178,10 @@ var resData = [
         "name":"cris_png",
         "type":"image",
         "url":"cris.png"
+    },
+    {
+        "name":"cris2_png",
+        "type":"image",
+        "url":"cris2.png"
     }
 ];

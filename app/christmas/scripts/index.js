@@ -80,10 +80,21 @@
             {"x":247,"y":130,"w":245,"h":128,"offX":0,"offY":0,"sourceW":245,"sourceH":128, duration:2},
             {"x":247,"y":0,"w":245,"h":128,"offX":0,"offY":0,"sourceW":245,"sourceH":128, duration:2}
         ]).play();
-        new MovieClip('cris', res['cris_png'].data, [
-            {"x":0,"y":0,"w":291,"h":268,"offX":0,"offY":0,"sourceW":291,"sourceH":268, duration:9},
-            {"x":293,"y":0,"w":291,"h":257,"offX":0,"offY":0,"sourceW":291,"sourceH":268, duration:15}
-        ]).play();
+        var cris = document.getElementById('cris');
+        if(cris){
+            new MovieClip(cris, res['cris_png'].data, [
+                {"x":0,"y":0,"w":291,"h":268,"offX":0,"offY":0,"sourceW":291,"sourceH":268, duration:9},
+                {"x":293,"y":0,"w":291,"h":257,"offX":0,"offY":0,"sourceW":291,"sourceH":268, duration:15}
+            ]).play();
+        }
+        var cris2 = document.getElementById('cris2');
+        if(cris2){
+            new MovieClip(cris2, res['cris2_png'].data, [
+                {"x":0,"y":0,"w":191,"h":188,"offX":0,"offY":0,"sourceW":195,"sourceH":188, duration:9},
+                {"x":193,"y":0,"w":195,"h":180,"offX":0,"offY":0,"sourceW":195,"sourceH":188, duration:15}
+            ]).play();
+        }
+
     }
     function fixImageSrc(res){
         var imgs = document.getElementsByTagName('img');

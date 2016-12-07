@@ -192,8 +192,13 @@ var buildCSS = lazypipe()
 
 var buildJS = lazypipe()
     .pipe(uglify)
-    .pipe(replace, /url:"([^"]+?)"/gm, 'url:"'+buildConfig.basePath+projectName+'/images/$1"')
-
+    .pipe(replace, /url:"([^"]+?)"/gm, function(matched, url){
+		if(!/http:\/\//.test(url)){
+			url = buildConfig.basePath+projectName+'/images/'+url;
+		}
+		return 'url:"'+url+'"';
+	})
+var t = 'url:"'+buildConfig.basePath+projectName+'/images/$1"';
 function buildUseref(){
     return new Promise(function(resolve, reject){
         gulp.src('app/'+projectName+'/*.html')
