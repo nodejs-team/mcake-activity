@@ -1,0 +1,127 @@
+#evt_container {
+  height: 2592px;
+  background: #ecf3f9; }
+  #evt_container img {
+    width: 100%; }
+  #evt_container div {
+    position: absolute; }
+  #evt_container a {
+    display: block;
+    position: absolute; }
+  #evt_container .bg {
+    width: 997px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -498px; }
+  #evt_container #evt_content {
+    width: 1000px;
+    margin: 0 auto;
+    position: relative; }
+  #evt_container .topsnow {
+    width: 100%;
+    height: 223px;
+    background: url(../images/topsnow.png); }
+  #evt_container .top {
+    width: 452px;
+    top: 0;
+    left: 276px; }
+  #evt_container .coffee {
+    width: 789px;
+    top: 609px;
+    left: 118px; }
+  #evt_container .fen {
+    width: 339px;
+    top: 1370px;
+    left: 297px; }
+  #evt_container .slideContain {
+    width: 100%;
+    height: 365px;
+    left: 0;
+    top: 1523px; }
+  #evt_container .slideContent {
+    position: absolute;
+    width: 839px;
+    height: 100%;
+    left: 50%;
+    top: 0;
+    margin-left: -418px; }
+  #evt_container .slideItem {
+    width: 328px;
+    height: 365px;
+    position: absolute; }
+    #evt_container .slideItem span {
+      display: block;
+      position: absolute;
+      left: 0;
+      color: #626262;
+      text-align: center;
+      width: 100%; }
+  #evt_container .slidePrev, #evt_container .slideNext {
+    width: 63px;
+    height: 45px;
+    top: 50%;
+    margin-top: -22px; }
+  #evt_container .slidePrev {
+    background: url(../images/prev.png);
+    left: 0; }
+  #evt_container .slideNext {
+    background: url(../images/next.png);
+    right: 0; }
+  #evt_container .pro-num {
+    width: 160px;
+    left: 50%;
+    top: 1906px;
+    font-size: 0;
+    margin-left: -80px; }
+    #evt_container .pro-num a {
+      width: 31px;
+      height: 32px;
+      display: block;
+      top: 4px; }
+    #evt_container .pro-num .minus {
+      background: url(../images/minus.png);
+      left: 0; }
+    #evt_container .pro-num .plus {
+      background: url(../images/plus.png);
+      right: 0; }
+    #evt_container .pro-num input {
+      border: none;
+      display: block;
+      background: url(../images/input.png);
+      width: 90px;
+      height: 36px;
+      line-height: 36px;
+      position: absolute;
+      top: 0;
+      left: 35px;
+      text-align: center;
+      color: #626262;
+      font-size: 20px; }
+  #evt_container .buybtn {
+    width: 155px;
+    height: 27px;
+    background: url(../images/buybtn.png);
+    top: 1958px;
+    left: 50%;
+    margin-left: -77px; }
+  #evt_container .rule {
+    width: 100%;
+    height: 438px;
+    left: 0;
+    bottom: 0;
+    background: #ffffff; }
+    #evt_container .rule * {
+      width: 724px;
+      margin: 0 auto;
+      padding-left: 18px;
+      color: #111111; }
+    #evt_container .rule h2 {
+      font-size: 20px;
+      margin-top: 46px;
+      margin-bottom: 10px; }
+    #evt_container .rule p {
+      width: 724px;
+      font-size: 18px;
+      line-height: 30px;
+      text-indent: -18px; }
