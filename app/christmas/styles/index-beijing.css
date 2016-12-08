@@ -1,6 +1,6 @@
 #evt_content {
   position: relative;
-  height: 67.81333rem;
+  height: 48.86667rem;
   background: url(../images/bg.jpg); }
   #evt_content canvas {
     position: absolute; }
@@ -126,9 +126,9 @@
     left: 0.09333rem;
     top: 26.45333rem; }
   #evt_content .cake2 {
-    width: 5.38667rem;
-    left: 0rem;
-    top: -0.84rem; }
+    width: 5.22667rem;
+    left: -0.02667rem;
+    top: -0.86667rem; }
     #evt_content .cake2 a {
       width: 100%;
       height: 100%;
@@ -156,12 +156,12 @@
     top: 31.06667rem; }
   #evt_content .word2 {
     width: 4.24rem;
-    left: 5.24rem;
-    top: 33.08rem; }
+    left: 5.22667rem;
+    top: 33.2rem; }
     #evt_content .word2 a {
       width: 2.93333rem;
       height: 1rem;
-      top: 1.66667rem;
+      top: 1.52rem;
       left: 0.53333rem;
       padding: 0.33333rem 0 0 0.86667rem; }
   #evt_content .i3 {
@@ -173,23 +173,23 @@
     left: 0.4rem;
     top: 36.38667rem; }
   #evt_content .cake3 {
-    width: 4.69333rem;
-    left: 3.84rem;
-    top: 39.45333rem; }
+    width: 8.30667rem;
+    left: 0.32rem;
+    top: 36.32rem; }
     #evt_content .cake3 a {
       top: 0;
       left: 0;
       width: 4.26667rem;
       height: 4rem; }
   #evt_content .word3 {
-    width: 3.02667rem;
-    left: 1.33333rem;
-    top: 42.45333rem; }
+    width: 3.86667rem;
+    left: 3.52rem;
+    top: 39.26667rem; }
     #evt_content .word3 a {
       width: 2.93333rem;
       height: 1.2rem;
-      top: 1.06667rem;
-      left: 0.26667rem;
+      top: 1.86667rem;
+      left: 1.06667rem;
       padding: 0.57333rem 0 0 0.8rem; }
   #evt_content .i8 {
     width: 2.66667rem;
@@ -204,9 +204,9 @@
     left: 6.22667rem;
     top: 45.76rem; }
   #evt_content .i4 {
-    width: 1.37333rem;
-    left: 2.02667rem;
-    top: 47.38667rem; }
+    width: 1.84rem;
+    left: 0.6rem;
+    top: 35.78667rem; }
   #evt_content .i9 {
     width: 1.44rem;
     left: 0.25333rem;
@@ -266,9 +266,9 @@
       left: 0.26667rem;
       padding: 0.53333rem 0 0 0.8rem; }
   #evt_content .i5 {
-    width: 6.65333rem;
-    left: 3.34667rem;
-    top: 59.96rem; }
+    width: 6.88rem;
+    left: 3.12rem;
+    top: 42.05333rem; }
   #evt_content .fruit4 {
     width: 3.13333rem;
     left: 6.16rem;
