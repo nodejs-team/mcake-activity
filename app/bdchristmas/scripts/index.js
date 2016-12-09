@@ -7,10 +7,12 @@
         var items = [];
         $('.slideItem').each(function(ix, el){
             var ponds = $(el).attr('data-pond');
+            var ids = $(el).attr('data-postID');
             if(ponds){
                 items.push({
                     ponds: ponds.split(',').map(function(str){ return str.replace(/(^\s*)|(\s*$)/g, "")}),
-                    ix: 0
+                    ix: 0,
+                    ids: ids.split(',').map(function(str){ return str.replace(/(^\s*)|(\s*$)/g, "")})
                 })
             }
         });
@@ -20,18 +22,18 @@
             if(ix<0){
                 ix = currentItem.ix = currentItem.ponds.length-1;
             }
-            $input.val(currentItem.ponds[ix]);
+            $input.val(currentItem.ponds[ix]).attr('data-postID', currentItem.ids[ix]);
         });
         $plus.on('click', function(){
             var ix = ++currentItem.ix;
             if(ix>currentItem.ponds.length-1){
                 ix = currentItem.ix = 0;
             }
-            $input.val(currentItem.ponds[ix]);
+            $input.val(currentItem.ponds[ix]).attr('data-postID', currentItem.ids[ix]);
         })
         return function(ix){
             currentItem = items[ix];
-            $input.val(currentItem.ponds[currentItem.ix])
+            $input.val(currentItem.ponds[currentItem.ix]).attr('data-postID', currentItem.ids[currentItem.ix])
         }
     }
 
@@ -66,6 +68,12 @@
                 left: this.wrapWidth - this.itemWidth * this.percentage,
                 width: this.itemWidth * this.percentage,
                 height: this.itemHeight * this.percentage
+            },
+            hide: {
+                top: (this.wrapHeight - this.itemHeight*this.percentage) / 2,
+                left: (this.wrapWidth - this.itemWidth*this.percentage) /2,
+                width: this.itemWidth * this.percentage,
+                height: this.itemHeight * this.percentage
             }
         };
         this.current = 0;
@@ -91,37 +99,48 @@
             this.sliding('left');
         },
         sliding: function(direction){
+
             this.isSliding = true;
             var self = this;
             this.$items.each(function(ix, el){
                 if(ix == self.current){
-                    $(el).css('z-index',3).animate(self.position.center,500, function(){
+                    $(el).css('z-index',4).animate(self.position.center,500, function(){
                         self.isSliding = false;
                         self.slideEnd(self.current);
-                    }).removeClass('slideRight slideLeft').addClass('slideCenter').find('span').animate({
+                    }).removeClass('slideRight slideLeft slideHide').addClass('slideCenter').find('span').animate({
                         bottom: '33px',
                         'font-size': '14px'
                     });
+                    return;
                 }
-                if(ix == (self.current+1)%3){
-                    $(el).css('z-index',direction==='right'? 2 : 1).animate(self.position.right,500)
-                        .removeClass('slideCenter slideLeft').addClass('slideRight').find('span').animate({
+                if(ix == (self.current+1)%self.total){
+                    $(el).css('z-index', direction=='right' ? 3 : 2).animate(self.position.right,500)
+                        .removeClass('slideCenter slideLeft slideHide').addClass('slideRight').find('span').animate({
                         bottom: '25px',
                         'font-size': '12px'
                     });
+                    return;
                 }
-                if(ix == (self.current-1+3)%3){
-                    $(el).css('z-index',direction==='left'? 2 : 1).animate(self.position.left, 500)
-                        .removeClass('slideCenter slideRight').addClass('slideLeft').find('span').animate({
+                if(ix == (self.current-1+self.total)%self.total){
+                    $(el).css('z-index', direction=='left' ? 3 : 2).animate(self.position.left, 500)
+                        .removeClass('slideCenter slideRight slideHide').addClass('slideLeft').find('span').animate({
                         bottom: '25px',
                         'font-size': '12px'
                     });
+                    return;
                 }
+                $(el).css('z-index', 1).animate(self.position.hide, 500)
+                    .removeClass('slideCenter slideRight slideLeft').addClass('slideHide')
+                // console.log(direction, ix)
+                // if((direction == 'right' && ix == (self.current+2)%self.total) || (direction == 'left' && ix == (self.current-2+self.total)%self.total)){
+                //
+                //     return;
+                // }
             })
         },
         init: function(){
             var self = this;
-            this.sliding();
+            this.sliding('right');
             this.$next.on('click', function(){
                 self.next();
             })
