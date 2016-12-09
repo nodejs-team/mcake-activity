@@ -10,19 +10,9 @@ var resData = [
         "url":"buybtn.png"
     },
     {
-        "name":"cake1_png",
+        "name":"cakebg_png",
         "type":"image",
-        "url":"cake1.png"
-    },
-    {
-        "name":"cake2_png",
-        "type":"image",
-        "url":"cake2.png"
-    },
-    {
-        "name":"cake3_png",
-        "type":"image",
-        "url":"cake3.png"
+        "url":"cakebg.png"
     },
     {
         "name":"coffee_png",

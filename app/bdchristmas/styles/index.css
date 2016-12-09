@@ -31,7 +31,7 @@
     top: 609px;
     left: 118px; }
   #evt_container .fen {
-    width: 339px;
+    width: 399px;
     top: 1370px;
     left: 297px; }
   #evt_container .slideContain {
@@ -50,6 +50,11 @@
     width: 328px;
     height: 365px;
     position: absolute; }
+    #evt_container .slideItem .product {
+      position: absolute;
+      top: 3%;
+      left: 4.5%;
+      width: 91%; }
     #evt_container .slideItem span {
       display: block;
       position: absolute;
@@ -69,11 +74,11 @@
     background: url(../images/next.png);
     right: 0; }
   #evt_container .pro-num {
-    width: 160px;
+    width: 180px;
     left: 50%;
     top: 1906px;
     font-size: 0;
-    margin-left: -80px; }
+    margin-left: -90px; }
     #evt_container .pro-num a {
       width: 31px;
       height: 32px;
@@ -89,7 +94,7 @@
       border: none;
       display: block;
       background: url(../images/input.png);
-      width: 90px;
+      width: 110px;
       height: 36px;
       line-height: 36px;
       position: absolute;
@@ -97,7 +102,8 @@
       left: 35px;
       text-align: center;
       color: #626262;
-      font-size: 20px; }
+      font-size: 18px;
+      padding: 0; }
   #evt_container .buybtn {
     width: 155px;
     height: 27px;

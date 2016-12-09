@@ -175,14 +175,14 @@
             this.trigger('complete', name, total);
             return this;
         }
-        return Resource.loadAsset(data, function(d){
+        return Resource.loadAsset(data, function loadCallback(d){
             loaded++;
             self.trigger('progress', name, loaded, total);
             if(loaded == total){
                 self.trigger('complete', name, total)
             } else {
                 data = self.resources[group[loaded]];
-                Resource.loadAsset(data, arguments.callee);
+                Resource.loadAsset(data, loadCallback);
             }
         }), this;
     }

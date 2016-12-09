@@ -1,36 +1,38 @@
 ;(function(){
+    function refreshNumber(ix){}
     function initNum(){
-        var $input = $('.pro-num input');
-        var cc = '磅';
-        $input.each(function(ix, input){
-            var $el = $(this);
-            var min = $el.attr('data-min') || 0;
-            var max = $el.attr('data-max') || 10;
-            var $minu = $el.siblings('.minus');
-            var $plus = $el.siblings('.plus');
-            $el.on('blur', function(){
-                var val = parseInt(this.value);
-                if(!val){
-                    this.value = min+cc;
-                } else if(val>max){
-                    this.value = max+cc;
-                } else {
-                    this.value = val+cc;
-                }
-            });
-            $minu.on('click', function(){
-                var val = parseInt($el.val());
-                if(val>min){
-                    $el.val((--val)+cc);
-                }
-            });
-            $plus.on('click', function(){
-                var val = parseInt($el.val());
-                if(val<max){
-                    $el.val((++val)+cc);
-                }
-            })
+        var $input = $('.pro-num input'),
+            $minus = $input.siblings('.minus'),
+            $plus = $input.siblings('.plus');
+        var items = [];
+        $('.slideItem').each(function(ix, el){
+            var ponds = $(el).attr('data-pond');
+            if(ponds){
+                items.push({
+                    ponds: ponds.split(',').map(function(str){ return str.replace(/(^\s*)|(\s*$)/g, "")}),
+                    ix: 0
+                })
+            }
+        });
+        var currentItem = items[0];
+        $minus.on('click', function(){
+            var ix = --currentItem.ix;
+            if(ix<0){
+                ix = currentItem.ix = currentItem.ponds.length-1;
+            }
+            $input.val(currentItem.ponds[ix]);
+        });
+        $plus.on('click', function(){
+            var ix = ++currentItem.ix;
+            if(ix>currentItem.ponds.length-1){
+                ix = currentItem.ix = 0;
+            }
+            $input.val(currentItem.ponds[ix]);
         })
+        return function(ix){
+            currentItem = items[ix];
+            $input.val(currentItem.ponds[currentItem.ix])
+        }
     }
 
     function BDSlider(el, options){
@@ -44,6 +46,7 @@
         this.itemWidth = this.$items.width();
         this.itemHeight = this.$items.height();
         this.isSliding = false;
+        this.slideEnd = options.slideEnd || function(ix){};
         // console.log(this.wrapHeight,this.itemHeight)
         this.position = {
             center: {
@@ -72,7 +75,7 @@
     BDSlider.prototype = {
         constructor: BDSlider,
         next: function(){
-
+            if(this.isSliding) return;
             this.current--;
             if(this.current<0){
                 this.current = this.total-1;
@@ -80,6 +83,7 @@
             this.sliding('right');
         },
         prev: function(){
+            if(this.isSliding) return;
             this.current++;
             if(this.current>=this.total){
                 this.current = 0;
@@ -87,13 +91,13 @@
             this.sliding('left');
         },
         sliding: function(direction){
-            if(this.isSliding) return;
             this.isSliding = true;
             var self = this;
             this.$items.each(function(ix, el){
                 if(ix == self.current){
                     $(el).css('z-index',3).animate(self.position.center,500, function(){
                         self.isSliding = false;
+                        self.slideEnd(self.current);
                     }).removeClass('slideRight slideLeft').addClass('slideCenter').find('span').animate({
                         bottom: '33px',
                         'font-size': '14px'
@@ -127,6 +131,16 @@
         }
     }
 
+    function initSlider(){
+        new BDSlider('#bdSlider', {
+            prev: '.slidePrev',
+            next: '.slideNext',
+            slideEnd: function(ix){
+                refreshNumber(ix);
+            }
+        })
+    }
+
     function startLoading(){
         var loader = new Loader('images/'), domLoad = document.getElementById('evt_loading');
         loader.addGroup('preload', resData);
@@ -136,11 +150,8 @@
         loader.on('complete', function(groupName){
             domLoad.style.display = 'none';
             document.getElementById('evt_container').style.display = 'block';
-            initNum();
-            new BDSlider('#bdSlider', {
-                prev: '.slidePrev',
-                next: '.slideNext'
-            })
+            refreshNumber = initNum();
+            initSlider();
         });
         loader.loadGroup('preload');
     }
