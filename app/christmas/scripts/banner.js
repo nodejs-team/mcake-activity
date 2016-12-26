@@ -108,29 +108,32 @@
         var mc = null;
         var $cris = $('.christmas'),
             $win = $(window);
-        if(christmas){
-            mc = new MovieClip('christmas_png', {
-                "c1":{"x":0,"y":0,"w":224,"h":230,"offX":2,"offY":2,"sourceW":232,"sourceH":235,duration:18},
-                "c2":{"x":0,"y":232,"w":224,"h":223,"offX":6,"offY":2,"sourceW":232,"sourceH":235,duration:30}
-            }, 'christmas_mc', christmas);
-            $cris.append('<div class="mc-logo"></div>')
-        }
+        // if(christmas){
+        //     mc = new MovieClip('christmas_png', {
+        //         "c1":{"x":0,"y":0,"w":224,"h":230,"offX":2,"offY":2,"sourceW":232,"sourceH":235,duration:18},
+        //         "c2":{"x":0,"y":232,"w":224,"h":223,"offX":6,"offY":2,"sourceW":232,"sourceH":235,duration:30}
+        //     }, 'christmas_mc', christmas);
+        //     $cris.append('<div class="mc-logo"></div>')
+        // }
         if(christmas2){
             mc = new MovieClip('christmas2_png', {
                 "b":{"x":117,"y":0,"w":115,"h":138,"offX":4,"offY":0,"sourceW":119,"sourceH":150, duration:18},
                 "a":{"x":0,"y":0,"w":115,"h":150,"offX":0,"offY":0,"sourceW":119,"sourceH":150, duration:30}
             }, 'christmas2_mc', christmas2);
         }
-        mc.gotoAndPlay(1, -1);
-        $cris.append('<a href="'+$('#bannerLink').attr('href')+'" style="position:absolute; top:0; left:0; width:100%; height:100%;"></a>');
-        $win.on('scroll', throttle(function(){
-            var st = $win.scrollTop();
-            if(st>700){
-                $cris.fadeOut();
-            } else {
-                $cris.fadeIn();
-            }
-        }, 300))
+        if(mc){
+            mc.gotoAndPlay(1, -1);
+            $cris.append('<a href="'+$('#bannerLink').attr('href')+'" style="position:absolute; top:0; left:0; width:100%; height:100%;"></a>');
+            $win.on('scroll', throttle(function(){
+                var st = $win.scrollTop();
+                if(st>700){
+                    $cris.fadeOut();
+                } else {
+                    $cris.fadeIn();
+                }
+            }, 300))
+        }
+
         return mc;
     };
     function bindAnimate(el, hasDelay){

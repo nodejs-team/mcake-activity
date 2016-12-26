@@ -74,6 +74,12 @@
         delay();
     }
 
+    function initTopIcon(){
+        var icon = $('.top_icon'),
+            winWidth = $(window).width();
+        icon.css('top', 360 * (winWidth<1280? 1280 : winWidth) / 1920);
+    }
+
     function startLoading(){
         var loader = new Loader('images/'), domLoad = document.getElementById('evt_loading');
         loader.addGroup('preload', resData);
@@ -88,6 +94,7 @@
                 next: '.next',
                 autoplay: true
             });
+            initTopIcon();
         });
         loader.loadGroup('preload');
     }

@@ -40,8 +40,6 @@
         } else {
             this.drawImage = this.drawImageByImage;
         }
-        this.setFrame(this.currentFrame);
-        this.initEvent();
     }
     var proto = MovieClip.prototype;
     proto.play = function(repeatCount){
@@ -106,19 +104,30 @@
 
 
 ;(function(global, MovieClip){
-    var CanvasMovieClip = MovieClip;
-    var DivMovieClip = function(canvas, img, frames, options){
-        CanvasMovieClip.apply(this, arguments);
+    var TempMovieClip = MovieClip;
+
+    var CanvasMovieClip = function(canvas, img, frames, options){
+        TempMovieClip.apply(this, arguments);
+        this.setFrame(this.currentFrame);
+        this.initEvent();
     }
-    DivMovieClip.prototype = CanvasMovieClip.prototype;
-    DivMovieClip.constructor = DivMovieClip;
+    CanvasMovieClip.prototype = TempMovieClip.prototype;
+    CanvasMovieClip.prototype.constructor = CanvasMovieClip;
+
+    var DivMovieClip = function(canvas, img, frames, options){
+        TempMovieClip.apply(this, arguments);
+        this.setFrame(this.currentFrame);
+        this.initEvent();
+    }
+    DivMovieClip.prototype = TempMovieClip.prototype;
+    DivMovieClip.prototype.constructor = DivMovieClip;
     var proto = DivMovieClip.prototype;
 
 
 
     MovieClip = function(canvas, img, frames, options){
         canvas = typeof canvas === 'string' ? document.getElementById(canvas) : canvas;
-        if(canvas.tagName === 'canvas'){
+        if(canvas.tagName.toLowerCase() === 'canvas'){
             return new CanvasMovieClip(canvas, img, frames, options);
         } else {
             return new DivMovieClip(canvas, img, frames, options);
