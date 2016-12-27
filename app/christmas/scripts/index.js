@@ -54,22 +54,22 @@
     }
     function initScroll(){
         scrollAnimate('#evt_container', [
-            {$dom: $('.cake1'), x:-300, y:-300}
-            ,{$dom: $('.fruit1'), x:300, y:300}
-            ,{$dom: $('.word1'), x:-300, y:300}
-            ,{$dom: $('.ar1'), x:300, y:-300}
-            ,{$dom: $('.ar2'), x:-300, y:300}
-            ,{$dom: $('.word2'), x:300, y:300}
-            ,{$dom: $('.photo1'), x:-300, y:-300}
-            ,{$dom: $('.cake3'), x:300, y:300}
-            ,{$dom: $('.word3'), x:-300, y:300}
-            ,{$dom: $('.ar3'), x:300, y:-300}
-            ,{$dom: $('.ar4'), x:300, y:0}
-            ,{$dom: $('.word4'), x:300, y:300}
-            ,{$dom: $('.ar5'), x:300, y:300}
-            ,{$dom: $('.cake5'), x:-300, y:-300}
-            ,{$dom: $('.word5'), x:-300, y:300}
-            ,{$dom: $('.fruit4'), x:300, y:-300}
+            {dom: $('.cake1'), x:-300, y:-300}
+            ,{dom: $('.fruit1'), x:300, y:300}
+            ,{dom: $('.word1'), x:-300, y:300}
+            ,{dom: $('.ar1'), x:300, y:-300}
+            ,{dom: $('.ar2'), x:-300, y:300}
+            ,{dom: $('.word2'), x:300, y:300}
+            ,{dom: $('.photo1'), x:-300, y:-300}
+            ,{dom: $('.cake3'), x:300, y:300}
+            ,{dom: $('.word3'), x:-300, y:300}
+            ,{dom: $('.ar3'), x:300, y:-300}
+            ,{dom: $('.ar4'), x:300, y:0}
+            ,{dom: $('.word4'), x:300, y:300}
+            ,{dom: $('.ar5'), x:300, y:300}
+            ,{dom: $('.cake5'), x:-300, y:-300}
+            ,{dom: $('.word5'), x:-300, y:300}
+            ,{dom: $('.fruit4'), x:300, y:-300}
         ])
     }
     function initMovieClip(res){

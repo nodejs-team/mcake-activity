@@ -1,0 +1,259 @@
+#evt_content {
+  background: #f5f5f5; }
+  #evt_content div {
+    position: absolute; }
+  #evt_content a {
+    display: block;
+    position: absolute; }
+  #evt_content img {
+    width: 100%; }
+  #evt_content .icon_recommend {
+    width: 0.96rem; }
+  #evt_content .icon_buy {
+    width: 2.17333rem; }
+  #evt_content .imglink {
+    width: 100%;
+    height: 100%;
+    text-indent: -9999px;
+    top: 0;
+    left: 0; }
+  #evt_content .border {
+    width: 0;
+    height: 0;
+    border-radius: 50% 50%;
+    background: #dcb030;
+    top: 40%;
+    left: 40%;
+    box-shadow: 0px 0px 100px 30px #dcb030; }
+  #evt_content .layer {
+    position: relative;
+    width: 10rem;
+    overflow: hidden; }
+  #evt_content .layer1 {
+    height: 17.26667rem;
+    z-index: 2; }
+  #evt_content .layer2 {
+    height: 31.18667rem;
+    margin-top: -0.90667rem; }
+  #evt_content .layer3 {
+    height: 6.70667rem; }
+  #evt_content .top_bg {
+    width: 10rem; }
+  #evt_content .top_2017 {
+    width: 3.72rem;
+    top: 1.12rem;
+    left: 3.2rem; }
+  #evt_content .top_title {
+    width: 8.8rem;
+    top: 3.42667rem;
+    left: 0.62667rem; }
+  #evt_content .top_text {
+    width: 5.2rem;
+    top: 5.69333rem;
+    left: 2.34667rem; }
+    #evt_content .top_text .slideText {
+      width: 2.22667rem;
+      top: 0.53333rem;
+      left: 1.6rem;
+      display: none; }
+    #evt_content .top_text .slideMask {
+      width: 2.22667rem;
+      height: 0.50667rem;
+      top: 0.53333rem;
+      left: 1.6rem;
+      background: url(../images/slide_mask.jpg) -1.12rem 0rem;
+      background-size: 3.96rem 1rem;
+      -webkit-mask-image: url(../images/slide_text.png);
+      -webkit-mask-size: 2.22667rem 0.50667rem;
+      animation: masking 4s linear infinite; }
+  #evt_content .p1 {
+    top: 7rem;
+    left: 6.8rem;
+    position: relative; }
+    #evt_content .p1 .icon_recommend {
+      top: 0.29333rem;
+      left: 0.92rem; }
+    #evt_content .p1 .icon_buy {
+      top: 2.46667rem;
+      left: 0.36rem; }
+  #evt_content .p1_name {
+    width: 2.32rem;
+    top: 1.28rem;
+    left: 0.26667rem; }
+  #evt_content .p1_img {
+    width: 9.54667rem;
+    top: 10.6rem;
+    left: 0.45333rem; }
+  #evt_content .p1_fork {
+    width: 2.57333rem;
+    top: 14.08rem;
+    left: 0; }
+  #evt_content .p1_arrow {
+    width: 1.30667rem;
+    top: 2.4rem;
+    left: -1.16rem; }
+  #evt_content .p2 {
+    top: 0rem;
+    left: 6.02667rem;
+    position: relative; }
+    #evt_content .p2 .icon_recommend {
+      top: 0.57333rem;
+      left: 1.29333rem; }
+    #evt_content .p2 .icon_buy {
+      top: 2.74667rem;
+      left: 0.73333rem; }
+  #evt_content .p2_name {
+    width: 2.92rem;
+    top: 1.65333rem;
+    left: 0.41333rem; }
+  #evt_content .p2_img {
+    width: 6.12rem;
+    top: -1.6rem;
+    left: 0; }
+  #evt_content .p2_arrow {
+    width: 1.44rem;
+    top: 3.09333rem;
+    left: -0.06667rem; }
+  #evt_content .p2_photo {
+    width: 5.38667rem;
+    top: 3.78667rem;
+    left: 3.98667rem; }
+  #evt_content .p2_fork {
+    width: 4.04rem;
+    top: 7.05333rem;
+    left: 2.10667rem; }
+  #evt_content .p3 {
+    top: 11.18667rem;
+    left: 2.10667rem;
+    position: relative; }
+    #evt_content .p3 .icon_recommend {
+      top: 0.25333rem;
+      left: 0.88rem; }
+    #evt_content .p3 .icon_buy {
+      top: 2.42667rem;
+      left: 0.32rem; }
+  #evt_content .p3_name {
+    width: 1.64rem;
+    top: 1.32rem;
+    left: 0.56rem; }
+  #evt_content .p3_img {
+    width: 7.2rem;
+    top: 11.14667rem;
+    right: 0; }
+  #evt_content .p3_arrow {
+    width: 1.68rem;
+    top: 1.28rem;
+    left: 1.74667rem; }
+  #evt_content .p3_fork {
+    width: 3.21333rem;
+    top: 12.46667rem;
+    left: 0; }
+  #evt_content .p4 {
+    top: 20rem;
+    left: 7.04rem;
+    position: relative; }
+    #evt_content .p4 .icon_recommend {
+      top: 0.4rem;
+      left: 0.93333rem; }
+    #evt_content .p4 .icon_buy {
+      top: 2.56rem;
+      left: 0.36rem; }
+  #evt_content .p4_img {
+    width: 5.72rem;
+    top: 19.8rem;
+    left: 0.21333rem; }
+  #evt_content .p4_arrow {
+    width: 1.62667rem;
+    top: 0.82667rem;
+    left: -0.77333rem; }
+  #evt_content .p4_fork {
+    width: 1.84rem;
+    top: 19.2rem;
+    left: 5.70667rem; }
+  #evt_content .p4_name {
+    width: 2.08rem;
+    top: 1.45333rem;
+    left: 0.38667rem; }
+  #evt_content .p5 {
+    top: 27.13333rem;
+    left: 0.96rem;
+    position: relative; }
+    #evt_content .p5 .icon_recommend {
+      top: 0.29333rem;
+      left: 0.84rem; }
+    #evt_content .p5 .icon_buy {
+      top: 2.46667rem;
+      left: 0.28rem; }
+  #evt_content .p5_name {
+    width: 1.21333rem;
+    top: 1.36rem;
+    left: 0.76rem; }
+  #evt_content .p5_img {
+    width: 5.97333rem;
+    top: 22.88rem;
+    left: 1.44rem; }
+  #evt_content .p5_arrow {
+    width: 1.49333rem;
+    top: 1.26667rem;
+    left: 2.37333rem; }
+  #evt_content .p5_photo {
+    width: 4.73333rem;
+    top: 24.33333rem;
+    right: 0; }
+  #evt_content .p5_fork {
+    width: 2.17333rem;
+    top: 25.70667rem;
+    left: 0; }
+  #evt_content .cover {
+    width: 10rem;
+    top: 0;
+    left: 0;
+    pointer-events: none; }
+  #evt_content .i1 {
+    width: 1.28rem;
+    top: 0.41333rem;
+    left: 8.45333rem; }
+  #evt_content .i2, #evt_content i3 {
+    width: 2.08rem; }
+  #evt_content .i2 {
+    top: 7.24rem;
+    left: -0.41333rem; }
+  #evt_content .i3 {
+    top: 9.52rem;
+    left: 8.76rem; }
+  #evt_content .i4 {
+    width: 0.70667rem;
+    top: 17.01333rem;
+    left: 8.66667rem; }
+  #evt_content .i5, #evt_content .i6 {
+    width: 1.16rem; }
+  #evt_content .i5 {
+    top: 18.66667rem;
+    left: 0.81333rem; }
+  #evt_content .i6 {
+    top: 23.22667rem;
+    left: 8.14667rem; }
+  #evt_content .rule {
+    color: #917e57;
+    background: #ffffff; }
+    #evt_content .rule h2 {
+      font-size: 0.4rem;
+      margin: 0.85333rem auto 0.24rem auto;
+      width: 8.53333rem; }
+    #evt_content .rule p {
+      font-size: 0.32rem;
+      line-height: 0.42667rem;
+      width: 8.53333rem;
+      margin: 0 auto; }
+
+@keyframes masking {
+  0% {
+    background-position: -1.64rem 0rem; }
+  100%, 40% {
+    background-position: 2.32rem 0rem; } }
+
+@-webkit-keyframes masking {
+  0% {
+    background-position: -1.64rem 0rem; }
+  100%, 40% {
+    background-position: 2.32rem 0rem; } }

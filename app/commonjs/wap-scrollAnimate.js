@@ -38,6 +38,7 @@
 
     function initItems(items){
         items.forEach(function(item){
+            item.$dom = $(item.dom);
             item.top = item.$dom.offset().top;
             item.isShow = false;
             $.Velocity.hook(item.$dom, 'opacity', 0);

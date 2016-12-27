@@ -17,6 +17,9 @@ var gulp = require('gulp'),
     gulpwatch = require('gulp-watch'),
     cheerio = require('gulp-cheerio'),
     path = require('path'),
+	imagemin = require('gulp-imagemin'),
+	pngquant = require('imagemin-pngquant'),
+    cache = require('gulp-cache'),
     del = require('del'),
     fs = require('fs'),
     argv = require('yargs')
@@ -50,8 +53,17 @@ gulp.task('tinypng', function () {
 			key: buildConfig.tinypngKey,
 			log: true
 		}))
-		.pipe(gulp.dest('app/'+projectName+'/images'));
+		.pipe(gulp.dest('app/'+projectName+'/tinypng'));
 });
+
+gulp.task('imagemin', function(){
+	gulp.src('app/'+projectName+'/images/**/*.{png,jpg,jpeg}')
+		.pipe(cache(imagemin({
+            progressive: true,
+			use: [pngquant()]
+		})))
+		.pipe(gulp.dest('app/'+projectName+'/tinypng'));
+})
 
 /**
  * gulp server
@@ -213,7 +225,7 @@ function buildUseref(){
 
 function copyImg(){
     return new Promise(function(resolve,reject){
-        gulp.src('app/'+projectName+'/images/**/*.{png,jpg,jpeg,gif,mp4}')
+        gulp.src('app/'+projectName+'/tinypng/**/*.{png,jpg,jpeg,gif,mp4}')
             .pipe(gulp.dest('build/'+projectName+'/images'))
             .on('end', resolve)
     })
