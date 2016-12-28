@@ -23,10 +23,6 @@
     }
     function MovieClip(canvas, img, frames, options){
         var opts = options || {};
-        canvas = typeof canvas === 'string' ? document.getElementById(canvas) : canvas;
-        this.ctx = canvas.getContext('2d');
-        this.width = parseInt(canvas.width);
-        this.height = parseInt(canvas.height);
         this.frames = frames;
         this.frameRate = opts.frameRate || 10;
         this.img = img;
@@ -36,14 +32,16 @@
         this.currentFrame = 0;
         this.ticker = new Ticker(this.frameRate);
         if(this.img){
-            this.drawImage = this.drawImageBySprite;
+            this.drawImage = this.drawBySprite;
         } else {
-            this.drawImage = this.drawImageByImage;
+            this.drawImage = this.drawByImage;
         }
     }
     var proto = MovieClip.prototype;
     proto.play = function(repeatCount){
-        this.repeatCount = repeatCount;
+        if(repeatCount){
+            this.repeatCount = repeatCount;
+        }
         this.ticker.start();
     }
     proto.pause = function(){
@@ -66,11 +64,11 @@
         this.drawImage(this.frames[num]);
         this.currentFrame = num;
     }
-    proto.drawImageBySprite = function(frame){
+    proto.drawBySprite = function(frame){
         this.ctx.clearRect(0,0,this.width, this.height);
         this.ctx.drawImage(this.img, frame.x, frame.y, frame.w, frame.h, frame.offX || 0, frame.offY || 0, frame.w, frame.h);
     }
-    proto.drawImageByImage = function(frame){
+    proto.drawByImage = function(frame){
         this.ctx.clearRect(0,0,this.width, this.height);
         this.ctx.drawImage(frame.img, frame.offX || 0, frame.offY || 0);
     }
@@ -108,20 +106,44 @@
 
     var CanvasMovieClip = function(canvas, img, frames, options){
         TempMovieClip.apply(this, arguments);
+        this.ctx = canvas.getContext('2d');
+        this.width = parseInt(canvas.width);
+        this.height = parseInt(canvas.height);
         this.setFrame(this.currentFrame);
         this.initEvent();
     }
-    CanvasMovieClip.prototype = TempMovieClip.prototype;
+    CanvasMovieClip.prototype = Object.create(TempMovieClip.prototype);
     CanvasMovieClip.prototype.constructor = CanvasMovieClip;
 
-    var DivMovieClip = function(canvas, img, frames, options){
+    var DivMovieClip = function(container, img, frames, options){
         TempMovieClip.apply(this, arguments);
+        this.el = document.createElement('div');
+        container.appendChild(this.el);
+        if(img){
+            this.el.style.backgroundImage = 'url('+img.src+')';
+        }
         this.setFrame(this.currentFrame);
         this.initEvent();
     }
-    DivMovieClip.prototype = TempMovieClip.prototype;
+    DivMovieClip.prototype = Object.create(TempMovieClip.prototype);
     DivMovieClip.prototype.constructor = DivMovieClip;
     var proto = DivMovieClip.prototype;
+    proto.drawBySprite = function(frame){
+        Object.assign(this.el.style, {
+            width: frame.w+'px',
+            height: frame.h+'px',
+            backgroundPosition: '-'+frame.x+'px -'+frame.y+'px',
+            margin: frame.offY+'px 0 0 '+frame.offX+'px'
+        })
+    }
+    proto.drawByImage = function(frame){
+        Object.assign(this.el.style, {
+            width: frame.w+'px',
+            height: frame.h+'px',
+            backgroundImage: frame.img.src,
+            margin: frame.offY+'px 0 0 '+frame.offX+'px'
+        })
+    }
 
 
 
