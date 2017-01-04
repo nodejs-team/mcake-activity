@@ -224,7 +224,7 @@ function buildUseref(){
 
 function copyImg(){
     return new Promise(function(resolve,reject){
-        gulp.src('app/'+projectName+'/tinypng/**/*.{png,jpg,jpeg,gif,mp4}')
+        gulp.src('app/'+projectName+'/tinypng/**/*.{png,jpg,jpeg}')
             .pipe(gulp.dest('build/'+projectName+'/images'))
             .on('end', resolve)
     })

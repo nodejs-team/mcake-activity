@@ -162,13 +162,13 @@
         var $boxText = $('.boxText'),
             $boxbang = $('.boxbang'),
             scrollItem = [
-                {$dom: $boxText, x:0, y:-80},
-                {$dom: $boxbang, x:0, y:300}
+                {dom: $boxText, x:0, y:-80},
+                {dom: $boxbang, x:0, y:300}
             ];
         scrollAnimate('.lightCakeWrap', scrollItem);
     }
     function cakeMovieClip(){
-        new MovieClip(document.getElementById('cakeMovieClip'), false, {"frameRate":10,"frames":[
+        new MovieClip(document.getElementById('cakeMovieClip'), false, [
             {img: loader.get('heart1_png').data, duration:3}
             ,{img: loader.get('heart2_png').data}
             ,{img: loader.get('heart3_png').data}
@@ -201,7 +201,7 @@
             ,{img: loader.get('pumpkin6_png').data}
             ,{img: loader.get('pumpkin7_png').data}
             ,{img: loader.get('pumpkin8_png').data}
-        ]}, {repeatCount:1}).play();
+        ], {repeatCount:1}).play();
     }
     function showLightCake(){
         var $lightCakeWrap = $('.lightCakeWrap');
@@ -299,13 +299,11 @@
         loader.on('complete', function(groupName){
             if(groupName == 'loading'){
                 $loading.show();
-                new MovieClip(document.getElementById('slide'), this.get('loading-slide_png').data, {
-                    "frameRate":10,
-                    "frames":[
+                new MovieClip(document.getElementById('slide'), this.get('loading-slide_png').data, [
                         {"x":0,"y":0,"w":618,"h":311, duration:1},
                         {"x":618,"y":0,"w":618,"h":311, duration:1},
                         {"x":0,"y":311,"w":618,"h":311, duration:1}
-                    ]}).play();
+                    ]).play();
                 loadPreload();
             }
         })
