@@ -61,10 +61,11 @@
       height: 0.50667rem;
       top: 0.53333rem;
       left: 1.6rem;
-      background: url(../images/slide_mask.jpg) -1.12rem 0rem;
-      background-size: 3.96rem 1rem;
+      background: url(../images/slide_mask.jpg) -2.13333rem 0rem;
+      background-size: 5.50667rem 1rem;
       -webkit-mask-image: url(../images/slide_text.png);
       -webkit-mask-size: 2.22667rem 0.50667rem;
+      -webkit-animation: masking 4s linear infinite;
       animation: masking 4s linear infinite; }
   #evt_content .p1 {
     top: 7rem;
@@ -248,12 +249,12 @@
 
 @keyframes masking {
   0% {
-    background-position: -1.64rem 0rem; }
+    background-position: -2.13333rem 0rem; }
   100%, 40% {
-    background-position: 2.32rem 0rem; } }
+    background-position: 3.37333rem 0rem; } }
 
 @-webkit-keyframes masking {
   0% {
-    background-position: -1.64rem 0rem; }
+    background-position: -2.13333rem 0rem; }
   100%, 40% {
-    background-position: 2.32rem 0rem; } }
+    background-position: 3.37333rem 0rem; } }

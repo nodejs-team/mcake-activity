@@ -2,8 +2,8 @@
   @return ($n * 10 / 750) * 1rem; //设计稿一般都是750宽
 }
 
-$maskWidth:297;$maskHeight:75;
-$maskX:-123;
+$maskWidth:413;$maskHeight:75;
+$maskX:-160;
 #evt_content{background:#f5f5f5;
   div{position:absolute;}
   a{display:block; position:absolute;}
@@ -21,7 +21,7 @@ $maskX:-123;
   .top_title{width:px2rem(660); top:px2rem(257); left:px2rem(47);}
   .top_text{width:px2rem(390); top:px2rem(427); left:px2rem(176);
     .slideText{width:px2rem(167); top:px2rem(40); left:px2rem(120); display:none;}
-    .slideMask{width:px2rem(167); height:px2rem(38); top:px2rem(40); left:px2rem(120); background:url(../images/slide_mask.jpg) px2rem(-84) px2rem(0); background-size:px2rem($maskWidth) px2rem($maskHeight); -webkit-mask-image: url(../images/slide_text.png); -webkit-mask-size:px2rem(167) px2rem(38); animation:masking 4s linear infinite}
+    .slideMask{width:px2rem(167); height:px2rem(38); top:px2rem(40); left:px2rem(120); background:url(../images/slide_mask.jpg) px2rem($maskX) px2rem(0); background-size:px2rem($maskWidth) px2rem($maskHeight); -webkit-mask-image: url(../images/slide_text.png); -webkit-mask-size:px2rem(167) px2rem(38);  -webkit-animation:masking 4s linear infinite;  animation:masking 4s linear infinite}
   }
 
   $p1top:525; $p1left:510;

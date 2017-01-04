@@ -1,8 +1,6 @@
 var gulp = require('gulp'),
     tinypng = require('gulp-tinypng-compress'),
     webserver = require('gulp-webserver'),
-    os=require('os'),
-    ifaces=os.networkInterfaces(),
     sass = require('gulp-sass'),
     useref = require('gulp-useref'),
     gulpif = require('gulp-if'),
@@ -11,7 +9,7 @@ var gulp = require('gulp'),
     concat = require('gulp-concat'),
     uglify = require('gulp-uglify'),
     cssmin = require('gulp-minify-css'),
-    ftp = require('gulp-ftp'),
+    ftp = require( 'vinyl-ftp' ),
     gutil = require('gulp-util'),
     lazypipe = require('lazypipe'),
     gulpwatch = require('gulp-watch'),
@@ -119,14 +117,15 @@ gulp.task('build', function(){
  * gulp upload -n projectName
  */
 gulp.task('upload', function(){
-	return gulp.src('build/'+projectName+'/**/*')
-		.pipe(ftp({
-			host: buildConfig.ftp.host,
-			user: buildConfig.ftp.user,
-			pass: buildConfig.ftp.pass,
-			remotePath: buildConfig.ftp.remotePath+ '/' + projectName
-		}))
-		.pipe(gutil.noop())
+    var conn = ftp.create( {
+        host:     buildConfig.ftp.host,
+        user:     buildConfig.ftp.user,
+        password: buildConfig.ftp.pass,
+        parallel: 10,
+        log:      gutil.log
+    } );
+    return gulp.src('build/'+projectName+'/**/*')
+        .pipe(conn.dest( buildConfig.ftp.remotePath + projectName ))
 
 })
 

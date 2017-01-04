@@ -1,0 +1,14 @@
+#evt_container {
+  height: 1454px; }
+  #evt_container img {
+    width: 100%; }
+  #evt_container div {
+    position: absolute; }
+  #evt_container .a {
+    width: 217px;
+    top: 10px;
+    left: 10px; }
+  #evt_container .b {
+    width: 833px;
+    top: 200px;
+    left: 200px; }
