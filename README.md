@@ -1,4 +1,5 @@
 # mcake-activity
+项目采用flexible布局方案，关于flexible可以参见[介绍](http://www.w3cplus.com/mobile/lib-flexible-for-html5-layout.html)
 * [初始化项目](#init)
 * [开发项目](#develop)
 * [打包项目](#build)
