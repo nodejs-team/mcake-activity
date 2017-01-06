@@ -23,6 +23,8 @@ var gulp = require('gulp'),
     argv = require('yargs')
         .alias('n', 'name')
         .alias('t', 'type')
+		.alias('i', 'img')
+		.alias('u', 'upload')
         .argv
 
 
@@ -109,7 +111,11 @@ gulp.task('develop', function(){
  * gulp build --name projectName
  */
 gulp.task('build', function(){
-    cleanBuild().then(buildUseref).then(copyImg);
+    cleanBuild().then(buildUseref).then(copyImg).then(function(){
+    	if(argv.upload){
+    		runSequence(['upload'])
+		}
+	});
 })
 
 /**
@@ -224,9 +230,15 @@ function buildUseref(){
 
 function copyImg(){
     return new Promise(function(resolve,reject){
-        gulp.src('app/'+projectName+'/tinypng/**/*.{png,jpg,jpeg}')
-            .pipe(gulp.dest('build/'+projectName+'/images'))
-            .on('end', resolve)
+    	var imageFolder = 'images';
+    	fs.stat('app/'+projectName+'/tinypng', function(err, stats){
+    		if(!err){
+    			imageFolder = 'tinypng';
+			}
+            gulp.src('app/'+projectName+'/'+imageFolder+'/**/*.{png,jpg,jpeg}')
+                .pipe(gulp.dest('build/'+projectName+'/images'))
+                .on('end', resolve)
+		})
     })
 }
 
