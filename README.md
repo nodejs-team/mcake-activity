@@ -4,7 +4,7 @@
 * [打包项目](#build)
 * [上传项目](#upload)
 * [工具函数](#tools)
-######
+
 <h2 id="init">初始化项目</h2>
 gulp init [-n projectName] [-t type]  
 projectName：项目名称，默认获取package.json中的projectName  
