@@ -7,7 +7,7 @@
 * [工具函数](#tools)
 
 <h2 id="init">初始化项目</h2>
-gulp init [-n projectName] [-t type]  
+gulp init [-n projectName] [--wap]
 projectName：项目名称，默认获取package.json中的projectName  
 type：pc或者wap，默认pc  
 从template目录中拷贝对应类型的文件夹

@@ -1,0 +1,33 @@
+@function px2rem($n) {
+  @return ($n * 10 / 750) * 1rem; //设计稿一般都是750宽
+}
+
+body{background:#f0f0f1;}
+
+#evt_content{
+  div{position:absolute;}
+  img{width:100%;}
+  a{display:block; position:absolute;}
+  .content1{height:px2rem(1350); position:relative;}
+  .content2{height:px2rem(2033); position:relative;}
+  .content3{height:px2rem(460); position:relative;}
+  .flower{width:px2rem(426); top:px2rem(0); left:px2rem(108);}
+  .title{width:px2rem(456); top:px2rem(353); left:px2rem(157);}
+  .model{width:px2rem(750); top:px2rem(0); left:px2rem(0);}
+  .arrow{width:px2rem(64); bottom:0; left:50%; margin:0 0 px2rem(-32) px2rem(-32);}
+  .text1{width:px2rem(273); top:px2rem(151); left:px2rem(384);}
+  .img1{width:px2rem(542); top:px2rem(337); left:0}
+  $a1Top:435; $a1Left:429;
+  .area1{top:px2rem($a1Top); left:px2rem($a1Left);}
+  .price{width:px2rem(166); top:px2rem(450-$a1Top); left:px2rem(438-$a1Left);}
+  .btn{width:px2rem(123); top:px2rem(509-$a1Top); left:px2rem(459-$a1Left);}
+  .img2{width:px2rem(424); top:px2rem(876); right:0;}
+  .text2{width:px2rem(312); top:px2rem(892); left:px2rem(93);}
+  .img3{width:px2rem(307); top:px2rem(1515); left:px2rem(100);}
+  .text3{width:px2rem(201); top:px2rem(1493); left:px2rem(437);}
+  .bg{width:px2rem(750); top:px2rem(40); left:0;}
+  .rule{color:#555555; background:#ffffff; overflow:hidden;
+    h2{font-size:px2rem(25); margin:px2rem(44) 0 px2rem(10) px2rem(50);}
+    p{font-size:px2rem(22); margin:0 0 0 px2rem(83); text-indent:px2rem(-33); width:px2rem(620); line-height:px2rem(30)}
+  }
+}

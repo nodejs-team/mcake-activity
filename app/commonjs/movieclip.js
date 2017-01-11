@@ -1,3 +1,29 @@
+/**
+ new MovieClip(canvasID, imgObject, clipArray).play();
+ */
+
+/**
+ * Example
+ var imgClip = new Image();
+ new MovieClip('candle', imgClip, [
+    {"x":0,"y":0,"w":245,"h":128,"offX":0,"offY":0,"sourceW":245,"sourceH":128, duration:2},
+    {"x":0,"y":130,"w":245,"h":128,"offX":0,"offY":0,"sourceW":245,"sourceH":128, duration:2},
+    {"x":0,"y":260,"w":245,"h":128,"offX":0,"offY":0,"sourceW":245,"sourceH":128, duration:2},
+    {"x":247,"y":130,"w":245,"h":128,"offX":0,"offY":0,"sourceW":245,"sourceH":128, duration:2},
+    {"x":247,"y":0,"w":245,"h":128,"offX":0,"offY":0,"sourceW":245,"sourceH":128, duration:2}
+ ]).play();
+ */
+
+/**
+ * Example2
+ var imgArray = [new Image(),new Image(),new Image()]
+ new MovieClip('candle', null, [
+    {img: imgArray[0], duration:2},
+    {img: imgArray[1], duration:2},
+    {img: imgArray[2], duration:2}
+ ]).play();
+ */
+
 ;(function(global, PubSub){
     if(typeof PubSub==='undefined') return alert('MovieClip依赖pubsub模块'),null;
 

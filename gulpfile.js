@@ -22,7 +22,6 @@ var gulp = require('gulp'),
     fs = require('fs'),
     argv = require('yargs')
         .alias('n', 'name')
-        .alias('t', 'type')
 		.alias('i', 'img')
 		.alias('u', 'upload')
         .argv
@@ -136,8 +135,8 @@ gulp.task('upload', function(){
 })
 
 /**
- * gulp init -n projectName --type pc
- * gulp init -n projectName -t wap
+ * gulp init -n projectName --pc
+ * gulp init -n projectName --wap
  */
 gulp.task('init', function(){
     var type = argv.wap  ? 'wap' : 'pc';

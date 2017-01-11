@@ -25,6 +25,16 @@
             ,{dom: '.p5_photo', x:300, y:200}
         ])
     }
+    function initFloater(){
+        var $f = $('#floater');
+        if($f.length>0){
+            var $r = $f.find('.rule')
+            $f.show();
+            $f.find('.btn').on('click', function(){
+                $r.toggle();
+            })
+        }
+    }
     function initMask(){
         if(supportCSS3('-webkit-mask-image')){
 
@@ -57,6 +67,7 @@
             document.getElementById('evt_content').style.display = 'block';
             initMask();
             initScroll();
+            initFloater();
         });
         loader.loadGroup('preload');
     }

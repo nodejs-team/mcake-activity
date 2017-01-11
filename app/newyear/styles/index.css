@@ -248,6 +248,33 @@
       width: 8.53333rem;
       margin: 0 auto; }
 
+.floater {
+  position: fixed;
+  top: 0.18667rem;
+  right: 0.14667rem;
+  z-index: 99;
+  font-size: 0; }
+  .floater img {
+    width: 3.02667rem; }
+  .floater .rule {
+    width: 2.53333rem;
+    padding: 0.2rem;
+    border: 1px solid #e86d9f;
+    background: #f9f3f6;
+    color: #e86d9f;
+    border-radius: 3px;
+    font-size: 0.26667rem;
+    margin: 0 0 0 -0.06667rem; }
+    .floater .rule p {
+      margin: 0;
+      line-height: 0.32rem; }
+  .floater .btn {
+    width: 3.02667rem;
+    height: 3.24rem;
+    position: absolute;
+    top: 0;
+    left: 0; }
+
 @keyframes masking {
   0% {
     background-position: -2.13333rem 0rem; }

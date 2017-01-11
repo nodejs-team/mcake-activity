@@ -1,4 +1,24 @@
-;(function(global){
+/**
+ scrollAnimate(container, scrollDomList)
+ */
+
+/**
+ * Example
+ window.scrollAnimate('#evt_container', [
+    {dom: '.img1', x:-200, y:0}
+    ,{dom: '.text1', x:200, y:-200}
+    ,{dom: '.area1', x:200, y:200}
+    ,{dom: '.img2', x:200, y:0}
+    ,{dom: '.text2', x:-200, y:200}
+    ,{dom: '.img3', x:-200, y:0}
+    ,{dom: '.text3', x:200, y:200}
+ ])
+ */
+
+;(function(global, $, IScroll){
+    if(typeof $==='undefined') return alert('ScrollAnimate依赖jquery'),null;
+    if(typeof IScroll==='undefined') return alert('ScrollAnimate依赖IScroll'),null;
+    if(typeof $.Velocity==='undefined') return alert('ScrollAnimate依赖Velocity'),null;
     var useIScroll = isIphone(),slTop=0,myScroll,wrapHeight = $(window).height();
     function isIphone(){
         var ua = navigator.userAgent.toLowerCase();
@@ -76,4 +96,4 @@
         }
         scrollItems(items, slTop);
     }
-})(window)
+})(window, $, IScroll)

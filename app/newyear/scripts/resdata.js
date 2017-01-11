@@ -173,5 +173,10 @@ var resData = [
         "name":"top_title_png",
         "type":"image",
         "url":"top_title.png"
+    },
+    {
+        "name":"floater_png",
+        "type":"image",
+        "url":"floater.png"
     }
 ];
