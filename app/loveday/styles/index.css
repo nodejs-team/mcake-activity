@@ -53,6 +53,11 @@ body {
   width: 7.22667rem;
   top: 4.49333rem;
   left: 0; }
+  #evt_content .img1 a {
+    width: 3.46667rem;
+    height: 3.46667rem;
+    top: -0.26667rem;
+    left: 0.66667rem; }
 
 #evt_content .area1 {
   top: 5.8rem;
@@ -72,6 +77,11 @@ body {
   width: 5.65333rem;
   top: 11.68rem;
   right: 0; }
+  #evt_content .img2 a {
+    width: 4.8rem;
+    height: 5.33333rem;
+    top: -0.26667rem;
+    left: 0.93333rem; }
 
 #evt_content .text2 {
   width: 4.16rem;
@@ -82,6 +92,11 @@ body {
   width: 4.09333rem;
   top: 20.2rem;
   left: 1.33333rem; }
+  #evt_content .img3 a {
+    width: 4.4rem;
+    height: 4.66667rem;
+    top: -0.13333rem;
+    left: -0.13333rem; }
 
 #evt_content .text3 {
   width: 2.68rem;

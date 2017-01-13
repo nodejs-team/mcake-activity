@@ -16,14 +16,20 @@ body{background:#f0f0f1;}
   .model{width:px2rem(750); top:px2rem(0); left:px2rem(0);}
   .arrow{width:px2rem(64); bottom:0; left:50%; margin:0 0 px2rem(-32) px2rem(-32);}
   .text1{width:px2rem(273); top:px2rem(151); left:px2rem(384);}
-  .img1{width:px2rem(542); top:px2rem(337); left:0}
+  .img1{width:px2rem(542); top:px2rem(337); left:0;
+    a{width:px2rem(260); height:px2rem(260); top:px2rem(-20); left:px2rem(50)}
+  }
   $a1Top:435; $a1Left:429;
   .area1{top:px2rem($a1Top); left:px2rem($a1Left);}
   .price{width:px2rem(166); top:px2rem(450-$a1Top); left:px2rem(438-$a1Left);}
   .btn{width:px2rem(123); top:px2rem(509-$a1Top); left:px2rem(459-$a1Left);}
-  .img2{width:px2rem(424); top:px2rem(876); right:0;}
+  .img2{width:px2rem(424); top:px2rem(876); right:0;
+    a{width:px2rem(360); height:px2rem(400); top:px2rem(-20); left:px2rem(70)}
+  }
   .text2{width:px2rem(312); top:px2rem(892); left:px2rem(93);}
-  .img3{width:px2rem(307); top:px2rem(1515); left:px2rem(100);}
+  .img3{width:px2rem(307); top:px2rem(1515); left:px2rem(100);
+    a{width:px2rem(330); height:px2rem(350); top:px2rem(-10); left:px2rem(-10)}
+  }
   .text3{width:px2rem(201); top:px2rem(1493); left:px2rem(437);}
   .bg{width:px2rem(750); top:px2rem(40); left:0;}
   .rule{color:#555555; background:#ffffff; overflow:hidden;
