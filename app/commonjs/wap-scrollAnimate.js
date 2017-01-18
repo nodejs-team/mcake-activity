@@ -67,6 +67,8 @@
         })
     }
 
+    var psb = new PubSub();
+
     global.scrollAnimate = function(el, items){
         initItems(items);
         if(useIScroll){
@@ -79,16 +81,18 @@
             document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
             myScroll = new IScroll(el, {probeType: 3, click:false, bounce:false, deceleration:0.003});
             myScroll.on('scroll', function(){
+                psb.trigger('scroll', -this.y)
                 var st = -parseInt(this.y / 10) * 10;
                 if(st<slTop) return;
                 slTop = st;
                 scrollItems(items, slTop);
-
             })
         } else {
             var $win = $(window)
             slTop = $win.on('scroll', function(){
-                var st = parseInt($win.scrollTop() / 10) * 10;
+                var st = $win.scrollTop();
+                psb.trigger('scroll', st);
+                st = parseInt(st / 10) * 10;
                 if(st<slTop) return;
                 slTop = st;
                 scrollItems(items, slTop);
@@ -96,4 +100,7 @@
         }
         scrollItems(items, slTop);
     }
-})(window, $, IScroll)
+    global.scrollAnimate.on = function(){
+        psb.on.apply(psb, arguments);
+    }
+})(window, $, IScroll, PubSub)

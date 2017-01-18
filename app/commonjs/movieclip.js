@@ -62,13 +62,17 @@
         } else {
             this.drawImage = this.drawByImage;
         }
+        PubSub.call(this);
     }
+    MovieClip.prototype = Object.create(PubSub.prototype);
+    MovieClip.prototype.constructor = MovieClip;
     var proto = MovieClip.prototype;
     proto.play = function(repeatCount){
         if(repeatCount){
             this.repeatCount = repeatCount;
         }
         this.ticker.start();
+        return this;
     }
     proto.pause = function(){
         this.ticker.stop();
@@ -83,6 +87,7 @@
         this.ticker.stop();
         this.setFrame(this.stopFrame==='first' ? 0 : this.frames.length-1);
         this.currentCount = 0;
+        this.trigger('stop');
     }
     proto.setFrame = function(num){
         if(num>this.frames.length-1) num = 0;

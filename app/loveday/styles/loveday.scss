@@ -1,0 +1,92 @@
+@function px2rem($n) {
+  @return ($n * 10 / 750) * 1rem; //设计稿一般都是750宽
+}
+body{background:#d6b6c0;}
+
+
+
+#sidaiLeft,#sidaiRight{width:px2rem(270); position:absolute; top:50%; left:50%; overflow:hidden; height:px2rem(350);}
+#sidaiLeft{margin-left:px2rem(-135)}
+#sidaiLeft canvas,#sidaiRight canvas{width:px2rem(270); position:absolute; top:0;}
+#sidaiLeft canvas{left:0;}
+#sidaiRight canvas{right:0;}
+$maskWidth:652;$maskHeight:45;$maskX:220;
+#evt_loading{width:100%; height:100%; margin:0; z-index:20; top:0; left:0; position:absolute;
+  div{position:absolute;}
+  img{width:100%;}
+  .bg-left,.bg-right{width:px2rem(375); top:0;}
+  .bg-left{left:0;}
+  .bg-right{right:0;}
+  .title{width:px2rem(406); left:50%; top:50%; margin:px2rem(-100) 0 0 px2rem(-203);}
+  .spin{color:#bd7384; font-size:px2rem(30); position:absolute; top:50%; display:block; width:100%; text-align:center; margin:px2rem(-30) 0 0 0;}
+  .slideMask{width:px2rem(406); height:px2rem(41); background:url(../images/lv2/mask.png) px2rem($maskX) px2rem(0); background-size:px2rem($maskWidth) px2rem($maskHeight); -webkit-mask-image: url(../images/lv2/title.png); -webkit-mask-size:px2rem(406) px2rem(41); -webkit-animation:masking 4s linear infinite;  animation:masking 4s linear infinite;}
+}
+
+
+#evt_wrap{width:100%;}
+#evt_content{width:100%; height:100%; position:relative;
+  img{width:100%;}
+  .section{width:100%; position:absolute; left:0; top:0; background:url(../images/lv2/scbg.jpg); background-size:100% auto;
+    p{color:#ffffff; font-size:px2rem(30); margin:0;}
+    .text1{width:px2rem(614); margin:px2rem(140) auto 0 auto; opacity:0;}
+    .img1{width:px2rem(750); margin:px2rem(45) auto 0 auto; opacity:0;}
+    .area{width:100%; margin:px2rem(-100) auto 0 auto; opacity:0; background:transparent; padding:0; height:auto;}
+    .product{width:px2rem(286); margin: 0 auto;}
+    .price{width:px2rem(221); margin:px2rem(20) auto 0 auto;}
+    .buybtn{display:block; width:px2rem(388); height:px2rem(98); margin:px2rem(32) auto 0 auto; background:url(../images/lv2/buybtn.png); background-size:100%;}
+    .buybtn.disable{background:url(../images/lv2/buybtn-disable.png); background-size:100%;}
+    .ico{display:block; width:px2rem(29); height:px2rem(27); background:url(../images/lv2/ico.png); background-size:100%; margin:0 auto;}
+    .an{-webkit-animation: an 1s infinite;animation: an 1s infinite;}
+    .text2{width:px2rem(617); margin:px2rem(140) auto 0 auto; opacity:0;}
+    .img2{width:px2rem(750); margin:px2rem(30) auto 0 auto; opacity:0;}
+    .rtitle{width:px2rem(180); text-align:center; margin:px2rem(32) auto 0 auto;
+      i{display:block; width:px2rem(15); height:px2rem(15); background:url(../images/lv2/icon.png); background-size:100%; margin:px2rem(15) auto 0 auto;}
+    }
+    .rule{width:px2rem(666); margin:px2rem(28) auto 0 auto;
+      p{line-height:px2rem(34); text-indent:px2rem(-45); margin:0 0 0 px2rem(45); text-align:justify;}
+    }
+  }
+  .sec1{height:px2rem(1300)}
+  .sec2{top:px2rem(1300);
+    .area{margin-top:px2rem(30);}
+  }
+}
+
+
+#flower{position:fixed; top:0; left:0;
+  img{width:100%;}
+  div{position:absolute; pointer-events:none;}
+  .f1{width:px2rem(92);}
+  .f2{width:px2rem(129);}
+  .f3{width:px2rem(21);}
+  .f4{width:px2rem(54);}
+  .f5{width:px2rem(38);}
+  .f6{width:px2rem(125);}
+  .f7{width:px2rem(20);}
+  .f8{width:px2rem(28);}
+  .f9{width:px2rem(27);}
+  .f10{width:px2rem(24);}
+  .f11{width:px2rem(154);}
+  .f12{width:px2rem(79);}
+}
+
+
+@-webkit-keyframes an{
+  0% {-webkit-transform: translate(0,0);transform: translate(0,0);}
+  100% {-webkit-transform: translate(0,px2rem(80));transform: translate(0,px2rem(80))}
+}
+
+
+@keyframes an{
+  0% {-webkit-transform: translate(0,0);transform: translate(0,0);}
+  100% {-webkit-transform: translate(0,px2rem(80));transform: translate(0,px2rem(80))}
+}
+
+@keyframes masking {
+  0%{background-position: px2rem($maskX) px2rem(0)}
+  100%,40% {background-position:px2rem($maskWidth+$maskX) px2rem(0)}
+}
+@-webkit-keyframes masking {
+  0%{background-position: px2rem($maskX) px2rem(0)}
+  100%,40% {background-position:px2rem($maskWidth+$maskX) px2rem(0)}
+}

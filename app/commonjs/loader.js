@@ -1,9 +1,11 @@
-
-
-
-
-
-
+/**
+ var loader = new Loader('images/');
+ loader.addGroup('preload', preData);
+ loader.addGroup('resload', resData);
+ loader.on('progress', function(groupName, ix, len){})
+ loader.on('complete', function(groupName){})
+ loader.loadGroup('resload');
+ */
 
 
 
