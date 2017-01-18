@@ -82,6 +82,8 @@ body {
     top: 0;
     background: url(../images/lv2/scbg.jpg);
     background-size: 100% auto; }
+    #evt_content .section a {
+      display: block; }
     #evt_content .section p {
       color: #ffffff;
       font-size: 0.4rem;
@@ -101,6 +103,8 @@ body {
       background: transparent;
       padding: 0;
       height: auto; }
+    #evt_content .section .area:before {
+      display: none; }
     #evt_content .section .product {
       width: 3.81333rem;
       margin: 0 auto; }
