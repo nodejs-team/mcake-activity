@@ -91,9 +91,10 @@
     }
 
     function hideLoadingComplete(){
-        $('.rtitle').on('click', function(){
-            $('.rule').toggle();
-        })
+        $('.rule').show();
+        // $('.rtitle').on('click', function(){
+        //     $('.rule').toggle();
+        // })
         initScroll();
         scrollAnimate('#evt_wrap', [
             {dom: '.text1', x: 0, y: -300}
