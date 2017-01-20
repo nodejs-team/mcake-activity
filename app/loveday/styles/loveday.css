@@ -86,7 +86,7 @@ body {
       display: block; }
     #evt_content .section p {
       color: #ffffff;
-      font-size: 0.4rem;
+      font-size: 0.34667rem;
       margin: 0; }
     #evt_content .section .text1 {
       width: 8.18667rem;
@@ -106,7 +106,7 @@ body {
     #evt_content .section .area:before {
       display: none; }
     #evt_content .section .product {
-      width: 3.81333rem;
+      width: 5.21333rem;
       margin: 0 auto; }
     #evt_content .section .price {
       width: 2.94667rem;

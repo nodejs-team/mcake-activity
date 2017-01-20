@@ -17,7 +17,7 @@
 
     function initDomByScreenView(){
         var sec1MinHeight = pixelConvert(1300)
-            ,sec2MinHeight = pixelConvert(1834);
+            ,sec2MinHeight = pixelConvert(1750);
         sec1Height = sec1MinHeight<winHeight ? winHeight : sec1MinHeight;
         sec2Height = sec2MinHeight<winHeight ? winHeight : sec2MinHeight;
         $('.sec1').css({
