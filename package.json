@@ -24,6 +24,7 @@
     "gulp-tinypng-compress": "latest",
     "gulp-uglify": "^1.5.4",
     "gulp-useref": "^3.1.2",
+    "gulp-util": "^3.0.8",
     "gulp-watch": "^4.3.10",
     "gulp-webserver": "^0.9.1",
     "imagemin-pngquant": "^5.0.0",

@@ -15,16 +15,17 @@ var gulp = require('gulp'),
     gulpwatch = require('gulp-watch'),
     cheerio = require('gulp-cheerio'),
     path = require('path'),
-	imagemin = require('gulp-imagemin'),
-	pngquant = require('imagemin-pngquant'),
+	  imagemin = require('gulp-imagemin'),
+	  pngquant = require('imagemin-pngquant'),
     cache = require('gulp-cache'),
     del = require('del'),
     fs = require('fs'),
     argv = require('yargs')
-        .alias('n', 'name')
-		.alias('i', 'img')
-		.alias('u', 'upload')
-        .argv
+					.alias('n', 'name')
+					.alias('i', 'img')
+					.alias('u', 'upload')
+					.alias('t', 'type')
+        	.argv;
 
 
 var buildConfig = require('./package.json').buildConfig;
@@ -62,7 +63,7 @@ gulp.task('imagemin', function(){
 			use: [pngquant()]
 		})))
 		.pipe(gulp.dest('app/'+projectName+'/tinypng'));
-})
+});
 
 /**
  * gulp server
@@ -85,7 +86,7 @@ gulp.task('sass', function(){
 	gulp.src('app/'+projectName+'/styles/*.scss')
 		.pipe(sass().on('error', sass.logError))
 		.pipe(gulp.dest('app/'+projectName+'/styles'))
-})
+});
 
 /**
  * gulp sass:watch -n projectName
@@ -97,7 +98,7 @@ gulp.task('sass:watch', function(){
 	// 	.pipe(sass().on('error', sass.logError))
 	// 	.pipe(gulp.dest('app/styles'));
 	return gulp.watch('app/'+projectName+'/styles/*.scss', ['sass'])
-})
+});
 
 /**
  * gulp develop -n projectName
@@ -115,7 +116,7 @@ gulp.task('build', function(){
     		runSequence(['upload'])
 		}
 	});
-})
+});
 
 /**
  * gulp upload --name projectName
@@ -132,26 +133,29 @@ gulp.task('upload', function(){
     return gulp.src('build/'+projectName+'/**/*')
         .pipe(conn.dest( buildConfig.ftp.remotePath + projectName ))
 
-})
+});
 
 /**
  * gulp init -n projectName --pc
  * gulp init -n projectName --wap
  */
 gulp.task('init', function(){
-    var type = argv.wap  ? 'wap' : 'pc';
+    var type = argv.type || 'wap';
+    if( typeof type === 'boolean' ){
+    	throw new Error('请指定项目类型');
+		}
     if(!projectName || typeof projectName!='string'){
         throw new Error('项目名称错误')
     }
     fs.stat('app/'+projectName, function(err, stats){
         if(err){
             gulp.src('template/'+type+'/**/*')
-                .pipe(gulp.dest('app/'+projectName))
+                .pipe(gulp.dest('app/'+projectName));
         } else {
             throw new Error('项目已存在')
         }
     })
-})
+});
 
 /**
  * gulp removeImgSrc --name projectName
@@ -168,13 +172,13 @@ gulp.task('removeImgSrc', function(){
 							.attr('src-fix', obj.base.replace('.', '_'))
 							.attr('src', 'http://edm.mcake.com/weifengwang/common/no.jpg')
 					}
-				})
+				});
 				done();
 			},
 			parserOptions:{
 				decodeEntities: false
 			}})).pipe(gulp.dest('app/'+projectName))
-})
+});
 
 /**
  * gulp addImgSrc --name projectName
@@ -190,14 +194,14 @@ gulp.task('addImgSrc', function(){
 						$(img).attr('src', 'images/'+dataSrc.replace(/_(jpg|png|gif)$/,'.$1'))
 							.removeAttr('data-src');
 					}
-				})
+				});
 				done();
 			},
 			parserOptions:{
 				decodeEntities: false
 			}
 		})).pipe(gulp.dest('app/'+projectName))
-})
+});
 
 var buildHTML = lazypipe()
     .pipe(replace, /"(\.\/)?(images|css|js|scripts|styles)\/([^"]+?)"/gm, '"'+ buildConfig.basePath + projectName + '/$2/$3"');
@@ -213,7 +217,8 @@ var buildJS = lazypipe()
 			url = buildConfig.basePath+projectName+'/images/'+url;
 		}
 		return 'url:"'+url+'"';
-	})
+	});
+
 var t = 'url:"'+buildConfig.basePath+projectName+'/images/$1"';
 function buildUseref(){
     return new Promise(function(resolve, reject){
@@ -224,7 +229,7 @@ function buildUseref(){
             .pipe(gulpif('*.js', buildJS()))
             .pipe(gulp.dest('build/'+projectName))
             .on('end', resolve)
-    })
+    });
 }
 
 function copyImg(){
@@ -234,11 +239,11 @@ function copyImg(){
     		if(!err){
     			imageFolder = 'tinypng';
 			}
-            gulp.src('app/'+projectName+'/'+imageFolder+'/**/*.{png,jpg,jpeg}')
-                .pipe(gulp.dest('build/'+projectName+'/images'))
-                .on('end', resolve)
-		})
-    })
+			gulp.src('app/'+projectName+'/'+imageFolder+'/**/*.{png,jpg,jpeg}')
+					.pipe(gulp.dest('build/'+projectName+'/images'))
+					.on('end', resolve)
+			});
+    });
 }
 
 function cleanBuild(){
