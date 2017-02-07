@@ -1,3 +1,10 @@
+.sass-cache
+.gulp
+.DS_Store
+.idea
+.gitignore
+.tmp
+
 lib-cov
 *.seed
 *.log
