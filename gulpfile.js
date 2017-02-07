@@ -73,7 +73,7 @@ gulp.task('server', function() {
 		.pipe(webserver({
 			host: getIP(),
 			directoryListing: {enable:true, path: buildConfig.server.path},
-			livereload: false,
+			livereload: true,
 			open: '/'+ projectName +'/index.html',
 			port: buildConfig.server.port || 8001
 		}));
