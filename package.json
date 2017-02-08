@@ -34,7 +34,7 @@
     "yargs": "^6.4.0"
   },
   "buildConfig": {
-    "projectName": "test-wap",
+    "projectName": "test-wap0",
     "basePath": "http://edm.mcake.com/weifengwang/",
     "tinypngKey": "UlHtl4xh4OPWCVBj67bQWE78Gi9mis3P",
     "server": {
