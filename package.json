@@ -36,7 +36,7 @@
   "buildConfig": {
     "projectName": "womanDay",
     "basePath": "http://edm.mcake.com/shuxy/2016/",
-    "tinypngKey": "UlHtl4xh4OPWCVBj67bQWE78Gi9mis3P",
+    "tinypngKey": "",
     "server": {
       "path": "./app",
       "port": "8013"
