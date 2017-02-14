@@ -121,7 +121,7 @@
             }
             img.onerror = function(){
                 img.onerror = new Function;
-                console.log('load fail')
+                console.error(data.url + ' load fail');
                 fail && fail(data)
             }
             img.src = data.url;

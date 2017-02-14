@@ -30,15 +30,21 @@
     this.dropDown = this.dom.find(">ul");
     this.isShown = false;
     this.value = "";
+    this.price = "";
+    this.pubSub = new PubSub();
     var defaultValue = this.dom.attr("data-defaultValue");
+    var defaultPrice = this.dom.attr("data-defaultPrice");
     if( defaultValue != null || defaultValue != undefined ){
         this.setValue(defaultValue);
+    }
+    if( defaultPrice != null || defaultPrice != undefined ){
+      this.setPrice(defaultPrice);
     }
     this.setItemHighlight();
     this.bindEvents();
   }
 
-  Wselect.prototype = {
+  Wselect.prototype =  {
     show: function () {
         this.isShown = true;
         this.dropDown.show();
@@ -51,8 +57,17 @@
         this.value = value;
         this.wtext.text(value);
     },
+    setPrice: function (price) {
+      this.price = price;
+    },
     getValue: function () {
       return this.value;
+    },
+    getPrice: function () {
+      return this.price;
+    },
+    change: function (handler) {
+      this.pubSub.on("change", handler);
     },
     setItemHighlight: function () {
       this.dropDown.find(">li").each(function (i, domItem) {
@@ -76,14 +91,22 @@
 
       this.dropDown.on("click", "li", function (e) {
         var $this = $(this);
-        self.setValue($this.attr("data-value"));
-        $this.addClass("selected").siblings().removeClass("selected");
+        var value = $this.attr("data-value");
+        if( value != self.value ) {
+          self.setValue(value);
+          self.setPrice($this.attr("data-price"));
+          $this.addClass("selected").siblings().removeClass("selected");
+          self.pubSub.trigger("change", self.getValue(), self.getPrice());
+        }
       });
 
       $(document).on("click", function () {
         this.hide();
       }.bind(this));
 
+      setTimeout(function(){
+        self.pubSub.trigger("change", self.getValue(), self.getPrice());
+      });
     }
   };
 
@@ -93,17 +116,32 @@
       var context = this.each(function (i, dom) {
         var instance = $.data(dom, "modal.wselect");
         if( !instance ){
-            $.data(dom, "modal.wselect", new Wselect(dom));
+            $.data(dom, "modal.wselect", instance = new Wselect(dom));
         }
-        chain = instance[method].apply(instance, params);
+        if( method ) {
+          chain = instance[method].apply(instance, params);
+        }
     });
 
       return chain !== undefined ? chain : context;
   };
 
+  var loader;
+
+  function initApp() {
+    var Jprice = $("#J_w_price");
+    var JpriceImg = $("#J_price_img");
+    var assets = loader.getAll();
+    $(".w-select-wrap").wselect("change", function (value, price) {
+      price = Number(price);
+      Jprice.text(price - 38);
+      JpriceImg.attr("src", assets["price-"+ (price + 48) +"_png"].url);
+    });
+  }
+
     function startLoading(){
-        var loader = new Loader('images/'),
-          domLoad = document.getElementById('evt_loading');
+        var domLoad = document.getElementById('evt_loading');
+        loader = new Loader('images/');
         domLoad.style.display = 'block';
         loader.addGroup('preload', resData);
         loader.on('progress', function(groupName, ix, len){
@@ -113,8 +151,8 @@
             fixImageSrc(loader.getAll());
             domLoad.style.display = 'none';
             document.getElementById('evt_content').style.display = 'block';
-          initScroll();
-          $(".w-select-wrap").wselect();
+            initScroll();
+            initApp();
         });
         loader.loadGroup('preload');
     }

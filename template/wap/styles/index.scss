@@ -2,6 +2,19 @@
   @return ($n * 10 / 750) * 1rem; //设计稿一般都是750宽
 }
 
+@mixin font-dpr($font-size){
+  font-size: $font-size;
+
+  [data-dpr="2"] & {
+    font-size: $font-size * 2;
+  }
+
+  [data-dpr="3"] & {
+    font-size: $font-size * 3;
+  }
+
+}
+
 #evt_content{height:px2rem(6300);
   div{position:absolute;}
   img{width:100%;}

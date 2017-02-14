@@ -1,25 +1,5 @@
 var resData = [
   {
-    "name":"border-img_png",
-    "type":"image",
-    "url":"border-img.png"
-  },
-  {
-    "name":"border-img2_png",
-    "type":"image",
-    "url":"border-img2.png"
-  },
-  {
-    "name":"buy-btn_png",
-    "type":"image",
-    "url":"buy-btn.png"
-  },
-  {
-    "name":"sec1-bg_jpg",
-    "type":"image",
-    "url":"sec1-bg.jpg"
-  },
-  {
     "name":"sec2-bg_png",
     "type":"image",
     "url":"sec2-bg.png"
@@ -28,6 +8,26 @@ var resData = [
     "name":"banner_png",
     "type":"image",
     "url":"sec1/banner.png"
+  },
+  {
+    "name":"price-266_png",
+    "type":"image",
+    "url":"sec1/price-266.png"
+  },
+  {
+    "name":"price-366_png",
+    "type":"image",
+    "url":"sec1/price-366.png"
+  },
+  {
+    "name":"price-506_png",
+    "type":"image",
+    "url":"sec1/price-506.png"
+  },
+  {
+    "name":"price-798_png",
+    "type":"image",
+    "url":"sec1/price-798.png"
   },
   {
     "name":"sec2-p1-text_png",
@@ -68,4 +68,24 @@ var resData = [
     "name":"select-text_png",
     "type":"image",
     "url":"sec1/select-text.png"
+  },
+  {
+    "name":"border-img_png",
+    "type":"image",
+    "url":"border-img.png"
+  },
+  {
+    "name":"border-img2_png",
+    "type":"image",
+    "url":"border-img2.png"
+  },
+  {
+    "name":"buy-btn_png",
+    "type":"image",
+    "url":"buy-btn.png"
+  },
+  {
+    "name":"sec1-bg_jpg",
+    "type":"image",
+    "url":"sec1-bg.jpg"
   }];

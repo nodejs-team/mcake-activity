@@ -49,10 +49,10 @@ gulp.task('tinypng', function () {
 	}
 
 	gulp.src(src)
-		.pipe(tinypng({
+		.pipe(cache(tinypng({
 			key: buildConfig.tinypngKey,
 			log: true
-		}))
+		})))
 		.pipe(gulp.dest('app/'+projectName+'/tinypng'));
 });
 
@@ -63,6 +63,11 @@ gulp.task('imagemin', function(){
 			use: [pngquant()]
 		})))
 		.pipe(gulp.dest('app/'+projectName+'/tinypng'));
+});
+
+//清理cache
+gulp.task('clean-cache', function (done) {
+  return cache.clearAll(done);
 });
 
 /**

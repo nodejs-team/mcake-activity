@@ -1,7 +1,7 @@
 {
 	"groups":[
 	{
-		"keys":"sec2-bg_png,banner2_png,sec2-p12-text_png,sec2-p12_png,sec2-p22_png,border-img_png,border-img2_png,buy-btn_png,sec1-bg_jpg",
+		"keys":"sec2-bg_png,banner_png,price-266_png,price-366_png,price-506_png,price-798_png,sec2-p1-text_png,sec2-p1_png,sec2-p2-text_png,sec2-p2_png,sec2-p3-text_png,sec2-p3_png,sec2-price_png,select-text_png,border-img_png,border-img2_png,buy-btn_png,sec1-bg_jpg",
 		"name":"preload"
 	}],
 	"resources":[
@@ -11,24 +11,69 @@
 		"url":"sec2-bg.png"
 	},
 	{
-		"name":"banner2_png",
+		"name":"banner_png",
 		"type":"image",
-		"url":"sec2/banner2.png"
+		"url":"sec1/banner.png"
 	},
 	{
-		"name":"sec2-p12-text_png",
+		"name":"price-266_png",
 		"type":"image",
-		"url":"sec2/sec2-p12-text.png"
+		"url":"sec1/price-266.png"
 	},
 	{
-		"name":"sec2-p12_png",
+		"name":"price-366_png",
 		"type":"image",
-		"url":"sec2/sec2-p12.png"
+		"url":"sec1/price-366.png"
 	},
 	{
-		"name":"sec2-p22_png",
+		"name":"price-506_png",
 		"type":"image",
-		"url":"sec2/sec2-p22.png"
+		"url":"sec1/price-506.png"
+	},
+	{
+		"name":"price-798_png",
+		"type":"image",
+		"url":"sec1/price-798.png"
+	},
+	{
+		"name":"sec2-p1-text_png",
+		"type":"image",
+		"url":"sec1/sec2-p1-text.png"
+	},
+	{
+		"name":"sec2-p1_png",
+		"type":"image",
+		"url":"sec1/sec2-p1.png"
+	},
+	{
+		"name":"sec2-p2-text_png",
+		"type":"image",
+		"url":"sec1/sec2-p2-text.png"
+	},
+	{
+		"name":"sec2-p2_png",
+		"type":"image",
+		"url":"sec1/sec2-p2.png"
+	},
+	{
+		"name":"sec2-p3-text_png",
+		"type":"image",
+		"url":"sec1/sec2-p3-text.png"
+	},
+	{
+		"name":"sec2-p3_png",
+		"type":"image",
+		"url":"sec1/sec2-p3.png"
+	},
+	{
+		"name":"sec2-price_png",
+		"type":"image",
+		"url":"sec1/sec2-price.png"
+	},
+	{
+		"name":"select-text_png",
+		"type":"image",
+		"url":"sec1/select-text.png"
 	},
 	{
 		"name":"border-img_png",

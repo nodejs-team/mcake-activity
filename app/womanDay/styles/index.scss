@@ -2,6 +2,19 @@
   @return ($n * 10 / 750) * 1rem; //设计稿一般都是750宽
 }
 
+@mixin font-dpr($font-size){
+  font-size: $font-size;
+
+  [data-dpr="2"] & {
+    font-size: $font-size * 2;
+  }
+
+  [data-dpr="3"] & {
+    font-size: $font-size * 3;
+  }
+
+}
+
 #evt_content{
   div{
     position:absolute;
@@ -118,7 +131,7 @@
 
   .w-select-wrap{
     position: relative;
-    font-size:14px;
+    @include font-dpr(14px);
     margin:8px 0 0 0;
     font-weight: bold;
     color:#4e1b20;
@@ -136,7 +149,7 @@
       .w-select-text{
         display: inline-block;
         line-height: px2rem(56-16);
-        padding:0 px2rem(30);
+        padding:0 15px;
         float: left;
       }
 
@@ -166,7 +179,7 @@
     }
 
     em{
-      font-size: 20px;
+      @include font-dpr(20px);
       font-style: normal;
       font-weight: bold;
       font-family: Arial;
@@ -189,7 +202,7 @@
       box-shadow: 1px 0 0 rgba(0,0,0,.1) inset;
 
       > li{
-        padding: 8px 10px;
+        padding: 12px 11px;
         line-height: 1;
         border-bottom: 2px solid #d2d2d2;
         opacity:.5;
@@ -215,7 +228,7 @@
     margin-top: px2rem(8);
     width:px2rem(160);
     text-align: center;
-    font-size:16px;
+    @include font-dpr(16px);
     color:#cdaea8;
 
     &.t-left{
@@ -230,21 +243,21 @@
 
     em{
       font-style: normal;
-      font-size: 18px;
+      @include font-dpr(18px);
     }
   }
 
   .w-select-plus{
-    font-size:42px;
+    @include font-dpr(38px);
     color:#4e1b20;
-    top:px2rem(920);
+    top:px2rem(925);
     right:px2rem(163)
   }
 
   .sec2-price{
     width:px2rem(259);
     right:px2rem(47);
-    top:px2rem(1008);
+    top:px2rem(1018);
     text-align: center;
 
     &.t-sec2{
@@ -266,10 +279,10 @@
   .sec-footer{
     position: relative;
     padding: px2rem(30);
-    font-size: 14px;
+    @include font-dpr(14px);
 
     > h2{
-      font-size: 16px;
+      @include font-dpr(16px);
       margin: 0 0 5px;
     }
 
@@ -279,5 +292,11 @@
       padding-left: 1.5em;
       text-indent: -1.5em;
     }
+  }
+
+  #J_price_img{
+    position: absolute;
+    left:0;
+    top:0;
   }
 }
