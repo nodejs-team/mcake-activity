@@ -219,7 +219,8 @@
   width: 3.45333rem;
   right: 0.62667rem;
   top: 13.57333rem;
-  text-align: center; }
+  text-align: center;
+  z-index: 5; }
   #evt_content .sec2-price.t-sec2 {
     top: 8.2rem; }
   #evt_content .sec2-price .buy-btn {
