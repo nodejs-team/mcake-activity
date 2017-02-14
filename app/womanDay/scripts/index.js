@@ -94,9 +94,8 @@
         var instance = $.data(dom, "modal.wselect");
         if( !instance ){
             $.data(dom, "modal.wselect", new Wselect(dom));
-        } else {
-          chain = instance[method].apply(instance, params);
         }
+        chain = instance[method].apply(instance, params);
     });
 
       return chain !== undefined ? chain : context;
