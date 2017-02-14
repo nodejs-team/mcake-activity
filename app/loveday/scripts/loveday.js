@@ -172,7 +172,7 @@
         });
         loader.on('complete', function(groupName){
             if(groupName=='pre'){
-                fixImageSrc(document.getElementById('evt_loading'), loader.getAll())
+                fixImagSerc(document.getElementById('evt_loading'), loader.getAll())
                 $('#evt_loading').show();
                 loader.loadGroup('res');
                 startMovieClip(loader.get('sidai_png').data)

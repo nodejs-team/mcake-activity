@@ -59,6 +59,10 @@
     function initItems(items){
         items.forEach(function(item){
             item.$dom = $(item.dom);
+            if( !item.$dom.length ){
+                console.error(item.dom + " not found!");
+                return false;
+            }
             item.top = item.$dom.offset().top;
             item.isShow = false;
             $.Velocity.hook(item.$dom, 'opacity', 0);
@@ -77,18 +81,18 @@
                 overflow: 'hidden',
                 top:0,
                 bottom:0
-            })
+            });
             document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
             myScroll = new IScroll(el, {probeType: 3, click:false, bounce:false, deceleration:0.003});
             myScroll.on('scroll', function(){
-                psb.trigger('scroll', -this.y)
+                psb.trigger('scroll', -this.y);
                 var st = -parseInt(this.y / 10) * 10;
                 if(st<slTop) return;
                 slTop = st;
                 scrollItems(items, slTop);
             })
         } else {
-            var $win = $(window)
+            var $win = $(window);
             slTop = $win.on('scroll', function(){
                 var st = $win.scrollTop();
                 psb.trigger('scroll', st);
@@ -99,8 +103,8 @@
             }).scrollTop();
         }
         scrollItems(items, slTop);
-    }
+    };
     global.scrollAnimate.on = function(){
         psb.on.apply(psb, arguments);
     }
-})(window, $, IScroll, PubSub)
+})(window, $, IScroll, PubSub);
