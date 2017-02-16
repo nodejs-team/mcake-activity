@@ -16,7 +16,7 @@
       ,{dom: '.sec2-p12-text', x:-200, y:0, delay: 600}
       ,{dom: '.sec2-p22', x:200, y:200, delay: 1200}
       ,{dom: '.sec-weight-select', x:0, y:-80, delay: 1600}
-      ,{dom: '.sec2-price', x:0, y:80, delay: 1000}
+      ,{dom: '.sec2-price', x:0, y:40, delay: 1000}
     ])
   }
 

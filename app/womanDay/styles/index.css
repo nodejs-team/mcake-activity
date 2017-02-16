@@ -185,12 +185,12 @@
   margin-top: 0.10667rem;
   width: 2.13333rem;
   text-align: center;
-  font-size: 16px;
+  font-size: 14px;
   color: #cdaea8; }
   [data-dpr="2"] #evt_content .w-select-price {
-    font-size: 32px; }
+    font-size: 28px; }
   [data-dpr="3"] #evt_content .w-select-price {
-    font-size: 48px; }
+    font-size: 42px; }
   #evt_content .w-select-price.t-left {
     text-align: left; }
   #evt_content .w-select-price .orig-price {
@@ -199,11 +199,11 @@
     text-decoration: line-through; }
   #evt_content .w-select-price em {
     font-style: normal;
-    font-size: 18px; }
+    font-size: 16px; }
     [data-dpr="2"] #evt_content .w-select-price em {
-      font-size: 36px; }
+      font-size: 32px; }
     [data-dpr="3"] #evt_content .w-select-price em {
-      font-size: 54px; }
+      font-size: 48px; }
 
 #evt_content .w-select-plus {
   font-size: 38px;

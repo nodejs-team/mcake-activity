@@ -15,7 +15,7 @@
       {dom: '.sec2-p1', x:-400, y:-200}
       ,{dom: '.sec2-p1-text', x:200, y:0, delay: 600}
       ,{dom: '.sec2-p2', x:200, y:200, delay: 1200}
-      ,{dom: '.sec2-p2-text', x:-200, y:0, delay: 1800}
+      ,{dom: '.sec2-p2-text', x:-200, y:0, delay: 500}
       ,{dom: '.sec2-p3', x:0, y:200}
       ,{dom: '.sec2-p3-text', x:0, y:-200}
       ,{dom: '.sec-weight-select', x:0, y:-200, delay: 1000}
@@ -134,7 +134,7 @@
     var assets = loader.getAll();
     $(".w-select-wrap").wselect("change", function (value, price) {
       price = Number(price);
-      Jprice.text(price - 38);
+      Jprice.text(price);
       JpriceImg.attr("src", assets["price-"+ (price + 48) +"_png"].url);
     });
   }
