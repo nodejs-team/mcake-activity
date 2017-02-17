@@ -9,8 +9,8 @@
     var flexible = lib.flexible || (lib.flexible = {});
 
     if (metaEl) {
-        metaEl.parentNode.removeChild(metaEl);
-        metaEl = null;
+        //metaEl.parentNode.removeChild(metaEl);
+        //metaEl = null;
         // console.warn('将根据已有的meta标签来设置缩放比例');
         // var match = metaEl.getAttribute('content').match(/initial\-scale=([\d\.]+)/);
         // if (match) {
@@ -34,7 +34,7 @@
     }
 
     if (!dpr && !scale) {
-        var isAndroid = win.navigator.appVersion.match(/android/gi);
+        //var isAndroid = win.navigator.appVersion.match(/android/gi);
         var isIPhone = win.navigator.appVersion.match(/iphone/gi);
         var devicePixelRatio = win.devicePixelRatio;
         if (isIPhone) {
@@ -88,13 +88,13 @@
         }
     }, false);
 
-    if (doc.readyState === 'complete') {
+    /*if (doc.readyState === 'complete') {
         doc.body.style.fontSize = 12 * dpr + 'px';
     } else {
         doc.addEventListener('DOMContentLoaded', function(e) {
             doc.body.style.fontSize = 12 * dpr + 'px';
         }, false);
-    }
+    }*/
 
 
     refreshRem();
@@ -107,7 +107,7 @@
             val += 'px';
         }
         return val;
-    }
+    };
     flexible.px2rem = function(d) {
         var val = parseFloat(d) / this.rem;
         if (typeof d === 'string' && d.match(/px$/)) {
