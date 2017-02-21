@@ -19,7 +19,7 @@
     if(typeof $==='undefined') return alert('ScrollAnimate依赖jquery'),null;
     if(typeof IScroll==='undefined') return alert('ScrollAnimate依赖IScroll'),null;
     if(typeof $.Velocity==='undefined') return alert('ScrollAnimate依赖Velocity'),null;
-    var useIScroll = isIphone(),slTop=0,myScroll,wrapHeight = $(window).height();
+    var isIphone = isIphone(),slTop=0,myScroll,wrapHeight = $(window).height();
     function isIphone(){
         var ua = navigator.userAgent.toLowerCase();
         if(/iphone/.test(ua)){
@@ -75,7 +75,7 @@
 
     global.scrollAnimate = function(el, items){
         initItems(items);
-        if(useIScroll){
+        if(isIphone && global.scrollAnimate.useIScroll){
             $(el).css({
                 position: 'absolute',
                 overflow: 'hidden',
@@ -104,6 +104,7 @@
         }
         scrollItems(items, slTop);
     };
+    global.scrollAnimate.useIScroll = true;
     global.scrollAnimate.on = function(){
         psb.on.apply(psb, arguments);
     }

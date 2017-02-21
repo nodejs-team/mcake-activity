@@ -150,4 +150,6 @@
     loader.loadGroup('preload');
   }
   startLoading();
+
+  document.getElementById("evt_content").className += " evt-mym";
 })();

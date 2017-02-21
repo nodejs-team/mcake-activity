@@ -20,7 +20,7 @@
       ,{dom: '.sec2-p3-text', x:0, y:-200}
       ,{dom: '.sec-weight-select', x:0, y:-200, delay: 1000}
       ,{dom: '.sec2-price', x:0, y:200, delay: 1000}
-    ])
+    ]);
   }
 
   function Wselect(dom) {
@@ -137,6 +137,9 @@
       Jprice.text(price);
       JpriceImg.attr("src", assets["price-"+ (price + 48) +"_png"].url);
     });
+    $("#evt_content .sec1").append('<div class="floater">\
+      <img src="http://edm.mcake.com/shuxy/2016/womanDay/images/sec1/float_icon.png" />\
+      </div>');
   }
 
     function startLoading(){

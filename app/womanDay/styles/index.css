@@ -6,9 +6,15 @@
 
 #evt_content .sec1 {
   position: relative;
-  height: 7.94667rem;
+  height: 10.93333rem;
   background: #f3d2d9 url(../images/sec1-bg.jpg) no-repeat;
   background-size: 100%; }
+  .evt-mym .sec1 {
+    height: 7.68rem !important; }
+    .evt-mym .sec1 .sec1-p1 {
+      top: 50% !important;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%); }
   #evt_content .sec1:after {
     content: "";
     display: block;
@@ -22,9 +28,7 @@
 
 #evt_content .sec1-p1 {
   width: 10rem;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%); }
+  top: 2.72rem; }
 
 #evt_content .sec2 {
   position: relative;
@@ -227,3 +231,9 @@
   position: absolute;
   left: 0;
   top: 0; }
+
+#evt_content .floater {
+  position: absolute;
+  left: 4.50667rem;
+  top: 0;
+  width: 3.36rem; }

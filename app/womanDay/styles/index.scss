@@ -24,9 +24,21 @@
   }
   .sec1{
     position: relative;
-    height: px2rem(596);
+    height: px2rem(820);
     background: #f3d2d9 url(../images/sec1-bg.jpg) no-repeat;
     background-size: 100%;
+
+    @at-root .evt-mym{
+      .sec1{
+        height: px2rem(576) !important;
+
+        .sec1-p1{
+          top:50% !important;
+          -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+        }
+      }
+    }
 
     &:after{
       content: "";
@@ -42,9 +54,7 @@
   }
   .sec1-p1{
     width: px2rem(750);
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
+    top: px2rem(204)
   }
   .sec2{
     position: relative;
@@ -296,5 +306,12 @@
     position: absolute;
     left:0;
     top:0;
+  }
+
+  .floater{
+    position: absolute;
+    left: px2rem(338);
+    top: 0;
+    width: px2rem(252);
   }
 }

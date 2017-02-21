@@ -88,4 +88,9 @@ var resData = [
     "name":"sec1-bg_jpg",
     "type":"image",
     "url":"sec1-bg.jpg"
+  },
+  {
+    "name":"float_icon_png",
+    "type":"image",
+    "url":"sec1/float_icon.png"
   }];
