@@ -19,7 +19,7 @@ logs
 results
 
 npm-debug.log
-node_modules
-build
-PSD
-tinypng
+node_modules/
+build/
+PSD/
+tinypng/
