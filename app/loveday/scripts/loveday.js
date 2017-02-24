@@ -147,7 +147,7 @@
         })
     }
 
-    function fixImageSrc(container, res){
+    function fixImagSerc(container, res){
         container = container || document;
         var imgs = container.getElementsByTagName('img');
         for(var i=0,len=imgs.length; i<len; i++){
@@ -177,8 +177,8 @@
                 loader.loadGroup('res');
                 startMovieClip(loader.get('sidai_png').data)
             } else {
-                fixImageSrc(document.getElementById('evt_content'), loader.getAll())
-                fixImageSrc(document.getElementById('flower'), loader.getAll())
+                fixImagSerc(document.getElementById('evt_content'), loader.getAll())
+                fixImagSerc(document.getElementById('flower'), loader.getAll())
                 resLoaded = true;
                 hideLoading();
             }

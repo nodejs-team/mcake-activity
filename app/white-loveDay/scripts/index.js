@@ -110,8 +110,6 @@
 
     var events = {
         reelClick:function () {
-
-
             var $reel1 = $("#reel-1");
             var $reel2 = $("#reel-2");
             var $arrow = $(".arrow");
@@ -119,13 +117,6 @@
                 $reel1.toggleClass("on");
                 $arrow.toggleClass("on");
             });
-
-            /*var isOpen = false;
-            $reel2.click(function () {
-                $reel1.animate({height: lib.flexible.px2rem(isOpen ? "53px" : "302px")});
-                isOpen = !isOpen;
-
-            });*/
         }
     };
     var initScroll = function (){
