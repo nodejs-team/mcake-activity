@@ -34,9 +34,9 @@
     "yargs": "^6.4.0"
   },
   "buildConfig": {
-    "projectName": "womanDay",
-    "basePath": "http://edm.mcake.com/shuxy/2016/",
-    "tinypngKey": "UlHtl4xh4OPWCVBj67bQWE78Gi9mis3P",
+    "projectName": "white-loveDay",
+    "basePath": "http://edm.mcake.com/fangli/2017/",
+    "tinypngKey": "Lv4IxKbb9SJ6M3OG-lyEA86akPCQBmqE",
     "server": {
       "path": "./app",
       "port": "8013"

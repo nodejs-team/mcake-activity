@@ -102,14 +102,14 @@
     flexible.dpr = win.dpr = dpr;
     flexible.refreshRem = refreshRem;
     flexible.rem2px = function(d) {
-        var val = parseFloat(d) * this.rem;
+        var val = parseFloat(d) * this.rem/scale;
         if (typeof d === 'string' && d.match(/rem$/)) {
             val += 'px';
         }
         return val;
     };
     flexible.px2rem = function(d) {
-        var val = parseFloat(d) / this.rem;
+        var val = parseFloat(d) / this.rem * scale;
         if (typeof d === 'string' && d.match(/px$/)) {
             val += 'rem';
         }

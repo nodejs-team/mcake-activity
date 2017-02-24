@@ -1,0 +1,9 @@
+{"file":"gezi.png","frames":{
+"gezi-1":{"x":644,"y":1,"w":213,"h":213,"offX":0,"offY":9,"sourceW":213,"sourceH":222,"duration":20},
+"gezi-2":{"x":214,"y":1,"w":213,"h":215,"offX":0,"offY":7,"sourceW":213,"sourceH":222,"duration":3},
+"gezi-3":{"x":429,"y":1,"w":213,"h":213,"offX":0,"offY":9,"sourceW":213,"sourceH":222,"duration":3},
+"gezi-4":{"x":1,"y":225,"w":213,"h":215,"offX":0,"offY":7,"sourceW":213,"sourceH":222,"duration":3},
+"gezi-5":{"x":431,"y":216,"w":213,"h":213,"offX":0,"offY":9,"sourceW":213,"sourceH":222,"duration":10},
+"gezi-6":{"x":1,"y":1,"w":211,"h":222,"offX":0,"offY":0,"sourceW":213,"sourceH":222,"duration":4},
+"gezi-7":{"x":646,"y":216,"w":213,"h":210,"offX":0,"offY":12,"sourceW":213,"sourceH":222,"duration":2},
+"gezi-8":{"x":216,"y":218,"w":213,"h":213,"offX":0,"offY":9,"sourceW":213,"sourceH":222,"duration":20}}}

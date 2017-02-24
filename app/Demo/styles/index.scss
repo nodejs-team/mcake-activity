@@ -1,0 +1,92 @@
+@function px2rem($n) {
+  @return ($n * 10 / 750) * 1rem; //设计稿一般都是750宽
+}
+
+@mixin font-dpr($font-size){
+  font-size: $font-size;
+
+  [data-dpr="2"] & {
+    font-size: $font-size * 2;
+  }
+
+  [data-dpr="3"] & {
+    font-size: $font-size * 3;
+  }
+
+}
+
+#evt_content{
+  div{position:absolute;}
+  img{width:100%;}
+  .a{width:px2rem(217); top:px2rem(10); left:px2rem(10);}
+  .b{width:px2rem(833); top:px2rem(200); left:0;}
+  //banner
+  .sec-banner{position:relative;width:px2rem(750);
+      &:after{
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100%;
+        top:px2rem(576);
+        height: px2rem(26);
+        background: url(../images/line-lace1.png) repeat-x 0 100%;
+        background-size: auto 100%;
+        z-index: 10;
+      }
+    .anim-gif{
+      top:px2rem(20);
+    }
+
+  }
+  //主体
+  .sec2-main{
+    position: relative;
+    height: px2rem(900);
+    background: #fcecec url(../images/bg.jpg) repeat;
+    > div{ position: absolute}
+    &:after{
+      content: "";
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      height: px2rem(24);
+      background: #fcecec url(../images/line-lace2.png) repeat;
+      background-size: auto 100%;
+    }
+    .sec2-step1{
+      width:px2rem(508);
+      top:px2rem(105);
+      left:px2rem(20);
+    }
+    .sec2-step2{
+      width:px2rem(273);
+      top:px2rem(102);
+      right:px2rem(24);
+    }
+    .sec2-step3{
+      width:px2rem(347);
+      bottom:px2rem(91);
+      left:px2rem(99);
+    }
+
+  }
+  //尾部
+  .sec-footer{
+    position: relative;
+    padding: px2rem(30);
+    @include font-dpr(14px);
+
+    > h2{
+      @include font-dpr(16px);
+      margin: 0 0 5px;
+    }
+
+    > p{
+      line-height: 1.5;
+      margin: 0;
+      padding-left: 1.5em;
+      text-indent: -1.5em;
+    }
+
+  }
+}
