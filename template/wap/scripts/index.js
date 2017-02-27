@@ -10,6 +10,23 @@
             }
         }
     }
+
+    function px2rem(d) {
+        var val = parseFloat(d) * 10 / 750;
+        if (typeof d === 'string' && d.match(/px$/)) {
+          val += 'rem';
+        }
+        return val;
+    }
+
+    function rem2px(d) {
+        var val = parseFloat(d) * 750 / 10;
+        if (typeof d === 'string' && d.match(/rem$/)) {
+          val += 'px';
+        }
+        return val;
+    }
+
     function startLoading(){
         var loader = new Loader('images/'), domLoad = document.getElementById('evt_loading');
         domLoad.style.display = 'block';
