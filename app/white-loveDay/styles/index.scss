@@ -21,9 +21,14 @@
   img{width:100%;}
   .a{width:px2rem(217); top:px2rem(10); left:px2rem(10);}
   .b{width:px2rem(833); top:px2rem(200); left:0;}
+
+
+
+
 }
-.main{
-  section{
+
+.con_main{
+  >div{
     position: relative;width:px2rem(750);
   }
   .sec1{
@@ -48,20 +53,19 @@
 
     .q1{width:px2rem(369); top:px2rem(0); left:px2rem(82);}
     .q2{width:px2rem(232); top:px2rem(40); left: px2rem(438);}
-    .q3{width:px2rem(508); top:px2rem(538); left: px2rem(46);}
+    .q3{width:px2rem(508); top:px2rem(538); left: px2rem(35);}
     .q4{width:px2rem(119); top:px2rem(750); left: px2rem(554);}
     .q5{width:px2rem(181); top:px2rem(915); left: 0;}
     .word{width:px2rem(412); top:px2rem(888); left: px2rem(274);}
-    .btn{width:px2rem(196); top:px2rem(1146); left: px2rem(495);}
-    .reel{width:px2rem(256); top:px2rem(364); left: px2rem(447);
+    .btn-1{width:px2rem(196); top:px2rem(1146); left: px2rem(495);}
+    .reel{width:px2rem(256); top:px2rem(364); left: px2rem(452);
       .reel-1{ position: relative; width: px2rem(256); height:px2rem(53);
         background: url("../images/reel-1.png") no-repeat; background-size: 100%;
-        -webkit-transition: all 1s; transition: all 1s;
+        -webkit-transition: height 0.2s; transition: height 0.2s;
       }
       .reel-1.on{ height: px2rem(302); }
       .reel-2{ position: relative; width: px2rem(256);height:px2rem(53); margin-top: px2rem(-10);
         background: url("../images/reel-2.png") no-repeat; background-size: cover;
-        -webkit-transition: all 1s; transition: all 1s;
       }
       .arrow{ position: relative; width:px2rem(256); text-align: center;
         canvas {
@@ -69,7 +73,7 @@
           height: px2rem(57);
         }
       }
-      .arrow.on{ display: none;}
+
     }
   }
   .sec3{

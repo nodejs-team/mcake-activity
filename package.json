@@ -34,7 +34,7 @@
     "yargs": "^6.4.0"
   },
   "buildConfig": {
-    "projectName": "white-loveDay",
+    "projectName": "Demo",
     "basePath": "http://edm.mcake.com/fangli/2017/",
     "tinypngKey": "Lv4IxKbb9SJ6M3OG-lyEA86akPCQBmqE",
     "server": {

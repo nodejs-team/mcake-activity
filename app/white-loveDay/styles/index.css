@@ -13,154 +13,150 @@
     top: 2.66667rem;
     left: 0; }
 
-.main section {
+.con_main > div {
   position: relative;
   width: 10rem; }
 
-.main .sec1 {
+.con_main .sec1 {
   height: 6.26667rem; }
-  .main .sec1 .q1 {
+  .con_main .sec1 .q1 {
     width: 7.72rem;
     left: 1.10667rem;
     top: 0; }
-  .main .sec1 .q2 {
+  .con_main .sec1 .q2 {
     top: 4.46667rem;
     left: 4.46667rem; }
-    .main .sec1 .q2 canvas {
+    .con_main .sec1 .q2 canvas {
       width: 1.73333rem;
       height: 1.32rem; }
 
-.main .sec2 {
+.con_main .sec2 {
   height: 16.64rem; }
-  .main .sec2 .gezi {
+  .con_main .sec2 .gezi {
     left: 2.77333rem;
     top: 0.69333rem; }
-    .main .sec2 .gezi canvas {
+    .con_main .sec2 .gezi canvas {
       width: 2.84rem;
       height: 2.96rem; }
-  .main .sec2 .q1 {
+  .con_main .sec2 .q1 {
     width: 4.92rem;
     top: 0rem;
     left: 1.09333rem; }
-  .main .sec2 .q2 {
+  .con_main .sec2 .q2 {
     width: 3.09333rem;
     top: 0.53333rem;
     left: 5.84rem; }
-  .main .sec2 .q3 {
+  .con_main .sec2 .q3 {
     width: 6.77333rem;
     top: 7.17333rem;
-    left: 0.61333rem; }
-  .main .sec2 .q4 {
+    left: 0.46667rem; }
+  .con_main .sec2 .q4 {
     width: 1.58667rem;
     top: 10rem;
     left: 7.38667rem; }
-  .main .sec2 .q5 {
+  .con_main .sec2 .q5 {
     width: 2.41333rem;
     top: 12.2rem;
     left: 0; }
-  .main .sec2 .word {
+  .con_main .sec2 .word {
     width: 5.49333rem;
     top: 11.84rem;
     left: 3.65333rem; }
-  .main .sec2 .btn {
+  .con_main .sec2 .btn-1 {
     width: 2.61333rem;
     top: 15.28rem;
     left: 6.6rem; }
-  .main .sec2 .reel {
+  .con_main .sec2 .reel {
     width: 3.41333rem;
     top: 4.85333rem;
-    left: 5.96rem; }
-    .main .sec2 .reel .reel-1 {
+    left: 6.02667rem; }
+    .con_main .sec2 .reel .reel-1 {
       position: relative;
       width: 3.41333rem;
       height: 0.70667rem;
       background: url("../images/reel-1.png") no-repeat;
       background-size: 100%;
-      -webkit-transition: all 1s;
-      transition: all 1s; }
-    .main .sec2 .reel .reel-1.on {
+      -webkit-transition: height 0.2s;
+      transition: height 0.2s; }
+    .con_main .sec2 .reel .reel-1.on {
       height: 4.02667rem; }
-    .main .sec2 .reel .reel-2 {
+    .con_main .sec2 .reel .reel-2 {
       position: relative;
       width: 3.41333rem;
       height: 0.70667rem;
       margin-top: -0.13333rem;
       background: url("../images/reel-2.png") no-repeat;
-      background-size: cover;
-      -webkit-transition: all 1s;
-      transition: all 1s; }
-    .main .sec2 .reel .arrow {
+      background-size: cover; }
+    .con_main .sec2 .reel .arrow {
       position: relative;
       width: 3.41333rem;
       text-align: center; }
-      .main .sec2 .reel .arrow canvas {
+      .con_main .sec2 .reel .arrow canvas {
         width: 0.48rem;
         height: 0.76rem; }
-    .main .sec2 .reel .arrow.on {
-      display: none; }
 
-.main .sec3 {
+.con_main .sec3 {
   height: 34.28rem; }
-  .main .sec3 .fly {
+  .con_main .sec3 .fly {
     top: 0.49333rem;
     left: 2.54667rem; }
-    .main .sec3 .fly canvas {
+    .con_main .sec3 .fly canvas {
       width: 3.24rem;
       height: 2.8rem; }
-  .main .sec3 .girl {
+  .con_main .sec3 .girl {
     top: 2.04rem;
     left: 6.32rem; }
-    .main .sec3 .girl canvas {
+    .con_main .sec3 .girl canvas {
       width: 2.45333rem;
       height: 2.28rem; }
-  .main .sec3 .dog {
+  .con_main .sec3 .dog {
     top: 13.06667rem;
     left: 4.26667rem; }
-    .main .sec3 .dog canvas {
+    .con_main .sec3 .dog canvas {
       width: 3.02667rem;
       height: 4.66667rem; }
-  .main .sec3 .q1 {
+  .con_main .sec3 .q1 {
     width: 7.14667rem;
     top: 4.18667rem;
     left: 0.44rem; }
-  .main .sec3 .q2 {
+  .con_main .sec3 .q2 {
     width: 4.98667rem;
     top: 9.89333rem;
     left: 4.73333rem; }
-  .main .sec3 .q3 {
+  .con_main .sec3 .q3 {
     width: 4.90667rem;
     top: 12.26667rem;
     left: 0.82667rem; }
-  .main .sec3 .q4 {
+  .con_main .sec3 .q4 {
     width: 4.45333rem;
     top: 14.62667rem;
     left: 5.46667rem; }
-  .main .sec3 .q5 {
+  .con_main .sec3 .q5 {
     width: 0.64rem;
     top: 31.18667rem;
     left: 2.32rem; }
-  .main .sec3 .pan {
+  .con_main .sec3 .pan {
     width: 5.01333rem;
     top: 16.12rem;
     left: 0.93333rem; }
-  .main .sec3 .word {
+  .con_main .sec3 .word {
     width: 6.73333rem;
     top: 22.28rem;
     left: 0.82667rem; }
-  .main .sec3 .btn-2 {
+  .con_main .sec3 .btn-2 {
     width: 3.2rem;
     top: 13.01333rem;
     left: 6.58667rem; }
-  .main .sec3 .btn-3 {
+  .con_main .sec3 .btn-3 {
     width: 2.61333rem;
     top: 23.97333rem;
     left: 2.98667rem; }
-  .main .sec3 .box {
+  .con_main .sec3 .box {
     width: 7.53333rem;
     top: 25.6rem;
     left: 2.48rem;
     z-index: 2; }
-  .main .sec3 .bottom {
+  .con_main .sec3 .bottom {
     width: 6.48rem;
     top: 31.97333rem;
     left: 1.76rem;
