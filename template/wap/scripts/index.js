@@ -27,6 +27,19 @@
         return val;
     }
 
+    function formatResData(objConfig) {
+        if( !( typeof objConfig === 'object') ) return [];
+        if( objConfig instanceof Array) return objConfig;
+        var frames = [];
+        for( var i in objConfig ){
+          objConfig[i].key = i;
+          frames.push(objConfig[i]);
+        }
+        return frames.sort(function (a, b) {
+          return parseInt(a.key.replace(/^[^\d]+/, "")) - parseInt(b.key.replace(/^[^\d]+/, ""));
+        });
+    }
+
     function startLoading(){
         var loader = new Loader('images/'), domLoad = document.getElementById('evt_loading');
         domLoad.style.display = 'block';
