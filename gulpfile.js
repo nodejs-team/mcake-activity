@@ -1,5 +1,5 @@
 var gulp = require('gulp'),
-    tinypng = require('gulp-tinypng-compress'),
+	tinypng = require('gulp-tinypng'),
     webserver = require('gulp-webserver'),
     sass = require('gulp-sass'),
     useref = require('gulp-useref'),
@@ -49,10 +49,7 @@ gulp.task('tinypng', function () {
 	}
 
 	gulp.src(src)
-		.pipe(cache(tinypng({
-			key: buildConfig.tinypngKey,
-			log: true
-		})))
+		.pipe(cache(tinypng(buildConfig.tinypngKey)))
 		.pipe(gulp.dest('app/'+projectName+'/tinypng'));
 });
 

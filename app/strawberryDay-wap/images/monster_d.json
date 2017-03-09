@@ -1,0 +1,10 @@
+{"file":"monster_d.png","frames":{
+"monster_d_01":{"x":1,"y":316,"w":86,"h":104,"offX":8,"offY":6,"sourceW":131,"sourceH":110},
+"monster_d_02":{"x":93,"y":103,"w":86,"h":104,"offX":22,"offY":6,"sourceW":131,"sourceH":110},
+"monster_d_03":{"x":1,"y":210,"w":86,"h":104,"offX":13,"offY":6,"sourceW":131,"sourceH":110},
+"monster_d_04":{"x":93,"y":1,"w":90,"h":100,"offX":34,"offY":9,"sourceW":131,"sourceH":110},
+"monster_d_05":{"x":89,"y":309,"w":90,"h":97,"offX":34,"offY":12,"sourceW":131,"sourceH":110},
+"monster_d_06":{"x":1,"y":1,"w":90,"h":105,"offX":34,"offY":4,"sourceW":131,"sourceH":110},
+"monster_d_07":{"x":1,"y":108,"w":90,"h":100,"offX":34,"offY":9,"sourceW":131,"sourceH":110},
+"monster_d_08":{"x":89,"y":210,"w":90,"h":97,"offX":16,"offY":12,"sourceW":131,"sourceH":110},
+"monster_d_09":{"x":185,"y":1,"w":5,"h":5,"offX":0,"offY":0,"sourceW":131,"sourceH":110}}}

@@ -1,0 +1,12 @@
+{"file":"monster_b.png","frames":{
+"monster_b_01":{"x":197,"y":118,"w":98,"h":115,"offX":3,"offY":29,"sourceW":112,"sourceH":145},
+"monster_b_02":{"x":99,"y":281,"w":96,"h":107,"offX":9,"offY":37,"sourceW":112,"sourceH":145},
+"monster_b_03":{"x":99,"y":143,"w":96,"h":136,"offX":9,"offY":8,"sourceW":112,"sourceH":145},
+"monster_b_04":{"x":398,"y":1,"w":97,"h":107,"offX":8,"offY":37,"sourceW":112,"sourceH":145},
+"monster_b_05":{"x":197,"y":1,"w":100,"h":115,"offX":11,"offY":29,"sourceW":112,"sourceH":145},
+"monster_b_06":{"x":299,"y":1,"w":97,"h":107,"offX":8,"offY":37,"sourceW":112,"sourceH":145},
+"monster_b_07":{"x":1,"y":144,"w":96,"h":141,"offX":9,"offY":3,"sourceW":112,"sourceH":145},
+"monster_b_08":{"x":99,"y":1,"w":96,"h":140,"offX":9,"offY":4,"sourceW":112,"sourceH":145},
+"monster_b_09":{"x":1,"y":1,"w":96,"h":141,"offX":9,"offY":3,"sourceW":112,"sourceH":145},
+"monster_b_10":{"x":1,"y":287,"w":96,"h":140,"offX":9,"offY":4,"sourceW":112,"sourceH":145},
+"monster_b_11":{"x":197,"y":235,"w":96,"h":107,"offX":9,"offY":37,"sourceW":112,"sourceH":145}}}

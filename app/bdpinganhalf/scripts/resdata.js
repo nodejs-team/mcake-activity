@@ -1,5 +1,10 @@
 var resData = [
     {
+        "name":"word_yi_png",
+        "type":"image",
+        "url":"word_yi.png"
+    },
+    {
         "name":"act_ge_png",
         "type":"image",
         "url":"act_ge.png"
@@ -40,14 +45,44 @@ var resData = [
         "url":"text1893.png"
     },
     {
+        "name":"top_christmas_png",
+        "type":"image",
+        "url":"top_christmas.png"
+    },
+    {
+        "name":"top_loveday_png",
+        "type":"image",
+        "url":"top_loveday.png"
+    },
+    {
+        "name":"top_newyear_png",
+        "type":"image",
+        "url":"top_newyear.png"
+    },
+    {
         "name":"top_pic_jpg",
         "type":"image",
         "url":"top_pic.jpg"
     },
     {
+        "name":"top_pingan_png",
+        "type":"image",
+        "url":"top_pingan.png"
+    },
+    {
         "name":"top_quality_png",
         "type":"image",
         "url":"top_quality.png"
+    },
+    {
+        "name":"top_spring_png",
+        "type":"image",
+        "url":"top_spring.png"
+    },
+    {
+        "name":"top_womanday_png",
+        "type":"image",
+        "url":"top_womanday.png"
     },
     {
         "name":"tower1_png",
@@ -60,18 +95,13 @@ var resData = [
         "url":"tower2.png"
     },
     {
-        "name":"word_yi_png",
+        "name":"word_qing_png",
         "type":"image",
-        "url":"word_yi.png"
+        "url":"word_qing.png"
     },
     {
         "name":"word_shou_png",
         "type":"image",
         "url":"word_shou.png"
-    },
-    {
-        "name":"word_qing_png",
-        "type":"image",
-        "url":"word_qing.png"
     }
 ];

@@ -27,8 +27,10 @@
         return val;
     }
 
+    var loader;
     function startLoading(){
-        var loader = new Loader('images/'), domLoad = document.getElementById('evt_loading');
+        var  domLoad = document.getElementById('evt_loading');
+        loader = new Loader('images/');
         domLoad.style.display = 'block';
         loader.addGroup('preload', resData);
         loader.on('progress', function(groupName, ix, len){
@@ -38,8 +40,13 @@
             fixImageSrc(loader.getAll());
             domLoad.style.display = 'none';
             document.getElementById('evt_content').style.display = 'block';
+             loadComplete();
         });
         loader.loadGroup('preload');
     }
     startLoading();
+    
+    var loadComplete = function () {
+       
+    }
 })()

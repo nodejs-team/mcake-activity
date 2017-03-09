@@ -1,0 +1,159 @@
+#evt_content {
+  /*height:px2rem(6300);*/
+  background: url("../images/bg.jpg") repeat; }
+  #evt_content > div {
+    position: relative; }
+  #evt_content img {
+    width: 100%; }
+  #evt_content .a {
+    width: 2.89333rem;
+    top: 0.13333rem;
+    left: 0.13333rem; }
+  #evt_content .b {
+    width: 11.10667rem;
+    top: 2.66667rem;
+    left: 0; }
+
+.sec1 {
+  height: 10.52rem; }
+  .sec1 > div {
+    position: absolute; }
+  .sec1 .q1 {
+    width: 6rem;
+    top: 0.4rem;
+    left: 2.18667rem; }
+  .sec1 .q2 {
+    top: 4.42667rem;
+    left: 0.26667rem; }
+    .sec1 .q2 canvas {
+      width: 2.69333rem;
+      height: 3.69333rem; }
+  .sec1 .q3 {
+    width: 2.72rem;
+    top: 6.13333rem;
+    left: 3rem; }
+  .sec1 .q4 {
+    top: 4.12rem;
+    left: 5.48rem; }
+    .sec1 .q4 canvas {
+      width: 4.21333rem;
+      height: 4.85333rem; }
+  .sec1 .q5 {
+    width: 4.44rem;
+    top: 8.44rem;
+    left: 2.84rem; }
+
+.sec2 {
+  height: 13.6rem;
+  background: url("../images/bg1.png");
+  background-size: 100%; }
+  .sec2 > div {
+    position: absolute; }
+  .sec2 .word1 {
+    width: 5.37333rem;
+    top: 2.34667rem;
+    left: 1.30667rem; }
+  .sec2 .cake1 {
+    width: 6.4rem;
+    top: 5.65333rem;
+    left: 3.54667rem; }
+  .sec2 .monster2 {
+    top: 9.14667rem;
+    left: 1.30667rem; }
+    .sec2 .monster2 canvas {
+      width: 1.49333rem;
+      height: 1.93333rem; }
+
+.sec3 {
+  height: 13.58667rem;
+  background: url("../images/bg2.png");
+  background-size: 100%; }
+  .sec3 > div {
+    position: absolute; }
+  .sec3 .word2 {
+    width: 5.16rem;
+    top: -0.4rem;
+    left: 3.85333rem; }
+  .sec3 .cake2 {
+    width: 5.37333rem;
+    top: -0.86667rem;
+    left: 0; }
+  .sec3 .word3 {
+    width: 5.36rem;
+    top: 7.04rem;
+    left: 1.30667rem; }
+  .sec3 .cake3 {
+    width: 9.68rem;
+    top: 7.6rem;
+    left: 0.30667rem; }
+  .sec3 .monster3 {
+    top: 9.58667rem;
+    left: 7.10667rem; }
+    .sec3 .monster3 canvas {
+      width: 2.42667rem;
+      height: 2.14667rem; }
+
+.sec4 {
+  height: 13.61333rem;
+  background: url("../images/bg3.png");
+  background-size: 100%; }
+  .sec4 > div {
+    position: absolute; }
+  .sec4 .word4 {
+    width: 5.4rem;
+    top: 2rem;
+    left: 4.05333rem; }
+  .sec4 .monster4 {
+    top: 6.53333rem;
+    left: 4.58667rem;
+    z-index: 1; }
+    .sec4 .monster4 canvas {
+      width: 1.74667rem;
+      height: 1.46667rem; }
+  .sec4 .cake4 {
+    width: 6.50667rem;
+    top: 4.26667rem;
+    left: 0;
+    z-index: 2; }
+  .sec4 .monster5 {
+    top: 12.46667rem;
+    left: 1.30667rem; }
+    .sec4 .monster5 canvas {
+      width: 1.62667rem;
+      height: 1.13333rem; }
+
+.sec5 {
+  height: 13.57333rem;
+  background: url("../images/bg4.png");
+  background-size: 100%; }
+  .sec5 > div {
+    position: absolute; }
+  .sec5 .word5 {
+    width: 5.37333rem;
+    top: 0.26667rem;
+    left: 1.30667rem; }
+  .sec5 .cake5 {
+    width: 6.70667rem;
+    top: 2.77333rem;
+    left: 3.28rem; }
+  .sec5 .monster6 {
+    top: 9.45333rem;
+    left: 1.49333rem; }
+    .sec5 .monster6 canvas {
+      width: 6.58667rem;
+      height: 6.24rem; }
+
+.sec-footer {
+  position: relative;
+  padding: 0.4rem 0.8rem;
+  background: #3a2015;
+  color: #fff; }
+  .sec-footer > h2 {
+    font-size: 0.26667rem;
+    margin: 0 0 5px; }
+  .sec-footer > p {
+    font-size: 0.24rem;
+    line-height: 0.4rem;
+    margin: 0;
+    padding-left: 1.5em;
+    text-indent: -1.5em; }

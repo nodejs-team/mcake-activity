@@ -1,0 +1,113 @@
+@function px2rem($n) {
+  @return ($n * 10 / 750) * 1rem; //设计稿一般都是750宽
+}
+
+@mixin font-dpr($font-size){
+  font-size: $font-size;
+
+  [data-dpr="2"] & {
+    font-size: $font-size * 2;
+  }
+
+  [data-dpr="3"] & {
+    font-size: $font-size * 3;
+  }
+
+}
+
+#evt_content{
+  /*height:px2rem(6300);*/
+  background: url("../images/bg.jpg") repeat;
+  > div{position:relative;}
+  img{width:100%;}
+  .a{width:px2rem(217); top:px2rem(10); left:px2rem(10);}
+  .b{width:px2rem(833); top:px2rem(200); left:0;}
+}
+
+.sec1{
+  > div{position: absolute;}
+  height:px2rem(789);
+  .q1{width:px2rem(450); top:px2rem(30); left:px2rem(164);}
+  .q2{ top:px2rem(332); left:px2rem(20);
+    canvas {
+      width:px2rem(202);
+      height: px2rem(277);
+    }
+  }
+  .q3{width:px2rem(204); top:px2rem(460); left:px2rem(225);}
+  .q4{ top:px2rem(309); left:px2rem(411);
+    canvas {
+      width:px2rem(316);
+      height: px2rem(364);
+    }
+
+  }
+  .q5{width:px2rem(333); top:px2rem(633); left:px2rem(213);}
+
+}
+
+
+.sec2{
+  > div{position: absolute;}
+  height:px2rem(1020); background: url("../images/bg1.png"); background-size: 100%;
+  .word1{width:px2rem(403); top:px2rem(176); left:px2rem(98);}
+  .cake1{width:px2rem(480); top:px2rem(424); left:px2rem(266);}
+  .monster2{top:px2rem(686); left:px2rem(98);
+      canvas {  width:px2rem(112);  height: px2rem(145); }
+  }
+}
+
+.sec3{
+  > div{position: absolute;}
+  height:px2rem(1019); background: url("../images/bg2.png"); background-size: 100%;
+  .word2{width:px2rem(387); top:px2rem(-30); left:px2rem(289);}
+  .cake2{width:px2rem(403); top:px2rem(-65); left:0;}
+  .word3{width:px2rem(402); top:px2rem(528); left:px2rem(98);}
+  .cake3{width:px2rem(726); top:px2rem(570); left:px2rem(23);}
+  .monster3{top:px2rem(719); left:px2rem(533);
+    canvas {  width:px2rem(182);  height: px2rem(161); }
+  }
+}
+
+.sec4{
+  > div{position: absolute;}
+  height:px2rem(1021); background: url("../images/bg3.png"); background-size: 100%;
+  .word4{width:px2rem(405); top:px2rem(150); left:px2rem(304);}
+  .monster4{ top:px2rem(490); left:px2rem(344); z-index: 1;
+    canvas {  width:px2rem(131);  height: px2rem(110); }
+  }
+  .cake4{width:px2rem(488); top:px2rem(320); left:0; z-index: 2;}
+  .monster5{top:px2rem(935); left:px2rem(98);
+    canvas {  width:px2rem(122);  height: px2rem(85); }
+  }
+}
+.sec5{
+  > div{position: absolute;}
+  height:px2rem(1018); background: url("../images/bg4.png"); background-size: 100%;
+  .word5{width:px2rem(403); top:px2rem(20); left:px2rem(98);}
+  .cake5{width:px2rem(503); top:px2rem(208); left:px2rem(246);}
+  .monster6{top:px2rem(709); left:px2rem(112);
+    canvas {
+      width:px2rem(494);
+      height: px2rem(468);
+    }
+  }
+}
+.sec-footer{
+  position: relative;
+  padding:px2rem(30) px2rem(60);
+  background: #3a2015;
+  color: #fff;
+  > h2{
+    font-size:px2rem(20);
+    margin: 0 0 5px;
+  }
+
+  > p{
+    font-size:px2rem(18);
+    line-height:px2rem(30);
+    margin: 0;
+    padding-left: 1.5em;
+    text-indent: -1.5em;
+  }
+}
