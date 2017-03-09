@@ -40,13 +40,16 @@
         });
     }
 
+    var loader;
+
     function startLoading(){
-        var loader = new Loader('images/'), domLoad = document.getElementById('evt_loading');
+        loader = new Loader('images/');
+        var domLoad = document.getElementById('evt_loading');
         domLoad.style.display = 'block';
         loader.addGroup('preload', resData);
         loader.on('progress', function(groupName, ix, len){
             domLoad.innerHTML = parseInt(ix/len*100) + '%';
-        })
+        });
         loader.on('complete', function(groupName){
             fixImageSrc(loader.getAll());
             domLoad.style.display = 'none';
@@ -55,4 +58,4 @@
         loader.loadGroup('preload');
     }
     startLoading();
-})()
+})();
