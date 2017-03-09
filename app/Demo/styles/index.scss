@@ -14,6 +14,31 @@
   }
 
 }
+//变量
+$min:10px;
+$red:#f00;
+$width-1:$min;
+$width-2:$min*2;
+
+
+//函数
+
+//@mixin
+@mixin border{
+  border:$red 1px solid ;
+}
+
+@mixin opacity($opacity:50) {
+  opacity: $opacity / 100;
+  filter: alpha(opacity=$opacity);
+}
+
+.box{
+  width: $width-1+300px;
+  height: $width-2*10;
+  @include border;
+  @include opacity(30);
+}
 
 #evt_content{
   div{position:absolute;}
