@@ -23,20 +23,24 @@
     top: 0.4rem;
     left: 2.18667rem; }
   .sec1 .q2 {
-    top: 4.42667rem;
-    left: 0.26667rem; }
+    top: 3.6rem;
+    left: -0.2rem; }
     .sec1 .q2 canvas {
-      width: 2.69333rem;
-      height: 3.69333rem; }
+      width: 3.97333rem;
+      height: 5.45333rem; }
+  .sec1 .freak1-ying {
+    width: 2.66667rem;
+    top: 7.33333rem;
+    left: 0.4rem; }
   .sec1 .q3 {
-    width: 2.72rem;
-    top: 6.13333rem;
-    left: 3rem; }
+    width: 4.44rem;
+    top: 5.86667rem;
+    left: 2.53333rem; }
   .sec1 .q4 {
-    top: 4.12rem;
-    left: 5.48rem; }
+    top: 4.26667rem;
+    left: 5.61333rem; }
     .sec1 .q4 canvas {
-      width: 4.21333rem;
+      width: 4.30667rem;
       height: 4.85333rem; }
   .sec1 .q5 {
     width: 4.44rem;
@@ -137,11 +141,11 @@
     top: 2.77333rem;
     left: 3.28rem; }
   .sec5 .monster6 {
-    top: 9.45333rem;
-    left: 1.49333rem; }
+    top: 9.28rem;
+    left: 0.8rem; }
     .sec5 .monster6 canvas {
-      width: 6.58667rem;
-      height: 6.24rem; }
+      width: 7.89333rem;
+      height: 7.48rem; }
 
 .sec-footer {
   position: relative;

@@ -164,4 +164,10 @@ var resData = [
         "type":"image",
         "url":"word3.png"
     }
+    ,
+    {
+        "name":"freak1-ying_png",
+        "type":"image",
+        "url":"freak1-ying.png"
+    }
 ];

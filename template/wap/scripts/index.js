@@ -27,6 +27,19 @@
         return val;
     }
 
+    function formatResData(objConfig) {
+        if( !( typeof objConfig === 'object') ) return [];
+        if( objConfig instanceof Array) return objConfig;
+        var frames = [];
+        for( var i in objConfig ){
+          objConfig[i].key = i;
+          frames.push(objConfig[i]);
+        }
+        return frames.sort(function (a, b) {
+          return parseInt(a.key.replace(/^[^\d]+/, "")) - parseInt(b.key.replace(/^[^\d]+/, ""));
+        });
+    }
+
     var loader;
     function startLoading(){
         var  domLoad = document.getElementById('evt_loading');
@@ -35,7 +48,7 @@
         loader.addGroup('preload', resData);
         loader.on('progress', function(groupName, ix, len){
             domLoad.innerHTML = parseInt(ix/len*100) + '%';
-        })
+        });
         loader.on('complete', function(groupName){
             fixImageSrc(loader.getAll());
             domLoad.style.display = 'none';
@@ -49,4 +62,4 @@
     var loadComplete = function () {
        
     }
-})()
+})();
