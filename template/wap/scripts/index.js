@@ -41,16 +41,10 @@
     }
 
     var loader;
-<<<<<<< HEAD
-    function startLoading(){
-        var  domLoad = document.getElementById('evt_loading');
-        loader = new Loader('images/');
-=======
 
     function startLoading(){
         loader = new Loader('images/');
         var domLoad = document.getElementById('evt_loading');
->>>>>>> 7146d9fba67be7e24c39470383b87af90d8968da
         domLoad.style.display = 'block';
         loader.addGroup('preload', resData);
         loader.on('progress', function(groupName, ix, len){
@@ -65,11 +59,10 @@
         loader.loadGroup('preload');
     }
     startLoading();
-<<<<<<< HEAD
+
     
     var loadComplete = function () {
        
     }
-=======
->>>>>>> 7146d9fba67be7e24c39470383b87af90d8968da
+
 })();

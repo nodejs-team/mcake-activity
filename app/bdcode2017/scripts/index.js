@@ -38,6 +38,7 @@
     }
 
     function BDSlider(el, options){
+        //console.log(options)
         this.$wrapper = $(el);
         this.$items = this.$wrapper.children();
         this.percentage = 0.8;
@@ -78,6 +79,7 @@
         };
         this.current = 0;
         this.total = this.$items.length;
+        this.autoplay = options.autoplay || false;
         this.init();
     }
     BDSlider.prototype = {
@@ -97,6 +99,17 @@
                 this.current = 0;
             }
             this.sliding('left');
+        },
+        auto:function () {
+            if(!this.autoplay) return;
+            var self = this;
+            function delay(){
+                self.timer = setTimeout(function(){
+                    self.next();
+                    delay();
+                }, 2000)
+            }
+            delay();
         },
         sliding: function(direction){
 
@@ -147,6 +160,13 @@
             this.$prev.on('click', function(){
                 self.prev();
             })
+            this.$wrapper.on('mouseenter', function(){
+                clearTimeout(self.timer);
+            })
+            this.$wrapper.on('mouseleave', function(){
+                self.auto();
+            })
+            this.auto();
         }
     }
 
@@ -154,6 +174,7 @@
         new BDSlider('#bdSlider', {
             prev: '.slidePrev',
             next: '.slideNext',
+            autoplay: true,
             slideEnd: function(ix){
                 refreshNumber(ix);
             }

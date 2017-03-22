@@ -1,0 +1,80 @@
+body,ul,li,ol,h1,h2,h3,h4,h5,h6,p{margin:0;}
+ul,ol{list-style: none;}
+img{border:0;}
+.clearfix:before,.clearfix:after {  /*清楚浮动*/
+  content:"";
+  display:table;
+}
+.clearfix:after{clear:both;}
+.clearfix{
+  *zoom:1;/*IE/7/6*/
+}
+
+#evt_loading{
+  position:relative;
+  height:600px;
+}
+
+#evt_spin{
+  position:absolute;
+  left:50%;
+  top:50%;
+  margin-top:-10px;
+  margin-left:-100px;
+  width:200px;
+  text-align:center;
+  font-size:18px;
+  font-family:"Microsoft YaHei",Tahoma,Arial;
+}
+
+.evt-container{
+  position: relative;
+  left:0;
+  top:0;
+  right:0;
+  overflow: hidden;
+  background:#ecf3f7;
+}
+
+body{
+  overflow-x:hidden;
+  background:#ecf3f7;
+}
+
+
+.evt-content{
+  position: relative;  width:1000px;  margin:0 auto;
+}
+
+.evt-content{height:2438px; border-top:1px solid #ecf3f7; zoom:1;
+  img{width:100%;}
+  .title{width:374px; position:absolute; top:47px; left:90px;}
+  .cake{width:936px; position:absolute; top:-94px; left:271px;}
+  .cake2{width:1034px; position:absolute; top:389px; left:-72px;}
+  .words{width:100%;position:absolute; top:825px;
+    h2{font-size:25px; color:#82614c; font-family:"Microsoft YaHei",Tahoma,Arial; text-align:center; margin:130px 0 19px 0;}
+    p{color:#000000; font-size:20px; line-height:28px; width:850px; margin:0 0 0 93px; text-indent:-25px;}
+    .orange{color:#ed6d00; text-decoration: none;}
+    .p2{width:785px; text-indent:0; margin:0 auto;}
+    a:hover{text-decoration: underline;}
+  }
+  .steps{width:850px;position:absolute; top:1683px; left: 90px; margin:0px auto 0 auto;
+    .step1{float:left; width:418px;}
+    .step2{float:right; width:427px;}
+  }
+}
+.qr-content{width:100%; height:850px; background:#ffffff; border-top:1px solid #ffffff;
+  .code{width:644px; margin:226px auto 0 auto;
+     .img1{float: left}
+     .img2{float: right}
+  }
+  .text{width:644px; margin:0 auto;
+    >div{ width:295px; }
+    .textl{float: left;}
+    .textr{float: right;}
+    p{text-align: center; color:#82624d; font-size:30px; margin:30px 0 0 0;}
+    .p2{color:#000000; font-size:15px; margin:10px 0 0 0;}
+  }
+  .ghicon{ width: 553px; margin: 40px auto;}
+
+}

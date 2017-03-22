@@ -1,5 +1,4 @@
 ;(function(){
-
     function Slider(container, opts){
         this.$outer = $(container);
 
@@ -22,9 +21,12 @@
             $last = this.$els.clone().appendTo(this.$inner).eq(this.total-1);
             this.total *= 2;
         }
+
+        this.$outer.find("ul").width(this.$els.width()*(this.total+1));
         $last.prependTo(this.$inner);
+
         this.$inner.css('marginLeft', -this.w);
-        console.log(this.$next)
+
         this.$prev.on('click', function(){
             self.prev();
         })
@@ -52,6 +54,7 @@
         })
     }
     proto.next = function(){
+
         if(this.isSliding) return;
         this.isSliding = true;
         var self = this;
@@ -75,31 +78,52 @@
         delay();
     }
 
-    function initTopIcon(){
-        var icon = $('.top_icon'),
-            topBtn=$('.top_btn'),
-            winWidth = $(window).width();
-        icon.css('top', 430 * (winWidth<1280? 1280 : winWidth) / 1920);
-        /*topBtn.css('top', 526 * (winWidth<1280? 1280 : winWidth) / 1920);*/
+
+
+    function fixImageSrc(res){
+        var imgs = document.getElementsByTagName('img');
+        for(var i=0,len=imgs.length; i<len; i++){
+            var img = imgs[i];
+            var dataSrc = img.getAttribute('src-fix');
+            var data = res[dataSrc];
+            if(dataSrc && data){
+                img.setAttribute('src', data.url);
+            }
+        }
     }
 
+
+
+
+
     function startLoading(){
-        var loader = new Loader('images/'), domLoad = document.getElementById('evt_loading');
+        var loader = new Loader('images/');
+        var domLoad = document.getElementById('evt_loading');
+        domLoad.style.display = 'block';
         loader.addGroup('preload', resData);
         loader.on('progress', function(groupName, ix, len){
             domLoad.innerHTML = parseInt(ix/len*100) + '%';
-        })
+        });
         loader.on('complete', function(groupName){
+            fixImageSrc(loader.getAll());
             domLoad.style.display = 'none';
-            document.getElementById('evt_container').style.display = 'block';
-            new Slider('.slideOuter',{
-                prev: '.prev',
-                next: '.next',
-                autoplay: true
-            });
-            initTopIcon();
+            document.getElementById('evt_content').style.display = 'block';
+             loadComplete();
         });
         loader.loadGroup('preload');
     }
     startLoading();
-})()
+
+    var loadComplete = function () {
+        new Slider('.slideOuter',{
+            prev: '.prev',
+            next: '.next',
+            autoplay: true
+        });
+
+
+
+
+    }
+
+})();
