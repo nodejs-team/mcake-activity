@@ -22,14 +22,19 @@
     top: 3.06667rem;
     left: 0.6rem; }
   #evt_content .section-top .top_btn {
-    width: 20.15%;
-    top: 526px;
-    left: 50%;
+    width: 2.4rem;
+    top: 4.06667rem;
+    left: 1.22667rem;
     font-family: 'mfshangya';
-    margin: 0 0 0 -27.4%;
-    font-size: 20px;
-    color: #b50e0d;
-    text-align: center; }
+    background: #b50e0d;
+    font-size: 0.34667rem;
+    padding: 0.06667rem;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px; }
+  #evt_content .section-top .top_btn a {
+    color: #fff;
+    text-decoration: none; }
   #evt_content .section-top .top_quality {
     width: 1.25333rem;
     top: 4.78667rem;

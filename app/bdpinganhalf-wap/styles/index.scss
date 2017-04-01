@@ -27,7 +27,9 @@
     z-index: 2;
     > div{ position: absolute;}
     .top_icon{ width:px2rem(276); top:px2rem(230); left:px2rem(45);}
-    .top_btn{ width:20.15%; top:526px; left:50%; font-family:'mfshangya'; margin:0 0 0 -27.4%; font-size: 20px; color:#b50e0d; text-align: center; }
+    .top_btn{ width:px2rem(180); top:px2rem(305); left:px2rem(92); font-family:'mfshangya'; background:#b50e0d;
+      font-size:px2rem(26); padding: px2rem(5); color:#fff; text-align: center; border-radius: 5px; }
+    .top_btn a{ color: #fff; text-decoration: none;}
     .top_quality{width:px2rem(94); top:px2rem(359); left:px2rem(331);}
 
   }

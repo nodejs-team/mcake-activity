@@ -80,7 +80,7 @@
             topBtn=$('.top_btn'),
             winWidth = $(window).width();
         icon.css('top', 430 * (winWidth<1280? 1280 : winWidth) / 1920);
-        /*topBtn.css('top', 526 * (winWidth<1280? 1280 : winWidth) / 1920);*/
+        topBtn.css('top',517 * (winWidth<1280? 1280 : winWidth) / 1920);
     }
 
     function startLoading(){
