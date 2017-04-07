@@ -62,11 +62,24 @@
 
     var initScroll = function (){
         window.scrollAnimate('#evt_container', [
-            {dom: '.s-title',x:0, y:-500,duration:800}
-            ,{dom: '.mountain',x:0, y:200,opacity:0,duration:800,delay:500}
-            ,{dom: '.cake',x:0, y:0,opacity:0,duration:800,delay:500}
+            {dom: '.s-title',x:0, y:-0,opacity:0,duration:800,delay:500}
+            ,{dom: '.mountain',x:0, y:0,opacity:0,duration:800,delay:500}
+            ,{dom: '.cake',x:0, y:0,opacity:0,duration:800,delay:800}
+            ,{dom: '.cloud-1',x:0, y:0,opacity:0,duration:800,delay:500}
+            ,{dom: '.cloud-2',x:0, y:0,opacity:0,duration:800,delay:500}
+            ,{dom: '.floader',x:0, y:0,opacity:0,duration:800,delay:500}
+            ,{dom: '.tips',x:0, y:0,opacity:0,duration:800,delay:800}
+            ,{dom: '.across',x:0, y:0,opacity:0,duration:800,delay:800}
+            ,{dom: '.line',x:0, y:0,opacity:0,duration:800,delay:1200}
 
+            ,{dom: '.cake-1',x:200, y:0,opacity:0,duration:800,delay:1300}
+            ,{dom: '.cake-w-1',x:-200, y:0,opacity:0,duration:800,delay:1300}
 
+            ,{dom: '.cake-2',x:-200, y:0,opacity:0,duration:800,delay:1500}
+            ,{dom: '.cake-w-2',x:200, y:0,opacity:0,duration:800,delay:1500}
+
+            ,{dom: '.cake-3',x:200, y:0,opacity:0,duration:800,delay:1500}
+            ,{dom: '.cake-w-3',x:-200, y:0,opacity:0,duration:800,delay:1800}
         ])
     }
 

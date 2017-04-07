@@ -1,12 +1,87 @@
 var resData = [
     {
-        "name":"a_jpg",
+        "name":"tips_png",
         "type":"image",
-        "url":"a.jpg"
+        "url":"tips.png"
     },
     {
-        "name":"b_png",
+        "name":"venez_png",
         "type":"image",
-        "url":"b.png"
+        "url":"venez.png"
+    },
+    {
+        "name":"across_png",
+        "type":"image",
+        "url":"across.png"
+    },
+    {
+        "name":"bdf_png",
+        "type":"image",
+        "url":"bdf.png"
+    },
+    {
+        "name":"cake_png",
+        "type":"image",
+        "url":"cake.png"
+    },
+    {
+        "name":"cake-1_png",
+        "type":"image",
+        "url":"cake-1.png"
+    },
+    {
+        "name":"cake-2_png",
+        "type":"image",
+        "url":"cake-2.png"
+    },
+    {
+        "name":"cake-3_png",
+        "type":"image",
+        "url":"cake-3.png"
+    },
+    {
+        "name":"cake-w-1_png",
+        "type":"image",
+        "url":"cake-w-1.png"
+    },
+    {
+        "name":"cake-w-2_png",
+        "type":"image",
+        "url":"cake-w-2.png"
+    },
+    {
+        "name":"cake-w-3_png",
+        "type":"image",
+        "url":"cake-w-3.png"
+    },
+    {
+        "name":"cloud-1_png",
+        "type":"image",
+        "url":"cloud-1.png"
+    },
+    {
+        "name":"cloud-2_png",
+        "type":"image",
+        "url":"cloud-2.png"
+    },
+    {
+        "name":"floader_png",
+        "type":"image",
+        "url":"floader.png"
+    },
+    {
+        "name":"footerbg_png",
+        "type":"image",
+        "url":"footerbg.png"
+    },
+    {
+        "name":"line_png",
+        "type":"image",
+        "url":"line.png"
+    },
+    {
+        "name":"mountain_png",
+        "type":"image",
+        "url":"mountain.png"
     }
 ];
