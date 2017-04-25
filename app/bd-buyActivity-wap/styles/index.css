@@ -254,3 +254,37 @@
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0); } }
+
+#floater {
+  position: fixed;
+  top: 1.33333rem;
+  right: 0.13333rem;
+  z-index: 11;
+  width: 3.36rem;
+  border: red 1px solid; }
+
+#floater .floatImg {
+  position: relative;
+  font-size: 0; }
+
+#floater .floatImg a {
+  width: 100%;
+  display: block;
+  height: 4.89333rem;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+#floater .float-icon {
+  position: absolute;
+  top: 0;
+  right: 0.13333rem;
+  width: 3.36rem; }
+
+#floater .float-container {
+  width: 5.49333rem;
+  position: absolute;
+  font-size: 0;
+  top: 4.33333rem;
+  right: 0;
+  display: block; }
