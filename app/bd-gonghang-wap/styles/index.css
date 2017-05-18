@@ -1,0 +1,198 @@
+#evt_content {
+  background: #ecf3f7; }
+  #evt_content img {
+    width: 100%; }
+  #evt_content .sec-1 {
+    position: relative;
+    height: 24.25333rem; }
+    #evt_content .sec-1 div {
+      position: absolute; }
+    #evt_content .sec-1 .title {
+      width: 7.56rem;
+      top: 0.8rem;
+      left: 1.2rem; }
+    #evt_content .sec-1 .cake-1 {
+      width: 5.62667rem;
+      top: 9.14667rem;
+      left: 4.50667rem; }
+    #evt_content .sec-1 .pic-1 {
+      width: 3.04rem;
+      top: 9.76rem;
+      left: 1.2rem; }
+    #evt_content .sec-1 .word-1 {
+      width: 4.66667rem;
+      top: 12.50667rem;
+      left: 0.89333rem; }
+    #evt_content .sec-1 .cake-2 {
+      width: 6.22667rem;
+      top: 16.68rem;
+      left: 0rem; }
+    #evt_content .sec-1 .pic-2 {
+      width: 3.88rem;
+      top: 17.13333rem;
+      left: 5.45333rem; }
+    #evt_content .sec-1 .word-2 {
+      width: 4.30667rem;
+      top: 20.26667rem;
+      left: 5.33333rem; }
+  #evt_content .sec-2 {
+    position: relative;
+    height: 14.90667rem; }
+    #evt_content .sec-2 > div {
+      position: absolute; }
+    #evt_content .sec-2 .line-1 {
+      width: 4.68rem;
+      top: 0rem;
+      left: 2.66667rem; }
+    #evt_content .sec-2 .line-2 {
+      width: 4.68rem;
+      top: 13.33333rem;
+      left: 2.66667rem; }
+    #evt_content .sec-2 .slideContain {
+      width: 8.93333rem;
+      height: 11.46667rem;
+      top: 1.73333rem;
+      left: 0.53333rem; }
+    #evt_content .sec-2 .slider {
+      width: 8.88rem;
+      position: relative;
+      margin: 0 auto; }
+      #evt_content .sec-2 .slider .prev, #evt_content .sec-2 .slider .next {
+        width: 1.04rem;
+        top: 2.98667rem;
+        position: absolute; }
+      #evt_content .sec-2 .slider .prev {
+        left: 0; }
+      #evt_content .sec-2 .slider .next {
+        right: 0; }
+    #evt_content .sec-2 .slideOuter {
+      width: 6.58667rem;
+      height: 11.46667rem;
+      overflow: hidden;
+      margin: 0 auto; }
+      #evt_content .sec-2 .slideOuter ul {
+        width: 37.33333rem;
+        padding: 0; }
+      #evt_content .sec-2 .slideOuter li {
+        width: 6.58667rem;
+        margin: 0 0.06667rem;
+        color: #242424;
+        font-size: 0.26667rem;
+        float: left;
+        list-style: none;
+        background: url("../images/cake-bg.png") no-repeat;
+        background-size: 100%; }
+        #evt_content .sec-2 .slideOuter li > img {
+          width: 5.98667rem;
+          margin: 0.26667rem 0.26667rem 0.13333rem 0.33333rem; }
+        #evt_content .sec-2 .slideOuter li .fl {
+          float: left; }
+        #evt_content .sec-2 .slideOuter li .fr {
+          float: right; }
+        #evt_content .sec-2 .slideOuter li p {
+          text-align: center;
+          font-size: 0.34667rem;
+          margin: 0.13333rem auto; }
+        #evt_content .sec-2 .slideOuter li .buybtn {
+          width: 5.6rem;
+          height: 0.97333rem;
+          display: block;
+          border-radius: 0.02667rem;
+          text-decoration: none;
+          margin: 0.06667rem auto 0;
+          background: #b50e0d;
+          color: #ffffff;
+          text-align: center;
+          line-height: 0.97333rem;
+          font-size: 0.53333rem;
+          position: static; }
+        #evt_content .sec-2 .slideOuter li .pro-num {
+          position: relative;
+          width: 6.58667rem;
+          height: 1.46667rem;
+          margin: 0.53333rem auto; }
+          #evt_content .sec-2 .slideOuter li .pro-num a {
+            position: absolute;
+            width: 1.08rem;
+            height: 1.06667rem;
+            display: block;
+            top: 0.13333rem; }
+          #evt_content .sec-2 .slideOuter li .pro-num .minus {
+            background: url(../images/btn-1.png);
+            left: 0;
+            background-size: 100%; }
+          #evt_content .sec-2 .slideOuter li .pro-num .plus {
+            background: url(../images/btn-2.png);
+            right: 0;
+            background-size: 100%; }
+          #evt_content .sec-2 .slideOuter li .pro-num input {
+            border: none;
+            display: block;
+            background: url(../images/input.png);
+            width: 4rem;
+            height: 1.29333rem;
+            line-height: 1.29333rem;
+            position: absolute;
+            top: 0;
+            left: 1.2rem;
+            text-align: center;
+            color: #626262;
+            font-size: 0.61333rem;
+            padding: 0; }
+  #evt_content .sec-huodong {
+    position: relative;
+    height: 25.42667rem;
+    z-index: 5; }
+    #evt_content .sec-huodong > div {
+      position: absolute; }
+    #evt_content .sec-huodong .center {
+      text-align: center; }
+    #evt_content .sec-huodong h2 {
+      color: #82614c;
+      font-size: 0.53333rem;
+      text-align: center; }
+    #evt_content .sec-huodong p {
+      font-size: 0.45333rem;
+      line-height: 0.66667rem;
+      padding-left: 0.4rem;
+      text-indent: -0.4rem; }
+    #evt_content .sec-huodong span {
+      color: #ed7920; }
+    #evt_content .sec-huodong .hd-time {
+      width: 9.06667rem;
+      top: 0.8rem;
+      left: 0.46667rem; }
+    #evt_content .sec-huodong .hd-guize {
+      width: 9.06667rem;
+      top: 3.44rem;
+      left: 0.46667rem; }
+    #evt_content .sec-huodong .step {
+      width: 9.76rem;
+      top: 18rem;
+      left: 0.13333rem; }
+  #evt_content .sec-footer {
+    position: relative;
+    height: 16.73333rem;
+    background: #fff;
+    z-index: 0; }
+    #evt_content .sec-footer > div {
+      position: absolute; }
+    #evt_content .sec-footer .code {
+      width: 5.22667rem;
+      top: 4.74667rem;
+      left: 2.50667rem; }
+    #evt_content .sec-footer .text {
+      width: 5.22667rem;
+      top: 10.44rem;
+      left: 2.50667rem;
+      text-align: center; }
+      #evt_content .sec-footer .text h2 {
+        color: #82614c;
+        font-size: 0.61333rem;
+        margin-bottom: 0.13333rem; }
+      #evt_content .sec-footer .text p {
+        font-size: 0.30667rem;
+        margin-top: 0.66667rem; }
+      #evt_content .sec-footer .text p.cs {
+        margin: 0;
+        font-weight: bold; }

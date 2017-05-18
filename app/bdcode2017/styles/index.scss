@@ -85,7 +85,16 @@ body{
   }
 }
 .qr-content{width:100%; height:833px; background:#ffffff; border-top:1px solid #ffffff;
-  .code{width:670px; margin:285px auto 0 auto;}
-  p{text-align: center; color:#82624d; font-size:30px; margin:30px 0 0 0;text-indent: -365px; font-weight:bold;}
-  .p2{color:#000000; font-size:15px; margin:10px 0 0 0;}
+
+  .code{width:644px; margin:276px auto 0 auto;
+    .img1{float: left}
+    .img2{float: right}
+  }
+  .text{width:644px; margin:0 auto;
+    >div{ width:295px; }
+    .textl{float: left;}
+    .textr{float: right;}
+    p{text-align: center; color:#82624d; font-size:30px; margin:30px 0 0 0;}
+    .p2{color:#000000; font-size:15px; margin:10px 0 0 0;}
+  }
 }

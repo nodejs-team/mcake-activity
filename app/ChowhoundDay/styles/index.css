@@ -1,0 +1,150 @@
+#evt_content {
+  background-color: #f3f8fb; }
+  #evt_content img {
+    width: 100%; }
+  #evt_content > div {
+    position: relative; }
+  #evt_content .a {
+    width: 2.89333rem;
+    top: 0.13333rem;
+    left: 0.13333rem; }
+  #evt_content .b {
+    width: 11.10667rem;
+    top: 2.66667rem;
+    left: 0; }
+  #evt_content .sec-1 {
+    height: 13.33333rem; }
+    #evt_content .sec-1 > div {
+      position: absolute; }
+    #evt_content .sec-1 .title {
+      width: 8.34667rem;
+      top: 0.66667rem;
+      left: 0.53333rem; }
+    #evt_content .sec-1 .cake-1 {
+      width: 7.16rem;
+      top: 6.21333rem;
+      left: 2.66667rem; }
+    #evt_content .sec-1 .words-1 {
+      width: 3.54667rem;
+      top: 9.81333rem;
+      left: 0.61333rem;
+      z-index: 3; }
+  #evt_content .sec-2 {
+    height: 17.50667rem; }
+    #evt_content .sec-2 > div {
+      position: absolute; }
+    #evt_content .sec-2 .s-2 {
+      width: 7.97333rem;
+      top: -0.66667rem;
+      left: 0rem; }
+    #evt_content .sec-2 .cake-2 {
+      width: 9.6rem;
+      top: 7.72rem;
+      left: 0rem; }
+    #evt_content .sec-2 .words-2 {
+      width: 2.42667rem;
+      top: 10.10667rem;
+      left: 6.45333rem; }
+    #evt_content .sec-2 .line-1 {
+      width: 7.68rem;
+      top: -1.96rem;
+      left: 0.72rem; }
+  #evt_content .sec-3 {
+    height: 8.06667rem; }
+    #evt_content .sec-3 > div {
+      position: absolute; }
+    #evt_content .sec-3 .cake-3 {
+      width: 7.74667rem;
+      top: 0.4rem;
+      left: 1.68rem; }
+    #evt_content .sec-3 .words-3 {
+      width: 3.2rem;
+      top: 5.46667rem;
+      left: 5.70667rem; }
+  #evt_content .sec-4 {
+    height: 6.98667rem; }
+    #evt_content .sec-4 > div {
+      position: absolute; }
+    #evt_content .sec-4 .lang-1 {
+      width: 10rem;
+      bottom: 0rem; }
+    #evt_content .sec-4 .lang-2 {
+      width: 10rem;
+      bottom: 0rem; }
+    #evt_content .sec-4 .cake-4 {
+      width: 8.66667rem;
+      top: -0.97333rem;
+      left: 0.54667rem; }
+    #evt_content .sec-4 .cake-4-a {
+      width: 4.96rem;
+      top: 4rem;
+      left: 3.24rem; }
+    #evt_content .sec-4 .words-4 {
+      width: 3.04rem;
+      top: 1.30667rem;
+      left: 5.14667rem; }
+    #evt_content .sec-4 .xuline-1 {
+      width: 0.8rem;
+      top: 2.24rem;
+      right: 0.77333rem; }
+  #evt_content .sec-5 {
+    height: 7.73333rem;
+    background: #e9f4fa; }
+    #evt_content .sec-5 > div {
+      position: absolute; }
+    #evt_content .sec-5 .cake-5 {
+      width: 6.68rem;
+      top: 0.76rem;
+      left: 1.8rem; }
+    #evt_content .sec-5 .words-5 {
+      width: 3.02667rem;
+      top: 5.90667rem;
+      left: 4.58667rem;
+      z-index: 4; }
+    #evt_content .sec-5 .xuline-2 {
+      width: 1.86667rem;
+      top: -0.06667rem;
+      right: 1.37333rem; }
+  #evt_content .sec-6 {
+    height: 10.96rem;
+    background: #e9f4fa; }
+    #evt_content .sec-6 > div {
+      position: absolute; }
+    #evt_content .sec-6 .cake-6 {
+      width: 8.09333rem;
+      top: -0.17333rem;
+      left: 0.70667rem;
+      z-index: 3; }
+    #evt_content .sec-6 .words-6-1 {
+      width: 3.46667rem;
+      top: 1.6rem;
+      left: 5.33333rem;
+      z-index: 4; }
+    #evt_content .sec-6 .words-6-2 {
+      width: 4.05333rem;
+      top: 8.2rem;
+      left: 4.45333rem;
+      z-index: 4; }
+    #evt_content .sec-6 .xuline-3 {
+      width: 5.76rem;
+      top: -1.38667rem;
+      left: 2.58667rem; }
+  #evt_content .sec-footer {
+    height: 7.28rem;
+    background: #fff url("../images/langlang.jpg") top center no-repeat;
+    z-index: 2;
+    background-size: 100%; }
+    #evt_content .sec-footer .center {
+      width: 8.93333rem;
+      margin: 0 auto;
+      padding-top: 0.92rem;
+      color: #457181;
+      padding-left: 0.26667rem; }
+      #evt_content .sec-footer .center h2 {
+        font-size: 0.36rem; }
+      #evt_content .sec-footer .center p {
+        font-size: 0.36rem;
+        line-height: 0.53333rem;
+        margin: 0.06667rem;
+        padding-left: 0.26667rem;
+        text-indent: -0.50667rem; }

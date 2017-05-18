@@ -1,0 +1,89 @@
+#evt_content img {
+  width: 100%; }
+
+#evt_content .a {
+  width: 2.89333rem;
+  top: 0.13333rem;
+  left: 0.13333rem; }
+
+#evt_content .b {
+  width: 11.10667rem;
+  top: 2.66667rem;
+  left: 0; }
+
+#evt_content .sec1 {
+  position: relative;
+  height: 13rem;
+  background: url("../images/bj.jpg") center no-repeat;
+  background-size: 100%; }
+  #evt_content .sec1 > div {
+    position: absolute; }
+  #evt_content .sec1 .q1 {
+    width: 7.86667rem;
+    top: 0rem;
+    left: 1.2rem; }
+  #evt_content .sec1 .q2 {
+    width: 8.05333rem;
+    top: 5.05333rem;
+    left: 1.81333rem; }
+  #evt_content .sec1 .q3 {
+    width: 8.90667rem;
+    top: 9.77333rem;
+    left: 0.62667rem; }
+  #evt_content .sec1 .buy-btn {
+    width: 1.97333rem;
+    top: 11.42667rem;
+    left: 6.46667rem; }
+
+#evt_content .sec2 {
+  position: relative; }
+
+#evt_content .sec3 {
+  background: #fff9f7;
+  position: relative;
+  height: 19.50667rem; }
+  #evt_content .sec3 > div {
+    position: absolute; }
+  #evt_content .sec3 .q1 {
+    width: 5.94667rem;
+    top: 0.93333rem;
+    left: 0.98667rem; }
+  #evt_content .sec3 .q2 {
+    width: 8.17333rem;
+    top: 2rem;
+    left: 1.65333rem; }
+  #evt_content .sec3 .q3 {
+    width: 4.70667rem;
+    top: 11.52rem;
+    left: 2.18667rem; }
+  #evt_content .sec3 .q4 {
+    width: 8.08rem;
+    top: 12.50667rem;
+    left: 0.98667rem; }
+  #evt_content .sec3 .buy-btn2 {
+    width: 1.77333rem;
+    top: 16.42667rem;
+    left: 3.76rem; }
+
+#evt_content .sec4-footer {
+  padding-bottom: 0.4rem; }
+  #evt_content .sec4-footer .center {
+    width: 8.21333rem;
+    margin: 0 auto;
+    padding-top: 0.92rem;
+    color: #52312a; }
+    #evt_content .sec4-footer .center h2 {
+      font-size: 0.32rem; }
+    #evt_content .sec4-footer .center p {
+      font-size: 0.32rem;
+      margin: 0.06667rem;
+      padding-left: 0.26667rem;
+      text-indent: -0.50667rem; }
+    #evt_content .sec4-footer .center p.cl {
+      font-size: 0.32rem;
+      margin: 0.06667rem;
+      padding-left: 0.50667rem;
+      text-indent: -0.33333rem; }
+  #evt_content .sec4-footer .w-dhua {
+    width: 2.86667rem;
+    margin: 0.93333rem auto; }

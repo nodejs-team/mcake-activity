@@ -198,16 +198,27 @@ body {
   background: #ffffff;
   border-top: 1px solid #ffffff; }
   .qr-content .code {
-    width: 670px;
-    margin: 285px auto 0 auto; }
-  .qr-content p {
-    text-align: center;
-    color: #82624d;
-    font-size: 30px;
-    margin: 30px 0 0 0;
-    text-indent: -365px;
-    font-weight: bold; }
-  .qr-content .p2 {
-    color: #000000;
-    font-size: 15px;
-    margin: 10px 0 0 0; }
+    width: 644px;
+    margin: 276px auto 0 auto; }
+    .qr-content .code .img1 {
+      float: left; }
+    .qr-content .code .img2 {
+      float: right; }
+  .qr-content .text {
+    width: 644px;
+    margin: 0 auto; }
+    .qr-content .text > div {
+      width: 295px; }
+    .qr-content .text .textl {
+      float: left; }
+    .qr-content .text .textr {
+      float: right; }
+    .qr-content .text p {
+      text-align: center;
+      color: #82624d;
+      font-size: 30px;
+      margin: 30px 0 0 0; }
+    .qr-content .text .p2 {
+      color: #000000;
+      font-size: 15px;
+      margin: 10px 0 0 0; }

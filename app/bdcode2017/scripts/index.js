@@ -107,7 +107,7 @@
                 self.timer = setTimeout(function(){
                     self.next();
                     delay();
-                }, 2000)
+                }, 5000)
             }
             delay();
         },

@@ -80,4 +80,16 @@ var resData = [
         "type":"image",
         "url":"ewm.png"
     }
+    ,
+    {
+        "name":"code1_png",
+        "type":"image",
+        "url":"code1.png"
+    }
+    ,
+    {
+        "name":"code2_png",
+        "type":"image",
+        "url":"code2.png"
+    }
 ];
