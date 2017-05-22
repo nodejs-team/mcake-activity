@@ -1,0 +1,128 @@
+@function px2rem($n) {
+  @return ($n * 10 / 750) * 1rem; //设计稿一般都是750宽
+}
+
+@mixin font-dpr($font-size){
+  font-size: $font-size;
+
+  [data-dpr="2"] & {
+    font-size: $font-size * 2;
+  }
+
+  [data-dpr="3"] & {
+    font-size: $font-size * 3;
+  }
+
+}
+
+#evt_content{
+  position: relative;
+  div{
+    position:absolute;
+  }
+  img{
+    width:100%;
+  }
+  .s1-text{
+    left: px2rem(293);
+    top:px2rem(38);
+    width:px2rem(418);
+
+    -webkit-animation: fade-in 1.2s linear both;
+    animation: fade-in 1.2s linear both;
+  }
+  .s2-text{
+    left: px2rem(65);
+    top:px2rem(1124);
+    width:px2rem(622);
+  }
+  .buy-act{
+    position: absolute;
+    right: px2rem(66);
+    top: px2rem(2212);
+    width:px2rem(217);
+    height:px2rem(58);
+    font-size: 0;
+    z-index: 10;
+
+    .cha{
+      display: inline-block;
+      width:px2rem(58);
+      height:px2rem(58);
+      vertical-align: middle;
+      line-height: 100;
+      overflow: hidden;
+    }
+    .count{
+      display: inline-block;
+      width:px2rem(99);
+      height: px2rem(58);
+      line-height:px2rem(65);
+      font-weight: bold;
+      text-align: center;
+      color:#c7000b;
+      font-size: 16px;
+    }
+
+  }
+  .s3-text{
+    left:px2rem(80);
+    top:px2rem(1985);
+    width:px2rem(605);
+
+    .buy-btn{
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width:px2rem(162);
+      height:px2rem(60);
+      line-height: 100;
+      overflow: hidden;
+    }
+  }
+}
+
+.footer{
+  position: relative !important;
+  background-color: #fff6e9;
+  padding: px2rem(60) px2rem(40);
+  font-size: 14px;
+
+  h3{
+    margin:0 0 3px;
+  }
+
+  > p{
+    margin:0;
+    padding-left: 1.5em;
+    text-indent: -1.5em;
+    line-height: 1.5em;
+  }
+}
+
+.bg-container{
+  position: relative !important;
+  > .resp{
+    display: block;
+    width:100%;
+    height: auto;
+  }
+}
+
+@-webkit-keyframes fade-in {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
