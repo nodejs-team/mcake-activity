@@ -35,23 +35,23 @@
       left: 0.66667rem; }
     #evt_content .sec-1 .dadi {
       width: 3.62667rem;
-      top: 10.64rem;
+      top: 11.70667rem;
       left: 0rem; }
     #evt_content .sec-1 .che {
-      top: 8.70667rem;
+      top: 9.77333rem;
       left: 1.12rem; }
       #evt_content .sec-1 .che canvas {
         width: 2.50667rem;
         height: 2.26667rem; }
     #evt_content .sec-1 .baozi {
-      top: 10.64rem;
+      top: 11.70667rem;
       left: 7.10667rem; }
       #evt_content .sec-1 .baozi canvas {
         width: 2.65333rem;
         height: 2.17333rem; }
     #evt_content .sec-1 .word-1 {
       width: 3.48rem;
-      top: 9.28rem;
+      top: 10.34667rem;
       left: 6.22667rem; }
     #evt_content .sec-1 .houtai {
       width: 10rem;
@@ -66,46 +66,46 @@
         height: 2.21333rem; }
     #evt_content .sec-1 .across {
       width: 0.6rem;
-      top: 12.44rem;
+      top: 13.50667rem;
       left: 4.77333rem;
       -webkit-animation: arrow 2s linear 1s infinite normal;
       animation: arrow 2s linear 1s infinite normal; }
   #evt_content .sec-2 {
-    height: 18.64rem;
+    height: 14.90667rem;
     background: #f9f1ee; }
     #evt_content .sec-2 .kuai {
       width: 4.74667rem;
-      top: 2.54667rem;
+      top: 0.41333rem;
       left: 4.10667rem; }
     #evt_content .sec-2 .small-pic-1 {
       width: 0.86667rem;
-      top: 2.30667rem;
+      top: 0.17333rem;
       left: 2.4rem; }
     #evt_content .sec-2 .small-pic-2 {
       width: 2.01333rem;
-      top: 3.76rem;
+      top: 1.62667rem;
       left: 6.69333rem; }
     #evt_content .sec-2 .small-pic-3 {
       width: 1.05333rem;
-      top: 8.94667rem;
+      top: 6.81333rem;
       left: 2.01333rem; }
     #evt_content .sec-2 .pic {
       width: 4.8rem;
-      top: 3.33333rem;
+      top: 1.2rem;
       left: 0.33333rem; }
     #evt_content .sec-2 .cake-2 {
       width: 8.92rem;
-      top: 4.70667rem;
+      top: 2.57333rem;
       left: 1.33333rem; }
     #evt_content .sec-2 .tuzi {
-      top: 10.78667rem;
+      top: 8.65333rem;
       left: 0.8rem; }
       #evt_content .sec-2 .tuzi canvas {
         width: 6.14667rem;
         height: 4.36rem; }
     #evt_content .sec-2 .jieshao {
       width: 5.16rem;
-      top: 12.2rem;
+      top: 10.06667rem;
       left: 4rem; }
 
 @keyframes arrow {

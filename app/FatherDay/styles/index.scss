@@ -1,0 +1,100 @@
+@function px2rem($n) {
+  @return ($n * 10 / 750) * 1rem; //设计稿一般都是750宽
+}
+
+@mixin font-dpr($font-size){
+  font-size: $font-size;
+
+  [data-dpr="2"] & {
+    font-size: $font-size * 2;
+  }
+
+  [data-dpr="3"] & {
+    font-size: $font-size * 3;
+  }
+
+}
+
+#evt_content{
+  background:url("../images/bg.jpg") repeat;
+  .sec{position: relative;}
+  .sec > div{position:absolute;}
+  img{width:100%;}
+  .a{width:px2rem(217); top:px2rem(10); left:px2rem(10);}
+  .b{width:px2rem(833); top:px2rem(200); left:0;}
+  .sec-1{
+    height:px2rem(837);
+    .f-title{width:px2rem(372); top:px2rem(66); left:px2rem(99);}
+    .cake-1{width:px2rem(358); top:px2rem(379); left:px2rem(405);}
+    .words-1{width:px2rem(343); top:px2rem(501); left:px2rem(160);}
+  }
+
+
+
+  .sec-2{
+    height:px2rem(1091);
+    .zs-1{width:px2rem(189); top:px2rem(608); left:px2rem(35);}
+    .cake-2{width:px2rem(347); top:px2rem(27); left:px2rem(0);}
+    .quan{width:px2rem(315); top:px2rem(77); left:px2rem(365);}
+    .zhipai{width:px2rem(324); top:px2rem(263); left:px2rem(416);}
+    .words-2{width:px2rem(173); top:px2rem(428); left:px2rem(205);}
+    .cake-3{width:px2rem(442); top:px2rem(576); left:px2rem(308);}
+    .words-3{width:px2rem(226); top:px2rem(874); left:px2rem(104);}
+
+
+
+  }
+
+
+  .sec-3{
+    height:px2rem(526);
+    .zs-2{width:px2rem(112); top:px2rem(293); left:px2rem(638);}
+    .cake-4{width:px2rem(437); top:px2rem(19); left:px2rem(0);}
+    .words-4{width:px2rem(288); top:px2rem(135); left:px2rem(369);}
+    .cofei{width:px2rem(246); top:px2rem(364); left:px2rem(427); z-index: 5;}
+
+
+  }
+
+  .sec-4{ position: relative; height: px2rem(448); text-align: center;
+     background: #fff;
+    .guize{width:px2rem(710); margin:0 auto; padding-top: px2rem(50); padding-left:px2rem(40);
+      h2{ font-size: px2rem(26);}
+      p{ font-size: px2rem(24); line-height: px2rem(30); text-align: left;
+        margin: px2rem(10) 0; padding-left: px2rem(30); text-indent: px2rem(-35);}
+    }
+  }
+
+}
+.across{width:px2rem(45); top:px2rem(1013); left:px2rem(358);
+  -webkit-animation: arrow 2s linear 1s infinite normal;
+  animation: arrow 2s linear 1s infinite normal}
+@keyframes arrow {
+  0% {
+    opacity: 1;
+    transform: translate3d(0, -100%, 0);
+  }
+  50% {
+    opacity: .5;
+    transform: translate3d(0, 0%, 0);
+  }
+  100% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+}
+
+@-webkit-keyframes arrow {
+  0% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, -100%, 0);
+  }
+  50% {
+    opacity: .5;
+    -webkit-transform: translate3d(0, 0%, 0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+  }
+}

@@ -65,11 +65,11 @@
 
 
 }
-.sec4{ position: relative; width:px2rem(750); height: px2rem(448);
-  background: #fff url("../images/line2.jpg") top center no-repeat;background-size: 100%;
+.sec4{ position: relative; width:px2rem(750); height: px2rem(448); text-align: center;
+
   .guize{width:px2rem(600); margin:0 auto; padding-top: px2rem(50);
     h2{ font-size: px2rem(26);}
-    p{ font-size: px2rem(24); line-height: px2rem(30);
+    p{ font-size: px2rem(24); line-height: px2rem(30); text-align: left;
       margin: px2rem(10) 0; padding-left: px2rem(30); text-indent: px2rem(-35);}
   }
 }
