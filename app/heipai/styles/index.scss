@@ -1,0 +1,110 @@
+@function px2rem($n) {
+  @return ($n * 10 / 750) * 1rem; //设计稿一般都是750宽
+}
+
+@mixin font-dpr($font-size){
+  font-size: $font-size;
+
+  [data-dpr="2"] & {
+    font-size: $font-size * 2;
+  }
+
+  [data-dpr="3"] & {
+    font-size: $font-size * 3;
+  }
+
+}
+
+#evt_content{
+
+}
+
+.swiper-container {
+  width: 100%;
+  height: px2rem(1097);
+
+  .swiper-slide {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  img{
+    display: block;
+    width:100%;
+    height:auto;
+  }
+
+  .slide-title{
+    position: absolute;
+    left:50%;
+    top:6%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width:155px;
+    height:139px;
+    background: url(../images/title_bg.png) no-repeat;
+    background-size: 100% 100%;
+
+    text-align: center;
+    color:#ad8e68;
+
+    h3{
+      font-size:16px;
+      font-weight: bold;
+      margin:0 0 8px;
+      padding-top: 50px;
+    }
+    h5{
+      font-size:14px;
+      font-weight: normal;
+      margin: 0;
+    }
+
+    .th{
+      position: absolute;
+      left:30px;
+      top:-4px;
+      display: inline-block;
+      width:5em;
+      text-align: left;
+      font-size: 14px;
+    }
+
+    .price{
+      margin:15px 0 0;
+      font-family: Arial, Tahoma;
+    }
+
+    em{
+      font-style: normal;
+      vertical-align: baseline !important;
+    }
+
+    .ar{
+      vertical-align: baseline !important;
+      margin-left:10px;
+    }
+  }
+
+  .pagination{
+    position: absolute;
+    text-align: center;
+    z-index: 10;
+
+    .swiper-pagination-bullet-active{
+      background-color: #595757;
+    }
+  }
+
+}
