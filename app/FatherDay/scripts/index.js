@@ -65,7 +65,7 @@
 
         initScroll();
 
-
+        bindEvents();
 
     };
 
@@ -87,6 +87,17 @@
 
 
         ]);
+    }
+
+    function bindEvents() {
+        var $layer = $(".evt-layer");
+        $(".quan").on("click", function(){
+            $layer.show();
+        });
+
+        $layer.on("touchstart, mousedown", function(){
+            $(this).hide();
+        })
     }
 
 })();

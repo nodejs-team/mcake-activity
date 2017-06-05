@@ -93,7 +93,7 @@
                 $(this).parents("li").find(".price").text(currentItem.ids[ix]);
                 $(this).parents("li").find(".bangshu").text(currentItem.ponds[ix]);
                 $(this).parents("li").find(".postid").data("postid", currentItem.postId[ix]);
-
+                alert($(this).parents("li").find(".postid").data("postid"));
             });
             /*
              *蛋糕磅数减少
@@ -107,7 +107,7 @@
                 $(this).parents("li").find(".price").text(currentItem.ids[ix]);
                 $(this).parents("li").find(".bangshu").text(currentItem.ponds[ix]);
                 $(this).parents("li").find(".postid").data("postid", currentItem.postId[ix]);
-
+                alert($(this).parents("li").find(".postid").data("postid"));
             });
 
 

@@ -34,11 +34,7 @@
     "yargs": "^6.4.0"
   },
   "buildConfig": {
-<<<<<<< HEAD
-    "projectName": "Birthday-party",
-=======
-    "projectName": "duanwu",
->>>>>>> 059fe741271cfbbe52e0caf808e29f87be57e13c
+    "projectName": "FatherDay",
     "basePath": "http://edm.mcake.com/fangli/2017-wap/",
     "tinypngKey": "Lv4IxKbb9SJ6M3OG-lyEA86akPCQBmqE",
     "server": {

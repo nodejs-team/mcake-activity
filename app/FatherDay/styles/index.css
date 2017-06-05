@@ -41,7 +41,8 @@
     #evt_content .sec-2 .quan {
       width: 4.2rem;
       top: 1.02667rem;
-      left: 4.86667rem; }
+      left: 4.86667rem;
+      z-index: 5; }
     #evt_content .sec-2 .zhipai {
       width: 4.32rem;
       top: 3.50667rem;
@@ -96,6 +97,20 @@
         margin: 0.13333rem 0;
         padding-left: 0.4rem;
         text-indent: -0.46667rem; }
+  #evt_content .evt-layer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: transparent;
+    display: none; }
+    #evt_content .evt-layer img {
+      position: absolute;
+      left: 0;
+      top: 15.2rem;
+      max-width: 100%;
+      z-index: 999; }
 
 .across {
   width: 0.6rem;

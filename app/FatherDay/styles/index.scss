@@ -35,7 +35,7 @@
     height:px2rem(1091);
     .zs-1{width:px2rem(189); top:px2rem(608); left:px2rem(35);}
     .cake-2{width:px2rem(347); top:px2rem(27); left:px2rem(0);}
-    .quan{width:px2rem(315); top:px2rem(77); left:px2rem(365);}
+    .quan{width:px2rem(315); top:px2rem(77); left:px2rem(365);z-index:5;}
     .zhipai{width:px2rem(324); top:px2rem(263); left:px2rem(416);}
     .words-2{width:px2rem(173); top:px2rem(428); left:px2rem(205);}
     .cake-3{width:px2rem(442); top:px2rem(576); left:px2rem(308);}
@@ -62,6 +62,23 @@
       h2{ font-size: px2rem(26);}
       p{ font-size: px2rem(24); line-height: px2rem(30); text-align: left;
         margin: px2rem(10) 0; padding-left: px2rem(30); text-indent: px2rem(-35);}
+    }
+  }
+
+  .evt-layer{
+    position: absolute;
+    left:0;
+    top:0;
+    right:0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0);
+    display:none;
+    img {
+      position: absolute;
+      left: 0;
+      top: px2rem(1140);
+      max-width:100%;
+      z-index: 999;
     }
   }
 
