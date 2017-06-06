@@ -95,7 +95,8 @@
             $layer.show();
         });
 
-        $layer.on("touchstart, mousedown", function(){
+        $layer.on("touchstart mousedown", function(e){
+            e.preventDefault();
             $(this).hide();
         })
     }
