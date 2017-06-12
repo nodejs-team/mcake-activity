@@ -1,0 +1,105 @@
+#evt_content {
+  background: #fefbf3; }
+  #evt_content div {
+    position: absolute; }
+  #evt_content img {
+    width: 100%; }
+  #evt_content .a {
+    width: 2.89333rem;
+    top: 0.13333rem;
+    left: 0.13333rem; }
+  #evt_content .b {
+    width: 11.10667rem;
+    top: 2.66667rem;
+    left: 0; }
+  #evt_content .sec {
+    position: relative; }
+  #evt_content .sec-1 {
+    height: 13.21333rem; }
+    #evt_content .sec-1 .topbar {
+      width: 8.90667rem;
+      top: 0rem;
+      left: 0.53333rem; }
+    #evt_content .sec-1 .b-title {
+      width: 5.70667rem;
+      top: 0.97333rem;
+      left: 0.97333rem; }
+    #evt_content .sec-1 .cloud-1 {
+      width: 2.38667rem;
+      top: 2.10667rem;
+      left: 7.54667rem; }
+    #evt_content .sec-1 .line-cloud {
+      width: 3.18667rem;
+      top: 7.54667rem;
+      left: 3.8rem; }
+    #evt_content .sec-1 .line {
+      width: 10rem;
+      top: 7.2rem;
+      left: 0rem; }
+    #evt_content .sec-1 .ricotta {
+      width: 1.25333rem;
+      top: 7.45333rem;
+      left: 1.49333rem; }
+    #evt_content .sec-1 .cake-ricotta {
+      width: 6.04rem;
+      top: 3.16rem;
+      left: 3.85333rem; }
+    #evt_content .sec-1 .hetao {
+      width: 1.65333rem;
+      top: 11.10667rem;
+      left: 2.13333rem; }
+  #evt_content .sec-2 {
+    height: 17.32rem; }
+    #evt_content .sec-2 .words-1-bg {
+      width: 0.84rem;
+      top: 0rem;
+      left: 5.33333rem; }
+    #evt_content .sec-2 .words-1 {
+      width: 7.81333rem;
+      top: -0.4rem;
+      left: 0.97333rem; }
+      #evt_content .sec-2 .words-1 p {
+        font-size: 0.29333rem;
+        color: #543c24; }
+        #evt_content .sec-2 .words-1 p span {
+          color: #ad0002;
+          font-size: 0.4rem; }
+    #evt_content .sec-2 .words-2 {
+      width: 3.8rem;
+      top: 5.41333rem;
+      left: 5.49333rem; }
+    #evt_content .sec-2 .shuidi {
+      width: 0.82667rem;
+      top: 2.08rem;
+      left: 7.98667rem; }
+    #evt_content .sec-2 .shengbang {
+      width: 5.84rem;
+      top: 10.53333rem;
+      left: 0.4rem; }
+    #evt_content .sec-2 .cake-2 {
+      width: 8.22667rem;
+      top: 3.02667rem;
+      left: 0rem; }
+    #evt_content .sec-2 .buybtn.btn1 {
+      width: 3.32rem;
+      top: 11.64rem;
+      left: 6.18667rem; }
+    #evt_content .sec-2 .buybtn.btn2 {
+      width: 3.32rem;
+      top: 14.48rem;
+      left: 6.18667rem; }
+  #evt_content .sec-footer {
+    background: #a18c76;
+    position: relative;
+    height: 6rem; }
+    #evt_content .sec-footer .txt {
+      width: 8.8rem;
+      margin-top: 0.26667rem;
+      margin-left: 0.66667rem;
+      color: #fff; }
+      #evt_content .sec-footer .txt h2 {
+        font-size: 0.34667rem; }
+      #evt_content .sec-footer .txt p {
+        padding-left: 0.26667rem;
+        text-indent: -0.26667rem;
+        font-size: 0.29333rem; }

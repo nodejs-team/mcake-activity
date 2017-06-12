@@ -15,6 +15,11 @@ var resData = [
         "url":"word-2.png"
     },
     {
+        "name":"words_png",
+        "type":"image",
+        "url":"words.png"
+    },
+    {
         "name":"1893_png",
         "type":"image",
         "url":"1893.png"

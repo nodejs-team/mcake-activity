@@ -1,6 +1,6 @@
 {
 	"groups":[{
-			"keys":"sec1-bg_png,word-1_png,word-2_png,1893_png,b-title_png,btn-1_png,btn-2_png,buy-btn_png,cake-bg_png,cake-nino_png,cake-xm_png,img-1_03_jpg,input_png,light_png,light-1_png,line-1_png,line-2_png,next_png,party_png,prev_png",
+			"keys":"sec1-bg_png,word-1_png,word-2_png,words_png,1893_png,b-title_png,btn-1_png,btn-2_png,buy-btn_png,cake-bg_png,cake-nino_png,cake-xm_png,img-1_03_jpg,input_png,light_png,light-1_png,line-1_png,line-2_png,next_png,party_png,prev_png",
 			"name":"preload"
 		}],
 	"resources":[
@@ -18,6 +18,11 @@
 			"name":"word-2_png",
 			"type":"image",
 			"url":"word-2.png"
+		},
+		{
+			"name":"words_png",
+			"type":"image",
+			"url":"words.png"
 		},
 		{
 			"name":"1893_png",

@@ -1,0 +1,60 @@
+@function px2rem($n) {
+  @return ($n * 10 / 750) * 1rem; //设计稿一般都是750宽
+}
+
+@mixin font-dpr($font-size){
+  font-size: $font-size;
+
+  [data-dpr="2"] & {
+    font-size: $font-size * 2;
+  }
+
+  [data-dpr="3"] & {
+    font-size: $font-size * 3;
+  }
+
+}
+
+#evt_content{ background: #fefbf3;
+  div{position:absolute;}
+  img{width:100%;}
+  .a{width:px2rem(217); top:px2rem(10); left:px2rem(10);}
+  .b{width:px2rem(833); top:px2rem(200); left:0;}
+  .sec{position: relative;}
+  .sec-1{
+    height:px2rem(991);
+    .topbar{width:px2rem(668); top:px2rem(0); left:px2rem(40);}
+    .b-title{width:px2rem(428); top:px2rem(73); left:px2rem(73);}
+    .cloud-1{width:px2rem(179); top:px2rem(158); left:px2rem(566);}
+    .line-cloud{width:px2rem(239); top:px2rem(566); left:px2rem(285);}
+    .line{width:px2rem(750); top:px2rem(540); left:px2rem(0);}
+    .ricotta{width:px2rem(94); top:px2rem(559); left:px2rem(112);}
+    .cake-ricotta{width:px2rem(453); top:px2rem(237); left:px2rem(289);}
+    .hetao{width:px2rem(124); top:px2rem(833); left:px2rem(160);}
+
+  }
+  .sec-2{
+    height:px2rem(1299);
+    .words-1-bg{ width: px2rem(63); top:px2rem(0); left: px2rem(400);}
+    .words-1{width:px2rem(586); top:px2rem(-30); left:px2rem(73);
+      p{ font-size: px2rem(22); color: #543c24;
+        span{ color: #ad0002; font-size: px2rem(30);}
+      }
+    }
+    .words-2{width:px2rem(285); top:px2rem(406); left:px2rem(412);}
+    .shuidi{width:px2rem(62); top:px2rem(156); left:px2rem(599);}
+    .shengbang{width:px2rem(438); top:px2rem(790); left:px2rem(30);}
+    .cake-2{width:px2rem(617); top:px2rem(227); left:px2rem(0);}
+    .buybtn.btn1{width:px2rem(249); top:px2rem(873); left:px2rem(464);}
+    .buybtn.btn2{width:px2rem(249); top:px2rem(1086); left:px2rem(464);}
+
+  }
+
+  .sec-footer{background: #a18c76; position: relative; height: px2rem(450);
+    .txt{width:px2rem(660); margin-top: px2rem(20); margin-left: px2rem(50); color: #fff;
+      h2{font-size: px2rem(26);}
+      p{padding-left: px2rem(20); text-indent: px2rem(-20); font-size: px2rem(22);}
+    }
+  }
+
+}
