@@ -34,8 +34,13 @@
     "yargs": "^6.4.0"
   },
   "buildConfig": {
+<<<<<<< HEAD
     "projectName": "cake-ricotta",
     "basePath": "http://edm.mcake.com/fangli/2017-wap/",
+=======
+    "projectName": "mcake-history",
+    "basePath": "http://edm.mcake.com/shuxy/2017/m/",
+>>>>>>> 9665d7fc9e4ddd93f510f1bf9c596cf09305fca4
     "tinypngKey": "Lv4IxKbb9SJ6M3OG-lyEA86akPCQBmqE",
     "server": {
       "path": "./app",

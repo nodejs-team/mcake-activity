@@ -117,7 +117,8 @@ body {
 
 .scene .swipe-hint-text {
   color: #333;
-  font-size: 16px; }
+  font-size: 16px;
+  margin-top: 35px; }
 
 .scene .scene-text .scene-year {
   display: inline-block;
@@ -138,7 +139,7 @@ body {
   margin: 0 0 15px; }
 
 .scene .scene-text p {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.5;
   /*white-space: nowrap;*/ }
 
@@ -171,6 +172,23 @@ body {
 
 .scene9 .scene-text img {
   margin-top: 30px; }
+
+.scene8 .scene-text {
+  top: 4%; }
+  .scene8 .scene-text p {
+    font-size: 12px; }
+
+.scene8 .scene-flag.flag1 {
+  margin-left: 7%; }
+
+.scene8 .scene-flag.flag2 {
+  margin-left: 25%; }
+
+.scene8 .scene-flag.flag3 {
+  margin-left: 55%; }
+
+.scene8 .scene-bg2 {
+  text-align: center; }
 
 .cursor-indictor {
   position: absolute;

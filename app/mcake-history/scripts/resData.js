@@ -1,33 +1,8 @@
 var resData = [
   {
-    "name":"7-2_png",
+    "name":"logo_png",
     "type":"image",
-    "url":"7-2.png"
-  },
-  {
-    "name":"7-3_png",
-    "type":"image",
-    "url":"7-3.png"
-  },
-  {
-    "name":"8-2_png",
-    "type":"image",
-    "url":"8-2.png"
-  },
-  {
-    "name":"8-3_png",
-    "type":"image",
-    "url":"8-3.png"
-  },
-  {
-    "name":"9-2_png",
-    "type":"image",
-    "url":"9-2.png"
-  },
-  {
-    "name":"9-3_png",
-    "type":"image",
-    "url":"9-3.png"
+    "url":"logo.png"
   },
   {
     "name":"1-1_png",
@@ -120,7 +95,47 @@ var resData = [
     "url":"6-3.png"
   },
   {
-    "name":"logo_png",
+    "name":"7-2_png",
     "type":"image",
-    "url":"logo.png"
+    "url":"7-2.png"
+  },
+  {
+    "name":"7-3_png",
+    "type":"image",
+    "url":"7-3.png"
+  },
+  {
+    "name":"8-2_png",
+    "type":"image",
+    "url":"8-2.png"
+  },
+  {
+    "name":"8-3_png",
+    "type":"image",
+    "url":"8-3.png"
+  },
+  {
+    "name":"9-2_png",
+    "type":"image",
+    "url":"9-2.png"
+  },
+  {
+    "name":"9-3_png",
+    "type":"image",
+    "url":"9-3.png"
+  },
+  {
+    "name":"award_1_png",
+    "type":"image",
+    "url":"award_1.png"
+  },
+  {
+    "name":"award_2_png",
+    "type":"image",
+    "url":"award_2.png"
+  },
+  {
+    "name":"award_3_png",
+    "type":"image",
+    "url":"award_3.png"
   }];
