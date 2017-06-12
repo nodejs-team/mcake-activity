@@ -34,8 +34,8 @@
     "yargs": "^6.4.0"
   },
   "buildConfig": {
-    "projectName": "mcake-history",
-    "basePath": "http://edm.mcake.com/shuxy/2017/m/",
+    "projectName": "clearance",
+    "basePath": "http://edm.mcake.com/fangli/2017-wap/",
     "tinypngKey": "Lv4IxKbb9SJ6M3OG-lyEA86akPCQBmqE",
     "server": {
       "path": "./app",

@@ -1,0 +1,90 @@
+body {
+  background-color: #e1f3fc; }
+
+#evt_content {
+  height: 58.57333rem; }
+  #evt_content div {
+    position: absolute; }
+  #evt_content img {
+    width: 100%; }
+  #evt_content .q1 {
+    width: 8.76rem;
+    top: 1.96rem;
+    left: 50%; }
+    #evt_content .q1 > img {
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%); }
+  #evt_content .q2 {
+    width: 7.38667rem;
+    top: 12.69333rem;
+    left: 50%; }
+    #evt_content .q2 > img {
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%); }
+  #evt_content .q-text {
+    width: 7.70667rem;
+    top: 22.13333rem;
+    left: 50%; }
+    #evt_content .q-text > img {
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%); }
+    #evt_content .q-text .buy-btn {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 2.48rem;
+      height: 0.37333rem;
+      line-height: 100;
+      overflow: hidden; }
+  #evt_content .q3-header {
+    left: 0;
+    top: 27.90667rem;
+    width: 100%; }
+  #evt_content .q3-bg {
+    left: 0;
+    top: 28.45333rem;
+    width: 100%; }
+  #evt_content .q3-text {
+    width: 3.42667rem;
+    top: 30.22667rem;
+    left: 1.02667rem; }
+  #evt_content .q4-container {
+    left: 0;
+    right: 0;
+    top: 33.94667rem;
+    height: 5.42667rem;
+    background-color: #fff; }
+  #evt_content .q4 {
+    left: 0;
+    top: 0;
+    width: 5.77333rem; }
+  #evt_content .q4-text {
+    left: 5.6rem;
+    top: 2.56rem;
+    width: 3.16rem; }
+  #evt_content .q5-header {
+    left: 0;
+    right: 0;
+    top: 39.42667rem; }
+  #evt_content .q5 {
+    top: 45.36rem;
+    left: 0.86667rem;
+    width: 4.57333rem; }
+  #evt_content .q5-text {
+    top: 46rem;
+    left: 5.54667rem;
+    width: 3.13333rem; }
+  #evt_content .evt-footer {
+    left: 0;
+    top: 49.6rem;
+    right: 0;
+    padding: 0 0.8rem; }
+    #evt_content .evt-footer h3 {
+      font-size: 16px;
+      margin: 0 0 5px; }
+    #evt_content .evt-footer p {
+      margin: 0;
+      line-height: 1.75;
+      font-size: 14px;
+      padding-left: 1.5em;
+      text-indent: -1.5em; }

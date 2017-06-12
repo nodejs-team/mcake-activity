@@ -1,0 +1,138 @@
+@function px2rem($n) {
+  @return ($n * 10 / 750) * 1rem; //设计稿一般都是750宽
+}
+
+@mixin font-dpr($font-size){
+  font-size: $font-size;
+
+  [data-dpr="2"] & {
+    font-size: $font-size * 2;
+  }
+
+  [data-dpr="3"] & {
+    font-size: $font-size * 3;
+  }
+
+}
+
+
+body{
+  background-color: #e1f3fc;
+}
+
+#evt_content{
+  height:px2rem(4393);
+
+  div{
+    position:absolute;
+  }
+  img{
+    width:100%;
+  }
+  .q1{
+    width:px2rem(657);
+    top:px2rem(147);
+    left:50%;
+
+    > img {
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+    }
+  }
+  .q2{
+    width:px2rem(554);
+    top:px2rem(952);
+    left:50%;
+
+    > img {
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+    }
+  }
+  .q-text{
+    width:px2rem(578);
+    top:px2rem(1660);
+    left:50%;
+
+    > img {
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+    }
+
+    .buy-btn{
+      position: absolute;
+      right:0;
+      bottom: 0;
+      width: px2rem(186);
+      height: px2rem(28);
+      line-height: 100;
+      overflow: hidden;
+    }
+  }
+  .q3-header{
+    left:0;
+    top: px2rem(2093);
+    width:100%;
+  }
+  .q3-bg{
+    left:0;
+    top: px2rem(2134);
+    width:100%;
+  }
+  .q3-text{
+    width: px2rem(257);
+    top:px2rem(2267);
+    left: px2rem(77);
+  }
+  .q4-container{
+    left:0;
+    right:0;
+    top: px2rem(2546);
+    height:px2rem(407);
+    background-color: #fff;
+  }
+  .q4{
+    left:0;
+    top:0;
+    width:px2rem(433);
+  }
+  .q4-text{
+    left: px2rem(420);
+    top: px2rem(192);
+    width: px2rem(237);
+  }
+  .q5-header{
+    left:0;
+    right:0;
+    top: px2rem(2957);
+  }
+  .q5{
+    top:px2rem(3402);
+    left:px2rem(65);
+    width:px2rem(343);
+  }
+  .q5-text{
+    top:px2rem(3450);
+    left:px2rem(416);
+    width:px2rem(235);
+  }
+  .evt-footer{
+    left:0;
+    top:px2rem(3720);
+    right:0;
+    padding: 0 px2rem(60);
+
+    h3{
+      font-size:16px;
+      margin: 0 0 5px;
+    }
+
+    p{
+      margin:0;
+      line-height: 1.75;
+      font-size:14px;
+      padding-left: 1.5em;
+      text-indent: -1.5em;
+    }
+  }
+}
