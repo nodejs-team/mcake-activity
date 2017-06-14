@@ -53,4 +53,9 @@ var resData = [
     "name":"q5-text_png",
     "type":"image",
     "url":"q5-text.png"
+  },
+  {
+    "name":"buy-info_png",
+    "type":"image",
+    "url":"buy-info.png"
   }];

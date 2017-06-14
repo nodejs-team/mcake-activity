@@ -21,7 +21,7 @@ body{
 }
 
 #evt_content{
-  height:px2rem(4393);
+  height:px2rem(4493);
 
   div{
     position:absolute;
@@ -41,7 +41,7 @@ body{
   }
   .q2{
     width:px2rem(554);
-    top:px2rem(952);
+    top:px2rem(1180);
     left:50%;
 
     > img {
@@ -49,22 +49,27 @@ body{
       transform: translateX(-50%);
     }
   }
-  .q-text{
-    width:px2rem(578);
-    top:px2rem(1660);
-    left:50%;
+  .q-text {
+    width: px2rem(576);
+    top: px2rem(908);
+    left: 50%;
 
     > img {
       -webkit-transform: translateX(-50%);
       transform: translateX(-50%);
     }
+  }
+  .q-buy{
+    width:px2rem(274);
+    left:50%;
+    top:px2rem(1828);
 
     .buy-btn{
       position: absolute;
       right:0;
       bottom: 0;
-      width: px2rem(186);
-      height: px2rem(28);
+      width: px2rem(274);
+      height: px2rem(70);
       line-height: 100;
       overflow: hidden;
     }
@@ -120,7 +125,7 @@ body{
     left:0;
     top:px2rem(3720);
     right:0;
-    padding: 0 px2rem(60);
+    padding: 0 px2rem(40);
 
     h3{
       font-size:16px;
@@ -128,8 +133,8 @@ body{
     }
 
     p{
-      margin:0;
-      line-height: 1.75;
+      margin:0 0 5px;
+      line-height: 1.5;
       font-size:14px;
       padding-left: 1.5em;
       text-indent: -1.5em;

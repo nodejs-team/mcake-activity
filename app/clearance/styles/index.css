@@ -2,7 +2,7 @@ body {
   background-color: #e1f3fc; }
 
 #evt_content {
-  height: 58.57333rem; }
+  height: 59.90667rem; }
   #evt_content div {
     position: absolute; }
   #evt_content img {
@@ -16,24 +16,28 @@ body {
       transform: translateX(-50%); }
   #evt_content .q2 {
     width: 7.38667rem;
-    top: 12.69333rem;
+    top: 15.73333rem;
     left: 50%; }
     #evt_content .q2 > img {
       -webkit-transform: translateX(-50%);
       transform: translateX(-50%); }
   #evt_content .q-text {
-    width: 7.70667rem;
-    top: 22.13333rem;
+    width: 7.68rem;
+    top: 12.10667rem;
     left: 50%; }
     #evt_content .q-text > img {
       -webkit-transform: translateX(-50%);
       transform: translateX(-50%); }
-    #evt_content .q-text .buy-btn {
+  #evt_content .q-buy {
+    width: 3.65333rem;
+    left: 50%;
+    top: 24.37333rem; }
+    #evt_content .q-buy .buy-btn {
       position: absolute;
       right: 0;
       bottom: 0;
-      width: 2.48rem;
-      height: 0.37333rem;
+      width: 3.65333rem;
+      height: 0.93333rem;
       line-height: 100;
       overflow: hidden; }
   #evt_content .q3-header {
@@ -78,13 +82,13 @@ body {
     left: 0;
     top: 49.6rem;
     right: 0;
-    padding: 0 0.8rem; }
+    padding: 0 0.53333rem; }
     #evt_content .evt-footer h3 {
       font-size: 16px;
       margin: 0 0 5px; }
     #evt_content .evt-footer p {
-      margin: 0;
-      line-height: 1.75;
+      margin: 0 0 5px;
+      line-height: 1.5;
       font-size: 14px;
       padding-left: 1.5em;
       text-indent: -1.5em; }
