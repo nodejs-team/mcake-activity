@@ -21,7 +21,11 @@ body{
 }
 
 #evt_content{
-  height:px2rem(4805);
+  height:px2rem(4393);
+
+  @media (max-width:320px) {
+    height: px2rem(4805);
+  }
 
   div{
     position:absolute;

@@ -2,7 +2,10 @@ body {
   background-color: #e1f3fc; }
 
 #evt_content {
-  height: 64.06667rem; }
+  height: 58.57333rem; }
+  @media (max-width: 320px) {
+    #evt_content {
+      height: 64.06667rem; } }
   #evt_content div {
     position: absolute; }
   #evt_content img {
