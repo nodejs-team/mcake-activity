@@ -34,7 +34,11 @@
     "yargs": "^6.4.0"
   },
   "buildConfig": {
+<<<<<<< HEAD
     "projectName": "Discount-ticket",
+=======
+    "projectName": "clearance",
+>>>>>>> 3097e8fb3c639c16f5a0240c124733d57efcf54b
     "basePath": "http://edm.mcake.com/fangli/2017-wap/",
     "tinypngKey": "Lv4IxKbb9SJ6M3OG-lyEA86akPCQBmqE",
     "server": {

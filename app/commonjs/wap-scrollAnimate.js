@@ -44,6 +44,7 @@
         }, {
             duration: typeof item.duration==='number' ? item.duration : 1000,
             delay: typeof item.delay==='number' ? item.delay : 0,
+            easing: item.ease || 'easeOutCubic',
             complete: function(){}
         })
 
@@ -66,7 +67,7 @@
             }
             item.top = item.$dom.offset().top;
             item.isShow = false;
-            $.Velocity.hook(item.$dom, 'opacity', item.opacity);
+            $.Velocity.hook(item.$dom, 'opacity', item.opacity === undefined ? 0 : item.opacity);
             $.Velocity.hook(item.$dom, 'translateX', item.x+'px');   /*开始位置*/
             $.Velocity.hook(item.$dom, 'translateY', item.y+'px');
         })
