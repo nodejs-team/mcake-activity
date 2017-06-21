@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+#evt_content {
+  background: #ffe8d8; }
+  #evt_content img {
+    width: 100%; }
+  #evt_content .a {
+    width: 2.89333rem;
+    top: 0.13333rem;
+    left: 0.13333rem; }
+  #evt_content .b {
+    width: 11.10667rem;
+    top: 2.66667rem;
+    left: 0; }
+  #evt_content .sec {
+    position: relative; }
+  #evt_content .sec-1 {
+    height: 13.92rem; }
+    #evt_content .sec-1 .logos {
+      width: 2.4rem;
+      margin: 0 auto;
+      padding-top: 1.01333rem; }
+    #evt_content .sec-1 .title {
+      width: 5.25333rem;
+      margin: 0 auto;
+      padding-top: 0.66667rem; }
+    #evt_content .sec-1 .pic {
+      width: 10rem;
+      margin: 0 auto;
+      padding-top: 0.73333rem; }
+    #evt_content .sec-1 .centent-1 {
+      position: relative; }
+      #evt_content .sec-1 .centent-1 .telbg {
+        position: absolute;
+        width: 7.46667rem;
+        top: 6rem;
+        left: 1.26667rem;
+        background: #fff;
+        height: 1.2rem;
+        opacity: 0.7; }
+      #evt_content .sec-1 .centent-1 .tel-con {
+        position: absolute;
+        width: 7.46667rem;
+        top: 6rem;
+        left: 1.26667rem;
+        height: 1.2rem;
+        font-size: 0.37333rem; }
+        #evt_content .sec-1 .centent-1 .tel-con lable {
+          float: left;
+          line-height: 1.2rem;
+          display: block;
+          margin-left: 0.66667rem; }
+        #evt_content .sec-1 .centent-1 .tel-con .tel {
+          float: left;
+          width: 4rem;
+          font-size: 0.37333rem;
+          height: 100%;
+          background: none;
+          border: none;
+          color: #000; }
+      #evt_content .sec-1 .centent-1 .btn-go {
+        width: 3.02667rem;
+        margin: 0 auto;
+        padding-top: 0.4rem; }
+    #evt_content .sec-1 .centent-packet {
+      position: relative;
+      margin-top: 1.86667rem; }
+      #evt_content .sec-1 .centent-packet .xf {
+        position: absolute;
+        width: 6.58667rem;
+        top: 0rem;
+        left: 1.68rem; }
+      #evt_content .sec-1 .centent-packet .txt {
+        position: absolute;
+        width: 5.24rem;
+        top: 1.13333rem;
+        left: 2.42667rem;
+        text-align: center;
+        color: #a48569;
+        font-size: 0.42667rem; }
+      #evt_content .sec-1 .centent-packet .txt-wan {
+        top: 0.66667rem; }
+      #evt_content .sec-1 .centent-packet .money {
+        position: absolute;
+        width: 5.24rem;
+        top: 2.09333rem;
+        left: 2.42667rem;
+        text-align: center; }
+        #evt_content .sec-1 .centent-packet .money span {
+          color: #8a1e39;
+          font-size: 0.74667rem; }
+        #evt_content .sec-1 .centent-packet .money i {
+          position: absolute;
+          width: 0.48rem;
+          top: 0rem;
+          right: 1.06667rem; }
+      #evt_content .sec-1 .centent-packet .xjian {
+        top: 2.4rem; }
+      #evt_content .sec-1 .centent-packet .pk-toggle {
+        display: none; }
+      #evt_content .sec-1 .centent-packet .btn-go {
+        position: absolute;
+        width: 3.02667rem;
+        top: 4.72rem;
+        right: 3.46667rem; }
+    #evt_content .sec-1 .borderbg {
+      position: absolute;
+      width: 10rem;
+      bottom: 0;
+      height: 0.04rem;
+      background: url("../images/border.png") repeat-x; }
+  #evt_content .sec-footer {
+    background: #eeeeee;
+    position: relative;
+    height: 8.06667rem; }
+    #evt_content .sec-footer .txt {
+      width: 8.8rem;
+      padding-top: 0.4rem;
+      margin-left: 0.66667rem;
+      color: #808080; }
+      #evt_content .sec-footer .txt h2 {
+        font-size: 0.37333rem;
+        text-align: center;
+        line-height: 1.33333rem;
+        color: #a48569; }
+        #evt_content .sec-footer .txt h2 span {
+          background: url("../images/border.png") bottom repeat-x;
+          padding: 0.13333rem 0.06667rem; }
+      #evt_content .sec-footer .txt p {
+        padding-left: 0.26667rem;
+        text-indent: -0.26667rem;
+        font-size: 0.30667rem;
+        margin: 0.2rem; }

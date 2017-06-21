@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+  padding: 0; }
+
 #evt_content {
   background: #fefbf3; }
   #evt_content div {
@@ -60,7 +64,8 @@
       left: 0.97333rem; }
       #evt_content .sec-2 .words-1 p {
         font-size: 0.29333rem;
-        color: #543c24; }
+        color: #543c24;
+        margin: 0.2rem; }
         #evt_content .sec-2 .words-1 p span {
           color: #ad0002;
           font-size: 0.4rem; }
@@ -94,7 +99,7 @@
     height: 6rem; }
     #evt_content .sec-footer .txt {
       width: 8.8rem;
-      margin-top: 0.26667rem;
+      margin-top: 0.66667rem;
       margin-left: 0.66667rem;
       color: #fff; }
       #evt_content .sec-footer .txt h2 {
@@ -102,4 +107,5 @@
       #evt_content .sec-footer .txt p {
         padding-left: 0.26667rem;
         text-indent: -0.26667rem;
-        font-size: 0.29333rem; }
+        font-size: 0.29333rem;
+        margin: 0.2rem; }
