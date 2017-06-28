@@ -29,41 +29,55 @@
     #evt_content .sec-1 .pic {
       width: 10rem;
       margin: 0 auto;
-      padding-top: 0.73333rem; }
+      padding-top: 0.4rem; }
     #evt_content .sec-1 .centent-1 {
       position: relative; }
       #evt_content .sec-1 .centent-1 .telbg {
         position: absolute;
         width: 7.46667rem;
-        top: 6rem;
+        top: 6.4rem;
         left: 1.26667rem;
         background: #fff;
-        height: 1.2rem;
+        height: 1.97333rem;
         opacity: 0.7; }
       #evt_content .sec-1 .centent-1 .tel-con {
         position: absolute;
         width: 7.46667rem;
-        top: 6rem;
+        top: 6.4rem;
         left: 1.26667rem;
-        height: 1.2rem;
+        height: 1.97333rem;
         font-size: 0.37333rem; }
-        #evt_content .sec-1 .centent-1 .tel-con lable {
-          float: left;
-          line-height: 1.2rem;
-          display: block;
-          margin-left: 0.66667rem; }
-        #evt_content .sec-1 .centent-1 .tel-con .tel {
-          float: left;
-          width: 4rem;
+        #evt_content .sec-1 .centent-1 .tel-con .li {
+          position: relative;
+          width: 5.93333rem;
+          height: 0.8rem;
+          margin: 0.13333rem auto 0;
+          background: url("../images/tel-icon.png") 0.06667rem 0.13333rem no-repeat;
+          background-size: 8%;
+          padding-left: 0.8rem; }
+          #evt_content .sec-1 .centent-1 .tel-con .li lable {
+            display: block;
+            position: absolute;
+            top: 0.13333rem;
+            right: 0.26667rem;
+            color: #666666; }
+        #evt_content .sec-1 .centent-1 .tel-con .li:last-child {
+          background: url("../images/yzm-icon.png") 0.06667rem 0.13333rem no-repeat;
+          background-size: 10%; }
+        #evt_content .sec-1 .centent-1 .tel-con input {
+          width: 5.14667rem;
           font-size: 0.37333rem;
+          line-height: 0.8rem;
           height: 100%;
           background: none;
-          border: none;
-          color: #000; }
+          border: #7a7066 1px solid;
+          color: #000;
+          padding-left: 0.26667rem;
+          border-radius: 0.06667rem; }
       #evt_content .sec-1 .centent-1 .btn-go {
         width: 3.02667rem;
         margin: 0 auto;
-        padding-top: 0.4rem; }
+        padding-top: 0.8rem; }
     #evt_content .sec-1 .centent-packet {
       position: relative;
       margin-top: 1.86667rem; }

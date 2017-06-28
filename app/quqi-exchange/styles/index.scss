@@ -1,0 +1,117 @@
+@function px2rem($n) {
+  @return ($n * 10 / 750) * 1rem; //设计稿一般都是750宽
+}
+
+@mixin font-dpr($font-size){
+  font-size: $font-size;
+
+  [data-dpr="2"] & {
+    font-size: $font-size * 2;
+  }
+
+  [data-dpr="3"] & {
+    font-size: $font-size * 3;
+  }
+
+}
+
+#evt_content{height:px2rem(3411); background: #f3f8ff;
+  div{position:absolute;}
+  img{width:100%;}
+  .a{width:px2rem(217); top:px2rem(10); left:px2rem(10);}
+  .b{width:px2rem(833); top:px2rem(200); left:0;}
+  .sec{position: relative; }
+  .sec-1{
+    height:px2rem(1250);
+    .ren-box{ top:px2rem(0); left:px2rem(0);
+      canvas {
+        width:px2rem(310);
+        height: px2rem(339);
+      }
+    }
+    .ren-ti{ top:px2rem(0); left:px2rem(366);
+      canvas {
+        width:px2rem(220);
+        height: px2rem(207);
+      }
+    }
+    .ren-pao{ top:px2rem(856); left:px2rem(136);
+      canvas {
+        width:px2rem(162);
+        height: px2rem(280);
+      }
+    }
+    .ren-you{ top:px2rem(389); right:px2rem(20);
+      canvas {
+        width:px2rem(112);
+        height: px2rem(183);
+      }
+    }
+
+    .b-title{width:px2rem(561); top:px2rem(245); left:px2rem(60);}
+    .quqi-1{width:px2rem(162); top:px2rem(59); left:px2rem(600);}
+    .quqi-2{width:px2rem(119); top:px2rem(660); left:px2rem(44);}
+    .quqi-3{width:px2rem(447); top:px2rem(645); left:px2rem(302);}
+
+  }
+  .sec-2{
+    height:px2rem(777);
+    .words-1{width:px2rem(573); top:px2rem(65); left:px2rem(60);}
+    .q-cake{width:px2rem(426); top:px2rem(240); left:px2rem(323);}
+    .ren-yao{ top:px2rem(482); left:px2rem(103);
+      canvas {
+        width:px2rem(258);
+        height: px2rem(154);
+      }
+    }
+
+    .gobtn{ top:px2rem(320); left:px2rem(60);
+       a{ display: block;  text-decoration: none;}
+       span{background: #f5b740 none repeat scroll 0 0;
+         color: #fff;
+         font-size:px2rem(33);
+         letter-spacing: 3px;
+         padding: px2rem(5) px2rem(10);}
+    }
+
+  }
+
+  .sec-3{
+    height:px2rem(907);
+    .more{width:px2rem(193); top:px2rem(20); left:px2rem(446);}
+    .words-2-bg{width:px2rem(166); top:px2rem(108); left:px2rem(559);}
+    .words-2{width:px2rem(342); top:px2rem(143); left:px2rem(378);}
+    .words-3{width:px2rem(273); top:px2rem(419); left:px2rem(438);}
+    .qiqiu-box{width:px2rem(411); top:px2rem(74); left:px2rem(0);}
+    .flower{width:px2rem(83); bottom:px2rem(158); left:px2rem(70);}
+    .ren-quqi{ top:px2rem(60); left:px2rem(40);
+      canvas {
+        width:px2rem(318);
+        height: px2rem(745);
+      }
+    }
+    .ren-hs{ bottom:px2rem(0); left:px2rem(337);
+      canvas {
+        width:px2rem(133);
+        height: px2rem(90);
+      }
+    }
+    .gobtn{ top:px2rem(328); left:px2rem(437);
+      a{ display: block;  text-decoration: none;}
+      span{background: #f5b740 none repeat scroll 0 0;
+        color: #fff;
+        font-size:px2rem(33);
+        letter-spacing: 3px;
+        padding: px2rem(5) px2rem(10);}
+    }
+  }
+
+  .sec-footer{background: #fff; position: relative; height: px2rem(450);
+    .txt{width:px2rem(660); margin-top: px2rem(50); margin-left: px2rem(50); color: #3c211a;
+      h2{font-size: px2rem(30);}
+      p{padding-left: px2rem(20); text-indent: px2rem(-20); font-size: px2rem(22);margin: px2rem(15);}
+    }
+  }
+
+
+}

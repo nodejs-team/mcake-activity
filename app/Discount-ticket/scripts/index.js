@@ -61,18 +61,21 @@
     startLoading();
 
 
-    
-    var loadComplete = function () {
+    var showPacket = function () {
         var $getPacket = $(".get-packet");
         var $xjian = $(".xjian");
         var $pkToggle = $(".pk-toggle");
-        if($getPacket.is(':visible')){
-            $xjian.animate({top:'0'},800,function () {
-                $pkToggle.fadeIn(500);
-            });
 
-        }
+        $xjian.animate({top:'0'},800,function () {
+            $pkToggle.fadeIn(500);
+        });
+
+    }
+    
+    var loadComplete = function () {
 
     }
 
+    window.showPacket = showPacket;
 })();
+

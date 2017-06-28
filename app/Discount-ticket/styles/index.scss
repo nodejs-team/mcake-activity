@@ -27,15 +27,19 @@
     height:px2rem(1044);
     .logos{width:px2rem(180); margin:0 auto; padding-top:px2rem(76);}
     .title{width:px2rem(394); margin: 0 auto;padding-top:px2rem(50);}
-    .pic{width:px2rem(750); margin: 0 auto;padding-top:px2rem(55);}
+    .pic{width:px2rem(750); margin: 0 auto;padding-top:px2rem(30);}
     .centent-1{ position: relative;
-      .telbg{position:absolute; width:px2rem(560); top:px2rem(450); left:px2rem(95);background: #fff;  height: px2rem(90);  opacity: 0.7;  }
-      .tel-con{position:absolute; width:px2rem(560); top:px2rem(450); left:px2rem(95);height: px2rem(90); font-size: px2rem(28);
-        lable{ float: left; line-height: px2rem(90); display: block;margin-left:px2rem(40);}
-        .tel{ float: left; width:px2rem(300); font-size: px2rem(28); height: 100%; background: none; border: none; color: #000;}
+      .telbg{position:absolute; width:px2rem(560); top:px2rem(480); left:px2rem(95);background: #fff;  height: px2rem(148);  opacity: 0.7;  }
+      .tel-con{position:absolute; width:px2rem(560); top:px2rem(480); left:px2rem(95);height: px2rem(148); font-size: px2rem(28);
+        .li{ position: relative; width: px2rem(445); height: px2rem(60); margin: px2rem(10) auto 0; background: url("../images/tel-icon.png") px2rem(5) px2rem(10) no-repeat; background-size: 8%; padding-left: px2rem(60);
+          lable{ display: block; position: absolute; top: px2rem(10); right: px2rem(20); color: #666666;}
+        }
+        .li:last-child{ background: url("../images/yzm-icon.png") px2rem(5) px2rem(10) no-repeat; background-size: 10%;}
+
+        input{  width:px2rem(386); font-size: px2rem(28); line-height: px2rem(60); height: 100%; background: none; border: #7a7066 1px solid; color: #000; padding-left: px2rem(20); border-radius: px2rem(5);}
 
       }
-      .btn-go{ width:px2rem(227);  margin: 0 auto; padding-top: px2rem(30);}
+      .btn-go{ width:px2rem(227);  margin: 0 auto; padding-top: px2rem(60);}
     }
 
     .centent-packet {
@@ -61,7 +65,7 @@
   .sec-footer{background: #eeeeee; position: relative; height: px2rem(605);
     .txt{width:px2rem(660); padding-top: px2rem(30); margin-left: px2rem(50); color: #808080;
       h2{font-size: px2rem(28); text-align: center; line-height: px2rem(100); color: #a48569;
-        span{background: url("../images/border.png") bottom repeat-x; padding: px2rem(10) px2rem(5);}
+        span{background: url("../images/border.png") bottom repeat-x;  padding: px2rem(10) px2rem(5);}
       }
       p{padding-left: px2rem(20); text-indent: px2rem(-20); font-size: px2rem(23);margin: px2rem(15);}
     }
