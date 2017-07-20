@@ -15,7 +15,7 @@
 
 }
 
-#evt_content{height:px2rem(3411); background: #f3f8ff;
+#evt_content{ background: #f3f8ff;
   div{position:absolute;}
   img{width:100%;}
   .a{width:px2rem(217); top:px2rem(10); left:px2rem(10);}
@@ -106,10 +106,10 @@
     }
   }
 
-  .sec-footer{background: #fff; position: relative; height: px2rem(450);
-    .txt{width:px2rem(660); margin-top: px2rem(50); margin-left: px2rem(50); color: #3c211a;
+  .sec-footer{background: #fff; position: relative;
+    .txt{ position: relative; width:px2rem(660); padding-top: px2rem(50); padding-bottom: px2rem(50);  padding-left: px2rem(50); color: #3c211a;
       h2{font-size: px2rem(30);}
-      p{padding-left: px2rem(20); text-indent: px2rem(-20); font-size: px2rem(22);margin: px2rem(15);}
+      p{  font-size: px2rem(22); padding-left: px2rem(20); margin-left: px2rem(20); text-indent: px2rem(-35);}
     }
   }
 

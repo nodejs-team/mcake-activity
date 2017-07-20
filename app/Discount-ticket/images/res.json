@@ -1,9 +1,24 @@
 {
 	"groups":[{
-			"keys":"xinfeng-1_png,xinfeng-2_png,xinfeng-3_png,border_png,btn-go_png,btn-yong_png,i-yuan_png,logo_png,pic_png,title_png",
+			"keys":"sendredbao_png,tel-icon_png,title_png,xinfeng-1_png,xinfeng-2_png,xinfeng-3_png,yzm-icon_png,border_png,btn-go_png,btn-yong_png,i-yuan_png,logo_png,pic_png",
 			"name":"preload"
 		}],
 	"resources":[
+		{
+			"name":"sendredbao_png",
+			"type":"image",
+			"url":"sendredbao.png"
+		},
+		{
+			"name":"tel-icon_png",
+			"type":"image",
+			"url":"tel-icon.png"
+		},
+		{
+			"name":"title_png",
+			"type":"image",
+			"url":"title.png"
+		},
 		{
 			"name":"xinfeng-1_png",
 			"type":"image",
@@ -18,6 +33,11 @@
 			"name":"xinfeng-3_png",
 			"type":"image",
 			"url":"xinfeng-3.png"
+		},
+		{
+			"name":"yzm-icon_png",
+			"type":"image",
+			"url":"yzm-icon.png"
 		},
 		{
 			"name":"border_png",
@@ -48,11 +68,6 @@
 			"name":"pic_png",
 			"type":"image",
 			"url":"pic.png"
-		},
-		{
-			"name":"title_png",
-			"type":"image",
-			"url":"title.png"
 		}
 	]
 }

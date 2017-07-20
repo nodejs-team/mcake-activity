@@ -1,0 +1,77 @@
+@function px2rem($n) {
+  @return ($n * 10 / 750) * 1rem; //设计稿一般都是750宽
+}
+
+@mixin font-dpr($font-size){
+  font-size: $font-size;
+
+  [data-dpr="2"] & {
+    font-size: $font-size * 2;
+  }
+
+  [data-dpr="3"] & {
+    font-size: $font-size * 3;
+  }
+
+}
+
+#evt_content{
+  div{position:absolute;}
+  img{width:100%;}
+  .gobtn{ top:px2rem(330); left:px2rem(70);
+    a{ display: block;  text-decoration: none;}
+    span{background: #59a8b8 none repeat scroll 0 0; border-radius: px2rem(5);
+      color: #fff;
+      font-size:px2rem(28);
+      letter-spacing: 3px;
+      padding: px2rem(15) px2rem(30)  px2rem(15)  px2rem(40);}
+  }
+  .sec{position: relative; }
+  .sec-1 {
+    height: px2rem(1178); background: #e8f3f6;
+    .b-title{width:px2rem(612); top:px2rem(40); left:px2rem(65);}
+    .b-des-1{width:px2rem(326); top:px2rem(453); left:px2rem(35);}
+    .b-cake-1{width:px2rem(528); top:px2rem(440); left:px2rem(230);}
+    .b-words-1{width:px2rem(580); top:px2rem(903); left:px2rem(44);}
+    .gobtn-1{ top:px2rem(1070); left:px2rem(223);}
+
+  }
+  .sec-2 {
+    height: px2rem(515); background: #fff;
+    .yhq-icon{width:px2rem(189); top:px2rem(51); left:px2rem(20);
+      canvas {
+        width:px2rem(189);
+        height: px2rem(170);
+      }
+    }
+    .quan-bao-shou{width:px2rem(247); top:px2rem(105); left:px2rem(89);
+      canvas {
+        width:px2rem(247);
+        height: px2rem(248);
+      }
+    }
+
+    .youhui{width:px2rem(508); top:px2rem(98); left:px2rem(268);}
+    .gobtn.gobtn-get{top:px2rem(370); left:px2rem(290);
+      span{
+        padding: px2rem(20) px2rem(30);}
+    }
+  }
+  .sec-3 {
+    height: px2rem(641); background: #e8f3f6;
+    .b-cake-2{width:px2rem(543); top:px2rem(80); left:px2rem(0);}
+    .b-des-2{width:px2rem(381); top:px2rem(53); left:px2rem(336);}
+    .b-words-2{width:px2rem(357); top:px2rem(382); left:px2rem(362);}
+    .gobtn-2{ top:px2rem(540); left:px2rem(495);}
+  }
+
+
+
+  .sec-footer{background: #fff; position: relative;
+    .txt{ position: relative; width:px2rem(660); padding-top: px2rem(50); padding-bottom: px2rem(50);  padding-left: px2rem(50); color: #3c211a;
+      h2{font-size: px2rem(30);}
+      p{ margin:px2rem(20) 0 0 px2rem(20); font-size: px2rem(22); padding-left: px2rem(20); text-indent: px2rem(-35);}
+      p.pl{padding-left: px2rem(20); text-indent: px2rem(0);}
+    }
+  }
+}

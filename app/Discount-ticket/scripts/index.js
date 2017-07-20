@@ -60,6 +60,11 @@
     }
     startLoading();
 
+    var loadComplete = function () {
+        $(".share").click(function () {
+            $(this).fadeOut(500);
+        })
+    };
 
     var showPacket = function () {
         var $getPacket = $(".get-packet");
@@ -70,12 +75,19 @@
             $pkToggle.fadeIn(500);
         });
 
-    }
+    };
     
-    var loadComplete = function () {
+    var showShare = function () {
+        $(".share").fadeIn(500);
+    };
 
-    }
+    var scrollTopFun =function () {
+        $("html, body, #evt_container").animate({scrollTop:0}, 300);
+    };
+
 
     window.showPacket = showPacket;
+    window.showShare = showShare;
+    window.scrollTopFun = scrollTopFun;
 })();
 

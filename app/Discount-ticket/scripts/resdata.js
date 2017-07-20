@@ -1,5 +1,20 @@
 var resData = [
     {
+        "name":"sendredbao_png",
+        "type":"image",
+        "url":"sendredbao.png"
+    },
+    {
+        "name":"tel-icon_png",
+        "type":"image",
+        "url":"tel-icon.png"
+    },
+    {
+        "name":"title_png",
+        "type":"image",
+        "url":"title.png"
+    },
+    {
         "name":"xinfeng-1_png",
         "type":"image",
         "url":"xinfeng-1.png"
@@ -13,6 +28,11 @@ var resData = [
         "name":"xinfeng-3_png",
         "type":"image",
         "url":"xinfeng-3.png"
+    },
+    {
+        "name":"yzm-icon_png",
+        "type":"image",
+        "url":"yzm-icon.png"
     },
     {
         "name":"border_png",
@@ -43,10 +63,5 @@ var resData = [
         "name":"pic_png",
         "type":"image",
         "url":"pic.png"
-    },
-    {
-        "name":"title_png",
-        "type":"image",
-        "url":"title.png"
     }
 ];

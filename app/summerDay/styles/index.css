@@ -1,0 +1,156 @@
+#evt_content {
+  background: #dbecf5; }
+  #evt_content div {
+    position: absolute; }
+  #evt_content img {
+    width: 100%; }
+  #evt_content .sec {
+    position: relative; }
+  #evt_content .sec-1 {
+    height: 12.76rem; }
+    #evt_content .sec-1 .x-title {
+      width: 5.50667rem;
+      top: 0.8rem;
+      left: 2.45333rem; }
+    #evt_content .sec-1 .xbg-1 {
+      width: 10rem;
+      top: 6.70667rem;
+      left: 0rem; }
+    #evt_content .sec-1 .cake-1 {
+      width: 6.01333rem;
+      top: 5.61333rem;
+      left: 0rem; }
+    #evt_content .sec-1 .xwords-1 {
+      width: 2.74667rem;
+      top: 7.33333rem;
+      left: 6.49333rem; }
+    #evt_content .sec-1 .xwords-btn-1 {
+      width: 5.04rem;
+      top: 11.89333rem;
+      left: 4.12rem; }
+  #evt_content .sec-2 {
+    height: 6.48rem; }
+    #evt_content .sec-2 .xbg-2 {
+      width: 6.66667rem;
+      top: 0.28rem;
+      left: 0.61333rem; }
+    #evt_content .sec-2 .cake-2 {
+      width: 4.85333rem;
+      top: 0.44rem;
+      left: 5.44rem; }
+    #evt_content .sec-2 .xwords-2 {
+      width: 2.04rem;
+      top: 0.8rem;
+      left: 0.42667rem; }
+    #evt_content .sec-2 .xwords-btn-2 {
+      width: 5.90667rem;
+      top: 5.50667rem;
+      left: 1.24rem; }
+  #evt_content .sec-3 {
+    height: 6.53333rem; }
+    #evt_content .sec-3 .xbg-3 {
+      width: 5.18667rem;
+      top: 0.56rem;
+      left: 4.45333rem; }
+    #evt_content .sec-3 .cake-3 {
+      width: 5.09333rem;
+      top: 0.78667rem;
+      left: 0rem; }
+    #evt_content .sec-3 .xwords-3 {
+      width: 3.73333rem;
+      top: 1.42667rem;
+      left: 4.62667rem; }
+    #evt_content .sec-3 .xwords-btn-3 {
+      width: 4.14667rem;
+      top: 5.13333rem;
+      left: 5.38667rem; }
+  #evt_content .sec-4 {
+    height: 9.45333rem; }
+    #evt_content .sec-4 .xbg-4 {
+      width: 3.68rem;
+      top: 3.2rem;
+      left: 0.88rem; }
+    #evt_content .sec-4 .pic {
+      width: 4.08rem;
+      top: 2.74667rem;
+      left: 3.85333rem; }
+    #evt_content .sec-4 .car-1 {
+      width: 2.04rem;
+      top: 5.42667rem;
+      left: 7.96rem; }
+    #evt_content .sec-4 .car-2 {
+      width: 2.42667rem;
+      top: 5.22667rem;
+      left: 1.24rem; }
+    #evt_content .sec-4 .girl {
+      width: 1.30667rem;
+      top: 3.84rem;
+      left: 0.38667rem; }
+    #evt_content .sec-4 .boy {
+      width: 0.76rem;
+      top: 7.54667rem;
+      left: 6.66667rem; }
+    #evt_content .sec-4 .cake-4 {
+      width: 5.81333rem;
+      top: 0rem;
+      left: 4.44rem; }
+    #evt_content .sec-4 .xwords-4 {
+      width: 3.58667rem;
+      top: 1.50667rem;
+      left: 0.66667rem; }
+    #evt_content .sec-4 .xwords-btn-4 {
+      width: 4.44rem;
+      top: 7.37333rem;
+      left: 0.46667rem; }
+  #evt_content .sec-footer {
+    background: #fff;
+    position: relative;
+    padding-bottom: 0.26667rem; }
+    #evt_content .sec-footer .txt {
+      position: relative;
+      width: 8.8rem;
+      padding-top: 0.66667rem;
+      padding-bottom: 0.26667rem;
+      margin: 0 auto;
+      color: #60758d; }
+      #evt_content .sec-footer .txt h2 {
+        font-size: 0.4rem;
+        text-indent: -0.13333rem; }
+      #evt_content .sec-footer .txt p {
+        font-size: 0.29333rem;
+        padding-left: 0.26667rem;
+        margin-left: 0.26667rem;
+        text-indent: -0.46667rem;
+        margin: 0.13333rem auto; }
+    #evt_content .sec-footer .quan {
+      position: relative;
+      width: 6.88rem;
+      margin: 0 auto;
+      text-align: center;
+      color: #60758d; }
+      #evt_content .sec-footer .quan p.across {
+        width: 0.4rem;
+        margin: 0.13333rem auto; }
+      #evt_content .sec-footer .quan p {
+        margin: 0 auto;
+        font-size: 0.26667rem; }
+    #evt_content .sec-footer .yong-rules {
+      position: absolute;
+      z-index: 5;
+      bottom: 1.06667rem;
+      left: 50%;
+      width: 8.90667rem;
+      display: none;
+      margin-left: -4.45333rem;
+      -webkit-box-shadow: 0 0 0.26667rem #c2cdd1;
+      -moz-box-shadow: 0 0 0.26667rem #c2cdd1;
+      box-shadow: 0 0 0.26667rem #c2cdd1;
+      border-radius: 0.13333rem;
+      background: #dbecf5;
+      padding: 0.26667rem; }
+      #evt_content .sec-footer .yong-rules p {
+        font-size: 0.24rem;
+        color: #315273;
+        line-height: 0.4rem;
+        margin: 0 auto;
+        padding: 0; }

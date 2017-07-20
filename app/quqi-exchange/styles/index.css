@@ -1,5 +1,4 @@
 #evt_content {
-  height: 45.48rem;
   background: #f3f8ff; }
   #evt_content div {
     position: absolute; }
@@ -137,17 +136,18 @@
         padding: 0.06667rem 0.13333rem; }
   #evt_content .sec-footer {
     background: #fff;
-    position: relative;
-    height: 6rem; }
+    position: relative; }
     #evt_content .sec-footer .txt {
+      position: relative;
       width: 8.8rem;
-      margin-top: 0.66667rem;
-      margin-left: 0.66667rem;
+      padding-top: 0.66667rem;
+      padding-bottom: 0.66667rem;
+      padding-left: 0.66667rem;
       color: #3c211a; }
       #evt_content .sec-footer .txt h2 {
         font-size: 0.4rem; }
       #evt_content .sec-footer .txt p {
-        padding-left: 0.26667rem;
-        text-indent: -0.26667rem;
         font-size: 0.29333rem;
-        margin: 0.2rem; }
+        padding-left: 0.26667rem;
+        margin-left: 0.26667rem;
+        text-indent: -0.46667rem; }
