@@ -1,0 +1,9 @@
+{"file":"girl.png","frames":{
+
+"girl-1":{"x":184,"y":233,"w":175,"h":174,"offX":9,"offY":45,"sourceW":184,"sourceH":250,"duration":2},
+"girl-2":{"x":0,"y":233,"w":172,"h":221,"offX":12,"offY":11,"sourceW":184,"sourceH":250,"duration":0},
+"girl-3":{"x":184,"y":0,"w":172,"h":221,"offX":12,"offY":11,"sourceW":184,"sourceH":250,"duration":0},
+"girl-4":{"x":0,"y":0,"w":172,"h":221,"offX":12,"offY":11,"sourceW":184,"sourceH":250,"duration":5},
+"girl-5":{"x":184,"y":419,"w":178,"h":151,"offX":6,"offY":67,"sourceW":184,"sourceH":250,"duration":2},
+"girl-6":{"x":0,"y":466,"w":169,"h":155,"offX":15,"offY":81,"sourceW":184,"sourceH":250,"duration":2}
+}}

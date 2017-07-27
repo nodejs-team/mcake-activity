@@ -1,6 +1,6 @@
 #evt_container{background:url(../images/bg.jpg);
   img{width:100%;}
-  .top_icon{position:absolute; width:23.8%; top:320px; left:50%; margin:0 0 0 -30.2%;}
+  .top_icon{position:absolute; width:23.8%; top:320px; left:50%; margin:0 0 0 -30.2%;  }
   .top_quality{width:167px; margin:-83px auto 0 auto;}
   .act{height:625px; margin:55px 0 0 0; position:relative;
     .act_text{width:635px; margin:0 auto;}
@@ -26,12 +26,26 @@
     .prev{left:0;}
     .next{right:0;}
   }
-  .slideOuter{width:1028px; height:388px; border-bottom:2px solid #959595; overflow:hidden; margin:0 auto;
-    ul{width:1650px;}
-    li{width:242px; margin:0 20px 18px 0; color:#242424; font-size:12px; float:left;
+  .slideOuter{position:relative; width:1028px; height:388px; border-bottom:2px solid #959595; overflow:hidden; margin:0 auto;
+    ul{position:relative; width:1650px;}
+    li{position:relative; width:242px; margin:0 20px 18px 0; color:#242424; font-size:12px; float:left;
       .fl{float:left;}
+      .fl.ftitle{ width: 98px; height:40px;  overflow:hidden; align-items: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: left;
+        justify-content: left;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+
+        }
       .fr{float:right;}
-      .p1{margin:26px 0 3px 0;}
+      .p1{margin:10px 0 3px 0;}
       .p2{
         .fr{color:#a40000;
           span{font-size:19px;}
@@ -42,11 +56,11 @@
     }
 
 
-    .pro-num{ position: relative; display: inline-block; width: 120px; height: 20px; margin-left: 35px;
-      a{ position: absolute; width:20px; height:20px; display:block; top:0;}
+    .pro-num{ position: relative; display: inline-block; float: right; margin-top: 10px; width: 140px; height: 20px;
+      a{ position: absolute; width:20px; height:20px; display:block; top:1px;}
       .minus{background:url(../images/btn-1.png); left:0; background-size: 100%;}
       .plus{background:url(../images/btn-2.png); right:0; background-size: 100%;}
-      input{border:none; display:block; background:url(../images/input.png); background-size: 100%; width:75px; height:19px; position:absolute; top:0; left:22px; text-align:center; color:#626262; font-size:12px; padding:0;}
+      input{border:none; display:block; background:url(../images/input.png); background-size: 100%; width:100px; height:24px; position:absolute; top:0; left:20px; text-align:center; color:#626262; font-size:12px; padding:0;}
 
     }
 

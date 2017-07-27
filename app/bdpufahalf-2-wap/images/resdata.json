@@ -1,9 +1,49 @@
 {
 	"groups":[{
-			"keys":"tower2_png,word_qing_png,word_shou_png,word_yi_png,act_ge_png,act_sheng_png,act_text_png,bg_jpg,btn-1_png,btn-2_png,input_png,next_png,pic01_jpg,plate_png,prev_png,text1893_png,top_pic_jpg,top_pingan_png,top_quality_png,top_sq_png,tower1_png",
+			"keys":"prev_png,text1893_png,top_pic_jpg,top_pingan_png,top_quality_png,top_sq_png,tower1_png,tower1-w_png,tower2_png,word_qing_png,word_shou_png,word_yi_png,act_ge_png,act_sheng_png,act_text_png,bg_jpg,btn-1_png,btn-2_png,input_png,next_png,pic01_jpg,plate_png",
 			"name":"preload"
 		}],
 	"resources":[
+		{
+			"name":"prev_png",
+			"type":"image",
+			"url":"prev.png"
+		},
+		{
+			"name":"text1893_png",
+			"type":"image",
+			"url":"text1893.png"
+		},
+		{
+			"name":"top_pic_jpg",
+			"type":"image",
+			"url":"top_pic.jpg"
+		},
+		{
+			"name":"top_pingan_png",
+			"type":"image",
+			"url":"top_pingan.png"
+		},
+		{
+			"name":"top_quality_png",
+			"type":"image",
+			"url":"top_quality.png"
+		},
+		{
+			"name":"top_sq_png",
+			"type":"image",
+			"url":"top_sq.png"
+		},
+		{
+			"name":"tower1_png",
+			"type":"image",
+			"url":"tower1.png"
+		},
+		{
+			"name":"tower1-w_png",
+			"type":"image",
+			"url":"tower1-w.png"
+		},
 		{
 			"name":"tower2_png",
 			"type":"image",
@@ -73,41 +113,6 @@
 			"name":"plate_png",
 			"type":"image",
 			"url":"plate.png"
-		},
-		{
-			"name":"prev_png",
-			"type":"image",
-			"url":"prev.png"
-		},
-		{
-			"name":"text1893_png",
-			"type":"image",
-			"url":"text1893.png"
-		},
-		{
-			"name":"top_pic_jpg",
-			"type":"image",
-			"url":"top_pic.jpg"
-		},
-		{
-			"name":"top_pingan_png",
-			"type":"image",
-			"url":"top_pingan.png"
-		},
-		{
-			"name":"top_quality_png",
-			"type":"image",
-			"url":"top_quality.png"
-		},
-		{
-			"name":"top_sq_png",
-			"type":"image",
-			"url":"top_sq.png"
-		},
-		{
-			"name":"tower1_png",
-			"type":"image",
-			"url":"tower1.png"
 		}
 	]
 }

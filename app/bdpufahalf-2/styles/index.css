@@ -79,14 +79,17 @@
     #evt_container .slider .next {
       right: 0; }
   #evt_container .slideOuter {
+    position: relative;
     width: 1028px;
     height: 388px;
     border-bottom: 2px solid #959595;
     overflow: hidden;
     margin: 0 auto; }
     #evt_container .slideOuter ul {
+      position: relative;
       width: 1650px; }
     #evt_container .slideOuter li {
+      position: relative;
       width: 242px;
       margin: 0 20px 18px 0;
       color: #242424;
@@ -94,10 +97,26 @@
       float: left; }
       #evt_container .slideOuter li .fl {
         float: left; }
+      #evt_container .slideOuter li .fl.ftitle {
+        width: 98px;
+        height: 40px;
+        overflow: hidden;
+        align-items: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: left;
+        justify-content: left;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center; }
       #evt_container .slideOuter li .fr {
         float: right; }
       #evt_container .slideOuter li .p1 {
-        margin: 26px 0 3px 0; }
+        margin: 10px 0 3px 0; }
       #evt_container .slideOuter li .p2 .fr {
         color: #a40000; }
         #evt_container .slideOuter li .p2 .fr span {
@@ -119,15 +138,16 @@
     #evt_container .slideOuter .pro-num {
       position: relative;
       display: inline-block;
-      width: 120px;
-      height: 20px;
-      margin-left: 35px; }
+      float: right;
+      margin-top: 10px;
+      width: 140px;
+      height: 20px; }
       #evt_container .slideOuter .pro-num a {
         position: absolute;
         width: 20px;
         height: 20px;
         display: block;
-        top: 0; }
+        top: 1px; }
       #evt_container .slideOuter .pro-num .minus {
         background: url(../images/btn-1.png);
         left: 0;
@@ -141,11 +161,11 @@
         display: block;
         background: url(../images/input.png);
         background-size: 100%;
-        width: 75px;
-        height: 19px;
+        width: 100px;
+        height: 24px;
         position: absolute;
         top: 0;
-        left: 22px;
+        left: 20px;
         text-align: center;
         color: #626262;
         font-size: 12px;
