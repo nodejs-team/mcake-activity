@@ -29,41 +29,55 @@
     #evt_content .sec-1 .pic {
       width: 10rem;
       margin: 0 auto;
-      padding-top: 0.73333rem; }
+      padding-top: 0.4rem; }
     #evt_content .sec-1 .centent-1 {
       position: relative; }
       #evt_content .sec-1 .centent-1 .telbg {
         position: absolute;
         width: 7.46667rem;
-        top: 6rem;
+        top: 6.4rem;
         left: 1.26667rem;
         background: #fff;
-        height: 1.2rem;
+        height: 1.97333rem;
         opacity: 0.7; }
       #evt_content .sec-1 .centent-1 .tel-con {
         position: absolute;
         width: 7.46667rem;
-        top: 6rem;
+        top: 6.4rem;
         left: 1.26667rem;
-        height: 1.2rem;
+        height: 1.97333rem;
         font-size: 0.37333rem; }
-        #evt_content .sec-1 .centent-1 .tel-con lable {
-          float: left;
-          line-height: 1.2rem;
-          display: block;
-          margin-left: 0.66667rem; }
-        #evt_content .sec-1 .centent-1 .tel-con .tel {
-          float: left;
-          width: 4rem;
+        #evt_content .sec-1 .centent-1 .tel-con .li {
+          position: relative;
+          width: 5.93333rem;
+          height: 0.8rem;
+          margin: 0.13333rem auto 0;
+          background: url("../images/tel-icon.png") 0.06667rem 0.13333rem no-repeat;
+          background-size: 8%;
+          padding-left: 0.8rem; }
+          #evt_content .sec-1 .centent-1 .tel-con .li lable {
+            display: block;
+            position: absolute;
+            top: 0.13333rem;
+            right: 0.26667rem;
+            color: #666666; }
+        #evt_content .sec-1 .centent-1 .tel-con .li:last-child {
+          background: url("../images/yzm-icon.png") 0.06667rem 0.13333rem no-repeat;
+          background-size: 10%; }
+        #evt_content .sec-1 .centent-1 .tel-con input {
+          width: 5.14667rem;
           font-size: 0.37333rem;
+          line-height: 0.8rem;
           height: 100%;
           background: none;
-          border: none;
-          color: #000; }
+          border: #7a7066 1px solid;
+          color: #000;
+          padding-left: 0.26667rem;
+          border-radius: 0.06667rem; }
       #evt_content .sec-1 .centent-1 .btn-go {
         width: 3.02667rem;
         margin: 0 auto;
-        padding-top: 0.4rem; }
+        padding-top: 0.8rem; }
     #evt_content .sec-1 .centent-packet {
       position: relative;
       margin-top: 1.86667rem; }
@@ -81,7 +95,7 @@
         color: #a48569;
         font-size: 0.42667rem; }
       #evt_content .sec-1 .centent-packet .txt-wan {
-        top: 0.66667rem; }
+        top: 0.26667rem; }
       #evt_content .sec-1 .centent-packet .money {
         position: absolute;
         width: 5.24rem;
@@ -105,6 +119,13 @@
         width: 3.02667rem;
         top: 4.72rem;
         right: 3.46667rem; }
+      #evt_content .sec-1 .centent-packet .sendbao {
+        position: absolute;
+        width: 2.16rem;
+        top: 7.17333rem;
+        right: 3.92rem; }
+    #evt_content .sec-1 .packet-over {
+      margin-top: 0.93333rem; }
     #evt_content .sec-1 .borderbg {
       position: absolute;
       width: 10rem;
@@ -133,3 +154,65 @@
         text-indent: -0.26667rem;
         font-size: 0.30667rem;
         margin: 0.2rem; }
+
+.share {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  display: none; }
+
+.share-cover {
+  position: inherit;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.8; }
+
+.share-box {
+  position: inherit;
+  top: 0;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  margin-left: -50%;
+  max-width: 10rem;
+  z-index: 15; }
+  .share-box .content {
+    position: relative; }
+    .share-box .content .share-up {
+      position: absolute;
+      width: 5.54667rem;
+      top: 0.46667rem;
+      left: 2.24rem; }
+    .share-box .content .share-bao {
+      position: absolute;
+      width: 5.25333rem;
+      top: 3.48rem;
+      left: 2.44rem; }
+      .share-box .content .share-bao p {
+        display: block;
+        width: 4.69333rem;
+        position: absolute;
+        font-size: 0.34667rem;
+        top: 3.73333rem;
+        left: 0.2rem;
+        color: #fff;
+        text-align: center;
+        margin: 0 auto;
+        vertical-align: text-bottom;
+        line-height: 0.8rem; }
+        .share-box .content .share-bao p i {
+          font-size: 0.46667rem;
+          font-weight: normal;
+          font-style: inherit;
+          vertical-align: baseline !important; }
+        .share-box .content .share-bao p span {
+          color: #f3c338; }
+    .share-box .content .share-down {
+      position: absolute;
+      width: 2.70667rem;
+      top: 10.16rem;
+      left: 3.66667rem; }

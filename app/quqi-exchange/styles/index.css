@@ -1,0 +1,153 @@
+#evt_content {
+  background: #f3f8ff; }
+  #evt_content div {
+    position: absolute; }
+  #evt_content img {
+    width: 100%; }
+  #evt_content .a {
+    width: 2.89333rem;
+    top: 0.13333rem;
+    left: 0.13333rem; }
+  #evt_content .b {
+    width: 11.10667rem;
+    top: 2.66667rem;
+    left: 0; }
+  #evt_content .sec {
+    position: relative; }
+  #evt_content .sec-1 {
+    height: 16.66667rem; }
+    #evt_content .sec-1 .ren-box {
+      top: 0rem;
+      left: 0rem; }
+      #evt_content .sec-1 .ren-box canvas {
+        width: 4.13333rem;
+        height: 4.52rem; }
+    #evt_content .sec-1 .ren-ti {
+      top: 0rem;
+      left: 4.88rem; }
+      #evt_content .sec-1 .ren-ti canvas {
+        width: 2.93333rem;
+        height: 2.76rem; }
+    #evt_content .sec-1 .ren-pao {
+      top: 11.41333rem;
+      left: 1.81333rem; }
+      #evt_content .sec-1 .ren-pao canvas {
+        width: 2.16rem;
+        height: 3.73333rem; }
+    #evt_content .sec-1 .ren-you {
+      top: 5.18667rem;
+      right: 0.26667rem; }
+      #evt_content .sec-1 .ren-you canvas {
+        width: 1.49333rem;
+        height: 2.44rem; }
+    #evt_content .sec-1 .b-title {
+      width: 7.48rem;
+      top: 3.26667rem;
+      left: 0.8rem; }
+    #evt_content .sec-1 .quqi-1 {
+      width: 2.16rem;
+      top: 0.78667rem;
+      left: 8rem; }
+    #evt_content .sec-1 .quqi-2 {
+      width: 1.58667rem;
+      top: 8.8rem;
+      left: 0.58667rem; }
+    #evt_content .sec-1 .quqi-3 {
+      width: 5.96rem;
+      top: 8.6rem;
+      left: 4.02667rem; }
+  #evt_content .sec-2 {
+    height: 10.36rem; }
+    #evt_content .sec-2 .words-1 {
+      width: 7.64rem;
+      top: 0.86667rem;
+      left: 0.8rem; }
+    #evt_content .sec-2 .q-cake {
+      width: 5.68rem;
+      top: 3.2rem;
+      left: 4.30667rem; }
+    #evt_content .sec-2 .ren-yao {
+      top: 6.42667rem;
+      left: 1.37333rem; }
+      #evt_content .sec-2 .ren-yao canvas {
+        width: 3.44rem;
+        height: 2.05333rem; }
+    #evt_content .sec-2 .gobtn {
+      top: 4.26667rem;
+      left: 0.8rem; }
+      #evt_content .sec-2 .gobtn a {
+        display: block;
+        text-decoration: none; }
+      #evt_content .sec-2 .gobtn span {
+        background: #f5b740 none repeat scroll 0 0;
+        color: #fff;
+        font-size: 0.44rem;
+        letter-spacing: 3px;
+        padding: 0.06667rem 0.13333rem; }
+  #evt_content .sec-3 {
+    height: 12.09333rem; }
+    #evt_content .sec-3 .more {
+      width: 2.57333rem;
+      top: 0.26667rem;
+      left: 5.94667rem; }
+    #evt_content .sec-3 .words-2-bg {
+      width: 2.21333rem;
+      top: 1.44rem;
+      left: 7.45333rem; }
+    #evt_content .sec-3 .words-2 {
+      width: 4.56rem;
+      top: 1.90667rem;
+      left: 5.04rem; }
+    #evt_content .sec-3 .words-3 {
+      width: 3.64rem;
+      top: 5.58667rem;
+      left: 5.84rem; }
+    #evt_content .sec-3 .qiqiu-box {
+      width: 5.48rem;
+      top: 0.98667rem;
+      left: 0rem; }
+    #evt_content .sec-3 .flower {
+      width: 1.10667rem;
+      bottom: 2.10667rem;
+      left: 0.93333rem; }
+    #evt_content .sec-3 .ren-quqi {
+      top: 0.8rem;
+      left: 0.53333rem; }
+      #evt_content .sec-3 .ren-quqi canvas {
+        width: 4.24rem;
+        height: 9.93333rem; }
+    #evt_content .sec-3 .ren-hs {
+      bottom: 0rem;
+      left: 4.49333rem; }
+      #evt_content .sec-3 .ren-hs canvas {
+        width: 1.77333rem;
+        height: 1.2rem; }
+    #evt_content .sec-3 .gobtn {
+      top: 4.37333rem;
+      left: 5.82667rem; }
+      #evt_content .sec-3 .gobtn a {
+        display: block;
+        text-decoration: none; }
+      #evt_content .sec-3 .gobtn span {
+        background: #f5b740 none repeat scroll 0 0;
+        color: #fff;
+        font-size: 0.44rem;
+        letter-spacing: 3px;
+        padding: 0.06667rem 0.13333rem; }
+  #evt_content .sec-footer {
+    background: #fff;
+    position: relative; }
+    #evt_content .sec-footer .txt {
+      position: relative;
+      width: 8.8rem;
+      padding-top: 0.66667rem;
+      padding-bottom: 0.66667rem;
+      padding-left: 0.66667rem;
+      color: #3c211a; }
+      #evt_content .sec-footer .txt h2 {
+        font-size: 0.4rem; }
+      #evt_content .sec-footer .txt p {
+        font-size: 0.29333rem;
+        padding-left: 0.26667rem;
+        margin-left: 0.26667rem;
+        text-indent: -0.46667rem; }

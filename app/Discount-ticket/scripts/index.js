@@ -60,19 +60,34 @@
     }
     startLoading();
 
-
-    
     var loadComplete = function () {
+        $(".share").click(function () {
+            $(this).fadeOut(500);
+        })
+    };
+
+    var showPacket = function () {
         var $getPacket = $(".get-packet");
         var $xjian = $(".xjian");
         var $pkToggle = $(".pk-toggle");
-        if($getPacket.is(':visible')){
-            $xjian.animate({top:'0'},800,function () {
-                $pkToggle.fadeIn(500);
-            });
 
-        }
+        $xjian.animate({top:'0'},800,function () {
+            $pkToggle.fadeIn(500);
+        });
 
-    }
+    };
+    
+    var showShare = function () {
+        $(".share").fadeIn(500);
+    };
 
+    var scrollTopFun =function () {
+        $("html, body, #evt_container").animate({scrollTop:0}, 300);
+    };
+
+
+    window.showPacket = showPacket;
+    window.showShare = showShare;
+    window.scrollTopFun = scrollTopFun;
 })();
+

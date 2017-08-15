@@ -33,9 +33,16 @@
 
                         <div class="telbg"></div>
                         <div class="tel-con">
-                            <lable>输入手机号码：</lable> <input type="tel" class="tel" maxlength="11" placeholder="13456521562">
+                            <div class="li">
+                                <input type="tel" class="tel" maxlength="11" placeholder="输入手机号码">
+                            </div>
+                            <div class="li">
+                                <input type="text" class="yam" maxlength="11" placeholder="验证码">
+                                <lable>|&nbsp;&nbsp;&nbsp;获取</lable>
+                            </div>
                         </div>
-                        <div class="btn-go"><a href=""><img src="http://edm.mcake.com/weifengwang/common/no.jpg" alt="" src-fix="btn-go_png"></a></div>
+
+                        <div class="btn-go"><img src="http://edm.mcake.com/weifengwang/common/no.jpg" alt="" src-fix="btn-go_png"></div>
                     </div>
 
                     <!--获得红包-->
@@ -50,7 +57,7 @@
                     </div>
 
                     <!--已抢红包-->
-                    <div class="centent-packet" style="display: none;">
+                    <div class="centent-packet get-packeted" style="display: none;">
                         <div class="xf xinfeng-1"><img src="http://edm.mcake.com/weifengwang/common/no.jpg" alt="" src-fix="xinfeng-1_png"></div>
                         <div class="xf xinfeng-3"><img src="http://edm.mcake.com/weifengwang/common/no.jpg" alt="" src-fix="xinfeng-3_png"></div>
                         <div class="xf xinfeng-2"><img src="http://edm.mcake.com/weifengwang/common/no.jpg" alt="" src-fix="xinfeng-2_png"></div>
@@ -62,11 +69,13 @@
 
 
                     <!--红包已被抢完-->
-                    <div class="centent-packet" style="display: none;">
+                    <div class="centent-packet packet-over" style="display: none;">
                         <div class="xf xinfeng-1"><img src="http://edm.mcake.com/weifengwang/common/no.jpg" alt="" src-fix="xinfeng-1_png"></div>
                         <div class="xf xinfeng-2"><img src="http://edm.mcake.com/weifengwang/common/no.jpg" alt="" src-fix="xinfeng-2_png"></div>
                         <div class="txt txt-wan">红包已被抢完了<br>下次赶早哦！</div>
+                        <div class="sendbao"><img src="http://edm.mcake.com/weifengwang/common/no.jpg" alt="" src-fix="sendredbao_png"></div>
                     </div>
+
                    <div class="borderbg"></div>
                 </div>
 
@@ -91,7 +100,25 @@
                         <p> 6. Mcake保留法律范围内允许的对活动的解释权</p>
                     </div>
                 </div>
+
+
+
+                <div class="share" ontouchmove="return false;">
+                    <div class="share-cover"></div>
+                    <div class="share-box">
+                        <div class="content">
+                            <div class="share-up"><img src="images/share-up.png" alt=""></div>
+                            <div class="share-bao">
+                                <p>恭喜获得 <i>10</i> 个红包 <br> <span>分享给小伙伴，大家一起抢</span></p>
+                                <img src="images/share-bao.png" alt="">
+                            </div>
+                            <div class="share-down"><a href="http://www.mcake.com"><img src="images/share-down.png" alt=""></a></div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
+
         </div>
     </div>
 </div>
@@ -107,5 +134,23 @@
 <script src="scripts/resdata.js"></script>
 <script src="scripts/index.js"></script>
 <!-- endbuild -->
+
+<script>
+
+
+    $('.btn-go').click(function () {
+        scrollTopFun();  //页面滚动到顶部
+        $(".centent-1").hide();
+        $(".packet-over").show();
+        showPacket();
+    });
+
+    $(".sendbao").click(function () {
+        scrollTopFun();
+        showShare();
+    });
+    
+</script>
+
 </body>
 </html>

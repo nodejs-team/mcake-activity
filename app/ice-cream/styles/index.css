@@ -1,0 +1,112 @@
+#evt_content div {
+  position: absolute; }
+
+#evt_content img {
+  width: 100%; }
+
+#evt_content .gobtn {
+  top: 4.4rem;
+  left: 0.93333rem; }
+  #evt_content .gobtn a {
+    display: block;
+    text-decoration: none; }
+  #evt_content .gobtn span {
+    background: #59a8b8 none repeat scroll 0 0;
+    border-radius: 0.06667rem;
+    color: #fff;
+    font-size: 0.37333rem;
+    letter-spacing: 3px;
+    padding: 0.2rem 0.4rem 0.2rem 0.53333rem; }
+
+#evt_content .sec {
+  position: relative; }
+
+#evt_content .sec-1 {
+  height: 15.70667rem;
+  background: #e8f3f6; }
+  #evt_content .sec-1 .b-title {
+    width: 8.16rem;
+    top: 0.53333rem;
+    left: 0.86667rem; }
+  #evt_content .sec-1 .b-des-1 {
+    width: 4.34667rem;
+    top: 6.04rem;
+    left: 0.46667rem; }
+  #evt_content .sec-1 .b-cake-1 {
+    width: 7.04rem;
+    top: 5.86667rem;
+    left: 3.06667rem; }
+  #evt_content .sec-1 .b-words-1 {
+    width: 7.73333rem;
+    top: 12.04rem;
+    left: 0.58667rem; }
+  #evt_content .sec-1 .gobtn-1 {
+    top: 14.26667rem;
+    left: 2.97333rem; }
+
+#evt_content .sec-2 {
+  height: 6.86667rem;
+  background: #fff; }
+  #evt_content .sec-2 .yhq-icon {
+    width: 2.52rem;
+    top: 0.68rem;
+    left: 0.26667rem; }
+    #evt_content .sec-2 .yhq-icon canvas {
+      width: 2.52rem;
+      height: 2.26667rem; }
+  #evt_content .sec-2 .quan-bao-shou {
+    width: 3.29333rem;
+    top: 1.4rem;
+    left: 1.18667rem; }
+    #evt_content .sec-2 .quan-bao-shou canvas {
+      width: 3.29333rem;
+      height: 3.30667rem; }
+  #evt_content .sec-2 .youhui {
+    width: 6.77333rem;
+    top: 1.30667rem;
+    left: 3.57333rem; }
+  #evt_content .sec-2 .gobtn.gobtn-get {
+    top: 4.93333rem;
+    left: 3.86667rem; }
+    #evt_content .sec-2 .gobtn.gobtn-get span {
+      padding: 0.26667rem 0.4rem; }
+
+#evt_content .sec-3 {
+  height: 8.54667rem;
+  background: #e8f3f6; }
+  #evt_content .sec-3 .b-cake-2 {
+    width: 7.24rem;
+    top: 1.06667rem;
+    left: 0rem; }
+  #evt_content .sec-3 .b-des-2 {
+    width: 5.08rem;
+    top: 0.70667rem;
+    left: 4.48rem; }
+  #evt_content .sec-3 .b-words-2 {
+    width: 4.76rem;
+    top: 5.09333rem;
+    left: 4.82667rem; }
+  #evt_content .sec-3 .gobtn-2 {
+    top: 7.2rem;
+    left: 6.6rem; }
+
+#evt_content .sec-footer {
+  background: #fff;
+  position: relative; }
+  #evt_content .sec-footer .txt {
+    position: relative;
+    width: 8.8rem;
+    padding-top: 0.66667rem;
+    padding-bottom: 0.66667rem;
+    padding-left: 0.66667rem;
+    color: #3c211a; }
+    #evt_content .sec-footer .txt h2 {
+      font-size: 0.4rem; }
+    #evt_content .sec-footer .txt p {
+      margin: 0.26667rem 0 0 0.26667rem;
+      font-size: 0.29333rem;
+      padding-left: 0.26667rem;
+      text-indent: -0.46667rem; }
+    #evt_content .sec-footer .txt p.pl {
+      padding-left: 0.26667rem;
+      text-indent: 0rem; }

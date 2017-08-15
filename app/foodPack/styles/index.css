@@ -1,0 +1,193 @@
+#evt_content {
+  background: url("../images/bg.jpg") repeat; }
+  #evt_content div {
+    position: absolute; }
+  #evt_content img {
+    width: 100%; }
+  #evt_content .sec {
+    position: relative; }
+  #evt_content .sec-1 {
+    height: 14.50667rem; }
+    #evt_content .sec-1 .gao-line {
+      width: 10rem;
+      top: 0rem;
+      left: 0rem; }
+    #evt_content .sec-1 .buliao {
+      width: 4.08rem;
+      top: 0rem;
+      left: 2.73333rem; }
+    #evt_content .sec-1 .x-title {
+      width: 6.81333rem;
+      top: 1.86667rem;
+      left: 2.06667rem; }
+    #evt_content .sec-1 .zuhe {
+      width: 7.14667rem;
+      top: 7.50667rem;
+      left: 1.49333rem; }
+    #evt_content .sec-1 .boy {
+      top: 8.4rem;
+      left: 0rem; }
+      #evt_content .sec-1 .boy canvas {
+        width: 2.54667rem;
+        height: 3.18667rem; }
+    #evt_content .sec-1 .girl {
+      top: 9.46667rem;
+      left: auto;
+      right: 0rem; }
+      #evt_content .sec-1 .girl canvas {
+        width: 2.45333rem;
+        height: 3.33333rem; }
+  #evt_content .sec-2 {
+    height: 17.22667rem; }
+    #evt_content .sec-2 .start {
+      width: 10rem;
+      top: 0.66667rem;
+      left: 0rem; }
+    #evt_content .sec-2 .jiantou-1 {
+      width: 1.13333rem;
+      top: 9.64rem;
+      left: 6.70667rem; }
+    #evt_content .sec-2 .pic-1 {
+      width: 7.04rem;
+      top: 3.94667rem;
+      left: 1.98667rem; }
+    #evt_content .sec-2 .cake-1 {
+      width: 5.82667rem;
+      top: 6.4rem;
+      left: 0.4rem; }
+    #evt_content .sec-2 .dc-1 {
+      width: 2.84rem;
+      top: 7.16rem;
+      left: 7.01333rem; }
+    #evt_content .sec-2 .words-1 {
+      width: 7.78667rem;
+      top: 12.36rem;
+      left: 1.6rem; }
+  #evt_content .sec-3 {
+    height: 16.98667rem; }
+    #evt_content .sec-3 .pic-2 {
+      width: 4.70667rem;
+      top: 1.01333rem;
+      left: 0.74667rem; }
+    #evt_content .sec-3 .mocha {
+      width: 3.06667rem;
+      top: 1.53333rem;
+      left: 5.78667rem; }
+    #evt_content .sec-3 .cake-2 {
+      width: 7.62667rem;
+      top: 2.42667rem;
+      left: auto;
+      right: 0rem; }
+    #evt_content .sec-3 .dc-2 {
+      width: 3rem;
+      top: 0.58667rem;
+      left: 2.66667rem; }
+    #evt_content .sec-3 .words-2 {
+      width: 6.08rem;
+      top: 6.72rem;
+      left: 0.49333rem; }
+    #evt_content .sec-3 .jiage-1 {
+      width: 7.33333rem;
+      top: 10.46667rem;
+      left: 1.33333rem; }
+  #evt_content .sec-4 {
+    height: 16.81333rem; }
+    #evt_content .sec-4 .xiaoren {
+      width: 5.09333rem;
+      top: 0.26667rem;
+      left: 0.93333rem; }
+    #evt_content .sec-4 .jiantou-2 {
+      width: 1.54667rem;
+      top: 6.57333rem;
+      left: 0.93333rem; }
+    #evt_content .sec-4 .pic-3 {
+      width: 5.42667rem;
+      top: 10.32rem;
+      left: 0.45333rem; }
+    #evt_content .sec-4 .cake-3 {
+      width: 7.42667rem;
+      top: 1.64rem;
+      left: 2.73333rem; }
+    #evt_content .sec-4 .dc-3 {
+      width: 2.98667rem;
+      top: 14.04rem;
+      left: 4.73333rem; }
+    #evt_content .sec-4 .words-3 {
+      width: 7.32rem;
+      top: 9.05333rem;
+      left: 2rem; }
+  #evt_content .sec-5 {
+    height: 10.6rem; }
+    #evt_content .sec-5 .youhui-1 {
+      width: 6.64rem;
+      top: 0.65333rem;
+      left: 2.8rem; }
+    #evt_content .sec-5 .youhui-2 {
+      width: 7.38667rem;
+      top: 3.49333rem;
+      left: 1.89333rem; }
+    #evt_content .sec-5 .jiantou-3 {
+      width: 1.33333rem;
+      top: 2.41333rem;
+      left: 1.01333rem; }
+    #evt_content .sec-5 .words-4 {
+      width: 5.98667rem;
+      top: 7.73333rem;
+      left: 3.2rem; }
+    #evt_content .sec-5 .line-1 {
+      width: 2.88rem;
+      top: 7.29333rem;
+      left: 0rem; }
+    #evt_content .sec-5 .line-2 {
+      width: 1.33333rem;
+      top: 8.04rem;
+      left: auto;
+      right: 0rem; }
+  #evt_content .go-btn a {
+    display: block;
+    text-decoration: none; }
+  #evt_content .go-btn span {
+    background: #2a2e95 none repeat scroll 0 0;
+    border-radius: 0.06667rem;
+    color: #fff;
+    font-size: 0.48rem;
+    letter-spacing: 3px;
+    padding: 0.4rem 0.8rem; }
+  #evt_content .sec-6 {
+    height: 13.8rem; }
+    #evt_content .sec-6 .pic-3 {
+      width: 7.66667rem;
+      top: 0rem;
+      left: 0.97333rem; }
+    #evt_content .sec-6 .dc-3 {
+      width: 2.98667rem;
+      top: 3.53333rem;
+      left: 6.70667rem; }
+    #evt_content .sec-6 .words-3 {
+      width: 7.32rem;
+      top: 6.33333rem;
+      left: 0.93333rem; }
+    #evt_content .sec-6 .go-btn {
+      top: 11.46667rem;
+      left: 50%;
+      margin-left: -2.33333rem; }
+  #evt_content .sec-footer {
+    background: #fff;
+    position: relative;
+    padding-bottom: 0.26667rem; }
+    #evt_content .sec-footer .txt {
+      position: relative;
+      width: 8.8rem;
+      padding-top: 1.2rem;
+      padding-bottom: 0.66667rem;
+      margin: 0 auto;
+      color: #4a4a4a; }
+      #evt_content .sec-footer .txt h2 {
+        font-size: 0.4rem;
+        font-weight: normal; }
+      #evt_content .sec-footer .txt p {
+        font-size: 0.29333rem;
+        padding-left: 0.46667rem;
+        line-height: 0.53333rem;
+        text-indent: -0.46667rem;
+        margin: 0.13333rem 0; }

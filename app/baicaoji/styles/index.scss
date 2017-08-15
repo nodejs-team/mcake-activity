@@ -1,0 +1,78 @@
+@function px2rem($n) {
+  @return ($n * 10 / 750) * 1rem; //设计稿一般都是750宽
+}
+
+@mixin font-dpr($font-size){
+  font-size: $font-size;
+
+  [data-dpr="2"] & {
+    font-size: $font-size * 2;
+  }
+
+  [data-dpr="3"] & {
+    font-size: $font-size * 3;
+  }
+
+}
+
+#evt_content{ background:url("../images/bg.jpg") repeat-y; background-size: 100%;
+  div{position:absolute;}
+  img{width:100%;}
+  .sec{position: relative; }
+  .sec-1 {
+    height: px2rem(963);
+    .x-title{width:px2rem(621); top:px2rem(54); left:px2rem(66);}
+    .xbg-1{width:px2rem(750); top:px2rem(560); left:px2rem(0);}
+    .cake-1{width:px2rem(478); top:px2rem(403); left:px2rem(-10);}
+    .xwords-1{width:px2rem(424); top:px2rem(422); left:px2rem(306);}
+    .xwords-btn-1{width:px2rem(304); top:px2rem(866); left:px2rem(405);}
+  }
+
+
+  .sec-3 {
+    height: px2rem(524);
+    .xbg-3{width:px2rem(404); top:px2rem(105); left:px2rem(30);}
+    .cake-3{width:px2rem(376); top:px2rem(66); left:px2rem(377);}
+    .xwords-3{width:px2rem(306); top:px2rem(47); left:px2rem(87);}
+    .xwords-btn-3{width:px2rem(249); top:px2rem(396); left:px2rem(58);}
+
+  }
+  .sec-4 {
+    height: px2rem(669);
+    .xbg-4{width:px2rem(286); top:px2rem(232); left:px2rem(429);}
+
+    .pic{width:px2rem(306); top:px2rem(217); left:px2rem(173);}
+    .car-1{width:px2rem(183); top:px2rem(415); left:px2rem(505);}
+    .car-2{width:px2rem(167); top:px2rem(398); left:px2rem(0);}
+    .girl{width:px2rem(66); top:px2rem(309); left:px2rem(561);}
+    .boy{width:px2rem(43); top:px2rem(537); left:px2rem(344);}
+
+    .cake-4{width:px2rem(359); top:px2rem(50); left:px2rem(0);}
+    .xwords-4{width:px2rem(240); top:px2rem(0); left:px2rem(425);}
+    .xwords-btn-4{width:px2rem(262); top:px2rem(550); left:px2rem(429);}
+
+  }
+
+
+  .sec-5 {
+    height: px2rem(258);
+    .taoz-1{width:px2rem(281); top:px2rem(24); left:px2rem(88);}
+    .taoz-2{width:px2rem(283); top:px2rem(24); left:px2rem(415);}
+
+    p{text-align: center; font-size: px2rem(20);}
+
+  }
+
+
+
+  .sec-footer{background:url("../images/footer-bg.png") repeat-x; position: relative; padding-bottom: px2rem(20);
+    .txt{ position: relative; width:px2rem(660); padding-top: px2rem(90); padding-bottom: px2rem(50); margin: 0 auto;  color: #4a4a4a;
+      h2{font-size: px2rem(22); font-weight: normal; }
+      p{ font-size: px2rem(22); padding-left: px2rem(35); line-height:px2rem(40);  text-indent: px2rem(-35);
+        margin:px2rem(10) 0;}
+    }
+
+
+  }
+
+}
