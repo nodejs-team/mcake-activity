@@ -1,29 +1,41 @@
 #evt_content {
-  height: 33.26667rem;
-  background: #fff; }
+  height: 38.8rem; }
   #evt_content div {
     position: absolute; }
   #evt_content img {
     width: 100%; }
+  #evt_content .wm-bgtop {
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 16.66667rem;
+    background-color: #f5dce3; }
+  #evt_content .wm-bgbottom {
+    left: 0;
+    top: 16.66667rem;
+    right: 0;
+    height: 14.34667rem;
+    background: #f0f0f1 url(../images/bg-spliter.jpg) no-repeat;
+    background-size: 100% auto; }
   #evt_content .wm-backend {
     top: 0;
     right: 0;
-    width: 100%; }
+    width: 4.70667rem; }
   #evt_content .wm-title {
     width: 4.89333rem;
-    top: 1.6rem;
+    top: 0.57333rem;
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%); }
   #evt_content .wm-maintext {
-    width: 7.57333rem;
-    top: 3.62667rem;
+    width: 9.24rem;
+    top: 2.6rem;
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%); }
   #evt_content .wm-p1-container {
     right: 0;
-    top: 9.66667rem;
+    top: 7.6rem;
     width: 5.06667rem;
     height: 5.06667rem; }
     #evt_content .wm-p1-container > div {
@@ -39,32 +51,24 @@
   #evt_content .wm-p2 {
     top: 0.4rem !important;
     width: 4.98667rem; }
+  #evt_content .wm-p1-arrow {
+    left: 2.98667rem;
+    top: 9.73333rem;
+    width: 1.85333rem; }
   #evt_content .wm-p1-text {
-    left: 1.06667rem;
-    top: 6.36rem;
-    width: 4.68rem; }
+    left: 0.36rem;
+    top: 6.66667rem;
+    width: 5.06667rem; }
   #evt_content .wm-p1-price {
-    position: relative;
-    width: 6.05333rem;
+    width: 6.21333rem;
     text-align: center;
-    top: 10.90667rem;
-    left: 1.06667rem; }
-    #evt_content .wm-p1-price .buy-btn {
-      position: absolute;
-      left: 0;
-      top: 0.30667rem; }
-    #evt_content .wm-p1-price:after {
-      content: '';
-      position: absolute;
-      width: 0.90667rem;
-      height: 0.86667rem;
-      background: url(../images/btn-decorator.png) no-repeat;
-      background-size: 100% auto;
-      left: -0.53333rem;
-      top: 1.06667rem; }
+    top: 12.50667rem;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%); }
   #evt_content .wm-p2-container {
     left: 0;
-    top: 18.04rem;
+    top: 16.88rem;
     width: 7.33333rem;
     height: 7.33333rem; }
     #evt_content .wm-p2-container > div {
@@ -81,26 +85,24 @@
       width: 4.94667rem; }
     #evt_content .wm-p2-container .wm-p2-3 {
       width: 6.86667rem; }
+  #evt_content .wm-p2-arrow {
+    left: 1.28rem;
+    top: 22.93333rem;
+    width: 2.09333rem; }
   #evt_content .wm-p2-text {
-    right: 0.66667rem;
-    top: 21.62667rem;
-    width: 2.58667rem;
+    right: 0.46667rem;
+    top: 21.90667rem;
+    width: 5.25333rem;
     text-align: right; }
     #evt_content .wm-p2-text .buy-btn {
-      margin-left: -0.66667rem; }
+      margin-right: 0.13333rem; }
       #evt_content .wm-p2-text .buy-btn.disabled {
         background-color: #ddd;
         color: #999; }
-  #evt_content .wm-p2-t2 {
-    top: 16.8rem;
-    right: 0.98667rem;
-    width: 4.73333rem; }
   #evt_content .wm-ps {
-    top: 26.14667rem;
-    width: 5.25333rem;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%); }
+    top: 25.89333rem;
+    left: 1.06667rem;
+    width: 4.09333rem; }
   #evt_content .buy-btn {
     display: inline-block;
     margin-top: 0.4rem;
@@ -111,7 +113,7 @@
     color: #fff;
     font-size: 16px;
     text-decoration: none;
-    background-color: #ea8b3d; }
+    background-color: #b34c63; }
     #evt_content .buy-btn.disabled {
       background-color: #e9c5cf;
       color: #d28597; }
@@ -120,39 +122,15 @@
     left: 0;
     top: 31rem; }
   #evt_content .footer-rules {
-    top: 28.24rem;
+    top: 33.86667rem;
     left: 0;
     right: 0;
-    color: #cdc8ba;
-    background-size: 100% auto; }
+    color: #593e1e;
+    padding: 0.66667rem 0.66667rem 0.93333rem; }
     #evt_content .footer-rules h2 {
       font-size: 16px;
-      margin: 0 0 0.5em;
-      display: none; }
+      margin: 0 0 0.5em; }
     #evt_content .footer-rules p {
-      display: none;
       margin: 0;
       font-size: 14px;
       line-height: 1.5; }
-  #evt_content .audio-control {
-    position: absolute;
-    top: 60px;
-    right: 40px;
-    width: 25px;
-    height: 25px;
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    z-index: 1000; }
-  #evt_content .audio-control.play {
-    background-image: url(../images/play.svg); }
-  #evt_content .audio-control.pause {
-    background-image: url(../images/pause.svg); }
-  #evt_content .wm-line {
-    left: 0.66667rem;
-    right: 0.66667rem;
-    height: 0;
-    border-top: 1px dotted #ddd8d4; }
-    #evt_content .wm-line.line1 {
-      top: 15.36rem; }
-    #evt_content .wm-line.line2 {
-      top: 25.22667rem; }

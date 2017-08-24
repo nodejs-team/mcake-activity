@@ -1,19 +1,19 @@
 {
 	"groups":[
 	{
-		"keys":"t1_png,t2_png,title_png,top-bg_png,btn-decorator_png,footer-bg_jpg,footer-text_png,main-text_png,p1-1_png,p1-2_png,p2-1_png,p2-2_png,p3-3_png,price1_png,price2_png",
+		"keys":"t1-arrow_png,t2-arrow_png,title_png,top-bg_png,bg-spliter_jpg,footer-banner_jpg,main-text_png,p1-1_png,p1-2_png,p2-1_png,p2-2_png,p3_png,p3-3_png,price1_png,price2_png,t1_png",
 		"name":"preload"
 	}],
 	"resources":[
 	{
-		"name":"t1_png",
+		"name":"t1-arrow_png",
 		"type":"image",
-		"url":"t1.png"
+		"url":"t1-arrow.png"
 	},
 	{
-		"name":"t2_png",
+		"name":"t2-arrow_png",
 		"type":"image",
-		"url":"t2.png"
+		"url":"t2-arrow.png"
 	},
 	{
 		"name":"title_png",
@@ -26,19 +26,14 @@
 		"url":"top-bg.png"
 	},
 	{
-		"name":"btn-decorator_png",
+		"name":"bg-spliter_jpg",
 		"type":"image",
-		"url":"btn-decorator.png"
+		"url":"bg-spliter.jpg"
 	},
 	{
-		"name":"footer-bg_jpg",
+		"name":"footer-banner_jpg",
 		"type":"image",
-		"url":"footer-bg.jpg"
-	},
-	{
-		"name":"footer-text_png",
-		"type":"image",
-		"url":"footer-text.png"
+		"url":"footer-banner.jpg"
 	},
 	{
 		"name":"main-text_png",
@@ -66,6 +61,11 @@
 		"url":"p2-2.png"
 	},
 	{
+		"name":"p3_png",
+		"type":"image",
+		"url":"p3.png"
+	},
+	{
 		"name":"p3-3_png",
 		"type":"image",
 		"url":"p3-3.png"
@@ -79,5 +79,10 @@
 		"name":"price2_png",
 		"type":"image",
 		"url":"price2.png"
+	},
+	{
+		"name":"t1_png",
+		"type":"image",
+		"url":"t1.png"
 	}]
 }

@@ -89,40 +89,9 @@
       });
     }
 
-  function initAudio(){
-    var audio = document.createElement('audio');
-    var audioCtrl = document.getElementById('evt_audio_ctrl');
-    var body = document.body;
-    var audioHandler = function(){
-      if( audio.paused ){
-        audio.play();
-        this.className = 'audio-control play';
-      } else {
-        audio.pause();
-        this.className = 'audio-control pause';
-      }
-    };
-
-    audio.autoplay = 'true';
-    audio.src = 'http://edm.mcake.com/fangli/2017-wap/withwheat-mcake/media/mcake-benison.mp3';
-    body.appendChild(audio);
-
-    audioCtrl.addEventListener('click', audioHandler, false);
-
-    return {
-      destroy: function(){
-        audioCtrl.removeEventListener('click', audioHandler, false);
-        audio.pause();
-        body.removeChild(audio);
-      }
-    };
-
-  }
-
   var loadComplete = function () {
     initScroll();
     initChange();
-    initAudio();
   };
 
 
@@ -130,12 +99,14 @@
     window.scrollAnimate('#evt_container', [
       {dom: '.wm-maintext',opacity:0,duration:1000}
       ,{dom: '.wm-p1-container',x:300, y:100,opacity:0,duration:1000, delay: 200}
-      ,{dom: '.wm-p1-text',opacity:0,duration:500, delay: 1200}
-      ,{dom: '.wm-p1-price',opacity:0,duration:1000, delay: 1700}
+      ,{dom: '.wm-p1-arrow',opacity:0,duration:500, delay: 1200}
+      ,{dom: '.wm-p1-text',opacity:0,duration:500, delay: 1700}
+      ,{dom: '.wm-p1-price',opacity:0,duration:1000, delay: 2200}
       ,{dom: '.wm-p2-container',x:-300, y:0,opacity:0,duration:1000}
-      ,{dom: '.wm-p2-t2',opacity:0,duration:1000, delay: 1200}
+      ,{dom: '.wm-p2-arrow',opacity:0,duration:500, delay: 500}
       ,{dom: '.wm-p2-text',opacity:0,duration:500, delay: 1000}
-      ,{dom: '.wm-ps',opacity:0,duration:1000, delay: 1200}
+      ,{dom: '.wm-ps',x:-200, y:100,opacity:0,duration:1000, delay: 1200}
+      ,{dom: '.footer-banner',opacity:0,duration:1000, delay: 1000}
     ]);
   }
 
