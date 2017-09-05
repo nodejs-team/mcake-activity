@@ -1,0 +1,203 @@
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden; }
+
+#evt_content {
+  background: #fff; }
+  #evt_content div {
+    position: absolute; }
+  #evt_content img {
+    width: 100%; }
+  #evt_content .sec {
+    position: relative; }
+  #evt_content .sec-banner {
+    height: 13.30667rem;
+    background: url("../images/top-bg.png") center;
+    background-size: 100%; }
+    #evt_content .sec-banner .mon {
+      width: 5.34667rem;
+      top: 0rem;
+      left: 0rem; }
+    #evt_content .sec-banner .sicon {
+      width: 1.01333rem;
+      top: 0.4rem;
+      left: auto;
+      right: 0.53333rem; }
+    #evt_content .sec-banner .title {
+      width: 5.44rem;
+      top: 2.56rem;
+      left: 50%;
+      margin-left: -2.72rem; }
+    #evt_content .sec-banner .word {
+      width: 4.42667rem;
+      top: 8.05333rem;
+      left: 1.29333rem; }
+  #evt_content .sec-1 {
+    background: #eff7fc; }
+    #evt_content .sec-1 .row {
+      position: relative;
+      height: 8.10667rem; }
+      #evt_content .sec-1 .row div {
+        position: absolute; }
+    #evt_content .sec-1 .row-0 .ka-1 {
+      width: 7.61333rem;
+      top: 0.93333rem;
+      left: 0.53333rem; }
+    #evt_content .sec-1 .row-0 .ws-1 {
+      width: 6.66667rem;
+      top: 2.08rem;
+      left: 2.77333rem; }
+    #evt_content .sec-1 .row-0 .ws-1-q {
+      width: 6.78667rem;
+      top: 2.08rem;
+      left: 1.01333rem; }
+    #evt_content .sec-1 .row-1 {
+      height: 12.14667rem; }
+      #evt_content .sec-1 .row-1 .w-1 {
+        width: 8.33333rem;
+        top: 4.77333rem;
+        left: 0.53333rem; }
+      #evt_content .sec-1 .row-1 .cloud-1-1 {
+        width: 1.85333rem;
+        height: 0.7rem;
+        top: 1.66667rem;
+        left: 1.44rem;
+        background: url("../images/cloud-1-1.png");
+        background-size: 100%; }
+      #evt_content .sec-1 .row-1 .cloud-1-2 {
+        width: 1.32rem;
+        height: 0.49333rem;
+        top: 8.33333rem;
+        left: 6.90667rem;
+        background: url("../images/cloud-1-2.png");
+        background-size: 100%; }
+      #evt_content .sec-1 .row-1 .c3 {
+        top: 10.02667rem;
+        left: 3.82667rem; }
+      #evt_content .sec-1 .row-1 .pic-1 {
+        width: 4.30667rem;
+        top: 1.06667rem;
+        left: 2.33333rem; }
+      #evt_content .sec-1 .row-1 .cake-1 {
+        width: 5.48rem;
+        top: 1.06667rem;
+        left: auto;
+        right: 0; }
+    #evt_content .sec-1 .row-2 {
+      height: 10.14667rem; }
+      #evt_content .sec-1 .row-2 .w-2 {
+        width: 4.08rem;
+        top: 2.98667rem;
+        left: auto;
+        right: 0.53333rem; }
+      #evt_content .sec-1 .row-2 .cloud-2-1 {
+        width: 1.4rem;
+        height: 0.52rem;
+        top: 2.24rem;
+        left: 8.06667rem;
+        background: url("../images/cloud-2-1.png");
+        background-size: 100%; }
+      #evt_content .sec-1 .row-2 .cloud-2-2 {
+        width: 1.85333rem;
+        height: 0.69333rem;
+        top: 7.93333rem;
+        left: 4.05333rem;
+        background: url("../images/cloud-2-2.png");
+        background-size: 100%; }
+      #evt_content .sec-1 .row-2 .pic-2 {
+        width: 3.34667rem;
+        top: 0.69333rem;
+        left: 3.16rem; }
+      #evt_content .sec-1 .row-2 .cake-2 {
+        width: 5.24rem;
+        top: 1.69333rem;
+        left: 0rem; }
+    #evt_content .sec-1 .row-3 {
+      height: 10.56rem; }
+      #evt_content .sec-1 .row-3 .w-3 {
+        width: 3.26667rem;
+        top: 3.06667rem;
+        left: 0.53333rem; }
+      #evt_content .sec-1 .row-3 .cloud-3-1 {
+        width: 1.44rem;
+        height: 0.54rem;
+        top: 2.2rem;
+        left: 0.53333rem;
+        background: url("../images/cloud-3-1.png");
+        background-size: 100%; }
+      #evt_content .sec-1 .row-3 .cloud-3-2 {
+        width: 2.10667rem;
+        height: 0.8rem;
+        top: 8.50667rem;
+        left: 5.33333rem;
+        background: url("../images/cloud-3-2.png");
+        background-size: 100%; }
+      #evt_content .sec-1 .row-3 .cake-3 {
+        width: 5.34667rem;
+        top: 2.13333rem;
+        left: auto;
+        right: 0; }
+      #evt_content .sec-1 .row-3 .pic-3 {
+        width: 3.81333rem;
+        top: 0.8rem;
+        left: 3.2rem; }
+    #evt_content .sec-1 .row-4 {
+      height: 14.33333rem; }
+      #evt_content .sec-1 .row-4 .w-4 {
+        width: 4.08rem;
+        top: 2.13333rem;
+        left: auto;
+        right: 0.53333rem; }
+      #evt_content .sec-1 .row-4 .c-1 {
+        width: 1.4rem;
+        height: 0.52rem;
+        top: 1.65333rem;
+        left: 6.44rem;
+        background: url("../images/cloud-2-1.png");
+        background-size: 100%; }
+      #evt_content .sec-1 .row-4 .c-2 {
+        width: 1.85333rem;
+        height: 0.7rem;
+        top: 7.86667rem;
+        left: 4.26667rem;
+        background: url("../images/cloud-2-2.png");
+        background-size: 100%; }
+      #evt_content .sec-1 .row-4 .pic-4 {
+        width: 3.08rem;
+        top: 1.06667rem;
+        left: 2.8rem; }
+      #evt_content .sec-1 .row-4 .cake-4 {
+        width: 5.05333rem;
+        top: 1.46667rem;
+        left: 0rem; }
+      #evt_content .sec-1 .row-4 .more {
+        width: 10rem;
+        bottom: 1.42667rem;
+        left: 50%;
+        margin-left: -5rem; }
+  #evt_content .sec-footer {
+    background: url("../images/f-bg.png");
+    position: relative;
+    padding-bottom: 0.26667rem; }
+    #evt_content .sec-footer .txt {
+      position: relative;
+      width: 8.8rem;
+      padding-top: 0.26667rem;
+      padding-bottom: 0.66667rem;
+      margin: 0 auto;
+      color: #fff; }
+      #evt_content .sec-footer .txt h2 {
+        font-size: 0.42667rem;
+        font-weight: normal;
+        margin: 0.26667rem 0; }
+      #evt_content .sec-footer .txt p {
+        font-size: 0.26667rem;
+        padding-left: 0.26667rem;
+        line-height: 0.37333rem;
+        text-indent: -0.24rem;
+        margin: 0.06667rem auto 0; }
+      #evt_content .sec-footer .txt p.p1 {
+        margin: 0rem auto 0; }

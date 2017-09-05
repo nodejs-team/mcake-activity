@@ -1,0 +1,123 @@
+@function px2rem($n) {
+  @return ($n * 10 / 750) * 1rem; //设计稿一般都是750宽
+}
+
+@mixin font-dpr($font-size){
+  font-size: $font-size;
+
+  [data-dpr="2"] & {
+    font-size: $font-size * 2;
+  }
+
+  [data-dpr="3"] & {
+    font-size: $font-size * 3;
+  }
+
+}
+
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+
+#evt_content{ background: #fff;
+  div{position:absolute;}
+  img{width:100%;}
+  .sec{position: relative; }
+  .sec-banner{
+    height: px2rem(1043); background: #1e2024;
+    .box-bg{width:px2rem(750); top:px2rem(0); left:px2rem(0);}
+    .banner-title{width:px2rem(228); top:px2rem(163); left:px2rem(468);}
+
+    .banner-moon{width:px2rem(298); top:px2rem(640); left:50%; margin-left: px2rem(-149);}
+    .banner-box{width:px2rem(597); top:px2rem(96); left:px2rem(0);}
+    .banner-815{width:px2rem(114); top:px2rem(25); left:px2rem(40);}
+
+    .banner-s1{width:px2rem(377); top:px2rem(-70); left:px2rem(-50);}
+    .banner-c-2{width:px2rem(381); top:px2rem(0); left:px2rem(184);}
+    .banner-c-3{width:px2rem(260); top:px2rem(0); left: auto; right:px2rem(0);}
+
+    .banner-c-5{width:px2rem(244); top:px2rem(438); left: auto; right:px2rem(0);}
+
+    .word{ width:px2rem(640); color: #bcbcbd;line-height: px2rem(25); font-size: px2rem(18);left: 50%; margin-left:px2rem(-320); text-align: center;
+
+    }
+    .word-1{ top:px2rem(748);}
+    .word-2{ top: px2rem(866); line-height: px2rem(18); font-size: px2rem(12); color: #797a7c;}
+
+  }
+
+
+
+
+
+  .sec-1{
+    height: px2rem(1759); margin-top: px2rem(80);
+    .banner-line{ position: absolute; top:px2rem(0); left:px2rem(0); width: 100%; height:px2rem(133); background: url("../images/line.png"); margin-top: px2rem(-150); }
+    .dis-1{width:px2rem(233); top:px2rem(-250); left: auto; right:px2rem(0);}
+    .row{ position: relative; height: px2rem(408);
+      .r-left{float: left;}
+      .r-right{float: right;}
+      .row-pic{ width: px2rem(375);position: relative;}
+      .row-word{ width: px2rem(375);  height: 100%; position: relative;
+        .row-word-title{ margin-left: px2rem(30); margin-top: px2rem(30); line-height:px2rem(44);
+          img{ width: px2rem(185);}
+          p.p1{font-size:px2rem(18); color: #000;}
+          p.p2{font-size:px2rem(14); color: #000;
+            span{ font-size: px2rem(24);}
+          }
+        }
+        .row-word-bottom{ position: absolute; line-height:px2rem(30); bottom:px2rem(30); left:px2rem(30); width: px2rem(300); color: #a3a3a3; font-size: px2rem(18); }
+      }
+    }
+
+
+  }
+
+  .sec-2{
+    height: px2rem(1017);
+
+    .box{width:px2rem(720); top:px2rem(0); left:px2rem(0);}
+
+    .yueyuan{top: px2rem(518); width: px2rem(750); text-align: center;
+      .center{ position: relative; width:px2rem(500); text-align: center; margin: 0 auto;
+        img{width: px2rem(286);}
+        p{ margin: px2rem(20) auto; line-height: px2rem(35); font-size:px2rem(22); color: #000;}
+      }
+
+
+
+    }
+
+
+    .w-title{ padding-top: px2rem(20); text-align: center;  line-height:px2rem(50); vertical-align: initial;
+      i{ position: absolute; bottom:px2rem(5); left: 0; font-size: px2rem(20); font-style: normal;color: #a19682;}
+      strong{ position: relative; font-size: px2rem(60); color: #a19682; font-weight: normal; padding-left: px2rem(20);vertical-align: initial;}
+    }
+    .go-btn{ position: relative; width:px2rem(315);height:px2rem(80); background:#414650; margin: px2rem(20) auto; text-align: center; border-radius: px2rem(40);
+      span{ display: block; color: #fff; font-size: px2rem(30); line-height: px2rem(80);}
+    }
+
+
+
+  }
+
+
+
+
+  .sec-footer{background:#2e3037; position: relative; padding-bottom: px2rem(20);
+    .txt{ position: relative; width:px2rem(660); padding-top: px2rem(80); padding-bottom: px2rem(50); margin: 0 auto;  color: #bebec0;
+      h2{font-size: px2rem(30); font-weight: normal; color: #a19682; margin-top: px2rem(20); }
+      p{ font-size: px2rem(22); padding-left: px2rem(20); line-height:px2rem(35);  text-indent: px2rem(-20); color: #bebec0;
+        margin:px2rem(20) auto 0;}
+      p.p1{margin:px2rem(0) auto 0;}
+    }
+
+
+  }
+
+}

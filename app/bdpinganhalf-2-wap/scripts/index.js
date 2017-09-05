@@ -121,9 +121,80 @@
             autoplay: true
         });
 
-
+        initDisprice();
+        initNum();
 
 
     }
+
+
+    var discount = 100;
+    //初始化折扣价
+    function initDisprice() {
+        $('.products li').each(function () {
+            var val= $(this).find('.price').val();
+            $(this).find(".dis-price").html(val-discount);
+        })
+
+    }
+
+    function initNum() {
+        var items = [];
+        $(".products li").each(function(i,el){
+            var ponds = $(el).attr('data-pond');
+            var ids = $(el).attr('data-price');
+            var postId = $(el).attr('data-postid');
+
+            if(ponds){
+                items.push({
+                    ponds: ponds.split(',').map(function(str){ return str.replace(/(^\s*)|(\s*$)/g, "")}),
+                    ix: 0,
+                    ids: ids.split(',').map(function(str){ return str.replace(/(^\s*)|(\s*$)/g, "")}),
+                    postId: postId.split(',').map(function(str){ return str.replace(/(^\s*)|(\s*$)/g, "")})
+                })
+            }
+
+            var index = i;
+            var currentItem = items[index];
+
+
+
+            /*
+             *蛋糕磅数加
+             */
+            $(this).find(".plus").on('click', function(){
+
+                var ix = ++currentItem.ix;
+                if(ix>=currentItem.ponds.length-1){
+                    ix =currentItem.ix = currentItem.ponds.length-1;
+                }
+
+                $(this).parents("li").find("input").val(currentItem.ponds[ix]+' / ￥'+currentItem.ids[ix]);
+
+                $(this).parents("li").find(".postid").data("postid", currentItem.postId[ix]);
+                $(this).parents("li").find(".price").val(currentItem.ids[ix]);
+
+
+                $(this).parents("li").find(".dis-price").html(currentItem.ids[ix]-discount);
+
+            });
+            /*
+             *蛋糕磅数减少
+             */
+            $(this).find(".minus").on('click', function(){
+                var ix = --currentItem.ix;
+                if(ix<=0){
+                    ix=currentItem.ix = 0;
+                }
+
+                $(this).parents("li").find("input").val(currentItem.ponds[ix]+' / ￥'+currentItem.ids[ix]);
+                $(this).parents("li").find(".postid").data("postid", currentItem.postId[ix]);
+                $(this).parents("li").find(".price").val(currentItem.ids[ix]);
+                $(this).parents("li").find(".dis-price").html(currentItem.ids[ix]-discount);
+            });
+
+
+        });
+    };
 
 })();

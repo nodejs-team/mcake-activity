@@ -1,0 +1,68 @@
+@function px2rem($n) {
+  @return ($n * 10 / 750) * 1rem; //设计稿一般都是750宽
+}
+
+@mixin font-dpr($font-size){
+  font-size: $font-size;
+
+  [data-dpr="2"] & {
+    font-size: $font-size * 2;
+  }
+
+  [data-dpr="3"] & {
+    font-size: $font-size * 3;
+  }
+
+}
+
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+
+#evt_content{ background: #fff;
+  img{width:100%;}
+  .sec{position: relative; }
+  .sec-banner{
+    .img{ position: relative; width: px2rem(750);}
+    .video{ position: absolute; top: px2rem(100); left: px2rem(250); width:px2rem(250); height: px2rem(150);
+      video{width: 100%;}
+    }
+    .vjs-control-bar{display: none;}
+    .video-trigger{position: absolute;
+      top: 0; left:0; border: red 1px solid;
+      width:px2rem(250); height: px2rem(150);
+
+    }
+    .video-trigger b{
+      position: absolute;
+      left:50%;
+      top:50%;
+      width:49px;
+      height:49px;
+      margin:-25px 0 0 -25px;
+      cursor: pointer;
+      opacity:.9;
+      filter:alpha(opacity=90);
+      display: none;
+      background: url(../images/video-play.png) no-repeat;
+    }
+
+    .video-trigger b.video-pause{
+      background-image: url(../images/video-pause.png);
+    }
+    .video-trigger b:hover{
+      opacity:1;
+      filter:alpha(opacity=100);
+    }
+    .video-trigger-hover b{
+      display: block;
+    }
+
+  }
+
+}

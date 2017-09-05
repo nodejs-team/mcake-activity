@@ -10,18 +10,18 @@
     margin: 0 0 0 -27.4%; }
   #evt_container .top_btn {
     position: absolute;
-    width: 10%;
-    top: 517px;
-    line-height: 40px;
+    width: 12%;
+    top: 530px;
+    line-height: 50px;
     background: #b50e0d;
     left: 50%;
-    font-weight: bold;
+    font-weight: normal;
     font-family: 'mfshangya';
-    margin: 0 0 0 -22.4%;
-    font-size: 24px;
+    margin: 0 0 0 -23%;
+    font-size: 28px;
     color: #fff;
     text-align: center;
-    border-radius: 5px; }
+    border-radius: 2px; }
   #evt_container .top_quality {
     width: 167px;
     margin: -83px auto 0 auto; }
@@ -96,25 +96,25 @@
   #evt_container .slideOuter {
     position: relative;
     width: 1028px;
-    height: 375px;
+    height: 380px;
     border-bottom: 2px solid #959595;
     overflow: hidden;
     margin: 0 auto; }
     #evt_container .slideOuter ul {
-      width: 1650px;
-      position: relative; }
+      position: relative;
+      width: 1650px; }
     #evt_container .slideOuter li {
       position: relative;
       width: 242px;
       margin: 0 20px 18px 0;
       color: #242424;
       font-size: 12px;
-      float: left;
-      overflow: hidden; }
+      float: left; }
       #evt_container .slideOuter li .fl {
-        float: left; }
+        float: left;
+        text-align: left; }
       #evt_container .slideOuter li .fl.ftitle {
-        width: 110px;
+        width: 98px;
         height: 40px;
         overflow: hidden;
         align-items: center;
@@ -130,10 +130,10 @@
         -ms-flex-align: center;
         -webkit-align-items: center; }
       #evt_container .slideOuter li .fr {
-        float: right; }
+        float: right;
+        text-align: left; }
       #evt_container .slideOuter li .p1 {
-        margin: 5px 0 3px 0;
-        position: relative; }
+        margin: 10px 0 3px 0; }
       #evt_container .slideOuter li .p2 .fr {
         color: #a40000; }
         #evt_container .slideOuter li .p2 .fr span {
@@ -154,16 +154,17 @@
         position: static; }
     #evt_container .slideOuter .pro-num {
       position: relative;
+      display: inline-block;
       float: right;
       margin-top: 10px;
-      width: 120px;
+      width: 140px;
       height: 20px; }
       #evt_container .slideOuter .pro-num a {
         position: absolute;
         width: 20px;
         height: 20px;
         display: block;
-        top: 0; }
+        top: 2px; }
       #evt_container .slideOuter .pro-num .minus {
         background: url(../images/btn-1.png);
         left: 0;
@@ -173,15 +174,16 @@
         right: 0;
         background-size: 100%; }
       #evt_container .slideOuter .pro-num input {
-        position: absolute;
         border: none;
         display: block;
         background: url(../images/input.png);
         background-size: 100%;
-        width: 75px;
-        height: 19px;
+        width: 100px;
+        height: 25px;
+        line-height: 25px;
+        position: absolute;
         top: 0;
-        left: 22px;
+        left: 20px;
         text-align: center;
         color: #626262;
         font-size: 12px;

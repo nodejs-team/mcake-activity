@@ -1,0 +1,126 @@
+#evt_content div {
+  position: absolute; }
+
+#evt_content img {
+  width: 100%; }
+
+#evt_content .sec {
+  position: relative; }
+
+#evt_content .sec-top {
+  height: 5.93333rem;
+  background: url("../images/bg.png");
+  z-index: 1; }
+  #evt_content .sec-top .ds-1 {
+    width: 3.29333rem;
+    top: 0rem;
+    left: 0rem; }
+  #evt_content .sec-top .ds-2 {
+    width: 0.98667rem;
+    top: 3.04rem;
+    left: 0.82667rem; }
+  #evt_content .sec-top .ds-3 {
+    width: 1.26667rem;
+    top: 4.52rem;
+    left: 1.50667rem; }
+  #evt_content .sec-top .ds-4 {
+    width: 1.49333rem;
+    top: 4.16rem;
+    left: 0rem; }
+  #evt_content .sec-top .cake-1 {
+    width: 4.16rem;
+    top: 1.28rem;
+    left: 1.37333rem; }
+  #evt_content .sec-top .yh {
+    width: 1.98667rem;
+    top: 0.76rem;
+    left: 0.2rem; }
+  #evt_content .sec-top .title {
+    width: 4.58667rem;
+    top: 0.53333rem;
+    left: 5.09333rem; }
+
+#evt_content .go-btn {
+  top: 9.53333rem;
+  left: 5.6rem; }
+  #evt_content .go-btn a {
+    display: block;
+    text-decoration: none; }
+  #evt_content .go-btn span {
+    background: url("../images/btn-bg.png") no-repeat;
+    background-size: 100%;
+    border-radius: 0.66667rem;
+    color: #fff;
+    font-size: 0.36rem;
+    letter-spacing: 3px;
+    padding: 0.17333rem 0.53333rem; }
+
+#evt_content .sec-main {
+  height: 14.66667rem; }
+  #evt_content .sec-main .cake-2 {
+    width: 6.26667rem;
+    top: 0.96rem;
+    left: 0.22667rem; }
+  #evt_content .sec-main .logos {
+    width: 2.04rem;
+    top: 1.28rem;
+    left: 6.85333rem; }
+  #evt_content .sec-main .lv {
+    width: 5.54667rem;
+    top: 5rem;
+    left: 4.30667rem; }
+  #evt_content .sec-main .select {
+    top: 7.86667rem;
+    left: 4.73333rem;
+    width: 5.06667rem;
+    padding: 0; }
+    #evt_content .sec-main .select .radio {
+      opacity: 0;
+      display: none;
+      height: 0; }
+    #evt_content .sec-main .select label.label {
+      background: url(../images/kugou.ico) left no-repeat;
+      background-size: 8%;
+      height: 0.4rem;
+      padding-left: 0.66667rem;
+      margin: 0.26667rem auto;
+      font-size: 0.06667rem;
+      display: block; }
+      #evt_content .sec-main .select label.label img {
+        width: 90%;
+        margin-top: 0.06667rem; }
+    #evt_content .sec-main .select input[type='radio'].radio:checked + .label {
+      background: url(../images/qqplayer.ico) no-repeat;
+      background-size: 8%;
+      margin: 0.26667rem auto; }
+
+#evt_content .sec-footer {
+  background: #f1f3b1;
+  position: relative;
+  padding-bottom: 0.26667rem; }
+  #evt_content .sec-footer .wdc {
+    position: absolute;
+    width: 10rem;
+    z-index: 10;
+    top: -3.2rem; }
+  #evt_content .sec-footer .sb {
+    position: absolute;
+    width: 10rem;
+    z-index: 10;
+    top: -0.66667rem; }
+  #evt_content .sec-footer .txt {
+    position: relative;
+    width: 8.4rem;
+    padding-top: 0.66667rem;
+    padding-bottom: 0.66667rem;
+    margin: 0 auto;
+    color: #595a42; }
+    #evt_content .sec-footer .txt h2 {
+      font-size: 0.32rem;
+      font-weight: normal; }
+    #evt_content .sec-footer .txt p {
+      font-size: 0.30667rem;
+      padding-left: 0.46667rem;
+      line-height: 0.4rem;
+      text-indent: -0.46667rem;
+      margin: 0.06667rem 0; }

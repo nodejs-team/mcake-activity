@@ -1,3 +1,5 @@
+.clearBoth{clear: both;height: 0;}
+
 #evt_container{background:url(../images/bg.jpg);
   img{width:100%;}
   .top_icon{position:absolute; width:23.8%; top:320px; left:50%; margin:0 0 0 -30.2%;  }
@@ -26,10 +28,10 @@
     .prev{left:0;}
     .next{right:0;}
   }
-  .slideOuter{position:relative; width:1028px; height:388px; border-bottom:2px solid #959595; overflow:hidden; margin:0 auto;
+  .slideOuter{position:relative; width:1028px; height:380px; border-bottom:2px solid #959595; overflow:hidden; margin:0 auto;
     ul{position:relative; width:1650px;}
     li{position:relative; width:242px; margin:0 20px 18px 0; color:#242424; font-size:12px; float:left;
-      .fl{float:left;}
+      .fl{float:left; text-align: left;}
       .fl.ftitle{ width: 98px; height:40px;  overflow:hidden; align-items: center;
         display: -webkit-box;
         display: -ms-flexbox;
@@ -44,7 +46,7 @@
         -webkit-align-items: center;
 
         }
-      .fr{float:right;}
+      .fr{float:right; text-align: left;}
       .p1{margin:10px 0 3px 0;}
       .p2{
         .fr{color:#a40000;
@@ -57,10 +59,10 @@
 
 
     .pro-num{ position: relative; display: inline-block; float: right; margin-top: 10px; width: 140px; height: 20px;
-      a{ position: absolute; width:20px; height:20px; display:block; top:1px;}
+      a{ position: absolute; width:20px; height:20px; display:block; top:2px;}
       .minus{background:url(../images/btn-1.png); left:0; background-size: 100%;}
       .plus{background:url(../images/btn-2.png); right:0; background-size: 100%;}
-      input{border:none; display:block; background:url(../images/input.png); background-size: 100%; width:100px; height:24px; position:absolute; top:0; left:20px; text-align:center; color:#626262; font-size:12px; padding:0;}
+      input{border:none; display:block; background:url(../images/input.png);  background-size: 100%; width:100px; height:25px; line-height: 25px; position:absolute; top:0; left:20px; text-align:center; color:#626262; font-size:12px; padding:0;}
 
     }
 
@@ -74,3 +76,17 @@
     p{text-indent: -30px; padding-left: 30px; line-height: 40px; }
   }
 }
+
+/*ie浏览器*/
+.ftitle.ieCss{
+  height: 25px !important; line-height: 25px;
+  overflow:hidden;;/* 内容超出宽度时隐藏超出部分的内容 */
+  text-overflow:ellipsis;;/* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+  white-space:nowrap;/* 不换行 */
+}
+
+.pro-num.ieCss{margin-top: 0 !important;}
+
+.slideOuter.ieCss{height:365px !important; }
+
+

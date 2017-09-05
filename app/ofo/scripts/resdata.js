@@ -1,0 +1,27 @@
+var resData = [
+    {
+        "name":"img-5_jpg",
+        "type":"image",
+        "url":"img-5.jpg"
+    },
+    {
+        "name":"img-1_jpg",
+        "type":"image",
+        "url":"img-1.jpg"
+    },
+    {
+        "name":"img-2_jpg",
+        "type":"image",
+        "url":"img-2.jpg"
+    },
+    {
+        "name":"img-3_jpg",
+        "type":"image",
+        "url":"img-3.jpg"
+    },
+    {
+        "name":"img-4_jpg",
+        "type":"image",
+        "url":"img-4.jpg"
+    }
+];

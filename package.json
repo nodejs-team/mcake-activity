@@ -34,9 +34,10 @@
     "yargs": "^6.4.0"
   },
   "buildConfig": {
-    "projectName": "bdpinganhalf-2",
+    "projectName": "memberDay",
     "basePath": "http://edm.mcake.com/fangli/2017-wap/",
-    "tinypngKey": "Lv4IxKbb9SJ6M3OG-lyEA86akPCQBmqE",
+    "tinypngKey": "scz0D_NUirlIzDuA1U6m4rwvS24z7s0o",
+    "beiyong": "Lv4IxKbb9SJ6M3OG-lyEA86akPCQBmqE",
     "server": {
       "path": "./app",
       "port": "8013"

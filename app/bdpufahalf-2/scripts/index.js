@@ -84,12 +84,13 @@
         var loader = new Loader('images/'), domLoad = document.getElementById('evt_loading');
         loader.addGroup('preload', resData);
         loader.on('progress', function(groupName, ix, len){
+         
             domLoad.innerHTML = parseInt(ix/len*100) + '%';
         })
         loader.on('complete', function(groupName){
             domLoad.style.display = 'none';
             document.getElementById('evt_container').style.display = 'block';
-
+            isIE();
             new Slider('.slideOuter',{
                 prev: '.prev',
                 next: '.next',
@@ -99,6 +100,7 @@
             initTopIcon();
             initDisprice();
             initNum();
+
         });
         loader.loadGroup('preload');
     }
@@ -173,6 +175,15 @@
         });
     };
 
+
+
+    function isIE(){
+        if ((navigator.userAgent.indexOf('MSIE') >= 0) && (navigator.userAgent.indexOf('Opera') < 0)){
+
+            $(".ftitle,.pro-num,.slideOuter").addClass("ieCss");
+
+        }
+    }
 
 
 
