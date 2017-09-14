@@ -94,7 +94,25 @@
         });
 
 
+        var num = $(".num").val();
+        $(".add").click(function () {
+            if(num>=50){
+                return;
+            }else{
+                num++;
+            }
+            $(".num").val(num);
+        });
 
+
+        $(".reduce").click(function () {
+            if(num<=1){
+                return;
+            }else{
+                num--;
+            }
+            $(".num").val(num);
+        });
 
     }
 

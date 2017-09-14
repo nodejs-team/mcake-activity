@@ -63,7 +63,7 @@
     
     var loadComplete = function () {
 
-        initScroll();
+
 
 
         var ani = {
@@ -98,25 +98,7 @@
 
     }
 
-    var initScroll = function (){
-        window.scrollAnimate('#evt_container', [
-             {dom: '.banner-title',x:100, y:0,duration:500,delay:200}
 
-             ,{dom: '.banner-box',x:-100, y:50,duration:500,delay:600}
-             ,{dom: '.banner-815',x:0, y:0,duration:500,delay:800}
-             ,{dom: '.banner-s1',x:-50, y:-50,duration:500,delay:600}
-             ,{dom: '.banner-c-2',x:0, y:-50,duration:500,delay:600}
-             ,{dom: '.banner-c-3',x:50, y:0,duration:500,delay:800}
-             ,{dom: '.banner-c-5',x:50, y:0,duration:500,delay:800}
-
-
-            ,{dom: '.banner-moon',x:0, y:100,duration:500,delay:1000}
-            ,{dom: '.word-1',x:0, y:100,duration:800,delay:1000}
-            ,{dom: '.word-2',x:0, y:100,duration:1000,delay:1000}
-
-
-        ])
-    };
 
 
     var animates = {

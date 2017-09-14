@@ -123,7 +123,7 @@
           color: #a3a3a3;
           font-size: 0.24rem; }
   #evt_content .sec-2 {
-    height: 13.56rem; }
+    height: 16rem; }
     #evt_content .sec-2 .box {
       width: 9.6rem;
       top: 0rem;
@@ -176,6 +176,46 @@
         color: #fff;
         font-size: 0.4rem;
         line-height: 1.06667rem; }
+    #evt_content .sec-2 .price-w {
+      position: relative;
+      width: 4.8rem;
+      height: 0.8rem;
+      margin: 0.53333rem auto;
+      border-top: #cacaca 1px solid;
+      padding-top: 0.26667rem; }
+    #evt_content .sec-2 .price_num {
+      margin: 0 0.53333rem; }
+    #evt_content .sec-2 .price_num span {
+      float: left;
+      font-size: 0.4rem;
+      color: #000; }
+    #evt_content .sec-2 .price_num dl {
+      float: left; }
+    #evt_content .sec-2 .price_num dl dd {
+      background: #fff url("../images/in-l.png") repeat;
+      background-size: 100%;
+      cursor: pointer;
+      float: left;
+      height: 0.53333rem;
+      width: 0.53333rem; }
+    #evt_content .sec-2 .price_num dl dd.nopoint {
+      background: #fff url("../images/in-r.png") repeat scroll;
+      background-size: 100%; }
+    #evt_content .sec-2 .price_num dl dt {
+      float: left;
+      height: 0.53333rem;
+      width: 1.33333rem;
+      padding: 0; }
+    #evt_content .sec-2 .price_num dl dt input {
+      background: none;
+      border: none;
+      color: #000;
+      text-align: center;
+      width: 100%;
+      font-size: 0.34667rem;
+      line-height: 0.53333rem;
+      padding: 0;
+      opacity: 1; }
   #evt_content .sec-footer {
     background: #2e3037;
     position: relative;

@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>mcake活动</title>
+    <!-- build:css styles/index.css -->
+    <link rel="stylesheet" href="../commoncss/wap-normalize.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <!-- endbuild-->
+
+</head>
+<body>
+
+<div id="evt_container">
+    <div id="iscroll">
+        <div class="wrap">
+            <div id="evt_loading" style="display:none;">0%</div>
+            <div id="evt_content" style="display:none;">
+
+                <div class="sec sec-s0" ontouchmove="return false;">
+                    <div class="content">
+                        <div class="s0-bg"></div>
+                        <div class="s0-moon"><img src="http://edm.mcake.com/weifengwang/common/no.jpg" src-fix="s0-moon_png"></div>
+                        <div class="s0-title"><img src="http://edm.mcake.com/weifengwang/common/no.jpg" src-fix="s0-title_png"></div>
+                    </div>
+                    <div class="s0-words" id="js_step0">
+                        <div class="s0-bg-cover"></div>
+                        <div class="word"><img src="http://edm.mcake.com/weifengwang/common/no.jpg" src-fix="s0-word_png"></div>
+                    </div>
+                </div>
+
+               <!--找月亮-->
+                <div class="sec sec-s1" id="js_step1" ontouchmove="return false;" style="display: none;">
+                    <div class="content" id="zhaoMoon">
+                        <div class="s1-deng s1-deng-1 b-piaofu"></div>
+                        <div class="s1-deng s1-deng-2"></div>
+                        <div class="s1-deng s1-deng-3"></div>
+                        <div class="s1-deng s1-deng-4 a-piaofu"></div>
+                        <div class="s1-deng s1-deng-5"></div>
+                        <div class="s1-deng s1-deng-6 b-piaofu"></div>
+                        <div class="s1-deng s1-deng-7 a-piaofu"></div>
+                        <div class="s1-deng s1-deng-8 b-piaofu"></div>
+
+                        <div class="s1-jing fdjing" id="fangdajing"><img src="http://edm.mcake.com/weifengwang/common/no.jpg" src-fix="s1-jing_png"></div>
+                        <div class="s1-tips"><img src="http://edm.mcake.com/weifengwang/common/no.jpg" src-fix="s1-tips_png"></div>
+                        <div class="s1-across across"><img src="http://edm.mcake.com/weifengwang/common/no.jpg" src-fix="s1-across_png"></div>
+                    </div>
+                    <div class="result-cover cover-zhao" style="display: none;"></div>
+                    <div class="result result-zhao" style="display: none;">
+                        <div class="center success" style="display: none;">
+                            <div class="s1-result-m"><img src="http://edm.mcake.com/weifengwang/common/no.jpg" src-fix="s1-result-m-1_png"></div>
+                            <div class="s1-result-w"><img src="http://edm.mcake.com/weifengwang/common/no.jpg" src-fix="s1-result-w-1_png"></div>
+                            <div class="s1-result-btn" id="lingqu"><img src="http://edm.mcake.com/weifengwang/common/no.jpg" src-fix="s1-result-btn-1_png"></div>
+                        </div>
+                        <div class="center fail-1" style="display: none;">
+                            <div class="s1-result-m"><img src="http://edm.mcake.com/weifengwang/common/no.jpg" src-fix="s1-result-m-2_png"></div>
+                            <div class="s1-result-w"><img src="http://edm.mcake.com/weifengwang/common/no.jpg" src-fix="s1-result-w-2_png"></div>
+                            <div class="s1-result-btn go-on"><img src="http://edm.mcake.com/weifengwang/common/no.jpg" src-fix="s1-result-btn-2_png"></div>
+                        </div>
+                        <div class="center fail-2" style="display: none;">
+                            <div class="s1-result-m"><img src="http://edm.mcake.com/weifengwang/common/no.jpg" src-fix="s1-result-m-2_png"></div>
+                            <div class="s1-result-w"><img src="http://edm.mcake.com/weifengwang/common/no.jpg" src-fix="s1-result-w-3_png"></div>
+                            <div class="s1-result-btn go-on"><img src="http://edm.mcake.com/weifengwang/common/no.jpg" src-fix="s1-result-btn-2_png"></div>
+                        </div>
+                        <div class="center fail-3" style="display: none;">
+                            <div class="s1-result-m"><img src="http://edm.mcake.com/weifengwang/common/no.jpg" src-fix="s1-result-m-2_png"></div>
+                            <div class="s1-result-w"><img src="http://edm.mcake.com/weifengwang/common/no.jpg" src-fix="s1-result-w-4_png"></div>
+                            <div class="s1-result-btn yaoqing"><img src="http://edm.mcake.com/weifengwang/common/no.jpg" src-fix="s1-result-btn-3_png"></div>
+                        </div>
+                        <div class="result-cover cover-jiang" style="display: none;"></div>
+                        <div class="center lingjiang" id="lingjiang" style="display: none;">
+                            <div class="s1-jiang">
+                                <div class="jing-center">
+                                    <div class="text"><span>0.50</span>元</div>
+                                    <div class="btn-ky"><img src="http://edm.mcake.com/weifengwang/common/no.jpg" src-fix="s1-btn-ky_png"></div>
+                                    <div class="btn-sc"><img src="http://edm.mcake.com/weifengwang/common/no.jpg" src-fix="s1-btn-sc_png"></div>
+                                    <div class="close"></div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--藏月亮-->
+                <div class="sec sec-s2" id="js_step2" ontouchmove="return false;" style="display: none;">
+                    <div class="content">
+                        <div class="s2-moon" id="targetObj"><img src="http://edm.mcake.com/weifengwang/common/no.jpg" src-fix="s2-moon_png"></div>
+                        <div class="s2-shou"><img src="http://edm.mcake.com/weifengwang/common/no.jpg" src-fix="s2-shou_png"></div>
+                        <div class="s2-word"><img src="http://edm.mcake.com/weifengwang/common/no.jpg" src-fix="s2-word_png"></div>
+                    </div>
+                    <div class="result-cover cover-cang"></div>
+                    <div class="result result-cang">
+                        <div class="center">
+                            <div class="s2-result-w"><img src="http://edm.mcake.com/weifengwang/common/no.jpg" src-fix="s2-result-w_png"></div>
+                            <div class="s2-result-btn share"><img src="http://edm.mcake.com/weifengwang/common/no.jpg" src-fix="s2-result-btn_png"></div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--拖月亮-->
+                <div class="sec sec-s3" id="js_step3" ontouchmove="return false;" style="display: none;">
+                    <div class="content">
+                        <div class="s3-wen fadeToggle"><img src="http://edm.mcake.com/weifengwang/common/no.jpg" src-fix="s3-wen_png"></div>
+                        <div class="s3-quan"><img src="http://edm.mcake.com/weifengwang/common/no.jpg" src-fix="s3-quan_png"></div>
+                        <div class="s3-moon" id="dragMoon"><img src="http://edm.mcake.com/weifengwang/common/no.jpg" src-fix="s3-moon_png" ></div>
+                        <div class="s3-shou slip"><img src="http://edm.mcake.com/weifengwang/common/no.jpg" src-fix="s3-show_png"></div>
+                        <div class="s3-moonbing" style="display: none;"><img src="http://edm.mcake.com/weifengwang/common/no.jpg" src-fix="s3-moonbing_png"></div>
+                        <div class="box"></div>
+                    </div>
+                </div>
+
+
+                <div class="sec sec-s4" id="shares" ontouchmove="return false;" style="display: none;">
+                    <div class="share-1" style="display: none;"><img src="http://edm.mcake.com/weifengwang/common/no.jpg" src-fix="share-1_png"></div>
+                    <div class="share-2" style="display: none;"><img src="http://edm.mcake.com/weifengwang/common/no.jpg" src-fix="share-2_png"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="http://www.mcake.com/shop/theme/xth1/js/index/jquery.min.js?v=1411888163"></script>
+<script src="http://edm.mcake.com/weifengwang/common/flexible.js"></script>
+
+<!-- build:js scripts/index.js -->
+<script src="../commonjs/fastclick.js"></script>
+<script src="../commonjs/pubsub.js"></script>
+<script src="../commonjs/loader.js"></script>
+
+<script src="../commonjs/movieclip.js"></script>
+<script src="scripts/resdata.js"></script>
+<script src="scripts/touch-0.2.14.min.js"></script>
+<script src="scripts/cat-touch.js"></script>
+<script src="scripts/index.js"></script>
+<!-- endbuild -->
+
+
+</body>
+</html>

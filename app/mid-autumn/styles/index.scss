@@ -79,7 +79,7 @@
   }
 
   .sec-2{
-    height: px2rem(1017);
+    height: px2rem(1200);
 
     .box{width:px2rem(720); top:px2rem(0); left:px2rem(0);}
 
@@ -102,6 +102,14 @@
       span{ display: block; color: #fff; font-size: px2rem(30); line-height: px2rem(80);}
     }
 
+    .price-w{ position: relative; width: px2rem(360); height:px2rem(60);  margin: px2rem(40) auto;   border-top: #cacaca 1px solid; padding-top:px2rem(20); }
+    .price_num{margin: 0 px2rem(40); }
+    .price_num span{float: left; font-size: px2rem(30); color: #000;}
+    .price_num dl {  float: left;  }
+    .price_num dl dd {  background: #fff url("../images/in-l.png") repeat; background-size: 100%;  cursor: pointer;  float: left;  height: px2rem(40);  width: px2rem(40);  }
+    .price_num dl dd.nopoint {  background: #fff url("../images/in-r.png") repeat scroll; background-size: 100%; }
+    .price_num dl dt {  float: left;  height:px2rem(40);  width: px2rem(100);  padding: 0; }
+    .price_num dl dt input {  background:none; border: none; color: #000;   text-align: center;  width: 100%; font-size: px2rem(26); line-height: px2rem(40);  padding: 0; opacity: 1;}
 
 
   }

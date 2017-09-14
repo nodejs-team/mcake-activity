@@ -30,14 +30,14 @@ var resData = [
         "url":"sb.png"
     },
     {
-        "name":"title_png",
+        "name":"m-title_png",
         "type":"image",
-        "url":"title.png"
+        "url":"m-title.png"
     },
     {
-        "name":"yh_png",
+        "name":"m-yh_png",
         "type":"image",
-        "url":"yh.png"
+        "url":"m-yh.png"
     },
     {
         "name":"bg_png",
@@ -50,9 +50,9 @@ var resData = [
         "url":"btn-bg.png"
     },
     {
-        "name":"cake-1_png",
+        "name":"m-cake-1_png",
         "type":"image",
-        "url":"cake-1.png"
+        "url":"m-cake-1.png"
     },
     {
         "name":"cake-2_png",
@@ -75,8 +75,14 @@ var resData = [
         "url":"ds-3.png"
     },
     {
-        "name":"ds-4_png",
+        "name":"m-ds-4_png",
         "type":"image",
-        "url":"ds-4.png"
+        "url":"m-ds-4.png"
+    }
+    ,
+    {
+        "name":"ds-5_png",
+        "type":"image",
+        "url":"ds-5.png"
     }
 ];

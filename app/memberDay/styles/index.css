@@ -8,8 +8,9 @@
   position: relative; }
 
 #evt_content .sec-top {
-  height: 5.93333rem;
-  background: url("../images/bg.png");
+  height: 14.84rem;
+  background: url("../images/bg.png?122233");
+  background-size: 100%;
   z-index: 1; }
   #evt_content .sec-top .ds-1 {
     width: 3.29333rem;
@@ -17,28 +18,36 @@
     left: 0rem; }
   #evt_content .sec-top .ds-2 {
     width: 0.98667rem;
-    top: 3.04rem;
-    left: 0.82667rem; }
+    top: 5.29333rem;
+    left: 0.53333rem; }
   #evt_content .sec-top .ds-3 {
     width: 1.26667rem;
-    top: 4.52rem;
-    left: 1.50667rem; }
+    top: 8.04rem;
+    left: auto;
+    right: 0; }
   #evt_content .sec-top .ds-4 {
-    width: 1.49333rem;
-    top: 4.16rem;
-    left: 0rem; }
+    width: 2.50667rem;
+    bottom: 1.76rem;
+    left: auto;
+    right: 0rem; }
+  #evt_content .sec-top .ds-5 {
+    width: 2.41333rem;
+    bottom: 0.53333rem;
+    left: auto;
+    right: 0rem; }
   #evt_content .sec-top .cake-1 {
-    width: 4.16rem;
-    top: 1.28rem;
-    left: 1.37333rem; }
+    width: 6.09333rem;
+    top: 0rem;
+    left: auto;
+    right: 0rem; }
   #evt_content .sec-top .yh {
-    width: 1.98667rem;
-    top: 0.76rem;
-    left: 0.2rem; }
-  #evt_content .sec-top .title {
-    width: 4.58667rem;
-    top: 0.53333rem;
-    left: 5.09333rem; }
+    width: 4.02667rem;
+    top: 1.49333rem;
+    left: 0.53333rem; }
+  #evt_content .sec-top .b-title {
+    width: 6.34667rem;
+    top: 5.94667rem;
+    left: 0.53333rem; }
 
 #evt_content .go-btn {
   top: 9.53333rem;
@@ -47,7 +56,7 @@
     display: block;
     text-decoration: none; }
   #evt_content .go-btn span {
-    background: url("../images/btn-bg.png") no-repeat;
+    background: url("../images/btn-bg.png?23233") no-repeat;
     background-size: 100%;
     border-radius: 0.66667rem;
     color: #fff;
@@ -56,7 +65,8 @@
     padding: 0.17333rem 0.53333rem; }
 
 #evt_content .sec-main {
-  height: 14.66667rem; }
+  height: 14.66667rem;
+  background: url("../images/bg.jpg?3534545") repeat; }
   #evt_content .sec-main .cake-2 {
     width: 6.26667rem;
     top: 0.96rem;
