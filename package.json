@@ -34,8 +34,8 @@
     "yargs": "^6.4.0"
   },
   "buildConfig": {
-    "projectName": "withwheat-mcake",
-    "basePath": "http://edm.mcake.com/fangli/2017-wap/",
+    "projectName": "memberDay",
+    "basePath": "http://edm.mcake.com/shuxy/2017/m/",
     "tinypngKey": "Lv4IxKbb9SJ6M3OG-lyEA86akPCQBmqE",
     "server": {
       "path": "./app",
