@@ -206,7 +206,8 @@ gulp.task('addImgSrc', function(){
 });
 
 var buildHTML = lazypipe()
-    .pipe(replace, /"(\.\/)?(images|css|js|scripts|styles)\/([^"]+?)"/gm, '"'+ buildConfig.basePath + projectName + '/$2/$3"');
+    .pipe(replace, /"(\.\/)?(images|css|js|scripts|styles)\/([^"]+?)"/gm, '"'+ buildConfig.basePath + projectName + '/$2/$3"')
+    .pipe(replace, /(:\s*url\()(\.\.)?([^)]+?)/gm, '$1' + buildConfig.basePath + projectName + '/$3');
 
 var buildCSS = lazypipe()
     .pipe(cssmin)

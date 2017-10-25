@@ -1,0 +1,60 @@
+@charset "UTF-8";
+body {
+  overflow-x: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background: #f6f6f6; }
+
+img {
+  width: 100%; }
+
+li {
+  list-style: none; }
+
+.candle {
+  width: 10rem; }
+
+/*彈窗*/
+.candle_Dialogbg {
+  background-color: #000;
+  height: 100%;
+  left: 0;
+  opacity: 0.75;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  display: none; }
+
+.candle_Dialog {
+  width: 9.86667rem;
+  height: 12.94667rem;
+  margin-left: -5rem;
+  left: 50%;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  display: none; }
+
+.xinke {
+  top: 0;
+  left: 0;
+  width: 9.86667rem; }
+  .xinke canvas {
+    width: 9.86667rem;
+    height: 12.94667rem; }
+
+.xkbtn {
+  position: absolute;
+  width: 3.6rem;
+  height: 1.33333rem;
+  top: 10.93333rem;
+  left: 1.42667rem;
+  display: none; }
+  .xkbtn a {
+    display: block;
+    height: 100%; }
+
+.xkbtn-2 {
+  left: 5.2rem; }

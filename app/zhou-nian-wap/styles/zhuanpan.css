@@ -1,0 +1,201 @@
+@charset "UTF-8";
+body {
+  overflow-x: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background: #f6f6f6; }
+
+.zhuanpan img {
+  width: 100%; }
+
+.evt-banner {
+  display: block;
+  position: relative !important;
+  width: 10rem;
+  overflow: hidden; }
+
+li {
+  list-style: none; }
+
+.evt-ad {
+  margin: 0.26667rem 0; }
+
+.btns {
+  position: relative;
+  float: right;
+  width: 1.73333rem;
+  height: 0.53333rem;
+  background: #ffcd20;
+  text-align: center;
+  border-radius: 0.26667rem;
+  cursor: pointer; }
+  .btns span {
+    display: block;
+    color: #000;
+    font-size: 0.29333rem;
+    line-height: 0.53333rem; }
+
+/*彈窗*/
+.zhuanpan-cover {
+  background-color: #000;
+  height: 100%;
+  left: 0;
+  opacity: 0.85;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 200;
+  display: none; }
+
+.zhuanpan {
+  background: #fff none repeat scroll 0 0;
+  box-shadow: 0 0 0 #999;
+  font-size: 0.18667rem;
+  width: 9.33333rem;
+  height: 11.46667rem;
+  margin-top: -5.73333rem;
+  margin-left: -4.66667rem;
+  left: 50%;
+  padding: 0;
+  position: fixed;
+  top: 50%;
+  z-index: 99999;
+  border-radius: 0.13333rem;
+  display: none; }
+
+.closes {
+  width: 1.33333rem;
+  height: 1.33333rem;
+  position: absolute;
+  top: 0.13333rem;
+  right: 0rem;
+  cursor: pointer;
+  z-index: 10;
+  background: url("../images/close.png") top no-repeat;
+  background-size: 50%; }
+
+.zhuanpanBg {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: url("../images/wap-zpbg.png") center no-repeat;
+  background-size: 100%; }
+
+.zhuanpan .zhuanpan-center {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1; }
+  .zhuanpan .zhuanpan-center .title {
+    font-size: 0.44rem;
+    text-align: center;
+    color: #000;
+    line-height: 2.13333rem; }
+  .zhuanpan .zhuanpan-center .zp {
+    position: relative;
+    width: 7.33333rem;
+    height: 7.33333rem;
+    margin: 0.13333rem auto 0; }
+    .zhuanpan .zhuanpan-center .zp .zp-acrow {
+      position: absolute;
+      top: -0.26667rem;
+      left: 50%;
+      width: 0.34667rem;
+      margin-left: -0.17333rem;
+      z-index: 2; }
+    .zhuanpan .zhuanpan-center .zp .zp-pan {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 7rem;
+      height: 7rem;
+      margin-left: -3.5rem;
+      z-index: 1; }
+    .zhuanpan .zhuanpan-center .zp .zp-btn {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 2.85333rem;
+      margin-left: -1.42667rem;
+      margin-top: -1.6rem;
+      z-index: 2;
+      cursor: pointer; }
+
+.zhuanpan .zhuanpan-award {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: none; }
+  .zhuanpan .zhuanpan-award .award {
+    position: absolute;
+    width: 6.66667rem;
+    height: 4.66667rem;
+    top: 50%;
+    left: 50%;
+    margin-left: -3.33333rem;
+    margin-top: -2.33333rem;
+    display: none; }
+    .zhuanpan .zhuanpan-award .award .txt {
+      position: absolute;
+      width: 4rem;
+      top: 0.66667rem;
+      right: 0.26667rem;
+      text-align: right;
+      color: #fff;
+      font-size: 0.4rem;
+      vertical-align: sub !important; }
+      .zhuanpan .zhuanpan-award .award .txt span {
+        font-size: 2.66667rem;
+        font-weight: bold;
+        line-height: 1.92rem;
+        vertical-align: sub !important;
+        font-family: "Microsoft YaHei", Tahoma, Arial; }
+    .zhuanpan .zhuanpan-award .award .word {
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      left: 50%;
+      margin-left: -50%;
+      text-align: center;
+      color: #000;
+      font-size: 0.34667rem;
+      font-weight: bold; }
+      .zhuanpan .zhuanpan-award .award .word span, .zhuanpan .zhuanpan-award .award .word b {
+        vertical-align: baseline !important; }
+  .zhuanpan .zhuanpan-award .award.award-1 {
+    width: 8.33333rem;
+    height: 5.57333rem;
+    top: 50%;
+    left: 50%;
+    margin-top: -3.06667rem;
+    margin-left: -4.16667rem;
+    text-align: center; }
+    .zhuanpan .zhuanpan-award .award.award-1 .mima {
+      position: absolute;
+      width: 4.26667rem;
+      height: 0.46667rem;
+      top: 2.93333rem;
+      left: 50%;
+      margin-left: -2.13333rem;
+      font-size: 0.21333rem;
+      color: #000;
+      line-height: 0.46667rem; }
+    .zhuanpan .zhuanpan-award .award.award-1 .tips {
+      position: absolute;
+      width: 90%;
+      bottom: 0.66667rem;
+      left: 50%;
+      margin-left: -45%;
+      font-size: 0.29333rem;
+      color: #9a9a9a; }
+    .zhuanpan .zhuanpan-award .award.award-1 .tips.valid {
+      bottom: 0.06667rem; }
+    .zhuanpan .zhuanpan-award .award.award-1 .tips.disc {
+      bottom: 2.92rem;
+      font-size: 0.34667rem;
+      color: #000; }

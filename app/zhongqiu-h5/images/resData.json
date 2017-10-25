@@ -1,198 +1,403 @@
 {
 	"groups":[{
-			"keys":"s0-bg_jpg,s0-moon_png,s0-title_png,s0-water_png,s0-word_png,s1-across_png,s1-bg_jpg,s1-btn-ky_png,s1-btn-sc_png,s1-deng-1_png,s1-deng-2_png,s1-deng-3_png,s1-deng-4_png,s1-jiang_png,s1-jing_png,s1-result-btn-1_png,s1-result-btn-2_png,s1-result-btn-3_png,s1-result-m-1_png,s1-result-m-2_png,s1-result-w-1_png,s1-result-w-2_png,s1-result-w-3_png,s1-result-w-4_png,s1-tips_png,s2-bg_jpg,s2-moon_png,s2-result-btn_png,s2-result-w_png,s2-shou_png,s2-word_png,s3-bg_jpg,s3-moon_png,s3-moonbing_png,s3-quan_png,s3-show_png,s3-wen_png,share-2_png",
+			"keys":"zp-award-2_png,zp-award-3_png,zpbg_png,zp-btn_png,zp-pan_png,ad1_jpg,arrows_png,banner-bg_jpg,btn-1_png,btn-2_png,buy-dot_png,car-icon_png,close_png,dot_png,floater-bg_png,floater-li_png,go-buy_png,haoli-pic-1_jpg,haoli-pic-2_jpg,haoli-pic-3_jpg,haoli-pic-4_jpg,haoli-pic-5_jpg,haoli-pic-6_jpg,haoli-pic-7_jpg,icon-1_png,icon-2_png,icon-3_png,icon-4_png,icon-5_png,icon-6_png,img-1_jpg,img-2_jpg,img-3_jpg,img-4_jpg,img-5_jpg,img-6_jpg,img-7_jpg,img-8_jpg,ms-biao_png,ms-big-img_jpg,ms-big-img-1_jpg,ms-big-img-2_jpg,ms-big-img-3_jpg,ms-big-img-4_jpg,ms-big-img-5_jpg,ms-big-img-6_jpg,ms-big-img-7_jpg,ms-big-img-8_jpg,ms-big-img-9_jpg,ms-big-img-10_jpg,ms-big-img-11_jpg,ms-big-img-12_jpg,ms-big-img-13_jpg,ms-logo_png,ms-small-img_png,ms-small-img-1_jpg,ms-small-img-2_jpg,ms-small-img-3_jpg,ms-small-img-4_jpg,ms-small-img-5_jpg,ms-small-img-6_jpg,ms-small-img-7_jpg,ms-small-img-8_jpg,ms-small-img-9_jpg,ms-small-img-10_jpg,ms-small-img-11_jpg,ms-small-img-12_jpg,ms-small-img-13_jpg,ms-sq_png,next_png,prev_png,top-1_png,top-cake-1_png,top-cake-2_png,top-cake-3_png,top-cake-4_png,top-title_png,zp-acrow_png,zp-award-1_png",
 			"name":"preload"
 		}],
 	"resources":[
 		{
-			"name":"s0-bg_jpg",
+			"name":"zp-award-2_png",
 			"type":"image",
-			"url":"s0-bg.jpg"
+			"url":""
 		},
 		{
-			"name":"s0-moon_png",
+			"name":"zp-award-3_png",
 			"type":"image",
-			"url":"s0-moon.png"
+			"url":""
 		},
 		{
-			"name":"s0-title_png",
+			"name":"zpbg_png",
 			"type":"image",
-			"url":"s0-title.png"
+			"url":""
 		},
 		{
-			"name":"s0-water_png",
+			"name":"zp-btn_png",
 			"type":"image",
-			"url":"s0-water.png"
+			"url":""
 		},
 		{
-			"name":"s0-word_png",
+			"name":"zp-pan_png",
 			"type":"image",
-			"url":"s0-word.png"
+			"url":""
 		},
 		{
-			"name":"s1-across_png",
+			"name":"ad1_jpg",
 			"type":"image",
-			"url":"s1-across.png"
+			"url":""
 		},
 		{
-			"name":"s1-bg_jpg",
+			"name":"arrows_png",
 			"type":"image",
-			"url":"s1-bg.jpg"
+			"url":""
 		},
 		{
-			"name":"s1-btn-ky_png",
+			"name":"banner-bg_jpg",
 			"type":"image",
-			"url":"s1-btn-ky.png"
+			"url":""
 		},
 		{
-			"name":"s1-btn-sc_png",
+			"name":"btn-1_png",
 			"type":"image",
-			"url":"s1-btn-sc.png"
+			"url":""
 		},
 		{
-			"name":"s1-deng-1_png",
+			"name":"btn-2_png",
 			"type":"image",
-			"url":"s1-deng-1.png"
+			"url":""
 		},
 		{
-			"name":"s1-deng-2_png",
+			"name":"buy-dot_png",
 			"type":"image",
-			"url":"s1-deng-2.png"
+			"url":""
 		},
 		{
-			"name":"s1-deng-3_png",
+			"name":"car-icon_png",
 			"type":"image",
-			"url":"s1-deng-3.png"
+			"url":""
 		},
 		{
-			"name":"s1-deng-4_png",
+			"name":"close_png",
 			"type":"image",
-			"url":"s1-deng-4.png"
+			"url":""
 		},
 		{
-			"name":"s1-jiang_png",
+			"name":"dot_png",
 			"type":"image",
-			"url":"s1-jiang.png"
+			"url":""
 		},
 		{
-			"name":"s1-jing_png",
+			"name":"floater-bg_png",
 			"type":"image",
-			"url":"s1-jing.png"
+			"url":""
 		},
 		{
-			"name":"s1-result-btn-1_png",
+			"name":"floater-li_png",
 			"type":"image",
-			"url":"s1-result-btn-1.png"
+			"url":""
 		},
 		{
-			"name":"s1-result-btn-2_png",
+			"name":"go-buy_png",
 			"type":"image",
-			"url":"s1-result-btn-2.png"
+			"url":""
 		},
 		{
-			"name":"s1-result-btn-3_png",
+			"name":"haoli-pic-1_jpg",
 			"type":"image",
-			"url":"s1-result-btn-3.png"
+			"url":""
 		},
 		{
-			"name":"s1-result-m-1_png",
+			"name":"haoli-pic-2_jpg",
 			"type":"image",
-			"url":"s1-result-m-1.png"
+			"url":""
 		},
 		{
-			"name":"s1-result-m-2_png",
+			"name":"haoli-pic-3_jpg",
 			"type":"image",
-			"url":"s1-result-m-2.png"
+			"url":""
 		},
 		{
-			"name":"s1-result-w-1_png",
+			"name":"haoli-pic-4_jpg",
 			"type":"image",
-			"url":"s1-result-w-1.png"
+			"url":""
 		},
 		{
-			"name":"s1-result-w-2_png",
+			"name":"haoli-pic-5_jpg",
 			"type":"image",
-			"url":"s1-result-w-2.png"
+			"url":""
 		},
 		{
-			"name":"s1-result-w-3_png",
+			"name":"haoli-pic-6_jpg",
 			"type":"image",
-			"url":"s1-result-w-3.png"
+			"url":""
 		},
 		{
-			"name":"s1-result-w-4_png",
+			"name":"haoli-pic-7_jpg",
 			"type":"image",
-			"url":"s1-result-w-4.png"
+			"url":""
 		},
 		{
-			"name":"s1-tips_png",
+			"name":"icon-1_png",
 			"type":"image",
-			"url":"s1-tips.png"
+			"url":""
 		},
 		{
-			"name":"s2-bg_jpg",
+			"name":"icon-2_png",
 			"type":"image",
-			"url":"s2-bg.jpg"
+			"url":""
 		},
 		{
-			"name":"s2-moon_png",
+			"name":"icon-3_png",
 			"type":"image",
-			"url":"s2-moon.png"
+			"url":""
 		},
 		{
-			"name":"s2-result-btn_png",
+			"name":"icon-4_png",
 			"type":"image",
-			"url":"s2-result-btn.png"
+			"url":""
 		},
 		{
-			"name":"s2-result-w_png",
+			"name":"icon-5_png",
 			"type":"image",
-			"url":"s2-result-w.png"
+			"url":""
 		},
 		{
-			"name":"s2-shou_png",
+			"name":"icon-6_png",
 			"type":"image",
-			"url":"s2-shou.png"
+			"url":""
 		},
 		{
-			"name":"s2-word_png",
+			"name":"img-1_jpg",
 			"type":"image",
-			"url":"s2-word.png"
+			"url":""
 		},
 		{
-			"name":"s3-bg_jpg",
+			"name":"img-2_jpg",
 			"type":"image",
-			"url":"s3-bg.jpg"
+			"url":""
 		},
 		{
-			"name":"s3-moon_png",
+			"name":"img-3_jpg",
 			"type":"image",
-			"url":"s3-moon.png"
+			"url":""
 		},
 		{
-			"name":"s3-moonbing_png",
+			"name":"img-4_jpg",
 			"type":"image",
-			"url":"s3-moonbing.png"
+			"url":""
 		},
 		{
-			"name":"s3-quan_png",
+			"name":"img-5_jpg",
 			"type":"image",
-			"url":"s3-quan.png"
+			"url":""
 		},
 		{
-			"name":"s3-show_png",
+			"name":"img-6_jpg",
 			"type":"image",
-			"url":"s3-show.png"
+			"url":""
 		},
 		{
-			"name":"s3-wen_png",
+			"name":"img-7_jpg",
 			"type":"image",
-			"url":"s3-wen.png"
+			"url":""
 		},
 		{
-			"name":"share-2_png",
+			"name":"img-8_jpg",
 			"type":"image",
-			"url":"share-2.png"
+			"url":""
+		},
+		{
+			"name":"ms-biao_png",
+			"type":"image",
+			"url":""
+		},
+		{
+			"name":"ms-big-img_jpg",
+			"type":"image",
+			"url":""
+		},
+		{
+			"name":"ms-big-img-1_jpg",
+			"type":"image",
+			"url":""
+		},
+		{
+			"name":"ms-big-img-2_jpg",
+			"type":"image",
+			"url":""
+		},
+		{
+			"name":"ms-big-img-3_jpg",
+			"type":"image",
+			"url":""
+		},
+		{
+			"name":"ms-big-img-4_jpg",
+			"type":"image",
+			"url":""
+		},
+		{
+			"name":"ms-big-img-5_jpg",
+			"type":"image",
+			"url":""
+		},
+		{
+			"name":"ms-big-img-6_jpg",
+			"type":"image",
+			"url":""
+		},
+		{
+			"name":"ms-big-img-7_jpg",
+			"type":"image",
+			"url":""
+		},
+		{
+			"name":"ms-big-img-8_jpg",
+			"type":"image",
+			"url":""
+		},
+		{
+			"name":"ms-big-img-9_jpg",
+			"type":"image",
+			"url":""
+		},
+		{
+			"name":"ms-big-img-10_jpg",
+			"type":"image",
+			"url":""
+		},
+		{
+			"name":"ms-big-img-11_jpg",
+			"type":"image",
+			"url":""
+		},
+		{
+			"name":"ms-big-img-12_jpg",
+			"type":"image",
+			"url":""
+		},
+		{
+			"name":"ms-big-img-13_jpg",
+			"type":"image",
+			"url":""
+		},
+		{
+			"name":"ms-logo_png",
+			"type":"image",
+			"url":""
+		},
+		{
+			"name":"ms-small-img_png",
+			"type":"image",
+			"url":""
+		},
+		{
+			"name":"ms-small-img-1_jpg",
+			"type":"image",
+			"url":""
+		},
+		{
+			"name":"ms-small-img-2_jpg",
+			"type":"image",
+			"url":""
+		},
+		{
+			"name":"ms-small-img-3_jpg",
+			"type":"image",
+			"url":""
+		},
+		{
+			"name":"ms-small-img-4_jpg",
+			"type":"image",
+			"url":""
+		},
+		{
+			"name":"ms-small-img-5_jpg",
+			"type":"image",
+			"url":""
+		},
+		{
+			"name":"ms-small-img-6_jpg",
+			"type":"image",
+			"url":""
+		},
+		{
+			"name":"ms-small-img-7_jpg",
+			"type":"image",
+			"url":""
+		},
+		{
+			"name":"ms-small-img-8_jpg",
+			"type":"image",
+			"url":""
+		},
+		{
+			"name":"ms-small-img-9_jpg",
+			"type":"image",
+			"url":""
+		},
+		{
+			"name":"ms-small-img-10_jpg",
+			"type":"image",
+			"url":""
+		},
+		{
+			"name":"ms-small-img-11_jpg",
+			"type":"image",
+			"url":""
+		},
+		{
+			"name":"ms-small-img-12_jpg",
+			"type":"image",
+			"url":""
+		},
+		{
+			"name":"ms-small-img-13_jpg",
+			"type":"image",
+			"url":""
+		},
+		{
+			"name":"ms-sq_png",
+			"type":"image",
+			"url":""
+		},
+		{
+			"name":"next_png",
+			"type":"image",
+			"url":""
+		},
+		{
+			"name":"prev_png",
+			"type":"image",
+			"url":""
+		},
+		{
+			"name":"top-1_png",
+			"type":"image",
+			"url":""
+		},
+		{
+			"name":"top-cake-1_png",
+			"type":"image",
+			"url":""
+		},
+		{
+			"name":"top-cake-2_png",
+			"type":"image",
+			"url":""
+		},
+		{
+			"name":"top-cake-3_png",
+			"type":"image",
+			"url":""
+		},
+		{
+			"name":"top-cake-4_png",
+			"type":"image",
+			"url":""
+		},
+		{
+			"name":"top-title_png",
+			"type":"image",
+			"url":""
+		},
+		{
+			"name":"zp-acrow_png",
+			"type":"image",
+			"url":""
+		},
+		{
+			"name":"zp-award-1_png",
+			"type":"image",
+			"url":""
 		}
 	]
 }

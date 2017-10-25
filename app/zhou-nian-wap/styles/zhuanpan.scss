@@ -1,0 +1,93 @@
+@function px2rem($n) {
+  @return ($n * 10 / 750) * 1rem; //设计稿一般都是750宽
+}
+
+@mixin font-dpr($font-size) {
+  font-size: $font-size;
+
+  [data-dpr="2"] & {
+    font-size: $font-size * 2;
+  }
+
+  [data-dpr="3"] & {
+    font-size: $font-size * 3;
+  }
+
+}
+body{ overflow-x: hidden; -webkit-backface-visibility: hidden;  backface-visibility: hidden; background: #f6f6f6; }
+
+.zhuanpan{
+  img {
+    width: 100%;
+  }
+}
+.evt-banner { display: block; position: relative !important; width: px2rem(750);  overflow: hidden;  }
+li{list-style: none;}
+
+.evt-ad{ margin: px2rem(20) 0;}
+
+.btns{position: relative; float: right; width:px2rem(130); height:px2rem(40); background:#ffcd20;  text-align: center; border-radius:px2rem(20); cursor: pointer;
+  span{ display: block; color: #000; font-size:px2rem(22); line-height:px2rem(40);}
+}
+
+/*彈窗*/
+.zhuanpan-cover{
+  background-color: #000;
+  height: 100%;
+  left: 0;
+  opacity: 0.85;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 200; display: none;
+}
+
+.zhuanpan{
+  background: #fff none repeat scroll 0 0;
+  box-shadow: 0 0 0 #999;
+  font-size:px2rem(14);
+  width:px2rem(700);
+  height:px2rem(860);
+  margin-top: px2rem(-430);
+  margin-left: px2rem(-350);
+  left: 50%;
+  padding: 0;
+  position: fixed;
+  top: 50%;
+  z-index: 99999;  border-radius:px2rem(10); display: none;
+}
+
+
+.closes{ width:px2rem(100); height:px2rem(100); position: absolute; top:px2rem(10); right:px2rem(0); cursor: pointer; z-index: 10; background: url("../images/close.png") top no-repeat; background-size: 50%; }
+
+.zhuanpanBg{ width: 100%; height: 100%; position: relative; background: url("../images/wap-zpbg.png") center no-repeat; background-size: 100%; }
+.zhuanpan .zhuanpan-center{position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 1;
+  .title{ font-size:px2rem(33); text-align: center; color: #000; line-height:px2rem(160);}
+  .zp{position: relative; width:px2rem(550); height:px2rem(550); margin:px2rem(10) auto 0;
+    .zp-acrow{position: absolute; top: px2rem(-20); left: 50%; width:px2rem(26); margin-left:px2rem(-13); z-index: 2;}
+    .zp-pan{position: absolute; top: 0; left: 50%; width:px2rem(525); height:px2rem(525); margin-left:px2rem(-262.5); z-index: 1;}
+    .zp-btn{position: absolute; top: 50%; left: 50%; width:px2rem(214); margin-left:px2rem(-107); margin-top:px2rem(-120); z-index: 2; cursor: pointer; }
+  }
+}
+
+.zhuanpan .zhuanpan-award{
+  position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 2; display: none;
+  .award{position: absolute; width:px2rem(500); height:px2rem(350); top: 50%; left: 50%; margin-left: px2rem(-250); margin-top: px2rem(-175); display: none;
+    .txt{position: absolute; width:px2rem(300); top:px2rem(50); right:px2rem(20); text-align: right; color: #fff; font-size:px2rem(30); vertical-align: sub !important;
+      span{font-size: px2rem(200); font-weight: bold; line-height:px2rem(144); vertical-align: sub !important;  font-family: "Microsoft YaHei", Tahoma, Arial; }
+    }
+
+    .word{position: absolute; width: 100%; bottom: 0; left: 50%; margin-left: -50%; text-align: center; color: #000;font-size: px2rem(26); font-weight: bold;
+      span,b{ vertical-align:baseline !important;}
+    }
+
+  }
+
+  .award.award-1{ width:px2rem(625); height:px2rem(418); top:50%; left:50%; margin-top:px2rem(-230); margin-left:px2rem(-312.5); text-align: center;
+    .mima{position: absolute; width:px2rem(320); height:px2rem(35); top:px2rem(220); left: 50%; margin-left: px2rem(-160); font-size:px2rem(16); color: #000; line-height: px2rem(35); }
+    .tips{position: absolute; width: 90%; bottom:px2rem(50); left: 50%; margin-left:-45%; font-size: px2rem(22); color: #9a9a9a; }
+    .tips.valid{bottom:px2rem(5);}
+    .tips.disc{bottom:px2rem(219); font-size:px2rem(26); color: #000;}
+  }
+}
+

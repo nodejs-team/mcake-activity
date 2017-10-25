@@ -1,0 +1,171 @@
+#evt_content div {
+  position: absolute; }
+
+#evt_content img {
+  width: 100%; }
+
+#evt_content .sec {
+  position: relative; }
+
+#evt_content .sec-top {
+  height: 6.77215rem;
+  background: #fffcef;
+  z-index: 1; }
+  #evt_content .sec-top .banner-xiong {
+    width: 4.18987rem;
+    top: 0.56962rem;
+    left: 0rem; }
+  #evt_content .sec-top .banner-shu {
+    width: 2.4557rem;
+    top: 5.13924rem;
+    left: auto;
+    right: 0rem; }
+  #evt_content .sec-top .banner-title {
+    width: 5.44304rem;
+    top: 0.25316rem;
+    left: 3.65823rem; }
+  #evt_content .sec-top .banner-cake {
+    width: 5.49367rem;
+    top: 3.16456rem;
+    left: 3.29114rem; }
+
+#evt_content .go-btn {
+  position: relative; }
+  #evt_content .go-btn span {
+    display: block;
+    width: 3.79747rem;
+    background: url("../images/btn-bg.png?23233") no-repeat;
+    background-size: 100%;
+    text-align: center;
+    height: 0.88608rem;
+    margin-top: 0.25316rem;
+    color: #fff;
+    font-size: 0.3038rem;
+    line-height: 0.88608rem;
+    margin-right: 0.12658rem;
+    float: left; }
+
+#evt_content .sec-1 {
+  height: 12.82278rem;
+  background: #fffcef; }
+  #evt_content .sec-1 .s1-cloud1 {
+    width: 2.26582rem;
+    top: 3.36709rem;
+    left: 0rem; }
+  #evt_content .sec-1 .s1-cloud2 {
+    width: 1.24051rem;
+    top: 2.72152rem;
+    left: auto;
+    right: 0rem; }
+  #evt_content .sec-1 .s1-w {
+    width: 6.44304rem;
+    top: 0.31646rem;
+    left: 50%;
+    margin-left: -3.22152rem; }
+  #evt_content .sec-1 .s1-w2 {
+    width: 3.60759rem;
+    top: 10.29114rem;
+    left: 0.75949rem; }
+  #evt_content .sec-1 .s1-xiong {
+    width: 3.35443rem;
+    top: 3.59494rem;
+    left: 6.12658rem; }
+  #evt_content .sec-1 .s1-cake {
+    width: 6.78481rem;
+    top: 3.92405rem;
+    left: 0.63291rem; }
+
+#evt_content .sec-2 {
+  height: 11.4557rem;
+  background: #fffcef; }
+  #evt_content .sec-2 .s2-line {
+    width: 8.6962rem;
+    top: -0.3038rem;
+    left: 0.75949rem; }
+  #evt_content .sec-2 .s2-ny {
+    width: 2.34177rem;
+    top: -0.50633rem;
+    left: 7.20253rem; }
+  #evt_content .sec-2 .s2-w {
+    width: 5.24051rem;
+    top: 9.62025rem;
+    left: 3.75949rem; }
+  #evt_content .sec-2 .s2-w2 {
+    width: 4.35443rem;
+    top: 6.02532rem;
+    left: 5.25316rem; }
+  #evt_content .sec-2 .s2-xiong {
+    width: 4.13924rem;
+    top: 0.35443rem;
+    left: 0.29114rem; }
+  #evt_content .sec-2 .s2-cake {
+    width: 5.97468rem;
+    top: 2.78481rem;
+    left: 1.86076rem; }
+  #evt_content .sec-2 .price {
+    width: 4.43038rem;
+    height: 1.77215rem;
+    top: 7.08861rem;
+    left: 5.25316rem; }
+  #evt_content .sec-2 .price ul {
+    width: 4.3038rem;
+    margin: 0;
+    padding: 0; }
+  #evt_content .sec-2 .price ul li {
+    width: 100%;
+    list-style: none;
+    margin-top: 0.25316rem;
+    background: url("../images/gou-1.png") 90% center no-repeat;
+    background-size: 13%;
+    cursor: pointer;
+    padding-right: 0.63291rem; }
+  #evt_content .sec-2 .price ul li img {
+    width: 88%;
+    margin: 0.06329rem 0; }
+  #evt_content .sec-2 .price ul li.on {
+    background: url("../images/gou-2.png") 90% center no-repeat;
+    background-size: 13%; }
+
+#evt_content .sec-3 {
+  height: 9.03797rem;
+  background: #fffcef; }
+  #evt_content .sec-3 .s3-title {
+    width: 8.5443rem;
+    top: 0.59494rem;
+    left: 50%;
+    margin-left: -4.27215rem; }
+  #evt_content .sec-3 .s3-xiong {
+    width: 2.74684rem;
+    bottom: 0rem;
+    left: 7.07595rem; }
+  #evt_content .sec-3 .s3-cake {
+    width: 5.91139rem;
+    top: 2.87342rem;
+    left: 50%;
+    margin-left: -2.9557rem; }
+  #evt_content .sec-3 .more {
+    width: 3.74684rem;
+    top: 7.89873rem;
+    left: 50%;
+    margin-left: -1.87342rem; }
+
+#evt_content .sec-footer {
+  background: #dde7f3;
+  position: relative;
+  padding-bottom: 0.25316rem; }
+  #evt_content .sec-footer .txt {
+    position: relative;
+    width: 7.97468rem;
+    padding-top: 0.63291rem;
+    padding-bottom: 0.63291rem;
+    margin: 0 auto;
+    color: #0e112c; }
+    #evt_content .sec-footer .txt h2 {
+      font-size: 0.3038rem;
+      font-weight: normal; }
+    #evt_content .sec-footer .txt p {
+      font-size: 0.29114rem;
+      padding-left: 0.44304rem;
+      line-height: 0.37975rem;
+      text-indent: -0.44304rem;
+      margin: 0.06329rem 0; }

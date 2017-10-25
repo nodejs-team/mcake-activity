@@ -1,0 +1,170 @@
+body {
+  overflow-x: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; }
+
+#evt_content div {
+  position: absolute; }
+
+#evt_content img {
+  width: 100%; }
+
+.evt-banner {
+  position: relative !important;
+  height: 14.33333rem;
+  overflow: hidden; }
+  .evt-banner .nut-bg {
+    width: 8.48rem;
+    top: 5.86667rem;
+    left: 0.69333rem; }
+  .evt-banner .cake {
+    width: 5.93333rem;
+    top: 0.4rem;
+    right: 0; }
+  .evt-banner .cake-tips {
+    width: 4.08rem;
+    left: 0.50667rem;
+    top: 0.84rem; }
+  .evt-banner .banner-text {
+    width: 6.98667rem;
+    left: 0.32rem;
+    top: 5.41333rem; }
+  .evt-banner .cake-sm {
+    width: 2.50667rem;
+    top: 10rem;
+    right: 0; }
+  .evt-banner .cake-spoon {
+    width: 2.41333rem;
+    top: 12.53333rem;
+    right: 0; }
+
+.evt-main {
+  position: relative !important;
+  height: 13.04rem;
+  background: #fff url(../images/main-bg.jpg) repeat !important; }
+  .evt-main .counter-down {
+    right: 0.21333rem;
+    top: 0.26667rem;
+    width: 4.68rem;
+    height: 0.82667rem;
+    background: url(../images/counter-bg.png) no-repeat;
+    background-size: 100% auto; }
+    .evt-main .counter-down .text {
+      position: absolute;
+      top: 0;
+      right: 0.4rem;
+      color: #4a2602;
+      font-size: 0.16rem; }
+  .evt-main .counter-down2 {
+    top: 0.86667rem;
+    background: url(../images/counter-bg2.png) no-repeat;
+    background-size: 100% auto; }
+  .evt-main .text2 {
+    position: absolute;
+    top: 0.26667rem;
+    right: 1.33333rem;
+    color: #4a2602;
+    font-size: 0.32rem; }
+  .evt-main .main-logo {
+    width: 1.96rem;
+    right: 1.33333rem;
+    top: 2.13333rem; }
+  .evt-main .main-cake {
+    width: 5.98667rem;
+    left: 0.74667rem;
+    top: 1.64rem; }
+  .evt-main .main-text {
+    width: 4.94667rem;
+    right: 0.29333rem;
+    top: 6.8rem; }
+  .evt-main .main-action {
+    left: 0;
+    bottom: 0.06667rem; }
+    .evt-main .main-action .checkbox {
+      display: block;
+      width: 2.93333rem;
+      height: 0.42667rem;
+      background: url(../images/checkbox.png) no-repeat;
+      background-size: 0.46667rem auto;
+      background-position: 0 100%;
+      margin-top: 0.2rem; }
+      .evt-main .main-action .checkbox.checked {
+        background-position: 0 0; }
+  .evt-main .buy-btn {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 1.86667rem;
+    height: 1.06667rem;
+    line-height: 100;
+    overflow: hidden; }
+  .evt-main .counter-flips {
+    left: 2.18667rem;
+    top: 0.25333rem;
+    font-size: 0; }
+    .evt-main .counter-flips .flip {
+      margin-right: 0.05333rem;
+      vertical-align: top !important; }
+      .evt-main .counter-flips .flip > span {
+        display: inline-block;
+        width: 0.33333rem;
+        height: 0.45333rem;
+        vertical-align: top !important;
+        -webkit-transform: scale(0.7);
+        transform: scale(0.7); }
+        .evt-main .counter-flips .flip > span > img {
+          max-width: 100%;
+          max-height: 100%; }
+  .evt-main .counter-flips2 {
+    left: 2.58667rem;
+    top: 0.25333rem;
+    font-size: 0; }
+  .evt-main .footer-action {
+    width: 7rem;
+    left: 50%;
+    top: 11.09333rem;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%); }
+  .evt-main .deco1 {
+    top: 0.53333rem;
+    left: 0;
+    width: 1.29333rem; }
+  .evt-main .deco2 {
+    top: 8.72rem;
+    left: 0;
+    width: 1.70667rem; }
+  .evt-main .deco3 {
+    top: 4.6rem;
+    right: 0;
+    width: 1.50667rem; }
+  .evt-main .deco4 {
+    top: 10.29333rem;
+    right: 0;
+    width: 1.50667rem; }
+
+.evt-footer {
+  position: relative !important;
+  background-color: #dec7b0;
+  padding-top: 1.33333rem;
+  padding-bottom: 1.33333rem; }
+  .evt-footer .evt-footer-bd {
+    position: relative !important;
+    width: 85%;
+    max-width: 500px;
+    margin: 0 auto;
+    color: #734924; }
+    .evt-footer .evt-footer-bd h2 {
+      font-size: 16px;
+      margin: 0 0 8px; }
+    .evt-footer .evt-footer-bd p {
+      margin: 0;
+      padding-left: 1.5em;
+      text-indent: -1.5em;
+      line-height: 1.75;
+      font-size: 14px; }
+
+@media screen and (max-width: 320px) {
+  .counter-flips {
+    left: 2.24rem !important; }
+    .counter-flips .flip {
+      margin-right: 0.09333rem !important; } }

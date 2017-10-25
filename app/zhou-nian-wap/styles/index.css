@@ -1,0 +1,540 @@
+@charset "UTF-8";
+body {
+  overflow-x: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background: #f6f6f6; }
+
+#evt_content img {
+  width: 100%; }
+
+.evt-banner {
+  display: block;
+  position: relative !important;
+  width: 10rem;
+  overflow: hidden; }
+
+li {
+  list-style: none; }
+
+.evt-ms {
+  height: 11.2rem;
+  position: relative !important;
+  background: #f6f6f6; }
+  .evt-ms .ms-title {
+    width: 8rem;
+    font-size: 0.4rem;
+    color: #000;
+    margin: 0 auto;
+    text-align: center;
+    position: relative !important;
+    padding-top: 0.66667rem;
+    padding-bottom: 0.53333rem; }
+    .evt-ms .ms-title b {
+      line-height: 0.66667rem; }
+    .evt-ms .ms-title p {
+      font-size: 0.21333rem;
+      margin: 0;
+      line-height: 0.8rem; }
+  .evt-ms .lastTime {
+    width: 8rem;
+    margin: 0 auto;
+    position: relative !important; }
+    .evt-ms .lastTime p {
+      float: left;
+      display: block;
+      font-size: 0.21333rem;
+      vertical-align: middle;
+      line-height: 0.93333rem;
+      margin-left: 0.13333rem;
+      overflow: hidden; }
+    .evt-ms .lastTime .time {
+      margin-left: 1.73333rem; }
+      .evt-ms .lastTime .time ul {
+        margin: 0; }
+      .evt-ms .lastTime .time ul li {
+        position: relative;
+        float: left;
+        width: 0.8rem;
+        height: 0.93333rem;
+        background: #fff;
+        text-align: center;
+        list-style: none; }
+        .evt-ms .lastTime .time ul li b {
+          position: relative;
+          float: left;
+          display: block;
+          width: 100%;
+          height: 0.70667rem;
+          line-height: 0.70667rem;
+          color: #000;
+          font-size: 0.53333rem;
+          background: #fff;
+          font-weight: bold; }
+        .evt-ms .lastTime .time ul li span {
+          position: relative;
+          float: left;
+          width: 100%;
+          display: block;
+          background: #cdcdcd;
+          color: #fff;
+          font-size: 0.16rem;
+          height: 0.21333rem;
+          line-height: 0.21333rem; }
+      .evt-ms .lastTime .time ul li.mao {
+        width: 0.4rem;
+        background: #f6f6f6;
+        font-size: 0.53333rem; }
+        .evt-ms .lastTime .time ul li.mao b {
+          line-height: 0.6rem;
+          background: #f6f6f6; }
+  .evt-ms .ms-zhuanqu {
+    width: 10rem;
+    height: 7.33333rem;
+    margin: 0 auto;
+    position: relative !important;
+    /*秒杀*/
+    /*即将秒杀*/ }
+    .evt-ms .ms-zhuanqu .miaosha {
+      height: 4.98667rem; }
+      .evt-ms .ms-zhuanqu .miaosha ul {
+        margin: 0.13333rem 0 0 0.13333rem;
+        padding: 0; }
+      .evt-ms .ms-zhuanqu .miaosha ul li {
+        position: relative;
+        float: left;
+        width: 4.8rem;
+        height: 4.88rem;
+        margin-right: 0.13333rem;
+        list-style: none;
+        background-size: 100%; }
+        .evt-ms .ms-zhuanqu .miaosha ul li .icon {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 0.84rem;
+          height: 1.24rem;
+          background: url("../images/ms-logo.png") no-repeat;
+          background-size: 100%;
+          z-index: 2; }
+        .evt-ms .ms-zhuanqu .miaosha ul li .ms-sq {
+          position: absolute;
+          bottom: 1.33333rem;
+          right: 0.26667rem;
+          width: 1.65333rem;
+          height: 1.65333rem;
+          background: url("../images/ms-sq.png") no-repeat;
+          background-size: 100%;
+          z-index: 1;
+          display: none; }
+        .evt-ms .ms-zhuanqu .miaosha ul li .ms-start {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          z-index: 1;
+          display: none; }
+          .evt-ms .ms-zhuanqu .miaosha ul li .ms-start .ms-cover {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: #000;
+            opacity: 0.6; }
+          .evt-ms .ms-zhuanqu .miaosha ul li .ms-start .ms-i {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -1rem;
+            margin-top: -1rem;
+            width: 2rem;
+            height: 2rem;
+            background: url("../images/ms-biao.png") top center no-repeat;
+            background-size: 60%; }
+            .evt-ms .ms-zhuanqu .miaosha ul li .ms-start .ms-i span {
+              display: block;
+              width: 100%;
+              position: absolute;
+              bottom: 0;
+              font-size: 0.32rem;
+              text-align: center;
+              color: #fff; }
+      .evt-ms .ms-zhuanqu .miaosha ul li.fr {
+        float: right; }
+      .evt-ms .ms-zhuanqu .miaosha .ms-tit {
+        width: 2.4rem;
+        position: absolute;
+        bottom: 0.4rem;
+        left: 0.44rem;
+        color: #000;
+        text-align: left; }
+        .evt-ms .ms-zhuanqu .miaosha .ms-tit p {
+          font-size: 0.29333rem;
+          margin: 0; }
+        .evt-ms .ms-zhuanqu .miaosha .ms-tit span {
+          font-size: 0.16rem; }
+      .evt-ms .ms-zhuanqu .miaosha .ms-price {
+        width: 2.4rem;
+        position: absolute;
+        bottom: 0.4rem;
+        right: 0;
+        color: #000;
+        text-align: center; }
+        .evt-ms .ms-zhuanqu .miaosha .ms-price p {
+          font-size: 0.26667rem; }
+          .evt-ms .ms-zhuanqu .miaosha .ms-price p i {
+            font-size: 0.18667rem;
+            font-style: normal; }
+        .evt-ms .ms-zhuanqu .miaosha .ms-price span {
+          font-size: 0.16rem; }
+      .evt-ms .ms-zhuanqu .miaosha .ms-oldprice {
+        width: 2.4rem;
+        position: absolute;
+        bottom: 0rem;
+        right: 0;
+        color: #000;
+        text-align: center; }
+        .evt-ms .ms-zhuanqu .miaosha .ms-oldprice p {
+          font-size: 0.24rem; }
+      .evt-ms .ms-zhuanqu .miaosha .ms-price.white, .evt-ms .ms-zhuanqu .miaosha .ms-tit.white, .evt-ms .ms-zhuanqu .miaosha .ms-oldprice.white {
+        color: #fff; }
+    .evt-ms .ms-zhuanqu .miaosha-wait {
+      position: relative;
+      margin: 0.26667rem 0.13333rem;
+      height: 1.81333rem; }
+      .evt-ms .ms-zhuanqu .miaosha-wait .swiper-wrapper {
+        height: 1.81333rem; }
+      .evt-ms .ms-zhuanqu .miaosha-wait .swiper-slide {
+        height: 1.81333rem;
+        float: left;
+        background: none; }
+        .evt-ms .ms-zhuanqu .miaosha-wait .swiper-slide .center {
+          position: relative;
+          width: 2.4rem;
+          height: 1.81333rem; }
+        .evt-ms .ms-zhuanqu .miaosha-wait .swiper-slide .cover {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          background: #000;
+          opacity: 0.5;
+          z-index: 1; }
+        .evt-ms .ms-zhuanqu .miaosha-wait .swiper-slide .text {
+          position: absolute;
+          width: 100%;
+          top: 50%;
+          left: 50%;
+          margin-left: -50%;
+          margin-top: -0.4rem;
+          z-index: 5;
+          text-align: center; }
+        .evt-ms .ms-zhuanqu .miaosha-wait .swiper-slide span, .evt-ms .ms-zhuanqu .miaosha-wait .swiper-slide b {
+          width: 100%;
+          float: left;
+          display: block;
+          color: #fff;
+          font-size: 0.32rem;
+          font-weight: normal; }
+        .evt-ms .ms-zhuanqu .miaosha-wait .swiper-slide b {
+          font-size: 0.18667rem;
+          color: #e3b724; }
+      .evt-ms .ms-zhuanqu .miaosha-wait .swiper-slide.msOver .cover {
+        opacity: 0.75; }
+
+.evt-ad {
+  margin: 0.26667rem 0; }
+
+#sec-haoli {
+  position: relative;
+  -webkit-transition: all 1s;
+  transition: all 1s; }
+  #sec-haoli .evt-content {
+    padding-bottom: 0.26667rem; }
+    #sec-haoli .evt-content div {
+      position: relative; }
+    #sec-haoli .evt-content .haoli-title {
+      text-align: center;
+      font-size: 0.4rem;
+      line-height: 1.06667rem;
+      color: #000;
+      padding: 0.33333rem 0; }
+    #sec-haoli .evt-content .haoli-box ul {
+      margin-left: 0.13333rem;
+      padding: 0; }
+      #sec-haoli .evt-content .haoli-box ul li {
+        position: relative;
+        width: 4.8rem;
+        height: 3.26667rem;
+        float: left;
+        margin-right: 0.13333rem;
+        margin-bottom: 0.13333rem;
+        cursor: pointer;
+        list-style: none; }
+        #sec-haoli .evt-content .haoli-box ul li .icon {
+          width: 0.74667rem;
+          position: absolute;
+          top: 0;
+          left: 0; }
+  #sec-haoli .txtHtml, #sec-haoli .txt {
+    display: none; }
+
+#sec-haoli.bgColor0 {
+  background: #e32d2d; }
+  #sec-haoli.bgColor0 .haoli-title {
+    color: #fff; }
+
+#sec-haoli.bgColor1 {
+  background: #857a72; }
+  #sec-haoli.bgColor1 .haoli-title {
+    color: #fff; }
+
+#sec-haoli.bgColor2 {
+  background: #b5dae4; }
+
+#sec-haoli.bgColor3 {
+  background: #ffffff; }
+
+#sec-haoli.bgColor4 {
+  background: #e2e2e2; }
+
+#sec-haoli.bgColor5 {
+  background: #e7d9c2; }
+
+.btns {
+  position: relative;
+  float: right;
+  width: 1.73333rem;
+  height: 0.53333rem;
+  background: #ffcd20;
+  text-align: center;
+  border-radius: 0.26667rem;
+  cursor: pointer; }
+  .btns span {
+    display: block;
+    color: #000;
+    font-size: 0.29333rem;
+    line-height: 0.53333rem; }
+
+/*热销主推*/
+.sec-hot {
+  position: relative;
+  background: #f6f6f6; }
+  .sec-hot .evt-content {
+    padding-bottom: 0.66667rem;
+    vertical-align: text-bottom !important; }
+    .sec-hot .evt-content div {
+      position: relative; }
+    .sec-hot .evt-content .hot-title {
+      text-align: center;
+      font-size: 0.4rem;
+      line-height: 1.06667rem;
+      color: #000;
+      padding: 0.33333rem 0; }
+    .sec-hot .evt-content .products ul {
+      margin-left: 0.06667rem;
+      padding: 0; }
+      .sec-hot .evt-content .products ul li {
+        color: #000;
+        float: left;
+        font-size: 0.2rem;
+        margin: 0 0.16rem 0.24rem 0;
+        width: 4.8rem;
+        background: #fff; }
+        .sec-hot .evt-content .products ul li .pro-liimg {
+          position: relative;
+          overflow: hidden; }
+          .sec-hot .evt-content .products ul li .pro-liimg .liImg {
+            width: 4.8rem;
+            height: 4.54667rem;
+            z-index: 1; }
+          .sec-hot .evt-content .products ul li .pro-liimg .cart-icon {
+            position: absolute;
+            right: 0.18667rem;
+            bottom: 0.18667rem;
+            width: 1.33333rem;
+            height: 1.33333rem;
+            background: url("../images/car-icon.png") bottom right no-repeat;
+            background-size: 50%;
+            cursor: pointer;
+            z-index: 5; }
+        .sec-hot .evt-content .products ul li .fl {
+          float: left;
+          text-align: left;
+          font-size: 0.24rem; }
+        .sec-hot .evt-content .products ul li .fr {
+          float: right;
+          text-align: left; }
+        .sec-hot .evt-content .products ul li .p2, .sec-hot .evt-content .products ul li .p3 {
+          margin: 0 0 0.2rem;
+          padding: 0 0.13333rem; }
+        .sec-hot .evt-content .products ul li .p2 {
+          height: 0.4rem; }
+        .sec-hot .evt-content .products ul li .p2 .line {
+          position: absolute;
+          bottom: 0;
+          left: 0.13333rem;
+          color: #dedede; }
+        .sec-hot .evt-content .products ul li .p1 {
+          padding: 0.2rem 0.13333rem 0.06667rem;
+          line-height: 0.33333rem; }
+        .sec-hot .evt-content .products ul li .fr.he {
+          width: 0.66667rem !important; }
+        .sec-hot .evt-content .products ul li .p1 .fr {
+          position: relative;
+          width: 1.02667rem;
+          height: 0.33333rem;
+          line-height: 0.33333rem;
+          display: block;
+          font-size: 0.24rem;
+          font-weight: bold;
+          text-indent: 0.24rem; }
+          .sec-hot .evt-content .products ul li .p1 .fr .js_bshu {
+            display: block;
+            width: 1.02667rem;
+            height: 0.33333rem;
+            z-index: 2; }
+          .sec-hot .evt-content .products ul li .p1 .fr .js_bshu.on {
+            background: #d2d2d2; }
+          .sec-hot .evt-content .products ul li .p1 .fr .dot {
+            position: absolute;
+            display: block;
+            width: 0.2rem;
+            height: 0.13333rem;
+            top: 0.09333rem;
+            left: 0.8rem;
+            z-index: 0;
+            background: url("../images/dot.png");
+            background-size: 100%; }
+          .sec-hot .evt-content .products ul li .p1 .fr ul.js_select {
+            position: absolute;
+            width: 1.02667rem;
+            top: 0.33333rem;
+            left: 50%;
+            text-align: left;
+            margin-left: -0.50667rem;
+            font-size: 0.24rem;
+            background: #eaeaea;
+            z-index: 10;
+            display: none; }
+            .sec-hot .evt-content .products ul li .p1 .fr ul.js_select li {
+              height: 0.4rem;
+              width: 1.02667rem;
+              text-indent: 0.24rem;
+              line-height: 0.4rem;
+              cursor: pointer;
+              color: #757575;
+              margin: 0;
+              font-size: 0.21333rem;
+              background: #eaeaea; }
+            .sec-hot .evt-content .products ul li .p1 .fr ul.js_select strong {
+              font-size: 0.18667rem; }
+            .sec-hot .evt-content .products ul li .p1 .fr ul.js_select li.on {
+              color: #000; }
+        .sec-hot .evt-content .products ul li .p2 .fl {
+          color: #b1b1b1;
+          font-size: 0.24rem; }
+        .sec-hot .evt-content .products ul li .p3 .fl {
+          line-height: 0.4rem;
+          font-size: 0.36rem; }
+        .sec-hot .evt-content .products ul li .p3 .fl b {
+          font-size: 0.24rem;
+          font-weight: normal;
+          vertical-align: text-bottom !important; }
+      .sec-hot .evt-content .products ul .postid {
+        display: none; }
+      .sec-hot .evt-content .products ul .selects-l {
+        position: absolute;
+        top: -0.26667rem;
+        right: 0;
+        width: 1.33333rem;
+        height: 0.8rem;
+        background: url("../images/dot.png") right;
+        background-size: 20%;
+        border: none;
+        color: #000;
+        text-indent: 0.13333rem;
+        font-size: 0.26667rem;
+        font-weight: bold; }
+    .sec-hot .evt-content .more {
+      width: 3.12rem;
+      height: 0.77333rem;
+      margin: 0.66667rem auto;
+      background: #ffcd20;
+      text-align: center;
+      border-radius: 0.38667rem;
+      cursor: pointer; }
+      .sec-hot .evt-content .more span {
+        display: block;
+        color: #000;
+        font-size: 0.29333rem;
+        line-height: 0.77333rem; }
+
+/*彈窗*/
+.Dialogbg-rules {
+  background-color: #000;
+  height: 100%;
+  left: 0;
+  opacity: 0.85;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 200;
+  display: none; }
+
+.Dialog-rules {
+  background: #fff none repeat scroll 0 0;
+  box-shadow: 0 0 0 #999;
+  font-size: 0.18667rem;
+  width: 9.33333rem;
+  height: 11.46667rem;
+  margin-top: -5.73333rem;
+  margin-left: -4.66667rem;
+  left: 50%;
+  padding: 0;
+  position: fixed;
+  top: 50%;
+  z-index: 99999;
+  display: none;
+  border-radius: 0.13333rem; }
+
+.closes {
+  width: 1.33333rem;
+  height: 1.33333rem;
+  position: absolute;
+  top: 0.13333rem;
+  right: 0rem;
+  cursor: pointer;
+  z-index: 10;
+  background: url("../images/close.png") top no-repeat;
+  background-size: 50%; }
+
+.Dialog-rules .rulesBox {
+  width: 100%;
+  height: 100%; }
+
+.Dialog-rules .rules {
+  position: absolute;
+  top: 1.06667rem;
+  left: 0.33333rem;
+  width: 8.66667rem;
+  height: 9.86667rem;
+  color: #242424; }
+  .Dialog-rules .rules .txt {
+    width: 100%;
+    height: 100%; }
+  .Dialog-rules .rules h2 {
+    font-size: 0.37333rem;
+    margin-bottom: 0.06667rem;
+    line-height: 0.53333rem; }
+  .Dialog-rules .rules p {
+    font-size: 0.32rem;
+    line-height: 1.5;
+    margin-top: 0.13333rem;
+    margin-bottom: 0.13333rem; }
+
+.Dialog-rules .txt.long {
+  overflow-y: scroll; }

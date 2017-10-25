@@ -1,0 +1,216 @@
+@charset "UTF-8";
+#evt_loading {
+  color: #fff; }
+
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden; }
+
+.ldimg {
+  display: none; }
+
+.loads {
+  position: relative;
+  width: 10rem; }
+  .loads img {
+    width: 100%; }
+  .loads canvas {
+    left: 0.06667rem;
+    width: 9.86667rem;
+    height: 12.74667rem; }
+
+body {
+  background: #000; }
+
+#evt_content {
+  background: #000; }
+  #evt_content div {
+    position: absolute; }
+  #evt_content img {
+    width: 100%; }
+  #evt_content .sec {
+    position: relative; }
+  #evt_content .sec-banner {
+    height: 12.74667rem;
+    background: url("../images/bg.jpg") no-repeat;
+    background-size: 100%; }
+    #evt_content .sec-banner .b-title {
+      width: 8.22667rem;
+      top: 1.68rem;
+      left: 1.77333rem; }
+    #evt_content .sec-banner .guitou {
+      top: 6.36rem;
+      left: 0; }
+      #evt_content .sec-banner .guitou canvas {
+        width: 10rem;
+        height: 7.73333rem; }
+  #evt_content .sec-1 {
+    height: 14rem; }
+    #evt_content .sec-1 .cake {
+      width: 7.85333rem;
+      top: 0.36rem;
+      left: 0rem; }
+    #evt_content .sec-1 .hun {
+      width: 3.86667rem;
+      top: 5.18667rem;
+      left: 6.10667rem; }
+    #evt_content .sec-1 .price {
+      width: 10rem;
+      height: 4.26667rem;
+      top: 7.38667rem;
+      left: 0rem; }
+      #evt_content .sec-1 .price div {
+        position: relative; }
+      #evt_content .sec-1 .price .price-title {
+        width: 10rem;
+        margin: 0 auto; }
+        #evt_content .sec-1 .price .price-title .new-pirce {
+          position: absolute;
+          top: 0.4rem;
+          left: 7.8rem;
+          color: #fff; }
+          #evt_content .sec-1 .price .price-title .new-pirce span {
+            font-size: 0.46667rem;
+            line-height: 0.66667rem;
+            font-weight: bold;
+            font-family: 'Arial','Microsoft YaHei','微软雅黑','黑体',SimHei; }
+        #evt_content .sec-1 .price .price-title .old-pirce {
+          position: absolute;
+          top: 1.2rem;
+          left: 7.8rem;
+          color: #b3b3b3; }
+          #evt_content .sec-1 .price .price-title .old-pirce s {
+            font-size: 0.34667rem;
+            line-height: 0.66667rem;
+            font-weight: bold;
+            font-family: 'Arial','Microsoft YaHei','微软雅黑','黑体',SimHei; }
+        #evt_content .sec-1 .price .price-title .b-title {
+          width: 7rem;
+          margin-left: 0.66667rem; }
+      #evt_content .sec-1 .price .num-content {
+        width: 5.33333rem;
+        margin: 0.26667rem auto 0; }
+        #evt_content .sec-1 .price .num-content .nums {
+          margin: 0.53333rem auto 0.4rem;
+          padding-left: 0.8rem; }
+        #evt_content .sec-1 .price .num-content .mins, #evt_content .sec-1 .price .num-content .add {
+          float: left;
+          width: 1.2rem;
+          height: 1.2rem;
+          background: url("../images/mins.png") no-repeat;
+          background-size: 100%;
+          cursor: pointer; }
+        #evt_content .sec-1 .price .num-content .add {
+          background: url("../images/add.png") no-repeat;
+          background-size: 100%; }
+        #evt_content .sec-1 .price .num-content .num {
+          float: left;
+          width: 0.4rem;
+          margin: 0 0.26667rem;
+          line-height: 1.06667rem;
+          color: #fff;
+          font-size: 0.53333rem;
+          text-align: center; }
+        #evt_content .sec-1 .price .num-content .huangou {
+          background: url("../images/gou.png") 0 0.2rem no-repeat;
+          background-size: 8%;
+          padding: 0.13333rem 0 0.26667rem 0.66667rem;
+          cursor: pointer;
+          margin-bottom: 0.4rem; }
+          #evt_content .sec-1 .price .num-content .huangou p {
+            font-size: 0.4rem;
+            line-height: 0.53333rem;
+            color: #fff; }
+        #evt_content .sec-1 .price .num-content .huangou.on {
+          background: url("../images/guigou.png") 0 0.2rem no-repeat;
+          background-size: 8%; }
+        #evt_content .sec-1 .price .num-content .go-btn {
+          width: 5.04rem;
+          height: 0.86667rem;
+          margin: 0 auto;
+          background: url("../images/go-btn.png") no-repeat;
+          background-size: 100%; }
+  #evt_content .sec-2 {
+    height: 15.84rem; }
+    #evt_content .sec-2 .gui-1 {
+      width: 3.73333rem;
+      top: 1.46667rem;
+      left: 3.46667rem; }
+    #evt_content .sec-2 .menpiao {
+      width: 7.10667rem;
+      top: 5.45333rem;
+      left: 1.73333rem; }
+    #evt_content .sec-2 .gui-s {
+      top: 6.04rem;
+      left: 2.13333rem; }
+      #evt_content .sec-2 .gui-s canvas {
+        width: 1.33333rem;
+        height: 1.33333rem; }
+    #evt_content .sec-2 .line {
+      width: 10rem;
+      height: 4.25333rem;
+      top: 11.73333rem;
+      left: 0;
+      background: url("../images/line.png") no-repeat;
+      background-size: 100%; }
+  #evt_content .sec-3 {
+    height: 14.25333rem; }
+    #evt_content .sec-3 .duihua {
+      width: 7.24rem;
+      top: 1.24rem;
+      left: 1.2rem; }
+    #evt_content .sec-3 .gui-1 {
+      top: 1.6rem;
+      left: 0.93333rem; }
+      #evt_content .sec-3 .gui-1 canvas {
+        width: 1.86667rem;
+        height: 1.78667rem; }
+    #evt_content .sec-3 .gui-2 {
+      top: 4rem;
+      right: 0.66667rem; }
+      #evt_content .sec-3 .gui-2 canvas {
+        width: 2rem;
+        height: 1.90667rem; }
+    #evt_content .sec-3 .cake-2 {
+      width: 7.85333rem;
+      top: 5.33333rem;
+      left: 1.92rem; }
+    #evt_content .sec-3 .cake {
+      top: 6.13333rem;
+      left: 3.33333rem; }
+      #evt_content .sec-3 .cake canvas {
+        width: 7.01333rem;
+        height: 8.22667rem; }
+    #evt_content .sec-3 .go {
+      width: 5.04rem;
+      height: 0.86667rem;
+      background: url("../images/go.png") no-repeat;
+      background-size: 100%;
+      top: 12.30667rem;
+      left: 50%;
+      margin-left: -2.52rem; }
+  #evt_content .sec-footer {
+    background: url("../images/footer-bg.png") center no-repeat;
+    background-size: 100%;
+    position: relative;
+    padding-bottom: 0.26667rem; }
+    #evt_content .sec-footer .txt {
+      position: relative;
+      width: 5.86667rem;
+      padding-top: 0.26667rem;
+      padding-bottom: 0.66667rem;
+      margin: 0 auto;
+      color: #bebec0; }
+      #evt_content .sec-footer .txt h2 {
+        font-size: 0.4rem;
+        font-weight: normal;
+        color: #a19682;
+        margin-top: 0.26667rem; }
+      #evt_content .sec-footer .txt p {
+        font-size: 0.29333rem;
+        line-height: 0.46667rem;
+        color: #bebec0;
+        margin: 0.13333rem auto 0; }

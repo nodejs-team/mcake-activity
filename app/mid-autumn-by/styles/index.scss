@@ -33,7 +33,7 @@
     .mon{ width: px2rem(401); top: px2rem(0); left:px2rem(0);}
     .sicon{ width: px2rem(76); top:px2rem(30); left: auto; right:px2rem(40);}
     .title{ width: px2rem(408); top:px2rem(192); left: 50%; margin-left:px2rem(-204);}
-    .word{ width: px2rem(332);top:px2rem(604); left:px2rem(97); }
+    .word{ width: px2rem(390); top:px2rem(604); left:px2rem(50); }
 
   }
 
@@ -44,38 +44,38 @@
     }
     .row-0{
       .ka-1{ width: px2rem(571); top:px2rem(70); left:px2rem(40); }
-      .ws-1{ width: px2rem(500); top:px2rem(156); left:px2rem(208); }
-      .ws-1-q{ width: px2rem(509); top:px2rem(156); left:px2rem(76); }
+      .ws-1{ width: px2rem(636); top:px2rem(156); left:px2rem(76); }
+
     }
     .row-1{ height:px2rem(911);
       .w-1{ width: px2rem(625); top:px2rem(358); left:px2rem(40);}
-      .cloud-1-1{  width: px2rem(139);height: px2rem(52.5); top:px2rem(125); left:px2rem(108); background: url("../images/cloud-1-1.png"); background-size: 100%;}
-      .cloud-1-2{width: px2rem(99);height: px2rem(37); top:px2rem(625); left:px2rem(518); background: url("../images/cloud-1-2.png"); background-size: 100%;}
-      .c3{ top:px2rem(752); left:px2rem(287);}
+      .cloud-1-1{  width: px2rem(139); height: px2rem(53); top:px2rem(125); left:px2rem(108); background: url("../images/cloud-1-1.png") no-repeat; background-size: 100%;}
+      .cloud-1-2{width: px2rem(99);height: px2rem(37); top:px2rem(625); left:px2rem(518); background: url("../images/cloud-1-2.png") no-repeat; background-size: 100%;}
+      .c3{ background: url("../images/cloud-1-2.png") no-repeat; background-size: 100%; width: px2rem(99);height: px2rem(37); top:px2rem(752); left:px2rem(300); border: none;}
       .pic-1{ width: px2rem(323); top:px2rem(80); left:px2rem(175);}
       .cake-1{ width: px2rem(411); top:px2rem(80); left:auto; right:0;}
     }
 
     .row-2{ height:px2rem(761);
       .w-2{ width: px2rem(306); top:px2rem(224); left:auto; right: px2rem(40);}
-      .cloud-2-1{ width: px2rem(105);height: px2rem(39); top:px2rem(168); left:px2rem(605); background: url("../images/cloud-2-1.png"); background-size: 100%;}
-      .cloud-2-2{ width: px2rem(139);height: px2rem(52); top:px2rem(595); left:px2rem(304); background: url("../images/cloud-2-2.png"); background-size: 100%;}
+      .cloud-2-1{ width: px2rem(105);height: px2rem(39); top:px2rem(168); left:px2rem(605); background: url("../images/cloud-2-1.png") no-repeat; background-size: 100%;}
+      .cloud-2-2{ width: px2rem(139);height: px2rem(52); top:px2rem(595); left:px2rem(304); background: url("../images/cloud-2-2.png") no-repeat; background-size: 100%;}
       .pic-2{ width: px2rem(251); top:px2rem(52); left:px2rem(237);}
       .cake-2{ width: px2rem(393); top:px2rem(127); left:px2rem(0);}
     }
 
     .row-3{ height:px2rem(792);
       .w-3{ width: px2rem(245); top:px2rem(230); left:px2rem(40);}
-      .cloud-3-1{ width: px2rem(108); height: px2rem(40.5);  top:px2rem(165); left:px2rem(40); background: url("../images/cloud-3-1.png"); background-size: 100%;}
-      .cloud-3-2{ width: px2rem(158);height: px2rem(60);  top:px2rem(638); left:px2rem(400); background: url("../images/cloud-3-2.png"); background-size: 100%;}
+      .cloud-3-1{ width: px2rem(108); height: px2rem(40.5);  top:px2rem(165); left:px2rem(40); background: url("../images/cloud-3-1.png") no-repeat; background-size: 100%;}
+      .cloud-3-2{ width: px2rem(158);height: px2rem(60);  top:px2rem(638); left:px2rem(400); background: url("../images/cloud-3-2.png") no-repeat; background-size: 100%;}
       .cake-3{ width: px2rem(401); top:px2rem(160); left:auto; right: 0;}
       .pic-3{ width: px2rem(286); top:px2rem(60); left:px2rem(240);}
 
     }
     .row-4{height:px2rem(1075);
       .w-4{ width: px2rem(306); top:px2rem(160); left:auto; right: px2rem(40);}
-      .c-1{ width: px2rem(105); height: px2rem(39);  top:px2rem(124); left:px2rem(483); background: url("../images/cloud-2-1.png"); background-size: 100%;}
-      .c-2{ width: px2rem(139);height: px2rem(52.5); top:px2rem(590); left:px2rem(320); background: url("../images/cloud-2-2.png"); background-size: 100%;}
+      .c-1{ width: px2rem(105); height: px2rem(39);  top:px2rem(124); left:px2rem(483); background: url("../images/cloud-2-1.png") no-repeat; background-size: 100%;}
+      .c-2{ width: px2rem(139);height: px2rem(52.5); top:px2rem(590); left:px2rem(320); background: url("../images/cloud-2-2.png") no-repeat; background-size: 100%;}
       .pic-4{ width: px2rem(231); top:px2rem(80); left:px2rem(210);}
       .cake-4{ width: px2rem(379); top:px2rem(110); left:px2rem(0);}
       .more{ width: px2rem(750); bottom:px2rem(107); left:50%; margin-left: px2rem(-375);}

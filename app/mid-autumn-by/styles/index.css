@@ -32,9 +32,9 @@
       left: 50%;
       margin-left: -2.72rem; }
     #evt_content .sec-banner .word {
-      width: 4.42667rem;
+      width: 5.2rem;
       top: 8.05333rem;
-      left: 1.29333rem; }
+      left: 0.66667rem; }
   #evt_content .sec-1 {
     background: #eff7fc; }
     #evt_content .sec-1 .row {
@@ -47,11 +47,7 @@
       top: 0.93333rem;
       left: 0.53333rem; }
     #evt_content .sec-1 .row-0 .ws-1 {
-      width: 6.66667rem;
-      top: 2.08rem;
-      left: 2.77333rem; }
-    #evt_content .sec-1 .row-0 .ws-1-q {
-      width: 6.78667rem;
+      width: 8.48rem;
       top: 2.08rem;
       left: 1.01333rem; }
     #evt_content .sec-1 .row-1 {
@@ -62,21 +58,26 @@
         left: 0.53333rem; }
       #evt_content .sec-1 .row-1 .cloud-1-1 {
         width: 1.85333rem;
-        height: 0.7rem;
+        height: 0.70667rem;
         top: 1.66667rem;
         left: 1.44rem;
-        background: url("../images/cloud-1-1.png");
+        background: url("../images/cloud-1-1.png") no-repeat;
         background-size: 100%; }
       #evt_content .sec-1 .row-1 .cloud-1-2 {
         width: 1.32rem;
         height: 0.49333rem;
         top: 8.33333rem;
         left: 6.90667rem;
-        background: url("../images/cloud-1-2.png");
+        background: url("../images/cloud-1-2.png") no-repeat;
         background-size: 100%; }
       #evt_content .sec-1 .row-1 .c3 {
+        background: url("../images/cloud-1-2.png") no-repeat;
+        background-size: 100%;
+        width: 1.32rem;
+        height: 0.49333rem;
         top: 10.02667rem;
-        left: 3.82667rem; }
+        left: 4rem;
+        border: none; }
       #evt_content .sec-1 .row-1 .pic-1 {
         width: 4.30667rem;
         top: 1.06667rem;
@@ -98,14 +99,14 @@
         height: 0.52rem;
         top: 2.24rem;
         left: 8.06667rem;
-        background: url("../images/cloud-2-1.png");
+        background: url("../images/cloud-2-1.png") no-repeat;
         background-size: 100%; }
       #evt_content .sec-1 .row-2 .cloud-2-2 {
         width: 1.85333rem;
         height: 0.69333rem;
         top: 7.93333rem;
         left: 4.05333rem;
-        background: url("../images/cloud-2-2.png");
+        background: url("../images/cloud-2-2.png") no-repeat;
         background-size: 100%; }
       #evt_content .sec-1 .row-2 .pic-2 {
         width: 3.34667rem;
@@ -126,14 +127,14 @@
         height: 0.54rem;
         top: 2.2rem;
         left: 0.53333rem;
-        background: url("../images/cloud-3-1.png");
+        background: url("../images/cloud-3-1.png") no-repeat;
         background-size: 100%; }
       #evt_content .sec-1 .row-3 .cloud-3-2 {
         width: 2.10667rem;
         height: 0.8rem;
         top: 8.50667rem;
         left: 5.33333rem;
-        background: url("../images/cloud-3-2.png");
+        background: url("../images/cloud-3-2.png") no-repeat;
         background-size: 100%; }
       #evt_content .sec-1 .row-3 .cake-3 {
         width: 5.34667rem;
@@ -156,14 +157,14 @@
         height: 0.52rem;
         top: 1.65333rem;
         left: 6.44rem;
-        background: url("../images/cloud-2-1.png");
+        background: url("../images/cloud-2-1.png") no-repeat;
         background-size: 100%; }
       #evt_content .sec-1 .row-4 .c-2 {
         width: 1.85333rem;
         height: 0.7rem;
         top: 7.86667rem;
         left: 4.26667rem;
-        background: url("../images/cloud-2-2.png");
+        background: url("../images/cloud-2-2.png") no-repeat;
         background-size: 100%; }
       #evt_content .sec-1 .row-4 .pic-4 {
         width: 3.08rem;

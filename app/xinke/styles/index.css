@@ -1,0 +1,81 @@
+@charset "UTF-8";
+body {
+  overflow-x: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background: #f6f6f6; }
+
+.zhuanpan img {
+  width: 100%; }
+
+.evt-banner {
+  display: block;
+  position: relative !important;
+  width: 10rem;
+  overflow: hidden; }
+
+li {
+  list-style: none; }
+
+.evt-ad {
+  margin: 0.26667rem 0; }
+
+.btns {
+  position: relative;
+  float: right;
+  width: 1.73333rem;
+  height: 0.53333rem;
+  background: #ffcd20;
+  text-align: center;
+  border-radius: 0.26667rem;
+  cursor: pointer; }
+  .btns span {
+    display: block;
+    color: #000;
+    font-size: 0.29333rem;
+    line-height: 0.53333rem; }
+
+/*彈窗*/
+.zhuanpan-cover {
+  background-color: #000;
+  height: 100%;
+  left: 0;
+  opacity: 0.75;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 998;
+  display: none; }
+
+.zhuanpan {
+  width: 9.86667rem;
+  height: 12.94667rem;
+  margin-left: -5rem;
+  left: 50%;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  display: none; }
+
+.xinke {
+  top: 0;
+  left: 0;
+  width: 9.86667rem; }
+  .xinke canvas {
+    width: 9.86667rem;
+    height: 12.94667rem; }
+
+.xkbtn {
+  position: absolute;
+  width: 3.6rem;
+  height: 1.33333rem;
+  top: 10.93333rem;
+  left: 1.42667rem;
+  display: none; }
+  .xkbtn a {
+    display: block;
+    height: 100%; }
+
+.xkbtn-2 {
+  left: 5.2rem; }

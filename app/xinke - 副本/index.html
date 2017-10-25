@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+  <title>mcake活动</title>
+
+  <!-- build:css styles/index.css -->
+  <link rel="stylesheet" href="../commoncss/wap-normalize.css">
+  <link rel="stylesheet" href="styles/index.css">
+  <!-- endbuild-->
+</head>
+<body>
+
+<div id="evt_container">
+  <div id="iscroll">
+    <div class="wrap">
+      <button class="xk0">新客</button>
+
+        <!--新客-->
+      <div class="zhuanpan-cover"></div>
+      <div class="zhuanpan">
+        <div class="zhuanpanBg">
+            <div class="xinke">
+                <canvas width="750" height="971" id="xinker"></canvas>
+            </div>
+            <div class="xkbtn xkbtn-1"></div>
+            <div class="xkbtn xkbtn-2"><a href="#"></a></div>
+        </div>
+
+      </div>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+<script type="text/javascript" src="http://www.mcake.com/framework/jquery/jquery.min.js?v=1405950469"></script>
+<script src="http://edm.mcake.com/weifengwang/common/flexible.js"></script>
+<!-- build:js scripts/zhuanpan.js -->
+
+<script src="../commonjs/fastclick.js"></script>
+<script src="../commonjs/pubsub.js"></script>
+<script src="../commonjs/loader.js"></script>
+
+<script src="../commonjs/movieclip.js"></script>
+
+<script src="scripts/resdata.js"></script>
+<script src="scripts/index.js"></script>
+
+<!-- endbuild -->
+<script>
+
+    $('.xk0').click(function () {
+        $(".zhuanpan-cover,.zhuanpan").fadeIn(10);
+        animates.xinke();
+        $(".xkbtn").delay(5000).fadeIn(10);
+        $(".xkbtn-1").click(function () {
+            $(".zhuanpan-cover,.zhuanpan").fadeOut(10);
+        });
+    });
+
+</script>
+</body>
+</html>

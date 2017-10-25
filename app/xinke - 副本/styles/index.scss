@@ -1,0 +1,67 @@
+@function px2rem($n) {
+  @return ($n * 10 / 750) * 1rem; //设计稿一般都是750宽
+}
+
+@mixin font-dpr($font-size) {
+  font-size: $font-size;
+
+  [data-dpr="2"] & {
+    font-size: $font-size * 2;
+  }
+
+  [data-dpr="3"] & {
+    font-size: $font-size * 3;
+  }
+
+}
+body{ overflow-x: hidden; -webkit-backface-visibility: hidden;  backface-visibility: hidden; background: #f6f6f6; }
+
+.zhuanpan{
+  img {
+    width: 100%;
+  }
+}
+.evt-banner { display: block; position: relative !important; width: px2rem(750);  overflow: hidden;  }
+li{list-style: none;}
+
+.evt-ad{ margin: px2rem(20) 0;}
+
+.btns{position: relative; float: right; width:px2rem(130); height:px2rem(40); background:#ffcd20;  text-align: center; border-radius:px2rem(20); cursor: pointer;
+  span{ display: block; color: #000; font-size:px2rem(22); line-height:px2rem(40);}
+}
+
+/*彈窗*/
+.zhuanpan-cover{
+  background-color: #000;
+  height: 100%;
+  left: 0;
+  opacity: 0.75;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 998; display: none;
+}
+
+.zhuanpan{
+  width:px2rem(740);
+  height:px2rem(971);
+  margin-left: px2rem(-375);
+  left: 50%;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  z-index: 999; display: none;
+}
+
+
+.xinke{top: 0; left: 0;width:px2rem(740);
+  canvas {
+    width:px2rem(740);
+    height: px2rem(971);
+  }
+}
+.xkbtn{ position: absolute; width:px2rem(270); height: px2rem(100); top: px2rem(820); left: px2rem(107); display: none;
+  a{display: block; height: 100%; }
+}
+
+.xkbtn-2{ left: px2rem(390);}

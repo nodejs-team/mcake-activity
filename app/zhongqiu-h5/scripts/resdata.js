@@ -1,5 +1,4 @@
 var resData = [
-
     {
         "name":"s0-bg_jpg",
         "type":"image",
@@ -9,6 +8,11 @@ var resData = [
         "name":"s0-moon_png",
         "type":"image",
         "url":"s0-moon.png"
+    },
+    {
+        "name":"s0-shu_png",
+        "type":"image",
+        "url":"s0-shu.png"
     },
     {
         "name":"s0-title_png",
@@ -29,11 +33,6 @@ var resData = [
         "name":"s1-across_png",
         "type":"image",
         "url":"s1-across.png"
-    },
-    {
-        "name":"s1-bg_jpg",
-        "type":"image",
-        "url":"s1-bg.jpg"
     },
     {
         "name":"s1-btn-ky_png",
@@ -126,11 +125,6 @@ var resData = [
         "url":"s1-tips.png"
     },
     {
-        "name":"s2-bg_jpg",
-        "type":"image",
-        "url":"s2-bg.jpg"
-    },
-    {
         "name":"s2-moon_png",
         "type":"image",
         "url":"s2-moon.png"
@@ -154,11 +148,6 @@ var resData = [
         "name":"s2-word_png",
         "type":"image",
         "url":"s2-word.png"
-    },
-    {
-        "name":"s3-bg_jpg",
-        "type":"image",
-        "url":"s3-bg.jpg"
     },
     {
         "name":"s3-moon_png",
@@ -186,13 +175,178 @@ var resData = [
         "url":"s3-wen.png"
     },
     {
+        "name":"s-bg-cg_jpg",
+        "type":"image",
+        "url":"s-bg-cg.jpg"
+    },
+    {
+        "name":"s-bg-new_jpg",
+        "type":"image",
+        "url":"s-bg-new.jpg"
+    },
+    {
         "name":"share-1_png",
         "type":"image",
         "url":"share-1.png"
     },
     {
-        "name":"share-2_png",
+        "name":"time-0_png",
         "type":"image",
-        "url":"share-2.png"
+        "url":"time-0.png"
+    },
+    {
+        "name":"time-1_png",
+        "type":"image",
+        "url":"time-1.png"
+    },
+    {
+        "name":"time-2_png",
+        "type":"image",
+        "url":"time-2.png"
+    },
+    {
+        "name":"time-3_png",
+        "type":"image",
+        "url":"time-3.png"
+    },
+    {
+        "name":"yeliang_png",
+        "type":"image",
+        "url":"yeliang.png"
+    },
+    {
+        "name":"yueer_png",
+        "type":"image",
+        "url":"yueer.png"
+    },
+    {
+        "name":"yun-1_png",
+        "type":"image",
+        "url":"yun-1.png"
+    },
+    {
+        "name":"yun-2_png",
+        "type":"image",
+        "url":"yun-2.png"
+    },
+    {
+        "name":"yun-3_png",
+        "type":"image",
+        "url":"yun-3.png"
+    },
+    {
+        "name":"yun-4_png",
+        "type":"image",
+        "url":"yun-4.png"
+    },
+    {
+        "name":"z-btn_png",
+        "type":"image",
+        "url":"z-btn.png"
+    },
+    {
+        "name":"z-start_png",
+        "type":"image",
+        "url":"z-start.png"
+    },
+    {
+        "name":"z-w_png",
+        "type":"image",
+        "url":"z-w.png"
+    },
+    {
+        "name":"z-zl_png",
+        "type":"image",
+        "url":"z-zl.png"
+    },
+    {
+        "name":"flow-2_png",
+        "type":"image",
+        "url":"flow-2.png"
+    },
+    {
+        "name":"flow-3_png",
+        "type":"image",
+        "url":"flow-3.png"
+    },
+    {
+        "name":"flow-4_png",
+        "type":"image",
+        "url":"flow-4.png"
+    },
+    {
+        "name":"flowers_png",
+        "type":"image",
+        "url":"flowers.png"
+    },
+    {
+        "name":"game-bg_jpg",
+        "type":"image",
+        "url":"game-bg.jpg"
+    },
+    {
+        "name":"game-btn_png",
+        "type":"image",
+        "url":"game-btn.png"
+    },
+    {
+        "name":"game-btn-hl_png",
+        "type":"image",
+        "url":"game-btn-hl.png"
+    },
+    {
+        "name":"game-shuibo-1_png",
+        "type":"image",
+        "url":"game-shuibo-1.png"
+    },
+    {
+        "name":"game-shuibo-2_png",
+        "type":"image",
+        "url":"game-shuibo-2.png"
+    },
+    {
+        "name":"game-word1_png",
+        "type":"image",
+        "url":"game-word1.png"
+    },
+    {
+        "name":"game-word2-2_png",
+        "type":"image",
+        "url":"game-word2-2.png"
+    },
+    {
+        "name":"game-word3_png",
+        "type":"image",
+        "url":"game-word3.png"
+    },
+    {
+        "name":"hongbao-0_png",
+        "type":"image",
+        "url":"hongbao-0.png"
+    },
+    {
+        "name":"hongbao-1_png",
+        "type":"image",
+        "url":"hongbao-1.png"
+    },
+    {
+        "name":"hongbao-gai_png",
+        "type":"image",
+        "url":"hongbao-gai.png"
+    },
+    {
+        "name":"hongbao-zhi_png",
+        "type":"image",
+        "url":"hongbao-zhi.png"
+    },
+    {
+        "name":"jdtips_png",
+        "type":"image",
+        "url":"jdtips.png"
+    },
+    {
+        "name":"moon_png",
+        "type":"image",
+        "url":"moon.png"
     }
 ];

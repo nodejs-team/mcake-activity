@@ -1,0 +1,11 @@
+{
+	"groups":[{
+			"keys":"xinke_png",
+			"name":"preload"
+		}],
+	"resources":[{
+			"name":"xinke_png",
+			"type":"image",
+			"url":"xinke.png"
+		}]
+}
