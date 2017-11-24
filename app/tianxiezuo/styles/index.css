@@ -1,0 +1,119 @@
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden; }
+
+#evt_content {
+  background: url("../images/bg-2.jpg") repeat; }
+  #evt_content img {
+    width: 100%; }
+  #evt_content .sec-banner {
+    position: relative;
+    width: 10rem;
+    height: 9.47222rem;
+    background: url("../images/baner.png") no-repeat;
+    background-size: 100%;
+    z-index: 5; }
+    #evt_content .sec-banner div {
+      position: absolute; }
+    #evt_content .sec-banner .date {
+      width: 10.41667rem;
+      text-align: center;
+      color: #994347;
+      font-size: 0.33333rem;
+      top: 6.80556rem;
+      font-weight: bold; }
+  #evt_content .sec-2 {
+    position: relative;
+    height: 46.80556rem;
+    margin: -0.41667rem;
+    background: url("../images/bg.png") repeat;
+    z-index: 1; }
+    #evt_content .sec-2 div {
+      position: absolute; }
+    #evt_content .sec-2 .pic-1 {
+      width: 7.27778rem;
+      top: 1.75rem;
+      left: 50%;
+      margin-left: -3.63889rem; }
+    #evt_content .sec-2 .pic-2 {
+      width: 8.77778rem;
+      top: 15.26389rem;
+      left: 50%;
+      margin-left: -4.38889rem; }
+    #evt_content .sec-2 .pic-3 {
+      width: 9.06944rem;
+      top: 36.66667rem;
+      left: 50%;
+      margin-left: -4.53472rem; }
+    #evt_content .sec-2 .pic-4 {
+      width: 9.06944rem;
+      top: 41.375rem;
+      left: 50%;
+      margin-left: -4.53472rem; }
+    #evt_content .sec-2 .word-1 {
+      width: 5.90278rem;
+      top: 10.04167rem;
+      left: 50%;
+      margin-left: -2.95139rem; }
+    #evt_content .sec-2 .word-2 {
+      width: 6.25rem;
+      top: 24.01389rem;
+      left: 50%;
+      margin-left: -3.125rem; }
+    #evt_content .sec-2 .word-3 {
+      width: 6.125rem;
+      top: 31.625rem;
+      left: 50%;
+      margin-left: -3.0625rem; }
+    #evt_content .sec-2 .go-buy {
+      width: 3.19444rem;
+      height: 1.05556rem;
+      top: 29.02778rem;
+      left: 50%;
+      margin-left: -1.59722rem;
+      color: #fff;
+      background: #f19ec2;
+      text-align: center; }
+      #evt_content .sec-2 .go-buy a {
+        display: block;
+        line-height: 1.05556rem;
+        font-size: 0.36111rem;
+        color: #fff; }
+  #evt_content .sec-footer {
+    height: 8.79167rem;
+    background: #ffedef;
+    background-size: 100%;
+    position: relative;
+    box-shadow: 0 0 0.27778rem #c5c5c5; }
+    #evt_content .sec-footer .more {
+      position: absolute;
+      right: 0rem;
+      top: 2.08333rem;
+      width: 1.80556rem;
+      height: 1.80556rem; }
+    #evt_content .sec-footer .txt {
+      position: relative;
+      width: 8.61111rem;
+      padding-top: 0.69444rem;
+      padding-bottom: 0.69444rem;
+      margin: 0 auto;
+      color: #bebec0; }
+      #evt_content .sec-footer .txt h2 {
+        font-size: 0.41667rem;
+        font-weight: normal;
+        color: #000;
+        margin-top: 0.27778rem;
+        margin-bottom: 0.27778rem;
+        text-align: center; }
+      #evt_content .sec-footer .txt p {
+        font-size: 0.30556rem;
+        padding-left: 0.27778rem;
+        line-height: 0.48611rem;
+        text-indent: -0.41667rem;
+        color: #000;
+        margin: 0.06944rem auto 0; }
+      #evt_content .sec-footer .txt p.p1 {
+        margin: 0rem auto 0; }

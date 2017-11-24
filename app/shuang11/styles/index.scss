@@ -23,7 +23,13 @@
   visibility: hidden;
 }
 
+#userBox{ position: relative; width: px2rem(93); height:px2rem(74);
+    line-height:px2rem(12); margin-top: px2rem(-80);
+  .icon-car{ position: relative; width:px2rem(93); height: px2rem(74); background: url("../images/icon-car.png") center no-repeat; background-size: 100%;
+    .s-amount{ position: absolute;display: block; right: px2rem(5); top: px2rem(5); width: px2rem(30);  height:px2rem(30); border-radius: 50%; font-size: px2rem(16); line-height: px2rem(30); text-align: center; background: #8a1c2b; color: #fff; }
+  }
 
+}
 #evt_content{ background: #fff;
   div{position:absolute;}
   img{width:100%;}
@@ -39,8 +45,9 @@
       .you{width: px2rem(566); height: px2rem(149); margin:0 auto; }
       .baoyouli{ padding-top: px2rem(70);
           dt{width:px2rem(666); margin:0 auto px2rem(10);}
-          .content{ margin-left: px2rem(8);}
-          dd{width: px2rem(159); float: left; margin-right: px2rem(7); cursor: pointer;}
+          .content{ padding-left: px2rem(8); }
+          dd{width: px2rem(159); float: left; margin-right: px2rem(8); cursor: pointer;}
+          dd:last-child{margin-right: 0;}
         }
     }
   }
@@ -201,12 +208,18 @@
   .s-prices{font-size: px2rem(22); padding-left: px2rem(20);
     span{ font-size: px2rem(45);}
   }
-  .btns{ width: 100%; position: absolute; bottom:px2rem(0); display: flex; height: px2rem(100); line-height: px2rem(100); flex-direction: row; text-align: center; font-size: px2rem(30); color: #fff;
-    div{ flex: 1; cursor: pointer;}
-    .go-car{background: #b39774; border-bottom-left-radius:px2rem(20); }
-    .go-buy{background: #a5002f; border-bottom-right-radius:px2rem(20);}
+  .btns{ width: 100%; position: absolute; bottom:px2rem(0); display: flex; height: px2rem(100); line-height: px2rem(100); flex-direction: row;  text-align: center; font-size: px2rem(30); color: #fff;
+    div{ flex: 1; cursor: pointer; width: 50%;}
+    .go-car{background: #b39774; border-bottom-left-radius:px2rem(20); float: left; }
+    .go-buy{background: #a5002f; border-bottom-right-radius:px2rem(20); float: left;}
   }
 
 }
 
-
+@media screen and (max-width:330px){
+  .baoyouli {
+    .content {
+      padding-left: px2rem(15) !important;
+    }
+  }
+}

@@ -1,0 +1,97 @@
+#evt_container{background:url(../images/bg.jpg);
+  img{width:100%;}
+  .top_icon{position:absolute; width:20.15%; top:424px; left:50%; margin:0 0 0 -27.4%;}
+  .top_btn{position:absolute; width:10%; top:517px;  line-height: 40px;
+    background:#b50e0d;  left:50%; font-weight: bold;  font-family:'mfshangya'; margin:0 0 0 -22.4%; font-size: 24px;
+    color:#fff; text-align: center; border-radius: 5px; }
+  .top_quality{width:167px; margin:-83px auto 0 auto;}
+
+  .banner{width:100%;
+    .content{ position: relative; width: 1200px; height: 836px; margin:0 auto;}
+    .notes{position:absolute; top:0px; left: 566px; width:656px; display: none;}
+    .title{position:absolute; top:10px; left: 50%; width:1411px; margin-left:-705.5px;}
+    .logo{position:absolute; top:55px; left: 35px; width:448px;}
+  }
+
+
+  .top_pic_ps{background: url("../images/top_pic.jpg") center top no-repeat;
+    .note{display: block;}
+  }
+  .top_pic_38{background: url("../images/top_pic_38.jpg") center top no-repeat;
+    .note_38{display: block;}
+  }
+  .top_pic_520{background: url("../images/top_pic_520.jpg") center top no-repeat;
+    .note_520{display: block;}
+  }
+  .top_pic_christmasDay{background: url("../images/top_pic_christmasDay.jpg") center top no-repeat;
+    .note_christmasDay{display: block;}
+  }
+  .top_pic_lover{background: url("../images/top_pic_lover.jpg") center top no-repeat;
+    .note_lover{display: block;}
+  }
+  .top_pic_mother{background: url("../images/top_pic_mother.jpg") center top no-repeat;
+    .note_mother{display: block;}
+  }
+  .top_pic_newyear{background: url("../images/top_pic_newyear.jpg") center top no-repeat;
+    .note_newyear{display: block;}
+  }
+
+
+  .act{height:625px; width: 1200px; margin:55px auto 0 auto; position:relative;
+    .act_text{width:1200px; margin:0 auto; font-size: 60px; text-align: center; color: #4b87b2;
+      b{font-size: 70px; color: #08499d;}
+    }
+    .act_sheng{width:117px; position:absolute; top:287px; left:50%; margin-left:-550px;}
+    .act_ge{width:60px; position:absolute; top:287px; left:50%; margin-left:432px;}
+    .plate{width:521px; top:64px; left:50%; margin-left:-270px; position:absolute;
+      span{position:absolute; display:block; font-family:'mfshangya'; color:#1b67c8; font-size:222px; top:145px; left:196px; width:150px; height:250px; line-height:250px; text-align:center;}
+      .word{width:166px; position:absolute; top:186px; left:186px;}
+    }
+    .plate1{margin-left:-544px;}
+    .plate3{margin-left:5px;}
+    .plate4{margin-left:-444px;}
+    .plate5{margin-left:-105px;}
+    .act_sheng.sheng{ margin-left:-490px;}
+    .act_ge.ge{margin-left:362px;}
+
+  }
+  .act_next{text-align:center; color:#b50e0d;height: 295px;
+    h2{margin:0 0 68px 0; font-size:60px;}
+    p{font-size:36px;}
+
+
+  }
+  .act_end{
+    .plate{
+      span{font-size: 128px;}
+    }
+  }
+
+  .slider{width:1200px; position:relative; margin:0 auto;
+    .prev,.next{width:79px; top:148px; position:absolute;}
+    .prev{left:0;}
+    .next{right:0;}
+  }
+  .slideOuter{width:1028px; height:368px; border-bottom:2px solid #959595; overflow:hidden; margin:0 auto;
+    ul{width:1650px;}
+    li{width:242px; margin:0 20px 18px 0; color:#242424; font-size:12px; float:left;
+      .fl{float:left;}
+      .fr{float:right;}
+      .p1{margin:26px 0 3px 0;}
+      .p2{
+        .fr{color:#1e70d7;
+          span{font-size:19px;}
+        }
+        .fl{padding-top:5px;}
+      }
+      .buybtn{width:100%; height:30px; display:block; border-radius:2px; margin:16px 0 0 0; background:#1859ac; color:#ffffff; text-align:center; line-height:30px; font-size:16px; position:static;}
+    }
+  }
+  .tower1{width:533px; left:50%; margin-left:427px; top:732px; position:absolute;}
+  .tower2{width:444px; left:50%; margin-left:-960px; bottom:0; position:absolute;}
+  .text1893{width:422px; margin:26px auto 0 auto;}
+  .rules{width:920px; font-size:18px; color:#2b2b2b; line-height:28px; margin:122px auto 152px auto;
+    h2{font-size:18px; font-weight:normal;text-indent: -28px;}
+    p{text-indent: -28px;}
+  }
+}

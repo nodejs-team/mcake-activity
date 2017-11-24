@@ -172,9 +172,10 @@
         /*初始化*/
         numInit:function () {
             var self = this;
-            var Oldprice = this.$els.find('.price_p li.cur').data('oldprice');
+            var Oldprice = 0;
 
             this.$els.each(function () {
+                Oldprice = $(this).find('.price_p li.cur').data('oldprice');
                 var totalNum = $(this).find(".num").val();
                 var totalOldprice = Oldprice * totalNum;
                 var ix = parseInt(totalNum / 2);

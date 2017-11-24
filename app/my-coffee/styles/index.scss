@@ -1,0 +1,198 @@
+@function px2rem($n) {
+  @return ($n * 10 / 750) * 1rem; //设计稿一般都是750宽
+}
+
+@mixin font-dpr($font-size){
+  font-size: $font-size;
+
+  [data-dpr="2"] & {
+    font-size: $font-size * 2;
+  }
+
+  [data-dpr="3"] & {
+    font-size: $font-size * 3;
+  }
+
+}
+
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+
+#evt_content{ background: #fff;
+  img{width:100%;}
+  .sec-banner{position: relative; z-index: 2;
+    div{position:absolute;}
+    height: px2rem(1195);  background:#fef9f7;
+    .banner-title{ width: px2rem(540); top:px2rem(0); left:px2rem(117);}
+    .banner-w{ width: px2rem(237); top:px2rem(334); left:px2rem(446);}
+    .banner-girl{ top:px2rem(370); left:px2rem(50);
+      canvas {
+        width: px2rem(271);
+        height: px2rem(320);
+      }
+    }
+    .banner-cf{ width: px2rem(360); top:px2rem(560); left:px2rem(326);}
+    .banner-cake{ width: px2rem(630); top:px2rem(783); left:px2rem(0);}
+
+  }
+
+
+  .sec-ad{position: relative; width: px2rem(750); height: px2rem(375); background: #ffffff;
+    div{position:absolute;}
+    .more-1{ left:50%; margin-left: px2rem(-368.5);
+      canvas {
+        width: px2rem(737);
+        height: px2rem(393);
+      }
+    }
+    .more-2{ left:50%; margin-left: px2rem(-348);
+      canvas {
+        width: px2rem(696);
+        height: px2rem(427);
+      }
+    }
+  }
+
+  .sec-1{position: relative; z-index: 1;  height: px2rem(1658); background: url("../images/s1-bg.jpg") repeat;
+    div{position:absolute;}
+    .cake-1{ width: px2rem(717); top:px2rem(100); left:px2rem(30);}
+    .w-1{ width: px2rem(373); top:px2rem(1348); left:px2rem(117);}
+    .price{ top:px2rem(770); }
+  }
+
+  .sec-2{position: relative; z-index: 1;  height: px2rem(1712); background:#f1f4fa;
+    div{position:absolute;}
+    .cake-2{ width: px2rem(716); top:px2rem(62); left:px2rem(0);}
+    .w-2{top:px2rem(1185); left:px2rem(50);
+      canvas {
+        width: px2rem(622);
+        height: px2rem(519);
+      }
+    }
+
+    .price{top:px2rem(788);
+      .price_p li{ border: #465b9c 1px solid !important; }
+      .price_p li.cur {background:#465b9c !important; color: #fff !important; border: #465b9c 1px solid !important;  }
+      .buy_btn_box li span {  background: #465b9c; color: #fff; }
+      .price_num dl dd{ border: #465b9c 1px solid !important; }
+      .price_num dl dd.on { background: #465b9c; color: #fff; }
+      .line{border-bottom: 1px dashed #465b9c;}
+    }
+
+  }
+  .sec-3{position: relative; z-index: 1;  height: px2rem(1604); background: url("../images/s3-bg.jpg") repeat;
+    div{position:absolute;}
+    .cake-3{ width: px2rem(683); top:px2rem(82); right:px2rem(0);}
+    .w-3{ top:px2rem(1200); left:px2rem(50);
+      canvas {
+        width: px2rem(648);
+        height: px2rem(417);
+      }
+    }
+    .price{top:px2rem(717);
+      .price_p li{ border: #b22309 1px solid !important; }
+      .price_p li.cur {background:#b22309 !important; color: #fff !important; border: #b22309 1px solid !important;  }
+      .buy_btn_box li span {  background: #b22309; color: #fff; }
+      .price_num dl dd{ border: #b22309 1px solid !important; }
+      .price_num dl dd.on { background: #b22309; color: #fff; }
+      .line{border-bottom: 1px dashed #b22309;}
+    }
+  }
+
+  .sec-4{position: relative; z-index: 1;  height: px2rem(1330); background:#faf1df;
+    div{position:absolute;}
+    .cake-4{ width: px2rem(701); top:px2rem(60); left:px2rem(0);}
+    .price{top:px2rem(718);
+      .price_p li{ border: #eeb142 1px solid !important; }
+      .price_p li.cur {background:#eeb142 !important; color: #fff !important; border: #eeb142 1px solid !important;  }
+      .buy_btn_box li span {  background: #eeb142; color: #fff; }
+      .price_num dl dd{ border: #eeb142 1px solid !important; }
+      .price_num dl dd.on { background: #eeb142; color: #fff; }
+      .line{border-bottom: 1px dashed #eeb142;}
+    }
+  }
+
+  .sec-5{position: relative; z-index: 1;  height: px2rem(1330);  background: url("../images/s6-bg.jpg") repeat;
+    div{position:absolute;}
+    .cake-5{ width: px2rem(701); top:px2rem(60); right:px2rem(0);}
+    .price{top:px2rem(799);
+      .price_p li{ border: #829da6 1px solid !important; }
+      .price_p li.cur {background:#829da6 !important; color: #fff !important; border: #829da6 1px solid !important;  }
+      .buy_btn_box li span {  background: #829da6; color: #fff; }
+      .price_num dl dd{ border: #829da6 1px solid !important; }
+      .price_num dl dd.on { background: #829da6; color: #fff; }
+      .line{border-bottom: 1px dashed #829da6;}
+    }
+  }
+
+
+
+
+  /*价格*/
+.price{ position: absolute; left: 50%; margin-left: px2rem(-255);  width: px2rem(510); height: px2rem(560); color: #000;
+    div{position: relative;}
+  .line{ width: 96%; border-bottom: 1px dashed #a6e0cc;}
+   .price_s{ margin: px2rem(40) auto 0;
+       h2{font-size:  px2rem(30); font-weight: normal; line-height: px2rem(50); color: #000; padding-left: px2rem(20);
+         i{position: absolute; left: 0; bottom: 0; font-size:  px2rem(20); font-style: normal;}
+         span{font-size: px2rem(47); color: #000; vertical-align:text-bottom; }
+       }
+       s{font-size:  px2rem(26); color: #888888; font-weight: normal; line-height:  px2rem(30); }
+   }
+    .price_p{margin: px2rem(35) 0; color: #000;}
+    .price_p li { cursor: pointer;  float: left;  height: px2rem(80);  text-align: center;  width:  px2rem(80); border-radius: 50%; border: #a6e0cc 1px solid;  margin-right:  px2rem(60);
+    span{ display: block; font-size: px2rem(25); line-height:  px2rem(80); font-weight: bold; }
+    }
+    .price_p li:last-child{margin-right: 0;}
+    .price_p li.cur {  background:#a6e0cc !important; border: #a6e0cc 1px solid !important;  }
+
+    .price_num{ margin-bottom: px2rem(35); }
+    .price_num dl {  float: right; margin-right: px2rem(15); }
+    .price_num dl dd { border: #a6e0cc 1px solid; float: left; cursor: pointer;  width: px2rem(50); height: px2rem(50);text-align: center; border-radius:50%; vertical-align: middle; overflow:hidden;
+    span{display:block; line-height: px2rem(46); font-size: px2rem(30);}
+    }
+    .price_num dl dd.on {  background: #a6e0cc; }
+
+
+    .price_num dl dt {  float: left;  height:  px2rem(50);  width:  px2rem(140);  margin: 0 px2rem(10);  }
+    .price_num dl dt input,.num-span { font-size: px2rem(40); background: rgba(0, 0, 0, 0) none repeat scroll 0 0;  border: none;  color: #000;  height: 100%; line-height: px2rem(50); text-align: center;  width: 100%; -webkit-text-fill-color:#000;  -webkit-opacity:1;  opacity: 1; text-align: center; display: block;   }
+  input.disabled{-webkit-text-fill-color:#000;  -webkit-opacity:1;  opacity: 1; }
+  .price_l{display:block; float: left; font-size: px2rem(27);  line-height:px2rem(50); color: #000; }
+
+
+
+    .buy_btn_box {  overflow: hidden; margin-top:  px2rem(70);  }
+    .buy_btn_box li {  float: left; width:48%; height: px2rem(62); margin-right:  px2rem(20);  }
+    .buy_btn_box li:last-child{margin-right: 0;}
+    .buy_btn_box li span { display: block; background: #a6e0cc none repeat scroll 0 0;  color: #000; cursor: pointer; height:  100%; line-height:  px2rem(62); font-size:  px2rem(30); text-align: center; font-weight: bold;  }
+}
+
+.price.fr{text-align: right;
+    h2,s{ text-align: right; }
+    .price_p li{ float: right; margin-left: px2rem(20); margin-right: 0;}
+    .price_num dl{float: right;}
+    .price_num dd{float: right;}
+    .price_num dt{float: right;}
+    .buy_btn_box li{float: right; margin-left:  px2rem(10); margin-right: 0; }
+}
+
+
+
+  .sec-footer{background:#f3f8fa; position: relative; padding-bottom: px2rem(20);
+    .txt{ position: relative; width:px2rem(660); padding-top: px2rem(80); padding-bottom: px2rem(50); margin: 0 auto;  color: #000;
+      h2{font-size: px2rem(30); font-weight: normal; margin-top: px2rem(20);margin-bottom: px2rem(20); }
+      p{ font-size: px2rem(22); padding-left: px2rem(110); line-height:px2rem(35);  text-indent: px2rem(-110);
+        margin:px2rem(20) auto 0;}
+      p.p1{margin:px2rem(0) auto 0;}
+    }
+
+
+  }
+
+}

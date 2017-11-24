@@ -6,6 +6,32 @@
   height: 0;
   visibility: hidden; }
 
+#userBox {
+  position: relative;
+  width: 1.24rem;
+  height: 0.98667rem;
+  line-height: 0.16rem;
+  margin-top: -1.06667rem; }
+  #userBox .icon-car {
+    position: relative;
+    width: 1.24rem;
+    height: 0.98667rem;
+    background: url("../images/icon-car.png") center no-repeat;
+    background-size: 100%; }
+    #userBox .icon-car .s-amount {
+      position: absolute;
+      display: block;
+      right: 0.06667rem;
+      top: 0.06667rem;
+      width: 0.4rem;
+      height: 0.4rem;
+      border-radius: 50%;
+      font-size: 0.21333rem;
+      line-height: 0.4rem;
+      text-align: center;
+      background: #8a1c2b;
+      color: #fff; }
+
 #evt_content {
   background: #fff; }
   #evt_content div {
@@ -43,12 +69,14 @@
           width: 8.88rem;
           margin: 0 auto 0.13333rem; }
         #evt_content .sec-1 .mianyou .baoyouli .content {
-          margin-left: 0.10667rem; }
+          padding-left: 0.10667rem; }
         #evt_content .sec-1 .mianyou .baoyouli dd {
           width: 2.12rem;
           float: left;
-          margin-right: 0.09333rem;
+          margin-right: 0.10667rem;
           cursor: pointer; }
+        #evt_content .sec-1 .mianyou .baoyouli dd:last-child {
+          margin-right: 0; }
   #evt_content .ad {
     position: relative;
     width: 10rem; }
@@ -437,10 +465,17 @@
     color: #fff; }
     .Select .btns div {
       flex: 1;
-      cursor: pointer; }
+      cursor: pointer;
+      width: 50%; }
     .Select .btns .go-car {
       background: #b39774;
-      border-bottom-left-radius: 0.26667rem; }
+      border-bottom-left-radius: 0.26667rem;
+      float: left; }
     .Select .btns .go-buy {
       background: #a5002f;
-      border-bottom-right-radius: 0.26667rem; }
+      border-bottom-right-radius: 0.26667rem;
+      float: left; }
+
+@media screen and (max-width: 330px) {
+  .baoyouli .content {
+    padding-left: 0.2rem !important; } }

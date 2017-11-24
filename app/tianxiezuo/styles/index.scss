@@ -1,0 +1,67 @@
+@function px2rem($n) {
+  @return ($n * 10 / 720) * 1rem; //设计稿一般都是750宽
+}
+
+@mixin font-dpr($font-size){
+  font-size: $font-size;
+
+  [data-dpr="2"] & {
+    font-size: $font-size * 2;
+  }
+
+  [data-dpr="3"] & {
+    font-size: $font-size * 3;
+  }
+
+}
+
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+
+#evt_content{  background:url("../images/bg-2.jpg") repeat;
+  img{width:100%;}
+
+  .sec-banner{position: relative; width: px2rem(720);  height: px2rem(682);  background:url("../images/baner.png") no-repeat; background-size: 100%; z-index: 5;
+    div{position:absolute;}
+    .date{ width: px2rem(750); text-align: center; color: #994347; font-size: px2rem(24); top:px2rem(490); font-weight: bold; }
+  }
+
+  .sec-2{  position: relative; height: px2rem(3370); margin: px2rem(-30); background:url("../images/bg.png") repeat; z-index: 1;
+    div{position:absolute;}
+    .pic-1{width: px2rem(524); top: px2rem(126); left: 50%; margin-left: px2rem(-262); }
+    .pic-2{width: px2rem(632); top: px2rem(1099); left: 50%; margin-left: px2rem(-316); }
+    .pic-3{width: px2rem(653); top: px2rem(2640); left: 50%; margin-left: px2rem(-326.5); }
+    .pic-4{width: px2rem(653); top: px2rem(2979); left: 50%; margin-left: px2rem(-326.5); }
+
+    .word-1{width: px2rem(425); top: px2rem(723); left: 50%; margin-left: px2rem(-212.5); }
+    .word-2{width: px2rem(450); top: px2rem(1729); left: 50%; margin-left: px2rem(-225); }
+    .word-3{width: px2rem(441); top: px2rem(2277); left: 50%; margin-left: px2rem(-220.5); }
+    .go-buy{width: px2rem(230); height:px2rem(76);  top: px2rem(2090); left: 50%; margin-left: px2rem(-115);color: #fff; background: #f19ec2; text-align: center;
+      a{display: block; line-height: px2rem(76); font-size: px2rem(26); color: #fff; }
+    }
+
+  }
+
+
+  .sec-footer{ height: px2rem(633);  background:#ffedef; background-size: 100%; position: relative; box-shadow: 0 0 px2rem(20) #c5c5c5;
+    .more{ position: absolute; right:px2rem(0); top:px2rem(150); width:px2rem(130); height:px2rem(130);}
+    .txt{ position: relative; width:px2rem(620); padding-top: px2rem(50); padding-bottom: px2rem(50); margin: 0 auto;  color: #bebec0;
+      h2{font-size: px2rem(30); font-weight: normal; color: #000; margin-top: px2rem(20); margin-bottom: px2rem(20); text-align:center;}
+      p{ font-size: px2rem(22); padding-left: px2rem(20); line-height:px2rem(35);  text-indent: px2rem(-30); color: #000;
+        margin:px2rem(5) auto 0;}
+      p.p1{margin:px2rem(0) auto 0;}
+    }
+
+
+  }
+
+}
+
+
+

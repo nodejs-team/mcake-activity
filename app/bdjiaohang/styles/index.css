@@ -1,0 +1,228 @@
+#evt_container {
+  background: url(../images/bg.jpg); }
+  #evt_container img {
+    width: 100%; }
+  #evt_container .top_icon {
+    position: absolute;
+    width: 20.15%;
+    top: 424px;
+    left: 50%;
+    margin: 0 0 0 -27.4%; }
+  #evt_container .top_btn {
+    position: absolute;
+    width: 10%;
+    top: 517px;
+    line-height: 40px;
+    background: #b50e0d;
+    left: 50%;
+    font-weight: bold;
+    font-family: 'mfshangya';
+    margin: 0 0 0 -22.4%;
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px; }
+  #evt_container .top_quality {
+    width: 167px;
+    margin: -83px auto 0 auto; }
+  #evt_container .banner {
+    width: 100%; }
+    #evt_container .banner .content {
+      position: relative;
+      width: 1200px;
+      height: 836px;
+      margin: 0 auto; }
+    #evt_container .banner .notes {
+      position: absolute;
+      top: 0px;
+      left: 566px;
+      width: 656px;
+      display: none; }
+    #evt_container .banner .title {
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      width: 1411px;
+      margin-left: -705.5px; }
+    #evt_container .banner .logo {
+      position: absolute;
+      top: 55px;
+      left: 35px;
+      width: 448px; }
+  #evt_container .top_pic_ps {
+    background: url("../images/top_pic.jpg") center top no-repeat; }
+    #evt_container .top_pic_ps .note {
+      display: block; }
+  #evt_container .top_pic_38 {
+    background: url("../images/top_pic_38.jpg") center top no-repeat; }
+    #evt_container .top_pic_38 .note_38 {
+      display: block; }
+  #evt_container .top_pic_520 {
+    background: url("../images/top_pic_520.jpg") center top no-repeat; }
+    #evt_container .top_pic_520 .note_520 {
+      display: block; }
+  #evt_container .top_pic_christmasDay {
+    background: url("../images/top_pic_christmasDay.jpg") center top no-repeat; }
+    #evt_container .top_pic_christmasDay .note_christmasDay {
+      display: block; }
+  #evt_container .top_pic_lover {
+    background: url("../images/top_pic_lover.jpg") center top no-repeat; }
+    #evt_container .top_pic_lover .note_lover {
+      display: block; }
+  #evt_container .top_pic_mother {
+    background: url("../images/top_pic_mother.jpg") center top no-repeat; }
+    #evt_container .top_pic_mother .note_mother {
+      display: block; }
+  #evt_container .top_pic_newyear {
+    background: url("../images/top_pic_newyear.jpg") center top no-repeat; }
+    #evt_container .top_pic_newyear .note_newyear {
+      display: block; }
+  #evt_container .act {
+    height: 625px;
+    width: 1200px;
+    margin: 55px auto 0 auto;
+    position: relative; }
+    #evt_container .act .act_text {
+      width: 1200px;
+      margin: 0 auto;
+      font-size: 60px;
+      text-align: center;
+      color: #4b87b2; }
+      #evt_container .act .act_text b {
+        font-size: 70px;
+        color: #08499d; }
+    #evt_container .act .act_sheng {
+      width: 117px;
+      position: absolute;
+      top: 287px;
+      left: 50%;
+      margin-left: -550px; }
+    #evt_container .act .act_ge {
+      width: 60px;
+      position: absolute;
+      top: 287px;
+      left: 50%;
+      margin-left: 432px; }
+    #evt_container .act .plate {
+      width: 521px;
+      top: 64px;
+      left: 50%;
+      margin-left: -270px;
+      position: absolute; }
+      #evt_container .act .plate span {
+        position: absolute;
+        display: block;
+        font-family: 'mfshangya';
+        color: #1b67c8;
+        font-size: 222px;
+        top: 145px;
+        left: 196px;
+        width: 150px;
+        height: 250px;
+        line-height: 250px;
+        text-align: center; }
+      #evt_container .act .plate .word {
+        width: 166px;
+        position: absolute;
+        top: 186px;
+        left: 186px; }
+    #evt_container .act .plate1 {
+      margin-left: -544px; }
+    #evt_container .act .plate3 {
+      margin-left: 5px; }
+    #evt_container .act .plate4 {
+      margin-left: -444px; }
+    #evt_container .act .plate5 {
+      margin-left: -105px; }
+    #evt_container .act .act_sheng.sheng {
+      margin-left: -490px; }
+    #evt_container .act .act_ge.ge {
+      margin-left: 362px; }
+  #evt_container .act_next {
+    text-align: center;
+    color: #b50e0d;
+    height: 295px; }
+    #evt_container .act_next h2 {
+      margin: 0 0 68px 0;
+      font-size: 60px; }
+    #evt_container .act_next p {
+      font-size: 36px; }
+  #evt_container .act_end .plate span {
+    font-size: 128px; }
+  #evt_container .slider {
+    width: 1200px;
+    position: relative;
+    margin: 0 auto; }
+    #evt_container .slider .prev, #evt_container .slider .next {
+      width: 79px;
+      top: 148px;
+      position: absolute; }
+    #evt_container .slider .prev {
+      left: 0; }
+    #evt_container .slider .next {
+      right: 0; }
+  #evt_container .slideOuter {
+    width: 1028px;
+    height: 368px;
+    border-bottom: 2px solid #959595;
+    overflow: hidden;
+    margin: 0 auto; }
+    #evt_container .slideOuter ul {
+      width: 1650px; }
+    #evt_container .slideOuter li {
+      width: 242px;
+      margin: 0 20px 18px 0;
+      color: #242424;
+      font-size: 12px;
+      float: left; }
+      #evt_container .slideOuter li .fl {
+        float: left; }
+      #evt_container .slideOuter li .fr {
+        float: right; }
+      #evt_container .slideOuter li .p1 {
+        margin: 26px 0 3px 0; }
+      #evt_container .slideOuter li .p2 .fr {
+        color: #1e70d7; }
+        #evt_container .slideOuter li .p2 .fr span {
+          font-size: 19px; }
+      #evt_container .slideOuter li .p2 .fl {
+        padding-top: 5px; }
+      #evt_container .slideOuter li .buybtn {
+        width: 100%;
+        height: 30px;
+        display: block;
+        border-radius: 2px;
+        margin: 16px 0 0 0;
+        background: #1859ac;
+        color: #ffffff;
+        text-align: center;
+        line-height: 30px;
+        font-size: 16px;
+        position: static; }
+  #evt_container .tower1 {
+    width: 533px;
+    left: 50%;
+    margin-left: 427px;
+    top: 732px;
+    position: absolute; }
+  #evt_container .tower2 {
+    width: 444px;
+    left: 50%;
+    margin-left: -960px;
+    bottom: 0;
+    position: absolute; }
+  #evt_container .text1893 {
+    width: 422px;
+    margin: 26px auto 0 auto; }
+  #evt_container .rules {
+    width: 920px;
+    font-size: 18px;
+    color: #2b2b2b;
+    line-height: 28px;
+    margin: 122px auto 152px auto; }
+    #evt_container .rules h2 {
+      font-size: 18px;
+      font-weight: normal;
+      text-indent: -28px; }
+    #evt_container .rules p {
+      text-indent: -28px; }
