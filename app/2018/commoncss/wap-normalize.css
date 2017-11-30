@@ -11,7 +11,7 @@ body{
     height: 0;     /*高度为0；*/
 }
 #evt_container{position:relative;width:10rem; overflow:hidden; margin:0 auto;}
-#evt_container *{  box-sizing: border-box;  background-repeat: no-repeat;   -webkit-tap-highlight-color: rgba(0,0,0,0);  tap-highlight-color: rgba(0,0,0,0);  -webkit-appearance: none;  -moz-appearance: none;  appearance: none;  -webkit-focus-ring-color: rgba(0,0,0,0);  focus-ring-color: rgba(0,0,0,0);  resize: none;  outline: 0;}
+#evt_container *{  box-sizing: border-box;  background-repeat: no-repeat;  vertical-align: middle;  -webkit-tap-highlight-color: rgba(0,0,0,0);  tap-highlight-color: rgba(0,0,0,0);  -webkit-appearance: none;  -moz-appearance: none;  appearance: none;  -webkit-focus-ring-color: rgba(0,0,0,0);  focus-ring-color: rgba(0,0,0,0);  resize: none;  outline: 0;}
 #evt_container *:before, #evt_container *:after { box-sizing: border-box;}
 #evt_container a:focus {outline: thin dotted;}
 #evt_container a:active, #evt_container a:hover {outline: 0;}

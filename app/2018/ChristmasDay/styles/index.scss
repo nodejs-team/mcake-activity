@@ -1,0 +1,77 @@
+@function px2rem($n) {
+  @return ($n * 10 / 750) * 1rem; //设计稿一般都是750宽
+}
+
+@mixin font-dpr($font-size){
+  font-size: $font-size;
+
+  [data-dpr="2"] & {
+    font-size: $font-size * 2;
+  }
+
+  [data-dpr="3"] & {
+    font-size: $font-size * 3;
+  }
+
+}
+
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+
+#evt_content{ background: #fff;
+  img{width:100%;}
+  .sec-banner{position: relative; background: url("../images/banner-bg.jpg") repeat-x; z-index: 2; height: px2rem(960);
+    div{position:absolute;}
+    .chri-w-l{ width: px2rem(540); top:px2rem(100); left:px2rem(100);}
+    .chri-men{ width: px2rem(540); top:px2rem(100); left:50%; margin-left: -369px;}
+    .chri-w-r{ width: px2rem(540); top: 169px; left: 763px;}
+    .chri-word{ width: px2rem(540); top: 756px; left:50%; margin-left: -209px;}
+
+  }
+
+
+  .sec-ad{position: relative; width: px2rem(750); height: px2rem(375); background: #ffffff;
+    div{position:absolute;}
+    .more-1{ left:50%; margin-left: px2rem(-368.5);
+      canvas {
+        width: px2rem(737);
+        height: px2rem(393);
+      }
+    }
+    .more-2{ left:50%; margin-left: px2rem(-348);
+      canvas {
+        width: px2rem(696);
+        height: px2rem(427);
+      }
+    }
+  }
+
+  .sec-1{position: relative; z-index: 1;  height: px2rem(1658); background: url("../images/s1-bg.jpg") repeat;
+    div{position:absolute;}
+    .cake-1{ width: px2rem(717); top:px2rem(100); left:px2rem(30);}
+    .w-1{ width: px2rem(373); top:px2rem(1348); left:px2rem(117);}
+    .price{ top:px2rem(770); }
+  }
+
+
+
+
+
+  .sec-footer{background:#f3f8fa; position: relative; padding-bottom: px2rem(20);
+    .txt{ position: relative; width:px2rem(660); padding-top: px2rem(80); padding-bottom: px2rem(50); margin: 0 auto;  color: #000;
+      h2{font-size: px2rem(30); font-weight: normal; margin-top: px2rem(20);margin-bottom: px2rem(20); }
+      p{ font-size: px2rem(22); padding-left: px2rem(110); line-height:px2rem(35);  text-indent: px2rem(-110);
+        margin:px2rem(20) auto 0;}
+      p.p1{margin:px2rem(0) auto 0;}
+    }
+
+
+  }
+
+}

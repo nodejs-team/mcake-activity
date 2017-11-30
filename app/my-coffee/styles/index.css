@@ -275,10 +275,14 @@
       text-align: center;
       border-radius: 50%;
       vertical-align: middle;
-      overflow: hidden; }
+      overflow: hidden;
+      display: flex;
+      align-items: center; }
       #evt_content .price .price_num dl dd span {
         display: block;
-        line-height: 0.61333rem;
+        text-align: center;
+        width: 100%;
+        line-height: 0.66667rem;
         font-size: 0.4rem; }
     #evt_content .price .price_num dl dd.on {
       background: #a6e0cc; }
