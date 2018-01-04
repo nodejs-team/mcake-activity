@@ -1,5 +1,5 @@
 @function px2rem($n) {
-  @return ($n * 10 / 990) * 1rem; //设计稿一般都是750宽
+  @return ($n * 10 / 750) * 1rem; //设计稿一般都是750宽
 }
 
 @mixin font-dpr($font-size){
@@ -15,20 +15,24 @@
 
 }
 
-#evt_content{  background:url("../images/bg.jpg") repeat;
+#evt_content{  background:url("../images/meet-bg.jpg") repeat;
   div{position:absolute;}
   img{width:100%;}
-  .sec{position: relative; }
-  .sec-top{
-    height: px2rem(1050); background:url("../images/m-bg.jpg") repeat; z-index: 1; overflow: hidden;
-    .m-c1{width:px2rem(542); top:px2rem(-250); left:px2rem(0);}
-    .m-c2{width:px2rem(252); top:px2rem(180); left:px2rem(0);}
-    .m-c3{width:px2rem(473); top:px2rem(-400); right:px2rem(0);}
-    .m-c4{width:px2rem(990); top:px2rem(550); left:px2rem(0);}
-    .m-text{width:px2rem(990); top:px2rem(50); left:px2rem(0);}
 
+  .sec{position: relative; }
+  .step{position: relative;
+    .sec-banner{
+      height: px2rem(766); background:url("../images/meet-banner.jpg") no-repeat; z-index: 1; overflow: hidden; background-size: 100%;
+
+      .word{ width: 100%; top:px2rem(620); text-align: center; line-height: px2rem(30);
+        p{color: #fff;}
+        .p1{color: #000;}
+      }
+    }
+    .sec-main{height: px2rem(800);}
   }
 
+  .step1{display: none;}
 
 
 }

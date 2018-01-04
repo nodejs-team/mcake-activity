@@ -1,39 +1,35 @@
 #evt_content {
-  background: url("../images/bg.jpg") repeat; }
+  background: url("../images/meet-bg.jpg") repeat; }
   #evt_content div {
     position: absolute; }
   #evt_content img {
     width: 100%; }
   #evt_content .sec {
     position: relative; }
-  #evt_content .sec-top {
-    height: 10.60606rem;
-    background: url("../images/m-bg.jpg") repeat;
-    z-index: 1;
-    overflow: hidden; }
-    #evt_content .sec-top .m-c1 {
-      width: 5.47475rem;
-      top: -2.52525rem;
-      left: 0rem; }
-    #evt_content .sec-top .m-c2 {
-      width: 2.54545rem;
-      top: 1.81818rem;
-      left: 0rem; }
-    #evt_content .sec-top .m-c3 {
-      width: 4.77778rem;
-      top: -4.0404rem;
-      right: 0rem; }
-    #evt_content .sec-top .m-c4 {
-      width: 10rem;
-      top: 5.55556rem;
-      left: 0rem; }
-    #evt_content .sec-top .m-text {
-      width: 10rem;
-      top: 0.50505rem;
-      left: 0rem; }
+  #evt_content .step {
+    position: relative; }
+    #evt_content .step .sec-banner {
+      height: 10.21333rem;
+      background: url("../images/meet-banner.jpg") no-repeat;
+      z-index: 1;
+      overflow: hidden;
+      background-size: 100%; }
+      #evt_content .step .sec-banner .word {
+        width: 100%;
+        top: 8.26667rem;
+        text-align: center;
+        line-height: 0.4rem; }
+        #evt_content .step .sec-banner .word p {
+          color: #fff; }
+        #evt_content .step .sec-banner .word .p1 {
+          color: #000; }
+    #evt_content .step .sec-main {
+      height: 10.66667rem; }
+  #evt_content .step1 {
+    display: none; }
 
 @media screen and (max-width: 320px) {
   .sel-li {
-    top: -0.10101rem !important; }
+    top: -0.13333rem !important; }
   i {
-    top: 0.0303rem !important; } }
+    top: 0.04rem !important; } }
