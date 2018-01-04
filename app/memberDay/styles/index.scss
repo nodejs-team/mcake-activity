@@ -2,7 +2,11 @@
   @return ($n * 10 / 750) * 1rem; //设计稿一般都是750宽
 }
 
+<<<<<<< HEAD
 @mixin font-dpr($font-size){
+=======
+@mixin font-dpr($font-size) {
+>>>>>>> c1968ce4116819a09b05eaa02268519ebafc1600
   font-size: $font-size;
 
   [data-dpr="2"] & {
@@ -15,6 +19,7 @@
 
 }
 
+<<<<<<< HEAD
 #evt_content{
   div{position:absolute;}
   img{width:100%;}
@@ -70,4 +75,202 @@
 
   }
 
+=======
+#evt_content {
+  div {
+    position: absolute;
+  }
+  img {
+    width: 100%;
+  }
+}
+
+.evt-banner {
+  position: relative !important;
+  height: px2rem(1075);
+  overflow: hidden;
+  background: #d9bfa6 url(../images/banner-bg.jpg) repeat !important;
+
+  .nut-bg {
+    width: px2rem(636);
+    top: px2rem(440);
+    left: px2rem(52);
+  }
+
+  .cake {
+    width: px2rem(445);
+    top: px2rem(30);
+    right: 0;
+  }
+
+  .cake-tips {
+    width: px2rem(306);
+    left: px2rem(38);
+    top: px2rem(63)
+  }
+
+  .banner-text {
+    width: px2rem(524);
+    left: px2rem(24);
+    top: px2rem(406);
+  }
+
+  .cake-sm {
+    width: px2rem(188);
+    top: px2rem(750);
+    right: 0;
+  }
+
+  .cake-spoon {
+    width: px2rem(181);
+    top: px2rem(940);
+    right: 0;
+  }
+}
+
+.evt-main{
+  position: relative !important;
+  height: px2rem(978);
+  background: #fff url(../images/main-bg.jpg) repeat !important;
+
+  .counter-down{
+    right: px2rem(16);
+    top: px2rem(20);
+    width: px2rem(351);
+    height: px2rem(62);
+    background: url(../images/counter-bg.png) no-repeat;
+    background-size: 100% auto;
+  }
+
+  .main-logo{
+    width: px2rem(147);
+    right: px2rem(100);
+    top: px2rem(160);
+  }
+
+  .main-cake{
+    width: px2rem(449);
+    left: px2rem(56);
+    top: px2rem(123);
+  }
+
+  .main-text{
+    width: px2rem(371);
+    right: px2rem(22);
+    top: px2rem(510);
+  }
+
+  .main-action{
+    left: 0;
+    bottom: 0;
+
+    .checkbox{
+      display: block;
+      width: px2rem(26);
+      height: px2rem(23);
+      background: url(../images/checkbox.png) no-repeat;
+      background-size: px2rem(26) auto;
+      background-position: 0 100%;
+      margin-top: px2rem(5);
+
+      &.checked{
+        background-position: 0 0;
+      }
+    }
+  }
+
+  .buy-btn{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: px2rem(140);
+    height: px2rem(45);
+    line-height: 100;
+    overflow: hidden;
+  }
+
+  .counter-flips{
+    left: px2rem(164);
+    top: px2rem(19);
+    font-size: 0;
+
+    .flip{
+      margin-right: px2rem(4);
+      vertical-align: top !important;
+      > span {
+        display: inline-block;
+        width: px2rem(25);
+        height: px2rem(34);
+        vertical-align: top !important;
+        -webkit-transform: scale(0.7);
+        transform: scale(0.7);
+
+        > img{
+          max-width: 100%;
+          max-height: 100%;
+        }
+      }
+    }
+  }
+
+  .footer-action{
+    width: px2rem(525);
+    left: 50%;
+    top: px2rem(832);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
+  .deco1{
+    top: px2rem(40);
+    left: 0;
+    width: px2rem(97);
+  }
+
+  .deco2{
+    top: px2rem(654);
+    left: 0;
+    width: px2rem(128);
+  }
+
+  .deco3{
+    top: px2rem(345);
+    right: 0;
+    width: px2rem(113);
+  }
+
+  .deco4{
+    top: px2rem(772);
+    right: 0;
+    width: px2rem(113);
+  }
+}
+
+.evt-footer{
+  position: relative !important;
+  background-color: #dec7b0;
+  padding-top: px2rem(100);
+  padding-bottom: px2rem(100);
+
+  .evt-footer-bd {
+    position: relative !important;
+    width: 85%;
+    max-width: 500px;
+    margin: 0 auto;
+    color: #734924;
+
+    h2{
+      font-size: 16px;
+      margin: 0 0 8px;
+    }
+
+    p{
+      margin: 0;
+      padding-left: 1.5em;
+      text-indent: -1.5em;
+      line-height: 1.75;
+      font-size: 14px;
+    }
+  }
+>>>>>>> c1968ce4116819a09b05eaa02268519ebafc1600
 }

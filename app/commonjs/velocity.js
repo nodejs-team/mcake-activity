@@ -3562,7 +3562,7 @@
                             /* Don't set the null transform hack if we've already done so. */
                             if (Data(element).transformCache.translate3d === undefined) {
                                 /* All entries on the transformCache object are later concatenated into a single transform string via flushTransformCache(). */
-                                Data(element).transformCache.translate3d = "(0px, 0px, 0px)";
+                                //Data(element).transformCache.translate3d = "(0px, 0px, 0px)";
 
                                 transformPropertyExists = true;
                             }
