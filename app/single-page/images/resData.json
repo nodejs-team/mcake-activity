@@ -1,0 +1,13 @@
+{
+	"groups":[{
+			"keys":"img-5_jpg",
+			"name":"preload"
+		}],
+	"resources":[
+		{
+			"name":"img-5_jpg",
+			"type":"image",
+			"url":"img-5.jpg"
+		}
+	]
+}

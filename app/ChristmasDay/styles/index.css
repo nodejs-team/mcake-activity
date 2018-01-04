@@ -7,7 +7,6 @@
 
 #evt_content {
   background: #307665;
-  height: 65.33333rem;
   overflow: hidden; }
   #evt_content img {
     width: 100%; }
@@ -35,10 +34,13 @@
       top: 8.22667rem;
       left: 50%;
       margin-left: -2.78667rem; }
+  #evt_content .sec-1.on {
+    background: #377a68; }
   #evt_content .sec-1 {
     position: relative;
     z-index: 1;
-    background: #307665; }
+    background: #c72521;
+    height: 16.66667rem; }
     #evt_content .sec-1 .cake-tab {
       padding: 0.4rem 0; }
       #evt_content .sec-1 .cake-tab .tab-top ul {
@@ -61,10 +63,9 @@
         #evt_content .sec-1 .cake-tab .tab-box .box-swiper {
           position: relative;
           width: 9.46667rem;
-          height: 6.4rem; }
+          height: 6.66667rem; }
         #evt_content .sec-1 .cake-tab .tab-box .box-right {
-          border-left: #e3e3e3 1px solid;
-          padding: 0 0 0.4rem 0.4rem;
+          padding: 0 0 0.4rem 0;
           height: 100%;
           text-align: center; }
           #evt_content .sec-1 .cake-tab .tab-box .box-right .subtitle {
@@ -126,7 +127,7 @@
               background-size: 4%;
               padding-left: 0.4rem; }
           #evt_content .sec-1 .cake-tab .tab-box .box-right .price_num {
-            width: 4rem;
+            width: 3.33333rem;
             margin: 0.26667rem auto 0; }
           #evt_content .sec-1 .cake-tab .tab-box .box-right .price_num dl {
             float: left; }
@@ -167,24 +168,27 @@
             height: 1.12rem;
             position: relative;
             margin-top: 0.66667rem; }
-            #evt_content .sec-1 .cake-tab .tab-box .box-right .buybtns ul li {
-              width: 4.26667rem;
-              height: 1.12rem;
-              line-height: 1.12rem;
-              float: left;
-              border: #d2d2d2 1px solid;
-              color: #000;
-              font-size: 0.4rem;
-              text-align: center;
-              margin-right: 0.13333rem;
-              border-radius: 0.13333rem;
-              cursor: pointer; }
-            #evt_content .sec-1 .cake-tab .tab-box .box-right .buybtns ul li.on {
-              background: #f0f0f0; }
+            #evt_content .sec-1 .cake-tab .tab-box .box-right .buybtns ul {
+              margin-left: 0.4rem; }
+              #evt_content .sec-1 .cake-tab .tab-box .box-right .buybtns ul li {
+                width: 4.26667rem;
+                height: 1.12rem;
+                line-height: 1.12rem;
+                float: left;
+                border: #d2d2d2 1px solid;
+                color: #000;
+                font-size: 0.4rem;
+                text-align: center;
+                margin-right: 0.13333rem;
+                border-radius: 0.13333rem;
+                cursor: pointer; }
+              #evt_content .sec-1 .cake-tab .tab-box .box-right .buybtns ul li.on {
+                background: #f0f0f0; }
   #evt_content .sec-2 {
     position: relative;
     z-index: 1;
-    background: #f7f7f7; }
+    background: #f7f7f7;
+    padding-bottom: 0.66667rem; }
     #evt_content .sec-2 .tuijian-title {
       width: 5rem;
       padding: 0.90667rem 0 0.6rem;
@@ -212,21 +216,20 @@
             margin-top: 0.10667rem;
             color: #000;
             font-size: 0.32rem;
-            vertical-align: text-bottom; }
+            line-height: 0.66667rem; }
             #evt_content .sec-2 .pro-list ul li p img {
               width: 2.4rem;
               margin: 0 auto; }
             #evt_content .sec-2 .pro-list ul li p span {
               position: relative;
-              font-size: 0.45333rem;
-              vertical-align: sub; }
+              font-size: 0.45333rem; }
             #evt_content .sec-2 .pro-list ul li p i {
               position: absolute;
-              bottom: 0.06667rem;
+              bottom: 0.10667rem;
               left: -0.26667rem;
               font-size: 0.26667rem;
               font-style: normal;
-              vertical-align: sub; }
+              line-height: 0.26667rem; }
           #evt_content .sec-2 .pro-list ul li p.tt {
             font-size: 0.4rem; }
         #evt_content .sec-2 .pro-list ul li:nth-of-type(2n) {
@@ -240,8 +243,8 @@
           margin-top: 0 !important; }
           #evt_content .sec-2 .pro-list .buybtns ul li {
             width: 2.13333rem;
-            height: 0.53333rem;
-            line-height: 0.53333rem;
+            height: 0.8rem;
+            line-height: 0.8rem;
             float: left;
             color: #444444;
             font-size: 0.26667rem;
@@ -255,9 +258,17 @@
             background: #b2997b;
             color: #fff; }
     #evt_content .sec-2 .more {
-      width: 4rem;
-      margin: 0 auto;
-      padding: 0.4rem 0; }
+      width: 3.46667rem;
+      height: 0.93333rem;
+      font-size: 0.4rem;
+      line-height: 0.93333rem;
+      border-radius: 1.06667rem;
+      color: #fff;
+      margin: 0.66667rem auto 0;
+      background: #b2997b;
+      text-align: center; }
+      #evt_content .sec-2 .more a {
+        color: #fff; }
   #evt_content .sec-footer {
     background: #307665;
     position: relative;
@@ -295,6 +306,7 @@
 .swiper-slide {
   text-align: center;
   background: #fff;
+  height: 5.64rem;
   /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -310,7 +322,9 @@
   align-items: center; }
 
 .swiper-pagination {
-  width: 100%; }
+  width: 100%;
+  position: absolute !important;
+  bottom: 0.26667rem !important; }
 
 .swiper-pagination-bullet {
   margin: 0 0.06667rem !important; }

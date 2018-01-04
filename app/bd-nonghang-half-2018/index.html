@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>农行半价</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+    <link rel="stylesheet" type="text/css" href="http://ebsig.mcake.com/shop/theme/xth1/css/comm_header.css?v=1458723714">
+    <style>
+        @font-face {
+            font-family: 'mfshangya';
+            src: url('http://edm.mcake.com/weifengwang/common/mfshangya.woff2') format('woff2'),
+            url('http://edm.mcake.com/weifengwang/common/mfshangya.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+    <!-- build:css styles/index.css -->
+    <link rel="stylesheet" href="../commoncss/pc-normalize.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <!-- endbuild-->
+</head>
+<body>
+<div class="header">
+
+    <div class="header_top_box">
+        <div class="header_top">
+            <div style="width:100%; height:100px; background:#FFF; position:absolute; z-index:9;webkit-box-shadow: 3px 3px 3px #e1e1e1;-moz-box-shadow: 3px 3px 3px #e1e1e1;box-shadow: 3px 3px 3px #e1e1e1
+">
+                <div style="width:100%; height:30px; border-bottom:1px solid #eaeaea">
+                    <div class="wallbox wall_top">
+                        <div id="scrollobj" style="position:absolute; left:50%;margin-left:-300px;top:0; width:560px; line-height:30px;white-space:nowrap;overflow:hidden; color:#F00"></div>
+                        <div class="logoer">
+                            <a href="http://ebsig.mcake.com">
+                                <img src="http://ebsig.mcake.com/shop/theme/xth1//images/comm/logo.png">
+                            </a>
+                        </div>
+                        <ul class="navbar" id="welcome"><li><a href="/shop/login.html" class="Gold">LOG IN 登录</a></li><li><a href="/shop/register.html" class="Gold">SIGN UP 注册</a></li></ul>
+                        <ul class="navbar">
+                            <!--网站录音功能 add by zan.yu 2015-12-11 ---start----->
+                            <li class="record" style="display: none;">
+                                <a href="/shop/member_order.html?stat=6" class="Gold" target="_blank"><i></i> <span id="recode_count" style="margin-left: 5px;">0</span>个</a>
+                            </li>
+                            <!--网站录音功能 add by zan.yu 2015-12-11 ---end----->
+                            <li class="m_mail" style="display: none;"><a href="/shop/member_message.html" class="Gold" target="_blank"><i></i> <span id="msg_count">0</span>封</a></li>
+                            <li class="m_cart">
+                                <a href="/shop/cart.html" class="Gold" target="_blank"><i></i> <span id="cart_amount">2</span>件</a>
+                            </li>
+                        </ul>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="wallbox">
+                    <div class="header_right">
+                        <ul class="phone_delivery">
+                            <li class="phone"><span>4006-678-678</span><i></i></li>
+                            <li class="delivery"><span><a href="/shop/article-48.html#city_110" target="_blank">配送范围内实行环外费全免</a></span><i></i></li>
+                        </ul>
+                        <div class="city" id="city">
+                            <ul>
+                                <li id="city-641" data-id="641"><a href="javascript: void(0);">杭州市</a></li>
+                                <li id="city-110" data-id="110" class="cur"><a href="javascript: void(0);">上海市</a></li>
+                                <li id="city-665" data-id="665"><a href="javascript: void(0);">苏州市</a></li>
+                                <li id="city-675" data-id="675"><a href="javascript: void(0);">北京市</a></li>
+                            </ul>
+                            <samp></samp>
+                        </div>
+                    </div>
+                    <ul class="menu">
+                        <li>
+                            <a href="http://ebsig.mcake.com/shop/110/index.html#mainer" class="ebsig_all_goods" target="_blank"><samp>Nos Produits</samp><span>全部产品</span></a>
+                        </li>
+                        <li>
+                            <a href="/shop/napoleon_cake.html" target="_blank"><samp>Napoléon</samp><span>拿破仑系列</span></a>
+                        </li>
+                        <li>
+                            <a href="/r.php?i=activity" target="_blank"><samp>Nouveauté</samp><span>最新活动</span></a>
+                        </li>
+                        <li>
+                            <a href="/shop/member_center.html" target="_blank">
+                                <samp>Mon M'CAKE</samp>
+                                <span>会员中心</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div id="evt_loading">0%</div>
+<div id="evt_container"  style="display:none;">
+    <div class="banner">
+        <div class="content">
+            <div class="banner-c1"><img src="images/banner-c1.png" alt=""></div>
+            <div class="banner-xing"><img src="images/banner-xing.png" alt=""></div>
+            <div class="banner-c2"><img src="images/banner-c2.png" alt=""></div>
+            <div class="banner-cake1"><img src="images/banner-cake1.png" alt=""></div>
+            <div class="banner-title"><img src="images/banner-title.png" alt=""></div>
+        </div>
+    </div>
+
+    <div class="huodong">
+        <!--蛋糕还剩-->
+        <div class="act">
+            <div class="act-tips"><img src="images/act-last.png" alt=""></div>
+            <div class="act-word">61</div>
+            <div class="act-end"><img src="images/ge.png" alt=""></div>
+        </div>
+
+        <!--下期活动时间-->
+        <div class="act" style="display: none;">
+            <div class="act-tips"><img src="images/act-next.png" alt=""></div>
+            <div class="act-word">2018-01-13</div>
+            <div class="act-end"><img src="images/act.png" alt=""></div>
+        </div>
+        <!--已售罄-->
+        <div class="act" style="display: none;">
+            <div class="act-start"><img src="images/act-end.png" alt=""></div>
+            <div class="act-word">已售罄</div>
+            <div class="act-end"><img src="images/act.png" alt=""></div>
+        </div>
+        <!--活动即将开始-->
+        <div class="act" style="display: none;">
+            <div class="act-tips"><img src="images/act-nextstart.png" alt=""></div>
+            <div class="act-word">2018-01-06</div>
+            <div class="act-end"><img src="images/act.png" alt=""></div>
+        </div>
+    </div>
+
+
+    <div class="slider">
+        <a href="javascript:;" class="prev prev1"><img src="images/prev.png" alt=""></a>
+        <a href="javascript:;" class="next next1"><img src="images/next.png" alt=""></a>
+        <div class="slideOuter slideOuter1">
+            <ul class="clearfix">
+                <li>
+                    <img src="http://mcake.oss-cn-hangzhou.aliyuncs.com/goods/lanmeiqingrunapolun/N0301/list/1.jpg" alt="">
+                    <p class="p1 clearfix"><span class="fl">蓝莓轻乳拿破仑</span><span class="fr">1 磅／¥198</span></p>
+                    <p class="p2 clearfix"><span class="fl">农业银行信用卡特享价：</span><span class="fr"><span>98</span>元</span></p>
+                    <a href="javascript:;" class="buybtn">立即订购</a>
+                </li>
+                <li>
+                    <img src="http://mcake.oss-cn-hangzhou.aliyuncs.com/goods/faxiangnaiyoukeli/C0201/list/1.jpg" alt="">
+                    <p class="p1 clearfix"><span class="fl">蓝莓轻乳拿破仑</span><span class="fr">1 磅／¥198</span></p>
+                    <p class="p2 clearfix"><span class="fl">农业银行信用卡特享价：</span><span class="fr"><span>98</span>元</span></p>
+                    <a href="javascript:;" class="buybtn">立即订购</a>
+                </li>
+                <li>
+                    <img src="http://mcake.oss-cn-hangzhou.aliyuncs.com/goods/kafaxiangti/C0101/list/1.jpg" alt="">
+                    <p class="p1 clearfix"><span class="fl">蓝莓轻乳拿破仑</span><span class="fr">1 磅／¥198</span></p>
+                    <p class="p2 clearfix"><span class="fl">农业银行信用卡特享价：</span><span class="fr"><span>98</span>元</span></p>
+                    <a href="javascript:;" class="buybtn">立即订购</a>
+                </li>
+                <li>
+                    <img src="http://mcake.oss-cn-hangzhou.aliyuncs.com/goods/mangguomangue/C0401/list/1.jpg" alt="">
+                    <p class="p1 clearfix"><span class="fl">蓝莓轻乳拿破仑</span><span class="fr">1 磅／¥198</span></p>
+                    <p class="p2 clearfix"><span class="fl">农业银行信用卡特享价：</span><span class="fr"><span>98</span>元</span></p>
+                    <a href="javascript:;" class="buybtn">立即订购</a>
+                </li>
+                <li>
+                    <img src="http://mcake.oss-cn-hangzhou.aliyuncs.com/goods/hutaobulaji/B0101/list/1.jpg" alt="">
+                    <p class="p1 clearfix"><span class="fl">蓝莓轻乳拿破仑</span><span class="fr">1 磅／¥198</span></p>
+                    <p class="p2 clearfix"><span class="fl">农业银行信用卡特享价：</span><span class="fr"><span>98</span>元</span></p>
+                    <a href="javascript:;" class="buybtn">立即订购</a>
+                </li>
+                <li>
+                    <img src="http://www.mcake.com/postsystem/docroot/images/goods/20140828/1073/list_1073_1.jpg" alt="">
+                    <p class="p1 clearfix"><span class="fl">蓝莓轻乳拿破仑</span><span class="fr">1 磅／¥198</span></p>
+                    <p class="p2 clearfix"><span class="fl">农业银行信用卡特享价：</span><span class="fr"><span>98</span>元</span></p>
+                    <a href="javascript:;" class="buybtn">立即订购</a>
+                </li>
+                <li>
+                    <img src="http://www.mcake.com/postsystem/docroot/images/goods/20140828/1073/list_1073_1.jpg" alt="">
+                    <p class="p1 clearfix"><span class="fl">蓝莓轻乳拿破仑</span><span class="fr">1 磅／¥198</span></p>
+                    <p class="p2 clearfix"><span class="fl">农业银行信用卡特享价：</span><span class="fr"><span>98</span>元</span></p>
+                    <a href="javascript:;" class="buybtn">立即订购</a>
+                </li>
+                <li>
+                    <img src="http://www.mcake.com/postsystem/docroot/images/goods/20140828/1073/list_1073_1.jpg" alt="">
+                    <p class="p1 clearfix"><span class="fl">蓝莓轻乳拿破仑</span><span class="fr">1 磅／¥198</span></p>
+                    <p class="p2 clearfix"><span class="fl">农业银行信用卡特享价：</span><span class="fr"><span>98</span>元</span></p>
+                    <a href="javascript:;" class="buybtn">立即订购</a>
+                </li>
+                <li>
+                    <img src="http://www.mcake.com/postsystem/docroot/images/goods/20140828/1073/list_1073_1.jpg" alt="">
+                    <p class="p1 clearfix"><span class="fl">蓝莓轻乳拿破仑</span><span class="fr">1 磅／¥198</span></p>
+                    <p class="p2 clearfix"><span class="fl">农业银行信用卡特享价：</span><span class="fr"><span>98</span>元</span></p>
+                    <a href="javascript:;" class="buybtn">立即订购</a>
+                </li>
+                <li>
+                    <img src="http://www.mcake.com/postsystem/docroot/images/goods/20140828/1073/list_1073_1.jpg" alt="">
+                    <p class="p1 clearfix"><span class="fl">蓝莓轻乳拿破仑</span><span class="fr">1 磅／¥198</span></p>
+                    <p class="p2 clearfix"><span class="fl">农业银行信用卡特享价：</span><span class="fr"><span>98</span>元</span></p>
+                    <a href="javascript:;" class="buybtn">立即订购</a>
+                </li>
+                <li>
+                    <img src="http://www.mcake.com/postsystem/docroot/images/goods/20140828/1073/list_1073_1.jpg" alt="">
+                    <p class="p1 clearfix"><span class="fl">蓝莓轻乳拿破仑</span><span class="fr">1 磅／¥198</span></p>
+                    <p class="p2 clearfix"><span class="fl">农业银行信用卡特享价：</span><span class="fr"><span>98</span>元</span></p>
+                    <a href="javascript:;" class="buybtn">立即订购</a>
+                </li>
+                <li>
+                    <img src="http://www.mcake.com/postsystem/docroot/images/goods/20140828/1073/list_1073_1.jpg" alt="">
+                    <p class="p1 clearfix"><span class="fl">蓝莓轻乳拿破仑</span><span class="fr">1 磅／¥198</span></p>
+                    <p class="p2 clearfix"><span class="fl">农业银行信用卡特享价：</span><span class="fr"><span>98</span>元</span></p>
+                    <a href="javascript:;" class="buybtn">立即订购</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="text1893"><img src="images/text1893.png" alt=""></div>
+
+    <div class="huodong">
+        <!--蛋糕还剩-->
+        <div class="act">
+            <div class="act-tips"><img src="images/act-qq.png" alt=""></div>
+            <div class="act-word">61</div>
+            <div class="act-end"><img src="images/ge.png" alt=""></div>
+        </div>
+
+        <!--下期活动时间-->
+        <div class="act" style="display: none;">
+            <div class="act-tips"><img src="images/act-next.png" alt=""></div>
+            <div class="act-word">2018-01-13</div>
+            <div class="act-end"><img src="images/act.png" alt=""></div>
+        </div>
+        <!--已售罄-->
+        <div class="act" style="display: none;">
+            <div class="act-start"><img src="images/act-end.png" alt=""></div>
+            <div class="act-word">已售罄</div>
+            <div class="act-end"><img src="images/act.png" alt=""></div>
+        </div>
+        <!--活动即将开始-->
+        <div class="act" style="display: none;">
+            <div class="act-tips"><img src="images/act-nextstart.png" alt=""></div>
+            <div class="act-word">2018-01-06</div>
+            <div class="act-end"><img src="images/act.png" alt=""></div>
+        </div>
+    </div>
+    <div class="slider">
+        <a href="javascript:;" class="prev prev2"><img src="images/prev.png" alt=""></a>
+        <a href="javascript:;" class="next next2"><img src="images/next.png" alt=""></a>
+        <div class="slideOuter slideOuter2">
+            <ul class="clearfix">
+                <li>
+                    <img src="http://mcake.oss-cn-hangzhou.aliyuncs.com/goods/lanmeiqingrunapolun/N0301/list/1.jpg" alt="">
+                    <p class="p1 clearfix"><span class="fl">塔尼小红莓</span><span class="fr">300g／¥108</span></p>
+                    <p class="p2 clearfix"><span class="fl">农业银行信用卡特享价：</span><span class="fr"><span>30</span>元</span></p>
+                    <a href="javascript:;" class="buybtn">立即订购</a>
+                </li>
+                <li>
+                    <img src="http://mcake.oss-cn-hangzhou.aliyuncs.com/goods/faxiangnaiyoukeli/C0201/list/1.jpg" alt="">
+                    <p class="p1 clearfix"><span class="fl">塔尼小红莓</span><span class="fr">300g／¥108</span></p>
+                    <p class="p2 clearfix"><span class="fl">农业银行信用卡特享价：</span><span class="fr"><span>30</span>元</span></p>
+                    <a href="javascript:;" class="buybtn">立即订购</a>
+                </li>
+                <li>
+                    <img src="http://mcake.oss-cn-hangzhou.aliyuncs.com/goods/kafaxiangti/C0101/list/1.jpg" alt="">
+                    <p class="p1 clearfix"><span class="fl">塔尼小红莓</span><span class="fr">300g／¥108</span></p>
+                    <p class="p2 clearfix"><span class="fl">农业银行信用卡特享价：</span><span class="fr"><span>30</span>元</span></p>
+                    <a href="javascript:;" class="buybtn">立即订购</a>
+                </li>
+                <li>
+                    <img src="http://mcake.oss-cn-hangzhou.aliyuncs.com/goods/mangguomangue/C0401/list/1.jpg" alt="">
+                    <p class="p1 clearfix"><span class="fl">塔尼小红莓</span><span class="fr">300g／¥108</span></p>
+                    <p class="p2 clearfix"><span class="fl">农业银行信用卡特享价：</span><span class="fr"><span>30</span>元</span></p>
+                    <a href="javascript:;" class="buybtn">立即订购</a>
+                </li>
+                <li>
+                    <img src="http://mcake.oss-cn-hangzhou.aliyuncs.com/goods/hutaobulaji/B0101/list/1.jpg" alt="">
+                    <p class="p1 clearfix"><span class="fl">塔尼小红莓</span><span class="fr">300g／¥108</span></p>
+                    <p class="p2 clearfix"><span class="fl">农业银行信用卡特享价：</span><span class="fr"><span>30</span>元</span></p>
+                    <a href="javascript:;" class="buybtn">立即订购</a>
+                </li>
+                <li>
+                    <img src="http://www.mcake.com/postsystem/docroot/images/goods/20140828/1073/list_1073_1.jpg" alt="">
+                    <p class="p1 clearfix"><span class="fl">塔尼小红莓</span><span class="fr">300g／¥108</span></p>
+                    <p class="p2 clearfix"><span class="fl">农业银行信用卡特享价：</span><span class="fr"><span>30</span>元</span></p>
+                    <a href="javascript:;" class="buybtn">立即订购</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="text1893"><img src="images/text1893.png" alt=""></div>
+    <div class="sec-foot">
+        <div class="rules">
+            <p>活动城市：苏州</p>
+            <p>活动时间：2018年1月1日-2018年3月31日</p>
+            <h2>活动规则：</h2>
+            <p>1、本次活动仅限苏州农行信用卡持卡用户参与，仅限苏州地区Mcake配送；</p>
+            <p>2、活动1: 2018年1月1日-2018年3月31日（每周六）<br>
+                苏州农行信用卡持卡人通过本活动页购买任意款价值198元蛋糕，并选择农行信用卡在线支付，<br>
+                即可享受蛋糕金额半价优惠，每周活动名额限量100个，每会员ID、每卡每周限参与1次活动；</p>
+            <p>3、活动2：2018年1月1日-2018年3月31日（每天，每周100个名额周一更新）<br>
+                苏州农行信用卡持卡人通过本活动页购买300克价值108元的曲奇，并选择农行信用卡在线支付，<br>
+                则仅需支付30元，每周活动名额限量100个，每会员ID、每卡每周限参与1次活动；</p>
+            <p>4、活动配送时间为：2018年01月01日－2018年04月30日；</p>
+            <p>5、活动可累积积分，但不与任何其他优惠共享。</p>
+        </div>
+    </div>
+
+</div>
+
+<script type="text/javascript" src="http://www.mcake.com/shop/theme/xth1/js/index/jquery.min.js?v=1411888163"></script>
+<!-- build:js scripts/index.js -->
+<script src="../commonjs/polyfill.js"></script>
+<script src="../commonjs/pubsub.js"></script>
+<script src="../commonjs/loader.js"></script>
+<script src="scripts/resdata.js"></script>
+<script src="scripts/index.js"></script>
+<!-- endbuild -->
+</body>
+</html>

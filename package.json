@@ -34,10 +34,10 @@
     "yargs": "^6.4.0"
   },
   "buildConfig": {
-    "projectName": "ChristmasDay",
+    "projectName": "memberDay-1yue",
     "basePath": "http://edm.mcake.com/fangli/2018-wap/",
-    "tinypngKey": "scz0D_NUirlIzDuA1U6m4rwvS24z7s0o",
-    "beiyong": "Lv4IxKbb9SJ6M3OG-lyEA86akPCQBmqE",
+    "tinypngKey": "Lv4IxKbb9SJ6M3OG-lyEA86akPCQBmqE",
+    "beiyong": "scz0D_NUirlIzDuA1U6m4rwvS24z7s0o",
     "server": {
       "path": "./app",
       "port": "8013"
