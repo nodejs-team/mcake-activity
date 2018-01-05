@@ -1,35 +1,441 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background: #fff; }
+
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden; }
+
 #evt_content {
-  background: url("../images/meet-bg.jpg") repeat; }
-  #evt_content div {
-    position: absolute; }
+  /*写祝福*/
+  /*祝福点赞*/
+  /*弹幕*/
+  /*投票*/ }
   #evt_content img {
     width: 100%; }
   #evt_content .sec {
     position: relative; }
   #evt_content .step {
     position: relative; }
-    #evt_content .step .sec-banner {
-      height: 10.21333rem;
+  #evt_content .home-page {
+    position: relative; }
+    #evt_content .home-page .sec-banner {
+      height: 9.73333rem;
       background: url("../images/meet-banner.jpg") no-repeat;
       z-index: 1;
       overflow: hidden;
       background-size: 100%; }
-      #evt_content .step .sec-banner .word {
+      #evt_content .home-page .sec-banner .word {
+        position: absolute;
         width: 100%;
         top: 8.26667rem;
         text-align: center;
-        line-height: 0.4rem; }
-        #evt_content .step .sec-banner .word p {
+        line-height: 0.66667rem; }
+        #evt_content .home-page .sec-banner .word p {
           color: #fff; }
-        #evt_content .step .sec-banner .word .p1 {
+        #evt_content .home-page .sec-banner .word .p1 {
           color: #000; }
-    #evt_content .step .sec-main {
-      height: 10.66667rem; }
-  #evt_content .step1 {
+    #evt_content .home-page .sec-main {
+      background: #fff;
+      overflow: hidden; }
+      #evt_content .home-page .sec-main ul {
+        padding: 0;
+        margin: 0 !important; }
+        #evt_content .home-page .sec-main ul li {
+          width: 50%;
+          float: left;
+          list-style: none;
+          text-align: center;
+          border-right: #d6d6d6 1px solid;
+          border-bottom: #d6d6d6 1px solid;
+          padding: 0.4rem 0 0.26667rem; }
+          #evt_content .home-page .sec-main ul li img {
+            width: 1.06667rem;
+            margin: 0 auto; }
+        #evt_content .home-page .sec-main ul li:nth-of-type(2n) {
+          border-right: none; }
+      #evt_content .home-page .sec-main .my-Award {
+        width: 100%;
+        text-align: center;
+        line-height: 1.33333rem; }
+  #evt_content .step-write-wish {
+    background: #fff; }
+    #evt_content .step-write-wish .sec-banner {
+      position: relative;
+      height: 3.22667rem;
+      background: url("../images/meet-banner2.jpg") no-repeat;
+      z-index: 2;
+      background-size: 100%; }
+      #evt_content .step-write-wish .sec-banner .WeChat {
+        position: absolute;
+        bottom: -1rem;
+        z-index: 5;
+        left: 50%;
+        margin-left: -1.00667rem;
+        width: 2.01333rem;
+        height: 2.01333rem;
+        border-radius: 50%;
+        border: #fff 2px solid;
+        overflow: hidden; }
+      #evt_content .step-write-wish .sec-banner .my-info {
+        position: absolute;
+        width: 100%;
+        line-height: 0.4rem;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        bottom: -2rem;
+        text-align: center; }
+        #evt_content .step-write-wish .sec-banner .my-info .wx-nickname {
+          font-weight: bold; }
+    #evt_content .step-write-wish .sec-main {
+      z-index: 1;
+      overflow: hidden;
+      padding-top: 2.13333rem;
+      padding-bottom: 0.4rem; }
+      #evt_content .step-write-wish .sec-main .best-wishes {
+        width: 100%;
+        line-height: 0.4rem;
+        text-align: center;
+        margin: 0;
+        padding: 0; }
+        #evt_content .step-write-wish .sec-main .best-wishes input {
+          width: 8.8rem;
+          border: none;
+          background: none;
+          line-height: 0.66667rem;
+          text-align: center;
+          font-size: 0.4rem;
+          color: #000;
+          margin: 0.26667rem auto; }
+        #evt_content .step-write-wish .sec-main .best-wishes .tp {
+          color: #cecece;
+          font-size: 0.26667rem; }
+        #evt_content .step-write-wish .sec-main .best-wishes .wish-btn button {
+          display: inline-block;
+          padding: 0.26667rem 1.6rem;
+          background: #f1f1f1;
+          font-size: 0.4rem;
+          text-align: center;
+          line-height: 0.66667rem;
+          margin: 0.4rem 0.13333rem 0;
+          border-radius: 0.13333rem;
+          border: none; }
+        #evt_content .step-write-wish .sec-main .best-wishes .wish-btn button.on {
+          background: #d12828;
+          color: #fff; }
+  #evt_content .step-wish-list {
+    background: #fff; }
+    #evt_content .step-wish-list .sec-banner {
+      position: relative;
+      height: 3.22667rem;
+      background: url("../images/meet-banner3.jpg") no-repeat;
+      z-index: 2;
+      background-size: 100%; }
+    #evt_content .step-wish-list .sec-main {
+      z-index: 1;
+      overflow: hidden;
+      padding-top: 0.8rem;
+      padding-bottom: 0.4rem; }
+      #evt_content .step-wish-list .sec-main .list ul {
+        margin: 0;
+        padding: 0; }
+      #evt_content .step-wish-list .sec-main .list li {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-align-items: center;
+        align-items: center;
+        border-bottom: #c3c3c3 1px solid;
+        padding-top: 0.26667rem;
+        padding-bottom: 0.66667rem;
+        position: relative; }
+        #evt_content .step-wish-list .sec-main .list li .WeChat {
+          width: 1.33333rem;
+          height: 1.33333rem;
+          border-radius: 50%;
+          border: #fff 2px solid;
+          overflow: hidden;
+          margin: 0 0.26667rem; }
+        #evt_content .step-wish-list .sec-main .list li .list-content {
+          flex: 1; }
+          #evt_content .step-wish-list .sec-main .list li .list-content h2 {
+            font-size: 0.24rem;
+            font-weight: bold; }
+          #evt_content .step-wish-list .sec-main .list li .list-content p {
+            font-size: 0.26667rem;
+            color: #6a6a6a; }
+        #evt_content .step-wish-list .sec-main .list li .support {
+          position: absolute;
+          right: 0.26667rem;
+          bottom: 0.26667rem; }
+          #evt_content .step-wish-list .sec-main .list li .support .heart {
+            width: 0.4rem;
+            height: 0.4rem;
+            float: left; }
+          #evt_content .step-wish-list .sec-main .list li .support .heart-1 {
+            background: url("../images/heart-1.png") center no-repeat;
+            background-size: 100%; }
+          #evt_content .step-wish-list .sec-main .list li .support .heart-2 {
+            background: url("../images/heart-2.png") center no-repeat;
+            background-size: 100%;
+            display: none; }
+          #evt_content .step-wish-list .sec-main .list li .support span {
+            display: inline-block;
+            color: #6a6a6a;
+            padding: 0 0.13333rem;
+            line-height: 0.4rem;
+            font-size: 0.4rem; }
+  #evt_content .step-barrage {
+    background: #fff; }
+    #evt_content .step-barrage .sec-banner {
+      position: relative;
+      height: 10rem;
+      background: url("../images/meet-banner4.jpg") no-repeat;
+      z-index: 1;
+      background-size: 100%; }
+      #evt_content .step-barrage .sec-banner .WeChat {
+        position: absolute;
+        bottom: -1rem;
+        z-index: 5;
+        left: 50%;
+        margin-left: -1.00667rem;
+        width: 2.01333rem;
+        height: 2.01333rem;
+        border-radius: 50%;
+        border: #fff 2px solid;
+        overflow: hidden; }
+      #evt_content .step-barrage .sec-banner .my-info {
+        position: absolute;
+        width: 100%;
+        line-height: 0.4rem;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        bottom: -2rem; }
+        #evt_content .step-barrage .sec-banner .my-info .wx-nickname {
+          font-weight: bold; }
+      #evt_content .step-barrage .sec-banner .barrage-item {
+        position: absolute;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-align-items: center;
+        align-items: center;
+        top: 4rem;
+        left: 6.66667rem;
+        width: 9.33333rem; }
+        #evt_content .step-barrage .sec-banner .barrage-item .icon {
+          margin-right: 0.13333rem; }
+          #evt_content .step-barrage .sec-banner .barrage-item .icon .Wx {
+            width: 0.53333rem;
+            height: 0.53333rem;
+            border-radius: 50%;
+            overflow: hidden; }
+        #evt_content .step-barrage .sec-banner .barrage-item p {
+          color: #fff;
+          font-size: 0.4rem;
+          margin: 0; }
+      #evt_content .step-barrage .sec-banner .marquee {
+        -webkit-animation: marquee 10s linear forwards;
+        animation: marquee 10s linear forwards; }
+    #evt_content .step-barrage .sec-main {
+      overflow: hidden;
+      padding-top: 2.8rem;
+      padding-bottom: 0.4rem; }
+      #evt_content .step-barrage .sec-main .write-barrage {
+        width: 100%;
+        line-height: 0.4rem;
+        text-align: center;
+        margin: 0;
+        padding: 0; }
+        #evt_content .step-barrage .sec-main .write-barrage .brg {
+          display: flex;
+          position: relative;
+          background: #f1f1f1;
+          width: 7.66667rem;
+          float: left;
+          border-radius: 0.13333rem;
+          -webkit-align-items: center;
+          align-items: center;
+          margin-left: 0.26667rem; }
+          #evt_content .step-barrage .sec-main .write-barrage .brg .icon {
+            width: 0.73333rem;
+            height: 0.73333rem;
+            margin: 0 0.13333rem; }
+          #evt_content .step-barrage .sec-main .write-barrage .brg input {
+            flex: 1;
+            float: right;
+            border: none;
+            background: none;
+            line-height: 1.06667rem;
+            text-align: right;
+            font-size: 0.34667rem;
+            color: #000;
+            padding: 0 0.26667rem;
+            font-weight: bold; }
+        #evt_content .step-barrage .sec-main .write-barrage .send-barrage {
+          float: right;
+          margin-right: 0.26667rem; }
+          #evt_content .step-barrage .sec-main .write-barrage .send-barrage span {
+            display: inline-block;
+            padding: 0 0.13333rem;
+            background: #d12828;
+            color: #fff;
+            font-size: 0.34667rem;
+            text-align: center;
+            line-height: 1.06667rem;
+            margin: 0;
+            border-radius: 0.13333rem; }
+  #evt_content .step-vote {
+    background: #fff;
+    border: blue 1px solid; }
+    #evt_content .step-vote .sec-banner {
+      position: relative;
+      height: 3.22667rem;
+      background: url("../images/meet-banner5.jpg") no-repeat;
+      z-index: 2;
+      background-size: 100%; }
+    #evt_content .step-vote .sec-main {
+      z-index: 1;
+      overflow: hidden;
+      padding-bottom: 1.33333rem; }
+      #evt_content .step-vote .sec-main h3 {
+        text-align: center;
+        font-size: 0.32rem;
+        font-weight: normal;
+        line-height: 1.33333rem;
+        color: #969696;
+        border-bottom: #c3c3c3 1px solid; }
+      #evt_content .step-vote .sec-main .list ul {
+        margin: 0;
+        padding: 0; }
+      #evt_content .step-vote .sec-main .list li {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-align-items: center;
+        align-items: center;
+        border-bottom: #c3c3c3 1px solid;
+        position: relative;
+        line-height: 1.6rem;
+        color: #7c7c7c;
+        background: #fbfbfb; }
+        #evt_content .step-vote .sec-main .list li .radio {
+          width: 0.53333rem;
+          height: 0.53333rem;
+          border-radius: 50%;
+          overflow: hidden;
+          margin-left: 0.53333rem;
+          background: url("../images/radio.png");
+          background-size: 100%; }
+        #evt_content .step-vote .sec-main .list li .list-content {
+          flex: 1;
+          display: inline-flex;
+          justify-content: space-between;
+          padding: 0 0.26667rem; }
+          #evt_content .step-vote .sec-main .list li .list-content span {
+            font-size: 0.34667rem; }
+      #evt_content .step-vote .sec-main .list li:last-child {
+        border: none; }
+      #evt_content .step-vote .sec-main .list li.on {
+        background: #eeeeee;
+        color: #000; }
+        #evt_content .step-vote .sec-main .list li.on .radio {
+          background: url("../images/radio-on.png");
+          background-size: 100%; }
+
+.vote-btn {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  padding: 0 0.4rem;
+  color: #fff;
+  text-align: center;
+  background: #fff;
+  max-width: 10rem;
+  display: none; }
+  .vote-btn span {
+    display: block;
+    background: #d12828;
+    width: 100%;
+    line-height: 1.33333rem;
+    border-radius: 0.13333rem;
+    margin: 0.13333rem 0;
+    font-size: 0.45333rem; }
+
+/*彈窗*/
+.Dialogbg {
+  background-color: #000;
+  height: 100%;
+  left: 0;
+  opacity: 0.85;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 200;
+  display: none; }
+
+.Dialog {
+  background: #fff none repeat scroll 0 0;
+  box-shadow: 0 0 0 #999;
+  font-size: 0.18667rem;
+  width: 9.33333rem;
+  margin-top: -3.33333rem;
+  margin-left: -4.66667rem;
+  left: 50%;
+  padding: 0;
+  position: fixed;
+  top: 50%;
+  z-index: 99999;
+  display: none;
+  border-radius: 0.13333rem; }
+  .Dialog .content {
+    width: 6.17333rem;
+    margin: 0.66667rem auto;
+    text-align: center;
     display: none; }
+    .Dialog .content img {
+      width: 100%; }
+    .Dialog .content p {
+      font-size: 0.34667rem;
+      line-height: 1.06667rem;
+      color: #8d8d8d; }
 
 @media screen and (max-width: 320px) {
   .sel-li {
     top: -0.13333rem !important; }
   i {
     top: 0.04rem !important; } }
+
+@-webkit-keyframes marquee {
+  0% {
+    -webkit-transform: translateX(0);
+    opacity: 1; }
+  99% {
+    opacity: 1; }
+  100% {
+    -webkit-transform: translateX(-100%);
+    opacity: 0; } }
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+    opacity: 1; }
+  99% {
+    opacity: 1; }
+  100% {
+    transform: translateX(-100%);
+    opacity: 0; } }

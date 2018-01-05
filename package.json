@@ -36,8 +36,8 @@
   "buildConfig": {
     "projectName": "meeting-2018",
     "basePath": "http://edm.mcake.com/fangli/2018-wap/",
-    "tinypngKey": "Lv4IxKbb9SJ6M3OG-lyEA86akPCQBmqE",
-    "beiyong": "scz0D_NUirlIzDuA1U6m4rwvS24z7s0o",
+    "tinypngKey": "scz0D_NUirlIzDuA1U6m4rwvS24z7s0o",
+    "beiyong": "Lv4IxKbb9SJ6M3OG-lyEA86akPCQBmqE",
     "server": {
       "path": "./app",
       "port": "8013"

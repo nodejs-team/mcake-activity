@@ -200,7 +200,7 @@
     };
 
     var loadComplete = function () {
-
+        $(".floater").fadeIn(100);
        Select();
         new Price('.price',{
             add:'.add',

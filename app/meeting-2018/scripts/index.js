@@ -66,14 +66,88 @@
     var loadComplete = function () {
 
 
+        $(".step").fadeOut(0);
+        // $(".home-page").fadeOut(0);
+        // $(".step-barrage").fadeIn(0);
 
+        $(".home-page li").click(function () {
+            var index = $(this).index();
+            $(".home-page,.step").fadeOut(0);
+            $(".step").eq(index).fadeIn(10);
+            if(index == 0){
+                $(".blessing").focus();
+            }
+            else if(index == 3){
+                $(".vote-btn").fadeIn(10);
+            }
+
+
+        });
+        selectItem ();
+        $(".heart").click(function () {
+            $(".heart").fadeToggle(0);
+        });
+        /*initScroll();*/
     }
     var initScroll = function (){
         window.scrollAnimate('#evt_container', [
-             {dom: '.m-c1',x:-100, y:-50,duration:500,delay:200}
-
+             {dom: '.home-page .word',x:0, y:100,duration:500,delay:200}
         ])
     };
+
+
+
+    /*选择节目*/
+    function selectItem() {
+        $(".step-vote .list li").click(function () {
+            $(this).toggleClass('on');
+        });
+    }
+
+    /*弹窗*/
+    var Dialogs = {
+        $DialogBg:$(".Dialogbg"),
+        $Dialog:$(".Dialog"),
+        time:0,
+        success:function () {
+            var self = this;
+            this.$Dialog.find(".D-success").fadeIn(0);
+            this.$DialogBg.fadeIn(200);
+            this.$Dialog.fadeIn(200);
+            this.time = setTimeout(function () {
+                self.hide();
+            },2000);
+        },
+        fail:function () {
+            var self = this;
+            this.$Dialog.find(".D-fail").fadeIn(0);
+            this.$DialogBg.fadeIn(0);
+            this.$Dialog.fadeIn(0);
+            this.time = setTimeout(function () {
+                self.hide();
+            },2000);
+        },
+        hide:function () {
+            var self = this;
+            this.$Dialog.find(".content").fadeOut(0);
+            this.$DialogBg.fadeOut(0);
+            this.$Dialog.fadeOut(0);
+            this.$DialogBg.click(function () {
+                self.$DialogBg.fadeOut(0);
+                self.$Dialog.fadeOut(0);
+                self.$Dialog.find(".content").fadeOut(0);
+                clearTimeout( self.time );
+            });
+
+        },
+        init:function () {
+            this.hide();
+        }
+
+    }
+
+
+    window.Dialogs = Dialogs;
 
 
 })();

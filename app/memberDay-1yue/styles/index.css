@@ -595,7 +595,8 @@
   bottom: 0.20202rem;
   right: 0.10101rem;
   z-index: 11;
-  cursor: pointer; }
+  cursor: pointer;
+  display: none; }
   .floater img {
     width: 100%; }
   .floater .tips {
