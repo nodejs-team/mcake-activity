@@ -64,6 +64,12 @@
 
 
     var loadComplete = function () {
+        var wh = $(window).height();
+        console.log(wh);
+        $("#evt_content,.step").height(wh);
+
+
+
         /*返回主页*/
         $(".back").click(function () {
             $(".step").fadeOut(0);

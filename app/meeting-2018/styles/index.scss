@@ -29,7 +29,7 @@ body{ background:#fff;}
   img{width:100%;}
   .back{position: absolute; bottom: 0; width: 100%; background: #000; opacity: 0.5; color: #fff; line-height: px2rem(50); text-align: left; z-index: 1; padding:0 px2rem(20);}
   .sec{position: relative; }
-  .step{position: relative; }
+  .step{position: absolute; width: px2rem(750); }
   .home-page{position: relative;
     .sec-banner{
       height: px2rem(730); background:url("../images/meet-banner.jpg") no-repeat; z-index: 1; overflow: hidden; background-size: 100%;

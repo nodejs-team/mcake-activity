@@ -38,7 +38,8 @@ body {
   #evt_content .sec {
     position: relative; }
   #evt_content .step {
-    position: relative; }
+    position: absolute;
+    width: 10rem; }
   #evt_content .home-page {
     position: relative; }
     #evt_content .home-page .sec-banner {
