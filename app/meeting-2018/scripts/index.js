@@ -64,11 +64,17 @@
 
 
     var loadComplete = function () {
-
+        /*返回主页*/
+        $(".back").click(function () {
+            $(".step").fadeOut(0);
+            $(".home-page").fadeIn(0);
+            $(".vote-btn").fadeOut(0);
+        });
 
         $(".step").fadeOut(0);
-        // $(".home-page").fadeOut(0);
-        // $(".step-barrage").fadeIn(0);
+
+        $(".home-page").fadeOut(0);
+        $(".step-wish-list").fadeIn(0);
 
         $(".home-page li").click(function () {
             var index = $(this).index();
@@ -80,9 +86,10 @@
             else if(index == 3){
                 $(".vote-btn").fadeIn(10);
             }
-
-
         });
+
+
+
         selectItem ();
         $(".heart").click(function () {
             $(".heart").fadeToggle(0);
@@ -95,6 +102,18 @@
         ])
     };
 
+    /*弹幕*/
+    function barrage() {
+        var bragH = $(".barrage-item").offset().top;
+        var bragL = $(".barrage-item").offset().left;
+        var space = 10;
+        
+        $(".barrages li").each(function () {
+            space+=50;
+            $(this).css({top:bragH + space,left:bragL+(space*2)});
+
+        });
+    }
 
 
     /*选择节目*/

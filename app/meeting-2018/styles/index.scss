@@ -27,13 +27,14 @@ body{ background:#fff;}
 #evt_content{
 
   img{width:100%;}
+  .back{position: absolute; bottom: 0; width: 100%; background: #000; opacity: 0.5; color: #fff; line-height: px2rem(50); text-align: left; z-index: 1; padding:0 px2rem(20);}
   .sec{position: relative; }
   .step{position: relative; }
   .home-page{position: relative;
     .sec-banner{
       height: px2rem(730); background:url("../images/meet-banner.jpg") no-repeat; z-index: 1; overflow: hidden; background-size: 100%;
 
-      .word{position: absolute; width: 100%; top:px2rem(620); text-align: center; line-height: px2rem(50);
+      .word{position: absolute; width: 100%; top:px2rem(580); text-align: center; line-height: px2rem(50);
         p{color: #fff;}
         .p1{color: #000;}
       }
@@ -48,16 +49,17 @@ body{ background:#fff;}
       .my-Award{ width: 100%; text-align: center; line-height: px2rem(100);}
     }
   }
+
+  .WeChat{position: absolute; bottom:px2rem(-75); z-index: 5; left: 50%; margin-left: px2rem(-75.5); width:px2rem(151); height: px2rem(151); border-radius: 50%; border: #fff 2px solid;overflow: hidden;}
+
+  .my-info{position: absolute;  width: 100%; line-height: px2rem(45); text-align: center; margin: 0; padding: 0; bottom: px2rem(-155); text-align: center;
+    .wx-nickname{font-weight: bold;}
+    .wx-id{ color: #7b7a7a;}
+  }
   /*写祝福*/
   .step-write-wish{ background: #fff;
     .sec-banner{position: relative;
       height: px2rem(242); background:url("../images/meet-banner2.jpg") no-repeat; z-index: 2; background-size: 100%;
-
-      .WeChat{position: absolute; bottom:px2rem(-75); z-index: 5; left: 50%; margin-left: px2rem(-75.5); width:px2rem(151); height: px2rem(151); border-radius: 50%; border: #fff 2px solid;overflow: hidden;}
-
-      .my-info{position: absolute;  width: 100%; line-height: px2rem(30); text-align: center; margin: 0; padding: 0; bottom: px2rem(-150); text-align: center;
-        .wx-nickname{font-weight: bold;}
-      }
 
     }
     .sec-main{ z-index: 1; overflow: hidden; padding-top: px2rem(160);padding-bottom: px2rem(30);
@@ -77,23 +79,25 @@ body{ background:#fff;}
   .step-wish-list{background: #fff;
     .sec-banner{position: relative;
       height: px2rem(242); background:url("../images/meet-banner3.jpg") no-repeat; z-index: 2; background-size: 100%;
-
     }
     .sec-main{z-index: 1; overflow: hidden; padding-top: px2rem(60);padding-bottom: px2rem(30);
 
       .list{
         ul{margin: 0; padding: 0;}
+        li:last-child{ border: none;}
         li{display: -webkit-box; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; border-bottom: #c3c3c3 1px solid; padding-top: px2rem(20); padding-bottom: px2rem(50);position: relative;
-          .WeChat{width:px2rem(100); height: px2rem(100); border-radius: 50%; border: #fff 2px solid;overflow: hidden; margin: 0 px2rem(20);}
-          .list-content{flex: 1;
-            h2{font-size: px2rem(18); font-weight: bold;}
-            p{font-size: px2rem(20); color: #6a6a6a;}
+          .w-WeChat{ float: left;
+            img{display: block; width:px2rem(100); height: px2rem(100);  border-radius: 50%; }
           }
-          .support{position: absolute; right: px2rem(20); bottom: px2rem(20);
-            .heart{width:px2rem(30);height: px2rem(30); float: left; }
+          .list-content{width: 90%; float: left;padding: 0 px2rem(10);
+            h2{font-size: px2rem(24); font-weight: bold;}
+            p{font-size: px2rem(26); color: #6a6a6a;}
+          }
+          .support{position: absolute; right: px2rem(20); bottom: px2rem(10); display: -webkit-box; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center;
+            .heart{width:px2rem(30);height: px2rem(30); float: left; vertical-align: middle; }
             .heart-1{background: url("../images/heart-1.png") center no-repeat; background-size: 100%; }
             .heart-2{background: url("../images/heart-2.png") center no-repeat; background-size: 100%; display: none; }
-            span{display: inline-block;color: #6a6a6a; padding: 0 px2rem(10); line-height: px2rem(30); font-size: px2rem(30);}
+            span{display: inline-block;color: #6a6a6a; padding: 0 px2rem(10); line-height: px2rem(40); font-size: px2rem(30);vertical-align: middle; }
           }
         }
       }
@@ -104,27 +108,27 @@ body{ background:#fff;}
   /*弹幕*/
   .step-barrage{ background: #fff;
     .sec-banner{position: relative;
-      height: px2rem(750); background:url("../images/meet-banner4.jpg") no-repeat; z-index: 1; background-size: 100%;
-
-      .WeChat{position: absolute; bottom:px2rem(-75); z-index: 5; left: 50%; margin-left: px2rem(-75.5); width:px2rem(151); height: px2rem(151); border-radius: 50%; border: #fff 2px solid; overflow: hidden;}
-      .my-info{position: absolute;  width: 100%; line-height: px2rem(30); text-align: center; margin: 0; padding: 0; bottom: px2rem(-150);
-        .wx-nickname{font-weight: bold;}
-      }
-      .barrage-item{position: absolute; display: -webkit-box;
-        display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; top: px2rem(300); left: px2rem(500); width: px2rem(700);
+      height: px2rem(730); background:url("../images/meet-banner4.jpg") no-repeat; z-index: 1; background-size: 100%;
+      .barrages{position: absolute; top: 0; left: 0; width: 100%; height: 100%; padding-top: px2rem(50);}
+      .barrage-item{ display: -webkit-box;
+        display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; width: px2rem(700); margin-bottom: px2rem(50);color: #fff;
+        transform: translateX(100%);
         .icon{ margin-right: px2rem(10);
-          .Wx{ width:px2rem(40); height: px2rem(40); border-radius: 50%;overflow: hidden;}
+          .Wx{ width:px2rem(40); height: px2rem(40); border-radius: 50%;overflow: hidden;
+            img{width: 100%; display: block;}
+          }
         }
-        p{ color: #fff; font-size: px2rem(30); margin: 0;}
+        p{ display: block;  font-size: px2rem(30); margin: 0;}
       }
-      .marquee{ -webkit-animation: marquee 10s linear forwards; animation: marquee 10s linear forwards;}
+      .barrage-item.on{color: #ffc600;}
+      .marquee{ -webkit-animation: marquee 20s linear forwards; animation: marquee 20s linear forwards;}
 
     }
     .sec-main{ overflow: hidden; padding-top:px2rem(210); padding-bottom: px2rem(30);
       .write-barrage{width: 100%; line-height: px2rem(30); text-align: center; margin: 0; padding: 0;
-        .brg{ display: flex; position: relative; background: #f1f1f1; width: px2rem(575); float: left; border-radius: px2rem(10); -webkit-align-items: center; align-items: center; margin-left: px2rem(20);
-          .icon{width: px2rem(55); height: px2rem(55); margin: 0 px2rem(10); }
-          input{flex: 1; float: right; border: none; background: none; line-height: px2rem(80); text-align: right; font-size: px2rem(26); color: #000; padding: 0 px2rem(20); font-weight: bold;}
+        .brg{ display: -webkit-box; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center;  position: relative; background: #f1f1f1; width: px2rem(575); float: left; border-radius: px2rem(10); -webkit-align-items: center; align-items: center; margin-left: px2rem(20);
+          .icon{width: px2rem(55); height: px2rem(55); margin: 0 px2rem(10);float: left; }
+          input{flex: 1; float: right; width: 100%; background: none; line-height: px2rem(80); text-align: right; font-size: px2rem(26); color: #000; padding: 0 px2rem(20); font-weight: bold; border: none;}
 
         }
         .send-barrage{float: right; margin-right: px2rem(20);
@@ -135,7 +139,7 @@ body{ background:#fff;}
   }
 
   /*投票*/
-  .step-vote{background: #fff; border: blue 1px solid;
+  .step-vote{background: #fff;
     .sec-banner{position: relative;
       height: px2rem(242); background:url("../images/meet-banner5.jpg") no-repeat; z-index: 2; background-size: 100%;
 
@@ -144,11 +148,15 @@ body{ background:#fff;}
       h3{ text-align: center; font-size: px2rem(24); font-weight: normal; line-height: px2rem(100); color:#969696;border-bottom: #c3c3c3 1px solid;}
       .list{
         ul{margin: 0; padding: 0;}
-        li{display: -webkit-box; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; border-bottom: #c3c3c3 1px solid;position: relative; line-height: px2rem(120); color: #7c7c7c; background: #fbfbfb;
+        li{display: -webkit-box; display:box; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; border-bottom: #c3c3c3 1px solid;position: relative; line-height: px2rem(120); color: #7c7c7c; background: #fbfbfb;
           .radio{width:px2rem(40); height: px2rem(40); border-radius: 50%; overflow: hidden; margin-left:px2rem(40); background: url("../images/radio.png"); background-size: 100%;}
 
-          .list-content{flex: 1; display: inline-flex; justify-content:space-between; padding:0 px2rem(20);
-            span{font-size: px2rem(26); }
+          .list-content{flex: 1;width: 90%;
+            display: -webkit-inline-flex; display: inline-flex; -webkit-justify-content:space-between; justify-content:space-between;
+            padding:0 px2rem(20); text-align: right;
+            div{ display: block; font-size: px2rem(26); }
+            .fl{float: left;}
+            .fr{float: right;}
           }
         }
         li:last-child{border: none;}
@@ -162,9 +170,9 @@ body{ background:#fff;}
 }
 
 
-.vote-btn{ position: fixed; bottom:0; width:100%;  left:0;  padding:0 px2rem(30); color: #fff; text-align: center;background:#fff;  max-width: px2rem(750); display: none;
-  span{display: block; background: #d12828; width:100%;line-height: px2rem(100); border-radius: px2rem(10);
-    margin: px2rem(10) 0; font-size: px2rem(34);}
+.vote-btn{ position: fixed; bottom:0; width:100%; left:50%; margin-left: px2rem(-350);  padding:0 px2rem(30); color: #fff; text-align: center;background:#fff;  max-width: px2rem(640); display: none; z-index: 10;
+  span{display: block; background: #d12828; width:95%;line-height: px2rem(100); border-radius: px2rem(10);
+    margin: px2rem(10) auto; font-size: px2rem(34);}
 }
 
 
@@ -193,21 +201,21 @@ body{ background:#fff;}
 
 @-webkit-keyframes marquee {
   0% {
-    -webkit-transform: translateX(0); opacity: 1;
+    -webkit-transform: translateX(100%); opacity: 1;
   }
   99%{ opacity: 1;}
   100% {
-    -webkit-transform: translateX(-100%); opacity: 0;
+    -webkit-transform: translateX(-200%); opacity: 0;
   }
 }
 
 
 @keyframes marquee {
   0% {
-    transform: translateX(0); opacity: 1;
+    transform: translateX(100%); opacity: 1;
   }
   99%{ opacity: 1;}
   100% {
-    transform: translateX(-100%); opacity: 0;
+    transform: translateX(-200%); opacity: 0;
   }
 }
