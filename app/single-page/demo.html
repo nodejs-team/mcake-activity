@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>mcake活动</title>
+    <link rel="stylesheet" href="http://m.mcake.com/wap/theme/xth1/css/comm_header.css?v=1488352348">
+    <!-- build:css styles/index.css -->
+    <link rel="stylesheet" href="../commoncss/wap-normalize.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <!-- endbuild-->
+    <script src="http://edm.mcake.com/weifengwang/common/flexible.js"></script>
+
+    <style>
+        html,body,#evt_container{height: 100%;}
+        #iscroll {
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+        }
+
+    </style>
+    <script src="scripts/iscroll.js"></script>
+
+</head>
+<body>
+
+<div id="evt_container">
+    <div id="iscroll">
+        <div class="wrap">
+
+            <div id="evt_content" style="display:block;background: #f0f0f0;">
+
+                <div class="sec sec-demo">
+                    <div class="title">您所在的城市</div>
+                    <div class="citys">
+                        <ul class="clearfix">
+                            <li>
+                                <a href="http://www.baidu.com"><p><span>SHANGHAI</span>上海市</p></a>
+                                <div class="down-arrow"></div>
+                            </li>
+                            <li>
+                                <p><span>HANGZHOU</span>杭州市</p>
+                                <div class="down-arrow"></div>
+                            </li>
+                            <li>
+                                <p><span>SUZHOU</span>苏州市</p>
+                                <div class="down-arrow"></div>
+                            </li>
+
+                            <li>
+                                <p><span>BEIJING</span>北京市</p>
+                                <div class="down-arrow"></div>
+                            </li>
+                            <li>
+                                <p><span>BEIJING</span>北京市</p>
+                                <div class="down-arrow"></div>
+                            </li>
+                            <li>
+                                <p><span>BEIJING</span>北京市</p>
+                                <div class="down-arrow"></div>
+                            </li>
+                            <li>
+                                <p><span>BEIJING</span>北京市</p>
+                                <div class="down-arrow"></div>
+                            </li>
+                            <li>
+                                <p><span>BEIJING</span>北京市</p>
+                                <div class="down-arrow"></div>
+                            </li>
+                            <li>
+                                <p><span>BEIJING</span>北京市</p>
+                                <div class="down-arrow"></div>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="http://www.mcake.com/shop/theme/xth1/js/index/jquery.min.js?v=1411888163"></script>
+<script src="http://edm.mcake.com/fangli/2018-wap/single-page/scripts/iscroll.js"></script>
+<script src="http://edm.mcake.com/fangli/2018-wap/single-page/scripts/demoUtils.js"></script>
+<!-- build:js scripts/demo.js -->
+
+<script src="scripts/demo.js"></script>
+<!-- endbuild -->
+<script>
+window.onload = function () {
+    var myScroll;
+    myScroll = new IScroll('#iscroll', { mouseWheel: true });
+    document.addEventListener('touchmove', function (e) { e.preventDefault(); }, isPassive() ? {
+            capture: false,
+            passive: false
+        } : false);
+}
+</script>
+</body>
+</html>

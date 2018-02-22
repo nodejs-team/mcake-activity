@@ -34,7 +34,7 @@
     "yargs": "^6.4.0"
   },
   "buildConfig": {
-    "projectName": "meeting-2018",
+    "projectName": "38jie",
     "basePath": "http://edm.mcake.com/fangli/2018-wap/",
     "tinypngKey": "scz0D_NUirlIzDuA1U6m4rwvS24z7s0o",
     "beiyong": "Lv4IxKbb9SJ6M3OG-lyEA86akPCQBmqE",

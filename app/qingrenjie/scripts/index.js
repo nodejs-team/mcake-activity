@@ -60,73 +60,133 @@
     }
     startLoading();
 
-    
+
+
+
     var loadComplete = function () {
 
-        initScroll();
-
-        var on = true;
-
-        $(window).bind("load scroll resize beforeunload touchmove",scrollFun);
-        function scrollFun(){
-
-            var img2H = $(".naiyou").offset().top;
-            var scrollTop = $(window).scrollTop();
-
-
-            if(scrollTop>img2H){
-                if(on){
-                    animates.ad();
-                    on = false;
-                }
+        var swiper1 = new Swiper('.swiper1', {
+            slidesPerView: 1,
+            speed:300,
+            autoplay : {
+                delay:3000
+            },
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next1',
+                prevEl: '.swiper-button-prev1',
             }
-        }
+        });
+        var swiper2 = new Swiper('.swiper2', {
+            slidesPerView: 1,
+            speed:300,
+            autoplay : {
+                delay:3000
+            },
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next2',
+                prevEl: '.swiper-button-prev2',
+            }
+        });
+
+        new Price('.price',{
+            add:'.add',
+            reduce:'.reduce'
+        });
 
 
-
+        initScroll();
     }
-
     var initScroll = function (){
         window.scrollAnimate('#evt_container', [
+             {dom: '.rose-1',x:100, y:0,duration:500,delay:500}
+             ,{dom: '.rose-2',x:-100, y:0,duration:500,delay:500}
+             ,{dom: '.rose-3',x:100, y:0,duration:500,delay:500}
+             ,{dom: '.rose-4',x:-100, y:0,duration:500,delay:500}
+             ,{dom: '.rose-5',x:100, y:0,duration:500,delay:500}
+             ,{dom: '.rose-6',x:-100, y:0,duration:500,delay:500}
+             ,{dom: '.rose-7',x:100, y:0,duration:500,delay:500}
+             ,{dom: '.rose-8',x:0, y:100,duration:500,delay:500}
+             ,{dom: '.sec-1 .title',x:0, y:100,duration:500,delay:500}
+             ,{dom: '.sec-1 .word',x:0, y:100,duration:500,delay:500}
+             ,{dom: '.sec-1 .row-cake',x:0, y:100,duration:500,delay:500}
+             ,{dom: '.sec-1 .price',x:0, y:100,duration:500,delay:500}
+             ,{dom: '.sec-1 .w-2',x:0, y:100,duration:500,delay:500}
+             ,{dom: '.sec-2 .cake-slides',x:0, y:100,duration:500,delay:500}
+             ,{dom: '.sec-2 .bar',x:0, y:0,duration:500,delay:500}
+             ,{dom: '.sec-2 .price',x:0, y:100,duration:500,delay:500}
+             ,{dom: '.sec-3 .title',x:0, y:100,duration:500,delay:500}
+             ,{dom: '.sec-3 .row-cake',x:0, y:100,duration:500,delay:500}
+             ,{dom: '.sec-3 .word',x:0, y:100,duration:500,delay:500}
+             ,{dom: '.sec-3 .ad',x:0, y:100,duration:500,delay:500}
+             ,{dom: '.sec-3 .word',x:0, y:100,duration:500,delay:500}
+             ,{dom: '.sec-3 .ewm',x:0, y:100,duration:500,delay:500}
+             ,{dom: '.sec-3 .tips',x:0, y:100,duration:500,delay:500}
 
-             {dom: '.line',x:-200, y:0,duration:200,delay:1000}
-             ,{dom: '.word-1',x:100, y:0,duration:500,delay:200}
-             ,{dom: '.word-l-1',x:-50, y:0,duration:500,delay:800}
-             ,{dom: '.word-l-2',x:-50, y:0,duration:500,delay:1200}
-             ,{dom: '.word-l-3',x:-50, y:0,duration:500,delay:1500}
-             ,{dom: '.cake',x:0, y:50,duration:800,delay:800}
 
         ])
     };
 
 
-    var animates = {
 
-        ad:function () {
-            //图片配置
-            var mcConfig = {
-                "00013":{"x":0,"y":430,"w":758,"h":74,"offX":114,"offY":13,"sourceW":979,"sourceH":101,"duration":2},
-                "00000":{"x":660,"y":688,"w":5,"h":5,"offX":0,"offY":0,"sourceW":979,"sourceH":101,"duration":2},
-                "00001":{"x":737,"y":602,"w":5,"h":5,"offX":0,"offY":0,"sourceW":979,"sourceH":101,"duration":2},
-                "00002":{"x":0,"y":805,"w":5,"h":5,"offX":0,"offY":0,"sourceW":979,"sourceH":101,"duration":2},
-                "00003":{"x":770,"y":0,"w":38,"h":19,"offX":472,"offY":40,"sourceW":979,"sourceH":101,"duration":2},
-                "00004":{"x":0,"y":774,"w":382,"h":19,"offX":324,"offY":40,"sourceW":979,"sourceH":101,"duration":2},
-                "00005":{"x":0,"y":688,"w":648,"h":74,"offX":172,"offY":13,"sourceW":979,"sourceH":101,"duration":2},
-                "00006":{"x":0,"y":602,"w":725,"h":74,"offX":131,"offY":13,"sourceW":979,"sourceH":101,"duration":2},
-                "00007":{"x":0,"y":516,"w":754,"h":74,"offX":116,"offY":13,"sourceW":979,"sourceH":101,"duration":2},
-                "00008":{"x":0,"y":344,"w":758,"h":74,"offX":114,"offY":13,"sourceW":979,"sourceH":101,"duration":2},
-                "00009":{"x":0,"y":258,"w":758,"h":74,"offX":114,"offY":13,"sourceW":979,"sourceH":101,"duration":2},
-                "00010":{"x":0,"y":172,"w":758,"h":74,"offX":114,"offY":13,"sourceW":979,"sourceH":101,"duration":2},
-                "00011":{"x":0,"y":86,"w":758,"h":74,"offX":114,"offY":13,"sourceW":979,"sourceH":101,"duration":2},
-                "00012":{"x":0,"y":0,"w":758,"h":74,"offX":114,"offY":13,"sourceW":979,"sourceH":101,"duration":2}
-            };
-            // MovieClip 可以通过duration控制两张图片轮播的速度。duration:0.2*10=2
-            var Movie = new MovieClip('ad', loader.get('ad_png').data,formatResData(mcConfig)).play(1);
 
-        }
-
+    function Price(els,opts) {
+        this.$els = $(els);
+        this.$add = this.$els.find(opts.add);
+        this.$reduce = this.$els.find(opts.reduce);
+        this.num=0;
+        this.max=50;
+        this.oldPrice =0;
+        this.totalOldprice =0;
+        this.totalPrice =0;
+        this.discount = 0; /*立减69*/
+        this._init();
     }
+    Price.prototype= {
+        add: function (ele) {
+            var self = this;
+            self.num = ele.parents(".price").find('.num').text()-0;
+            if (self.num < self.max) {
+                self.num++;
+            }
+
+            ele.siblings().find('.num').text(self.num);
+            self.numCounts(ele);
+        },
+        reduce: function (ele) {
+            var self = this;
+            self.num = ele.parents(".price").find('.num').text()-0;
+            if (self.num > 1) {
+                self.num--;
+            }
+            ele.siblings().find('.num').text(self.num);
+            self.numCounts(ele);
+        },
+        numCounts:function (ele) {  /*加减计算价格*/
+            var self = this;
+            self.oldPrice = ele.parents(".price").find('.old-price').data("price");
+            self.nowPrice = ele.parents(".price").find('.now-price').data("price");
+
+            self.num = ele.parents(".price").find('.num').text()-0;
+            self.totalOldprice =self.oldPrice * self.num ;
+            self.totalnowPrice =self.nowPrice * self.num ;
+            ele.parents(".price").find('.old-price').html(self.totalOldprice);
+            ele.parents(".price").find('.now-price').html(self.totalnowPrice+".00");
+        },
+        _init:function () {
+            var self = this;
+
+            //this.numInit();
 
 
+            this.$add.click(function () {
+                self.add($(this));
+            });
+            this.$reduce.click(function () {
+                self.reduce($(this));
+            });
+        }
+    }
 
 })();

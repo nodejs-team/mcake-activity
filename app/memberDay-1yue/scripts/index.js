@@ -81,6 +81,13 @@
                 self.find(".old-price").text(price);
                 self.find(".postid").data("postid",postid);
             });
+
+            /*初始化*/
+            price=  $(this).find("option:selected",this).data("price");
+            postid =  $(this).find("option:selected",this).data("postid");
+            $(this).find(".pro-price").html(price*discount);
+            $(this).find(".old-price").html(price);
+
         });
         //$(".selects-l").val("200克");
 

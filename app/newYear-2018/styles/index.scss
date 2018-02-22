@@ -53,22 +53,19 @@
 
 
 
-  .sec-3{  position: relative; width: px2rem(750); height: px2rem(984); background:url("../images/fd.png") repeat; z-index: 1; background-size: 100%; padding-top: px2rem(60);
-    .fd-pic{ width: px2rem(650); margin:0 auto;}
-    .fudai{
+  .sec-3{  position: relative; width: px2rem(750); height: px2rem(984); background:url("../images/fd.png") repeat; z-index: 1; background-size: 100%;
+    .fd-pic{ width: px2rem(750); height: px2rem(984); margin:0 auto;}
+    .fudai{ position: absolute; top: 60%; z-index: 2;
       ul{ padding-left: px2rem(30);padding-right: px2rem(-10); overflow: hidden;
-        li{ float: left; width: px2rem(326); margin-right: px2rem(30); background: #fff; border-radius: px2rem(10); overflow: hidden;
+        li{ float: left; width: px2rem(326); margin-right: px2rem(30); background: #d6cece; border-radius: px2rem(10); overflow: hidden;
           img{width:px2rem(282); margin:px2rem(20);  }
-          .gobtn{ margin-top: px2rem(30);
-            dl{ overflow: hidden;
-              dd{float:left; display: block; width: 50%; text-align: center; line-height: px2rem(70); background: #d8c097; color: #fff; border-radius:none;
-                span{font-size: px2rem(20);}
-              }
-              dd.on{background: #d5a551;}
-            }
+          .buys{width: 100%; border-top:#e0e0e0 1px solid;
+            span{width: 49.8%; display: block; text-align: center; border-right: #e0e0e0 1px solid; line-height:px2rem(30); float: left; font-size: px2rem(18); cursor: pointer; margin: px2rem(20) auto;}
+            span.on{color: #c71c1c;}
           }
 
         }
+        li.on{ background: #fff;}
       }
     }
   }
@@ -202,3 +199,43 @@
   }
 
 }
+
+
+
+
+
+.swiper-container {
+  position: relative !important;
+  width: 100%;
+  height:px2rem(984);
+  margin-left: auto;
+  margin-right: auto;
+}
+.swiper-slide {
+  text-align: center;
+  background: #fff;
+  height:px2rem(984);
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-pagination{width: 100%; position: absolute !important; bottom:45% !important; }
+.swiper-pagination-bullet{margin:0 px2rem(5) !important;}
+.swiper-pagination-bullet.swiper-pagination-bullet-active{background: #fff !important;}
+
+
+
+
+
+

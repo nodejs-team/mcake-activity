@@ -1,0 +1,151 @@
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden; }
+
+#evt_content {
+  background: #f8d2d2; }
+  #evt_content img {
+    width: 100%; }
+  #evt_content .sec {
+    position: relative; }
+  #evt_content .sec-main {
+    height: 17.78667rem;
+    background: url("../images/quan-bg.jpg") no-repeat;
+    background-size: 100%;
+    z-index: 1;
+    overflow: hidden; }
+    #evt_content .sec-main .quan-top {
+      width: 8rem;
+      margin: 1.33333rem auto 0; }
+    #evt_content .sec-main .quan-zk {
+      width: 7.24rem;
+      margin: 0.66667rem auto 0.26667rem; }
+    #evt_content .sec-main .quan-lingqu {
+      width: 7.06667rem;
+      margin: 0rem auto;
+      text-align: center; }
+      #evt_content .sec-main .quan-lingqu .line {
+        position: relative;
+        line-height: 0.86667rem;
+        margin-bottom: 0.4rem; }
+        #evt_content .sec-main .quan-lingqu .line span {
+          float: left;
+          display: block;
+          width: 100%;
+          background: #fff;
+          border-radius: 0.4rem; }
+        #evt_content .sec-main .quan-lingqu .line span.short {
+          width: 70%; }
+        #evt_content .sec-main .quan-lingqu .line span.yzm {
+          width: 25%;
+          float: right;
+          border-radius: 0; }
+        #evt_content .sec-main .quan-lingqu .line input {
+          width: 90%;
+          height: 0.86667rem;
+          margin: 0 auto;
+          border: none;
+          background: none;
+          color: #9f0001; }
+        #evt_content .sec-main .quan-lingqu .line input::-webkit-input-placeholder {
+          color: #e6c9c9; }
+        #evt_content .sec-main .quan-lingqu .line input:-moz-placeholder {
+          color: #e6c9c9; }
+        #evt_content .sec-main .quan-lingqu .line input::-moz-placeholder {
+          color: #e6c9c9; }
+        #evt_content .sec-main .quan-lingqu .line input:-ms-input-placeholder {
+          color: #e6c9c9; }
+        #evt_content .sec-main .quan-lingqu .line .getyzm {
+          position: absolute;
+          right: 0.5%;
+          top: 5%;
+          display: block;
+          width: 30%;
+          line-height: 0.8rem;
+          background: #dedede;
+          border-radius: 0.4rem;
+          vertical-align: middle;
+          font-size: 0.26667rem; }
+        #evt_content .sec-main .quan-lingqu .line .getyzm.on {
+          background: #f7afaf;
+          color: #b23c3c; }
+      #evt_content .sec-main .quan-lingqu .getBtn {
+        width: 2.53333rem;
+        margin: 0.26667rem auto; }
+        #evt_content .sec-main .quan-lingqu .getBtn span {
+          display: block;
+          line-height: 0.8rem;
+          width: 100%;
+          background: #f7afaf;
+          color: #bf5151;
+          border-radius: 0.4rem;
+          font-weight: bold; }
+    #evt_content .sec-main .guize {
+      width: 7.61333rem;
+      background: url("../images/quan-gz.png") no-repeat;
+      background-size: 100%;
+      margin: 0 auto;
+      padding: 0.26667rem 0.13333rem;
+      color: #bf5151;
+      border-radius: 0.13333rem; }
+      #evt_content .sec-main .guize h2 {
+        font-size: 0.29333rem; }
+      #evt_content .sec-main .guize p {
+        font-size: 0.26667rem;
+        line-height: 0.46667rem;
+        padding-left: 0.4rem;
+        text-indent: -0.4rem; }
+  #evt_content .success {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10rem;
+    height: 17.78667rem;
+    z-index: 10;
+    background: url("../images/quan-success.jpg");
+    background-size: 100%; }
+    #evt_content .success .use-btn {
+      position: absolute;
+      width: 4rem;
+      top: 11.06667rem;
+      height: 1.06667rem;
+      left: 50%;
+      margin-left: -2rem; }
+    #evt_content .success .send-hongbao {
+      position: absolute;
+      width: 4rem;
+      top: 12.4rem;
+      height: 1.33333rem;
+      left: 50%;
+      margin-left: -2rem; }
+
+.Dialogbg-quan {
+  background-color: #000;
+  height: 100%;
+  left: 0;
+  opacity: 0.85;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 200;
+  display: none; }
+
+.Dialog-quan {
+  background: url("../images/quan-share.png") no-repeat;
+  background-size: 100%;
+  box-shadow: 0 0 0 #999;
+  font-size: 0.18667rem;
+  width: 6.34667rem;
+  height: 13.04rem;
+  margin-top: -6.52rem;
+  margin-left: -3.17333rem;
+  left: 50%;
+  padding: 0;
+  position: fixed;
+  top: 50%;
+  z-index: 99999;
+  display: none;
+  border-radius: 0.26667rem; }

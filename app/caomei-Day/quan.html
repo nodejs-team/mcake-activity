@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>mcake活动</title>
+
+    <!-- build:css styles/quan.css -->
+    <link rel="stylesheet" href="../commoncss/wap-normalize.css">
+    <link rel="stylesheet" href="styles/quan.css">
+    <!-- endbuild-->
+    <link rel="stylesheet" type="text/css" href="http://www.mcake.com/wap/theme/xth1/css/comm_header.css?v=1508207710" />
+</head>
+<body>
+
+<div id="evt_container">
+    <div id="iscroll">
+        <div class="wrap">
+            <div id="evt_loading" style="display:none;">0%</div>
+            <div id="evt_content" style="display:none;">
+                <div class="sec sec-main clearfix">
+                    <div class="quan-top"><img src="images/quan-top.png" alt=""></div>
+                    <div class="quan-zk"><img src="images/quan-zk.png" alt=""></div>
+                    <div class="quan-lingqu">
+                        <div class="line clearfix">
+                            <span><input type="tel" placeholder="请输入您的手机号"></span>
+                        </div>
+                        <div class="line clearfix">
+                            <span class="short"><input type="text" placeholder="请输入图片验证码"></span>
+                            <span class="yzm">验证码</span>
+                        </div>
+                        <div class="line clearfix">
+                            <span><input type="text" placeholder="请输入您的验证码"></span>
+                            <b class="getyzm on">获取验证码</b>
+                        </div>
+                        <div class="getBtn"><span>立即领取</span></div>
+                    </div>
+                    <div class="guize">
+                        <h2>活动规则 </h2>
+                        <p>1 、活动时间：2018年1月16日-2018年2月16日 </p>
+                        <p>2、活动地点：上海，杭州，苏州 </p>
+                        <p>3、活动期间购买草莓季活动产品均可分享5张半价优惠券
+                            （仅限半熟芝士草莓味，有效期2018年4月15日） </p>
+                        <p>4、本活动与会员等级制度、积分同享，但不与其他优惠同享 </p>
+                        <p>5、支付方式：微信、支付宝、现金 </p>
+                        <p>6、Mcake对本次活动拥有最终解释权</p>
+                    </div>
+                </div>
+                <div class="success" style="display: none;">
+                    <div class="use-btn"></div>
+                    <div class="send-hongbao"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="Dialogbg-quan" ontouchmove="return false;"></div>
+<div class="Dialog-quan" ontouchmove="return false;"></div>
+
+
+<script type="text/javascript" src="http://www.mcake.com/framework/jquery/jquery.min.js?v=1405950469"></script>
+<script src="http://edm.mcake.com/weifengwang/common/flexible.js"></script>
+<!-- build:js scripts/quan.js -->
+<script src="../commonjs/fastclick.js"></script>
+<script src="../commonjs/pubsub.js"></script>
+<script src="../commonjs/loader.js"></script>
+
+<script src="../commonjs/iscroll.js"></script>
+<script src="../commonjs/velocity.js"></script>
+<script src="../commonjs/wap-scrollAnimate.js"></script>
+
+<script src="../commonjs/movieclip.js"></script>
+<script src="scripts/resdata.js"></script>
+<script src="scripts/quan.js"></script>
+<!-- endbuild -->
+<script>
+    $(".getBtn").click(function () {
+        $(".success").fadeIn(200);
+        quanShow();
+        /*quanHide;  关闭弹窗*/
+    });
+    $(".send-hongbao").click(function () {
+       alert("发红包")
+    });
+</script>
+</body>
+</html>

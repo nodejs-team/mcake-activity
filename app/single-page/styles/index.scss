@@ -27,6 +27,7 @@ body{background: #f0f0f0;}
 #evt_content{ background: #f0f0f0;
   img{width:100%;}
   .sec{position: relative; }
+  /*ofo*/
   .sec-banner{
     .img{ position: relative; width: px2rem(750);}
     .video{ position: absolute; top: px2rem(100); left: px2rem(250); width:px2rem(250); height: px2rem(150);
@@ -66,12 +67,12 @@ body{background: #f0f0f0;}
   }
 
 
-
+  /*city*/
   .sec-1{ background: #f0f0f0;padding-bottom: px2rem(100); padding-top: px2rem(50);
     .title{ position: relative; text-align: center; font-size: px2rem(40); padding: px2rem(50) 0; }
     .citys{ position: relative;
       ul{margin-left: px2rem(45); margin-right: px2rem(-30);
-        li{position: relative; width: px2rem(317); height: px2rem(315); margin-top: px2rem(50); float: left; margin-right: px2rem(30); background: #fff; border-radius: px2rem(10); box-shadow: 0 px2rem(10) px2rem(40) #888888; display: flex; align-items: center;
+        li{position: relative; width: px2rem(317); height: px2rem(315); margin-top: px2rem(50); float: left; margin-right: px2rem(30); background: #fff; border-radius: px2rem(10); box-shadow: 0 px2rem(10) px2rem(40) #dedede; display: flex; align-items: center;
           p{position: absolute; top: 38%; display: block; width: 100%; text-align: center; vertical-align:middle; font-size: px2rem(40); color: #af916c;
             span{ display: block; font-size: px2rem(20); color: #000; font-weight:bold;}
           }
@@ -80,6 +81,22 @@ body{background: #f0f0f0;}
       }
     }
   }
+
+  /*demo*/
+  .sec-demo{ background: #f0f0f0;padding-bottom: px2rem(100); padding-top: px2rem(50);
+    .title{ position: relative; text-align: center; font-size: px2rem(40); padding: px2rem(50) 0; }
+    .citys{ position: relative;
+      ul{margin-left: px2rem(45); margin-right: px2rem(-30);
+        li{position: relative; width: px2rem(317); height: px2rem(315); margin-top: px2rem(50); float: left; margin-right: px2rem(30); background: #fff; border-radius: px2rem(10); box-shadow: 0 px2rem(10) px2rem(40) #dedede; display: flex; align-items: center;
+          p{position: absolute; top: 38%; display: block; width: 100%; text-align: center; vertical-align:middle; font-size: px2rem(40); color: #af916c;
+            span{ display: block; font-size: px2rem(20); color: #000; font-weight:bold;}
+          }
+        }
+        li.on{ background: #efefef;}
+      }
+    }
+  }
+
 
 }
 

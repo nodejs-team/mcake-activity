@@ -1,0 +1,103 @@
+@function px2rem($n) {
+  @return ($n * 10 / 750) * 1rem;
+}
+
+@mixin font-dpr($font-size){
+  font-size: $font-size;
+
+  [data-dpr="2"] & {
+    font-size: $font-size * 2;
+  }
+
+  [data-dpr="3"] & {
+    font-size: $font-size * 3;
+  }
+
+}
+
+#evt_content{  background:url("../images/bg.jpg") no-repeat; background-size: 100%;
+  div{position:absolute;}
+  img{width:100%;}
+  .sec{position: relative; }
+
+  .sec-main{ height: px2rem(2363);
+    .row{position: relative;}
+    .title{width: px2rem(731); top: px2rem(83); left: px2rem(34);}
+    .women{width: px2rem(389); top: px2rem(541); left: px2rem(289);}
+    .cake{width: px2rem(483); top: px2rem(400); left: px2rem(0);}
+    .zengpin{width: px2rem(676); top: px2rem(929); left: px2rem(28);}
+    .shengyu{width: px2rem(488); top: px2rem(1248); left: px2rem(129);
+      .number{ position: absolute;  top: px2rem(95); left:px2rem(215);
+        span{float: left; display: block; width: px2rem(23); height: px2rem(30); margin-right:px2rem(16);background-size: 100%;}
+        .sz-0{background: url("../images/num-0.png") no-repeat; background-size: 100%;}
+        .sz-1{background: url("../images/num-1.png") no-repeat; background-size: 100%;}
+        .sz-2{background: url("../images/num-2.png") no-repeat; background-size: 100%;}
+        .sz-3{background: url("../images/num-3.png") no-repeat; background-size: 100%;}
+        .sz-4{background: url("../images/num-4.png") no-repeat; background-size: 100%;}
+        .sz-5{background: url("../images/num-5.png") no-repeat; background-size: 100%;}
+        .sz-6{background: url("../images/num-6.png") no-repeat; background-size: 100%;}
+        .sz-7{background: url("../images/num-7.png") no-repeat; background-size: 100%;}
+        .sz-8{background: url("../images/num-8.png") no-repeat; background-size: 100%;}
+        .sz-9{background: url("../images/num-9.png") no-repeat; background-size: 100%;}
+      }
+    }
+    .slider-box{width: px2rem(640); height: px2rem(500); top: px2rem(1489); left: px2rem(53); border: red 1px solid;}
+
+  }
+
+
+
+  .sec-footer{background:#e9d8e3; background-size: 100%; position: relative; padding-bottom: px2rem(40);
+
+    .txt{ position: relative; width:px2rem(700); padding-top: px2rem(70); margin: 0 auto;  color: #000;
+      h2{font-size: px2rem(30); font-weight: normal; color: #d6999b; }
+      p{ font-size: px2rem(22); padding-left: px2rem(35); line-height:px2rem(40);  text-indent: px2rem(-35);
+        margin:px2rem(5) 0;}
+    }
+  }
+
+}
+
+
+.slideContain{width: px2rem(670); height: px2rem(860); top:px2rem(1489); left: px2rem(40); }
+
+
+.slider{width:px2rem(666); position:relative !important; margin:0 auto;
+  .prev,.next{width:px2rem(78); top:px2rem(224); position:absolute;}
+  .prev{left:0;}
+  .next{right:0;}
+}
+.slideOuter{width:px2rem(494); height:px2rem(860); position:relative !important; overflow:hidden; margin:0 auto;
+
+  ul{width:px2rem(2800); padding: 0;}
+  li{width:px2rem(494); margin:0 px2rem(5); color:#242424; font-size:px2rem(20); float:left; list-style: none;
+    background: url("../images/cake-bg.png") no-repeat; background-size: 100%;
+    >img{ width: px2rem(449) !important; margin: px2rem(20) px2rem(20) px2rem(10) px2rem(25); }
+    .fl{float:left;}
+    .fr{float:right;}
+    p{ text-align:center; font-size: px2rem(24); margin:px2rem(-10) auto px2rem(3); line-height: px2rem(28);
+      span{ font-size: px2rem(20);}
+    }
+    .buybtn{width: px2rem(270); height:px2rem(73);  display:block; border-radius:px2rem(2);
+      text-decoration: none; margin:px2rem(180)  auto 0; background:url("../images/btn-bg.png"); background-size: 100%; color:#ffffff;
+      text-align:center; line-height:px2rem(73); font-size:px2rem(40); position:static;}
+
+    .pro-num{ position: relative; width: px2rem(494); height: px2rem(110); margin:px2rem(40) auto;
+      a{ position: absolute; width:px2rem(81); height:px2rem(80); display:block; top:px2rem(10);}
+      .minus{background:url(../images/btn-1.png); left:0; background-size: 100%;}
+      .plus{background:url(../images/btn-2.png); right:0; background-size: 100%;}
+      input{border:none; display:block; background:url(../images/input.png); width:px2rem(300); height:px2rem(97); line-height:px2rem(97); position:absolute; top:0; left:px2rem(90); text-align:center; color:#626262; font-size:px2rem(40); padding:0;}
+
+    }
+  }
+}
+
+
+
+@media screen and (max-width: 320px) {
+  .shengyu {
+    .number {
+      span{width: px2rem(25) !important;  height: px2rem(33) !important; margin-right: px2rem(18)!important;}
+    }
+  }
+}

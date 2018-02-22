@@ -1,258 +1,285 @@
+@charset "UTF-8";
 #evt_content {
-  background: #fff; }
+  background: #fef8fa; }
   #evt_content div {
     position: absolute; }
   #evt_content img {
     width: 100%; }
   #evt_content .sec {
-    position: relative; }
+    position: relative;
+    color: #000; }
   #evt_content .sec-top {
-    height: 13.32rem; }
-    #evt_content .sec-top .top-l {
-      width: 5.09333rem;
-      top: 0rem;
-      left: 0rem; }
-    #evt_content .sec-top .logon {
-      width: 8.69333rem;
-      top: 0.53333rem;
-      left: 0.6rem; }
-    #evt_content .sec-top .line {
-      width: 10rem;
-      top: 7.10667rem;
-      left: 0rem; }
-    #evt_content .sec-top .w-1 {
-      width: 1.56rem;
-      top: 2.49333rem;
-      left: auto;
-      right: 0rem; }
-    #evt_content .sec-top .word-1 {
-      width: 3.6rem;
-      top: 10.4rem;
-      left: auto;
-      right: 0.56rem; }
-    #evt_content .sec-top .cake {
-      width: 9.98667rem;
-      top: 3.10667rem;
-      left: 0rem; }
-    #evt_content .sec-top .buy-cake {
-      width: 5.33333rem;
-      height: 5.33333rem;
-      top: 4.13333rem;
-      left: 2.4rem; }
-    #evt_content .sec-top .word {
-      color: #fff;
-      font-size: 0.26667rem; }
-    #evt_content .sec-top .word-l-1 {
-      top: 3.22667rem;
-      left: 0.89333rem; }
-    #evt_content .sec-top .word-l-2 {
-      top: 4.41333rem;
-      left: 0.89333rem;
-      font-size: 0.93333rem;
-      text-transform: uppercase; }
-    #evt_content .sec-top .word-l-3 {
-      top: 11.42667rem;
-      left: 0.89333rem; }
-  #evt_content .btns {
-    width: 10rem;
-    top: 4.4rem;
+    height: 13.88rem;
+    background: url("../images/banner.jpg") repeat;
+    background-size: 100%;
+    z-index: 1;
+    overflow: hidden; }
+  #evt_content .rose {
+    position: absolute !important;
+    width: 6.14667rem;
+    height: 5.78667rem;
+    background: url("../images/rose.png") no-repeat;
+    background-size: 100%; }
+  #evt_content .rose-1 {
+    right: -2.66667rem;
+    top: -2.66667rem; }
+  #evt_content .rose-2 {
+    left: -2.66667rem;
+    top: 10.6rem; }
+  #evt_content .rose-3 {
+    right: -3.33333rem;
+    top: 8.29333rem; }
+  #evt_content .rose-4 {
+    left: -3.33333rem;
+    top: 24rem; }
+  #evt_content .rose-5 {
+    right: -3.33333rem;
+    top: 21.28rem; }
+  #evt_content .rose-6 {
+    left: -3.33333rem;
+    top: 35.97333rem; }
+  #evt_content .rose-7 {
+    right: -3.33333rem;
+    top: -2rem; }
+  #evt_content .rose-8 {
+    left: -3.33333rem;
+    top: auto;
+    bottom: -2.66667rem; }
+  #evt_content .sec-1 div {
+    position: relative; }
+  #evt_content .sec-1 .title, #evt_content .sec-1 .cake {
+    margin: 0 auto; }
+  #evt_content .sec-1 .title {
+    margin-top: 0.61333rem; }
+  #evt_content .sec-1 .swiper1 {
+    height: 7.24rem; }
+  #evt_content .sec-1 .word {
+    margin-top: 1.33333rem;
     text-align: center; }
-    #evt_content .btns a {
-      display: block;
-      text-decoration: none; }
-    #evt_content .btns span {
-      background: #937c52;
-      position: relative;
-      margin: 0 auto;
-      color: #fff;
-      font-size: 0.34667rem;
-      letter-spacing: 3px;
-      padding: 0.13333rem 0.26667rem 0.13333rem 0.4rem; }
-  #evt_content .sec-1 {
-    height: 24.26667rem; }
-    #evt_content .sec-1 .pic-1 {
-      width: 9.6rem;
-      top: 9.06667rem;
-      left: 0rem; }
-    #evt_content .sec-1 .love {
-      width: 8.76rem;
-      top: 2.4rem;
-      left: 0rem; }
-    #evt_content .sec-1 .love-music {
-      width: 2.72rem;
-      top: 0.92rem;
-      left: 2.33333rem; }
-    #evt_content .sec-1 .words-2 {
-      width: 7.05333rem;
-      top: 17.44rem;
-      left: 1.42667rem; }
-    #evt_content .sec-1 .w-3 {
-      width: 1.53333rem;
-      top: 21.06667rem;
-      left: 3.97333rem; }
-    #evt_content .sec-1 .word {
-      text-align: center;
-      font-size: 0.26667rem;
-      color: #472929; }
-    #evt_content .sec-1 .word-1 {
-      width: 8.86667rem;
-      top: 19.2rem;
-      left: 0.6rem; }
-    #evt_content .sec-1 .word-2 {
-      width: 6.37333rem;
-      top: 21.68rem;
-      left: 1.85333rem; }
-    #evt_content .sec-1 .word-3 {
-      width: 10rem;
-      top: 22.68rem;
-      text-align: center; }
-      #evt_content .sec-1 .word-3 .wr {
-        position: relative;
-        margin: 0 auto;
-        width: 5.33333rem;
-        font-size: 0.38667rem;
-        vertical-align: middle;
-        text-align: center; }
-        #evt_content .sec-1 .word-3 .wr i {
-          position: absolute;
-          top: 0.13333rem;
-          left: 0;
-          font-size: 0.33333rem;
-          font-style: normal;
-          color: #a58875; }
-        #evt_content .sec-1 .word-3 .wr span {
-          position: relative;
-          font-size: 0.74667rem;
-          color: #a58875;
-          font-weight: normal;
-          padding-left: 0.33333rem;
-          vertical-align: sub; }
-    #evt_content .sec-1 .go-btn {
-      top: 23.85333rem; }
-  #evt_content .sec-2 {
-    height: 14.90667rem; }
-    #evt_content .sec-2 .naiyou {
-      width: 2.94667rem;
-      top: 3.46667rem;
-      left: 6.13333rem; }
-    #evt_content .sec-2 .w-2 {
-      width: 2.02667rem;
-      top: 10.05333rem;
-      left: 0rem; }
-    #evt_content .sec-2 .img-1 {
-      width: 6.08rem;
-      top: 0.98667rem;
-      left: 0.70667rem; }
-    #evt_content .sec-2 .img-2 {
-      width: 5.88rem;
-      top: 6.52rem;
-      left: 3.46667rem; }
-    #evt_content .sec-2 .w-3 {
-      width: 1.53333rem;
-      height: 0.29333rem;
-      background: url("../images/w-3.png");
-      background-size: 100%;
-      top: 6.52rem;
-      left: 0.70667rem; }
-    #evt_content .sec-2 .w-3-2 {
-      top: 12.50667rem;
-      left: 3.46667rem; }
-    #evt_content .sec-2 p {
-      color: #472929;
-      text-transform: uppercase; }
-    #evt_content .sec-2 .p1 {
-      font-size: 0.29333rem;
-      line-height: 0.4rem;
-      margin-top: 0.26667rem; }
-    #evt_content .sec-2 .p2 {
-      font-size: 0.13333rem;
-      line-height: 0.26667rem;
-      margin-top: 0.13333rem; }
-  #evt_content .sec-ad .ad {
+    #evt_content .sec-1 .word h2 {
+      font-size: 0.66667rem;
+      line-height: 1.06667rem;
+      font-weight: normal; }
+    #evt_content .sec-1 .word p {
+      font-size: 0.32rem;
+      line-height: 0.4rem; }
+  #evt_content .sec-1 .row-cake {
+    position: relative;
+    width: 9.4rem;
+    margin: 1.02667rem auto 0; }
+  #evt_content .sec-1 .swiper1 {
+    position: relative; }
+  #evt_content .sec-1 .swiper-button {
     position: absolute;
+    width: 0.58667rem;
+    height: 0.58667rem;
     top: 50%;
-    left: 50%;
-    margin-left: -4.54rem;
-    margin-top: -0.52rem; }
-    #evt_content .sec-ad .ad canvas {
-      width: 9.08rem;
-      height: 1.04rem; }
-  #evt_content .sec-3 {
-    height: 10.25333rem; }
-    #evt_content .sec-3 .w-title {
+    z-index: 10;
+    margin-top: -0.29333rem; }
+  #evt_content .sec-1 .swiper-button-prev1 {
+    background: url("../images/sw1-prev.png") no-repeat;
+    background-size: 100%;
+    left: 0.26667rem; }
+  #evt_content .sec-1 .swiper-button-next1 {
+    background: url("../images/sw1-next.png") no-repeat;
+    background-size: 100%;
+    right: 0.26667rem; }
+  #evt_content .sec-2 {
+    position: relative; }
+    #evt_content .sec-2 div {
+      position: relative; }
+    #evt_content .sec-2 .cake-slides {
+      width: 9.4rem;
+      margin: 1.02667rem auto 1.86667rem; }
+    #evt_content .sec-2 .bar {
+      position: absolute;
+      bottom: -2.45333rem;
       width: 10rem;
-      top: 0.53333rem;
-      text-align: center;
-      line-height: 0.8rem;
-      color: #472929;
-      font-size: 0.36rem; }
-      #evt_content .sec-3 .w-title .s-w {
-        position: relative;
-        margin: 0 auto; }
-        #evt_content .sec-3 .w-title .s-w i {
-          position: absolute;
-          top: -4px;
-          left: 0;
-          font-size: 0.38667rem;
-          font-style: normal;
-          color: #a58875; }
-        #evt_content .sec-3 .w-title .s-w strong {
-          position: relative;
-          font-size: 0.85333rem;
-          color: #a58875;
-          font-weight: normal;
-          padding-left: 0.26667rem; }
-    #evt_content .sec-3 .s-btn {
-      display: block;
-      position: relative;
-      height: 0.4rem;
-      color: #472929;
-      padding: 0.06667rem 0.13333rem;
-      font-size: 0.29333rem;
-      line-height: 0.4rem;
-      font-weight: normal;
-      letter-spacing: 2px;
-      margin-top: 0.13333rem;
+      height: 3.93333rem;
+      background: url("../images/bar.png") center no-repeat;
+      background-size: 100%;
       z-index: 2; }
-      #evt_content .sec-3 .s-btn b {
-        z-index: 2;
+    #evt_content .sec-2 .swiper-button {
+      position: absolute;
+      width: 0.8rem;
+      height: 0.8rem;
+      top: 50%;
+      z-index: 10;
+      margin-top: -0.8rem; }
+    #evt_content .sec-2 .swiper-button-prev2 {
+      background: url("../images/sw2-prev.png") no-repeat;
+      background-size: 100%;
+      left: 1.06667rem; }
+    #evt_content .sec-2 .swiper-button-next2 {
+      background: url("../images/sw2-next.png") no-repeat;
+      background-size: 100%;
+      right: 1.06667rem; }
+  #evt_content .sec-3 {
+    position: relative; }
+    #evt_content .sec-3 div {
+      position: relative; }
+    #evt_content .sec-3 .title, #evt_content .sec-3 .cake {
+      margin: 0 auto; }
+    #evt_content .sec-3 .word {
+      margin-top: 0.8rem;
+      text-align: center; }
+      #evt_content .sec-3 .word icon {
+        margin: 0 auto; }
+      #evt_content .sec-3 .word h2 {
+        font-size: 0.66667rem;
+        line-height: 1.06667rem;
         font-weight: normal; }
-      #evt_content .sec-3 .s-btn strong {
-        display: block;
-        width: 1.86667rem;
-        height: 0.06667rem;
-        background: #a58875;
-        position: absolute;
-        bottom: 0.08rem;
-        left: 50%;
-        margin-left: -0.93333rem;
-        z-index: -1; }
-    #evt_content .sec-3 .pro {
-      width: 8.72rem;
-      top: 3.37333rem;
-      left: 0rem; }
-    #evt_content .sec-3 .pro-n {
-      width: 6.08rem;
-      top: 8.05333rem;
-      left: 1.84rem; }
+      #evt_content .sec-3 .word h3 {
+        font-size: 0.53333rem;
+        line-height: 1.06667rem;
+        font-weight: normal; }
+      #evt_content .sec-3 .word h4 {
+        font-size: 0.53333rem;
+        line-height: 1.06667rem;
+        font-weight: normal; }
+      #evt_content .sec-3 .word p {
+        font-size: 0.29333rem;
+        line-height: 0.45333rem; }
+      #evt_content .sec-3 .word span {
+        font-size: 0.32rem;
+        line-height: 0.53333rem; }
+    #evt_content .sec-3 .ad {
+      width: 9.4rem;
+      margin: 1.02667rem auto 0; }
+    #evt_content .sec-3 .tips {
+      width: 7.96rem;
+      margin: 0.13333rem auto 0; }
+    #evt_content .sec-3 .ewm {
+      width: 5.54667rem;
+      margin: 0.26667rem auto 0; }
+    #evt_content .sec-3 .cake {
+      width: 9.4rem;
+      margin: 0.93333rem auto 0; }
+    #evt_content .sec-3 .w-icon {
+      width: 0.50667rem;
+      margin: 0 auto; }
   #evt_content .sec-footer {
-    background: #f6f6f6;
+    background-size: 100%;
     position: relative;
     padding-bottom: 0.26667rem; }
     #evt_content .sec-footer .txt {
       position: relative;
-      width: 8.8rem;
-      padding-top: 1.2rem;
-      padding-bottom: 0.66667rem;
+      width: 9.33333rem;
+      padding-top: 0.93333rem;
       margin: 0 auto;
-      color: #472929; }
+      color: #000; }
       #evt_content .sec-footer .txt h2 {
-        font-size: 0.42667rem;
+        font-size: 0.4rem;
         font-weight: normal; }
       #evt_content .sec-footer .txt p {
         font-size: 0.29333rem;
         padding-left: 0.46667rem;
-        line-height: 0.4rem;
+        line-height: 0.53333rem;
         text-indent: -0.46667rem;
-        color: #472929;
         margin: 0.06667rem 0; }
+
+/*价格*/
+.price {
+  position: relative;
+  width: 3.06667rem;
+  text-align: center;
+  margin: 0.8rem auto; }
+  .price .icon-xs {
+    width: 2.44rem;
+    margin: 0 auto 0.26667rem auto; }
+  .price h2 {
+    font-size: 0.26667rem;
+    font-weight: normal;
+    line-height: 0.66667rem;
+    color: #f57994; }
+    .price h2 i {
+      font-size: 0.29333rem;
+      font-style: normal;
+      vertical-align: baseline; }
+    .price h2 span {
+      font-size: 0.53333rem;
+      color: #f57994; }
+  .price s {
+    font-size: 0.32rem;
+    color: #888888;
+    font-weight: normal;
+    line-height: 0.4rem;
+    text-decoration: sh; }
+  .price .price_num {
+    width: 2.66667rem;
+    margin: 0.26667rem auto 0.4rem; }
+  .price .price_num dl {
+    float: left; }
+  .price .price_num dl dd {
+    background: #fff url("../images/in-l.png") center no-repeat;
+    background-size: 100%;
+    cursor: pointer;
+    float: left;
+    height: 0.66667rem;
+    width: 0.66667rem; }
+  .price .price_num dl dd.nopoint {
+    background: #fff url("../images/in-r.png") center no-repeat;
+    background-size: 100%; }
+  .price .price_num dl dd.on {
+    background: #fff url("../images/in-l-h.png") center no-repeat;
+    background-size: 100%; }
+  .price .price_num dl dd.nopoint.on {
+    background: #fff url("../images/in-r-h.png") center no-repeat;
+    background-size: 100%; }
+  .price .price_num dl dt {
+    float: left;
+    height: 0.66667rem;
+    margin: 0 0.06667rem; }
+  .price .price_num dl dt span {
+    display: block;
+    background: transparent none repeat scroll 0 0;
+    border: medium none;
+    color: #000;
+    height: 0.66667rem;
+    text-align: center;
+    width: 1.06667rem;
+    font-size: 0.37333rem;
+    line-height: 0.66667rem;
+    font-weight: bold; }
+  .price ul.buy_btn_box {
+    overflow: hidden;
+    width: 2.66667rem;
+    margin: 0.13333rem auto; }
+  .price ul.buy_btn_box li {
+    margin-right: 0.06667rem; }
+  .price ul.buy_btn_box li span {
+    display: block;
+    width: 2.66667rem;
+    background: none;
+    border: #c9c9c9 1px solid;
+    color: #000;
+    cursor: pointer;
+    line-height: 0.8rem;
+    font-size: 0.34667rem;
+    text-align: center;
+    border-radius: 0.13333rem; }
+
+.swiper-container {
+  position: relative !important;
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+
+.swiper-slide {
+  text-align: center;
+  background: #fff;
+  height: 100%;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center; }

@@ -1,0 +1,85 @@
+@function px2rem($n) {
+  @return ($n * 10 / 750) * 1rem;
+}
+
+@mixin font-dpr($font-size){
+  font-size: $font-size;
+
+  [data-dpr="2"] & {
+    font-size: $font-size * 2;
+  }
+
+  [data-dpr="3"] & {
+    font-size: $font-size * 3;
+  }
+
+}
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+#evt_content{  background:#f8d2d2;
+  img{width:100%;}
+  .sec{position: relative; }
+  .sec-main{  height: px2rem(1334); background:url("../images/quan-bg.jpg") no-repeat; background-size: 100%; z-index: 1; overflow: hidden;
+    .quan-top{width: px2rem(600); margin: px2rem(100) auto 0;}
+    .quan-zk{width: px2rem(543); margin: px2rem(50) auto px2rem(20);}
+    .quan-lingqu{width: px2rem(530); margin: px2rem(0) auto; text-align: center;
+        .line{position: relative; line-height: px2rem(65); margin-bottom: px2rem(30);
+          span{ float: left; display: block; width: 100%;background: #fff;  border-radius:px2rem(30);}
+          span.short{width: 70%;}
+          span.yzm{width: 25%;float: right; border-radius:0;}
+          input{ width: 90%; height: px2rem(65); margin: 0 auto; border:none; background: none; color: #9f0001;}
+          input::-webkit-input-placeholder{ color: #e6c9c9;}
+          input:-moz-placeholder{ color: #e6c9c9;}
+          input::-moz-placeholder{ color: #e6c9c9;}
+          input:-ms-input-placeholder{ color: #e6c9c9;}
+          .getyzm{position: absolute; right:0.5%; top: 5%; display: block; width: 30%;line-height: px2rem(60); background:#dedede;  border-radius:px2rem(30); vertical-align: middle; font-size: px2rem(20);}
+          .getyzm.on{ background:#f7afaf; color: #b23c3c; }
+        }
+      .getBtn{width:px2rem(190);; margin: px2rem(20) auto;
+        span{display: block; line-height: px2rem(60); width: 100%; background: #f7afaf; color: #bf5151;border-radius:px2rem(30); font-weight: bold;}
+      }
+    }
+    .guize{width: px2rem(571); background: url("../images/quan-gz.png") no-repeat; background-size: 100%; margin: 0 auto; padding: px2rem(20) px2rem(10); color: #bf5151; border-radius: px2rem(10);
+      h2{font-size: px2rem(22);}
+      p{font-size: px2rem(20); line-height: px2rem(35); padding-left: px2rem(30); text-indent: px2rem(-30);}
+    }
+  }
+
+  .success{position: absolute; top: 0; left: 0; width:px2rem(750); height: px2rem(1334); z-index: 10; background: url("../images/quan-success.jpg"); background-size: 100%;
+    .use-btn{position: absolute; width: px2rem(300); top: px2rem(830); height: px2rem(80); left: 50%; margin-left: px2rem(-150);}
+    .send-hongbao{position: absolute; width: px2rem(300); top: px2rem(930); height: px2rem(100); left: 50%; margin-left: px2rem(-150);}
+  }
+}
+
+.Dialogbg-quan{
+  background-color: #000;
+  height: 100%;
+  left: 0;
+  opacity: 0.85;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 200; display: none;
+}
+
+.Dialog-quan{
+  background:url("../images/quan-share.png") no-repeat; background-size: 100%;
+  box-shadow: 0 0 0 #999;
+  font-size:px2rem(14);
+  width:px2rem(476);
+  height:px2rem(978);
+  margin-top: px2rem(-489);
+  margin-left: px2rem(-238);
+  left: 50%;
+  padding: 0;
+  position: fixed;
+  top: 50%;
+  z-index: 99999; display: none; border-radius:px2rem(20);
+}
+
+

@@ -1,0 +1,258 @@
+#evt_content {
+  background: #fff; }
+  #evt_content div {
+    position: absolute; }
+  #evt_content img {
+    width: 100%; }
+  #evt_content .sec {
+    position: relative; }
+  #evt_content .sec-top {
+    height: 13.32rem; }
+    #evt_content .sec-top .top-l {
+      width: 5.09333rem;
+      top: 0rem;
+      left: 0rem; }
+    #evt_content .sec-top .logon {
+      width: 8.69333rem;
+      top: 0.53333rem;
+      left: 0.6rem; }
+    #evt_content .sec-top .line {
+      width: 10rem;
+      top: 7.10667rem;
+      left: 0rem; }
+    #evt_content .sec-top .w-1 {
+      width: 1.56rem;
+      top: 2.49333rem;
+      left: auto;
+      right: 0rem; }
+    #evt_content .sec-top .word-1 {
+      width: 3.6rem;
+      top: 10.4rem;
+      left: auto;
+      right: 0.56rem; }
+    #evt_content .sec-top .cake {
+      width: 9.98667rem;
+      top: 3.10667rem;
+      left: 0rem; }
+    #evt_content .sec-top .buy-cake {
+      width: 5.33333rem;
+      height: 5.33333rem;
+      top: 4.13333rem;
+      left: 2.4rem; }
+    #evt_content .sec-top .word {
+      color: #fff;
+      font-size: 0.26667rem; }
+    #evt_content .sec-top .word-l-1 {
+      top: 3.22667rem;
+      left: 0.89333rem; }
+    #evt_content .sec-top .word-l-2 {
+      top: 4.41333rem;
+      left: 0.89333rem;
+      font-size: 0.93333rem;
+      text-transform: uppercase; }
+    #evt_content .sec-top .word-l-3 {
+      top: 11.42667rem;
+      left: 0.89333rem; }
+  #evt_content .btns {
+    width: 10rem;
+    top: 4.4rem;
+    text-align: center; }
+    #evt_content .btns a {
+      display: block;
+      text-decoration: none; }
+    #evt_content .btns span {
+      background: #937c52;
+      position: relative;
+      margin: 0 auto;
+      color: #fff;
+      font-size: 0.34667rem;
+      letter-spacing: 3px;
+      padding: 0.13333rem 0.26667rem 0.13333rem 0.4rem; }
+  #evt_content .sec-1 {
+    height: 24.26667rem; }
+    #evt_content .sec-1 .pic-1 {
+      width: 9.6rem;
+      top: 9.06667rem;
+      left: 0rem; }
+    #evt_content .sec-1 .love {
+      width: 8.76rem;
+      top: 2.4rem;
+      left: 0rem; }
+    #evt_content .sec-1 .love-music {
+      width: 2.72rem;
+      top: 0.92rem;
+      left: 2.33333rem; }
+    #evt_content .sec-1 .words-2 {
+      width: 7.05333rem;
+      top: 17.44rem;
+      left: 1.42667rem; }
+    #evt_content .sec-1 .w-3 {
+      width: 1.53333rem;
+      top: 21.06667rem;
+      left: 3.97333rem; }
+    #evt_content .sec-1 .word {
+      text-align: center;
+      font-size: 0.26667rem;
+      color: #472929; }
+    #evt_content .sec-1 .word-1 {
+      width: 8.86667rem;
+      top: 19.2rem;
+      left: 0.6rem; }
+    #evt_content .sec-1 .word-2 {
+      width: 6.37333rem;
+      top: 21.68rem;
+      left: 1.85333rem; }
+    #evt_content .sec-1 .word-3 {
+      width: 10rem;
+      top: 22.68rem;
+      text-align: center; }
+      #evt_content .sec-1 .word-3 .wr {
+        position: relative;
+        margin: 0 auto;
+        width: 5.33333rem;
+        font-size: 0.38667rem;
+        vertical-align: middle;
+        text-align: center; }
+        #evt_content .sec-1 .word-3 .wr i {
+          position: absolute;
+          top: 0.13333rem;
+          left: 0;
+          font-size: 0.33333rem;
+          font-style: normal;
+          color: #a58875; }
+        #evt_content .sec-1 .word-3 .wr span {
+          position: relative;
+          font-size: 0.74667rem;
+          color: #a58875;
+          font-weight: normal;
+          padding-left: 0.33333rem;
+          vertical-align: sub; }
+    #evt_content .sec-1 .go-btn {
+      top: 23.85333rem; }
+  #evt_content .sec-2 {
+    height: 14.90667rem; }
+    #evt_content .sec-2 .naiyou {
+      width: 2.94667rem;
+      top: 3.46667rem;
+      left: 6.13333rem; }
+    #evt_content .sec-2 .w-2 {
+      width: 2.02667rem;
+      top: 10.05333rem;
+      left: 0rem; }
+    #evt_content .sec-2 .img-1 {
+      width: 6.08rem;
+      top: 0.98667rem;
+      left: 0.70667rem; }
+    #evt_content .sec-2 .img-2 {
+      width: 5.88rem;
+      top: 6.52rem;
+      left: 3.46667rem; }
+    #evt_content .sec-2 .w-3 {
+      width: 1.53333rem;
+      height: 0.29333rem;
+      background: url("../images/w-3.png");
+      background-size: 100%;
+      top: 6.52rem;
+      left: 0.70667rem; }
+    #evt_content .sec-2 .w-3-2 {
+      top: 12.50667rem;
+      left: 3.46667rem; }
+    #evt_content .sec-2 p {
+      color: #472929;
+      text-transform: uppercase; }
+    #evt_content .sec-2 .p1 {
+      font-size: 0.29333rem;
+      line-height: 0.4rem;
+      margin-top: 0.26667rem; }
+    #evt_content .sec-2 .p2 {
+      font-size: 0.13333rem;
+      line-height: 0.26667rem;
+      margin-top: 0.13333rem; }
+  #evt_content .sec-ad .ad {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -4.54rem;
+    margin-top: -0.52rem; }
+    #evt_content .sec-ad .ad canvas {
+      width: 9.08rem;
+      height: 1.04rem; }
+  #evt_content .sec-3 {
+    height: 10.25333rem; }
+    #evt_content .sec-3 .w-title {
+      width: 10rem;
+      top: 0.53333rem;
+      text-align: center;
+      line-height: 0.8rem;
+      color: #472929;
+      font-size: 0.36rem; }
+      #evt_content .sec-3 .w-title .s-w {
+        position: relative;
+        margin: 0 auto; }
+        #evt_content .sec-3 .w-title .s-w i {
+          position: absolute;
+          top: -4px;
+          left: 0;
+          font-size: 0.38667rem;
+          font-style: normal;
+          color: #a58875; }
+        #evt_content .sec-3 .w-title .s-w strong {
+          position: relative;
+          font-size: 0.85333rem;
+          color: #a58875;
+          font-weight: normal;
+          padding-left: 0.26667rem; }
+    #evt_content .sec-3 .s-btn {
+      display: block;
+      position: relative;
+      height: 0.4rem;
+      color: #472929;
+      padding: 0.06667rem 0.13333rem;
+      font-size: 0.29333rem;
+      line-height: 0.4rem;
+      font-weight: normal;
+      letter-spacing: 2px;
+      margin-top: 0.13333rem;
+      z-index: 2; }
+      #evt_content .sec-3 .s-btn b {
+        z-index: 2;
+        font-weight: normal; }
+      #evt_content .sec-3 .s-btn strong {
+        display: block;
+        width: 1.86667rem;
+        height: 0.06667rem;
+        background: #a58875;
+        position: absolute;
+        bottom: 0.08rem;
+        left: 50%;
+        margin-left: -0.93333rem;
+        z-index: -1; }
+    #evt_content .sec-3 .pro {
+      width: 8.72rem;
+      top: 3.37333rem;
+      left: 0rem; }
+    #evt_content .sec-3 .pro-n {
+      width: 6.08rem;
+      top: 8.05333rem;
+      left: 1.84rem; }
+  #evt_content .sec-footer {
+    background: #f6f6f6;
+    position: relative;
+    padding-bottom: 0.26667rem; }
+    #evt_content .sec-footer .txt {
+      position: relative;
+      width: 8.8rem;
+      padding-top: 1.2rem;
+      padding-bottom: 0.66667rem;
+      margin: 0 auto;
+      color: #472929; }
+      #evt_content .sec-footer .txt h2 {
+        font-size: 0.42667rem;
+        font-weight: normal; }
+      #evt_content .sec-footer .txt p {
+        font-size: 0.29333rem;
+        padding-left: 0.46667rem;
+        line-height: 0.4rem;
+        text-indent: -0.46667rem;
+        color: #472929;
+        margin: 0.06667rem 0; }

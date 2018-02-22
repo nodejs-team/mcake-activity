@@ -29,7 +29,36 @@ body{ background:#fff;}
   img{width:100%;}
   .back{position: absolute; bottom: 0; width: 100%; background: #000; opacity: 0.5; color: #fff; line-height: px2rem(50); text-align: left; z-index: 1; padding:0 px2rem(20);}
   .sec{position: relative; }
-  .step{position: absolute; width: px2rem(750); }
+  .step{position: relative; }
+
+  .sign{position: relative;
+    .sec-banner{position: relative;
+      height: px2rem(242); background:url("../images/meet-banner0.jpg") no-repeat; z-index: 2; background-size: 100%;
+    }
+    .sec-main{ background: #fff; overflow: hidden; text-align: center;
+      .column{
+        ul{
+          li{display: -webkit-box; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center;
+            font-size: px2rem(34);border-bottom: #a3a3a3 1px solid; padding: px2rem(20) 0;
+            b{display: block; flex: 2; text-align: center; color: #000; font-weight: normal;  }
+            select{display: block; flex: 5;  border:none; background: none; text-align: center; line-height: px2rem(80); font-size: px2rem(34); vertical-align: middle;}
+            .across{width: px2rem(32); margin: px2rem(10) px2rem(30);
+              .across-2{display: none;}
+            }
+          }
+
+        }
+
+      }
+      .tel{ width: 100%; border: none; background: none; font-size: px2rem(34); line-height: px2rem(80); text-align: center; border-bottom: #a3a3a3 1px solid; color: #000; padding: px2rem(20) 0;}
+      .sign-btn{padding: px2rem(15) px2rem(80); background: #d63737; border: none; margin:px2rem(60) auto; font-size: px2rem(34);
+      border-radius: px2rem(10); color: #fff;}
+      .logos{width:px2rem(180); margin: px2rem(40) auto 0;}
+    }
+
+  }
+
+  /*首页*/
   .home-page{position: relative;
     .sec-banner{
       height: px2rem(730); background:url("../images/meet-banner.jpg") no-repeat; z-index: 1; overflow: hidden; background-size: 100%;
@@ -45,6 +74,7 @@ body{ background:#fff;}
           img{width:px2rem(80); margin: 0 auto;}
         }
         li:nth-of-type(2n){border-right: none;}
+        li.disabled{background: #dedede;}
       }
       .my-Award{ width: 100%; text-align: center; line-height: px2rem(100);}
     }
@@ -96,7 +126,7 @@ body{ background:#fff;}
           .support{position: absolute; right: px2rem(20); bottom: px2rem(10); display: -webkit-box; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center;
             .heart{width:px2rem(30);height: px2rem(30); float: left; vertical-align: middle; }
             .heart-1{background: url("../images/heart-1.png") center no-repeat; background-size: 100%; }
-            .heart-2{background: url("../images/heart-2.png") center no-repeat; background-size: 100%; display: none; }
+            .heart-2{background: url("../images/heart-2.png") center no-repeat; background-size: 100%; }
             span{display: inline-block;color: #6a6a6a; padding: 0 px2rem(10); line-height: px2rem(40); font-size: px2rem(30);vertical-align: middle; }
           }
         }
@@ -105,10 +135,14 @@ body{ background:#fff;}
     }
   }
 
-  /*弹幕*/
+  /*发弹幕*/
   .step-barrage{ background: #fff;
     .sec-banner{position: relative;
       height: px2rem(730); background:url("../images/meet-banner4.jpg") no-repeat; z-index: 1; background-size: 100%;
+      .barrage-wrap{position: relative; width: px2rem(750); height: px2rem(730); }
+      .barrage_container_wrap,.barrage_container{position: relative;width: px2rem(750); height: px2rem(730);  top: 0 !important; left: 0 !important;}
+
+      .barrage_unit_content{ font-size: px2rem(22) !important; background: none; color: #fff;}
       .barrages{position: absolute; top: 0; left: 0; width: 100%; height: 100%; padding-top: px2rem(50);}
       .barrage-item{ display: -webkit-box;
         display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; width: px2rem(700); margin-bottom: px2rem(50);color: #fff;
@@ -128,7 +162,7 @@ body{ background:#fff;}
       .write-barrage{width: 100%; line-height: px2rem(30); text-align: center; margin: 0; padding: 0;
         .brg{ display: -webkit-box; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center;  position: relative; background: #f1f1f1; width: px2rem(575); float: left; border-radius: px2rem(10); -webkit-align-items: center; align-items: center; margin-left: px2rem(20);
           .icon{width: px2rem(55); height: px2rem(55); margin: 0 px2rem(10);float: left; }
-          input{flex: 1; float: right; width: 100%; background: none; line-height: px2rem(80); text-align: right; font-size: px2rem(26); color: #000; padding: 0 px2rem(20); font-weight: bold; border: none;}
+          input{flex: 1; float: right; width: 100%; background: none; line-height: px2rem(80); text-align: left; font-size: px2rem(26); color: #000; padding: 0 px2rem(20); font-weight: bold; border: none;}
 
         }
         .send-barrage{float: right; margin-right: px2rem(20);
@@ -167,12 +201,42 @@ body{ background:#fff;}
 
     }
   }
+
+  /*获奖信息*/
+  .step-award{background: #fff;
+    .sec-banner{position: relative;
+      height: px2rem(242); background:url("../images/meet-banner6.jpg") no-repeat; z-index: 2; background-size: 100%;
+
+    }
+    .sec-main{z-index: 1; overflow: hidden; padding-bottom: px2rem(100);
+      h3{ text-align: center; font-size: px2rem(24); font-weight: normal; line-height: px2rem(100); color:#969696;border-bottom: #c3c3c3 1px solid;}
+      .list{
+        ul{margin: 0; padding: 0;}
+        li{display: -webkit-box; display:box; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; border-bottom: #c3c3c3 1px solid;position: relative; line-height: px2rem(120); color: #7c7c7c; background: #fbfbfb;
+          .radio{width:px2rem(40); height: px2rem(40); border-radius: 50%; overflow: hidden; margin-left:px2rem(40); background: url("../images/radio.png"); background-size: 100%;}
+
+          .list-content{flex: 1;width: 90%;
+            display: -webkit-inline-flex; display: inline-flex; -webkit-justify-content:space-between; justify-content:space-between;
+            padding:0 px2rem(20); text-align: right;
+            div{ display: block; font-size: px2rem(26); }
+            .fl{float: left;}
+            .fr{float: right;}
+          }
+        }
+        li:last-child{border: none;}
+        li.on{background: #eeeeee; color: #000;
+          .radio{ background: url("../images/radio-on.png"); background-size: 100%;}
+        }
+      }
+
+    }
+  }
 }
 
 
-.vote-btn{ position: fixed; bottom:0; width:100%; left:50%; margin-left: px2rem(-350);  padding:0 px2rem(30); color: #fff; text-align: center;background:#fff;  max-width: px2rem(640); display: none; z-index: 10;
-  span{display: block; background: #d12828; width:95%;line-height: px2rem(100); border-radius: px2rem(10);
-    margin: px2rem(10) auto; font-size: px2rem(34);}
+.vote-btn{ position: fixed; bottom:0; width:100%; left:0; color: #fff; text-align: center;background:#d12828;  display: none; z-index: 10; border-radius: px2rem(10);
+  span{display: block; width:100%;line-height: px2rem(100);
+    margin:0 auto; font-size: px2rem(36);}
 }
 
 
@@ -184,13 +248,30 @@ body{ background:#fff;}
   background: #fff none repeat scroll 0 0;  box-shadow: 0 0 0 #999;  font-size:px2rem(14);  width:px2rem(700);  margin-top: px2rem(-250);  margin-left: px2rem(-350);  left: 50%;  padding: 0;  position: fixed;
   top: 50%;  z-index: 99999; display: none; border-radius:px2rem(10);
 
-  .content{width:px2rem(463); margin: px2rem(50) auto; text-align: center; display: none;
+  .content{width:px2rem(663); margin: px2rem(50) auto; text-align: center; display: none;
     img{width: 100%;}
-    p{font-size: px2rem(26); line-height: px2rem(80); color: #8d8d8d;}
+    p{font-size: px2rem(26); line-height: px2rem(40); color: #8d8d8d;}
   }
 }
 
 
+
+/*彈窗*/
+.public-Dialogbg{  background-color: #000;  height: 100%;  left: 0;  opacity: 0.85;  position: fixed;  top: 0;  width: 100%;  z-index: 200; display: none;
+}
+
+.public-Dialog{
+  background: #fff none repeat scroll 0 0;  box-shadow: 0 0 0 #999;  font-size:px2rem(14);  width:px2rem(680); padding: px2rem(50) px2rem(10); margin-top: px2rem(-350);  margin-left: px2rem(-350);  left: 50%;  position: fixed;
+  top: 50%;  z-index: 99999; display: none; border-radius:px2rem(10);
+  .d-close{width:px2rem(19); position: absolute; top: px2rem(10); right: px2rem(30); cursor: pointer;}
+  .content{width:px2rem(663); margin: px2rem(50) auto; text-align: center;
+    .txt{ margin: 0 auto;}
+    h2{font-size: px2rem(50);line-height: px2rem(80); color: #000;}
+    p{font-size: px2rem(30); line-height: px2rem(50); color: #8d8d8d;}
+    .act_name{ color: orange;}
+    .prize_name{ color: red;}
+  }
+}
 
 
 

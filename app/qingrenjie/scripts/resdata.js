@@ -1,97 +1,72 @@
 var resData = [
     {
-        "name":"ad_png",
+        "name":"cake-1_png",
         "type":"image",
-        "url":"ad.png"
+        "url":"cake-1.png"
     },
     {
-        "name":"cake_png",
+        "name":"icon-xs_png",
         "type":"image",
-        "url":"cake.png"
+        "url":"icon-xs.png"
     },
     {
-        "name":"img-1_png",
+        "name":"in-l_png",
         "type":"image",
-        "url":"img-1.png"
+        "url":"in-l.png"
     },
     {
-        "name":"img-2_png",
+        "name":"in-r_png",
         "type":"image",
-        "url":"img-2.png"
+        "url":"in-r.png"
     },
     {
-        "name":"line_png",
+        "name":"qkl-1_png",
         "type":"image",
-        "url":"line.png"
+        "url":"qkl-1.png"
     },
     {
-        "name":"logo_jpg",
+        "name":"qkl-2_png",
         "type":"image",
-        "url":"logo.jpg"
+        "url":"qkl-2.png"
     },
     {
-        "name":"love_png",
+        "name":"rose_png",
         "type":"image",
-        "url":"love.png"
+        "url":"rose.png"
     },
     {
-        "name":"music_gif",
+        "name":"sw1-next_png",
         "type":"image",
-        "url":"music.gif"
+        "url":"sw1-next.png"
     },
     {
-        "name":"naiyou_png",
+        "name":"sw1-prev_png",
         "type":"image",
-        "url":"naiyou.png"
+        "url":"sw1-prev.png"
     },
     {
-        "name":"pic-1_png",
+        "name":"sw2-next_png",
         "type":"image",
-        "url":"pic-1.png"
+        "url":"sw2-next.png"
     },
     {
-        "name":"pro_png",
+        "name":"sw2-prev_png",
         "type":"image",
-        "url":"pro.png"
+        "url":"sw2-prev.png"
     },
     {
-        "name":"pro-n_png",
+        "name":"ad-1_png",
         "type":"image",
-        "url":"pro-n.png"
+        "url":"ad-1.png"
     },
     {
-        "name":"top-l_png",
+        "name":"banner_jpg",
         "type":"image",
-        "url":"top-l.png"
+        "url":"banner.jpg"
     },
     {
-        "name":"w-1_png",
+        "name":"bar_png",
         "type":"image",
-        "url":"w-1.png"
-    },
-    {
-        "name":"w-2_png",
-        "type":"image",
-        "url":"w-2.png"
-    },
-    {
-        "name":"w-3_png",
-        "type":"image",
-        "url":"w-3.png"
-    },
-    {
-        "name":"word-1_png",
-        "type":"image",
-        "url":"word-1.png"
-    },
-    {
-        "name":"word-2_png",
-        "type":"image",
-        "url":"word-2.png"
-    },
-    {
-        "name":"ad_jpg",
-        "type":"image",
-        "url":"ad.jpg"
+        "url":"bar.png"
     }
 ];

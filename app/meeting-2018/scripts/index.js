@@ -64,10 +64,10 @@
 
 
     var loadComplete = function () {
-        var wh = $(window).height();
+        /*var wh = $(window).height();
         console.log(wh);
         $("#evt_content,.step").height(wh);
-
+*/
 
 
         /*返回主页*/
@@ -79,13 +79,14 @@
 
         $(".step").fadeOut(0);
 
-        $(".home-page").fadeOut(0);
-        $(".step-wish-list").fadeIn(0);
+       /* $(".home-page").fadeOut(0);
+        $(".step-wish-list").fadeIn(0);*/
 
-        $(".home-page li").click(function () {
+        $(".home-page li").not(".disabled").click(function () {
             var index = $(this).index();
+
             $(".home-page,.step").fadeOut(0);
-            $(".step").eq(index).fadeIn(10);
+            $(".step").eq(index).fadeIn(0);
             if(index == 0){
                 $(".blessing").focus();
             }
@@ -95,11 +96,12 @@
         });
 
 
-
-        selectItem ();
-        $(".heart").click(function () {
-            $(".heart").fadeToggle(0);
+        $(".my-Award").click(function () {
+            $(".home-page,.step").fadeOut(0);
+            $(".step-award").fadeIn(0);
         });
+        selectItem ();
+
         /*initScroll();*/
     }
     var initScroll = function (){
@@ -143,8 +145,9 @@
                 self.hide();
             },2000);
         },
-        fail:function () {
+        fail:function (msg) {
             var self = this;
+            this.$Dialog.find(".txt").html(msg);
             this.$Dialog.find(".D-fail").fadeIn(0);
             this.$DialogBg.fadeIn(0);
             this.$Dialog.fadeIn(0);
@@ -171,6 +174,28 @@
 
     }
 
+
+
+    var Dtime = 0;
+    function publicShow(ele) {
+        $(".public-Dialogbg,.public-Dialog").fadeIn(500);
+        Dtime = setTimeout(function () {
+            publicHide();
+        },5000);
+    }
+
+    function publicHide() {
+        $(".public-Dialogbg,.public-Dialog").fadeOut(0);
+    }
+    $(".public-Dialogbg,.d-close").click(function () {
+        publicHide();
+        clearTimeout(Dtime);
+    });
+
+
+
+    window.publicShow = publicShow;
+    window.publicHide = publicHide;
 
     window.Dialogs = Dialogs;
 

@@ -18,10 +18,12 @@ body {
   visibility: hidden; }
 
 #evt_content {
+  /*首页*/
   /*写祝福*/
   /*祝福点赞*/
-  /*弹幕*/
-  /*投票*/ }
+  /*发弹幕*/
+  /*投票*/
+  /*获奖信息*/ }
   #evt_content img {
     width: 100%; }
   #evt_content .back {
@@ -38,8 +40,69 @@ body {
   #evt_content .sec {
     position: relative; }
   #evt_content .step {
-    position: absolute;
-    width: 10rem; }
+    position: relative; }
+  #evt_content .sign {
+    position: relative; }
+    #evt_content .sign .sec-banner {
+      position: relative;
+      height: 3.22667rem;
+      background: url("../images/meet-banner0.jpg") no-repeat;
+      z-index: 2;
+      background-size: 100%; }
+    #evt_content .sign .sec-main {
+      background: #fff;
+      overflow: hidden;
+      text-align: center; }
+      #evt_content .sign .sec-main .column ul li {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-align-items: center;
+        align-items: center;
+        font-size: 0.45333rem;
+        border-bottom: #a3a3a3 1px solid;
+        padding: 0.26667rem 0; }
+        #evt_content .sign .sec-main .column ul li b {
+          display: block;
+          flex: 2;
+          text-align: center;
+          color: #000;
+          font-weight: normal; }
+        #evt_content .sign .sec-main .column ul li select {
+          display: block;
+          flex: 5;
+          border: none;
+          background: none;
+          text-align: center;
+          line-height: 1.06667rem;
+          font-size: 0.45333rem;
+          vertical-align: middle; }
+        #evt_content .sign .sec-main .column ul li .across {
+          width: 0.42667rem;
+          margin: 0.13333rem 0.4rem; }
+          #evt_content .sign .sec-main .column ul li .across .across-2 {
+            display: none; }
+      #evt_content .sign .sec-main .tel {
+        width: 100%;
+        border: none;
+        background: none;
+        font-size: 0.45333rem;
+        line-height: 1.06667rem;
+        text-align: center;
+        border-bottom: #a3a3a3 1px solid;
+        color: #000;
+        padding: 0.26667rem 0; }
+      #evt_content .sign .sec-main .sign-btn {
+        padding: 0.2rem 1.06667rem;
+        background: #d63737;
+        border: none;
+        margin: 0.8rem auto;
+        font-size: 0.45333rem;
+        border-radius: 0.13333rem;
+        color: #fff; }
+      #evt_content .sign .sec-main .logos {
+        width: 2.4rem;
+        margin: 0.53333rem auto 0; }
   #evt_content .home-page {
     position: relative; }
     #evt_content .home-page .sec-banner {
@@ -77,6 +140,8 @@ body {
             margin: 0 auto; }
         #evt_content .home-page .sec-main ul li:nth-of-type(2n) {
           border-right: none; }
+        #evt_content .home-page .sec-main ul li.disabled {
+          background: #dedede; }
       #evt_content .home-page .sec-main .my-Award {
         width: 100%;
         text-align: center;
@@ -213,8 +278,7 @@ body {
             background-size: 100%; }
           #evt_content .step-wish-list .sec-main .list li .support .heart-2 {
             background: url("../images/heart-2.png") center no-repeat;
-            background-size: 100%;
-            display: none; }
+            background-size: 100%; }
           #evt_content .step-wish-list .sec-main .list li .support span {
             display: inline-block;
             color: #6a6a6a;
@@ -230,6 +294,20 @@ body {
       background: url("../images/meet-banner4.jpg") no-repeat;
       z-index: 1;
       background-size: 100%; }
+      #evt_content .step-barrage .sec-banner .barrage-wrap {
+        position: relative;
+        width: 10rem;
+        height: 9.73333rem; }
+      #evt_content .step-barrage .sec-banner .barrage_container_wrap, #evt_content .step-barrage .sec-banner .barrage_container {
+        position: relative;
+        width: 10rem;
+        height: 9.73333rem;
+        top: 0 !important;
+        left: 0 !important; }
+      #evt_content .step-barrage .sec-banner .barrage_unit_content {
+        font-size: 0.29333rem !important;
+        background: none;
+        color: #fff; }
       #evt_content .step-barrage .sec-banner .barrages {
         position: absolute;
         top: 0;
@@ -301,7 +379,7 @@ body {
             width: 100%;
             background: none;
             line-height: 1.06667rem;
-            text-align: right;
+            text-align: left;
             font-size: 0.34667rem;
             color: #000;
             padding: 0 0.26667rem;
@@ -386,28 +464,90 @@ body {
         #evt_content .step-vote .sec-main .list li.on .radio {
           background: url("../images/radio-on.png");
           background-size: 100%; }
+  #evt_content .step-award {
+    background: #fff; }
+    #evt_content .step-award .sec-banner {
+      position: relative;
+      height: 3.22667rem;
+      background: url("../images/meet-banner6.jpg") no-repeat;
+      z-index: 2;
+      background-size: 100%; }
+    #evt_content .step-award .sec-main {
+      z-index: 1;
+      overflow: hidden;
+      padding-bottom: 1.33333rem; }
+      #evt_content .step-award .sec-main h3 {
+        text-align: center;
+        font-size: 0.32rem;
+        font-weight: normal;
+        line-height: 1.33333rem;
+        color: #969696;
+        border-bottom: #c3c3c3 1px solid; }
+      #evt_content .step-award .sec-main .list ul {
+        margin: 0;
+        padding: 0; }
+      #evt_content .step-award .sec-main .list li {
+        display: -webkit-box;
+        display: box;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-align-items: center;
+        align-items: center;
+        border-bottom: #c3c3c3 1px solid;
+        position: relative;
+        line-height: 1.6rem;
+        color: #7c7c7c;
+        background: #fbfbfb; }
+        #evt_content .step-award .sec-main .list li .radio {
+          width: 0.53333rem;
+          height: 0.53333rem;
+          border-radius: 50%;
+          overflow: hidden;
+          margin-left: 0.53333rem;
+          background: url("../images/radio.png");
+          background-size: 100%; }
+        #evt_content .step-award .sec-main .list li .list-content {
+          flex: 1;
+          width: 90%;
+          display: -webkit-inline-flex;
+          display: inline-flex;
+          -webkit-justify-content: space-between;
+          justify-content: space-between;
+          padding: 0 0.26667rem;
+          text-align: right; }
+          #evt_content .step-award .sec-main .list li .list-content div {
+            display: block;
+            font-size: 0.34667rem; }
+          #evt_content .step-award .sec-main .list li .list-content .fl {
+            float: left; }
+          #evt_content .step-award .sec-main .list li .list-content .fr {
+            float: right; }
+      #evt_content .step-award .sec-main .list li:last-child {
+        border: none; }
+      #evt_content .step-award .sec-main .list li.on {
+        background: #eeeeee;
+        color: #000; }
+        #evt_content .step-award .sec-main .list li.on .radio {
+          background: url("../images/radio-on.png");
+          background-size: 100%; }
 
 .vote-btn {
   position: fixed;
   bottom: 0;
   width: 100%;
-  left: 50%;
-  margin-left: -4.66667rem;
-  padding: 0 0.4rem;
+  left: 0;
   color: #fff;
   text-align: center;
-  background: #fff;
-  max-width: 8.53333rem;
+  background: #d12828;
   display: none;
-  z-index: 10; }
+  z-index: 10;
+  border-radius: 0.13333rem; }
   .vote-btn span {
     display: block;
-    background: #d12828;
-    width: 95%;
+    width: 100%;
     line-height: 1.33333rem;
-    border-radius: 0.13333rem;
-    margin: 0.13333rem auto;
-    font-size: 0.45333rem; }
+    margin: 0 auto;
+    font-size: 0.48rem; }
 
 /*彈窗*/
 .Dialogbg {
@@ -436,7 +576,7 @@ body {
   display: none;
   border-radius: 0.13333rem; }
   .Dialog .content {
-    width: 6.17333rem;
+    width: 8.84rem;
     margin: 0.66667rem auto;
     text-align: center;
     display: none; }
@@ -444,8 +584,59 @@ body {
       width: 100%; }
     .Dialog .content p {
       font-size: 0.34667rem;
-      line-height: 1.06667rem;
+      line-height: 0.53333rem;
       color: #8d8d8d; }
+
+/*彈窗*/
+.public-Dialogbg {
+  background-color: #000;
+  height: 100%;
+  left: 0;
+  opacity: 0.85;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 200;
+  display: none; }
+
+.public-Dialog {
+  background: #fff none repeat scroll 0 0;
+  box-shadow: 0 0 0 #999;
+  font-size: 0.18667rem;
+  width: 9.06667rem;
+  padding: 0.66667rem 0.13333rem;
+  margin-top: -4.66667rem;
+  margin-left: -4.66667rem;
+  left: 50%;
+  position: fixed;
+  top: 50%;
+  z-index: 99999;
+  display: none;
+  border-radius: 0.13333rem; }
+  .public-Dialog .d-close {
+    width: 0.25333rem;
+    position: absolute;
+    top: 0.13333rem;
+    right: 0.4rem;
+    cursor: pointer; }
+  .public-Dialog .content {
+    width: 8.84rem;
+    margin: 0.66667rem auto;
+    text-align: center; }
+    .public-Dialog .content .txt {
+      margin: 0 auto; }
+    .public-Dialog .content h2 {
+      font-size: 0.66667rem;
+      line-height: 1.06667rem;
+      color: #000; }
+    .public-Dialog .content p {
+      font-size: 0.4rem;
+      line-height: 0.66667rem;
+      color: #8d8d8d; }
+    .public-Dialog .content .act_name {
+      color: orange; }
+    .public-Dialog .content .prize_name {
+      color: red; }
 
 @media screen and (max-width: 320px) {
   .sel-li {

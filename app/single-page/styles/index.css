@@ -9,7 +9,10 @@ body {
   background: #f0f0f0; }
 
 #evt_content {
-  background: #f0f0f0; }
+  background: #f0f0f0;
+  /*ofo*/
+  /*city*/
+  /*demo*/ }
   #evt_content img {
     width: 100%; }
   #evt_content .sec {
@@ -76,7 +79,7 @@ body {
           margin-right: 0.4rem;
           background: #fff;
           border-radius: 0.13333rem;
-          box-shadow: 0 0.13333rem 0.53333rem #888888;
+          box-shadow: 0 0.13333rem 0.53333rem #dedede;
           display: flex;
           align-items: center; }
           #evt_content .sec-1 .citys ul li p {
@@ -94,6 +97,48 @@ body {
               color: #000;
               font-weight: bold; }
         #evt_content .sec-1 .citys ul li.on {
+          background: #efefef; }
+  #evt_content .sec-demo {
+    background: #f0f0f0;
+    padding-bottom: 1.33333rem;
+    padding-top: 0.66667rem; }
+    #evt_content .sec-demo .title {
+      position: relative;
+      text-align: center;
+      font-size: 0.53333rem;
+      padding: 0.66667rem 0; }
+    #evt_content .sec-demo .citys {
+      position: relative; }
+      #evt_content .sec-demo .citys ul {
+        margin-left: 0.6rem;
+        margin-right: -0.4rem; }
+        #evt_content .sec-demo .citys ul li {
+          position: relative;
+          width: 4.22667rem;
+          height: 4.2rem;
+          margin-top: 0.66667rem;
+          float: left;
+          margin-right: 0.4rem;
+          background: #fff;
+          border-radius: 0.13333rem;
+          box-shadow: 0 0.13333rem 0.53333rem #dedede;
+          display: flex;
+          align-items: center; }
+          #evt_content .sec-demo .citys ul li p {
+            position: absolute;
+            top: 38%;
+            display: block;
+            width: 100%;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 0.53333rem;
+            color: #af916c; }
+            #evt_content .sec-demo .citys ul li p span {
+              display: block;
+              font-size: 0.26667rem;
+              color: #000;
+              font-weight: bold; }
+        #evt_content .sec-demo .citys ul li.on {
           background: #efefef; }
 
 .down-arrow {

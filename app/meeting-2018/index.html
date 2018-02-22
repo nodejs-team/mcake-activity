@@ -19,6 +19,7 @@
 
             <div id="evt_loading" style="display:none;">0%</div>
             <div id="evt_content" style="display:none;">
+
                 <div class="home-page">
                     <div class="sec sec-banner">
                         <div class="word">
@@ -38,7 +39,7 @@
                                 <img src="images/icon-3.png" alt="">
                                 <p>弹幕</p>
                             </li>
-                            <li class="vote">
+                            <li class="vote disabled">
                                 <img src="images/icon-4.png" alt="">
                                 <p>投票</p>
                             </li>
@@ -166,8 +167,22 @@
                 <!--发弹幕-->
                 <div class="step step-barrage">
                     <div class="sec sec-banner">
+
+                        <div id="barrage-wrap" class="barrage-wrap">
+
+                            <div class="barrage_container_wrap">
+                                <div class="barrage_container">
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
                         <div class="back">点击返回主界面</div>
-                        <div class="barrages">
+                      <!--  <div class="barrages">
                             <ul>
                                 <li class="barrage-item marquee">
                                     <div class="icon">
@@ -206,7 +221,7 @@
                                     <p>祝大家新年快乐，万事如意，阖家欢乐！祝大家新年快乐，万事如意，阖家欢乐！</p>
                                 </li>
                             </ul>
-                        </div>
+                        </div>-->
                         <div class="WeChat"><img src="images/WeChat.png" alt=""></div>
                         <div class="my-info">
                             <p class="wx-nickname">Distlemoto</p>
@@ -261,6 +276,31 @@
 
                     </div>
                 </div>
+                <div class="step step-award">
+                    <div class="sec-banner">
+                        <div class="back">点击返回主界面</div>
+                    </div>
+                    <div class="sec sec-main clearfix">
+                        <h3>我的奖品信息：</h3>
+                        <div class="list">
+                            <ul class="clearfix">
+                                <li>
+                                    <div class="list-content">
+                                        <div class="fl"><b>一等奖</b></div>
+                                        <div class="fr">iphoneX</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="list-content">
+                                        <div class="fl"><b>鼓励奖</b></div>
+                                        <div class="fr">迟到卡1张</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
             </div>
 
         </div>
@@ -275,11 +315,22 @@
     </div>
     <div class="content D-fail">
         <img src="images/fail.png" alt="">
-        <p>每人必须且仅可以投票给两个节目哦。</p>
+        <p class="txt"></p>
     </div>
 </div>
 
+<div class="public-Dialogbg" ontouchmove="return false;"></div>
+<div class="public-Dialog">
+    <div class="d-close"><img src="images/x.png" alt=""></div>
+    <div class="content">
+        <div class="txt">
+            <h2>恭喜你</h2>
+            <p>已经提交成功！</p>
+            <p>获得精美礼品一份！</p>
+        </div>
+    </div>
 
+</div>
 
 <script type="text/javascript" src="http://www.mcake.com/framework/jquery/jquery.min.js?v=1405950469"></script>
 <script src="http://edm.mcake.com/weifengwang/common/flexible.js"></script>
@@ -304,9 +355,17 @@
             if(len == 2){
                 Dialogs.success();
             }else{
-                Dialogs.fail();
+                Dialogs.fail('每人必须且仅可以投票给两个节目哦。');
             }
         });
+
+        $(".word").click(function () {
+            publicShow();
+            /*publicHide();  关闭弹窗*/
+        });
+
+
+
     })();
 </script>
 </body>

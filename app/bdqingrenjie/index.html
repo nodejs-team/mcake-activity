@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>mcake活动</title>
+    <link rel="stylesheet" href="http://m.mcake.com/wap/theme/xth1/css/comm_header.css?v=1488352348">
+    <!-- build:css styles/index.css -->
+    <link rel="stylesheet" href="../commoncss/wap-normalize.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/swiper.min.css">
+    <!-- endbuild-->
+</head>
+<body>
+
+<div id="evt_container">
+    <div id="iscroll">
+        <div class="wrap">
+
+            <div id="evt_loading" style="display:none;">0%</div>
+            <div id="evt_content" style="display:none;">
+
+                <div class="sec-banner">
+                    <div class="sheng"><img src="images/sheng.png" alt=""></div>
+                    <div class="shouqing" style="display: none;">活动蛋糕已售罄</div>
+                    <div class="number_position">
+                        <ul data-name="116" id="num">
+                        </ul>
+                    </div>
+                    <div class="time"><p>活动时间: 2月7日10:00-2月14日23:59:59
+                    </p></div>
+
+                </div>
+
+                <div class="sec-1">
+                    <div class="love_letters">
+                        <div class="ewm"><img src="images/ewm.png" alt=""></div>
+                        <samp></samp>
+                        <textarea id="textID" placeholder="将您想对Ta表达的爱意写在这里，MCAKE将帮您制作成一份精美的电子情书，只要TA扫描车票上的二维码并输入蛋糕生日牌上的“爱情秘钥”，便可以打开您这封充满爱意的电子情书。(限200字以内）"></textarea>
+                        <input id="miYao" type="number" value="" class="BD_letters" maxlength="6"  oninput="if(value.length>6)value=value.slice(0,6)" onkeyup="this.value=this.value.replace(/\D/g,'')" onkeydown="this.value=this.value.replace(/\D/g,'')"  onblur="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')"/>
+
+                        <input type="button" value="确定" alt="" class="buttombtn" onclick="btnClick(1);" />
+
+                    </div>
+                    <div class="box-swiper">
+                        <div class="swiper-container swiper1">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide" >
+                                    <img src="images/img_1.png" alt="">
+                                    <div>
+                                        <p class="cakename">拿破仑莓恋 <span>Napoléon aux fraises</span></p>
+                                        <dl id="10090">
+                                            <dd postid="10090" data-price="188">标准款</dd>
+                                            <dd postid="10091" class="cur" data-price="288">2.5磅</dd>
+                                            <dd postid="10092" data-price="398">3磅</dd>
+                                            <dd postid="10093" data-price="668">5磅</dd>
+                                        </dl>
+                                        <p class="cake_price_buy"><span>￥<b>288</b>.00</span><a class="w_link" style="text-decoration:underline;cursor: pointer;" onclick="btnClick(2,10090);">立即购买</a></p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide" >
+                                    <img src="images/img_2.png" alt="">
+                                    <div>
+                                        <p class="cakename">拿破仑莓恋 <span>Napoléon aux fraises</span></p>
+                                        <dl id="10090">
+                                            <dd postid="10090" data-price="188">1磅</dd>
+                                            <dd postid="10091" class="cur" data-price="288">2磅</dd>
+                                            <dd postid="10092" data-price="398">3磅</dd>
+                                            <dd postid="10093" data-price="668">5磅</dd>
+                                        </dl>
+                                        <p class="cake_price_buy"><span>￥<b>288</b>.00</span><a class="w_link" style="text-decoration:underline;cursor: pointer;" onclick="btnClick(2,10090);">立即购买</a></p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide" >
+                                    <img src="images/img_3.png" alt="">
+                                    <div>
+                                        <p class="cakename">拿破仑莓恋 <span>Napoléon aux fraises</span></p>
+                                        <dl id="10090">
+                                            <dd postid="10090" data-price="188">1磅</dd>
+                                            <dd postid="10091" class="cur" data-price="288">2磅</dd>
+                                            <dd postid="10092" data-price="398">3磅</dd>
+                                            <dd postid="10093" data-price="668">5磅</dd>
+                                        </dl>
+                                        <p class="cake_price_buy"><span>￥<b>288</b>.00</span><a class="w_link" style="text-decoration:underline;cursor: pointer;" onclick="btnClick(2,10090);">立即购买</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button swiper-button-prev"></div>
+                        <div class="swiper-button swiper-button-next"></div>
+                    </div>
+                </div>
+
+
+
+                <div class="sec-footer">
+                    <div class="txt">
+                        <h2>活动规则:</h2>
+
+                        <p>1、本活动仅限上海/杭州/苏州地区；</p>
+                        <p>2、通过此官网活动页购买任意蛋糕即可获得幸福车票一张，<br>
+                            蛋糕订购时间为：2月7日10:00-2月14日23:59:59 <br>
+                            蛋糕配送时间为：2月7日-2月15日</p>
+                        <p>3、本活动支付方式仅限银行卡在线支付/货到刷银行卡/银联在线支付；</p>
+                        <p> 4、本活动可累积积分，可与银行95折同享，不与任何其它活动优惠同享。
+                        </p>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+<script type="text/javascript" src="http://www.mcake.com/framework/jquery/jquery.min.js?v=1405950469"></script>
+<script src="http://edm.mcake.com/weifengwang/common/flexible.js"></script>
+<!-- build:js scripts/index.js -->
+<script src="../commonjs/fastclick.js"></script>
+<script src="../commonjs/pubsub.js"></script>
+<script src="../commonjs/loader.js"></script>
+
+<script src="../commonjs/iscroll.js"></script>
+<script src="../commonjs/velocity.js"></script>
+<script src="../commonjs/wap-scrollAnimate.js"></script>
+
+
+<script src="../commonjs/movieclip.js"></script>
+<script src="scripts/resdata.js"></script>
+<script src="scripts/swiper.min.js"></script>
+<script src="scripts/index.js"></script>
+<!-- endbuild -->
+<script>
+    function btnClick(type,postId) {
+        alert(postId);
+    }
+</script>
+</body>
+</html>

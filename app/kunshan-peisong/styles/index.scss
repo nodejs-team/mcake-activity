@@ -1,0 +1,131 @@
+@function px2rem($n) {
+  @return ($n * 10 / 750) * 1rem; //设计稿一般都是750宽
+}
+
+@mixin font-dpr($font-size){
+  font-size: $font-size;
+
+  [data-dpr="2"] & {
+    font-size: $font-size * 2;
+  }
+
+  [data-dpr="3"] & {
+    font-size: $font-size * 3;
+  }
+
+}
+
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+s,i,b{font-style: normal;}
+
+#evt_content{ background: #fff;
+  img{width:100%;}
+  .sec-banner{position: relative; z-index: 2; background: url("../images/banner-bg.jpg"); background-size: 100%;
+    div{position:absolute;}
+    height: px2rem(735);
+    .banner-1{ width: px2rem(592); top:px2rem(44); left:50%; margin-left: px2rem(-296);}
+    .banner-2{ width: px2rem(750); top:px2rem(272); left:0;}
+    .banner-3{ width: px2rem(474); top:px2rem(506); left:50%; margin-left: px2rem(-237);}
+    .ren{ width: px2rem(152); top:px2rem(340); left:50%; margin-left: px2rem(-76);}
+
+
+  }
+
+
+  .cake{ width: px2rem(750); margin-top: px2rem(30);}
+  .title{ width: px2rem(750); margin-top: px2rem(30);}
+  .more{ width: px2rem(260); margin:0 auto; background: #ffd200; border-radius:px2rem(36); text-align: center;
+    span{display: block; line-height: px2rem(72); font-size:px2rem(24); font-weight: bold; color: #000;}
+  }
+  .sec{position: relative; z-index: 1; padding-bottom: px2rem(50);  }
+  .sec-3{
+    .price_s{margin-top: px2rem(30);}
+    .price_num{ margin-top: px2rem(50);}
+  }
+  .sec-5{ border-top: #999999 1px solid; width: px2rem(700); margin: 0 auto; padding: px2rem(80) 0;}
+
+  .lastTime{ width:px2rem(600); margin: 0 auto; position:relative !important; text-align: center;
+    b{font-size: px2rem(30);}line-height:px2rem(60); color: #000;
+    p{ display: block; font-size: px2rem(24); vertical-align: middle;line-height:px2rem(40); margin-left: px2rem(10); overflow: hidden;  color: #000;}
+    .time{ width:px2rem(500); padding: px2rem(30) 0; margin: 0 auto; background: url("../images/line.png") center no-repeat; background-size: 100%;
+      ul{margin: 0;}
+      ul li{position: relative; float: left; width:px2rem(100); height:px2rem(100); text-align: center; list-style: none;
+        b{position: relative; float: left; display: block; width: 100%; height:px2rem(73); line-height: px2rem(73); color: #000; font-size: px2rem(50); font-weight: bold;}
+        span{position: relative; float: left; width: 100%; display:block;  color: #000; font-size:px2rem(12); height: px2rem(16); line-height: px2rem(16); }
+      }
+      ul li.mao{width: px2rem(30); font-size:px2rem(40);
+        b{ line-height: px2rem(45); color: #7f7f7f; font-weight: normal;}
+      }
+
+    }
+  }
+
+
+  /*价格*/
+.price{  width: px2rem(670); margin: 0 auto; color: #000;
+    div{position: relative;}
+  .line{}
+   .price_s{ float: left;
+       h2{position: relative; font-size:  px2rem(30); font-weight: normal; line-height: px2rem(50); color: #000;
+         i{position: absolute; left:px2rem(110); bottom:px2rem(-4); font-size:  px2rem(20); font-style: normal;}
+         span{font-size: px2rem(47); color: #000; vertical-align:text-bottom; }
+       }
+       s{font-size:  px2rem(26); color: #888888; font-weight: normal; line-height:  px2rem(30); }
+   }
+
+    .price_p{float: left;  width: px2rem(390); margin: px2rem(35) 0; color: #000;}
+    .price_p li { cursor: pointer;  float: left;  height: px2rem(80);  text-align: center;  width:  px2rem(80); border-radius: 50%; border: #e7e7e7 1px solid; background: #e7e7e7;  margin-right:  px2rem(20);
+    span{ display: block; font-size: px2rem(25); line-height:  px2rem(80); font-weight: bold; }
+    }
+    .price_p li:last-child{margin-right: 0;}
+    .price_p li.cur {  background:#ffd200 !important; border: #ffd200 1px solid !important;  }
+
+    .price_num{float: right;margin: px2rem(60) 0 px2rem(10); }
+    .price_num dl {}
+    .price_num dl dd { border: #e7e7e7 1px solid; background: #e7e7e7; float: left; cursor: pointer;  width: px2rem(40); height: px2rem(40);text-align: center; border-radius:50%; vertical-align: middle; overflow:hidden; display:flex;  align-items: center;
+    span{display:block; text-align: center; width: 100%; line-height:px2rem(40); font-size: px2rem(30);}
+    }
+    .price_num dl dd.on {  background: #ffd200; border: #ffd200 1px solid; }
+
+
+    .price_num dl dt {  float: left;  height:  px2rem(40);  width:  px2rem(60);  margin: 0 px2rem(10);  }
+    .price_num dl dt input,.num-span { font-size: px2rem(30); background: rgba(0, 0, 0, 0) none repeat scroll 0 0;  border: none;  color: #000;  height: 100%; line-height: px2rem(40); text-align: center;  width: 100%; -webkit-text-fill-color:#000;  -webkit-opacity:1;  opacity: 1; text-align: center; display: block;   }
+  input.disabled{-webkit-text-fill-color:#000;  -webkit-opacity:1;  opacity: 1; }
+  .price_l{display:block; float: left; font-size: px2rem(27);  line-height:px2rem(50); color: #000; }
+
+
+
+    .buy_btn_box { width: px2rem(250); overflow: hidden; float: right; margin-top:px2rem(10) !important; }
+    .buy_btn_box li {  float: left; width:100%; height: px2rem(62); margin-right:  px2rem(20);  }
+    .buy_btn_box li span { display: block; background: #ffd200 none repeat scroll 0 0;  color: #000; cursor: pointer; height:  100%; line-height:  px2rem(62); font-size:  px2rem(30); text-align: center; font-weight: bold; border-radius:px2rem(31);   }
+}
+
+.price.fr{text-align: right;
+    h2,s{ text-align: right; }
+    .price_p li{ float: right; margin-left: px2rem(20); margin-right: 0;}
+    .price_num dl{float: right;}
+    .price_num dd{float: right;}
+    .price_num dt{float: right;}
+    .buy_btn_box li{float: right; margin-left:  px2rem(10); margin-right: 0; }
+}
+
+
+
+  .sec-footer{background:#f5f5f5; position: relative; padding-bottom: px2rem(20);
+    .txt{ position: relative; width:px2rem(660); padding-top: px2rem(80); padding-bottom: px2rem(50); margin: 0 auto;  color: #000;
+      h2{font-size: px2rem(30); font-weight: normal; margin-top: px2rem(20);margin-bottom: px2rem(20); }
+      p{ font-size: px2rem(22); padding-left: px2rem(35); line-height:px2rem(40);  text-indent: px2rem(-35);
+        margin:px2rem(10) auto 0;}
+      p.p1{margin:px2rem(0) auto 0;}
+    }
+
+
+  }
+
+}

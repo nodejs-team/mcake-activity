@@ -63,6 +63,46 @@
     
     var loadComplete = function () {
 
+        var swiper1 = new Swiper('.swiper1', {
+            slidesPerView: 1,
+            speed:300,
+            autoplay : {
+                delay:3000
+            },
+            loop:true,
+            pagination: {
+                el: '.swiper-pagination1',
+                clickable: true
+            },
+            on: {
+                slideChangeTransitionEnd: function(){
+                    $(".fudai li").eq(this.realIndex).addClass("on").siblings().removeClass("on");
+
+                },
+            }
+        });
+
+        $(".fudai li").click(function () {
+            var idx = $(this).index();
+
+            $(this).addClass("on").siblings().removeClass("on");
+            var len = $(".swiper1 .swiper-slide").length;
+
+            swiper1.autoplay.stop();
+            if(idx ==0){
+                swiper1.slideTo(len-1, 1000, false);
+            }else {
+                swiper1.slideTo(len-2, 1000, false);
+            }
+
+            setTimeout( swiper1.autoplay.start(),3000);
+        });
+
+        $(".buys span").hover(function () {
+            $(this).addClass("on").siblings().removeClass("on");
+        });
+
+
         initScroll();
 
     }
@@ -76,8 +116,7 @@
              {dom: '.t1',x:0, y:-50,duration:500,delay:200},
              {dom: '.card',x:0, y:50,duration:500,delay:200},
              {dom: '.t2',x:0, y:50,duration:500,delay:400},
-             {dom: '.fd-pic',x:0, y:-50,duration:500,delay:200},
-             {dom: '.fudai',x:0, y:50,duration:500,delay:200},
+
 
              {dom: '.t3',x:0, y:-50,duration:500,delay:200},
              {dom: '.t4',x:0, y:-50,duration:500,delay:200},

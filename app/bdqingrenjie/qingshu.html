@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>mcake活动</title>
+    <link rel="stylesheet" href="http://m.mcake.com/wap/theme/xth1/css/comm_header.css?v=1488352348">
+    <!-- build:css styles/index.css -->
+    <link rel="stylesheet" href="../commoncss/wap-normalize.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <!-- endbuild-->
+</head>
+<body>
+
+<div id="evt_container">
+    <div id="iscroll">
+        <div class="wrap">
+
+
+            <div id="evt_content" >
+
+                <div class="qingshu">
+
+                    <div class="music"><audio src="http://edm.mcake.com/fangli/2018-wap/bdqingrenjie/music/qingshu.mp3" loop autoplay id="bgmusic"></audio></div>
+
+                    <div class="love_letters">
+                        <div class="letter">
+                            <p>除了微信、电话，这个世界上还有另外一种沟通方式 <br>
+                            你写过情书吗？你收到过情书吗？<br>
+                            学生时期的那一封封情书<br>
+                            是多么美好又纯真的记忆<br>
+                            最传统的形式，却传递着最真诚的爱意<br>
+                            你认真写情书时的感觉，Ta收到情书时的娇羞<br>
+                            多值得怀念<br>
+                            让时光倒回<br>
+                            回到那个纯真年代<br>
+                                是多么美好又纯真的记忆<br>
+                                最传统的形式，却传递着最真诚的爱意<br>
+                                你认真写情书时的感觉，Ta收到情书时的娇羞<br>
+                                多值得怀念<br>
+                                让时光倒回<br>
+                                回到那个纯真年代<br>
+                            ......</p>
+                        </div>
+                        <input id="miYao" type="text" value="" class="BD_letters" maxlength="6" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')"/>
+
+                        <input type="button" value="确定" alt="" class="buttombtn" onclick="btnClick(1);" />
+
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<script type="text/javascript" src="http://www.mcake.com/framework/jquery/jquery.min.js?v=1405950469"></script>
+<script src="http://edm.mcake.com/weifengwang/common/flexible.js"></script>
+
+<script>
+
+    $(".letter p").addClass("move-up");
+
+    function btnClick() {
+        $(".letter p").fadeOut(0).removeClass("move-up");
+        $(".letter p").fadeIn(0).addClass("move-up");
+    }
+    function audioAutoPlay(id){
+        var audio = document.getElementById(id),
+            play = function(){
+                audio.play();
+                document.removeEventListener("touchstart", play, false);
+            };
+
+        audio.play();
+
+        document.addEventListener("WeixinJSBridgeReady", function () {
+            play();
+        }, false);
+
+        document.addEventListener("touchstart",play, false);
+    }
+
+
+    audioAutoPlay('bgmusic');
+
+   /* $(".letter").fadeIn(500);*/
+
+
+
+    /*判断手机横竖屏状态：*/
+    !+(function () {
+
+        function hengshuping() {
+            if (window.orientation == 180 || window.orientation == 0) {
+                window.location.reload();
+            }
+            if (window.orientation == 90 || window.orientation == -90) {
+                window.location.reload();
+            }
+        }
+        window.addEventListener("onorientationchange" in window ? "orientationchange" : "resize", hengshuping, false);
+    })();
+</script>
+</body>
+</html>

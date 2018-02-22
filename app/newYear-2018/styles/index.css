@@ -67,42 +67,46 @@
     height: 13.12rem;
     background: url("../images/fd.png") repeat;
     z-index: 1;
-    background-size: 100%;
-    padding-top: 0.8rem; }
+    background-size: 100%; }
     #evt_content .sec-3 .fd-pic {
-      width: 8.66667rem;
+      width: 10rem;
+      height: 13.12rem;
       margin: 0 auto; }
-    #evt_content .sec-3 .fudai ul {
-      padding-left: 0.4rem;
-      padding-right: -0.13333rem;
-      overflow: hidden; }
-      #evt_content .sec-3 .fudai ul li {
-        float: left;
-        width: 4.34667rem;
-        margin-right: 0.4rem;
-        background: #fff;
-        border-radius: 0.13333rem;
+    #evt_content .sec-3 .fudai {
+      position: absolute;
+      top: 60%;
+      z-index: 2; }
+      #evt_content .sec-3 .fudai ul {
+        padding-left: 0.4rem;
+        padding-right: -0.13333rem;
         overflow: hidden; }
-        #evt_content .sec-3 .fudai ul li img {
-          width: 3.76rem;
-          margin: 0.26667rem; }
-        #evt_content .sec-3 .fudai ul li .gobtn {
-          margin-top: 0.4rem; }
-          #evt_content .sec-3 .fudai ul li .gobtn dl {
-            overflow: hidden; }
-            #evt_content .sec-3 .fudai ul li .gobtn dl dd {
-              float: left;
+        #evt_content .sec-3 .fudai ul li {
+          float: left;
+          width: 4.34667rem;
+          margin-right: 0.4rem;
+          background: #d6cece;
+          border-radius: 0.13333rem;
+          overflow: hidden; }
+          #evt_content .sec-3 .fudai ul li img {
+            width: 3.76rem;
+            margin: 0.26667rem; }
+          #evt_content .sec-3 .fudai ul li .buys {
+            width: 100%;
+            border-top: #e0e0e0 1px solid; }
+            #evt_content .sec-3 .fudai ul li .buys span {
+              width: 49.8%;
               display: block;
-              width: 50%;
               text-align: center;
-              line-height: 0.93333rem;
-              background: #d8c097;
-              color: #fff;
-              border-radius: none; }
-              #evt_content .sec-3 .fudai ul li .gobtn dl dd span {
-                font-size: 0.26667rem; }
-            #evt_content .sec-3 .fudai ul li .gobtn dl dd.on {
-              background: #d5a551; }
+              border-right: #e0e0e0 1px solid;
+              line-height: 0.4rem;
+              float: left;
+              font-size: 0.24rem;
+              cursor: pointer;
+              margin: 0.26667rem auto; }
+            #evt_content .sec-3 .fudai ul li .buys span.on {
+              color: #c71c1c; }
+        #evt_content .sec-3 .fudai ul li.on {
+          background: #fff; }
   #evt_content .sec-4 {
     position: relative;
     padding-bottom: 1.33333rem; }
@@ -430,3 +434,39 @@
       background: #d5a551;
       border-bottom-right-radius: 0.26667rem;
       float: left; }
+
+.swiper-container {
+  position: relative !important;
+  width: 100%;
+  height: 13.12rem;
+  margin-left: auto;
+  margin-right: auto; }
+
+.swiper-slide {
+  text-align: center;
+  background: #fff;
+  height: 13.12rem;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center; }
+
+.swiper-pagination {
+  width: 100%;
+  position: absolute !important;
+  bottom: 45% !important; }
+
+.swiper-pagination-bullet {
+  margin: 0 0.06667rem !important; }
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #fff !important; }
