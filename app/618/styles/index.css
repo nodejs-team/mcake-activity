@@ -1,0 +1,362 @@
+@charset "UTF-8";
+#evt_content {
+  background: #fff7d9;
+  /*价格*/ }
+  #evt_content div {
+    position: absolute; }
+  #evt_content img {
+    width: 100%; }
+  #evt_content .sec {
+    position: relative; }
+  #evt_content .sec-top {
+    height: 8.8rem;
+    background: url("../images/banner.png");
+    background-size: 100%;
+    z-index: 1;
+    overflow: hidden; }
+  #evt_content .sec-1 {
+    padding-bottom: 0.66667rem;
+    background: url("../images/bg.jpg");
+    background-size: 10%; }
+    #evt_content .sec-1 .line-2 {
+      position: absolute;
+      width: 10rem;
+      top: 0; }
+    #evt_content .sec-1 div {
+      position: relative; }
+    #evt_content .sec-1 .title {
+      width: 3.48rem;
+      margin: 0 auto;
+      padding-top: 2.13333rem; }
+    #evt_content .sec-1 .product {
+      width: 10rem;
+      /*磅数选择*/
+      /*数量选择*/ }
+      #evt_content .sec-1 .product ul {
+        margin: 0;
+        padding-left: 0.4rem; }
+        #evt_content .sec-1 .product ul li {
+          position: relative;
+          float: left;
+          width: 4.4rem;
+          margin-right: 0.4rem;
+          list-style: none;
+          margin-top: 0.66667rem; }
+        #evt_content .sec-1 .product ul li:nth-of-type(2n) {
+          margin-right: 0; }
+      #evt_content .sec-1 .product p {
+        line-height: 0.4rem;
+        margin-top: 0.26667rem;
+        margin-bottom: 0;
+        text-align: center;
+        font-size: 0.34rem; }
+      #evt_content .sec-1 .product .pro-top {
+        width: 4.4rem; }
+      #evt_content .sec-1 .product .tj-price {
+        float: left;
+        font-size: 0.45333rem;
+        line-height: 0.4rem; }
+        #evt_content .sec-1 .product .tj-price i {
+          font-size: 0.24rem;
+          font-style: normal;
+          vertical-align: baseline;
+          color: #ff7701; }
+        #evt_content .sec-1 .product .tj-price b {
+          font-size: 0.26667rem;
+          font-weight: normal;
+          vertical-align: inherit;
+          color: #ff7701; }
+        #evt_content .sec-1 .product .tj-price span {
+          color: #ff7701; }
+        #evt_content .sec-1 .product .tj-price em {
+          font-weight: normal;
+          font-style: normal;
+          vertical-align: baseline;
+          font-size: 0.21333rem;
+          color: #ff7605;
+          padding-left: 0.06667rem; }
+        #evt_content .sec-1 .product .tj-price s {
+          font-size: 0.24rem;
+          font-weight: normal;
+          font-style: normal;
+          display: inline-block; }
+      #evt_content .sec-1 .product .pro-info {
+        width: 4.4rem;
+        margin: 0.4rem auto;
+        color: #ad8e69; }
+      #evt_content .sec-1 .product .t {
+        width: 4.26667rem;
+        margin: 0.26667rem 0 0.26667rem; }
+      #evt_content .sec-1 .product .postid {
+        visibility: hidden; }
+      #evt_content .sec-1 .product .select-item {
+        float: right;
+        display: none;
+        z-index: 10;
+        height: 0.78667rem;
+        position: relative;
+        margin-top: -0.26667rem; }
+        #evt_content .sec-1 .product .select-item .selects-l {
+          width: 2rem;
+          height: 0.78667rem;
+          background: url(../images/sele-li.png) center center no-repeat;
+          border: none;
+          color: #ad8e69;
+          text-indent: 0.06667rem;
+          background-size: 100%; }
+      #evt_content .sec-1 .product .num-select {
+        position: absolute;
+        right: 0.06667rem;
+        top: -0.13333rem;
+        width: 1.84rem; }
+        #evt_content .sec-1 .product .num-select dl {
+          float: left; }
+          #evt_content .sec-1 .product .num-select dl dd {
+            background: #fff url("../images/reduce.png") center no-repeat;
+            background-size: 80%;
+            cursor: pointer;
+            float: left;
+            width: 0.66667rem;
+            height: 0.66667rem; }
+          #evt_content .sec-1 .product .num-select dl dd.nopoint {
+            background: #fff url("../images/add.png") center no-repeat;
+            background-size: 80%; }
+          #evt_content .sec-1 .product .num-select dl dt {
+            float: left;
+            height: 0.66667rem;
+            margin: 0 0.06667rem; }
+          #evt_content .sec-1 .product .num-select dl dt span {
+            display: block;
+            background: transparent none repeat scroll 0 0;
+            border: medium none;
+            color: #ff7605;
+            text-align: center;
+            width: 0.33333rem;
+            font-size: 0.34667rem !important;
+            line-height: 0.66667rem; }
+    #evt_content .sec-1 .go-btn {
+      width: 2.09333rem;
+      text-align: center;
+      float: left;
+      margin-right: 0.06667rem; }
+    #evt_content .sec-1 .go-car {
+      margin-left: 0.06667rem;
+      margin-right: 0; }
+    #evt_content .sec-1 .more {
+      position: relative;
+      width: 5.33333rem;
+      margin: 0.66667rem auto 0; }
+    #evt_content .sec-1 .ewm {
+      position: relative;
+      width: 1.90667rem;
+      margin: 1.33333rem auto 0; }
+  #evt_content .sec-2 {
+    position: relative;
+    padding-top: 0.66667rem; }
+    #evt_content .sec-2 .hongbao {
+      width: 10rem;
+      position: relative; }
+    #evt_content .sec-2 .manjian {
+      width: 10rem;
+      position: relative; }
+  #evt_content .sec-main {
+    background: #ffefef;
+    padding-top: 1.33333rem; }
+    #evt_content .sec-main .line-1 {
+      width: 10rem;
+      top: 0; }
+    #evt_content .sec-main .se-title {
+      position: relative;
+      width: 2.70667rem;
+      margin: 0 auto;
+      padding: 0.26667rem 0; }
+    #evt_content .sec-main .row {
+      position: relative; }
+    #evt_content .sec-main .row1 {
+      height: 7.2rem; }
+      #evt_content .sec-main .row1 .cake {
+        width: 7.42667rem;
+        top: 0rem;
+        left: 0rem;
+        z-index: 1; }
+      #evt_content .sec-main .row1 .price {
+        top: 3.2rem;
+        left: 5.2rem; }
+    #evt_content .sec-main .row2 {
+      height: 7.49333rem; }
+      #evt_content .sec-main .row2 .cake {
+        width: 4.98667rem;
+        top: 0rem;
+        right: 0rem;
+        z-index: 1; }
+      #evt_content .sec-main .row2 .icon-618 {
+        width: 2.49333rem;
+        top: 5.06667rem;
+        left: 0.53333rem;
+        z-index: 1; }
+      #evt_content .sec-main .row2 .price {
+        top: 1.33333rem;
+        left: 0.26667rem; }
+    #evt_content .sec-main .row3 {
+      height: 6.85333rem; }
+      #evt_content .sec-main .row3 .cake {
+        width: 5.49333rem;
+        top: -0.66667rem;
+        left: 0rem;
+        z-index: 1; }
+      #evt_content .sec-main .row3 .icon-618 {
+        width: 2.52rem;
+        top: 5.33333rem;
+        left: 5.33333rem;
+        z-index: 1; }
+      #evt_content .sec-main .row3 .price {
+        top: 1.33333rem;
+        left: 5.2rem;
+        z-index: 2; }
+  #evt_content .price {
+    position: absolute;
+    width: 5.33333rem;
+    text-align: left;
+    z-index: 2; }
+    #evt_content .price .title {
+      position: relative;
+      width: 4.05333rem;
+      margin: 0.13333rem 0; }
+    #evt_content .price h2 {
+      font-size: 0.37333rem;
+      font-weight: normal;
+      line-height: 0.66667rem;
+      color: #ec3554; }
+      #evt_content .price h2 i {
+        font-size: 0.26667rem;
+        font-style: normal;
+        vertical-align: top; }
+      #evt_content .price h2 span {
+        font-size: 0.53333rem; }
+    #evt_content .price s {
+      font-size: 0.32rem;
+      color: #000;
+      font-weight: normal;
+      line-height: 0.4rem; }
+    #evt_content .price ul.price_p {
+      margin: 0.4rem auto;
+      color: #000;
+      width: 5.33333rem;
+      display: none; }
+    #evt_content .price ul.price_p li {
+      cursor: pointer;
+      float: left;
+      height: 0.8rem;
+      line-height: 0.8rem;
+      text-align: center;
+      width: 1.2rem;
+      border: #cbcbcb 1px solid;
+      margin-right: 0.13333rem;
+      background: #fff; }
+    #evt_content .price ul.price_p li:last-child {
+      margin-right: 0; }
+    #evt_content .price ul.price_p .bd {
+      width: 1.6rem !important;
+      margin-left: 2rem !important; }
+    #evt_content .price ul.price_p li.cur {
+      background: #6a7a33 !important;
+      color: #fff !important;
+      border: #6a7a33 1px solid !important; }
+    #evt_content .price .price_num {
+      margin: 0;
+      width: 4.53333rem;
+      position: relative; }
+    #evt_content .price .price_num dl {
+      float: left;
+      padding-left: 0.06667rem; }
+    #evt_content .price .price_num dl dd {
+      background: url("../images/in-l.png") center no-repeat;
+      background-size: 90%;
+      cursor: pointer;
+      float: left;
+      width: 0.6rem;
+      height: 0.66667rem; }
+    #evt_content .price .price_num dl dd.nopoint {
+      background: url("../images/in-r.png") center no-repeat;
+      background-size: 90%; }
+    #evt_content .price .price_num dl dt {
+      float: left;
+      height: 0.66667rem;
+      width: 1.06667rem;
+      margin: 0 0.13333rem; }
+    #evt_content .price .price_num dl dt span {
+      display: block;
+      font-size: 0.4rem;
+      background: transparent none repeat scroll 0 0;
+      border: none;
+      color: #ea3554;
+      height: 100%;
+      line-height: 0.66667rem;
+      text-align: center;
+      width: 100%; }
+    #evt_content .price ul.buy_btn_box {
+      overflow: hidden;
+      margin-top: 0.26667rem; }
+    #evt_content .price ul.buy_btn_box li {
+      float: left;
+      margin-right: 0.13333rem;
+      width: 2.29333rem; }
+  #evt_content .sec-footer {
+    background: #fff7d8;
+    background-size: 100%;
+    position: relative; }
+    #evt_content .sec-footer .line-3 {
+      position: absolute;
+      width: 10rem;
+      top: 0; }
+    #evt_content .sec-footer .txt {
+      position: relative;
+      width: 9.06667rem;
+      padding-top: 2rem;
+      padding-bottom: 0.66667rem;
+      margin: 0 auto;
+      color: #000; }
+      #evt_content .sec-footer .txt h2 {
+        font-size: 0.37333rem;
+        font-weight: normal; }
+      #evt_content .sec-footer .txt p {
+        font-size: 0.30667rem;
+        padding-left: 0.46667rem;
+        line-height: 0.53333rem;
+        text-indent: -0.46667rem;
+        margin: 0.06667rem 0; }
+
+/*浮动*/
+.floater {
+  position: fixed;
+  width: 1.81333rem;
+  height: 2.78667rem;
+  bottom: 0.26667rem;
+  right: 0.13333rem;
+  z-index: 11;
+  cursor: pointer;
+  display: none; }
+  .floater img {
+    width: 100%; }
+  .floater .tips {
+    position: absolute;
+    width: 0.66667rem;
+    height: 0.66667rem;
+    left: -0.06667rem;
+    top: 0.26667rem;
+    border-radius: 50%;
+    background: url("../images/tips.png") center no-repeat;
+    background-size: 100%;
+    text-align: center;
+    z-index: 12; }
+    .floater .tips span {
+      display: block;
+      font-size: 0.26667rem;
+      color: #000;
+      line-height: 0.66667rem; }
+
+@media screen and (max-width: 320px) {
+  .sel-li {
+    top: -0.13333rem !important; }
+  i {
+    top: 0.04rem !important; } }

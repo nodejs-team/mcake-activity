@@ -151,9 +151,9 @@
   }
 
   .section-footer{position: relative;  background: url("../images/bg-2.jpg") repeat;
-    .rules{padding:px2rem(100) px2rem(60) px2rem(80);   color:#2b2b2b; line-height:px2rem(40);
+    .rules{padding:px2rem(100) px2rem(40) px2rem(80);   color:#2b2b2b; line-height:px2rem(40);
       h2{font-weight:normal;  font-size:px2rem(36); line-height:px2rem(60); color: #677b95; }
-      p{ font-size: px2rem(24); padding-left: px2rem(35); line-height:px2rem(45);  text-indent: px2rem(-38);  margin:px2rem(10) 0; }
+      p{ font-size: px2rem(24); padding-left: px2rem(35); line-height:px2rem(40);  text-indent: px2rem(-38);  margin:px2rem(10) 0; text-align:justify;  text-justify:inter-word; }
     }
   }
 

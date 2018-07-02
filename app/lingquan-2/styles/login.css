@@ -1,0 +1,165 @@
+html,body{
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+    background: #f7f7f5;
+}
+img{
+    border:0;
+    margin:0;
+    padding:0;
+}
+input{
+    padding:0;
+    border:0;
+    outline: none;
+}
+.wrap{max-width: 750px; min-width: 320px; margin: 0 auto; height: 100%;  position: relative; padding-bottom: 30px;}
+.top_coupon{
+    width:100%;
+    height:60%;
+    overflow: hidden;
+}
+.back{
+    position:absolute;
+    top:0;
+    right:0;
+    width:70%;
+}
+.lg{
+    position:absolute;
+    top:15px;
+    left:5%;
+    width:38%;
+}
+.coupon{
+    position:absolute;
+    top:40%;
+    left:12%;
+    width:50%;
+}
+
+.center{
+    width:100%;
+    position: relative;
+    top:6%;
+}
+.phone{
+    width:100%;
+    height:50px;
+    position:absolute;
+    top:-35px;
+    left: 0;
+}
+.phone-inner{
+    width:80%;
+    margin-left:10%;
+    background: #E4E4E4;
+    position: absolute;
+    left: 0;
+    top:0;
+}
+.phone-img{
+    width:5%;
+    max-height: 50px;
+    margin-left: 8%;
+    vertical-align: middle;
+}
+#phonenum{
+    width:70%;
+    height:50px;
+    padding-left: 5%;
+    background: transparent;
+    font-weight: bold;
+    font-size: 16px;
+    color:#3b3b3b;
+}
+.tpyzm{position: absolute; top: 30px;margin-left: 10%; width: 80%;}
+.yzm{
+    width:80%;
+    height:50px;
+    position: absolute;
+    left:10%;
+    top: 73px;
+}
+.yzm-left{
+    width: 70%;
+    height:50px;
+    margin-right: 3%;
+    float: left;
+    background:#E4E4E4;
+    position: absolute;
+    top:18px;
+    z-index: 1;
+}
+.right{
+    width:10%;
+    height:auto;
+    max-height: 50px;
+    margin-left: 10%;
+    vertical-align: middle;
+}
+#yzm{
+    width:70%;
+    height:50px;
+    padding-left: 5%;
+    background: transparent;
+    font-weight: bold;
+    font-size: 14px;
+    color:#3b3b3b;
+}
+.yzm-right{
+    width:27%;
+    height: 50px;
+    line-height: 50px;
+    border: 0;
+    float: left;
+    text-align: center;
+    background:#B1916B ;
+    font-size: 12px;
+    color: #FFFFFF;
+    position: absolute;
+    right:0;
+    top:18px;
+}
+.word{
+    width:80%;
+    height:30px;
+    text-align: right;
+    line-height: 30px;
+    position: absolute;
+    top:20px;
+    font-size: 12px;
+    background: pink;
+}
+#instant{
+    width:80%;
+    height:50px;
+    text-align: center;
+    line-height: 50px;
+    margin-top: 12px;
+    border: 0;
+    outline: none;
+    background: #B1916B;
+    font-size: 14px;
+    color: #FFFFFF;
+    position: absolute;
+    left:10%;
+    top:144px;
+}
+
+.Copyright{
+    width:80%;
+    position: absolute;
+    left:10%; margin-bottom: 50px;
+    top:222px; font-size: 11px; text-align: center;
+}
+
+.Dialog-bg{background-color: #000;  height: 100%;  left: 0;  opacity: 0.85;  position: fixed;  top: 0;  width: 100%;  z-index: 200; display: none; }
+
+.Dialog{  box-shadow: 0 0 0 #999;  font-size:14px;  width:260px; position: fixed;  top: 8%; left: 50%;  z-index: 99999; margin-left: -130px; display: none;}
+.Dialog img{width: 100%;}
+.closeX{position: absolute; bottom:-26%; left: 50%; width:18%; height:60px; margin-left:-9%; background: url("../images/close.png") center no-repeat; background-size: 100%;}
+
+.gobtn{position: absolute; bottom:-5%; left: 50%; width:60%; height:12%; background: url("../images/btn.png") center no-repeat; background-size: 100%;margin-left:-30%; }

@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>mcake活动</title>
+    <link rel="stylesheet" href="http://m.mcake.com/wap/theme/xth1/css/comm_header.css?v=1488352348">
+    <!-- build:css styles/index.css -->
+    <link rel="stylesheet" href="../commoncss/wap-normalize.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <!-- endbuild-->
+    <script src="http://edm.mcake.com/weifengwang/common/flexible.js"></script>
+
+    <style>
+
+
+    </style>
+    <script src="scripts/iscroll.js"></script>
+
+</head>
+<body>
+
+<div id="evt_container">
+    <div id="iscroll">
+        <div class="wrap">
+
+            <div id="evt_content" style="display:block;background: #f0f0f0;">
+
+                <div class="sec sec-3">
+                    <div class="s-title"><img src="images/title3.png" alt=""></div>
+                    <div class="hongbao"><img src="images/hongbao3.png" alt=""></div>
+                    <div class="lingquan">
+                        <div class="tip">输入手机号，领取现金红包</div>
+                        <div class="line"><i class="icon"></i><input type="tel" placeholder="请输入手机号码" maxlength="11"></div>
+                        <div class="line"><i class="icon code"></i><input type="text" placeholder="输入图片验证码" maxlength="11">
+                            <div class="yzm"><img id="yzm_img" style="cursor:pointer;" title="点击刷新验证码" src="images/yzm.png" onclick="E.captcha('yzm_img');">
+                            </div>
+                        </div>
+                        <div class="line">
+                            <i class="icon ys"></i><input type="tel" placeholder="输入短信验证码" maxlength="8">
+                            <div class="yzm"><input type="button" id="btn" value="| 获取验证码" onclick="settime(this)" /> </div>
+                        </div>
+                        <div class="btn yong-btn">立即领取</div>
+                    </div>
+                    <div class="sec-bottom">
+                        <div class="Copyright">
+                            Copyright &copy; 2012-2018 上海卡法电子商务有限公司 <br> 版权所有 沪ICP备12022075号
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="http://www.mcake.com/shop/theme/xth1/js/index/jquery.min.js?v=1411888163"></script>
+<script src="http://edm.mcake.com/fangli/2018-wap/single-page/scripts/iscroll.js"></script>
+<script src="http://edm.mcake.com/fangli/2018-wap/single-page/scripts/demoUtils.js"></script>
+<!-- build:js scripts/demo.js -->
+
+<script src="scripts/demo.js"></script>
+<!-- endbuild -->
+<script>
+/*window.onload = function () {
+    var myScroll;
+    myScroll = new IScroll('#iscroll', { mouseWheel: true });
+    document.addEventListener('touchmove', function (e) { e.preventDefault(); }, isPassive() ? {
+            capture: false,
+            passive: false
+        } : false);
+}*/
+</script>
+
+</body>
+</html>

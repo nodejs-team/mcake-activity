@@ -38,24 +38,32 @@
   #evt_content .section-top .top_quality {
     width: 1.25333rem;
     top: 5.2rem;
-    left: 4.41333rem; }
+    left: 4.41333rem;
+    z-index: 3; }
+
+#evt_content .bj-card {
+  width: 3.6rem;
+  top: 1.6rem;
+  left: 5.6rem;
+  z-index: 2; }
 
 #evt_content .top_pic {
   position: relative;
   width: 10rem;
-  height: 5.76rem; }
+  height: 5.76rem;
+  z-index: 1; }
 
 #evt_content .note {
   position: absolute;
-  width: 5.82667rem;
-  top: 0;
-  left: 4rem;
+  width: 5.33333rem;
+  top: -0.4rem;
+  right: -1.33333rem;
   display: none; }
 
 #evt_content .title {
   position: absolute;
   width: 9.97333rem;
-  top: 0rem;
+  top: 0.26667rem;
   left: 0rem; }
 
 #evt_content .logos {

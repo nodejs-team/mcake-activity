@@ -8,7 +8,8 @@
 
   .banner{width:100%;
     .content{ position: relative; width: 1200px; height: 836px; margin:0 auto;}
-    .notes{position:absolute; top:0px; left: 566px; width:656px; display: none;}
+    .notes{position:absolute; top:-40px; left: 726px; width:436px; display: none; z-index:1 ;}
+    .bj-card{position:absolute; top:188px; left:666px; width:477px; z-index: 2;}
     .title{position:absolute; top:10px; left: 50%; width:1411px; margin-left:-705.5px;}
     .logo{position:absolute; top:55px; left: 35px; width:448px;}
   }

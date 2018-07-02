@@ -1,0 +1,54 @@
+@function px2rem($n) {
+  @return ($n * 10 / 750) * 1rem;
+}
+
+@mixin font-dpr($font-size){
+  font-size: $font-size;
+
+  [data-dpr="2"] & {
+    font-size: $font-size * 2;
+  }
+
+  [data-dpr="3"] & {
+    font-size: $font-size * 3;
+  }
+
+}
+.wrap{background: #c8132d; padding-bottom: px2rem(10);}
+#evt_content{ width:px2rem(725); border-radius: px2rem(20); margin:px2rem(30) auto; background:url("../images/bg.jpg") repeat; overflow: hidden;
+  div{position:absolute;}
+  img{width:100%;}
+  .sec{position: relative; }
+  .sec-top{height: px2rem(488); z-index: 6; background: url("../images/banner.jpg"); background-size: 100%;
+    .title{width:px2rem(660); top:px2rem(96); left:50%; margin-left: px2rem(-330);}
+    .logos{width:px2rem(200); top:px2rem(10); left:px2rem(10);}
+  }
+
+
+  .sec-1{height: px2rem(940); z-index: 5;
+    .mingsheng-1{position: absolute; width:px2rem(205); top:px2rem(-100); right:0;}
+    .mingsheng-2{position: absolute; width:px2rem(161); bottom:px2rem(20); left:0;}
+    .word{position: absolute; width:px2rem(96); top:px2rem(36); left:0;}
+    .zuhe-1{position: absolute; width:px2rem(699); top:px2rem(40); left: px2rem(30);}
+    .zuhe-2{position: absolute; width:px2rem(618); top:px2rem(473); left: px2rem(73);}
+    .gobuy{position: absolute; width:px2rem(178); top:px2rem(764); left: px2rem(280);}
+    .line{position: absolute; width:px2rem(320); bottom:px2rem(-20); left: 50%; margin-left: px2rem(-160);}
+
+  }
+
+
+  .sec-footer{ position: relative; padding-bottom: px2rem(100); z-index: 2;
+    background:#fff url("../images/foot-bg.png") bottom right no-repeat; background-size: 100%;
+    .txt{ position: relative; width:px2rem(640); padding: px2rem(70) 0 px2rem(50); margin: 0 auto;  color: #000;
+      h2{font-size: px2rem(30); font-weight: normal; color: #d00a13; }
+      p{ font-size: px2rem(22); padding-left: px2rem(35); line-height:px2rem(40);  text-indent: px2rem(-28);
+        margin:px2rem(5) 0;}
+    }
+  }
+}
+
+
+@media screen and (max-width: 320px) {
+  .sel-li{ top: px2rem(-10) !important; }
+  i{top:px2rem(3) !important; }
+}

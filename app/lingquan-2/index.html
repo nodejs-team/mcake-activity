@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录-领取优惠券</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+    <link rel="stylesheet" type="text/css" href="http://www.mcake.com/wap/theme/xth1/css/comm_header.css?v=1508207710" />
+    <!-- build:css styles/index.css -->
+    <link rel="stylesheet" href="styles/login.css"/>
+    <!-- endbuild-->
+</head>
+<body>
+    <div class="wrap">
+        <div class="top_coupon">
+            <img class="back" src="images/back.png" alt=""/>
+            <img class="coupon" src="images/coupon.png" alt=""/>
+            <img class="lg" src="images/logo.png" alt=""/>
+        </div>
+
+        <div class="center">
+            <div class="phone">
+                <div class="phone-inner">
+                    <img class="phone-img" src="images/phone.png" alt=""/>
+                    <input id="phonenum" type="tel" maxlength="11" placeholder="手机号" style="font-size: 14px;"/>
+                </div>
+            </div>
+
+            <div class="tpyzm">
+                <div class="Short" style="float: left;position: relative; width: 50%;">
+                    <div style="position: relative; width: 100%;">
+                        <input type="text" class="input_style" id="tp_yzm" name="tp_yzm" maxlength="4" placeholder="图片验证码" autocomplete="off" style="background:#E4E4E4; text-indent: 10px;font-weight: bold;font-size: 14px;"/>
+                    </div>
+                </div>
+                <div class="send" style="float: left;">
+                    <img id="yzm_img" style="cursor:pointer;width: 75px;height: 40px;margin: 2px 0 0 15px;" title="点击刷新验证码" src="/core/yzm.html" onclick="E.captcha('yzm_img');">
+                </div>
+            </div>
+
+            <div class="yzm">
+                <div class="yzm-left">
+                    <img class="right" src="images/code.png" alt=""/>
+                    <input id="yzm" type="tel" placeholder="手机验证码"/>
+                </div>
+                <div class="yzm-right">发送验证码</div>
+            </div>
+
+            <button id="instant">立即领取</button>
+
+            <div class="Copyright">
+                Copyright &copy; 2012-2018 上海卡法电子商务有限公司 <br> 版权所有 沪ICP备12022075号
+            </div>
+        </div>
+    </div>
+
+    <div class="Dialog-bg" ontouchmove="return false;"></div>
+    <div class="Dialog" ontouchmove="return false;">
+        <div class="gobtn"></div>
+        <div class="closeX"></div>
+        <img src="images/kaquan.png" alt="">
+    </div>
+    <script type="text/javascript" src="http://www.mcake.com/shop/theme/xth1/js/index/jquery.min.js?v=1411888163"></script>
+    <script>
+        ;(function(){
+            /*弹窗：领取红包*/
+            var Dialog = {
+                $DialogBg:$(".Dialog-bg"),
+                $Dialog:$(".Dialog"),
+                $closeX:$(".Dialog").find(".closeX"),
+                DialogShow:function () {
+                    var that = Dialog;
+                    that.$DialogBg.fadeIn(200);
+                    that.$Dialog.fadeIn(200);
+                },
+                DialogHide:function () {
+                    var that = Dialog;
+                    that.$DialogBg.fadeOut(0);
+                    that.$Dialog.fadeOut(0);
+                },
+                _init:function () {
+                    var self = this;
+                    this.$closeX.click(function () {
+                        self.DialogHide();
+                    });
+
+                }
+            };
+
+            window.DialogShow = Dialog.DialogShow;
+            window.DialogHide = Dialog.DialogHide;
+
+            Dialog._init();
+
+        })();
+        $("#instant").click(function () {
+            DialogShow();
+        });
+    </script>
+
+</body>
+</html>

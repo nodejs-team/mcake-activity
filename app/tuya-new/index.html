@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>创意涂鸦</title>
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no,email=no,date=no,aItemress=no">
+
+    <!-- build:css styles/tuya.css -->
+    <link rel="stylesheet" href="styles/tuya.css">
+    <!-- endbuild-->
+
+
+</head>
+<body>
+
+<div id="loading" style="display:block;">0%</div>
+
+<div class="main" ontouchmove="return false;" style="display: none;">
+     <div class="board">
+         <div class="board-bg"><img id="board-img" data-src="images/huaban-1.png" alt=""></div>
+        <canvas class="mycanvas" id="mycanvas"></canvas>
+     </div>
+
+    <div class="huabi" id="colorBox">
+        <div class="item active"><i></i><img data-src="images/brush-1.png" alt=""></div>
+        <div class="item"><i></i><img data-src="images/brush-2.png" alt=""></div>
+        <div class="item"><i></i><img data-src="images/brush-3.png" alt=""></div>
+        <div class="item"><i></i><img data-src="images/brush-4.png" alt=""></div>
+        <div class="item"><i></i><img data-src="images/brush-5.png" alt=""></div>
+        <div class="item"><i></i><img data-src="images/brush-6.png" alt=""></div>
+        <div class="item">
+            <div class="qiaokeli"></div>
+        </div>
+    </div>
+
+    <div class="backBtn">
+         <div class="back prev" id="prev">上一步</div>
+        <!-- <div class="back eraser" id="eraser">橡皮擦</div>-->
+    </div>
+     <div class="share-btn">
+         <img data-src="images/redraw-btn.png" id="reset" alt="">
+         <img data-src="images/share-btn.png" alt="" id="finish">
+     </div>
+    <div class="tips-1"><img data-src="images/tips-1.png" alt=""></div>
+    <div class="tips-2"><img data-src="images/tips-2.png" alt=""></div>
+
+
+    <div class="raduis" id="raduis">
+        <div class="item cu"></div>
+        <div class="item zhong active"></div>
+        <div class="item xi"></div>
+    </div>
+</div>
+
+<div class="Dialog-cover" ontouchmove="return false;"></div>
+<div class="Dialog-wrap" ontouchmove="return false;">
+    <div class="photo">
+        <div class="photo-img" style="background: url('images/photo-img.jpg') center no-repeat; background-size: 100%;"></div>
+        <div class="photo-kuang"><img src="images/photo-kuang.png" alt=""></div>
+        <div class="ewm"><img src="images/ewm.png" alt=""></div>
+    </div>
+    <div class="photo-save"><img src="images/photo-save.png" alt="" class="saveImg"><img src="images/photo-guang.png" alt=""></div>
+    <div class="photo-logo"><img src="images/logo.png" alt=""></div>
+</div>
+
+<div class="downImg-cover" ontouchmove="return false;"></div>
+<div class="downImg-wrap" ontouchmove="return false;">
+    <!--<div class="downImg-close"><img src="images/cx.png"></div>-->
+    <div class="share-1"><img src="images/share-1.png"></div>
+    <div class="share-2"><img src="images/share-2.png"></div>
+    <div class="down-img"><img src="images/photo-img.jpg" alt="" class="downImg"></div>
+</div>
+
+
+<script src="http://edm.mcake.com/weifengwang/common/flexible.js"></script>
+<script>
+
+    function drawCanvas(){
+        var ty=new tuya({
+            Base64ck:function (data) {
+                imgSrc = data;
+                /*console.log(imgSrc);*/
+                if(imgSrc != imgNull){
+                    $(".photo-img").css('background-image', 'url(' + imgSrc + ')');
+                    $(".downImg").attr("src",imgSrc);
+                }
+                $(".Dialog-cover,.Dialog-wrap").fadeIn(200);
+                $(".huabi").fadeOut(0);
+            }
+        });
+    }
+</script>
+
+<!-- build:js scripts/index.js -->
+<script src="scripts/jquery.min.js"></script>
+<script src="scripts/tuya.js"></script>
+<script src="scripts/index.js"></script>
+<!-- endbuild -->
+
+<!--<script src="scripts/vconsole.min.js"></script>-->
+
+
+</body>
+</html>

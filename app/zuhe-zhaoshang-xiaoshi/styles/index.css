@@ -1,0 +1,97 @@
+.wrap {
+  background: #c8132d;
+  padding-bottom: 0.13333rem; }
+
+#evt_content {
+  width: 9.66667rem;
+  border-radius: 0.26667rem;
+  margin: 0.4rem auto;
+  background: url("../images/bg.jpg") repeat;
+  overflow: hidden; }
+  #evt_content div {
+    position: absolute; }
+  #evt_content img {
+    width: 100%; }
+  #evt_content .sec {
+    position: relative; }
+  #evt_content .sec-top {
+    height: 6.50667rem;
+    z-index: 6;
+    background: url("../images/banner.jpg");
+    background-size: 100%; }
+    #evt_content .sec-top .title {
+      width: 8.8rem;
+      top: 1.28rem;
+      left: 50%;
+      margin-left: -4.4rem; }
+    #evt_content .sec-top .logos {
+      width: 2.66667rem;
+      top: 0.13333rem;
+      left: 0.13333rem; }
+  #evt_content .sec-1 {
+    height: 12.53333rem;
+    z-index: 5; }
+    #evt_content .sec-1 .mingsheng-1 {
+      position: absolute;
+      width: 2.73333rem;
+      top: -1.33333rem;
+      right: 0; }
+    #evt_content .sec-1 .mingsheng-2 {
+      position: absolute;
+      width: 2.14667rem;
+      bottom: 0.26667rem;
+      left: 0; }
+    #evt_content .sec-1 .word {
+      position: absolute;
+      width: 1.28rem;
+      top: 0.48rem;
+      left: 0; }
+    #evt_content .sec-1 .zuhe-1 {
+      position: absolute;
+      width: 9.32rem;
+      top: 0.53333rem;
+      left: 0.4rem; }
+    #evt_content .sec-1 .zuhe-2 {
+      position: absolute;
+      width: 8.24rem;
+      top: 6.30667rem;
+      left: 0.97333rem; }
+    #evt_content .sec-1 .gobuy {
+      position: absolute;
+      width: 2.37333rem;
+      top: 10.18667rem;
+      left: 3.73333rem; }
+    #evt_content .sec-1 .line {
+      position: absolute;
+      width: 4.26667rem;
+      bottom: -0.26667rem;
+      left: 50%;
+      margin-left: -2.13333rem; }
+  #evt_content .sec-footer {
+    position: relative;
+    padding-bottom: 1.33333rem;
+    z-index: 2;
+    background: #fff url("../images/foot-bg.png") bottom right no-repeat;
+    background-size: 100%; }
+    #evt_content .sec-footer .txt {
+      position: relative;
+      width: 8.53333rem;
+      padding: 0.93333rem 0 0.66667rem;
+      margin: 0 auto;
+      color: #000; }
+      #evt_content .sec-footer .txt h2 {
+        font-size: 0.4rem;
+        font-weight: normal;
+        color: #d00a13; }
+      #evt_content .sec-footer .txt p {
+        font-size: 0.29333rem;
+        padding-left: 0.46667rem;
+        line-height: 0.53333rem;
+        text-indent: -0.37333rem;
+        margin: 0.06667rem 0; }
+
+@media screen and (max-width: 320px) {
+  .sel-li {
+    top: -0.13333rem !important; }
+  i {
+    top: 0.04rem !important; } }

@@ -1,0 +1,63 @@
+@function px2rem($n) {
+  @return ($n * 10 / 750) * 1rem;
+}
+
+@mixin font-dpr($font-size){
+  font-size: $font-size;
+
+  [data-dpr="2"] & {
+    font-size: $font-size * 2;
+  }
+
+  [data-dpr="3"] & {
+    font-size: $font-size * 3;
+  }
+
+}
+
+#evt_content{  background:url("../images/bg.jpg") repeat;
+  div{position:absolute;}
+  img{width:100%;}
+  .sec{position: relative; }
+  .sec-top{height: px2rem(798); z-index: 6;
+    .title{width:px2rem(750); top:px2rem(-20); left:0;}
+  }
+
+
+  .sec-1{height: px2rem(800); z-index: 5;
+    .carows{position: absolute; width:px2rem(554); top:px2rem(-280); left: px2rem(23);}
+    .price{position: absolute; width:px2rem(427); top:px2rem(200); left: px2rem(23); z-index: 1;
+      .go-btn{ padding: px2rem(40) 0 0 px2rem(80);
+        span{padding: px2rem(8) px2rem(40); line-height: px2rem(50); color: #fff; background: #cf6e54; border-radius: px2rem(5); font-size: px2rem(30); margin-right: px2rem(10); }
+      }
+    }
+    .select{position: absolute; top:px2rem(285); left: px2rem(415); z-index: 2;
+      ul{
+        li{ width: px2rem(60); height: px2rem(60); background: url("../images/gou-1.png") center no-repeat; background-size: 70%; margin-bottom: px2rem(10); }
+        li.on{ background: url("../images/gou-2.png") center no-repeat; background-size: 70%;}
+      }
+    }
+    .cake{position: absolute; width:px2rem(457); top:px2rem(210); right:px2rem(-40);}
+  }
+
+  .sec-2{height: px2rem(899); z-index: 1;
+    .line{position: absolute; width:px2rem(750); top:px2rem(-215); left: 0; z-index: 2;}
+    .price{position: absolute; width:px2rem(224); top:px2rem(170); left: px2rem(487); z-index: 2;}
+    .cake{position: absolute; width:px2rem(551); top:px2rem(40); left:px2rem(40); z-index: 2;}
+    .shuangxiong{position: absolute; width:px2rem(750); bottom:px2rem(-5); left: 0; z-index: 1;}
+  }
+
+  .sec-footer{background:#dccaad; background-size: 100%; position: relative; padding-bottom: px2rem(20); z-index: 2;
+    .txt{ position: relative; width:px2rem(680); padding: px2rem(70) 0 px2rem(50); margin: 0 auto;  color: #625033;
+      h2{font-size: px2rem(30); font-weight: normal; }
+      p{ font-size: px2rem(23); padding-left: px2rem(35); line-height:px2rem(40);  text-indent: px2rem(-35);
+        margin:px2rem(5) 0;}
+    }
+  }
+}
+
+
+@media screen and (max-width: 320px) {
+  .sel-li{ top: px2rem(-10) !important; }
+  i{top:px2rem(3) !important; }
+}

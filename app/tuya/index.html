@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>创意涂鸦</title>
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no,email=no,date=no,aItemress=no">
+	
+    <link rel="stylesheet" href="css/tuya.css">
+
+</head>
+<body>
+<div class="main-bg" ontouchmove="return false;">
+     <div class="board">
+         <div class="board-bg"><img id="board-img" src="images/huaban-1.png" alt=""></div>
+        <canvas class="mycanvas" id="mycanvas"></canvas>
+     </div>
+
+    <div class="huabi" id="colorBox">
+        <div class="item active"><i></i><img src="images/brush-1.png" alt=""></div>
+        <div class="item"><i></i><img src="images/brush-2.png" alt=""></div>
+        <div class="item"><i></i><img src="images/brush-3.png" alt=""></div>
+        <div class="item"><i></i><img src="images/brush-4.png" alt=""></div>
+        <div class="item"><i></i><img src="images/brush-5.png" alt=""></div>
+        <div class="item"><i></i><img src="images/brush-6.png" alt=""></div>
+        <div class="item"><div class="qiaokeli"><img src="images/qiaokeli.png" alt=""></div></div>
+    </div>
+
+    <div class="backBtn">
+         <div class="back prev" id="prev">上一步</div>
+         <div class="back eraser" id="eraser">橡皮擦</div>
+    </div>
+     <div class="share-btn">
+         <img src="images/redraw-btn.png" id="reset" alt="">
+         <img src="images/share-btn.png" alt="" id="finish">
+     </div>
+    <div class="tips-1"><img src="images/tips-1.png" alt=""></div>
+    <div class="tips-2"><img src="images/tips-2.png" alt=""></div>
+    <!-- <div class="btns">
+         <img src="images/redraw.png" id="reset" alt="">
+         <img id="finish" src="images/finish-btn.png" alt="">
+     </div>-->
+
+   <!-- <div class="drag-box">
+        <div class="pan-1"><img src="images/pan-1.png" alt=""></div>
+        <div class="pan-2"><img src="images/pan-2.png" alt=""></div>
+        &lt;!&ndash;<div class="quan"><img src="images/quan.png" alt=""></div>&ndash;&gt;
+        <div class="book"><img src="images/book.png" alt=""></div>
+        &lt;!&ndash;<div class="caomei"><img src="images/caomei.png" alt=""></div>&ndash;&gt;
+        <div class="hua"><img src="images/hua.png" alt=""></div>
+        &lt;!&ndash;<div class="juzi-1"><img src="images/juzi-1.png" alt=""></div>&ndash;&gt;
+    </div>-->
+
+<div class="raduis" id="raduis">
+    <div class="item cu"></div>
+    <div class="item zhong active"></div>
+    <div class="item xi"></div>
+</div>
+</div>
+
+<div class="Dialog-cover" ontouchmove="return false;"></div>
+<div class="Dialog-wrap" ontouchmove="return false;">
+    <div class="photo-img" style="background: url('images/photo-img.jpg') center no-repeat; background-size: 100%;"></div>
+    <div class="photo-kuang"><img src="images/photo-kuang.png" alt=""></div>
+    <div class="ewm"><img src="images/ewm.png" alt=""></div>
+    <div class="photo-save"><img src="images/photo-save.png" alt=""></div>
+    <div class="photo-logo"><img src="images/logo.png" alt=""></div>
+</div>
+
+<div class="downImg-cover" ontouchmove="return false;"></div>
+<div class="downImg-wrap" ontouchmove="return false;">
+    <div class="downImg-close"><img src="images/cx.png"></div>
+    <div class="down-img"><img src="images/photo-img.jpg" alt="" class="downImg"></div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/tuya.js"></script>
+<script src="js/index.js"></script>
+<!--<script src="js/vconsole.min.js"></script>-->
+</body>
+</html>

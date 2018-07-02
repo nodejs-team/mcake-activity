@@ -1,0 +1,336 @@
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden; }
+
+/*html,body,#evt_container{height: 100%;}*/
+#iscroll {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+body {
+  background: #f0f0f0; }
+
+input:disabled {
+  color: #000;
+  opacity: 0.5; }
+
+#evt_content {
+  background: #f0f0f0; }
+  #evt_content img {
+    width: 100%; }
+  #evt_content .sec {
+    position: relative; }
+  #evt_content .sec-1 {
+    width: 10rem;
+    height: 17.78667rem;
+    background: url("../images/bg.jpg");
+    background-size: 100%; }
+    #evt_content .sec-1 .s-title {
+      position: absolute;
+      top: 1.2rem;
+      left: 1.86667rem;
+      width: 6.28rem; }
+    #evt_content .sec-1 .hongbao {
+      position: absolute;
+      top: 2.66667rem;
+      left: 2.14667rem;
+      width: 5.74667rem; }
+    #evt_content .sec-1 .lingquan {
+      position: absolute;
+      top: 6.93333rem;
+      left: 0.86667rem;
+      width: 8.26667rem;
+      text-align: center; }
+      #evt_content .sec-1 .lingquan .tip {
+        line-height: 1.33333rem;
+        font-size: 0.4rem;
+        color: #fff; }
+      #evt_content .sec-1 .lingquan .line {
+        position: relative;
+        width: 100%;
+        height: 1.33333rem;
+        margin-bottom: 0.4rem;
+        background: #fff;
+        border-radius: 0.66667rem; }
+        #evt_content .sec-1 .lingquan .line .icon {
+          display: block;
+          position: absolute;
+          left: 0.93333rem;
+          top: 50%;
+          width: 0.53333rem;
+          height: 0.58667rem;
+          background: url("../images/icon-1.png");
+          background-size: 100%;
+          margin-top: -0.29333rem; }
+        #evt_content .sec-1 .lingquan .line .icon.ys {
+          background: url("../images/icon-2.png");
+          background-size: 100%; }
+        #evt_content .sec-1 .lingquan .line .icon.code {
+          background: url("../images/code.png");
+          background-size: 100%; }
+        #evt_content .sec-1 .lingquan .line input {
+          width: 100%;
+          height: 100%;
+          border: none;
+          background: none;
+          padding-left: 1.73333rem;
+          font-size: 0.34667rem; }
+        #evt_content .sec-1 .lingquan .line .yzm {
+          display: block;
+          position: absolute;
+          right: 0.4rem;
+          top: 0;
+          line-height: 1.33333rem;
+          color: #fb4445;
+          cursor: pointer;
+          text-align: left;
+          width: 2.66667rem; }
+          #evt_content .sec-1 .lingquan .line .yzm span {
+            float: left; }
+          #evt_content .sec-1 .lingquan .line .yzm input {
+            color: #fb4445;
+            padding: 0;
+            float: left;
+            line-height: 1.33333rem; }
+          #evt_content .sec-1 .lingquan .line .yzm #yzm_img {
+            vertical-align: middle;
+            margin: 0.13333rem 0;
+            padding: 0; }
+      #evt_content .sec-1 .lingquan .btn {
+        position: relative;
+        width: 4.53333rem;
+        background: #c6022a;
+        border-radius: 0.66667rem;
+        margin: 0 auto;
+        color: #fff;
+        font-size: 0.45333rem;
+        line-height: 1.06667rem; }
+  #evt_content .sec-2 {
+    width: 10rem;
+    height: 17.78667rem;
+    background: url("../images/bg.jpg");
+    background-size: 100%; }
+    #evt_content .sec-2 .s-title {
+      position: absolute;
+      top: 4.8rem;
+      left: 1.86667rem;
+      width: 6.28rem; }
+    #evt_content .sec-2 .lingquan {
+      position: absolute;
+      top: 5.73333rem;
+      left: 0.86667rem;
+      width: 8.26667rem;
+      text-align: center; }
+      #evt_content .sec-2 .lingquan .tip {
+        line-height: 1.33333rem;
+        font-size: 0.4rem;
+        color: #fff; }
+      #evt_content .sec-2 .lingquan .line {
+        position: relative;
+        width: 100%;
+        height: 1.33333rem;
+        margin-bottom: 0.4rem;
+        background: #fff;
+        border-radius: 0.66667rem; }
+        #evt_content .sec-2 .lingquan .line .icon {
+          display: block;
+          position: absolute;
+          left: 0.93333rem;
+          top: 50%;
+          width: 0.53333rem;
+          height: 0.58667rem;
+          background: url("../images/icon-1.png");
+          background-size: 100%;
+          margin-top: -0.29333rem; }
+        #evt_content .sec-2 .lingquan .line .icon.ys {
+          background: url("../images/icon-2.png");
+          background-size: 100%; }
+        #evt_content .sec-2 .lingquan .line .icon.code {
+          background: url("../images/code.png");
+          background-size: 100%; }
+        #evt_content .sec-2 .lingquan .line input {
+          width: 100%;
+          height: 100%;
+          border: none;
+          background: none;
+          padding-left: 1.73333rem;
+          font-size: 0.34667rem; }
+        #evt_content .sec-2 .lingquan .line .yzm {
+          display: block;
+          position: absolute;
+          right: 0.4rem;
+          top: 0;
+          color: #fb4445;
+          cursor: pointer;
+          text-align: left;
+          width: 2.66667rem; }
+          #evt_content .sec-2 .lingquan .line .yzm span {
+            float: left; }
+          #evt_content .sec-2 .lingquan .line .yzm input {
+            color: #fb4445;
+            padding: 0;
+            float: left;
+            line-height: 1.33333rem; }
+          #evt_content .sec-2 .lingquan .line .yzm #yzm_img {
+            vertical-align: middle;
+            margin: 0.13333rem 0;
+            padding: 0; }
+      #evt_content .sec-2 .lingquan .btn {
+        position: relative;
+        width: 4.53333rem;
+        background: #c6022a;
+        border-radius: 0.66667rem;
+        margin: 0 auto;
+        color: #fff;
+        font-size: 0.45333rem;
+        line-height: 1.06667rem; }
+  #evt_content .sec-3 {
+    width: 10rem;
+    height: 19.33333rem;
+    background: #f4f3f4; }
+    #evt_content .sec-3 .s-title {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 10rem; }
+    #evt_content .sec-3 .hongbao {
+      position: absolute;
+      top: 6rem;
+      left: 0.4rem;
+      width: 9.36rem; }
+    #evt_content .sec-3 .lingquan {
+      position: absolute;
+      top: 9.6rem;
+      left: 0.86667rem;
+      width: 8.26667rem;
+      text-align: center; }
+      #evt_content .sec-3 .lingquan .tip {
+        line-height: 1.33333rem;
+        font-size: 0.4rem;
+        color: #626262; }
+      #evt_content .sec-3 .lingquan .line {
+        position: relative;
+        width: 100%;
+        height: 1.33333rem;
+        margin-bottom: 0.4rem;
+        background: #fff;
+        border-radius: 0.66667rem; }
+        #evt_content .sec-3 .lingquan .line .icon {
+          display: block;
+          position: absolute;
+          left: 0.93333rem;
+          top: 50%;
+          width: 0.53333rem;
+          height: 0.58667rem;
+          background: url("../images/icon-1.png");
+          background-size: 100%;
+          margin-top: -0.29333rem; }
+        #evt_content .sec-3 .lingquan .line .icon.ys {
+          background: url("../images/icon-2.png");
+          background-size: 100%; }
+        #evt_content .sec-3 .lingquan .line .icon.code {
+          background: url("../images/code.png");
+          background-size: 100%; }
+        #evt_content .sec-3 .lingquan .line input {
+          width: 100%;
+          height: 100%;
+          border: none;
+          background: none;
+          padding-left: 1.73333rem;
+          font-size: 0.34667rem; }
+        #evt_content .sec-3 .lingquan .line .yzm {
+          display: block;
+          position: absolute;
+          right: 0.4rem;
+          top: 0;
+          line-height: 1.33333rem;
+          color: #fb4445;
+          cursor: pointer;
+          text-align: left;
+          width: 2.66667rem; }
+          #evt_content .sec-3 .lingquan .line .yzm span {
+            float: left; }
+          #evt_content .sec-3 .lingquan .line .yzm input {
+            color: #c6022a;
+            padding: 0;
+            float: left;
+            line-height: 1.33333rem; }
+          #evt_content .sec-3 .lingquan .line .yzm #yzm_img {
+            vertical-align: middle;
+            margin: 0.13333rem 0;
+            padding: 0; }
+      #evt_content .sec-3 .lingquan .btn {
+        position: relative;
+        width: 4.53333rem;
+        background: #c6022a;
+        border-radius: 0.66667rem;
+        margin: 0 auto;
+        color: #fff;
+        font-size: 0.45333rem;
+        line-height: 1.06667rem; }
+    #evt_content .sec-3 .sec-bottom {
+      color: #626262; }
+
+.sec-bottom {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  bottom: 0.26667rem;
+  color: #fff; }
+  .sec-bottom .logos {
+    width: 2.88rem;
+    margin: 0.26667rem auto; }
+  .sec-bottom .Copyright {
+    font-size: 0.24rem; }
+
+.Dialog-bg {
+  background-color: #000;
+  height: 100%;
+  left: 0;
+  opacity: 0.85;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 200;
+  display: none; }
+
+.Dialog {
+  box-shadow: 0 0 0 #999;
+  font-size: 0.18667rem;
+  width: 9rem;
+  height: 9.69333rem;
+  margin-top: -5.33333rem;
+  margin-left: -4.93333rem;
+  left: 50%;
+  padding: 0;
+  position: fixed;
+  top: 50%;
+  z-index: 99999;
+  display: none;
+  border-radius: 0.26667rem;
+  background: url("../images/kabao.png");
+  background-size: 100%; }
+  .Dialog .closeX {
+    position: absolute;
+    bottom: -0.66667rem;
+    left: 50%;
+    width: 0.84rem;
+    height: 0.84rem;
+    margin-left: -0.13333rem;
+    background: url("../images/close.png");
+    background-size: 100%; }
+  .Dialog .gobtn {
+    position: absolute;
+    top: 7.06667rem;
+    left: 50%;
+    width: 3.36rem;
+    height: 1.2rem;
+    background: url("../images/btn.png");
+    background-size: 100%;
+    margin-left: -1.33333rem; }

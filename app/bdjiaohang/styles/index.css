@@ -34,10 +34,17 @@
       margin: 0 auto; }
     #evt_container .banner .notes {
       position: absolute;
-      top: 0px;
-      left: 566px;
-      width: 656px;
-      display: none; }
+      top: -40px;
+      left: 726px;
+      width: 436px;
+      display: none;
+      z-index: 1; }
+    #evt_container .banner .bj-card {
+      position: absolute;
+      top: 188px;
+      left: 666px;
+      width: 477px;
+      z-index: 2; }
     #evt_container .banner .title {
       position: absolute;
       top: 10px;

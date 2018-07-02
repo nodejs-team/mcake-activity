@@ -1,0 +1,121 @@
+@function px2rem($n) {
+  @return ($n * 10 / 750) * 1rem; //设计稿一般都是750宽
+}
+
+@mixin font-dpr($font-size){
+  font-size: $font-size;
+
+  [data-dpr="2"] & {
+    font-size: $font-size * 2;
+  }
+
+  [data-dpr="3"] & {
+    font-size: $font-size * 3;
+  }
+
+}
+
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+/*html,body,#evt_container{height: 100%;}*/
+#iscroll {
+  position: relative;
+  z-index: 1;
+  width: 100%; height: 100%;
+  overflow: hidden;
+}
+
+
+body{background: #f0f0f0;}
+input:disabled{
+  color:#000;opacity: 0.5;
+}
+#evt_content{ background: #f0f0f0;
+  img{width:100%;}
+  .sec{position: relative; }
+
+  .sec-1{width: px2rem(750); height: px2rem(1334); background: url("../images/bg.jpg"); background-size: 100%;
+    .s-title{position: absolute; top:px2rem(90); left: px2rem(140); width: px2rem(471); }
+    .hongbao{position: absolute; top:px2rem(200); left: px2rem(161); width: px2rem(431); }
+    .lingquan{position: absolute; top: px2rem(520); left: px2rem(65); width: px2rem(620); text-align: center;
+      .tip{ line-height: px2rem(100); font-size: px2rem(30); color: #fff;}
+      .line{position: relative; width: 100%; height: px2rem(100); margin-bottom: px2rem(30); background: #fff; border-radius: px2rem(50);
+        .icon{display: block; position: absolute; left:px2rem(70); top: 50%; width: px2rem(40); height: px2rem(44); background: url("../images/icon-1.png"); background-size: 100%; margin-top: px2rem(-22);}
+        .icon.ys{background: url("../images/icon-2.png"); background-size: 100%; }
+        .icon.code{background: url("../images/code.png"); background-size: 100%; }
+
+        input{width: 100%; height: 100%; border: none; background: none; padding-left: px2rem(130);font-size: px2rem(26);}
+        .yzm{display: block; position: absolute; right:px2rem(30); top: 0; line-height: px2rem(100); color: #fb4445; cursor: pointer; text-align: left; width: px2rem(200);
+          span{float: left;}
+          input{color: #fb4445; padding: 0; float: left; line-height: px2rem(100);}
+          #yzm_img{ vertical-align: middle; margin:px2rem(10) 0; padding: 0;}
+        }
+      }
+      .btn{position:relative;  width: px2rem(340); background: #c6022a; border-radius: px2rem(50); margin: 0 auto; color: #fff; font-size: px2rem(34); line-height: px2rem(80);}
+    }
+  }
+
+
+  .sec-2{width: px2rem(750); height: px2rem(1334); background: url("../images/bg.jpg"); background-size: 100%;
+    .s-title{position: absolute; top:px2rem(360); left: px2rem(140); width: px2rem(471); }
+    .lingquan{position: absolute; top: px2rem(430); left: px2rem(65); width: px2rem(620); text-align: center;
+      .tip{ line-height: px2rem(100); font-size: px2rem(30); color: #fff;}
+      .line{position: relative; width: 100%; height: px2rem(100); margin-bottom: px2rem(30); background: #fff; border-radius: px2rem(50);
+        .icon{display: block; position: absolute; left:px2rem(70); top: 50%; width: px2rem(40); height: px2rem(44); background: url("../images/icon-1.png"); background-size: 100%; margin-top: px2rem(-22);}
+        .icon.ys{background: url("../images/icon-2.png"); background-size: 100%; }
+        .icon.code{background: url("../images/code.png"); background-size: 100%; }
+
+        input{width: 100%; height: 100%; border: none; background: none; padding-left: px2rem(130);font-size: px2rem(26);}
+        .yzm{display: block; position: absolute; right:px2rem(30); top: 0;  color: #fb4445; cursor: pointer; text-align: left; width: px2rem(200);
+          span{float: left;}
+          input{color: #fb4445; padding: 0; float: left; line-height: px2rem(100);}
+          #yzm_img{ vertical-align: middle; margin:px2rem(10) 0; padding: 0;}
+        }
+      }
+      .btn{position:relative;  width: px2rem(340); background: #c6022a; border-radius: px2rem(50); margin: 0 auto; color: #fff; font-size: px2rem(34); line-height: px2rem(80);}
+    }
+  }
+
+
+  .sec-3{width: px2rem(750); height: px2rem(1450); background:#f4f3f4;
+    .s-title{position: absolute; top:0; left:0; width: px2rem(750); }
+    .hongbao{position: absolute; top:px2rem(450); left: px2rem(30); width: px2rem(702); }
+    .lingquan{position: absolute; top: px2rem(720); left: px2rem(65); width: px2rem(620); text-align: center;
+      .tip{ line-height: px2rem(100); font-size: px2rem(30); color: #626262;}
+      .line{position: relative; width: 100%; height: px2rem(100); margin-bottom: px2rem(30); background: #fff; border-radius: px2rem(50);
+        .icon{display: block; position: absolute; left:px2rem(70); top: 50%; width: px2rem(40); height: px2rem(44); background: url("../images/icon-1.png"); background-size: 100%; margin-top: px2rem(-22);}
+        .icon.ys{background: url("../images/icon-2.png"); background-size: 100%; }
+        .icon.code{background: url("../images/code.png"); background-size: 100%; }
+
+        input{width: 100%; height: 100%; border: none; background: none; padding-left: px2rem(130);font-size: px2rem(26);}
+        .yzm{display: block; position: absolute; right:px2rem(30); top: 0; line-height: px2rem(100); color: #fb4445; cursor: pointer; text-align: left; width: px2rem(200);
+          span{float: left;}
+          input{color: #c6022a; padding: 0; float: left; line-height: px2rem(100);}
+          #yzm_img{ vertical-align: middle; margin:px2rem(10) 0; padding: 0;}
+        }
+      }
+      .btn{position:relative;  width: px2rem(340); background: #c6022a; border-radius: px2rem(50); margin: 0 auto; color: #fff; font-size: px2rem(34); line-height: px2rem(80);}
+    }
+    .sec-bottom{color: #626262;}
+  }
+}
+
+.sec-bottom{text-align: center; width: 100%; position: absolute; bottom: px2rem(20); color: #fff;
+  .logos{width: px2rem(216); margin:px2rem(20) auto;}
+  .Copyright{ font-size: px2rem(18);}
+}
+
+
+
+.Dialog-bg{
+  background-color: #000;  height: 100%;  left: 0;  opacity: 0.85;  position: fixed;  top: 0;  width: 100%;  z-index: 200; display: none;  }
+.Dialog{  box-shadow: 0 0 0 #999;  font-size:px2rem(14);  width:px2rem(675);  height:px2rem(727);  margin-top: px2rem(-400);  margin-left: px2rem(-370);  left: 50%;  padding: 0;  position: fixed;  top: 50%;  z-index: 99999; display: none; border-radius:px2rem(20); background: url("../images/kabao.png"); background-size: 100%;
+  .closeX{position: absolute; bottom:px2rem(-50); left: 50%; width: px2rem(63); height: px2rem(63); margin-left: px2rem(-10); background: url("../images/close.png"); background-size: 100%;}
+  .gobtn{position: absolute; top:px2rem(530); left: 50%; width: px2rem(252); height: px2rem(90); background: url("../images/btn.png"); background-size: 100%;margin-left: px2rem(-100); }
+}

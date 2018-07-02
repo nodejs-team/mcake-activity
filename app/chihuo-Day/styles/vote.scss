@@ -1,0 +1,86 @@
+@function px2rem($n) {
+  @return ($n * 10 / 750) * 1rem;
+}
+
+@mixin font-dpr($font-size){
+  font-size: $font-size;
+
+  [data-dpr="2"] & {
+    font-size: $font-size * 2;
+  }
+
+  [data-dpr="3"] & {
+    font-size: $font-size * 3;
+  }
+
+}
+body{background: #ffe3a1 !important;}
+#evt_content{ background:url("../images/bg.jpg") repeat; background-size: 2%;
+  div{position:absolute;}
+  img{width:100%;}
+  .sec{position: relative; }
+
+  .sec-vote{ padding: px2rem(90) 0 px2rem(1);
+    div{position:relative;}
+    .vote-btn{position: absolute; width: px2rem(190); top:px2rem(26); right: px2rem(30); z-index: 8;}
+    .vote-title{ width: px2rem(583); margin:0 auto;}
+    .vote-txt{text-align: center; font-size: 24px; color: #000;
+      span{color: #fc6267; font-size:38px;}
+    }
+    .user{width: px2rem(626); margin:px2rem(30) auto 0; display: flex;color: #000;
+      .portrait-wrap{width:px2rem(190); flex: 0 0 px2rem(190); text-align: center;
+        .portrait{width:px2rem(110); height: px2rem(110); margin: 0 auto; border-radius: 50%;}
+        .u-tel{  line-height: px2rem(40);}
+      }
+      .user-content{flex: 1; padding-top: px2rem(30);
+        .txt{width:px2rem(417);}
+      }
+    }
+    .vote-cake{width: px2rem(626); margin:px2rem(30) auto 0; color: #000; background: #fff; border-radius: px2rem(10); padding: px2rem(17);
+      display: -webkit-box; display: -webkit-flex; display: flex;
+      -webkit-align-items: center; align-items: center;
+      .cake-wrap{width:px2rem(250); flex: 0 0 px2rem(250); text-align: center;
+        .cake{width:px2rem(200); height: px2rem(200); margin: 0 auto; border-radius: 50%;
+          align-items:center;
+        }
+      }
+      .cake-content{flex: 1; padding: 0 px2rem(20); font-size: px2rem(20);
+        p{position: relative; margin-top: px2rem(10);}
+        h2{font-size: px2rem(40);}
+        h3{font-size: px2rem(20);}
+        .bangs{padding-left: px2rem(20);}
+        i{ position: absolute; font-size: px2rem(18); top:px2rem(5); left:0; font-style: normal;color: #fc6267;}
+        span{font-size:px2rem(36); color: #fc6267;}
+      }
+    }
+    .buy_btn_box { overflow: hidden; margin:px2rem(20) auto; width: px2rem(626)  }
+    .buy_btn_box li { margin: px2rem(32) auto 0; }
+    .buy_btn_box li span { display: block; background: #fc6267;  color: #fff; cursor: pointer; height:px2rem(80); line-height:px2rem(80); font-size:px2rem(40); text-align: center; border-radius: px2rem(80); }
+  }
+
+  .sec-voteList{ padding:px2rem(40) 0 px2rem(80);
+    div{position: relative;}
+    .title{margin:0 px2rem(40); padding-bottom: px2rem(30); line-height: px2rem(40); font-size: px2rem(36); text-align: center; border-bottom: #c6aa67 1px solid; color: #000;
+        span{display: inline-block; width: px2rem(80); height: px2rem(20); margin: 0 px2rem(20); border-bottom: #000 px2rem(1) solid; vertical-align: super;}
+    }
+    ul{ overflow: hidden; padding: 0 px2rem(40);
+      li{ display: flex; line-height: px2rem(80); color: #000; padding: px2rem(10) 0;
+        .portrait{width:px2rem(84); flex: 0 0 px2rem(80); margin:px2rem(5) px2rem(20) px2rem(5) 0; height: px2rem(84); border-radius: 50%; overflow: hidden; }
+        .name{flex: 1; font-size: px2rem(28);word-break:keep-all;
+          white-space:nowrap;  overflow:hidden;  text-overflow:ellipsis;}
+        .content{flex: 1; font-size: px2rem(22);}
+        .time{flex: 1; font-size: px2rem(18); text-align: right;}
+      }
+    }
+  }
+}
+
+.vote-content{position: absolute !important; top: px2rem(80); right:px2rem(35); width: px2rem(615); height: px2rem(639); background: url("../images/vote-gz-bg.png") no-repeat; background-size: 100%; padding:px2rem(20) px2rem(30); z-index: 8; color: #000; display: none;
+  h2{font-size: px2rem(32); font-weight: normal; text-align: center;line-height:px2rem(45);  }
+  p{font-size: px2rem(20); padding-left: px2rem(35); line-height:px2rem(30);  text-indent: px2rem(-35);
+    margin:px2rem(5) 0;}
+}
+
+
+/*分享到朋友圈提示*/
+.Dialog-share {background: url("../images/share.png") no-repeat; background-size: 100%;}

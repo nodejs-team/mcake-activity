@@ -1,0 +1,205 @@
+.wrap {
+  background: #f8f8f8;
+  padding-bottom: 0.13333rem; }
+
+#evt_content {
+  width: 10rem;
+  margin: 0 auto;
+  overflow: hidden; }
+  #evt_content div {
+    position: absolute; }
+  #evt_content img {
+    width: 100%; }
+  #evt_content .sec {
+    position: relative; }
+  #evt_content .sec-top {
+    height: 6.42667rem;
+    z-index: 6;
+    background: url("../images/banner.jpg");
+    background-size: 100%; }
+    #evt_content .sec-top .title {
+      width: 7.53333rem;
+      top: 1.06667rem;
+      left: 50%;
+      margin-left: -5.06667rem; }
+    #evt_content .sec-top .logos {
+      width: 2.32rem;
+      top: 0.4rem;
+      left: 0.4rem; }
+  #evt_content .sec-1 {
+    height: 15.54667rem;
+    z-index: 5;
+    background: url("../images/bg.jpg") repeat; }
+    #evt_content .sec-1 .mingsheng-1 {
+      position: absolute;
+      width: 2.73333rem;
+      top: -1.33333rem;
+      right: 0; }
+    #evt_content .sec-1 .mingsheng-2 {
+      position: absolute;
+      width: 2.14667rem;
+      bottom: 0.26667rem;
+      left: 0; }
+    #evt_content .sec-1 .word {
+      position: absolute;
+      width: 1.28rem;
+      top: 0.48rem;
+      left: 0; }
+    #evt_content .sec-1 .active {
+      position: absolute;
+      width: 9.33333rem;
+      height: 2.66667rem;
+      top: 0.53333rem;
+      left: 0.26667rem; }
+      #evt_content .sec-1 .active div {
+        position: relative; }
+      #evt_content .sec-1 .active .act {
+        position: relative;
+        cursor: pointer; }
+        #evt_content .sec-1 .active .act .act_text {
+          width: 2.62667rem;
+          margin: 0 auto; }
+        #evt_content .sec-1 .active .act .act_bar {
+          width: 5.06667rem;
+          height: 1.38667rem;
+          background: url("../images/bar-start.png");
+          background-size: 100%;
+          margin: 0.13333rem auto;
+          position: relative;
+          text-align: center; }
+          #evt_content .sec-1 .active .act .act_bar b {
+            display: block;
+            position: absolute;
+            top: 0.2rem;
+            left: 50%;
+            width: 1.6rem;
+            margin-left: -0.8rem; }
+          #evt_content .sec-1 .active .act .act_bar span {
+            display: block;
+            position: absolute;
+            top: 0.14667rem;
+            left: 50%;
+            font-size: 0.48rem;
+            line-height: 0.66667rem;
+            color: #6a1605;
+            width: 0.30667rem;
+            height: 0.66667rem; }
+          #evt_content .sec-1 .active .act .act_bar .sz-start {
+            margin-left: -0.24rem; }
+          #evt_content .sec-1 .active .act .act_bar .sz-mid {
+            margin-left: 0.18667rem; }
+          #evt_content .sec-1 .active .act .act_bar .sz-end {
+            margin-left: 0.64rem; }
+          #evt_content .sec-1 .active .act .act_bar .sz-0 {
+            background: url("../images/zi.png") 0 0 no-repeat;
+            background-size: 100%; }
+          #evt_content .sec-1 .active .act .act_bar .sz-1 {
+            background: url("../images/zi.png") 0 -0.66667rem no-repeat;
+            background-size: 100%; }
+          #evt_content .sec-1 .active .act .act_bar .sz-2 {
+            background: url("../images/zi.png") 0 -1.33333rem no-repeat;
+            background-size: 100%; }
+          #evt_content .sec-1 .active .act .act_bar .sz-3 {
+            background: url("../images/zi.png") 0 -2rem no-repeat;
+            background-size: 100%; }
+          #evt_content .sec-1 .active .act .act_bar .sz-4 {
+            background: url("../images/zi.png") 0 -2.66667rem no-repeat;
+            background-size: 100%; }
+          #evt_content .sec-1 .active .act .act_bar .sz-5 {
+            background: url("../images/zi.png") 0 -3.33333rem no-repeat;
+            background-size: 100%; }
+          #evt_content .sec-1 .active .act .act_bar .sz-6 {
+            background: url("../images/zi.png") 0 -4rem no-repeat;
+            background-size: 100%; }
+          #evt_content .sec-1 .active .act .act_bar .sz-7 {
+            background: url("../images/zi.png") 0 -4.66667rem no-repeat;
+            background-size: 100%; }
+          #evt_content .sec-1 .active .act .act_bar .sz-8 {
+            background: url("../images/zi.png") 0 -5.33333rem no-repeat;
+            background-size: 100%; }
+          #evt_content .sec-1 .active .act .act_bar .sz-9 {
+            background: url("../images/zi.png") 0 -6rem no-repeat;
+            background-size: 100%; }
+        #evt_content .sec-1 .active .act .act_bar.a_end {
+          background: url("../images/bar.png");
+          background-size: 100%;
+          color: #fff; }
+        #evt_content .sec-1 .active .act .act_sheng {
+          width: 0.86667rem;
+          position: absolute;
+          top: 3.46667rem;
+          left: 0.93333rem; }
+        #evt_content .sec-1 .active .act .act_ge {
+          width: 0.42667rem;
+          position: absolute;
+          top: 3.46667rem;
+          left: 8.26667rem; }
+        #evt_content .sec-1 .active .act .plate {
+          position: absolute;
+          width: 3.86667rem;
+          top: 1.72rem;
+          left: 3.01333rem; }
+          #evt_content .sec-1 .active .act .plate span {
+            position: absolute;
+            display: block;
+            font-family: 'mfshangya';
+            color: #b50e0d;
+            font-size: 1.64rem;
+            width: 1.33333rem;
+            height: 1.33333rem;
+            top: 1.06667rem;
+            left: 1.33333rem;
+            text-align: center; }
+          #evt_content .sec-1 .active .act .plate .word {
+            width: 1.33333rem;
+            position: absolute;
+            top: 1.33333rem;
+            left: 1.33333rem; }
+        #evt_content .sec-1 .active .act .plate1 {
+          left: 1rem; }
+        #evt_content .sec-1 .active .act .plate3 {
+          left: 5.09333rem; }
+    #evt_content .sec-1 .zuhe-1 {
+      position: absolute;
+      width: 9.62667rem;
+      top: 2.6rem;
+      left: 0; }
+    #evt_content .sec-1 .zuhe-2 {
+      position: absolute;
+      width: 8.18667rem;
+      top: 8.45333rem;
+      left: 1.13333rem; }
+    #evt_content .sec-1 .gobuy {
+      position: absolute;
+      width: 2.52rem;
+      top: 12.52rem;
+      left: 3.73333rem; }
+    #evt_content .sec-1 .line {
+      position: absolute;
+      width: 4.26667rem;
+      bottom: -0.26667rem;
+      left: 50%;
+      margin-left: -2.13333rem; }
+  #evt_content .sec-footer {
+    position: relative;
+    z-index: 2; }
+    #evt_content .sec-footer .txt {
+      position: relative;
+      width: 8.53333rem;
+      padding: 0.93333rem 0 0.66667rem;
+      margin: 0 auto;
+      color: #000; }
+      #evt_content .sec-footer .txt h2 {
+        font-size: 0.4rem;
+        font-weight: normal;
+        color: #d00a13; }
+      #evt_content .sec-footer .txt p {
+        font-size: 0.29333rem;
+        padding-left: 0.46667rem;
+        line-height: 0.53333rem;
+        text-indent: -0.46667rem;
+        margin: 0.06667rem 0; }
+    #evt_content .sec-footer .guize {
+      position: relative;
+      width: 9rem;
+      margin: 0 auto; }

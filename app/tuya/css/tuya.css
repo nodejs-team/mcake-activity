@@ -1,0 +1,81 @@
+*{ padding: 0; margin: 0; }
+img{ border:0; display: inline-block; max-width: 100%; }
+html,body{height: 100%;}
+.main-bg{ position: relative; margin: 0 auto; height: 100%;  background: #fff9e0 url("../images/bg.jpg") repeat; max-width: 750px; padding-top: 1px; min-height:500px; overflow: hidden; }
+.qingshu{position: fixed;top: 10px;left: 0; width:100%;z-index:999; }
+.board{ position: relative; width:100%; margin:0 auto; z-index: 10; }
+.board-bg{ opacity: 0;}
+
+.mycanvas{ padding: 0; margin: 0;/*border:0;*/ position: absolute; left: 0; top: 15px; z-index:99; }
+
+/*画笔粗细*/
+.raduis{ position: absolute; left: 5px; top: 50%; width: 36px; z-index:10; margin-top: -100px; }
+.raduis .item{ width: 36px; height: 37px; margin-bottom: 10px; background-size: 36px auto; background-repeat: no-repeat; background-position: 0 0; }
+
+.raduis .cu{  background-image: url("../images/cu.png");  }
+.raduis .cu.active{  background-image: url("../images/cu-h.png");  }
+.raduis .zhong{  background-image: url("../images/zhong.png");  }
+.raduis .zhong.active{  background-image: url("../images/zhong-h.png");  }
+.raduis .xi{  background-image: url("../images/xi.png");  }
+.raduis .xi.active{  background-image: url("../images/xi-h.png");  }
+
+.btns{ position: absolute; left: 0; width: 100%; bottom:5%; text-align: center; z-index: 1; }
+.btns img{ width:120px; margin-right: 10px;}
+
+.share-btn{position: fixed; top: 20px; right: 10px; z-index: 12;}
+.share-btn img{ width:83px; margin-left: 10px;}
+
+.huabi{ position: fixed; left: 0; width: 93%; bottom:0; z-index:99; text-align: center; }
+.huabi .item{ position: relative; display: inline-block; margin-right: 0px; z-index: 5; }
+.huabi .item.active i{ display: block; position: absolute; top: -34px; left: 50%; margin-left: -14px; width: 28px; height: 34px; z-index:99; background: url("../images/huabi.png") no-repeat 0 0; background-size: 28px auto;  }
+.huabi img{ width: 45px;  }
+
+/*上一步*/
+.backBtn{position: absolute; right: 3px; width:26px; color: #fff; font-size: 14px; line-height: 18px; top: 50%; margin-top: -100px;text-align: center; z-index:99;}
+.back{border-radius: 4px; padding: 5px 0; background-color: #fa2a76; margin: 5px 0; }
+
+
+.tips-1{position: fixed; width: 150px; bottom:50px; left:30px; z-index: 10;}
+.qiaokeli{position: absolute; width: 40px !important; bottom: 0; right: -43px; z-index: 1; }
+.qiaokeli img{width: 100%;}
+
+.tips-2{position: fixed; width: 100px !important; bottom: 80px; right:20px; z-index: 10; }
+.tips-2 img{width: 100%;}
+
+.drag-box{position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0;}
+.drag-box div{position: absolute;}
+.drag-box .pan-1{ width:50px; top: 137px; left:0;}
+.drag-box .pan-2{ width:90px; top: 50px; right:0;}
+.drag-box .quan{ width:45px; top: 150px; right:0;}
+.drag-box .book{ width:87px; top: 20px; left: 140px;}
+.drag-box .caomei{ width:45px; top: 350px; left: 20px;}
+.drag-box .hua{ width:50px; top: 0; left: 20px;}
+.drag-box .juzi-1{ width:35px; top:100px; left: 140px;}
+
+
+
+/*弹窗*/
+.Dialog-cover{position: absolute; top: 0; left: 0; bottom: 0; right: 0; background:url("../images/bg.jpg") repeat; z-index: 100; display: none; min-height:600px;}
+
+.Dialog-wrap{position: absolute; top: 0; left: 0; bottom: 0; right: 0; z-index: 110; display: none;}
+.Dialog-wrap .photo-img{position: absolute; width:260px; height:330px; top:80px; left:50%; margin-left: -130px; z-index: 1; }
+.Dialog-wrap .photo-kuang{position: relative; width:300px; height: 424px; margin:30px auto 0; z-index: 5;}
+
+.Dialog-wrap .down-img{position: absolute; width:260px; height:330px; top:80px; left:50%; margin-left: -130px; z-index: 1; }
+
+.Dialog-wrap .ewm{position: absolute; width:50px; top: 394px; right: 50px; z-index: 5;}
+.Dialog-wrap .photo-save{position: relative; width: 100px; margin:20px auto 0;}
+.Dialog-wrap .photo-logo{position: relative; width: 100px; margin:20px auto;}
+
+
+.downImg-cover{position: absolute; top: 0; left: 0; bottom: -1px; right: 0; background:#000; opacity: 0.8; z-index: 120; display: none;min-height:500px;}
+.downImg-wrap{position: absolute; top: 0; left: 0; bottom: 0; right: 0; z-index: 122; display: none;}
+.downImg-wrap .down-img{width: 80%; margin:20% auto;}
+.downImg-wrap .down-img img{width: 100%;}
+.downImg-wrap .downImg-close{position: absolute; top: 10px; right: 10px; width:36px;}
+
+
+
+@media screen and (max-width: 320px) {
+
+}

@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>mcake活动</title>
+
+    <!-- build:css styles/index.css -->
+    <link rel="stylesheet" href="../commoncss/wap-normalize.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <!-- endbuild-->
+    <script src="http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js"></script>
+</head>
+<body>
+
+<div id="evt_container" ng-app="myApp">
+    <div id="iscroll">
+        <div class="wrap">
+            <header style="display: none;">
+                <a href="http://m.mcake.com/wap" class="icon-back"></a>
+                <div class="title">
+                    <span>圣诞节</span><br><span>Christmas</span>
+                </div>
+                <a href="http://m.mcake.com/wap" class="icon-home"></a>
+            </header>
+            <div id="evt_loading" style="display:none;">0%</div>
+            <div id="evt_content" style="display:none;">
+                <!--<div class="b"><img src="http://edm.mcake.com/weifengwang/common/no.jpg" alt="" src-fix="b_png"></div>-->
+                <div class="sec-banner">
+            <div class="b-title"><img src="http://edm.mcake.com/weifengwang/common/no.jpg" src-fix="b-title_png" alt=""></div>
+            <div class="bu"><img src="http://edm.mcake.com/weifengwang/common/no.jpg" src-fix="bu_png" alt=""></div>
+            <div class="cake"><img src="http://edm.mcake.com/weifengwang/common/no.jpg" src-fix="cake_png" alt=""></div>
+            <div class="momu"><img src="http://edm.mcake.com/weifengwang/common/no.jpg" src-fix="momu_png" alt=""></div>
+            <div class="girl"><img src="http://edm.mcake.com/weifengwang/common/no.jpg" src-fix="girl_png" alt=""></div>
+                </div>
+                <div class="sec-vote clearfix" ng-controller="myCtrl">
+                    <div class="vote-btns">
+                        <div class="v-btn-cj"><img src="images/btn-cj.png" alt=""></div>
+                        <div class="v-btn-buy"><img src="images/btn-buy.png" alt=""></div>
+                    </div>
+                    <div class="search">
+                        <input type="text" placeholder="输入选手编号" ng-model="search.uid"><span></span>
+                    </div>
+                    <ul class="vote-list" ng-repeat="item in photos | filter:search" >
+                        <li>
+                            <img ng-src="{{item.imgSrc}}" data-original="{{item.imgSrc}}" alt="" class="lazy">
+                            <div class="des clearfix">
+                                <div class="v-left">
+                                    <p>编号：{{item.uid}}号</p>
+                                    <p>票数：{{item.mumber}}票</p>
+                                    <p>排名：{{item.ranking}}名</p>
+                                </div>
+                                <div class="vote-btn" ng-class="{voted: item.voted}"></div>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <div class="sec-footer">
+                    <div class="txt">
+                        <h2>一、评选规则：</h2>
+                        <p>1、每人每天可以投3票，同一位参赛者仅可投一张,投票截止时间：
+                        5月13号23:59:59；</p>
+                        <p>2、获奖名单将于5月14日13:00在本页面公布。届时，我们会与各位获奖
+                        者联系，奖品在公布奖项后的3个工作日内寄出。</p>
+                        <h2>二、奖项设置：</h2>
+                        <p>“最美女神奖”：票数第1名，可获得价值XX元妈妈写真摄影套餐一份；</p>
+                        <p>“最美妈妈奖”：票数第2-10名，可获得价值268元永生花一盒。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="http://www.mcake.com/framework/jquery/jquery.min.js?v=1405950469"></script>
+<script src="http://edm.mcake.com/weifengwang/common/flexible.js"></script>
+<script src="http://edm.mcake.com/fangli/2018-wap/BD-MotherDay/scripts/jquery.lazyload.js"></script>
+<!-- build:js scripts/vote.js -->
+<script src="../commonjs/fastclick.js"></script>
+<script src="../commonjs/pubsub.js"></script>
+<script src="../commonjs/loader.js"></script>
+<script src="../commonjs/movieclip.js"></script>
+
+<script src="../commonjs/iscroll.js"></script>
+<script src="../commonjs/velocity.js"></script>
+<script src="../commonjs/wap-scrollAnimate.js"></script>
+
+<script src="scripts/resdata.js"></script>
+<script src="scripts/Slider.js"></script>
+<script src="scripts/vote.js"></script>
+<!-- endbuild -->
+<script>
+    $(function() {
+        $("img.lazy").lazyload({effect: "fadeIn"});
+    });
+
+    var votelist = [
+        {
+            uid:"021",
+            mumber:"1025",
+            ranking:"2",
+            imgSrc:"images/pic.jpg",
+            voted:true
+        },
+        {
+            uid:"2022",
+            mumber:"1025",
+            ranking:"12",
+            imgSrc:"images/pic.jpg",
+            voted:false
+        },
+        {
+            uid:"0033",
+            mumber:"1025",
+            ranking:"1",
+            imgSrc:"images/pic.jpg",
+            voted:false
+        },
+        {
+            uid:"3054",
+            mumber:"1025",
+            ranking:"102",
+            imgSrc:"images/pic.jpg",
+            voted:true
+        },
+        {
+            uid:"3082",
+            mumber:"1025",
+            ranking:"12",
+            imgSrc:"images/pic.jpg",
+            voted:false
+        },
+        {
+            uid:"3354",
+            mumber:"1025",
+            ranking:"2",
+            imgSrc:"images/pic.jpg",
+            voted:false
+        },
+        {
+            uid:"122",
+            mumber:"1025",
+            ranking:"45",
+            imgSrc:"images/pic.jpg",
+            voted:false
+        }
+    ];
+
+    var myApp = angular.module('myApp', []);
+    myApp.controller('myCtrl', function($scope,$http) {
+        $scope.photos = votelist;
+        /*$http({
+            method: 'GET',
+            url: 'data.json'
+        }).then(function successCallback(response) {
+            $scope.photos = response.data.votelist;
+            //console.log($scope.photos);
+        }, function errorCallback(response) {
+            // 请求失败执行代码
+        });*/
+    });
+
+
+
+
+</script>
+</body>
+</html>

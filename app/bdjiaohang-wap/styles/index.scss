@@ -30,12 +30,13 @@
     .top_btn{ width:px2rem(180); top:px2rem(305); left:px2rem(92); font-family:'mfshangya'; background:#b50e0d;
       font-size:px2rem(26); padding: px2rem(5); color:#fff; text-align: center; border-radius: 5px; }
     .top_btn a{ color: #fff; text-decoration: none;}
-    .top_quality{width:px2rem(94); top:px2rem(390); left:px2rem(331);}
+    .top_quality{width:px2rem(94); top:px2rem(390); left:px2rem(331); z-index: 3;}
 
   }
-  .top_pic{ position: relative; width: px2rem(750); height: px2rem(432); }
-  .note{position: absolute; width: px2rem(437); top: 0; left: px2rem(300); display: none;}
-  .title{position: absolute; width: px2rem(748); top: px2rem(0); left: px2rem(0);}
+  .bj-card{ width:px2rem(270); top:px2rem(120); left:px2rem(420); z-index: 2;}
+  .top_pic{ position: relative; width: px2rem(750); height: px2rem(432); z-index: 1; }
+  .note{position: absolute; width: px2rem(400); top:px2rem(-30); right: px2rem(-100); display: none;}
+  .title{position: absolute; width: px2rem(748); top: px2rem(20); left: px2rem(0);}
   .logos{position: absolute; width: px2rem(242); top: px2rem(22); left: px2rem(94);}
   .pic_ps{background: url("../images/pic-ps.jpg") center top no-repeat; background-size: 100%;
     .note-ps{display: block;}

@@ -1,0 +1,192 @@
+@charset "UTF-8";
+body {
+  background: #ffe3a1 !important; }
+
+#evt_content {
+  background: url("../images/bg.jpg") repeat;
+  background-size: 2%; }
+  #evt_content div {
+    position: absolute; }
+  #evt_content img {
+    width: 100%; }
+  #evt_content .sec {
+    position: relative; }
+  #evt_content .sec-vote {
+    padding: 1.2rem 0 0.01333rem; }
+    #evt_content .sec-vote div {
+      position: relative; }
+    #evt_content .sec-vote .vote-btn {
+      position: absolute;
+      width: 2.53333rem;
+      top: 0.34667rem;
+      right: 0.4rem;
+      z-index: 8; }
+    #evt_content .sec-vote .vote-title {
+      width: 7.77333rem;
+      margin: 0 auto; }
+    #evt_content .sec-vote .vote-txt {
+      text-align: center;
+      font-size: 24px;
+      color: #000; }
+      #evt_content .sec-vote .vote-txt span {
+        color: #fc6267;
+        font-size: 38px; }
+    #evt_content .sec-vote .user {
+      width: 8.34667rem;
+      margin: 0.4rem auto 0;
+      display: flex;
+      color: #000; }
+      #evt_content .sec-vote .user .portrait-wrap {
+        width: 2.53333rem;
+        flex: 0 0 2.53333rem;
+        text-align: center; }
+        #evt_content .sec-vote .user .portrait-wrap .portrait {
+          width: 1.46667rem;
+          height: 1.46667rem;
+          margin: 0 auto;
+          border-radius: 50%; }
+        #evt_content .sec-vote .user .portrait-wrap .u-tel {
+          line-height: 0.53333rem; }
+      #evt_content .sec-vote .user .user-content {
+        flex: 1;
+        padding-top: 0.4rem; }
+        #evt_content .sec-vote .user .user-content .txt {
+          width: 5.56rem; }
+    #evt_content .sec-vote .vote-cake {
+      width: 8.34667rem;
+      margin: 0.4rem auto 0;
+      color: #000;
+      background: #fff;
+      border-radius: 0.13333rem;
+      padding: 0.22667rem;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-align-items: center;
+      align-items: center; }
+      #evt_content .sec-vote .vote-cake .cake-wrap {
+        width: 3.33333rem;
+        flex: 0 0 3.33333rem;
+        text-align: center; }
+        #evt_content .sec-vote .vote-cake .cake-wrap .cake {
+          width: 2.66667rem;
+          height: 2.66667rem;
+          margin: 0 auto;
+          border-radius: 50%;
+          align-items: center; }
+      #evt_content .sec-vote .vote-cake .cake-content {
+        flex: 1;
+        padding: 0 0.26667rem;
+        font-size: 0.26667rem; }
+        #evt_content .sec-vote .vote-cake .cake-content p {
+          position: relative;
+          margin-top: 0.13333rem; }
+        #evt_content .sec-vote .vote-cake .cake-content h2 {
+          font-size: 0.53333rem; }
+        #evt_content .sec-vote .vote-cake .cake-content h3 {
+          font-size: 0.26667rem; }
+        #evt_content .sec-vote .vote-cake .cake-content .bangs {
+          padding-left: 0.26667rem; }
+        #evt_content .sec-vote .vote-cake .cake-content i {
+          position: absolute;
+          font-size: 0.24rem;
+          top: 0.06667rem;
+          left: 0;
+          font-style: normal;
+          color: #fc6267; }
+        #evt_content .sec-vote .vote-cake .cake-content span {
+          font-size: 0.48rem;
+          color: #fc6267; }
+    #evt_content .sec-vote .buy_btn_box {
+      overflow: hidden;
+      margin: 0.26667rem auto;
+      width: 8.34667rem; }
+    #evt_content .sec-vote .buy_btn_box li {
+      margin: 0.42667rem auto 0; }
+    #evt_content .sec-vote .buy_btn_box li span {
+      display: block;
+      background: #fc6267;
+      color: #fff;
+      cursor: pointer;
+      height: 1.06667rem;
+      line-height: 1.06667rem;
+      font-size: 0.53333rem;
+      text-align: center;
+      border-radius: 1.06667rem; }
+  #evt_content .sec-voteList {
+    padding: 0.53333rem 0 1.06667rem; }
+    #evt_content .sec-voteList div {
+      position: relative; }
+    #evt_content .sec-voteList .title {
+      margin: 0 0.53333rem;
+      padding-bottom: 0.4rem;
+      line-height: 0.53333rem;
+      font-size: 0.48rem;
+      text-align: center;
+      border-bottom: #c6aa67 1px solid;
+      color: #000; }
+      #evt_content .sec-voteList .title span {
+        display: inline-block;
+        width: 1.06667rem;
+        height: 0.26667rem;
+        margin: 0 0.26667rem;
+        border-bottom: #000 0.01333rem solid;
+        vertical-align: super; }
+    #evt_content .sec-voteList ul {
+      overflow: hidden;
+      padding: 0 0.53333rem; }
+      #evt_content .sec-voteList ul li {
+        display: flex;
+        line-height: 1.06667rem;
+        color: #000;
+        padding: 0.13333rem 0; }
+        #evt_content .sec-voteList ul li .portrait {
+          width: 1.12rem;
+          flex: 0 0 1.06667rem;
+          margin: 0.06667rem 0.26667rem 0.06667rem 0;
+          height: 1.12rem;
+          border-radius: 50%;
+          overflow: hidden; }
+        #evt_content .sec-voteList ul li .name {
+          flex: 1;
+          font-size: 0.37333rem;
+          word-break: keep-all;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis; }
+        #evt_content .sec-voteList ul li .content {
+          flex: 1;
+          font-size: 0.29333rem; }
+        #evt_content .sec-voteList ul li .time {
+          flex: 1;
+          font-size: 0.24rem;
+          text-align: right; }
+
+.vote-content {
+  position: absolute !important;
+  top: 1.06667rem;
+  right: 0.46667rem;
+  width: 8.2rem;
+  height: 8.52rem;
+  background: url("../images/vote-gz-bg.png") no-repeat;
+  background-size: 100%;
+  padding: 0.26667rem 0.4rem;
+  z-index: 8;
+  color: #000;
+  display: none; }
+  .vote-content h2 {
+    font-size: 0.42667rem;
+    font-weight: normal;
+    text-align: center;
+    line-height: 0.6rem; }
+  .vote-content p {
+    font-size: 0.26667rem;
+    padding-left: 0.46667rem;
+    line-height: 0.4rem;
+    text-indent: -0.46667rem;
+    margin: 0.06667rem 0; }
+
+/*分享到朋友圈提示*/
+.Dialog-share {
+  background: url("../images/share.png") no-repeat;
+  background-size: 100%; }

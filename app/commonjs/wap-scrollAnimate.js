@@ -135,7 +135,7 @@
         top: 0,
         bottom: 0
       });
-      //document.addEventListener('touchmove', preventDefaultHandler, false);
+      /*document.addEventListener('touchmove', preventDefaultHandler, false);*/
       myScroll = new IScroll(el, {probeType: 3, click: false, bounce: false, deceleration: 0.003});
       myScroll.on('scroll', function () {
         psb.trigger('scroll', -this.y);
@@ -147,6 +147,8 @@
     } else {
       slTop = $win.on('scroll', winScrollHandler).scrollTop();
     }
+
+      /*slTop = $win.on('scroll', winScrollHandler).scrollTop();*/
     scrollItems(items, slTop);
 
     return {

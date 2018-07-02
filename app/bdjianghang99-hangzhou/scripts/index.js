@@ -256,11 +256,10 @@
 
 
             /*初始化*/
-
-            /*是否有折扣*/
+              /*是否有折扣*/
             totalPrice = currentItem.ids[0]; /*总价格*/
             totalPrice = isDiscount(totalPrice,198,discount); /*满足条件折扣*/
-            $(this).find(".bang").html(currentItem.ponds[0]+' / '+currentItem.ids[0]);
+            $(this).find(".bang").html(currentItem.ponds[0]+' / '+'￥'+ currentItem.ids[0]);
             $(this).find(".dis-price").html(totalPrice);
             $(this).find(".price").html(currentItem.ids[0]*num);
             $(this).find(".postid").data("postid", currentItem.postId[0]);

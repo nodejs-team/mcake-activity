@@ -1,0 +1,102 @@
+@function px2rem($n) {
+  @return ($n * 10 / 640) * 1rem;
+}
+
+@mixin font-dpr($font-size){
+  font-size: $font-size;
+
+  [data-dpr="2"] & {
+    font-size: $font-size * 2;
+  }
+
+  [data-dpr="3"] & {
+    font-size: $font-size * 3;
+  }
+
+}
+
+*{ padding: 0; margin: 0; }
+img{ border:0; display: inline-block; max-width: 100%; }
+html,body{height: 100%;background: #fff9e0;}
+#loading{text-align:center; padding-top:50%; color:#000000; font-size:0.5rem;background: #fff9e0 url("../images/bg.jpg") repeat; }
+
+
+.main{ position: relative; margin: 0 auto; height: 100%;  background: #fff9e0 url("../images/bg.jpg") repeat; width: px2rem(640); padding-top:px2rem(1); min-height:500px; overflow: hidden; }
+
+
+.board{ position: relative; width:px2rem(640); margin:0 auto; z-index: 10; }
+.board-bg{ opacity: 0;}
+
+.mycanvas{ padding: 0; margin: 0;/*border:0;*/ position: absolute; left: 0; top: 15px; z-index:99; }
+
+/*画笔粗细*/
+.raduis{ position: absolute; left:px2rem(5); top: 50%; width:px2rem(71); z-index:10; margin-top:px2rem(-180); }
+.raduis .item{ width:px2rem(71); height:px2rem(74); margin-bottom:px2rem(10); background-size:100%; background-repeat: no-repeat; background-position: center; }
+
+.raduis .cu{  background-image: url("../images/cu.png");  }
+.raduis .cu.active{  background-image: url("../images/cu-h.png");  }
+.raduis .zhong{  background-image: url("../images/zhong.png");  }
+.raduis .zhong.active{  background-image: url("../images/zhong-h.png");  }
+.raduis .xi{  background-image: url("../images/xi.png");  }
+.raduis .xi.active{  background-image: url("../images/xi-h.png");  }
+
+
+.share-btn{position: fixed; top:px2rem(20); right:px2rem(10); z-index: 12;}
+.share-btn img{ width:83px; margin-left:px2rem(10);}
+
+.huabi{ position: fixed; left: 0; width: 100%; bottom:0; z-index:99; text-align: center; }
+.huabi .item{ position: relative; display: inline-block; width: 14%; height: px2rem(94); margin:0; padding: 0; z-index: 5; float: left; }
+.huabi .item.active i{ display: block; position: absolute; top:px2rem(-88); left: 50%; margin-left:px2rem(-14); width: px2rem(78); height:px2rem(94); z-index:99; background: url("../images/huabi.png") no-repeat 0 0; background-size:100%;  }
+.huabi img{ width:100%;}
+
+/*上一步*/
+.backBtn{position: absolute; right:px2rem(3); width:px2rem(40); color: #fff; font-size:px2rem(20); line-height:px2rem(28); top: 50%; margin-top:px2rem(-150);text-align: center; z-index:99;}
+.back{border-radius:px2rem(10); padding:px2rem(20) 0; background-color: #fa2a76; margin:px2rem(5) 0; }
+
+.tips-1{position: fixed; width:px2rem(285); bottom:px2rem(80); left:px2rem(30); z-index: 10;}
+.qiaokeli{position: absolute; width:px2rem(80) !important; height: px2rem(198); background: url("../images/qiaokeli.png") center no-repeat; background-size: 100%; bottom:px2rem(-10); right:px2rem(-10); z-index: 1; }
+.qiaokeli.hover{ background: url("../images/qiaokeli-hover.png") center no-repeat; background-size: 100%;}
+
+.tips-2{position: fixed; width:px2rem(200) !important; bottom:px2rem(160); right:px2rem(20); z-index: 10; }
+.tips-2 img{width: 100%;}
+
+/*弹窗*/
+.Dialog-cover{position: absolute; top: 0; left: 0; bottom: 0; right: 0; background:url("../images/bg.jpg") repeat; z-index: 100; display: none; min-height:700px; height: 100%;}
+
+.Dialog-wrap{position: absolute; top: 0; left: 0; bottom: 0; right: 0; z-index: 110; display: none;}
+.Dialog-wrap .photo{position: relative; width:px2rem(540); height:px2rem(770); margin:px2rem(50) auto 0; z-index: 5; }
+.Dialog-wrap .photo-img{position: absolute; width:px2rem(500); height:px2rem(640); top:px2rem(80); left:50%; margin-left: px2rem(-250); z-index: 1;}
+.Dialog-wrap .photo-kuang{position: relative; width:px2rem(540); margin:0 auto; z-index: 5;}
+
+.Dialog-wrap .ewm{position: absolute; width:px2rem(101); top:px2rem(650); right:px2rem(30); z-index: 5;}
+.Dialog-wrap .photo-save{position: relative; width:px2rem(450); margin:px2rem(20) auto 0;
+  img{ width:px2rem(201); margin:0 px2rem(10); }
+}
+
+.Dialog-wrap .photo-logo{position: relative; width:px2rem(201); margin:px2rem(20) auto;}
+
+
+/*保存图片*/
+
+.downImg-cover{position: absolute; top: 0; left: 0; bottom:px2rem(-1); right: 0; background:#000; opacity: 0.8; z-index: 120; display: none; min-height:700px; height: 100%;}
+.downImg-wrap{position: absolute; top: 0; left: 0; bottom: 0; right: 0; z-index: 122; display: none;}
+.downImg-wrap .down-img{width:px2rem(500); height: px2rem(700); margin:px2rem(130) auto 0; border-radius: px2rem(20); overflow:hidden;}
+.downImg-wrap .down-img img{width: 100%;}
+.downImg-wrap .downImg-close{position: absolute; top:px2rem(10); right:px2rem(10); width:px2rem(60);}
+.downImg-wrap .share-1{position: absolute; top:px2rem(10); right:px2rem(10); width:px2rem(230);}
+.downImg-wrap .share-2{position: fixed; bottom:px2rem(30); left:50%; margin-left: px2rem(-171.5); width:px2rem(343);}
+
+
+
+@media screen and (max-width: 320px) {
+
+  .downImg-wrap .down-img{width: 70%;}
+
+  .Dialog-wrap .photo{position: relative; width:px2rem(400); height:px2rem(580); margin:px2rem(50) auto 0; z-index: 5; }
+  .Dialog-wrap .photo-img{position: absolute; width:px2rem(350); height:px2rem(460); top:px2rem(60); left:50%; margin-left: px2rem(-175); z-index: 1;}
+  .Dialog-wrap .photo-kuang{position: relative; width:px2rem(400); margin:0 auto; z-index: 5;}
+  .Dialog-wrap .ewm{position: absolute; width:px2rem(60); top:px2rem(480); right:px2rem(30); z-index: 5;}
+
+  .downImg-wrap .down-img{width:px2rem(400); height: px2rem(500);}
+  .downImg-wrap .share-2{bottom:px2rem(20);}
+}

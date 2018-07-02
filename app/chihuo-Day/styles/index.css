@@ -1,0 +1,585 @@
+@charset "UTF-8";
+#evt_content {
+  background: #fefff1;
+  /*投票*/
+  /*价格*/ }
+  #evt_content div {
+    position: absolute; }
+  #evt_content img {
+    width: 100%; }
+  #evt_content .sec {
+    position: relative; }
+  #evt_content .sec-top {
+    height: 17.33333rem;
+    background: url("../images/banner-bg.png") center 1.6rem no-repeat;
+    background-size: 100%;
+    z-index: 1;
+    overflow: hidden; }
+    #evt_content .sec-top .c-logo {
+      width: 5.52rem;
+      top: 0.66667rem;
+      left: 2.37333rem; }
+    #evt_content .sec-top .c-title {
+      width: 5.92rem;
+      top: 3.33333rem;
+      left: 1.65333rem; }
+    #evt_content .sec-top .banner-cake-1 {
+      width: 3.04rem;
+      top: 2.21333rem;
+      right: 0; }
+    #evt_content .sec-top .banner-cake-2 {
+      width: 4.49333rem;
+      top: 9.32rem;
+      right: 0; }
+    #evt_content .sec-top .banner-cake-3 {
+      width: 5.4rem;
+      top: 11.17333rem;
+      left: 1.14667rem; }
+  #evt_content .sec-fuli {
+    height: 8.66667rem; }
+    #evt_content .sec-fuli .fuli {
+      width: 9.54667rem;
+      top: 0;
+      left: 0.13333rem; }
+  #evt_content .sec-main {
+    height: 33.84rem;
+    background: url("../images/bg.jpg") repeat;
+    background-size: 2%; }
+    #evt_content .sec-main .chihuo-title {
+      width: 7.69333rem;
+      top: -0.85333rem;
+      left: 1.13333rem; }
+      #evt_content .sec-main .chihuo-title .txt {
+        bottom: -0.13333rem;
+        text-align: center;
+        width: 100%;
+        font-size: 0.37333rem;
+        color: #000; }
+        #evt_content .sec-main .chihuo-title .txt b {
+          color: #fb6169; }
+      #evt_content .sec-main .chihuo-title .vote-txt {
+        bottom: -0.8rem;
+        text-align: center;
+        font-size: 0.32rem;
+        color: #000;
+        width: 7.69333rem;
+        background: url("../images/vote-bg.png") center center repeat-y;
+        background-size: 100%;
+        height: 0.48rem;
+        line-height: 0.48rem;
+        vertical-align: middle;
+        overflow: hidden; }
+        #evt_content .sec-main .chihuo-title .vote-txt li {
+          height: 0.48rem; }
+        #evt_content .sec-main .chihuo-title .vote-txt em {
+          display: inline-block;
+          width: 0.37333rem;
+          height: 0.37333rem;
+          border-radius: 50%;
+          overflow: hidden;
+          vertical-align: middle;
+          margin: 0 0.13333rem; }
+        #evt_content .sec-main .chihuo-title .vote-txt img {
+          width: 100%;
+          vertical-align: super; }
+    #evt_content .sec-main .products {
+      width: 9.6rem;
+      top: 10.26667rem;
+      left: 50%;
+      margin-left: -4.8rem; }
+    #evt_content .sec-main .row:nth-of-type(2n+1) {
+      margin-right: 0; }
+    #evt_content .sec-main .row.first {
+      position: absolute;
+      top: -7.6rem;
+      left: 50%;
+      margin-left: -2.3rem; }
+    #evt_content .sec-main .row {
+      position: relative;
+      width: 4.57333rem;
+      height: 5.34667rem;
+      background: #fff;
+      float: left;
+      margin-right: 0.4rem;
+      border-radius: 0.13333rem;
+      margin-top: 2.13333rem; }
+      #evt_content .sec-main .row .cake {
+        width: 2.74667rem;
+        top: -1.25333rem;
+        left: 50%;
+        margin-left: -1.37333rem;
+        z-index: 1; }
+      #evt_content .sec-main .row .price {
+        top: 2.8rem;
+        left: 0.13333rem; }
+      #evt_content .sec-main .row .mark {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 0.97333rem;
+        height: 0.97333rem;
+        text-align: left;
+        padding-left: 0.2rem;
+        line-height: 0.66667rem;
+        color: #fff;
+        font-size: 0.4rem;
+        border-radius: 0.13333rem 0 0 0;
+        background: url("../images/mark-0.png") no-repeat;
+        background-size: 100%;
+        font-style: normal; }
+      #evt_content .sec-main .row .mark-1 {
+        background: url("../images/mark-1.png") no-repeat;
+        background-size: 100%; }
+      #evt_content .sec-main .row .mark-2 {
+        background: url("../images/mark-2.png") no-repeat;
+        background-size: 100%; }
+      #evt_content .sec-main .row .mark-3 {
+        background: url("../images/mark-3.png") no-repeat;
+        background-size: 100%; }
+      #evt_content .sec-main .row .guan {
+        position: absolute;
+        left: 50%;
+        top: -1.46667rem;
+        margin-left: -1.46667rem;
+        width: 1.18667rem;
+        height: 1.08rem; }
+      #evt_content .sec-main .row .guan-1 {
+        background: url("../images/guan-1.png") no-repeat;
+        background-size: 100%; }
+      #evt_content .sec-main .row .guan-2 {
+        background: url("../images/guan-2.png") no-repeat;
+        background-size: 100%; }
+      #evt_content .sec-main .row .guan-3 {
+        background: url("../images/guan-3.png") no-repeat;
+        background-size: 100%; }
+      #evt_content .sec-main .row .vote-btn {
+        position: absolute;
+        left: 50%;
+        top: 0.66667rem;
+        margin-left: 0.53333rem;
+        width: 1.38667rem;
+        height: 1.38667rem;
+        background: url("../images/vote-btn-1.png") no-repeat;
+        background-size: 100%;
+        cursor: pointer;
+        z-index: 2; }
+      #evt_content .sec-main .row .vote-btn.hover {
+        background: url("../images/vote-btn-2.png") no-repeat;
+        background-size: 100%; }
+      #evt_content .sec-main .row .vote-btn.end {
+        background: url("../images/vote-btn-3.png") no-repeat;
+        background-size: 100%; }
+  #evt_content .sec-shareCode {
+    padding-bottom: 0.4rem; }
+    #evt_content .sec-shareCode .s-code {
+      position: relative;
+      width: 8.86667rem;
+      margin: 0.8rem auto 0; }
+    #evt_content .sec-shareCode .code {
+      position: absolute;
+      top: 0.33333rem;
+      left: 1.6rem;
+      width: 2.13333rem;
+      height: 2.13333rem;
+      border-radius: 50%;
+      background: #fff;
+      padding: 0.13333rem; }
+      #evt_content .sec-shareCode .code img {
+        width: 100%; }
+    #evt_content .sec-shareCode .go-share {
+      position: absolute;
+      bottom: 0.66667rem;
+      width: 5.6rem;
+      left: 50%;
+      margin-left: 1.06667rem; }
+      #evt_content .sec-shareCode .go-share span {
+        display: block;
+        width: 2.08rem;
+        height: 0.66667rem;
+        border-radius: 0.66667rem;
+        background: #fc6267;
+        text-align: center;
+        line-height: 0.66667rem;
+        float: left;
+        font-size: 0.26667rem;
+        color: #fff;
+        cursor: pointer; }
+  #evt_content .sec-ch-fuli {
+    padding-bottom: 0.66667rem; }
+    #evt_content .sec-ch-fuli .ch-fuli {
+      position: relative;
+      width: 9.88rem;
+      margin: 0 auto; }
+      #evt_content .sec-ch-fuli .ch-fuli .fuli-btn-1 {
+        position: absolute;
+        left: 2.53333rem;
+        top: 3.73333rem;
+        width: 0.66667rem;
+        height: 0.66667rem;
+        cursor: pointer; }
+      #evt_content .sec-ch-fuli .ch-fuli .fuli-1-hover {
+        position: absolute;
+        width: 7.61333rem;
+        left: 1.06667rem;
+        top: 4.26667rem;
+        display: none;
+        z-index: 3; }
+      #evt_content .sec-ch-fuli .ch-fuli .fuli-btn-2 {
+        position: absolute;
+        right: 2.53333rem;
+        top: 6.53333rem;
+        width: 0.66667rem;
+        height: 0.66667rem;
+        cursor: pointer;
+        z-index: 3; }
+      #evt_content .sec-ch-fuli .ch-fuli .fuli-2-hover {
+        position: absolute;
+        width: 7.16rem;
+        right: 1.33333rem;
+        top: 7rem;
+        display: none;
+        z-index: 3; }
+      #evt_content .sec-ch-fuli .ch-fuli .DBlock {
+        display: block; }
+    #evt_content .sec-ch-fuli .more {
+      position: relative;
+      width: 5.36rem;
+      height: 1.54667rem;
+      margin: 0.4rem auto 0;
+      background: url("../images/more.png") no-repeat;
+      background-size: 100%;
+      z-index: 1; }
+    #evt_content .sec-ch-fuli .more.hover {
+      background: url("../images/more-hover.png") no-repeat;
+      background-size: 100%; }
+  #evt_content .piao-num {
+    position: absolute;
+    top: 2.4rem;
+    left: 50%;
+    width: 4rem;
+    margin-left: -2rem; }
+    #evt_content .piao-num .percent-wrap {
+      position: relative;
+      width: 2.66667rem;
+      height: 0.06667rem;
+      background: #ececec;
+      border-radius: 0.06667rem;
+      margin-left: 0.26667rem; }
+      #evt_content .piao-num .percent-wrap .percent {
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 0.06667rem;
+        background: #da3636;
+        border-radius: 0.06667rem;
+        max-width: 2.66667rem; }
+      #evt_content .piao-num .percent-wrap .ptxt {
+        position: absolute;
+        top: -0.2rem;
+        left: 2.8rem;
+        font-size: 0.32rem;
+        width: 1.33333rem; }
+        #evt_content .piao-num .percent-wrap .ptxt i {
+          color: #fc6267;
+          font-style: normal; }
+  #evt_content .price {
+    position: absolute;
+    width: 4.26667rem;
+    text-align: center;
+    z-index: 2; }
+    #evt_content .price .title {
+      position: relative;
+      width: 3.53333rem;
+      margin: 0.26667rem auto; }
+    #evt_content .price h2 {
+      font-size: 0.32rem;
+      font-weight: normal;
+      line-height: 0.66667rem;
+      color: #fc6267; }
+      #evt_content .price h2 i {
+        font-size: 0.24rem;
+        font-style: normal;
+        vertical-align: top; }
+      #evt_content .price h2 span {
+        font-size: 0.4rem; }
+      #evt_content .price h2 p {
+        display: inline-block;
+        position: relative; }
+      #evt_content .price h2 p.p-new i {
+        position: absolute;
+        top: 0.13333rem;
+        left: 1rem;
+        line-height: 0.26667rem; }
+      #evt_content .price h2 p.p-new .now-price {
+        margin: 0 0.13333rem 0 0.24rem; }
+      #evt_content .price h2 p.p-old {
+        color: #888888; }
+        #evt_content .price h2 p.p-old span {
+          font-size: 0.26667rem; }
+        #evt_content .price h2 p.p-old b {
+          font-weight: normal; }
+      #evt_content .price h2 .p-old.delete {
+        text-decoration: line-through; }
+      #evt_content .price h2 .p-old.bigfont b {
+        font-size: 0.4rem; }
+    #evt_content .price s {
+      font-size: 0.34667rem;
+      color: #888888;
+      font-weight: normal;
+      line-height: 0.4rem; }
+    #evt_content .price ul.buy_btn_box {
+      overflow: hidden;
+      margin: 0.26667rem auto;
+      width: 2rem; }
+    #evt_content .price ul.buy_btn_box li {
+      float: left;
+      margin-right: 0.13333rem; }
+      #evt_content .price ul.buy_btn_box li.hover span {
+        background: #ff7d81; }
+    #evt_content .price ul.buy_btn_box li span {
+      display: block;
+      background: #fc6267;
+      color: #fff;
+      cursor: pointer;
+      height: 0.8rem;
+      line-height: 0.8rem;
+      font-size: 0.32rem;
+      width: 2rem;
+      text-align: center;
+      border-radius: 0.8rem; }
+  #evt_content .sec-footer {
+    background: url("../images/bg.jpg") repeat;
+    background-size: 2%;
+    position: relative;
+    padding-bottom: 0.26667rem; }
+    #evt_content .sec-footer .txt {
+      position: relative;
+      width: 8rem;
+      padding-top: 0.93333rem;
+      margin: 0 auto;
+      color: #000; }
+      #evt_content .sec-footer .txt h2 {
+        font-size: 0.4rem;
+        font-weight: normal; }
+      #evt_content .sec-footer .txt p {
+        font-size: 0.30667rem;
+        padding-left: 0.46667rem;
+        line-height: 0.53333rem;
+        text-indent: -0.46667rem;
+        margin: 0.06667rem 0; }
+
+/*彈窗选择磅数*/
+.Dialog-Select .s-closes {
+  background: url("../images/close.png") center center no-repeat;
+  background-size: 50%;
+  display: none; }
+
+.Dialog-Select .Select {
+  position: relative;
+  color: #000;
+  height: 100%; }
+  .Dialog-Select .Select .s-title {
+    height: 1.37333rem;
+    background: #f2f2f2;
+    position: relative;
+    border-top-left-radius: 0.26667rem;
+    border-top-right-radius: 0.26667rem; }
+    .Dialog-Select .Select .s-title h2 {
+      font-size: 0.37333rem;
+      line-height: 0.66667rem;
+      padding-left: 0.33333rem;
+      padding-top: 0.13333rem; }
+    .Dialog-Select .Select .s-title b {
+      font-size: 0.18667rem;
+      color: #9a9a9a;
+      font-weight: normal;
+      padding-left: 0.26667rem; }
+  .Dialog-Select .Select .s-bangshu {
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    border-bottom: #ededed 1px solid; }
+    .Dialog-Select .Select .s-bangshu ul {
+      margin-left: 0.53333rem; }
+      .Dialog-Select .Select .s-bangshu ul li {
+        float: left;
+        width: 1.2rem;
+        height: 1.2rem;
+        background: #f2f2f2;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 1.2rem;
+        font-size: 0.30667rem;
+        color: #000;
+        margin-right: 0.66667rem;
+        font-weight: bold; }
+      .Dialog-Select .Select .s-bangshu ul li.on {
+        background: #fc6267;
+        color: #fff; }
+  .Dialog-Select .Select .s-num {
+    height: 1.86667rem; }
+    .Dialog-Select .Select .s-num b {
+      display: inline-block;
+      width: 2.66667rem;
+      margin: 0.53333rem 0.26667rem;
+      line-height: 0.74667rem;
+      float: left;
+      font-size: 0.4rem;
+      color: #737373;
+      font-weight: normal; }
+    .Dialog-Select .Select .s-num .nums {
+      display: inline-block;
+      margin: 0.53333rem 0.26667rem;
+      float: right;
+      height: 0.74667rem;
+      position: relative;
+      width: 2.66667rem; }
+    .Dialog-Select .Select .s-num .nums a {
+      display: block;
+      width: 0.74667rem;
+      height: 0.74667rem;
+      position: absolute;
+      top: 0.02667rem; }
+    .Dialog-Select .Select .s-num .nums .minus {
+      background: transparent url("../images/btn-1.png") no-repeat;
+      background-size: 100%;
+      left: 0; }
+    .Dialog-Select .Select .s-num .nums .plus {
+      background: transparent url("../images/btn-2.png") no-repeat;
+      background-size: 100%;
+      right: 0; }
+    .Dialog-Select .Select .s-num .nums input {
+      background: none;
+      border: none;
+      color: #626262;
+      display: block;
+      font-size: 0.4rem;
+      height: 0.74667rem;
+      left: 0.8rem;
+      line-height: 0.74667rem;
+      padding: 0;
+      position: absolute;
+      text-align: center;
+      top: 0;
+      width: 1.06667rem; }
+  .Dialog-Select .Select .s-prices {
+    font-size: 0.29333rem;
+    padding-left: 0.26667rem;
+    padding-top: 0.26667rem; }
+    .Dialog-Select .Select .s-prices p {
+      display: inline-block;
+      position: relative; }
+      .Dialog-Select .Select .s-prices p b {
+        font-size: 0.53333rem;
+        color: #fc6267; }
+      .Dialog-Select .Select .s-prices p i {
+        position: absolute;
+        font-size: 0.24rem;
+        line-height: 0.26667rem;
+        font-style: normal;
+        vertical-align: super; }
+    .Dialog-Select .Select .s-prices .p-now {
+      margin-right: 0.13333rem;
+      color: #fc6267; }
+      .Dialog-Select .Select .s-prices .p-now b {
+        margin-right: 0.13333rem; }
+      .Dialog-Select .Select .s-prices .p-now span {
+        font-size: 0.6rem; }
+      .Dialog-Select .Select .s-prices .p-now i {
+        top: 0.2rem;
+        left: 1.6rem; }
+    .Dialog-Select .Select .s-prices .p-old {
+      font-size: 0.34667rem;
+      color: #737373;
+      padding-left: 0.13333rem;
+      text-decoration: line-through; }
+      .Dialog-Select .Select .s-prices .p-old i {
+        top: 0.06667rem;
+        left: -0.13333rem; }
+    .Dialog-Select .Select .s-prices .bigFont {
+      font-size: 0.6rem;
+      color: #000;
+      padding-left: 0.13333rem;
+      text-decoration: none; }
+      .Dialog-Select .Select .s-prices .bigFont i {
+        top: 0.2rem;
+        left: -0.13333rem; }
+  .Dialog-Select .Select .btns {
+    width: 100%;
+    position: absolute;
+    bottom: 0rem;
+    display: flex;
+    height: 1.33333rem;
+    line-height: 1.33333rem;
+    flex-direction: row;
+    text-align: center;
+    font-size: 0.4rem;
+    color: #fff; }
+    .Dialog-Select .Select .btns div {
+      flex: 1;
+      cursor: pointer;
+      width: 100%; }
+    .Dialog-Select .Select .btns .go-buy {
+      background: #fc6267;
+      border-bottom-left-radius: 0.26667rem;
+      border-bottom-right-radius: 0.26667rem; }
+
+/*彈窗提示*/
+.Dialog-tip {
+  /*关闭按钮*/ }
+  .Dialog-tip .box-item .box-item-header {
+    text-align: center;
+    padding: 0.53333rem 0;
+    background: #fff;
+    border-radius: 0.2rem 0.2rem 0 0; }
+    .Dialog-tip .box-item .box-item-header img {
+      margin: 0.26667rem auto; }
+    .Dialog-tip .box-item .box-item-header h2 {
+      font-size: 0.42667rem;
+      line-height: 0.8rem; }
+    .Dialog-tip .box-item .box-item-header p {
+      font-size: 0.32rem;
+      line-height: 0.4rem; }
+      .Dialog-tip .box-item .box-item-header p b {
+        color: #ff636c; }
+    .Dialog-tip .box-item .box-item-header .fail {
+      position: relative;
+      width: 3.57333rem;
+      margin: 0.13333rem auto; }
+      .Dialog-tip .box-item .box-item-header .fail img {
+        width: 100%; }
+  .Dialog-tip .box-item .go-btn {
+    position: relative;
+    width: 5.6rem;
+    margin: 0.26667rem auto;
+    overflow: hidden; }
+    .Dialog-tip .box-item .go-btn span {
+      display: block;
+      width: 2.4rem;
+      height: 0.66667rem;
+      border-radius: 0.66667rem;
+      background: #fc6267;
+      text-align: center;
+      line-height: 0.66667rem;
+      float: left;
+      font-size: 0.34667rem;
+      color: #fff;
+      cursor: pointer; }
+    .Dialog-tip .box-item .go-btn .go-share {
+      float: right;
+      background: #fc6267;
+      color: #fff; }
+    .Dialog-tip .box-item .go-btn.ok-btn {
+      width: 2.4rem; }
+  .Dialog-tip .box-item:nth-of-type(2) .tip-header img {
+    margin: 0 auto; }
+  .Dialog-tip .closes {
+    background: url("../images/close.png") center center no-repeat;
+    background-size: 50%; }
+
+@media screen and (max-width: 320px) {
+  .sel-li {
+    top: -0.13333rem !important; }
+  i {
+    top: 0.04rem !important; } }

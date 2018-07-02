@@ -1,0 +1,93 @@
+@function px2rem($n) {
+  @return ($n * 10 / 750) * 1rem;
+}
+
+@mixin font-dpr($font-size){
+  font-size: $font-size;
+
+  [data-dpr="2"] & {
+    font-size: $font-size * 2;
+  }
+
+  [data-dpr="3"] & {
+    font-size: $font-size * 3;
+  }
+
+}
+.wrap{background: #f8f8f8; padding-bottom: px2rem(10);}
+#evt_content{ width:px2rem(750); margin:0 auto; overflow: hidden;
+  div{position:absolute;}
+  img{width:100%;}
+  .sec{position: relative; }
+  .sec-top{height: px2rem(482); z-index: 6; background: url("../images/banner.jpg"); background-size: 100%;
+    .title{width:px2rem(565); top:px2rem(80); left:50%; margin-left: px2rem(-380);}
+    .logos{width:px2rem(174); top:px2rem(30); left:px2rem(30);}
+  }
+
+
+  .sec-1{height: px2rem(1166); z-index: 5; background:url("../images/bg.jpg") repeat;
+    .mingsheng-1{position: absolute; width:px2rem(205); top:px2rem(-100); right:0;}
+    .mingsheng-2{position: absolute; width:px2rem(161); bottom:px2rem(20); left:0;}
+    .word{position: absolute; width:px2rem(96); top:px2rem(36); left:0;}
+    .active{position: absolute;  width: px2rem(700); height: px2rem(200); top: px2rem(40); left:px2rem(20);
+      div{position: relative;}
+      .act{ position:relative; cursor: pointer;
+        .act_text{width:px2rem(197); margin:0 auto;}
+        .act_bar{width: px2rem(380); height: px2rem(104); background: url("../images/bar-start.png"); background-size: 100%; margin:px2rem(10) auto; position: relative; text-align: center;
+          b{display: block; position: absolute; top:px2rem(15); left: 50%; width: px2rem(120); margin-left: px2rem(-60); }
+          span{ display: block; position: absolute; top:px2rem(11); left: 50%; font-size: px2rem(36); line-height: px2rem(50); color: #6a1605; width:px2rem(23); height: px2rem(50); }
+          .sz-start{margin-left: px2rem(-18);}
+          .sz-mid{margin-left: px2rem(14);}
+          .sz-end{margin-left: px2rem(48);}
+          .sz-0{background: url("../images/zi.png") 0 0 no-repeat; background-size: 100%;}
+          .sz-1{background: url("../images/zi.png") 0 px2rem(-50) no-repeat; background-size: 100%;}
+          .sz-2{background: url("../images/zi.png") 0 px2rem(-100) no-repeat; background-size: 100%;}
+          .sz-3{background: url("../images/zi.png") 0 px2rem(-150) no-repeat; background-size: 100%;}
+          .sz-4{background: url("../images/zi.png") 0 px2rem(-200) no-repeat; background-size: 100%;}
+          .sz-5{background: url("../images/zi.png") 0 px2rem(-250) no-repeat; background-size: 100%;}
+          .sz-6{background: url("../images/zi.png") 0 px2rem(-300) no-repeat; background-size: 100%;}
+          .sz-7{background: url("../images/zi.png") 0 px2rem(-350) no-repeat; background-size: 100%;}
+          .sz-8{background: url("../images/zi.png") 0 px2rem(-400) no-repeat; background-size: 100%;}
+          .sz-9{background: url("../images/zi.png") 0 px2rem(-450) no-repeat; background-size: 100%;}
+
+        }
+        .act_bar.a_end{background: url("../images/bar.png"); background-size: 100%; color: #fff; }
+
+
+        .act_sheng{width:px2rem(65); position:absolute; top:px2rem(260); left:px2rem(70);}
+        .act_ge{width:px2rem(32); position:absolute; top:px2rem(260); left:px2rem(620); }
+        .plate{position:absolute; width:px2rem(290); top:px2rem(129); left:px2rem(226);
+          span{position:absolute; display:block; font-family:'mfshangya'; color:#b50e0d; font-size:px2rem(123);
+            width:px2rem(100); height:px2rem(100);  top:px2rem(80); left:px2rem(100); text-align:center;}
+
+          .word{width:px2rem(100); position:absolute;  top:px2rem(100); left:px2rem(100); }
+        }
+        .plate1{ left:px2rem(75);}
+        .plate3{ left:px2rem(382);}
+      }
+    }
+    .zuhe-1{position: absolute; width:px2rem(722); top:px2rem(195); left:0;}
+    .zuhe-2{position: absolute; width:px2rem(614); top:px2rem(634); left: px2rem(85);}
+    .gobuy{position: absolute; width:px2rem(189); top:px2rem(939); left: px2rem(280);}
+    .line{position: absolute; width:px2rem(320); bottom:px2rem(-20); left: 50%; margin-left: px2rem(-160);}
+
+  }
+
+
+  .sec-footer{ position: relative; z-index: 2;
+    .txt{ position: relative; width:px2rem(640); padding: px2rem(70) 0 px2rem(50); margin: 0 auto;  color: #000;
+      h2{font-size: px2rem(30); font-weight: normal; color: #d00a13; }
+      p{ font-size: px2rem(22); padding-left: px2rem(35); line-height:px2rem(40);  text-indent: px2rem(-35);
+        margin:px2rem(5) 0;}
+    }
+    .guize{position: relative; width: px2rem(675); margin: 0 auto;}
+  }
+
+
+}
+
+
+@media screen and (max-width: 320px) {
+
+
+}
