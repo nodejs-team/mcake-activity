@@ -43,7 +43,7 @@
       .act_ge{width:px2rem(39); position:absolute; top:px2rem(260); left:px2rem(582); }
       .plate{position:absolute; width:px2rem(290); top:px2rem(129); left:px2rem(226);
         span{position:absolute; display:block; color:#24907f; font-size:px2rem(123);
-          width:px2rem(100); height:px2rem(100);  top:px2rem(80); left:px2rem(100); text-align:center; text-shadow: 2px 2px 2px #000;}
+          width:px2rem(100); height:px2rem(100);  top:px2rem(65); left:px2rem(100); text-align:center; text-shadow: 2px 2px 2px #000;}
 
         .word{width:px2rem(100); position:absolute;  top:px2rem(100); left:px2rem(100); }
       }
@@ -68,9 +68,9 @@
       .prev{left:0;}
       .next{right:0;}
     }
-    .slideOuter{width:px2rem(460); height:px2rem(720); overflow:hidden; margin:0 auto; padding-top: px2rem(50);
+    .slideOuter{width:px2rem(450); height:px2rem(720); overflow:hidden; margin:0 auto; padding-top: px2rem(50);
       ul{width:px2rem(2800); padding: 0;}
-      li{width:px2rem(460); margin:0 px2rem(5); color:#242424; font-size:px2rem(20); float:left; list-style: none;
+      li{width:px2rem(460); margin:0 px2rem(5) 0 0; color:#242424; font-size:px2rem(20); float:left; list-style: none;
         .fl{float:left;}
         .fl.ftitle{ width:px2rem(200); height:px2rem(60);  overflow:hidden; align-items: center;
           display: -webkit-box;

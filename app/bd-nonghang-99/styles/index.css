@@ -90,19 +90,19 @@
   #evt_container .slideOuter {
     position: relative;
     width: 1028px;
-    height: 380px;
+    height: 370px;
     border-bottom: 2px solid #959595;
     overflow: hidden;
     margin: 0 auto; }
     #evt_container .slideOuter ul {
       position: relative;
       width: 1650px;
-      height: 350px;
+      height: 360px;
       overflow: hidden; }
     #evt_container .slideOuter li {
       position: relative;
       width: 242px;
-      margin: 0 20px 18px 0;
+      margin: 0 20px 25px 0;
       color: #242424;
       font-size: 12px;
       float: left; }

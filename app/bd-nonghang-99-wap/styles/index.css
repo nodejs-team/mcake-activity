@@ -68,7 +68,7 @@
         font-size: 1.64rem;
         width: 1.33333rem;
         height: 1.33333rem;
-        top: 1.06667rem;
+        top: 0.86667rem;
         left: 1.33333rem;
         text-align: center;
         text-shadow: 2px 2px 2px #000; }
@@ -123,7 +123,7 @@
     #evt_content .section-main .slider .next {
       right: 0; }
   #evt_content .section-main .slideOuter {
-    width: 6.13333rem;
+    width: 6rem;
     height: 9.6rem;
     overflow: hidden;
     margin: 0 auto;
@@ -133,7 +133,7 @@
       padding: 0; }
     #evt_content .section-main .slideOuter li {
       width: 6.13333rem;
-      margin: 0 0.06667rem;
+      margin: 0 0.06667rem 0 0;
       color: #242424;
       font-size: 0.26667rem;
       float: left;

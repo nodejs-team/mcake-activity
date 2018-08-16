@@ -30,7 +30,7 @@ body{
 .Dialogbg-Select { position: fixed; background-color: #000; height: 100%; left: 0; opacity: 0.85; top: 0; width: 100%; z-index: 200; display: none; }
 
 .Dialog-Select { position: fixed; background: #fff none repeat scroll 0 0; box-shadow: 0 0 0 #999; font-size: 0.18667rem; width: 8rem; height: 7.06667rem; margin-top: -4.4rem; margin-left: -4rem; left: 50%; padding: 0; top: 50%; z-index: 99999; display: none; border-radius: 0.26667rem; }
-.Dialog-Select .s-closes{position: absolute;width: 0.8rem; height: 0.8rem; top: 0; right: 0; cursor: pointer; z-index: 8;}
+.Dialog-Select .s-closes{position: absolute; width: 0.8rem; height: 0.8rem; top: 0; right: 0; cursor: pointer; z-index: 8;}
 
 
 /*弹窗提示*/
@@ -47,6 +47,9 @@ body{
 .Dialog-share-cover { position: fixed;  top: 0; left: 0;  width: 100%;  background-color: #000;  height: 100%;  opacity: 0.85;  z-index: 200;  display: none; }
 
 .Dialog-share { position: fixed; background: url("../images/share.png") no-repeat; background-size: 100%; box-shadow: 0 0 0 #999; font-size: 0.18667rem; width: 100%; height: 100%; top: 0; left: 50%; padding: 0; border-radius: 0.26667rem; max-width: 10rem; margin-left: -5rem;display: none; z-index: 99999; }
+
+
+
 
 @media screen and (max-width: 320px) {
     .Dialog-share { max-width: 8rem; margin-left: -4rem; }

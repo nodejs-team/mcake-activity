@@ -1,0 +1,157 @@
+@function px2rem($n) {
+  @return ($n * 10 / 750) * 1rem; //设计稿一般都是750宽
+}
+
+@mixin font-dpr($font-size){
+  font-size: $font-size;
+
+  [data-dpr="2"] & {
+    font-size: $font-size * 2;
+  }
+
+  [data-dpr="3"] & {
+    font-size: $font-size * 3;
+  }
+
+}
+
+#evt_content{  background:#fff; padding-bottom:1px;
+  div{position:absolute;}
+  img{width:100%;}
+  .sec{position: relative; }
+
+  .sec-top{
+    height: px2rem(1068); background:url("../images/banner.jpg") repeat; background-size: 100%; z-index: 1; overflow: hidden;
+    .duihuan{width: px2rem(272); bottom: px2rem(80); right: px2rem(60);}
+  }
+
+  .sec-1{ padding: px2rem(50) 0 px2rem(20);
+    div{position:relative;}
+    .cake-tab{ height:px2rem(1070);
+      .tab-top{ padding:0 0 px2rem(30);
+        ul{margin-left: px2rem(20);
+          li{width:px2rem(347); margin-right:px2rem(20); list-style: none; float: left; cursor: pointer; border-radius:px2rem(10);}
+          li.on{opacity: 0.6;}
+        }
+      }
+      .tab-box{ position:absolute; top:px2rem(100); left: 0; width:px2rem(750); background: #b7d8dd; margin: px2rem(20) auto; overflow: hidden; z-index: -1;
+        .box-swiper{position: relative; width:px2rem(750); height:px2rem(910); overflow: hidden; }
+        .title{ position: absolute; top: px2rem(566); left:px2rem(170); width: px2rem(400); height: px2rem(100); z-index: 10; color: #fff; font-size: px2rem(24); font-weight: normal;}
+        .price{ position: absolute; top: px2rem(580); left: 50%; width: px2rem(467); height: px2rem(200); margin-left: px2rem(-233); z-index: 10; color: #fff; font-size: px2rem(20);font-weight: normal; text-align: center;
+          h2{font-weight: normal; font-size: px2rem(24);
+            line-height:px2rem(50);
+            span{ font-size: px2rem(30);}
+          }
+          h3{line-height:px2rem(50); font-size: px2rem(22);font-weight: normal; }
+          h4{line-height:px2rem(50); font-size: px2rem(24); color: #79949c; font-weight: normal;}
+        }
+        .go-btn{ position: absolute; top: px2rem(750); left: 50%; width: px2rem(200); margin-left: px2rem(-100); z-index: 10;}
+      }
+      .tab-box.on{z-index: 10;}
+
+    }
+  }
+
+
+  .sec-2{
+    div{position:relative;}
+    .moon,.kuanshi,.shouna{ width: px2rem(710); margin: 0 auto;
+      img{margin-bottom: px2rem(35);}
+    }
+    .kuanshi{ border-bottom: #b2b2b2 1px solid; padding-bottom: px2rem(50);}
+    .shouna{padding-top: px2rem(80);}
+    .weidao{width: px2rem(750);}
+    .moonHide{display: none;}
+  }
+
+  .sec-3{width: px2rem(710); height: px2rem(1012); background: url("../images/guize-1.png") no-repeat; background-size: 100%; margin:px2rem(50) auto;
+
+  }
+  .card-guize{position: relative;width: px2rem(710); height: px2rem(1574); background: url("../images/lipin-card.png") no-repeat; background-size: 100%;  }
+  .gztxt{position: absolute; top: px2rem(400); left: px2rem(50);
+    ul{
+      li{ background: url("../images/dot.png") left px2rem(12) no-repeat; background-size: 1.5%; padding-left: px2rem(20); line-height: px2rem(30); color: #000;font-size: px2rem(20);}
+      li.noBg{background: none;}
+    }
+  }
+  .gztxt-2{top: px2rem(660); left: px2rem(230);}
+  .gztxt-3,.gztxt-4{
+    ul{
+      li{ background: url("../images/dot.png") left px2rem(12) no-repeat; background-size: 1%; font-size: px2rem(22);}
+    }
+  }
+  .gztxt-3{ width: px2rem(610); top: px2rem(330); left: px2rem(60);}
+  .gztxt-4{ width: px2rem(610); top: px2rem(960); left: px2rem(60);}
+
+  .sec-5{ margin-bottom: px2rem(30);
+    .guize-more{position: relative; width:px2rem(265); margin:px2rem(30) auto;}
+    .card-content{ width: px2rem(710); margin: 0 auto; position: relative; border: #cecccc 1px dashed;}
+
+
+  }
+
+  .sec-4 {
+    div {
+      position: relative;
+    }
+    .card{ position: relative; width:px2rem(710); height:px2rem(523); background: url("../images/card-bg.png") no-repeat; background-size: 100%; margin: 0 auto px2rem(50);
+      .jiao{position: absolute; top: 0; left: 0; width:px2rem(147); height:px2rem(147); background: url("../images/card-jiao.png") no-repeat; background-size: 100%; z-index: 3;}
+      .card-cover{ position: absolute; width: 100%; height: 100%; top: 0; left: 0; background: #000; opacity: 0.5; z-index: 1; -moz-opacity: .5; filter: alpha(opacity=50); display: none;}
+      .cardList{position: absolute; top:px2rem(170); left:px2rem(90); width: px2rem(700); z-index: 3;
+        li{float: left; width: px2rem(377); margin-left:px2rem(-50); text-align: center; cursor: pointer;
+          .duihuan-btn{width:px2rem(123); height:px2rem(38); margin:0 auto 0 px2rem(115); background: url("../images/dui-btn.png") no-repeat; background-size: 100%; cursor: pointer; }
+          .duihuan-btn.on{background: url("../images/dui-btn-on.png") no-repeat; background-size: 100%;  }
+        }
+      }
+    }
+  }
+
+  .sec-footer{background:#f8f4d9; position: relative; padding-bottom: px2rem(50); z-index:1;
+    .txt{ position: relative; width:px2rem(700); padding-top: px2rem(100); margin: 0 auto;  color: #5d5d5d;
+      h2{font-size: px2rem(28); font-weight: normal; }
+      p{ font-size: px2rem(23); padding-left: px2rem(35); line-height:px2rem(40);  text-indent: px2rem(-35);
+        margin:px2rem(5) 0;}
+    }
+  }
+
+}
+
+
+
+
+.swiper-container {
+  position: relative !important;
+  width: 100%;
+  height:px2rem(790);
+  margin-left: auto;
+  margin-right: auto;
+}
+.swiper-slide {
+  text-align: center;
+  background: #b7d8dd;
+  height:px2rem(790);
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-pagination{width: 100%; position: absolute !important; bottom:px2rem(40) !important; }
+.swiper-pagination-bullet{margin:0 px2rem(5) !important; background: #fff !important; opacity: 1 !important;}
+.swiper-pagination-bullet.swiper-pagination-bullet-active{background: #74c6ce !important;}
+
+
+
+
+@media screen and (max-width: 320px) {
+
+}

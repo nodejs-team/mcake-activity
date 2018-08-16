@@ -1,0 +1,275 @@
+#evt_content {
+  background: #fff;
+  padding-bottom: 1px; }
+  #evt_content div {
+    position: absolute; }
+  #evt_content img {
+    width: 100%; }
+  #evt_content .sec {
+    position: relative; }
+  #evt_content .sec-top {
+    height: 14.24rem;
+    background: url("../images/banner.jpg") repeat;
+    background-size: 100%;
+    z-index: 1;
+    overflow: hidden; }
+    #evt_content .sec-top .duihuan {
+      width: 3.62667rem;
+      bottom: 1.06667rem;
+      right: 0.8rem; }
+  #evt_content .sec-1 {
+    padding: 0.66667rem 0 0.26667rem; }
+    #evt_content .sec-1 div {
+      position: relative; }
+    #evt_content .sec-1 .cake-tab {
+      height: 14.26667rem; }
+      #evt_content .sec-1 .cake-tab .tab-top {
+        padding: 0 0 0.4rem; }
+        #evt_content .sec-1 .cake-tab .tab-top ul {
+          margin-left: 0.26667rem; }
+          #evt_content .sec-1 .cake-tab .tab-top ul li {
+            width: 4.62667rem;
+            margin-right: 0.26667rem;
+            list-style: none;
+            float: left;
+            cursor: pointer;
+            border-radius: 0.13333rem; }
+          #evt_content .sec-1 .cake-tab .tab-top ul li.on {
+            opacity: 0.6; }
+      #evt_content .sec-1 .cake-tab .tab-box {
+        position: absolute;
+        top: 1.33333rem;
+        left: 0;
+        width: 10rem;
+        background: #b7d8dd;
+        margin: 0.26667rem auto;
+        overflow: hidden;
+        z-index: -1; }
+        #evt_content .sec-1 .cake-tab .tab-box .box-swiper {
+          position: relative;
+          width: 10rem;
+          height: 12.13333rem;
+          overflow: hidden; }
+        #evt_content .sec-1 .cake-tab .tab-box .title {
+          position: absolute;
+          top: 7.54667rem;
+          left: 2.26667rem;
+          width: 5.33333rem;
+          height: 1.33333rem;
+          z-index: 10;
+          color: #fff;
+          font-size: 0.32rem;
+          font-weight: normal; }
+        #evt_content .sec-1 .cake-tab .tab-box .price {
+          position: absolute;
+          top: 7.73333rem;
+          left: 50%;
+          width: 6.22667rem;
+          height: 2.66667rem;
+          margin-left: -3.10667rem;
+          z-index: 10;
+          color: #fff;
+          font-size: 0.26667rem;
+          font-weight: normal;
+          text-align: center; }
+          #evt_content .sec-1 .cake-tab .tab-box .price h2 {
+            font-weight: normal;
+            font-size: 0.32rem;
+            line-height: 0.66667rem; }
+            #evt_content .sec-1 .cake-tab .tab-box .price h2 span {
+              font-size: 0.4rem; }
+          #evt_content .sec-1 .cake-tab .tab-box .price h3 {
+            line-height: 0.66667rem;
+            font-size: 0.29333rem;
+            font-weight: normal; }
+          #evt_content .sec-1 .cake-tab .tab-box .price h4 {
+            line-height: 0.66667rem;
+            font-size: 0.32rem;
+            color: #79949c;
+            font-weight: normal; }
+        #evt_content .sec-1 .cake-tab .tab-box .go-btn {
+          position: absolute;
+          top: 10rem;
+          left: 50%;
+          width: 2.66667rem;
+          margin-left: -1.33333rem;
+          z-index: 10; }
+      #evt_content .sec-1 .cake-tab .tab-box.on {
+        z-index: 10; }
+  #evt_content .sec-2 div {
+    position: relative; }
+  #evt_content .sec-2 .moon, #evt_content .sec-2 .kuanshi, #evt_content .sec-2 .shouna {
+    width: 9.46667rem;
+    margin: 0 auto; }
+    #evt_content .sec-2 .moon img, #evt_content .sec-2 .kuanshi img, #evt_content .sec-2 .shouna img {
+      margin-bottom: 0.46667rem; }
+  #evt_content .sec-2 .kuanshi {
+    border-bottom: #b2b2b2 1px solid;
+    padding-bottom: 0.66667rem; }
+  #evt_content .sec-2 .shouna {
+    padding-top: 1.06667rem; }
+  #evt_content .sec-2 .weidao {
+    width: 10rem; }
+  #evt_content .sec-2 .moonHide {
+    display: none; }
+  #evt_content .sec-3 {
+    width: 9.46667rem;
+    height: 13.49333rem;
+    background: url("../images/guize-1.png") no-repeat;
+    background-size: 100%;
+    margin: 0.66667rem auto; }
+  #evt_content .card-guize {
+    position: relative;
+    width: 9.46667rem;
+    height: 20.98667rem;
+    background: url("../images/lipin-card.png") no-repeat;
+    background-size: 100%; }
+  #evt_content .gztxt {
+    position: absolute;
+    top: 5.33333rem;
+    left: 0.66667rem; }
+    #evt_content .gztxt ul li {
+      background: url("../images/dot.png") left 0.16rem no-repeat;
+      background-size: 1.5%;
+      padding-left: 0.26667rem;
+      line-height: 0.4rem;
+      color: #000;
+      font-size: 0.26667rem; }
+    #evt_content .gztxt ul li.noBg {
+      background: none; }
+  #evt_content .gztxt-2 {
+    top: 8.8rem;
+    left: 3.06667rem; }
+  #evt_content .gztxt-3 ul li, #evt_content .gztxt-4 ul li {
+    background: url("../images/dot.png") left 0.16rem no-repeat;
+    background-size: 1%;
+    font-size: 0.29333rem; }
+  #evt_content .gztxt-3 {
+    width: 8.13333rem;
+    top: 4.4rem;
+    left: 0.8rem; }
+  #evt_content .gztxt-4 {
+    width: 8.13333rem;
+    top: 12.8rem;
+    left: 0.8rem; }
+  #evt_content .sec-5 {
+    margin-bottom: 0.4rem; }
+    #evt_content .sec-5 .guize-more {
+      position: relative;
+      width: 3.53333rem;
+      margin: 0.4rem auto; }
+    #evt_content .sec-5 .card-content {
+      width: 9.46667rem;
+      margin: 0 auto;
+      position: relative;
+      border: #cecccc 1px dashed; }
+  #evt_content .sec-4 div {
+    position: relative; }
+  #evt_content .sec-4 .card {
+    position: relative;
+    width: 9.46667rem;
+    height: 6.97333rem;
+    background: url("../images/card-bg.png") no-repeat;
+    background-size: 100%;
+    margin: 0 auto 0.66667rem; }
+    #evt_content .sec-4 .card .jiao {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 1.96rem;
+      height: 1.96rem;
+      background: url("../images/card-jiao.png") no-repeat;
+      background-size: 100%;
+      z-index: 3; }
+    #evt_content .sec-4 .card .card-cover {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: #000;
+      opacity: 0.5;
+      z-index: 1;
+      -moz-opacity: .5;
+      filter: alpha(opacity=50);
+      display: none; }
+    #evt_content .sec-4 .card .cardList {
+      position: absolute;
+      top: 2.26667rem;
+      left: 1.2rem;
+      width: 9.33333rem;
+      z-index: 3; }
+      #evt_content .sec-4 .card .cardList li {
+        float: left;
+        width: 5.02667rem;
+        margin-left: -0.66667rem;
+        text-align: center;
+        cursor: pointer; }
+        #evt_content .sec-4 .card .cardList li .duihuan-btn {
+          width: 1.64rem;
+          height: 0.50667rem;
+          margin: 0 auto 0 1.53333rem;
+          background: url("../images/dui-btn.png") no-repeat;
+          background-size: 100%;
+          cursor: pointer; }
+        #evt_content .sec-4 .card .cardList li .duihuan-btn.on {
+          background: url("../images/dui-btn-on.png") no-repeat;
+          background-size: 100%; }
+  #evt_content .sec-footer {
+    background: #f8f4d9;
+    position: relative;
+    padding-bottom: 0.66667rem;
+    z-index: 1; }
+    #evt_content .sec-footer .txt {
+      position: relative;
+      width: 9.33333rem;
+      padding-top: 1.33333rem;
+      margin: 0 auto;
+      color: #5d5d5d; }
+      #evt_content .sec-footer .txt h2 {
+        font-size: 0.37333rem;
+        font-weight: normal; }
+      #evt_content .sec-footer .txt p {
+        font-size: 0.30667rem;
+        padding-left: 0.46667rem;
+        line-height: 0.53333rem;
+        text-indent: -0.46667rem;
+        margin: 0.06667rem 0; }
+
+.swiper-container {
+  position: relative !important;
+  width: 100%;
+  height: 10.53333rem;
+  margin-left: auto;
+  margin-right: auto; }
+
+.swiper-slide {
+  text-align: center;
+  background: #b7d8dd;
+  height: 10.53333rem;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center; }
+
+.swiper-pagination {
+  width: 100%;
+  position: absolute !important;
+  bottom: 0.53333rem !important; }
+
+.swiper-pagination-bullet {
+  margin: 0 0.06667rem !important;
+  background: #fff !important;
+  opacity: 1 !important; }
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #74c6ce !important; }

@@ -131,6 +131,7 @@
     };
 
 
+   /*弹窗*/
     var $Select = $(".Select"),
         $bangshu = $Select.find(".s-bangshu"),
         $price = $Select.find(".s-price");
