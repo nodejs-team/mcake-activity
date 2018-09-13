@@ -211,6 +211,12 @@
         right: 0;
         font-size: 0.34667rem;
         color: #ff6800; }
+      #evt_content .sec-2 .buys-yb .zpin {
+        position: absolute;
+        width: 1.33333rem;
+        height: 1.33333rem;
+        top: -3.73333rem;
+        right: -0.93333rem; }
     #evt_content .sec-2 .buy-btn {
       width: 2.66667rem;
       margin: 0.13333rem auto;

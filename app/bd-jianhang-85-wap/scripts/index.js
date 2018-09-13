@@ -223,7 +223,7 @@
 
         var start = false;
         var time = null;
-        $(".buy-btn.on").click(function () {
+        $(".buys-yb .buy-btn.on").click(function () {
             if(!start){
                 start = true;
                 $(".tips").stop().fadeIn(200);

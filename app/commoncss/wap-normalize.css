@@ -29,11 +29,11 @@ body{
 /*彈窗选择磅数*/
 .Dialogbg-Select { position: fixed; background-color: #000; height: 100%; left: 0; opacity: 0.85; top: 0; width: 100%; z-index: 200; display: none; }
 
-.Dialog-Select { position: fixed; background: #fff none repeat scroll 0 0; box-shadow: 0 0 0 #999; font-size: 0.18667rem; width: 8rem; height: 7.06667rem; margin-top: -4.4rem; margin-left: -4rem; left: 50%; padding: 0; top: 50%; z-index: 99999; display: none; border-radius: 0.26667rem; }
+.Dialog-Select { position: fixed; box-shadow: 0 0 0 #999; font-size: 0.18667rem; width: 8rem; height: 7.06667rem; margin-top: -4.4rem; margin-left: -4rem; left: 50%; padding: 0; top: 50%; z-index: 99999; display: none; border-radius: 0.26667rem; }
 .Dialog-Select .s-closes{position: absolute; width: 0.8rem; height: 0.8rem; top: 0; right: 0; cursor: pointer; z-index: 8;}
 
 
-/*弹窗提示*/
+/*弹窗提示 头尾*/
 .Dialog-base-cover{ background-color: #000;  height: 100%;  left: 0;  opacity: 0.7;  position: fixed;  top: 0;  width: 100%; z-index: 200; display: none; -moz-opacity:.7; filter:alpha(opacity=70); }
 .Dialog-base-box{ position: fixed; top: 50%; left: 50%; box-shadow: 0 0 0 #999; font-size: 14px; width: 8rem;  margin: -3.33333rem auto 0 -4rem; padding: 0; z-index: 99999;  display: none;  border-radius: 0.2rem; background: #f2f2f2;}
 .Dialog-base-box .box-wrap {display: none; position: relative; }

@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>mcake活动</title>
+    <!-- build:css styles/index.css -->
+    <link rel="stylesheet" href="styles/swiper.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <!-- endbuild-->
+    <script type="text/javascript" src="http://www.mcake.com/framework/jquery/jquery.min.js?v=1405950469"></script>
+    <script src="http://edm.mcake.com/weifengwang/common/flexible.js"></script>
+    <script src="scripts/mmd-plugin.min.1.0.2.js"></script>
+    <script src="scripts/mmd.videoplayer.min.1.0.1.js"></script>
+</head>
+<body>
+
+<div id="evt_container">
+
+    <div id="evt_content">
+        <div class="sec sec-video">
+            <!--视频-->
+            <div id="videobox" style="z-index: 920;left:0;top:0;" view-mode="v" view-rotation="v" view-scale="width" view-width="640" view-height="1240" view-align="">
+                <div style="position: absolute; width: 100%; height: 100%;">
+                    <video id="video" style="display: block; width: 100%; height: 100%;" preload="auto" x-webkit-airplay="true" airplay="allow" webkit-playsinline="true" playsinline="true" x5-video-player-type="h5" x5-video-player-fullscreen="true"></video>
+                </div>
+            </div>
+
+
+            <!--loading动画-->
+            <div id="startbtn" class="inputbtn startbtn" style="display:none; z-index: 921;"></div>
+            <!--首页开始-->
+            <div id="splash">
+                <!-- <div class="progress-bar stripes">
+                 <span id="line" style="width: 0%"></span>
+                 </div>-->
+                <!--进度条-->
+                <div id="percent" class="percent">0%</div>
+            </div>
+
+            <audio id="tap" src="tap.wav" preload="auto" loop></audio>
+
+            <div id="back">
+                <img id="lastimg" src="imgs/1.jpg">
+                <div id="btns" class="btns">
+                    <!--<img id="btns" src="imgs/btn.png">-->
+                    <div id="replaybtn" class="btnreplay"></div>
+                    <div id="sharebtn" class="btnshare"></div>
+                </div>
+            </div>
+
+
+
+            <!--分享提示-->
+            <div id="sharemask" class="sharemask">
+                <img id="sharestuff" src="imgs/sharestuff.png">
+            </div>
+            <!--锁屏提示-->
+            <div id="tipmask" class="landscape-tip" >
+                <!--<img id="landscape_tip" src="imgs/land_tip.png">-->
+                <div class="landtip"></div>
+            </div>
+            <!--音乐-->
+            <div id="music"></div>
+            <div class="logo"></div>
+            <canvas></canvas>
+
+            <!--控制视频开始按钮-->
+            <div id="btn1" class="inputbtn button1" style=" z-index: 960;">1111</div>
+            <div id="btn2" class="inputbtn button2" style=" z-index: 960;">22222</div>
+            <div id="btn3" class="inputbtn button3" style=" z-index: 960;">3333</div>
+            <div id="btn4" class="inputbtn button4" style=" z-index: 960;">4444</div>
+            <div id="btn5" class="inputbtn button5" style=" z-index: 960;">555</div>
+            <div id="btn6" class="inputbtn button6" style=" z-index: 960;">6666</div>
+
+            <!--<div id="jumpbtn" class="inputbtn jumpbtn" style="display: block; z-index: 920;"></div>-->
+
+        </div>
+
+        <div class="cards">
+            <div class="Letter-top"><img src="images/Letter-top.png" alt=""></div>
+            <div class="Letter-bg"><img src="images/Letter-bg.png" alt=""></div>
+            <div class="letters">
+
+                <div class="swiper-container LetterSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="item">
+                                <div class="content">
+                                    <div class="t-title">一份从广寒宫快递而来的祝福，请查收：</div>
+                                    <div class="words">
+                                        <div class="text">
+                                            <p>美景随风而至，<br>
+                                                幸福踏月而来。</p>
+                                        </div>
+                                        <textarea maxlength="50"> 用户自己写最多也就这么长，最多最多这么长，不能再多了，好吧再给多那么一丢丢，就这样吧这样这样这样这！</textarea>
+                                    </div>
+                                    <div class="tips"><p>还可输入<span>50</span>字数</p></div>
+                                    <div class="froms"><p>from：<span>casslegsldese</span> </p></div>
+                                    <img src="images/card-1.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item">
+                                <div class="content">
+                                    <div class="t-title">一份从广寒宫快递而来的祝福，请查收：</div>
+                                    <div class="words">
+                                        <div class="text">
+                                            <p>美景随风而至，<br>
+                                                幸福踏月而来。</p>
+                                        </div>
+                                        <textarea maxlength="50"> 用户自己写最多也就这么长，最多最多这么长，不能再多了，好吧再给多那么一丢丢，就这样吧这样这样这样这！</textarea>
+                                    </div>
+                                    <div class="tips"><p>还可输入<span>50</span>字数</p></div>
+                                    <div class="froms"><p>from：<span>casslegsldese</span> </p></div>
+                                    <img src="images/card-2.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item">
+                                <div class="content">
+                                    <div class="t-title">一份从广寒宫快递而来的祝福，请查收：</div>
+                                    <div class="words">
+                                        <div class="text">
+                                            <p>美景随风而至，<br>
+                                                幸福踏月而来。</p>
+                                        </div>
+                                        <textarea maxlength="50"> 用户自己写最多也就这么长，最多最多这么长，不能再多了，好吧再给多那么一丢丢，就这样吧这样这样这样这！</textarea>
+                                    </div>
+                                    <div class="tips"><p>还可输入<span>50</span>字数</p></div>
+                                    <div class="froms"><p>from：<span>casslegsldese</span> </p></div>
+                                    <img src="images/card-3.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item">
+                                <div class="content">
+                                    <div class="t-title">一份从广寒宫快递而来的祝福，请查收：</div>
+                                    <div class="words">
+                                        <div class="text">
+                                            <p>美景随风而至，<br>
+                                                幸福踏月而来。</p>
+                                        </div>
+                                        <textarea maxlength="50"> 用户自己写最多也就这么长，最多最多这么长，不能再多了，好吧再给多那么一丢丢，就这样吧这样这样这样这！</textarea>
+                                    </div>
+                                    <div class="tips"><p>还可输入<span>50</span>字数</p></div>
+                                    <div class="froms"><p>from：<span>casslegsldese</span> </p></div>
+                                    <img src="images/card-4.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+
+                <div class="b-btns btn-write"><img src="images/btn-write.png" alt=""></div>
+                <div class="b-btns btn-cheng"><img src="images/btn-cheng.png" alt=""></div>
+                <div class="b-btns btn-ok"><img src="images/btn-ok.png" alt=""></div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+<!-- build:js scripts/index.js -->
+<script src="scripts/swiper.min.js"></script>
+<script src="scripts/index.js"></script>
+<!-- endbuild -->
+
+<script src="scripts/main.64.js"></script>
+</body>
+</html>

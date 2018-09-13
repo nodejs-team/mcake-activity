@@ -1,0 +1,178 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  font-size: 14px;
+  font-family: "Microsoft Yahei", simhei, Arial; }
+
+.clearfix:after {
+  content: "";
+  /*内容为“.”就是一个英文的句号而已。也可以不写。*/
+  display: block;
+  /*加入的这个元素转换为块级元素。*/
+  clear: both;
+  /*清除左右两边浮动。*/
+  visibility: hidden;
+  /*可见度设为隐藏。注意它和display:none;是有区别的。visibility:hidden;仍然占据空间，只是看不到而已；*/
+  height: 0;
+  /*高度为0；*/ }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+h1, h2 {
+  font-weight: normal; }
+
+ul {
+  list-style-type: none;
+  padding: 0; }
+
+li {
+  display: inline-block; }
+
+a {
+  color: #000;
+  text-decoration: none; }
+
+img {
+  width: 100%;
+  border: none;
+  vertical-align: middle; }
+
+#evt_container {
+  position: relative;
+  width: 10rem;
+  overflow: hidden;
+  margin: 0 auto; }
+
+#evt_container * {
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  -webkit-tap-highlight-color: transparent;
+  tap-highlight-color: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-focus-ring-color: transparent;
+  focus-ring-color: transparent;
+  resize: none;
+  outline: 0; }
+
+#evt_container *:before, #evt_container *:after {
+  box-sizing: border-box; }
+
+#evt_container a:focus {
+  outline: thin dotted; }
+
+#evt_container a:active, #evt_container a:hover {
+  outline: 0; }
+
+#evt_loading {
+  text-align: center;
+  margin-top: 50%;
+  position: static;
+  color: #000000;
+  font-size: 0.5rem; }
+
+html, body, #evt_container, #evt_content {
+  height: 100%; }
+
+#evt_content {
+  background: #191e3c;
+  /*头部*/ }
+  #evt_content .sec {
+    position: relative; }
+  #evt_content .sec-video {
+    height: 100%;
+    z-index: 1; }
+  #evt_content .cards {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 11110;
+    width: 10rem;
+    display: none;
+    height: 17.78667rem;
+    background: url("../images/cardBg-1.jpg") no-repeat;
+    background-size: 100%;
+    overflow-y: scroll; }
+    #evt_content .cards .Letter-top {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 10rem;
+      z-index: 5; }
+    #evt_content .cards .Letter-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 10rem;
+      z-index: 2; }
+    #evt_content .cards .letters {
+      position: absolute;
+      top: 1.06667rem;
+      left: 1.2rem;
+      width: 7.6rem;
+      height: 11.73333rem;
+      z-index: 3; }
+      #evt_content .cards .letters .item {
+        width: 7.6rem;
+        height: 11.73333rem; }
+        #evt_content .cards .letters .item .content {
+          position: relative; }
+        #evt_content .cards .letters .item .words {
+          position: absolute;
+          width: 3.57333rem;
+          height: 2.4rem;
+          top: 3.33333rem;
+          left: 0.66667rem;
+          z-index: 10;
+          color: #fff;
+          font-size: 0.26667rem; }
+          #evt_content .cards .letters .item .words textarea {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: none;
+            color: #fff;
+            font-size: 0.26667rem;
+            padding: 0.06667rem;
+            border: #fff 0.00133rem solid;
+            display: none; }
+          #evt_content .cards .letters .item .words .text {
+            position: absolute; }
+        #evt_content .cards .letters .item .t-title {
+          position: absolute;
+          top: 2.13333rem;
+          left: 0.66667rem;
+          color: #fff;
+          font-size: 0.30667rem; }
+        #evt_content .cards .letters .item .tips {
+          position: absolute;
+          top: 6.13333rem;
+          left: 0.66667rem;
+          color: #fff;
+          font-size: 0.24rem; }
+          #evt_content .cards .letters .item .tips span {
+            color: #f5d63e; }
+        #evt_content .cards .letters .item .froms {
+          position: absolute;
+          top: 6.66667rem;
+          right: 0.66667rem;
+          color: #fff;
+          font-size: 0.26667rem; }
+          #evt_content .cards .letters .item .froms span {
+            color: #f5d63e; }
+    #evt_content .cards .b-btns {
+      position: absolute;
+      width: 3.86667rem;
+      top: 13.06667rem; }
+    #evt_content .cards .btn-write {
+      left: -0.66667rem; }
+    #evt_content .cards .btn-cheng {
+      left: auto;
+      right: -0.66667rem; }
+    #evt_content .cards .btn-ok {
+      top: 14.66667rem;
+      left: 2rem; }

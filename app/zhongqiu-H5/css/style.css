@@ -1,0 +1,386 @@
+.wrap{max-width: 750px; width: 100%; height: 100%; margin: 0 auto; overflow: hidden;}
+
+input {outline: none;}textarea {outline: none;}
+.inputbtn {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    display: none;
+    top:0;
+    margin: auto 48% auto 27%;
+    width:70%;
+    height: 34%;
+}
+.button6{top:20%;height: 60%; margin: auto 48% auto 0;}
+/*.jumpbtn {*/
+/*top: 31%;*/
+/*margin: auto 52% auto 30%;*/
+/*width: 10%;*/
+/*height: 36%;*/
+/*!*-webkit-transform: translate(0, 222%);*!*/
+/*}*/
+.btnreplay {
+    position: absolute;
+    top: 43%;
+    left: -7%;
+    margin: auto 52% auto 30%;
+    width: 25%;
+    height: 49%;
+    /*-webkit-transform: translate(0, 222%);*/
+}
+
+.btnshare {
+    position: absolute;
+    top: 43%;
+    left: 22%;
+    margin: auto 52% auto 30%;
+    width: 25%;
+    height: 49%;
+    /*-webkit-transform: translate(0, 222%);*/
+}
+
+#back {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    bottom: 10%;
+    background: url(../imgs/back.jpg) no-repeat center;
+    background-size: 100%;
+    z-index: 930;
+}
+
+.btns {
+    position: relative;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 13%;
+    background: url(../imgs/btn.png) no-repeat center;
+    background-size: 70%;
+    z-index: 920;
+}
+
+#lastimg {
+    text-align: center;
+    display: block;
+    margin: 5% auto 0;
+    width: 85%;
+    z-index: 920;
+}
+html,body{width: 100%; height: 100%;}
+/*编辑贺卡*/
+.cards { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1000; display: none;  }
+.cards.cards-ok{z-index: 1010;}
+.cards img{width: 100%;}
+.cards .Letter-top { position: absolute; top: 0; left: 0; width:100%; z-index: 5; }
+.cards .Letter-bg{ position: absolute; top:1%; left: 0; width:100%; z-index: 2; }
+
+.cards .letters{ position: relative; width: 77%; margin:5% auto 0; z-index: 3; }
+.cards .content{width: 100%;}
+.cards .content div{position: absolute;}
+.cards .item{width: 100%; height: 100%; }
+.cards .t-title{top: 13%; width: 100%; text-align: center; color: #fff; font-size: 14px; z-index: 1;}
+.cards .words{top: 22%; left:6%; width: 48%; height: 20%; color: #fff; font-size: 14px; z-index: 1;}
+.cards .words .text{width: 100%; height: 100%;color: #fff;font-size: 12px; background: none; padding: 5px;  }
+.cards .words textarea{width: 100%; height: 100%;color: #fff;font-size: 12px; background: none; border: #dedde4 1px solid; padding: 5px; display: none;}
+.cards .words samp{ font-size: 12px; display: none;}
+.cards .words samp span{color: #f5d63e;}
+.cards .froms{position: absolute; top: 50%; right: 6%;color: #fff; font-size: 14px; z-index: 1;}
+.cards .froms span{color: #f5d63e;}
+
+.cards-end .text.myWrite{color: #f5d63e !important;}
+
+.zhongqiu-btn{position: relative; width: 100%; height:83px; margin-top: 7%;}
+
+.b-btns{position: absolute; width: 45%; left: -5%;}
+.b-btns.btn-cheng{ left: auto; right: -5%;}
+.b-btns.btn-ty{ width: auto; top: 65%; left: 30%; letter-spacing:1px}
+.b-btns.btn-ty span{color: #fff; padding: 10px 25px; line-height: 24px; background: #365cff; text-align: center; border-radius:40px;}
+.b-btns.btn-ty.zhidao{top: auto; bottom:20%; left: 34%;}
+.b-btns.btn-ty b{color: #fff; padding: 10px 30px; line-height: 24px; text-align: center;}
+
+
+/*贺卡制作完成*/
+.cardsBgs{position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;}
+.cards.cards-complete .letters{height: 100%;}
+.cards.cards-complete .letters .content{ width:100%; height: 100%;}
+
+.cards.cards-complete .item{ min-height: 400px; max-height: 450px; height: 70%;}
+.cards.cards-complete .btn-back{ top: 15%; left: 27%; font-size: 14px;}
+.cards.cards-complete .btn-fyue{top: 67%; left: -10%;}
+.cards.cards-complete .btn-send{top: 67%; left: auto; right: -10%;}
+.cards.cards-complete .btn-xfan{ top: 45%; left: -4%;}
+.cards.cards-complete .btn-sb{ top: 45%; left: auto; right: -4%;}
+
+.cards.cards-complete .zhongqiu-btn{ margin-top: 0;}
+.cards.cards-complete .Letter-bg{}
+
+
+
+.card-tips{top: 0; left: 0; position: absolute; width: 100%; height: 101%; background:url(../images/tips.png) center top no-repeat; background-size: cover; z-index: 1100; display: none; }
+
+.share{top: 0; left: 0; position: absolute; width: 100%; height: 101%; background:url(../images/share.png) center top no-repeat ; background-size: cover; z-index: 1100; display: none; }
+
+
+.content{position: relative; width: 100%; height: 100%;}
+.sharemask {
+    display: none;
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 102%;
+    height: 105%;
+    background: url(../imgs/sharemask.png) no-repeat center;
+    background-size: cover;
+    z-index: 998;
+}
+
+.landscape-tip {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    z-index: 1000;
+}
+
+.landtip {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 292px;
+    height: 209px;
+    background: url('../imgs/land_tip.png') no-repeat center center;
+    -webkit-transform: translate(-50%, -50%);
+    z-index: 1001;
+}
+
+#landscape_tip {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    width: 40%;
+    /*transform:rotate(90deg) ;*/
+    /*-webkit-transform:rotate(90deg) ; !* Safari 和 Chrome *!*/
+}
+
+#sharestuff {
+    position: absolute;
+    top: 0;
+    right: 5%;
+    width: 50%;
+}
+
+#music {
+    width: 20%;
+    height: 10%;
+    background: url(../imgs/music_on.png) no-repeat center;
+    background-size: 100%;
+    position: absolute;
+    bottom: 8%;
+    right: 0;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg); /* Safari 和 Chrome */
+    z-index: 930;
+}
+
+.logo {
+    width: 20%;
+    height: 4%;
+    position: absolute;
+    background: url("../imgs/logo.png") no-repeat;
+    background-size: 100%;
+    bottom: 13%;
+    left: 0;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg); /* Safari 和 Chrome */
+    z-index: 930;
+}
+
+#splash {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #191e3c url("../imgs/loading.gif") center no-repeat ;
+    background-size: 100%;
+    z-index: 920;
+}
+
+.progress-bar {
+    background-color: #1a1a1a;
+    position: absolute;
+    left: 25%;
+    top: 80%;
+    height: 15px;
+    padding: 5px;
+    width: 50%;
+    /*margin: 0 -175px;         */
+    border-radius: 5px;
+    box-shadow: 0 1px 5px #000 inset, 0 1px 0 #444;
+}
+
+.progress-bar span {
+    display: block;
+    height: 100%;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset;
+    transition: width .4s ease-in-out;
+    background-color: #34c2e3;
+}
+
+.stripes span {
+    background-size: 30px 30px;
+    background-image: linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%,
+    transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%,
+    transparent 75%, transparent);
+
+    animation: animate-stripes 1s linear infinite;
+}
+
+.startbtn {
+    top: 0;
+    margin: auto;
+    background: url("../imgs/startbtn1.png") no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    transform-origin: 78.1% 60.1%;
+    /*transform: scale(1.2,1.2);*/
+    /*-webkit-transform:scale(1.2,1.2); !* Safari 和 Chrome *!*/
+    animation: animate-startbtn 1s ease-in-out 0s infinite alternate;
+    -webkit-animation: animate-startbtn 1s ease-in-out 0s infinite alternate;
+    /*-webkit-transform: translate(0, 222%);*/
+}
+
+.loadingback {
+    transform-origin: 41.3% 42.6%;
+    width: 25%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    transform: scale(1.5, 1.5);
+    -webkit-transform: scale(1.5, 1.5); /* Safari 和 Chrome */
+}
+
+.loadinglight {
+    width: 25%;
+    transform-origin: 100% 50%;
+    position: absolute;
+    right: 0;
+    top: 45%;
+    transform: rotate(7deg);
+    -webkit-transform: rotate(7deg); /* Safari 和 Chrome */
+
+    animation: animate-light 2s ease-in-out 0s infinite alternate;
+    -webkit-animation: animate-light 2s ease-in-out 0s infinite alternate; /* Safari 和 Chrome */
+}
+
+.loadinghand {
+    width: 25%;
+    transform-origin: 41.3% 42.6%;
+    position: absolute;
+    left: -3%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    /*width: 100%;*/
+
+    transform: rotate(4deg) scale(2, 2);
+    -webkit-transform: rotate(4deg) scale(1.5, 1.5); /* Safari 和 Chrome */
+    animation: animate-hand 0.2s ease-in-out 0s infinite alternate;
+    -webkit-animation: animate-hand 0.2s ease-in-out 0s infinite alternate; /* Safari 和 Chrome */
+
+}
+
+.percent {
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg); /* Safari 和 Chrome */
+    font-size: 2rem;
+    color: #f7db3c;
+    z-index: 990;
+    top: 0;
+    bottom: 0;
+    left: 41%;
+    width: 30%;
+    text-align: center;
+    height: 7%;
+    margin: auto;
+    position: absolute;
+
+}
+
+@keyframes animate-stripes {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 60px 0;
+    }
+}
+
+@keyframes animate-light {
+    0% {
+        transform: rotate(7deg);
+        -webkit-transform: rotate(7deg); /* Safari 和 Chrome */
+    }
+    100% {
+        transform: rotate(-7deg);
+        -webkit-transform: rotate(-7deg); /* Safari 和 Chrome */
+    }
+}
+
+@keyframes animate-hand {
+    0% {
+
+        transform: rotate(1deg) scale(2, 2);
+        -webkit-transform: rotate(1deg) scale(2, 2); /* Safari 和 Chrome */
+    }
+    100% {
+        transform: rotate(-1deg) scale(2, 2);
+        -webkit-transform: rotate(-1deg) scale(2, 2); /* Safari 和 Chrome */
+    }
+}
+
+@keyframes animate-startbtn {
+    0% {
+        transform: scale(0.95, 0.95);
+        -webkit-transform: scale(0.95, 0.95); /* Safari 和 Chrome */
+    }
+    100% {
+        transform: scale(1, 1);
+        -webkit-transform: scale(1, 1); /* Safari 和 Chrome */
+    }
+}
+
+/*#container_video {*/
+/*position: absolute;*/
+/*width: 780px;*/
+/*height: 1120px;*/
+/*top: 0;*/
+/*left: 0;*/
+/*display: none;*/
+/*}*/
+/*#video {*/
+/*position: absolute;*/
+/*width: 100%;*/
+/*height: 100%;*/
+/*top: 0;*/
+/*left: 0;*/
+/*background-color: black;*/
+/*object-fit: fill;*/
+/*}*/

@@ -1,0 +1,64 @@
+@function px2rem($n) {
+  @return ($n * 10 / 750) * 1rem; //设计稿一般都是750宽
+}
+
+@mixin font-dpr($font-size){
+  font-size: $font-size;
+
+  [data-dpr="2"] & {
+    font-size: $font-size * 2;
+  }
+
+  [data-dpr="3"] & {
+    font-size: $font-size * 3;
+  }
+
+}
+
+#evt_content{  background:url("../images/bg.jpg") repeat; background-size: 100%;
+  div{position: absolute;}
+  img{width:100%;}
+  .sec{position: relative; }
+
+  .sec-top{ height: px2rem(785);
+    .s-title{ width: px2rem(550); top:px2rem(245); left: px2rem(100); }
+  }
+  .sec-1{ height: px2rem(532);
+    .yuebing{ width: px2rem(555); top:0; left: px2rem(100); }
+    .price{ width: px2rem(494); top:px2rem(316); left: px2rem(128); }
+    .go-buy{ width: px2rem(271); top:px2rem(418); left: px2rem(237); }
+  }
+  .sec-2{ height: px2rem(624);
+    .cake{ width: px2rem(459); top:px2rem(20); left: px2rem(150); }
+    .price{ width: px2rem(494); top:px2rem(396); left: px2rem(128); }
+    .go-buy{ width: px2rem(271); top:px2rem(500); left: px2rem(237); }
+  }
+
+  .sec-footer{ position: relative; padding-bottom: px2rem(40); z-index:1;
+    .code{position: absolute; width: px2rem(160); right: px2rem(10); bottom: px2rem(100);}
+    .txt{ position: relative; width:px2rem(700); padding-top: px2rem(100); margin: 0 auto;  color: #fff;
+      h2{font-size: px2rem(28); font-weight: normal; }
+      p{ font-size: px2rem(23); padding-left: px2rem(35); line-height:px2rem(40);  text-indent: px2rem(-35);
+        margin:px2rem(5) 0;}
+    }
+  }
+
+}
+
+
+
+
+/*浮动*/
+.floater{ position: fixed; width: px2rem(145); height: px2rem(145); bottom: px2rem(20); right: px2rem(10);  z-index: 11; cursor: pointer; display: none;
+  img{ width: 100%;}
+  .tips{ position: absolute; width: px2rem(50); height: px2rem(50); right:px2rem(-5); top:px2rem(-5); border-radius: 50%; background:url("../images/tips.png") center no-repeat; background-size: 100%; text-align: center; z-index: 12;
+    span{display: block; font-size:px2rem(20); color: #fff; line-height:px2rem(50);}
+  }
+}
+
+
+
+
+@media screen and (max-width: 320px) {
+
+}

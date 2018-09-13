@@ -1,0 +1,64 @@
+#evt_content {
+  width: 10rem;
+  background: url("../images/bg.jpg") repeat;
+  background-size: 100%; }
+  #evt_content div {
+    position: absolute; }
+  #evt_content img {
+    width: 100%; }
+  #evt_content .sec {
+    position: relative; }
+  #evt_content .sec-top {
+    padding-top: 0.66667rem; }
+    #evt_content .sec-top .c-top01 {
+      position: relative;
+      width: 10rem;
+      margin: 0 auto; }
+    #evt_content .sec-top .c-top02 {
+      position: relative;
+      width: 10rem;
+      margin: 0 auto; }
+  #evt_content .sec-main .c-top03 {
+    position: relative;
+    width: 10rem;
+    margin: 0 auto; }
+  #evt_content .sec-main .c-top04 {
+    position: relative;
+    width: 9.68rem;
+    margin: 0 auto; }
+  #evt_content .sec-main .buy-btn {
+    width: 2.29333rem;
+    height: 1.2rem;
+    top: 0.66667rem;
+    right: 0; }
+    #evt_content .sec-main .buy-btn a {
+      display: block;
+      width: 100%;
+      height: 100%; }
+  #evt_content .sec-main .btn-2 {
+    top: 2.53333rem; }
+  #evt_content .sec-main .c-top05 {
+    position: relative;
+    width: 10rem;
+    margin: 0 auto;
+    padding-top: 0.66667rem;
+    padding-bottom: 5.73333rem; }
+  #evt_content .sec-footer {
+    padding-bottom: 1.33333rem; }
+    #evt_content .sec-footer .c-ewm {
+      position: relative;
+      width: 3.58667rem;
+      margin: 0 auto; }
+    #evt_content .sec-footer .txt {
+      position: relative;
+      width: 9.33333rem;
+      margin: 0.66667rem auto 0;
+      color: #79392c;
+      text-align: center; }
+      #evt_content .sec-footer .txt h2 {
+        font-size: 0.32rem;
+        line-height: 0.53333rem;
+        font-weight: normal; }
+      #evt_content .sec-footer .txt p {
+        line-height: 0.53333rem;
+        font-size: 0.29333rem; }

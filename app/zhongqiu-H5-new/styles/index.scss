@@ -1,0 +1,77 @@
+@function px2rem($n) {
+  @return ($n * 10 / 750) * 1rem; //设计稿一般都是750宽
+}
+
+
+body{
+  margin:0;
+  font-size:14px;
+  font-family: "Microsoft Yahei", simhei, Arial;
+}
+.clearfix:after{
+  content: "";     /*内容为“.”就是一个英文的句号而已。也可以不写。*/
+  display: block;   /*加入的这个元素转换为块级元素。*/
+  clear: both;     /*清除左右两边浮动。*/
+  visibility: hidden;      /*可见度设为隐藏。注意它和display:none;是有区别的。visibility:hidden;仍然占据空间，只是看不到而已；*/
+  height: 0;     /*高度为0；*/
+}
+*{margin: 0; padding: 0;}
+
+h1, h2 { font-weight: normal;}
+ul { list-style-type: none; padding: 0; }
+li { display: inline-block; }
+a{color: #000; text-decoration: none; }
+img{width: 100%;border:none;vertical-align:middle}
+
+
+#evt_container{position:relative;width:10rem; overflow:hidden; margin:0 auto;}
+#evt_container *{  box-sizing: border-box;  background-repeat: no-repeat;   -webkit-tap-highlight-color: rgba(0,0,0,0);  tap-highlight-color: rgba(0,0,0,0);  -webkit-appearance: none;  -moz-appearance: none;  appearance: none;  -webkit-focus-ring-color: rgba(0,0,0,0);  focus-ring-color: rgba(0,0,0,0);  resize: none;  outline: 0;}
+#evt_container *:before, #evt_container *:after { box-sizing: border-box;}
+#evt_container a:focus {outline: thin dotted;}
+#evt_container a:active, #evt_container a:hover {outline: 0;}
+
+#evt_loading{text-align:center; margin-top:50%; position:static; color:#000000; font-size:0.5rem;}
+
+html,body,#evt_container,#evt_content{height: 100%;}
+
+#evt_content{background:#191e3c;
+  /*头部*/
+
+  .sec{position: relative; }
+  .sec-video{height: 100%; z-index: 1;}
+  .cards{ position: absolute; top: 0; left: 0; z-index: 11110; width: px2rem(750); display: none;
+    height: px2rem(1334); background:url("../images/cardBg-1.jpg") no-repeat; background-size: 100%; overflow-y: scroll;
+    .Letter-top{position: absolute; top:0; left:0; width: px2rem(750); z-index: 5;}
+    .Letter-bg{position: absolute; top:0; left:0; width: px2rem(750); z-index: 2;}
+    .letters{position: absolute; top: px2rem(80); left: px2rem(90); width: px2rem(570); height: px2rem(880); z-index: 3;
+      .item{ width: px2rem(570); height: px2rem(880);
+        .content{position: relative;}
+        .words{position: absolute; width: px2rem(268); height: px2rem(180); top: px2rem(250); left: px2rem(50);  z-index: 10; color: #fff; font-size: px2rem(20);
+          textarea{position: absolute; top:0; width: 100%; height: 100%; background: none; color: #fff; font-size: px2rem(20); padding: px2rem(5);border: #fff px2rem(0.1) solid; display: none;}
+          .text{position: absolute;}
+        }
+        .t-title{position: absolute; top:px2rem(160); left: px2rem(50); color: #fff; font-size: px2rem(23);}
+        .tips{position: absolute; top:px2rem(460); left: px2rem(50); color: #fff; font-size: px2rem(18);
+          span{ color: #f5d63e;}
+        }
+        .froms{position: absolute; top:px2rem(500); right: px2rem(50); color: #fff; font-size: px2rem(20);
+          span{ color: #f5d63e;}
+        }
+      }
+    }
+
+    .b-btns{position: absolute; width: px2rem(290); top:px2rem(980);}
+    .btn-write{ left: px2rem(-50)}
+    .btn-cheng{ left: auto; right: px2rem(-50)}
+    .btn-ok{ top:px2rem(1100); left: px2rem(150)}
+  }
+
+
+}
+
+
+
+
+@media screen and (max-width: 320px) {
+
+}

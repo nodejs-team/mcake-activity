@@ -1,0 +1,29 @@
+CACHE MANIFEST
+    ./music/music.mp3
+    ./video4.mp4
+    ./images/card-1.png
+    ./images/card-2.png
+    ./images/card-3.png
+    ./images/card-4.png
+    ./images/cardBg-1.jpg
+    ./images/cardBg-2.jpg
+    ./images/cardBg-3.jpg
+    ./images/cardBg-4.jpg
+    ./images/Letter-bg.png
+    ./images/share.png
+    ./images/tips.png
+    ./images/loading-end.jpg
+    ./imgs/loading.gif
+
+    ./css/swiper.min.css
+    ./js/jquery.min.js
+    ./js/mmd.videoplayer.min.1.0.1.js
+    ./js/mmd-plugin.min.1.0.2.js
+    ./js/swiper.min.js
+
+
+NETWORK:
+
+	*
+
+FALLBACK:

@@ -1,0 +1,97 @@
+@charset "UTF-8";
+#evt_content {
+  background: url("../images/bg.jpg") repeat;
+  background-size: 100%; }
+  #evt_content div {
+    position: absolute; }
+  #evt_content img {
+    width: 100%; }
+  #evt_content .sec {
+    position: relative; }
+  #evt_content .sec-top {
+    height: 10.46667rem; }
+    #evt_content .sec-top .s-title {
+      width: 7.33333rem;
+      top: 3.26667rem;
+      left: 1.33333rem; }
+  #evt_content .sec-1 {
+    height: 7.09333rem; }
+    #evt_content .sec-1 .yuebing {
+      width: 7.4rem;
+      top: 0;
+      left: 1.33333rem; }
+    #evt_content .sec-1 .price {
+      width: 6.58667rem;
+      top: 4.21333rem;
+      left: 1.70667rem; }
+    #evt_content .sec-1 .go-buy {
+      width: 3.61333rem;
+      top: 5.57333rem;
+      left: 3.16rem; }
+  #evt_content .sec-2 {
+    height: 8.32rem; }
+    #evt_content .sec-2 .cake {
+      width: 6.12rem;
+      top: 0.26667rem;
+      left: 2rem; }
+    #evt_content .sec-2 .price {
+      width: 6.58667rem;
+      top: 5.28rem;
+      left: 1.70667rem; }
+    #evt_content .sec-2 .go-buy {
+      width: 3.61333rem;
+      top: 6.66667rem;
+      left: 3.16rem; }
+  #evt_content .sec-footer {
+    position: relative;
+    padding-bottom: 0.53333rem;
+    z-index: 1; }
+    #evt_content .sec-footer .code {
+      position: absolute;
+      width: 2.13333rem;
+      right: 0.13333rem;
+      bottom: 1.33333rem; }
+    #evt_content .sec-footer .txt {
+      position: relative;
+      width: 9.33333rem;
+      padding-top: 1.33333rem;
+      margin: 0 auto;
+      color: #fff; }
+      #evt_content .sec-footer .txt h2 {
+        font-size: 0.37333rem;
+        font-weight: normal; }
+      #evt_content .sec-footer .txt p {
+        font-size: 0.30667rem;
+        padding-left: 0.46667rem;
+        line-height: 0.53333rem;
+        text-indent: -0.46667rem;
+        margin: 0.06667rem 0; }
+
+/*浮动*/
+.floater {
+  position: fixed;
+  width: 1.93333rem;
+  height: 1.93333rem;
+  bottom: 0.26667rem;
+  right: 0.13333rem;
+  z-index: 11;
+  cursor: pointer;
+  display: none; }
+  .floater img {
+    width: 100%; }
+  .floater .tips {
+    position: absolute;
+    width: 0.66667rem;
+    height: 0.66667rem;
+    right: -0.06667rem;
+    top: -0.06667rem;
+    border-radius: 50%;
+    background: url("../images/tips.png") center no-repeat;
+    background-size: 100%;
+    text-align: center;
+    z-index: 12; }
+    .floater .tips span {
+      display: block;
+      font-size: 0.26667rem;
+      color: #fff;
+      line-height: 0.66667rem; }

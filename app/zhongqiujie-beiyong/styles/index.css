@@ -379,11 +379,13 @@
     .Select .btns .go-car {
       background: #f7e244;
       border-bottom-left-radius: 0.13333rem;
+      border-bottom-right-radius: 0.13333rem;
       float: left;
       color: #4a4a4a; }
     .Select .btns .go-buy {
       background: #3ac8e0;
       border-bottom-right-radius: 0.13333rem;
+      border-bottom-left-radius: 0.13333rem;
       float: left;
       color: #fff; }
     .Select .btns .go-buy.single {

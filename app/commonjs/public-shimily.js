@@ -28,6 +28,37 @@
     }
     window.addEventListener("onorientationchange" in window ? "orientationchange" : "resize", hengshuping, false);
 
+    /*
+     *领券提示弹窗
+     */
+    function lingquan(ele1,ele2,ele3) {
+        this.$ele1 = $(ele1);
+        this.$ele2 = $(ele2);
+        this.$ele3 = $(ele3);
+        this._Init();
+    }
+    lingquan.prototype={
+        DialogShow:function () {
+            this.$ele1.fadeIn(500);
+            this.$ele3.fadeIn(500);
+        },
+        DialogHide:function () {
+            this.$ele1.fadeOut(20);
+            this.$ele2.fadeOut(20);
+        },
+        _Init:function () {
+            var self = this;
+            this.$ele1.click(function () {
+                self.DialogHide();
+            });
+            this.$ele3.click(function () {
+                self.DialogHide();
+            });
+        }
+    };
+
+    window.lingquan = lingquan;
+    /*实例化： new lingquan('.Dialog-share-cover','.Dialog-share');*/
 
 
     /*
@@ -66,6 +97,8 @@
     };
     window.DialogTip = DialogTip;
    /*实例化 new DialogTip(".Dialogbg-tip",".Dialog-tip",1);  n<=$item的length */
+
+
 
 
     

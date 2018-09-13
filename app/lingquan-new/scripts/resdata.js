@@ -1,0 +1,22 @@
+var resData = [
+    {
+        "name":"quan-2_png",
+        "type":"image",
+        "url":"quan-2.png"
+    },
+    {
+        "name":"bg-1_png",
+        "type":"image",
+        "url":"bg-1.png"
+    },
+    {
+        "name":"bg-2_png",
+        "type":"image",
+        "url":"bg-2.png"
+    },
+    {
+        "name":"quan-1_png",
+        "type":"image",
+        "url":"quan-1.png"
+    }
+];

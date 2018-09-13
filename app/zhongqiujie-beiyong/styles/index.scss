@@ -171,8 +171,8 @@
   s{color: #7e7e7e;}
   .btns{ width: 100%; position: absolute; bottom:px2rem(0); display: flex; height: px2rem(100); line-height: px2rem(100); flex-direction: row;  text-align: center; font-size: px2rem(30); color: #fff;
     div{ flex: 1; cursor: pointer; width: 50%;}
-    .go-car{background:#f7e244; border-bottom-left-radius:px2rem(10); float: left; color: #4a4a4a; }
-    .go-buy{background:#3ac8e0; border-bottom-right-radius:px2rem(10); float: left; color: #fff;}
+    .go-car{background:#f7e244; border-bottom-left-radius:px2rem(10); border-bottom-right-radius:px2rem(10); float: left; color: #4a4a4a; }
+    .go-buy{background:#3ac8e0; border-bottom-right-radius:px2rem(10); border-bottom-left-radius:px2rem(10); float: left; color: #fff;}
     .go-buy.single{border-bottom-left-radius:px2rem(20); background: #ffe32a; color: #000;}
   }
 

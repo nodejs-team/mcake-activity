@@ -1,0 +1,366 @@
+@charset "UTF-8";
+#evt_content {
+  background: url("../images/bg.jpg") no-repeat;
+  background-size: 100%;
+  /*价格*/ }
+  #evt_content div {
+    position: absolute; }
+  #evt_content img {
+    width: 100%; }
+  #evt_content .sec {
+    position: relative; }
+  #evt_content .sec-top {
+    height: 8.69333rem;
+    background: url("../images/banner.png");
+    background-size: 100%;
+    z-index: 1;
+    overflow: hidden; }
+  #evt_content .sec-1 {
+    height: 11.2rem;
+    padding-top: 0.66667rem; }
+    #evt_content .sec-1 div {
+      position: relative; }
+    #evt_content .sec-1 .cake-0 {
+      width: 7.33333rem;
+      margin: 0.66667rem auto; }
+    #evt_content .sec-1 .xin {
+      width: 7.09333rem;
+      position: absolute;
+      top: 8rem;
+      left: 1.33333rem; }
+    #evt_content .sec-1 .price {
+      position: absolute;
+      top: 8.66667rem;
+      left: 2.4rem; }
+      #evt_content .sec-1 .price .price_num {
+        width: 2.4rem;
+        margin: 0.26667rem auto 0; }
+      #evt_content .sec-1 .price .buy_btn_box {
+        width: 4.8rem;
+        margin: 0.26667rem auto 0; }
+      #evt_content .sec-1 .price .num {
+        color: #9a3a25; }
+      #evt_content .sec-1 .price .reduce {
+        background: url("../images/reduce.png") center no-repeat;
+        background-size: 80%; }
+      #evt_content .sec-1 .price .nopoint {
+        background: url("../images/add.png") center no-repeat !important;
+        background-size: 80% !important; }
+  #evt_content .sec-2 {
+    position: relative;
+    padding-top: 0.66667rem; }
+    #evt_content .sec-2 .khaoli {
+      width: 10rem;
+      position: relative; }
+    #evt_content .sec-2 .hongbao {
+      width: 10rem;
+      position: relative;
+      margin: 0.4rem auto 0; }
+      #evt_content .sec-2 .hongbao .hb {
+        position: absolute;
+        width: 1.46667rem;
+        height: 0.50667rem;
+        line-height: 0.48rem;
+        text-align: center;
+        color: #000;
+        bottom: 1.16rem;
+        font-size: 0.29333rem; }
+      #evt_content .sec-2 .hongbao .hb1 {
+        left: 1.14667rem; }
+      #evt_content .sec-2 .hongbao .hb2 {
+        left: 4.33333rem; }
+      #evt_content .sec-2 .hongbao .hb3 {
+        left: 7.46667rem; }
+      #evt_content .sec-2 .hongbao .hb.on {
+        color: #a19d9d; }
+  #evt_content .sec-main {
+    padding-top: 1.33333rem; }
+    #evt_content .sec-main .se-title {
+      position: relative;
+      width: 10rem;
+      margin: 0 auto;
+      padding: 0.26667rem 0; }
+    #evt_content .sec-main .row {
+      position: relative; }
+    #evt_content .sec-main .row1 {
+      height: 6rem; }
+      #evt_content .sec-main .row1 .cake {
+        width: 6.76rem;
+        top: 0;
+        right: 0;
+        z-index: 1; }
+      #evt_content .sec-main .row1 .price {
+        top: 0.4rem;
+        left: 0.26667rem; }
+        #evt_content .sec-main .row1 .price .title {
+          width: 4.70667rem; }
+        #evt_content .sec-main .row1 .price ul.price_p li.cur {
+          background: #dd8e79 !important; }
+        #evt_content .sec-main .row1 .price .price_num b, #evt_content .sec-main .row1 .price h2, #evt_content .sec-main .row1 .price h2 span, #evt_content .sec-main .row1 .price s, #evt_content .sec-main .row1 .price .price_num dl dt span, #evt_content .sec-main .row1 .price .huangou {
+          color: #8f4531; }
+        #evt_content .sec-main .row1 .price .reduce {
+          background: url("../images/reduce-1.png") center no-repeat;
+          background-size: 80%; }
+        #evt_content .sec-main .row1 .price .nopoint {
+          background: url("../images/add-1.png") center no-repeat;
+          background-size: 80%; }
+    #evt_content .sec-main .row2 {
+      height: 6rem; }
+      #evt_content .sec-main .row2 .cake {
+        width: 5.37333rem;
+        top: 0.26667rem;
+        left: 0;
+        z-index: 1; }
+      #evt_content .sec-main .row2 .icon-618 {
+        width: 2.49333rem;
+        top: 5.06667rem;
+        left: 0.53333rem;
+        z-index: 1; }
+      #evt_content .sec-main .row2 .price {
+        top: 0.26667rem;
+        left: 4.66667rem; }
+        #evt_content .sec-main .row2 .price .title {
+          width: 4.8rem; }
+        #evt_content .sec-main .row2 .price ul.price_p li.cur {
+          background: #f3d157 !important; }
+        #evt_content .sec-main .row2 .price .price_num b, #evt_content .sec-main .row2 .price h2, #evt_content .sec-main .row2 .price h2 span, #evt_content .sec-main .row2 .price s, #evt_content .sec-main .row2 .price .price_num dl dt span, #evt_content .sec-main .row2 .price .huangou {
+          color: #eba600; }
+        #evt_content .sec-main .row2 .price .reduce {
+          background: url("../images/reduce-2.png") center no-repeat;
+          background-size: 80%; }
+        #evt_content .sec-main .row2 .price .nopoint {
+          background: url("../images/add-2.png") center no-repeat;
+          background-size: 80%; }
+    #evt_content .sec-main .row3 {
+      height: 6rem; }
+      #evt_content .sec-main .row3 .cake {
+        width: 5.88rem;
+        top: 0;
+        right: 0;
+        z-index: 1; }
+      #evt_content .sec-main .row3 .icon-618 {
+        width: 2.52rem;
+        top: 5.33333rem;
+        left: 5.33333rem;
+        z-index: 1; }
+      #evt_content .sec-main .row3 .price {
+        top: 0;
+        left: 0.26667rem;
+        z-index: 2; }
+        #evt_content .sec-main .row3 .price .title {
+          width: 7.09333rem; }
+        #evt_content .sec-main .row3 .price ul.price_p li.cur {
+          background: #f3d157 !important; }
+        #evt_content .sec-main .row3 .price .price_num b, #evt_content .sec-main .row3 .price h2, #evt_content .sec-main .row3 .price h2 span, #evt_content .sec-main .row3 .price s, #evt_content .sec-main .row3 .price .price_num dl dt span, #evt_content .sec-main .row3 .price .huangou {
+          color: #eba600; }
+        #evt_content .sec-main .row3 .price .reduce {
+          background: url("../images/reduce-2.png") center no-repeat;
+          background-size: 80%; }
+        #evt_content .sec-main .row3 .price .nopoint {
+          background: url("../images/add-2.png") center no-repeat;
+          background-size: 80%; }
+    #evt_content .sec-main .row4 {
+      height: 6rem; }
+      #evt_content .sec-main .row4 .cake {
+        width: 5.05333rem;
+        top: 0;
+        left: 0;
+        z-index: 1; }
+      #evt_content .sec-main .row4 .icon-618 {
+        width: 2.49333rem;
+        top: 5.06667rem;
+        left: 0.53333rem;
+        z-index: 1; }
+      #evt_content .sec-main .row4 .price {
+        top: 0.93333rem;
+        left: 4.66667rem; }
+        #evt_content .sec-main .row4 .price .title {
+          width: 5.13333rem; }
+        #evt_content .sec-main .row4 .price ul.price_p li.cur {
+          background: #ff944c !important; }
+        #evt_content .sec-main .row4 .price .price_num b, #evt_content .sec-main .row4 .price h2, #evt_content .sec-main .row4 .price h2 span, #evt_content .sec-main .row4 .price s, #evt_content .sec-main .row4 .price .price_num dl dt span, #evt_content .sec-main .row4 .price .huangou {
+          color: #ff7c24; }
+        #evt_content .sec-main .row4 .price .reduce {
+          background: url("../images/reduce-3.png") center no-repeat;
+          background-size: 80%; }
+        #evt_content .sec-main .row4 .price .nopoint {
+          background: url("../images/add-3.png") center no-repeat;
+          background-size: 80%; }
+  #evt_content .sec-zuhe {
+    padding-top: 1.33333rem; }
+    #evt_content .sec-zuhe .se-title {
+      position: relative;
+      width: 10rem;
+      margin: 0 auto;
+      padding: 0.26667rem 0; }
+    #evt_content .sec-zuhe .zuhe {
+      position: relative;
+      width: 9.97333rem;
+      margin: 0 auto;
+      padding: 0.26667rem 0; }
+      #evt_content .sec-zuhe .zuhe ul li {
+        position: relative;
+        margin-bottom: 0.66667rem; }
+        #evt_content .sec-zuhe .zuhe ul li .buy {
+          position: absolute;
+          right: 0.66667rem;
+          bottom: 0.48rem; }
+          #evt_content .sec-zuhe .zuhe ul li .buy span {
+            display: block;
+            width: 1.8rem;
+            margin-bottom: 0.10667rem; }
+    #evt_content .sec-zuhe .kaixueli {
+      position: relative;
+      width: 9.97333rem;
+      margin: 0 auto; }
+  #evt_content .price {
+    position: absolute;
+    width: 5.33333rem;
+    text-align: left;
+    z-index: 2; }
+    #evt_content .price .title {
+      position: relative;
+      width: 4.05333rem;
+      margin: 0.13333rem 0; }
+    #evt_content .price h2 {
+      font-size: 0.37333rem;
+      font-weight: normal;
+      line-height: 0.66667rem;
+      color: #ec3554; }
+      #evt_content .price h2 i {
+        font-size: 0.26667rem;
+        font-style: normal;
+        vertical-align: top; }
+      #evt_content .price h2 span {
+        font-size: 0.53333rem; }
+    #evt_content .price s {
+      font-size: 0.32rem;
+      color: #000;
+      font-weight: normal;
+      line-height: 0.4rem; }
+    #evt_content .price h3 {
+      width: 2.92rem;
+      margin: 0 auto; }
+    #evt_content .price ul.price_p {
+      margin: 0.13333rem auto;
+      color: #000;
+      width: 5.33333rem; }
+    #evt_content .price ul.price_p li {
+      cursor: pointer;
+      float: left;
+      line-height: 0.46667rem;
+      text-align: center;
+      width: 1.2rem;
+      border: #000 1px solid;
+      margin-right: 0.13333rem;
+      background: #fff;
+      color: #000;
+      font-size: 0.29333rem; }
+    #evt_content .price ul.price_p li:last-child {
+      margin-right: 0; }
+    #evt_content .price ul.price_p .bd {
+      width: 1.6rem !important;
+      margin-left: 2rem !important; }
+    #evt_content .price ul.price_p li.cur {
+      background: #dd8e79 !important; }
+    #evt_content .price .price_num {
+      margin: 0;
+      width: 4.53333rem;
+      position: relative; }
+    #evt_content .price .price_num b {
+      font-size: 0.32rem;
+      display: block;
+      float: left;
+      line-height: 0.66667rem;
+      margin-right: 0.13333rem; }
+    #evt_content .price .price_num dl {
+      float: left;
+      padding-left: 0.06667rem; }
+    #evt_content .price .price_num dl dd {
+      background: url("../images/reduce-1.png") center no-repeat;
+      background-size: 80%;
+      cursor: pointer;
+      float: left;
+      width: 0.6rem;
+      height: 0.66667rem; }
+    #evt_content .price .price_num dl dd.nopoint {
+      background: url("../images/add-1.png") center no-repeat;
+      background-size: 80%; }
+    #evt_content .price .price_num dl dt {
+      float: left;
+      height: 0.66667rem;
+      width: 0.66667rem;
+      margin: 0 0.13333rem; }
+    #evt_content .price .price_num dl dt span {
+      display: block;
+      font-size: 0.4rem;
+      background: transparent none repeat scroll 0 0;
+      border: none;
+      color: #ea3554;
+      height: 100%;
+      line-height: 0.66667rem;
+      text-align: center;
+      width: 100%; }
+    #evt_content .price ul.buy_btn_box {
+      overflow: hidden;
+      margin-top: 0.26667rem; }
+    #evt_content .price ul.buy_btn_box li {
+      float: left;
+      margin-right: 0.13333rem;
+      width: 2.29333rem; }
+    #evt_content .price ul.buy_btn_box li:last-child {
+      margin-right: 0; }
+  #evt_content .sec-footer {
+    background-size: 100%;
+    position: relative; }
+    #evt_content .sec-footer .txt {
+      position: relative;
+      width: 8rem;
+      padding-top: 1.06667rem;
+      padding-bottom: 0.66667rem;
+      margin: 0 auto;
+      color: #000; }
+      #evt_content .sec-footer .txt h2 {
+        font-size: 0.37333rem;
+        font-weight: normal; }
+      #evt_content .sec-footer .txt p {
+        font-size: 0.30667rem;
+        padding-left: 0.46667rem;
+        line-height: 0.53333rem;
+        text-indent: -0.46667rem;
+        margin: 0.06667rem 0; }
+
+/*浮动*/
+.floater {
+  position: fixed;
+  width: 1.93333rem;
+  height: 1.93333rem;
+  bottom: 0.26667rem;
+  right: 0.13333rem;
+  z-index: 11;
+  cursor: pointer;
+  display: none; }
+  .floater img {
+    width: 100%; }
+  .floater .tips {
+    position: absolute;
+    width: 0.66667rem;
+    height: 0.66667rem;
+    right: -0.06667rem;
+    top: -0.06667rem;
+    border-radius: 50%;
+    background: url("../images/tips.png") center no-repeat;
+    background-size: 100%;
+    text-align: center;
+    z-index: 12; }
+    .floater .tips span {
+      display: block;
+      font-size: 0.26667rem;
+      color: #fff;
+      line-height: 0.66667rem; }
+
+@media screen and (max-width: 320px) {
+  .sel-li {
+    top: -0.13333rem !important; }
+  i {
+    top: 0.04rem !important; } }
