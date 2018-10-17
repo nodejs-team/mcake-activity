@@ -1,0 +1,32 @@
+@function px2rem($n) {
+  @return ($n * 10 / 750) * 1rem; //设计稿一般都是750宽
+}
+
+
+#evt_content{  background:#fff; background-size: 100%;
+  div{position:absolute;}
+  img{width:100%;}
+  .sec{position: relative; }
+
+  .sec-top{ height: px2rem(620); z-index: 1;
+    .banner-title{width: px2rem(664); top:px2rem(145); left:px2rem(50);}
+  }
+
+  .sec-1{height: px2rem(800); background:#fef5f8;}
+
+  .sec-footer{ position: relative; padding-bottom: px2rem(20); z-index:1;
+    .txt{ position: relative; width:px2rem(700); padding-top: px2rem(50); margin: 0 auto;  color: #5d5d5d;
+      h2{font-size: px2rem(28); font-weight: normal; }
+      p{ font-size: px2rem(23); padding-left: px2rem(35); line-height:px2rem(35);  text-indent: px2rem(-35);
+        margin:px2rem(5) 0;}
+    }
+  }
+}
+
+
+
+
+
+@media screen and (max-width: 320px) {
+
+}

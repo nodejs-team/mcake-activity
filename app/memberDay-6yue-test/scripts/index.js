@@ -45,8 +45,27 @@
 
         /*initScroll();*/
     }
+
     function startLoading(){
-       /* loader = new Loader('images/');
+        loader = new Loader('images/');
+        var domLoad = document.getElementById('evt_loading');
+        domLoad.style.display = 'block';
+        loader.addGroup('preload', resData);
+        loader.on('progress', function(groupName, ix, len){
+            domLoad.innerHTML = parseInt(ix/len*100) + '%';
+        });
+        loader.on('complete', function(groupName){
+            fixImageSrc(loader.getAll());
+            domLoad.style.display = 'none';
+            document.getElementById('evt_content').style.display = 'block';
+            loadComplete();
+        });
+        loader.loadGroup('preload');
+    }
+
+
+   /* function startLoading(){
+       /!* loader = new Loader('images/');
         var domLoad = document.getElementById('evt_loading');
         domLoad.style.display = 'block';
         loader.addGroup('preload', resData);
@@ -56,15 +75,15 @@
         loader.on('complete', function(groupName){
 
         });
-        loader.loadGroup('preload');*/
+        loader.loadGroup('preload');*!/
 
-       /* fixImageSrc(loader.getAll());*/
-       /* domLoad.style.display = 'none';*/
+       /!* fixImageSrc(loader.getAll());*!/
+       /!* domLoad.style.display = 'none';*!/
         document.getElementById('evt_content').style.display = 'block';
         loadComplete();
 
-        /*resdata.js 使用https加载图片有问题*/
-    }
+        /!*resdata.js 使用https加载图片有问题*!/
+    }*/
     startLoading();
 
 

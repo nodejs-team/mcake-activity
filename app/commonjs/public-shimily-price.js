@@ -1,7 +1,7 @@
 /**
  * Created by shimily on 2018/8/30.
  */
-(function($){
+;(function($){
 
 
 
@@ -132,7 +132,6 @@
                 self.disCount = self.disFun(self.bs,self.disArr); /*计算折扣*/
                 var totalPrice =(Oldprice - self.disCount) * self.percent * totalNum;
 
-                console.log(self.percent);
                 $(this).find('.old-price').html(totalOldprice.toFixed(2));
                 $(this).find('.now-price').html(totalPrice.toFixed(2));
 
@@ -242,6 +241,6 @@
     });
 
 
-})(jQuery);
+})(jQuery)
 
 

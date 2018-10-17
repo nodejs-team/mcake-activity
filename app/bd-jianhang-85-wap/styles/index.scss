@@ -27,7 +27,7 @@
     .shaozi{width: px2rem(151); top:0; left: px2rem(20);}
     .banner-title{width: px2rem(526); top:px2rem(150); left: px2rem(71);}
     .card{width: px2rem(750); bottom:px2rem(-130); left:0;}
-
+    .zpin{position: absolute;width: px2rem(100); height: px2rem(100); top: px2rem(360); right:px2rem(60);}
 
   }
   .sec-1{ padding-top:px2rem(150);
@@ -94,7 +94,7 @@
     .buys-qx{position: absolute; top: px2rem(400); left: px2rem(70); width: px2rem(225); }
     .buys-yb{position: absolute; top: px2rem(400); left: px2rem(450); width: px2rem(225);
       .zhekou{position: absolute; bottom: px2rem(58); right: 0; font-size: px2rem(26); color: #ff6800;}
-      .zpin{position: absolute;width: px2rem(100); height: px2rem(100); top: px2rem(-280); right:px2rem(-70);}
+
     }
     .buy-btn{ width: px2rem(200); margin: px2rem(10) auto; background: #5ab7cc; line-height: px2rem(40); border-radius: px2rem(40); text-align: center; color: #fff; font-size: px2rem(20); }
     .buy-btn.on{background: #bcbcbc;}

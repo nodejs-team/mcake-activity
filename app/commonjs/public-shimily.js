@@ -61,8 +61,49 @@
     /*实例化： new lingquan('.Dialog-share-cover','.Dialog-share');*/
 
 
+
     /*
-     *手机端弹窗提示
+     *手机端弹窗提示【通用】
+     */
+    function DialogTy(DialogCover,DialogBox) {  /* n<=$item的length */
+        this.$DialogCover = $(DialogCover);
+        this.$DialogBox = $(DialogBox);
+        this.$close = $(DialogBox).find(".closes");
+        this.$wait = $(DialogBox).find(".go-wait");
+        this._Init();
+    }
+    DialogTy.prototype={
+        DialogTipShow:function () {
+            this.$DialogCover.fadeIn(500);
+            this.$DialogBox.fadeIn(500);
+        },
+        DialogTipHide:function () {
+            this.$DialogCover.fadeOut(20);
+            this.$DialogBox.fadeOut(20);
+        },
+        _Init:function () {
+            var self = this;
+            self.DialogTipShow();
+            this.$close.click(function () {
+                self.DialogTipHide();
+            });
+            this.$DialogCover.click(function () {
+                self.DialogTipHide();
+            });
+            this.$wait.click(function () {
+                self.DialogTipHide();
+            });
+        }
+    };
+    window.DialogTy = DialogTy;
+    /*实例化  例如2018年：tuangou , new DialogTy(".Dialogbg-tip",".Dialog-tip"); */
+
+
+
+
+
+    /*
+     *手机端弹窗提示 成功，失败判断
     */
     function DialogTip(DialogCover,DialogBox,n) {  /* n<=$item的length */
         this.$DialogCover = $(DialogCover);
@@ -96,14 +137,14 @@
         }
     };
     window.DialogTip = DialogTip;
-   /*实例化 new DialogTip(".Dialogbg-tip",".Dialog-tip",1);  n<=$item的length */
+   /*实例化例如2018年： chihuo-Day, new DialogTip(".Dialogbg-tip",".Dialog-tip",1);  n<=$item的length */
 
 
 
 
     
    /*
-    *分享提示弹窗
+    *分享好友提示弹窗
    */
    function ShareFriend(ele1,ele2) {
         this.$ele1 = $(ele1);

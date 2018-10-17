@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>mcake活动</title>
+
+    <!-- build:css styles/index2.css -->
+    <link rel="stylesheet" href="../commoncss/wap-normalize.css">
+    <link rel="stylesheet" href="styles/index2.css">
+    <!-- endbuild-->
+    <link rel="stylesheet" type="text/css" href="http://www.mcake.com/wap/theme/xth1/css/comm_header.css?v=1508207710" />
+</head>
+<body>
+
+<div id="evt_container">
+    <div id="iscroll">
+        <div class="wrap">
+            <header>
+                <a href="http://m.mcake.com/wap" class="icon-back"></a>
+                <div class="title">
+                    <span>活动</span><br><span>activity</span>
+                </div>
+                <a href="http://m.mcake.com/wap" class="icon-home"></a>
+            </header>
+            <div id="evt_loading" style="display:none;">0%</div>
+            <div id="evt_content" style="display:none;">
+
+                <div class="sec sec-main">
+                    <div class="lingquan">
+                        <div class="quan-top">输入手机号  领取优惠券</div>
+                        <ul>
+                            <li><input type="tel" maxlength="11" placeholder="输入手机号码"></li>
+                            <li><input type="tel" maxlength="6" placeholder="输入验证码">
+                                <input type="button" class="yzm" id="btn" value="发送验证码" onclick="settime(this)">
+                            </li>
+                            <div class="get-quan"><span>立即领取</span></div>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <div class="sec sec-footer">
+                    <div class="txt">
+                        <h2>活动规则：</h2>
+                        <p>1、活动城市：上海、北京、杭州、苏州</p>
+                        <p>2、支付方式：支付宝，微信，现金</p>
+                        <p>3、活动时间：即日起至2019年6月30日</p>
+                        <p>4、配送范围：MCAKE可配送区域，具体范围可在官网配送服务内查询</p>
+                        <p>5、领券规则： <br>
+                            <span>· 每位用户即可在活动页面领取优惠券，优惠券金额随机</span>
+                            <span>· 每日每位用户仅限领取1张优惠券</span></p>
+                        <p>6、优惠券使用说明：<br>
+                            <span>· 优惠券使用方式：可在订单确认页面，选择使用卡券抵扣即可使用优惠券</span>
+                            <span>· 有效期：领取之日至2019年6月30日</span>
+                            <span>· 本活动优惠券不与其他活动同享</span></p>
+                        <p>7、本活动不与其他优惠同享</p>
+                        <p>8、本活动最终解释权归MCAKE所有</p>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<div class="Dialogbg-Select"></div>
+<div class="Dialog-Select Dialog-1">
+    <div class="s-closes"></div>
+    <div class="s-btn"></div>
+</div>
+<div class="Dialog-Select Dialog-2">
+    <div class="s-closes"></div>
+    <div class="s-btn"></div>
+</div>
+<script type="text/javascript" src="http://www.mcake.com/framework/jquery/jquery.min.js?v=1405950469"></script>
+<script src="http://edm.mcake.com/weifengwang/common/flexible.js"></script>
+<!-- build:js scripts/index2.js -->
+<script src="../commonjs/fastclick.js"></script>
+<script src="../commonjs/pubsub.js"></script>
+<script src="../commonjs/loader.js"></script>
+
+<script src="../commonjs/iscroll.js"></script>
+<script src="../commonjs/velocity.js"></script>
+<script src="../commonjs/wap-scrollAnimate.js"></script>
+
+<script src="../commonjs/movieclip.js"></script>
+<script src="../commonjs/public-shimily.js"></script>
+<script src="scripts/resdata.js"></script>
+<script src="scripts/index2.js"></script>
+<!-- endbuild -->
+<script>
+    new lingquan('.Dialogbg-Select','.Dialog-Select','.s-closes');
+
+    $(".get-quan").click(function () {
+        $(".Dialogbg-Select,.Dialog-2").fadeIn(200);
+    });
+
+
+    var countdown=60;
+    function settime(obj) {
+        if (countdown == 0) {
+            obj.removeAttribute("disabled");
+            obj.value="免费获取验证码";
+            countdown = 60;
+            return;
+        } else {
+            obj.setAttribute("disabled", true);
+            obj.value="重新发送(" + countdown + "s)";
+            countdown--;
+        }
+        setTimeout(function() {
+                settime(obj) }
+            ,1000)
+    }
+
+    $(".get-quan").click(function () {
+        $(".quan-tc-bg,.quan-tc").fadeIn(200);
+    });
+
+    $(".quan-close,.quan-tc-bg").click(function(){
+        $(".quan-tc-bg,.quan-tc").hide();
+    });
+</script>
+</body>
+</html>

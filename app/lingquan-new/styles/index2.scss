@@ -1,0 +1,66 @@
+@function px2rem($n) {
+  @return ($n * 10 / 750) * 1rem; //设计稿一般都是750宽
+}
+
+@mixin font-dpr($font-size){
+  font-size: $font-size;
+
+  [data-dpr="2"] & {
+    font-size: $font-size * 2;
+  }
+
+  [data-dpr="3"] & {
+    font-size: $font-size * 3;
+  }
+
+}
+
+/*清除焦点高亮*/
+input {outline: none; border: none; background: none;}
+input::-ms-clear{display:none;}
+::-ms-clear, ::-ms-reveal{display: none;}
+/*禁用修改颜色*/
+input[disabled],input:disabled{color:#000000;opacity:1}
+
+#evt_content{ width: px2rem(750); background:#efc4c4; background-size: 100%;
+  div{position:absolute;}
+  img{width:100%;}
+  .sec{position: relative; }
+
+
+  .sec-main{ background: url("../images/bg-3.png") no-repeat; background-size: 100%; padding-top: px2rem(1);
+    .lingquan{position:relative; width: px2rem(535); background: #fff; margin:px2rem(580) auto px2rem(50); padding-top: px2rem(1); padding-bottom: px2rem(60);
+      .quan-top{position:relative; text-align: center; line-height: px2rem(120); color: #825b5b;}
+      ul{ width: px2rem(447); margin:0 auto; color: #000;
+        li{position: relative; width: 100%; margin-bottom:px2rem(34); border-radius:px2rem(2); overflow: hidden; background: #f8f8f8; border: #eeecec 1px solid; padding: px2rem(2);
+          input{width: 100%; height: px2rem(83); line-height: px2rem(75); padding: 0 5%; background:none; color:#000000 !important;}
+          input.placeholder{color: #838383 !important;}
+          .yzm{display: block; position: absolute; width:px2rem(170); text-align: center; bottom:px2rem(2); right:px2rem(2);  line-height: 100%;background: #ff5252; cursor: pointer; font-size: px2rem(20); border-radius:0; color: #fff !important;}
+        }
+        .get-quan{padding-top:6%; position: relative;
+          span{display: block; text-align: center; width:px2rem(447); line-height: px2rem(83); background: #ff5252; border-radius:px2rem(2); margin: 0 auto; cursor: pointer; color: #fff !important;}
+        }
+      }
+    }
+  }
+
+  .sec-footer{ padding-top: px2rem(20); padding-bottom: px2rem(50); background:#fff; background-size: 100%;
+    .txt{position: relative;width: px2rem(660); margin: px2rem(50) auto 0; color: #000; text-align: left;
+      h2{font-size: px2rem(30); line-height: px2rem(40); font-weight: normal;}
+      p{line-height: px2rem(40); font-size: px2rem(20);}
+    }
+  }
+
+
+}
+
+
+.Dialog-Select{ height: px2rem(600) !important;
+  .s-btn{position: absolute; width: px2rem(200); height: px2rem(70); top: px2rem(470); left: 50%; margin-left: px2rem(-110);}
+}
+.Dialog-1{ background: url("../images/quan-1.png") no-repeat; background-size: 100%;}
+.Dialog-2{ background: url("../images/quan-2.png") no-repeat; background-size: 100%; display: none;}
+
+@media screen and (max-width: 320px) {
+
+}

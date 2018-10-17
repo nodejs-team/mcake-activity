@@ -145,7 +145,7 @@
         }
         if(isArray(url)) return this.addGroup(name, url, options);
         return this.resources[name] = {
-            url: /^http:/.test(url) ? url : this.baseUrl + url,
+            url: /^https?:/.test(url) ? url : this.baseUrl + url,
             type: typeof type === 'string' ? type : getTypeByUrl(url),
             name: name
         }, this;
@@ -153,7 +153,7 @@
     Loader.prototype.addGroup = function(name, data, options){
         if(!name || !data) throw new Error('No url passed to add loader to loader.');
         return this.groups[name] = data.map(function(item){
-            item.url = /^http:/.test(item.url) ? item.url : this.baseUrl + item.url, item.type = typeof item.type==='string' ? item.type : getTypeByUrl(item.url);
+            item.url = /^https?:/.test(item.url) ? item.url : this.baseUrl + item.url, item.type = typeof item.type==='string' ? item.type : getTypeByUrl(item.url);
             this.resources[item.name] = item;
             return item.name;
         }, this), this;

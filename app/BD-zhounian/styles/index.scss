@@ -1,0 +1,83 @@
+@function px2rem($n) {
+  @return ($n * 10 / 750) * 1rem; //设计稿一般都是750宽
+}
+
+@mixin font-dpr($font-size){
+  font-size: $font-size;
+
+  [data-dpr="2"] & {
+    font-size: $font-size * 2;
+  }
+
+  [data-dpr="3"] & {
+    font-size: $font-size * 3;
+  }
+
+}
+
+#evt_content{  background:url("../images/bg.png") no-repeat; background-size: 100%;
+  div{position:absolute;}
+  img{width:100%;}
+  .sec{position: relative; }
+
+  .sec-top{ height: px2rem(620); z-index: 1;
+    .banner-1{width: px2rem(320); top: 0; left: 0;}
+    .banner-2{width: px2rem(199); top: 0; right: 0;}
+    .banner-3{width: px2rem(178); bottom:px2rem(-30); left: 0;}
+    .banner-4{width: px2rem(110); bottom:0; right: 0;}
+    .banner-title{width: px2rem(664); top:px2rem(145); left:px2rem(50);}
+  }
+
+  .sec-1{ padding: px2rem(50) 0 px2rem(20);
+    div{position:relative;}
+    .s-title{width:px2rem(354); margin:px2rem(30) auto px2rem(20);}
+    .icon-zuhe{position: absolute; width:px2rem(71); top: 15%; left: 50%; z-index: 10; margin-left: px2rem(-39);}
+    .zuhe{width:px2rem(750); height: px2rem(530); z-index: 0; background: url("../images/cake-bg.png") no-repeat; background-size: 100%;
+      .cake-zh{position: absolute; top:px2rem(14); left: px2rem(8); width:px2rem(368); height: px2rem(321); z-index: 1;}
+      .xiaoshi-zh{position: absolute; top:px2rem(14); left: px2rem(375); width:px2rem(368); z-index: 1;}
+      .sw-title{width: 100%; position: absolute; bottom: 0; height: px2rem(120);
+        .p-title{position: absolute; left:px2rem(23); bottom:px2rem(10); color:#3a091a; z-index: 2; text-align: left;
+          p{font-size:px2rem(12);}
+          h2{font-size:px2rem(20); font-weight: normal;}
+        }
+        s{font-size:px2rem(20); font-weight: normal;
+          i{font-style:normal; font-size:px2rem(16);}
+        }
+        .p-old-price{position: absolute; right:px2rem(23); bottom:px2rem(10); color:#3a091a; z-index: 2; text-align: left; }
+        .bg{position: absolute; left: 0; bottom: 0; background: #fff; opacity: 0.7; width: 100%; height:px2rem(120); z-index: 1;}
+      }
+      .zuhejia{position: absolute; bottom:px2rem(30); left: 50%; width: px2rem(171); margin-left: px2rem(-85);
+        .price{position:absolute; top: px2rem(50); left: px2rem(80); font-size: px2rem(40); color: #3a091a; font-weight: bold; font-style: italic; padding-right: px2rem(30);}
+        .buy-btn{position:absolute; width: px2rem(170); bottom: 0; left: 0; }
+      }
+    }
+  }
+
+
+  .hy-title{position: relative; width: px2rem(653); margin:px2rem(30) auto; }
+
+  .sec-footer{ position: relative; padding-bottom: px2rem(20); z-index:1;
+    .txt{ position: relative; width:px2rem(700); padding-top: px2rem(50); margin: 0 auto;  color: #5d5d5d;
+      h2{font-size: px2rem(28); font-weight: normal; }
+      p{ font-size: px2rem(23); padding-left: px2rem(35); line-height:px2rem(35);  text-indent: px2rem(-35);
+        margin:px2rem(5) 0;}
+    }
+  }
+
+}
+
+
+
+
+.swiper-container { position: relative !important; width: 100%; height: px2rem(321); margin-left: auto; margin-right: auto;  }
+.swiper-slide { text-align: center; /* Center slide text vertically */display: -webkit-box;  display: -ms-flexbox;  display: -webkit-flex;  display: flex;  -webkit-box-pack: center;  -ms-flex-pack: center;  -webkit-justify-content: center;  justify-content: center;  -webkit-box-align: center;  -ms-flex-align: center;  -webkit-align-items: center;  align-items: center; }
+.swiper-button{position:absolute !important; top: 75%; width: px2rem(70); height: px2rem(80);}
+.swiper-button-next{background: url("../images/next.png") center no-repeat; right: px2rem(5); background-size: 50%;}
+.swiper-button-prev{background: url("../images/prev.png") center no-repeat; left: px2rem(5); background-size: 50%;}
+
+
+
+
+@media screen and (max-width: 320px) {
+
+}

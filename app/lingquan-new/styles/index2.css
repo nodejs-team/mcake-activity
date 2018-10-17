@@ -1,0 +1,129 @@
+@charset "UTF-8";
+/*清除焦点高亮*/
+input {
+  outline: none;
+  border: none;
+  background: none; }
+
+input::-ms-clear {
+  display: none; }
+
+::-ms-clear, ::-ms-reveal {
+  display: none; }
+
+/*禁用修改颜色*/
+input[disabled], input:disabled {
+  color: #000000;
+  opacity: 1; }
+
+#evt_content {
+  width: 10rem;
+  background: #efc4c4;
+  background-size: 100%; }
+  #evt_content div {
+    position: absolute; }
+  #evt_content img {
+    width: 100%; }
+  #evt_content .sec {
+    position: relative; }
+  #evt_content .sec-main {
+    background: url("../images/bg-3.png") no-repeat;
+    background-size: 100%;
+    padding-top: 0.01333rem; }
+    #evt_content .sec-main .lingquan {
+      position: relative;
+      width: 7.13333rem;
+      background: #fff;
+      margin: 7.73333rem auto 0.66667rem;
+      padding-top: 0.01333rem;
+      padding-bottom: 0.8rem; }
+      #evt_content .sec-main .lingquan .quan-top {
+        position: relative;
+        text-align: center;
+        line-height: 1.6rem;
+        color: #825b5b; }
+      #evt_content .sec-main .lingquan ul {
+        width: 5.96rem;
+        margin: 0 auto;
+        color: #000; }
+        #evt_content .sec-main .lingquan ul li {
+          position: relative;
+          width: 100%;
+          margin-bottom: 0.45333rem;
+          border-radius: 0.02667rem;
+          overflow: hidden;
+          background: #f8f8f8;
+          border: #eeecec 1px solid;
+          padding: 0.02667rem; }
+          #evt_content .sec-main .lingquan ul li input {
+            width: 100%;
+            height: 1.10667rem;
+            line-height: 1rem;
+            padding: 0 5%;
+            background: none;
+            color: #000000 !important; }
+          #evt_content .sec-main .lingquan ul li input.placeholder {
+            color: #838383 !important; }
+          #evt_content .sec-main .lingquan ul li .yzm {
+            display: block;
+            position: absolute;
+            width: 2.26667rem;
+            text-align: center;
+            bottom: 0.02667rem;
+            right: 0.02667rem;
+            line-height: 100%;
+            background: #ff5252;
+            cursor: pointer;
+            font-size: 0.26667rem;
+            border-radius: 0;
+            color: #fff !important; }
+        #evt_content .sec-main .lingquan ul .get-quan {
+          padding-top: 6%;
+          position: relative; }
+          #evt_content .sec-main .lingquan ul .get-quan span {
+            display: block;
+            text-align: center;
+            width: 5.96rem;
+            line-height: 1.10667rem;
+            background: #ff5252;
+            border-radius: 0.02667rem;
+            margin: 0 auto;
+            cursor: pointer;
+            color: #fff !important; }
+  #evt_content .sec-footer {
+    padding-top: 0.26667rem;
+    padding-bottom: 0.66667rem;
+    background: #fff;
+    background-size: 100%; }
+    #evt_content .sec-footer .txt {
+      position: relative;
+      width: 8.8rem;
+      margin: 0.66667rem auto 0;
+      color: #000;
+      text-align: left; }
+      #evt_content .sec-footer .txt h2 {
+        font-size: 0.4rem;
+        line-height: 0.53333rem;
+        font-weight: normal; }
+      #evt_content .sec-footer .txt p {
+        line-height: 0.53333rem;
+        font-size: 0.26667rem; }
+
+.Dialog-Select {
+  height: 8rem !important; }
+  .Dialog-Select .s-btn {
+    position: absolute;
+    width: 2.66667rem;
+    height: 0.93333rem;
+    top: 6.26667rem;
+    left: 50%;
+    margin-left: -1.46667rem; }
+
+.Dialog-1 {
+  background: url("../images/quan-1.png") no-repeat;
+  background-size: 100%; }
+
+.Dialog-2 {
+  background: url("../images/quan-2.png") no-repeat;
+  background-size: 100%;
+  display: none; }

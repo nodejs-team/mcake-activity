@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>mcake活动</title>
+    <link rel="stylesheet" href="https://act.mcake.com/fangli/2018/wap/commoncss/comm_header.css" />
+    <!-- build:css styles/index.css -->
+    <link rel="stylesheet" href="../commoncss/wap-normalize.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <!-- endbuild-->
+
+</head>
+<body>
+
+<div id="evt_container">
+    <div id="iscroll">
+        <div class="wrap">
+            <div id="evt_loading" style="display:none;">0%</div>
+            <div id="evt_content" class="detail" style="display:none;">
+                <div class="sec sec-top">
+                    <div class="banner"><img src="images/img-1.png" alt=""></div>
+                </div>
+
+                <div class="sec sec-pintuan">
+                    <div class="pintuan">
+                        <div class="tuaning"><b>拼团中</b>
+                            <samp>剩余 &nbsp;&nbsp;&nbsp;&nbsp;<span class="lastTime"></span></samp>
+                        </div>
+                        <div class="content">
+                            <div class="user">
+                                <ul class="clearfix">
+                                    <li><div class="useface" style="background:#cccccc  url('images/img-1.png') center no-repeat; background-size: cover;"></div>
+                                    <div class="userleve"><span>团长</span></div>
+                                    </li>
+                                    <li><div class="useface" style="background:#cccccc url('images/nobody.png') center no-repeat; background-size: cover;"></div>
+                                    </li>
+                                </ul>
+                                <div class="enough">还差1人成团</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <div class="line"></div>
+                        <div class="overTime">
+                            离拼团结束还剩：<b id="timer"></b>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="sec sec-detail">
+                    <div class="pinguize">
+                        <h2>拼团规则</h2>
+                        <p>1、发起拼团或者参与拼团</p>
+                        <p>2、若拼团成功后，按照团购价购买商品</p>
+                    </div>
+
+                    <div class="detail">
+                        <img src="images/detail-1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="sec-footer">
+                    <div class="txt">
+                        <h2>活动规则</h2>
+                        <p>1、活动城市：上海、北京、苏州、杭州</p>
+                        <p>2、活动时间：XXXXXX-XXXXXX</p>
+                        <p>3、本活动不与其他优惠同享</p>
+                        <p>4、本活动最终解释权归mcake所有</p>
+                    </div>
+                </div>
+                <div class="pintuanBar">
+                    <div class="tuanbtn"><span>我要参团</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="https://act.mcake.com/fangli/2018/wap/commonjs/jquery.min.js"></script>
+<script src="https://act.mcake.com/fangli/2018/wap/commonjs/flexible.js"></script>
+<!-- build:js scripts/index.js -->
+<script src="../commonjs/fastclick.js"></script>
+<script src="../commonjs/pubsub.js"></script>
+<script src="../commonjs/loader.js"></script>
+
+<script src="../commonjs/iscroll.js"></script>
+<script src="../commonjs/velocity.js"></script>
+<script src="../commonjs/wap-scrollAnimate.js"></script>
+<script src="../commonjs/movieclip.js"></script>
+<script src="../commonjs/public-shimily.js"></script>
+<script src="scripts/resdata.js"></script>
+<script src="scripts/index.js"></script>
+<!-- endbuild -->
+<script>
+
+    function actEnd() {
+        window.location.reload();
+        $(".tuanbtn").addClass("none").html("<span>拼团结束！</span>")
+    }
+    /*活动倒计时*/
+    __END_DATE__ = '2018-9-25 09:44:30';
+    goTime(__END_DATE__,'#timer',actEnd);
+
+
+    /*拼团倒计时*/
+    __END_Time__ = new Date(new Date().getTime() + 2 * 3600 * 1000); /*当前时间加2小时*/
+
+
+    timeLast(__END_Time__,'.lastTime',actEnd);
+</script>
+</body>
+</html>

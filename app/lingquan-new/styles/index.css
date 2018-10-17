@@ -104,8 +104,7 @@ input[disabled], input:disabled {
 
 .Dialog-Select {
   height: 8rem !important; }
-  .Dialog-Select ba
-.s-btn {
+  .Dialog-Select .s-btn {
     position: absolute;
     width: 2.66667rem;
     height: 0.93333rem;
@@ -118,6 +117,6 @@ input[disabled], input:disabled {
   background-size: 100%; }
 
 .Dialog-2 {
-  background: url("../images/quan-1.png") no-repeat;
+  background: url("../images/quan-2.png") no-repeat;
   background-size: 100%;
   display: none; }
