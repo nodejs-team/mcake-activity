@@ -108,22 +108,28 @@
             fixImageSrc(loader.getAll());
             domLoad.style.display = 'none';
             document.getElementById('evt_content').style.display = 'block';
-             loadComplete();
+            loadComplete();
         });
         loader.loadGroup('preload');
     }
     startLoading();
 
     var loadComplete = function () {
-        new Slider('.slideOuter',{
-            prev: '.prev',
-            next: '.next',
+        new Slider('.slideOuter1',{
+            prev: '.prev1',
+            next: '.next1',
+            autoplay: true
+        });
+
+        new Slider('.slideOuter2',{
+            prev: '.prev2',
+            next: '.next2',
             autoplay: true
         });
 
         initDisprice();
         initNum();
-
+        $(".floater").fadeIn(100);
 
     }
 
@@ -145,12 +151,23 @@
             var ids = $(el).attr('data-price');
             var postId = $(el).attr('data-postid');
 
+            var sku = $(el).attr('data-sku');
+            var method = $(el).attr('data-method');
+            var pid = $(el).attr('data-pid');
+            var ptype = $(el).attr('data-ptype');
+            var channel = $(el).attr('data-channel');
+
             if(ponds){
                 items.push({
                     ponds: ponds.split(',').map(function(str){ return str.replace(/(^\s*)|(\s*$)/g, "")}),
                     ix: 0,
                     ids: ids.split(',').map(function(str){ return str.replace(/(^\s*)|(\s*$)/g, "")}),
-                    postId: postId.split(',').map(function(str){ return str.replace(/(^\s*)|(\s*$)/g, "")})
+                    postId: postId.split(',').map(function(str){ return str.replace(/(^\s*)|(\s*$)/g, "")}),
+                    sku: sku.split(',').map(function(str){ return str.replace(/(^\s*)|(\s*$)/g, "")}),
+                    method: method.split(',').map(function(str){ return str.replace(/(^\s*)|(\s*$)/g, "")}),
+                    pid: pid.split(',').map(function(str){ return str.replace(/(^\s*)|(\s*$)/g, "")}),
+                    ptype: ptype.split(',').map(function(str){ return str.replace(/(^\s*)|(\s*$)/g, "")}),
+                    channel: channel.split(',').map(function(str){ return str.replace(/(^\s*)|(\s*$)/g, "")})
                 })
             }
 
@@ -190,6 +207,12 @@
                 $(this).parents("li").find(".price").html(currentItem.ids[ix]*num);
                 $(this).parents("li").find(".dis-price").html(totalPrice);
 
+                $(this).parents("li").find(".buybtn").attr("data-sku",currentItem.sku[ix]);
+                $(this).parents("li").find(".buybtn").attr("data-method",currentItem.method[ix]);
+                $(this).parents("li").find(".buybtn").attr("data-pid",currentItem.pid[ix]);
+                $(this).parents("li").find(".buybtn").attr("data-ptype",currentItem.ptype[ix]);
+                $(this).parents("li").find(".buybtn").attr("data-channel",currentItem.channel[ix]);
+
 
             });
             /*
@@ -209,6 +232,12 @@
                 $(this).parents("li").find(".postid").data("postid", currentItem.postId[ix]);
                 $(this).parents("li").find(".price").html(currentItem.ids[ix]*num);
                 $(this).parents("li").find(".dis-price").html(totalPrice);
+
+                $(this).parents("li").find(".buybtn").attr("data-sku",currentItem.sku[ix]);
+                $(this).parents("li").find(".buybtn").attr("data-method",currentItem.method[ix]);
+                $(this).parents("li").find(".buybtn").attr("data-pid",currentItem.pid[ix]);
+                $(this).parents("li").find(".buybtn").attr("data-ptype",currentItem.ptype[ix]);
+                $(this).parents("li").find(".buybtn").attr("data-channel",currentItem.channel[ix]);
             });
 
 
@@ -230,7 +259,7 @@
                 $(this).parents("li").find(".price").html(currentItem.ids[ix]*num);
                 $(this).parents("li").find(".dis-price").html(totalPrice);
 
-
+                $(this).parents("li").find(".buybtn").attr("data-num",num);
 
             });
 
@@ -250,13 +279,14 @@
                 $(this).parents("li").find(".postid").data("postid", currentItem.postId[ix]);
                 $(this).parents("li").find(".price").html(currentItem.ids[ix]*num);
                 $(this).parents("li").find(".dis-price").html(totalPrice);
-                console.log($(this).parents("li").find(".postid").data("postid"));
+
+                $(this).parents("li").find(".buybtn").attr("data-num",num);
 
             });
 
 
             /*初始化*/
-              /*是否有折扣*/
+            /*是否有折扣*/
             totalPrice = currentItem.ids[0]; /*总价格*/
             totalPrice = isDiscount(totalPrice,198,discount); /*满足条件折扣*/
             $(this).find(".bang").html(currentItem.ponds[0]+' / '+'￥'+ currentItem.ids[0]);
@@ -264,15 +294,20 @@
             $(this).find(".price").html(currentItem.ids[0]*num);
             $(this).find(".postid").data("postid", currentItem.postId[0]);
 
+            $(this).find(".buybtn").attr("data-sku",currentItem.sku[0]);
+            $(this).find(".buybtn").attr("data-method",currentItem.method[0]);
+            $(this).find(".buybtn").attr("data-pid",currentItem.pid[0]);
+            $(this).find(".buybtn").attr("data-ptype",currentItem.ptype[0]);
+            $(this).find(".buybtn").attr("data-channel",currentItem.channel[0]);
+            $(this).find(".buybtn").attr("data-num",num);
+
             var self = $(this);
 
-            $(this).find(".buybtn").click(function () {
+            /*$(this).find(".buybtn").click(function () {
                 var postId = self.find(".postid").data("postid");
                 var totalPrice = self.find(".dis-price").text();
                 goBuy(postId,totalPrice);
-
-                //alert(postId)
-            });
+            });*/
 
 
         });

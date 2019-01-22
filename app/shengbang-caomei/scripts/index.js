@@ -64,23 +64,60 @@
 
 
     var loadComplete = function () {
+        var swiper1 = new Swiper('.swiper1', {
+            observer:true,
+            observeParents:true,
+            speed:300,
+            autoplay : {
+                delay:3000,
+                disableOnInteraction: false,
+            },
+            loop: true,
+
+            pagination: {
+                el: '.swiper-pagination1',
+                clickable: true
+            }
+        });
         $(".select li").click(function () {
             $(this).addClass("on").siblings().removeClass("on");
+            /*新版wap需要配置data*/
+            var self = $(this);
+            $(this).each(function() {
+                var thisele = $(this);
+                $.each(this.attributes, function() {
+                    if(this.specified) {
+                        var attrs = thisele.attr(this.name);
+                        if(this.name =='class'){
+                            return;
+                        }else{
+                            self.parents(".select").next(".price").find('.go-btn').attr(this.name,attrs);
+                        }
+                    }
+                });
+            });
         });
         initScroll();
     }
     var initScroll = function (){
         window.scrollAnimate('#evt_container', [
-             {dom: '.sec-top .title',x:0, y:-50,duration:500,delay:500}
-             ,{dom: '.sec-1 .carows',x:0, y:0,duration:500,delay:800}
-             ,{dom: '.sec-1 .cake',x:100, y:0,duration:500,delay:200}
+             {dom: '.sec-banner',x:0, y:0,duration:500,delay:500}
+             ,{dom: '.sec-0',x:0, y:50,duration:500,delay:800}
+             ,{dom: '.sec-1 .title-1',x:100, y:0,duration:500,delay:200}
+             ,{dom: '.sec-1 .cake',x:-100, y:0,duration:500,delay:200}
+             ,{dom: '.sec-1 .cake-2',x:100, y:0,duration:500,delay:200}
+             ,{dom: '.sec-1 .word',x:100, y:0,duration:500,delay:200}
              ,{dom: '.sec-1 .select',x:-100, y:0,duration:500,delay:200}
              ,{dom: '.sec-1 .price',x:-100, y:0,duration:500,delay:200}
 
              ,{dom: '.sec-2 .cake',x:-100, y:0,duration:500,delay:200}
-             ,{dom: '.sec-2 .shuangxiong',x:-100, y:0,duration:500,delay:200}
              ,{dom: '.sec-2 .price',x:100, y:0,duration:500,delay:200}
+             ,{dom: '.sec-2 .select',x:100, y:0,duration:500,delay:200}
 
+            ,{dom: '.sec-3 .cake',x:-100, y:0,duration:500,delay:200}
+            ,{dom: '.sec-3 .price',x:100, y:0,duration:500,delay:200}
+            ,{dom: '.sec-3 .select',x:100, y:0,duration:500,delay:200}
+            ,{dom: '.more',x:0, y:100,duration:500,delay:200}
 
         ])
     };

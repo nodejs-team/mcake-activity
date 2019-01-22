@@ -64,6 +64,12 @@
       background: url("../images/btn.png");
       background-size: 100%;
       margin-top: 0.26667rem; }
+    #evt_content .price .buy-btn-go {
+      width: 1.82667rem;
+      height: 0.56rem;
+      background: url("../images/btn.png");
+      background-size: 100%;
+      margin-top: 0.26667rem; }
   #evt_content .sec-footer {
     position: relative;
     padding-bottom: 1.06667rem;

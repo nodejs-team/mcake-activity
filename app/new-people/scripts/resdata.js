@@ -1,43 +1,48 @@
 var resData = [
     {
-        "name":"quan-2_png",
+        "name":"t-1_png",
         "type":"image",
-        "url":"quan-2.png"
+        "url":"t-1.png"
     },
     {
-        "name":"sele-li_png",
+        "name":"t-2_png",
         "type":"image",
-        "url":"sele-li.png"
+        "url":"t-2.png"
     },
     {
-        "name":"title_png",
+        "name":"t-3_png",
         "type":"image",
-        "url":"title.png"
+        "url":"t-3.png"
     },
     {
-        "name":"title-1_png",
+        "name":"t-4_png",
         "type":"image",
-        "url":"title-1.png"
+        "url":"t-4.png"
     },
     {
-        "name":"top-bg_png",
+        "name":"tips_png",
         "type":"image",
-        "url":"top-bg.png"
+        "url":"tips.png"
     },
     {
-        "name":"btn-1_png",
+        "name":"add-1_png",
         "type":"image",
-        "url":"btn-1.png"
+        "url":"add-1.png"
     },
     {
-        "name":"btn-2_png",
+        "name":"add-2_png",
         "type":"image",
-        "url":"btn-2.png"
+        "url":"add-2.png"
     },
     {
-        "name":"cake_png",
+        "name":"banner-t_png",
         "type":"image",
-        "url":"cake.png"
+        "url":"banner-t.png"
+    },
+    {
+        "name":"banner-wap_jpg",
+        "type":"image",
+        "url":"banner-wap.jpg"
     },
     {
         "name":"cake-1_png",
@@ -45,23 +50,69 @@ var resData = [
         "url":"cake-1.png"
     },
     {
-        "name":"input_png",
+        "name":"cake-2_png",
         "type":"image",
-        "url":"input.png"
+        "url":"cake-2.png"
     },
     {
-        "name":"minus_png",
+        "name":"cake-3_png",
         "type":"image",
-        "url":"minus.png"
+        "url":"cake-3.png"
     },
     {
-        "name":"plus_png",
+        "name":"cake-4_png",
         "type":"image",
-        "url":"plus.png"
+        "url":"cake-4.png"
     },
     {
-        "name":"quan-1_png",
+        "name":"go-buy_png",
         "type":"image",
-        "url":"quan-1.png"
+        "url":"go-buy.png"
+    },
+    {
+        "name":"hongbao_png",
+        "type":"image",
+        "url":"hongbao.png"
+    },
+    {
+        "name":"hy-title-2_png",
+        "type":"image",
+        "url":"hy-title-2.png"
+    },
+    {
+        "name":"hy-title-3_png",
+        "type":"image",
+        "url":"hy-title-3.png"
+    },
+    {
+        "name":"icon-1_png",
+        "type":"image",
+        "url":"icon-1.png"
+    },
+    {
+        "name":"icon-1-h_png",
+        "type":"image",
+        "url":"icon-1-h.png"
+    },
+    {
+        "name":"icon-2_png",
+        "type":"image",
+        "url":"icon-2.png"
+    },
+    {
+        "name":"quan_png",
+        "type":"image",
+        "url":"quan.png"
+    },
+    {
+        "name":"reduce-1_png",
+        "type":"image",
+        "url":"reduce-1.png"
+    },
+    {
+        "name":"reduce-2_png",
+        "type":"image",
+        "url":"reduce-2.png"
     }
+
 ];

@@ -1,0 +1,374 @@
+@charset "UTF-8";
+#evt_content {
+  background: url("../images/bg.jpg") repeat;
+  /*价格计算【通用】*/ }
+  #evt_content div {
+    position: absolute; }
+  #evt_content img {
+    width: 100%; }
+  #evt_content .sec {
+    position: relative; }
+  #evt_content .sec-top {
+    height: 6.66667rem;
+    z-index: 1;
+    overflow: hidden; }
+    #evt_content .sec-top .banner-logo {
+      width: 1.76rem;
+      top: 0;
+      left: 4.2rem; }
+    #evt_content .sec-top .banner-txt {
+      width: 3.44rem;
+      top: 2.17333rem;
+      left: 1.06667rem; }
+    #evt_content .sec-top .banner-cake {
+      width: 6.50667rem;
+      top: 1.73333rem;
+      left: 3.73333rem; }
+  #evt_content .sec-0 div {
+    position: relative; }
+  #evt_content .sec-0 .hongbao {
+    position: relative;
+    width: 10rem;
+    margin: 0 auto 0.4rem; }
+  #evt_content .sec-0 .content {
+    position: relative;
+    width: 9.77333rem;
+    margin: 0 auto;
+    border-left: #944226 0.01333rem solid;
+    border-right: #944226 0.01333rem solid; }
+  #evt_content .sec-0 .quan {
+    width: 9.77333rem;
+    margin: 0 auto;
+    padding: 0.26667rem 0; }
+    #evt_content .sec-0 .quan .hb {
+      position: absolute;
+      width: 1.46667rem;
+      height: 0.48rem;
+      line-height: 0.48rem;
+      text-align: center;
+      color: #944226;
+      bottom: 0.53333rem;
+      font-size: 0.24rem; }
+    #evt_content .sec-0 .quan .hb1 {
+      left: 0.2rem; }
+    #evt_content .sec-0 .quan .hb2 {
+      left: 3.26667rem; }
+    #evt_content .sec-0 .quan .hb3 {
+      left: 6.46667rem; }
+    #evt_content .sec-0 .quan .hb.on {
+      color: #fff; }
+  #evt_content .sec-bg-1 {
+    position: relative;
+    width: 9.77333rem;
+    height: 0.41333rem;
+    margin: 0 auto 0;
+    background: url("../images/sec-bg-1.png") center no-repeat;
+    background-size: 100%; }
+  #evt_content .sec-bg-2 {
+    position: relative;
+    width: 9.77333rem;
+    height: 0.4rem;
+    margin: -0.02667rem auto 0;
+    background: url("../images/sec-bg-2.png") center no-repeat;
+    background-size: 100%; }
+  #evt_content .sec-bg-3 {
+    position: relative;
+    width: 9.77333rem;
+    height: 0.21333rem;
+    margin: 0 auto 0;
+    background: url("../images/sec-bg-3.png") center no-repeat;
+    background-size: 100%; }
+  #evt_content .hy-title {
+    position: relative;
+    width: 1.86667rem;
+    margin: 0 auto; }
+  #evt_content .sec-main {
+    width: 10rem;
+    padding: 0;
+    margin: 0 auto; }
+    #evt_content .sec-main .content {
+      position: relative;
+      width: 9.77333rem;
+      margin: 0 auto;
+      border-left: #944226 0.01333rem solid;
+      border-right: #944226 0.01333rem solid; }
+    #evt_content .sec-main .row {
+      position: relative;
+      height: 7.2rem; }
+    #evt_content .sec-main .row1 .cake {
+      width: 5.18667rem;
+      top: 0.66667rem;
+      left: 0.13333rem;
+      z-index: 1; }
+    #evt_content .sec-main .row1 .price {
+      top: 0.66667rem;
+      left: 4.8rem;
+      z-index: 2; }
+    #evt_content .sec-main .row2 .cake {
+      width: 6.25333rem;
+      top: 1.06667rem;
+      right: 0;
+      z-index: 1; }
+    #evt_content .sec-main .row2 .price {
+      top: 0.66667rem;
+      left: 0.26667rem; }
+    #evt_content .sec-main .row3 .cake {
+      width: 4.98667rem;
+      top: 0.4rem;
+      left: 0.13333rem;
+      z-index: 1; }
+    #evt_content .sec-main .row3 .price {
+      top: 0.66667rem;
+      left: 4.8rem;
+      z-index: 2; }
+    #evt_content .sec-main .row4 .cake {
+      width: 5.61333rem;
+      top: 1.33333rem;
+      right: 0;
+      z-index: 1; }
+    #evt_content .sec-main .row4 .price {
+      top: 0.66667rem;
+      left: 0.26667rem; }
+    #evt_content .sec-main .row5 .cake {
+      width: 6.26667rem;
+      top: 0.66667rem;
+      left: 0;
+      z-index: 1; }
+    #evt_content .sec-main .row5 .price {
+      top: 0.66667rem;
+      left: 4.8rem;
+      z-index: 2; }
+  #evt_content .sec-huangou {
+    width: 10rem;
+    padding: 0;
+    margin: 0 auto; }
+    #evt_content .sec-huangou .content {
+      position: relative;
+      width: 9.77333rem;
+      margin: 0 auto;
+      border-left: #944226 0.01333rem solid;
+      border-right: #944226 0.01333rem solid; }
+    #evt_content .sec-huangou .row {
+      position: relative;
+      height: 5.33333rem; }
+    #evt_content .sec-huangou .row6 .cake {
+      width: 4.74667rem;
+      top: 1.6rem;
+      right: 0;
+      z-index: 1; }
+    #evt_content .sec-huangou .row6 .price {
+      top: 0.66667rem;
+      left: 0.66667rem; }
+  #evt_content .sec-footer {
+    position: relative;
+    padding-bottom: 0.66667rem;
+    z-index: 1; }
+    #evt_content .sec-footer .txt {
+      position: relative;
+      width: 8.8rem;
+      padding-top: 0.66667rem;
+      margin: 0 auto;
+      color: #944226;
+      font-style: italic; }
+      #evt_content .sec-footer .txt h2 {
+        font-size: 0.37333rem;
+        font-weight: normal; }
+      #evt_content .sec-footer .txt p {
+        font-size: 0.30667rem;
+        padding-left: 0.46667rem;
+        line-height: 0.53333rem;
+        text-indent: -0.46667rem;
+        margin: 0.06667rem 0; }
+        #evt_content .sec-footer .txt p span {
+          display: block;
+          padding-left: 0.13333rem;
+          text-indent: -0.13333rem; }
+  #evt_content .price {
+    position: absolute;
+    width: 4.66667rem;
+    text-align: center;
+    z-index: 2; }
+    #evt_content .price .icons {
+      width: 0.66667rem;
+      position: absolute;
+      left: 0.4rem;
+      top: -0.17333rem; }
+    #evt_content .price .title {
+      position: relative;
+      width: 4.50667rem;
+      margin: 0.13333rem auto; }
+    #evt_content .price h2 {
+      font-size: 0.4rem;
+      font-weight: normal;
+      line-height: 0.66667rem;
+      color: #e63383; }
+      #evt_content .price h2 i {
+        font-size: 0.26667rem;
+        line-height: 0.4rem;
+        font-style: normal;
+        vertical-align: middle; }
+      #evt_content .price h2 span {
+        font-size: 0.62667rem; }
+    #evt_content .price s {
+      font-size: 0.26667rem;
+      color: #944226;
+      font-weight: normal; }
+    #evt_content .price ul.price_p {
+      margin: 0.13333rem auto;
+      color: #000;
+      width: 3.73333rem; }
+    #evt_content .price ul.price_p.short1 {
+      color: #000;
+      width: 0.86667rem; }
+    #evt_content .price ul.price_p.short2 {
+      color: #000;
+      width: 1.73333rem; }
+    #evt_content .price ul.price_p.short3 {
+      color: #000;
+      width: 2.73333rem; }
+    #evt_content .price ul.price_p.short4 {
+      color: #000;
+      width: 3.73333rem; }
+    #evt_content .price .bs.bslang {
+      font-size: 0.26667rem; }
+    #evt_content .price ul.price_p.minshort {
+      margin: 0.13333rem auto;
+      color: #000;
+      width: 1.73333rem; }
+    #evt_content .price ul.price_p li {
+      cursor: pointer;
+      float: left;
+      height: 0.8rem;
+      line-height: 0.73333rem;
+      text-align: center;
+      width: 0.8rem;
+      background: none;
+      border: #944226 0.04rem solid;
+      margin-right: 0.13333rem;
+      border-radius: 50%;
+      color: #944226;
+      font-size: 0.24rem; }
+    #evt_content .price ul.price_p .samllFont {
+      font-size: 0.25333rem; }
+    #evt_content .price ul.price_p li:last-child {
+      margin-right: 0; }
+    #evt_content .price ul.price_p .bd {
+      width: 1.6rem !important;
+      margin-left: 2rem !important; }
+    #evt_content .price ul.price_p li.cur {
+      background: #944226 !important;
+      color: #fff !important;
+      border: #944226 0.04rem solid; }
+    #evt_content .price .huangou {
+      position: relative;
+      width: 3.06667rem;
+      font-size: 0.29333rem;
+      color: #9b4245;
+      margin: 0.13333rem auto 0.13333rem;
+      text-align: left;
+      padding-left: 0.46667rem; }
+      #evt_content .price .huangou .icnone {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 0.4rem;
+        height: 0.4rem;
+        margin-top: -0.2rem;
+        z-index: 1; }
+      #evt_content .price .huangou .icon {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 0.4rem;
+        height: 0.4rem;
+        margin-top: -0.2rem;
+        background: url("../images/icon-1.png");
+        background-size: 100%;
+        z-index: 2; }
+      #evt_content .price .huangou .icon.on {
+        background: url("../images/icon-1-h.png");
+        background-size: 100%; }
+    #evt_content .price .price_num {
+      margin: 0.13333rem auto 0;
+      width: 2rem;
+      position: relative; }
+    #evt_content .price .price_num dl {
+      float: left;
+      padding-left: 0.06667rem; }
+    #evt_content .price .price_num dl dd {
+      cursor: pointer;
+      float: left;
+      height: 0.6rem;
+      width: 0.6rem; }
+    #evt_content .price .price_num dl dt {
+      float: left;
+      height: 0.6rem;
+      width: 0.45333rem;
+      margin: 0 0.13333rem; }
+    #evt_content .price .price_num dl dt span {
+      display: block;
+      font-size: 0.4rem;
+      background: transparent none repeat scroll 0 0;
+      border: none;
+      color: #944226;
+      height: 100%;
+      line-height: 0.6rem;
+      text-align: center;
+      width: 100%; }
+    #evt_content .price .price_num dl dd.reduce {
+      width: 0.6rem;
+      height: 0.6rem;
+      background: url("../images/reduce-1.png") center no-repeat;
+      background-size: 99%; }
+    #evt_content .price .price_num dl dd.add {
+      width: 0.6rem;
+      height: 0.6rem;
+      background: url("../images/add-1.png") center no-repeat scroll;
+      background-size: 99%; }
+    #evt_content .price ul.buy_btn_box {
+      width: 2.26667rem;
+      overflow: hidden;
+      margin: 0.13333rem auto; }
+    #evt_content .price ul.buy_btn_box.twoBtn {
+      width: 4.66667rem; }
+    #evt_content .price ul.buy_btn_box li {
+      float: left;
+      margin-right: 0.13333rem; }
+    #evt_content .price ul.buy_btn_box li:last-child {
+      margin-right: 0; }
+    #evt_content .price ul.buy_btn_box li span {
+      display: block;
+      border: #944226 0.04rem solid;
+      color: #944226;
+      cursor: pointer;
+      line-height: 0.6rem;
+      font-size: 0.29333rem;
+      text-align: center;
+      border-radius: 0.36667rem;
+      width: 2.26667rem; }
+
+/*浮动*/
+.floater {
+  position: fixed;
+  width: 1.66667rem;
+  height: 1.12rem;
+  bottom: 0.13333rem;
+  right: 0.26667rem;
+  z-index: 11;
+  cursor: pointer;
+  display: none; }
+  .floater img {
+    width: 100%; }
+  .floater .tips {
+    position: absolute;
+    width: 100%;
+    height: 0.33333rem;
+    left: 0;
+    top: 0;
+    text-align: center;
+    z-index: 12; }
+    .floater .tips span {
+      display: block;
+      font-size: 0.24rem;
+      color: #fff;
+      line-height: 0.33333rem; }

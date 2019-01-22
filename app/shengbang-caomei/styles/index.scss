@@ -15,49 +15,100 @@
 
 }
 
-#evt_content{  background:url("../images/bg.jpg") repeat;
+#evt_content{  background:#fff;
   div{position:absolute;}
   img{width:100%;}
   .sec{position: relative; }
-  .sec-top{height: px2rem(798); z-index: 6;
-    .title{width:px2rem(750); top:px2rem(-20); left:0;}
-  }
+  .sec-banner{height: px2rem(511); z-index: 1; background:url("../images/banner.jpg"); background-size: 100%; }
+  .sec-0{height: px2rem(667); z-index: 2; margin: px2rem(60) auto; background:url("../images/cake-1.png"); background-size: 100%; }
 
-
-  .sec-1{height: px2rem(800); z-index: 5;
-    .carows{position: absolute; width:px2rem(554); top:px2rem(-280); left: px2rem(23);}
-    .price{position: absolute; width:px2rem(427); top:px2rem(200); left: px2rem(23); z-index: 1;
-      .go-btn{ padding: px2rem(40) 0 0 px2rem(80);
-        span{padding: px2rem(8) px2rem(40); line-height: px2rem(50); color: #fff; background: #cf6e54; border-radius: px2rem(5); font-size: px2rem(30); margin-right: px2rem(10); }
-      }
+  .sec-1{height: px2rem(850); z-index: 5; background: #fcf1f5;
+    .price{position: absolute; width:px2rem(315); top:px2rem(440); left: px2rem(28); z-index: 3;
     }
-    .select{position: absolute; top:px2rem(285); left: px2rem(415); z-index: 2;
+    .select{position: absolute; top:px2rem(585); left: px2rem(340); z-index: 5;
       ul{
-        li{ width: px2rem(60); height: px2rem(60); background: url("../images/gou-1.png") center no-repeat; background-size: 70%; margin-bottom: px2rem(10); }
-        li.on{ background: url("../images/gou-2.png") center no-repeat; background-size: 70%;}
+        li{ width: px2rem(30); height: px2rem(30); background: url("../images/gou-1.png") center no-repeat; background-size: 80%; margin-bottom: px2rem(20); display: block;}
+        li.on{ background: url("../images/gou-2.png") center no-repeat; background-size: 80%;}
       }
     }
-    .cake{position: absolute; width:px2rem(457); top:px2rem(210); right:px2rem(-40);}
+    .cake{position: absolute; width:px2rem(309); height:px2rem(316); top:px2rem(65); left:px2rem(28); background:url("../images/swper-kuang.png"); background-size: 100%;
+      div{position: relative !important;}
+    }
+    .cake-1{position: absolute; width:px2rem(309); top:px2rem(65); left:px2rem(28);}
+    .cake-2{position: absolute; width:px2rem(309); top:px2rem(450); left:px2rem(420); }
+    .word{position: absolute; width:px2rem(254); bottom:px2rem(60); left:px2rem(450);}
+    .title-1{position: absolute; width:px2rem(345); top:px2rem(140); left:px2rem(376);}
   }
 
-  .sec-2{height: px2rem(899); z-index: 1;
-    .line{position: absolute; width:px2rem(750); top:px2rem(-215); left: 0; z-index: 2;}
-    .price{position: absolute; width:px2rem(224); top:px2rem(170); left: px2rem(487); z-index: 2;}
-    .cake{position: absolute; width:px2rem(551); top:px2rem(40); left:px2rem(40); z-index: 2;}
-    .shuangxiong{position: absolute; width:px2rem(750); bottom:px2rem(-5); left: 0; z-index: 1;}
+  .sec-2{height: px2rem(980); z-index: 1;
+    .cake{position: absolute; width:px2rem(551); top:px2rem(60); left:px2rem(100); z-index: 1;}
+    .price{position: absolute; width:px2rem(487); top:px2rem(500); left: px2rem(130); z-index: 3;
+    }
+    .select{position: absolute; top:px2rem(715); left: px2rem(540); z-index: 5;
+      ul{
+        li{ width: px2rem(30); height: px2rem(30); background: url("../images/gou-1.png") center no-repeat; background-size: 80%; margin-bottom: px2rem(30); display: block; }
+        li.on{ background: url("../images/gou-2.png") center no-repeat; background-size: 80%;}
+      }
+    }
   }
 
-  .sec-footer{background:#dccaad; background-size: 100%; position: relative; padding-bottom: px2rem(20); z-index: 2;
-    .txt{ position: relative; width:px2rem(680); padding: px2rem(70) 0 px2rem(50); margin: 0 auto;  color: #625033;
+  .sec-3{height: px2rem(1030); z-index: 1; background: #fcf1f5;
+    .cake{position: absolute; width:px2rem(750); top:0; left:0; z-index: 1;}
+    .price{position: absolute; width:px2rem(391); top:px2rem(580); left: px2rem(180); z-index: 3;}
+    .select{position: absolute; top:px2rem(815); left: px2rem(540); z-index: 5;
+      ul{
+        li{ width: px2rem(30); height: px2rem(30); background: url("../images/gou-1.png") center no-repeat; background-size: 80%; margin-bottom: px2rem(30); display: block; }
+        li.on{ background: url("../images/gou-2.png") center no-repeat; background-size: 80%;}
+      }
+    }
+  }
+
+  .sec-4{
+    .more{position: relative; width: px2rem(176); margin: px2rem(60) auto;}
+  }
+
+  .go-btn{position: relative; width: px2rem(180); margin:0 auto; padding: px2rem(30) 0 0;
+    span{display: block; width: px2rem(180); margin: 0 auto; height: px2rem(45); background: url("../images/go-buy.png") center no-repeat; background-size: 100%; }
+  }
+
+  .sec-footer{background:#ab1128; background-size: 100%; position: relative; padding-bottom: px2rem(20); z-index: 2;
+    .txt{position: relative; width:px2rem(680); padding: px2rem(70) 0 px2rem(50); margin: 0 auto;  color: #fff;
       h2{font-size: px2rem(30); font-weight: normal; }
-      p{ font-size: px2rem(23); padding-left: px2rem(35); line-height:px2rem(40);  text-indent: px2rem(-35);
+      p{font-size: px2rem(23); padding-left: px2rem(35); line-height:px2rem(40);  text-indent: px2rem(-35);
         margin:px2rem(5) 0;}
     }
   }
 }
 
 
-@media screen and (max-width: 320px) {
-  .sel-li{ top: px2rem(-10) !important; }
-  i{top:px2rem(3) !important; }
+.swiper-container {
+  position: relative !important;
+ overflow: hidden;
+  width:px2rem(309); height:px2rem(309); margin-left: px2rem(10);
+  margin-right: auto;
 }
+.swiper-slide {
+  text-align: center;
+  height:px2rem(309);
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-pagination{width: 100%; position: absolute !important; bottom:px2rem(30) !important; }
+.swiper-pagination-bullet{margin:0 px2rem(5) !important; background: #fff !important; opacity:1 !important; }
+.swiper-pagination-bullet.swiper-pagination-bullet-active{background: #909090 !important; }
+
+
+
+

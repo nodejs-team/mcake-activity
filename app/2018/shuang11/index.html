@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>mcake活动</title>
+    <link rel="stylesheet" href="https://act.mcake.com/fangli/2018/wap/commoncss/comm_header.css" />
+    <!-- build:css styles/index.css -->
+    <script src="../commonjs/public-shimily.js"></script>
+    <link rel="stylesheet" href="../commoncss/wap-normalize.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <!-- endbuild-->
+    <script src="https://act.mcake.com/fangli/2018/wap/commonjs/jquery.min.js"></script>
+    <script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+
+</head>
+<body>
+
+<div id="evt_container">
+    <div id="iscroll">
+        <div class="wrap">
+            <header>
+                <a href="http://m.mcake.com/wap" class="icon-back"></a>
+                <div class="title">
+                    <span>活动</span><br><span>activity</span>
+                </div>
+                <a href="http://m.mcake.com/wap" class="icon-home"></a>
+            </header>
+            <div id="evt_loading" style="display:none;">0%</div>
+            <div id="evt_content" style="display:none;">
+                <div class="sec sec-top"></div>
+                <div class="sec sec-1">
+                    <div class="quan"><img src="images/quan.png" alt="">
+                        <div class="lastTime1">剩余: <b id="timer1"></b></div>
+                        <div class="qBtn qiang-btn"><span>马上抢</span></div>
+                        <div class="lastTime2">剩余: <b id="timer2"></b></div>
+                        <div class="qBtn qiang-btn2 end"><span>已抢光</span></div>
+                    </div>
+
+                </div>
+                <!--折扣专场-->
+                <div class="sec sec-cakes zhekou">
+                    <div class="title" style="margin-bottom: 0;"><img src="images/num-2.png" alt=""></div>
+                    <div class="moon prolist">
+                        <ul class="clearfix">
+                            <li data-pond="2磅,3磅,5磅" data-price="298,428,728" data-time="提示：需提前1小时预订,提示：需提前5小时预订,提示：需提前2小时预订,提示：需提前4小时预订" data-postid="02,03,04" data-tips="尺寸：4-7人食 18cm*4cm,尺寸：8-12人食 22cm*4.5cm,尺寸：12-20人食 25cm*5.5cm">
+                                <img src="images/img-1.png" class="zoom" alt="">
+                                <div class="m-title">白色恋人</div>
+                                <div class="m-price">双11剁手价<span><i>￥</i>254.4</span> <s>原价：￥318</s></div>
+                                <div class="m-btn">立即订购</div>
+                            </li>
+                            <li data-pond="2磅,3磅,5磅" data-price="298,428,728" data-time="提示：需提前1小时预订,提示：需提前5小时预订,提示：需提前2小时预订,提示：需提前4小时预订" data-postid="02,03,04" data-tips="尺寸：4-7人食 18cm*4cm,尺寸：8-12人食 22cm*4.5cm,尺寸：12-20人食 25cm*5.5cm">
+                                <img src="images/img-2.png" class="zoom" alt="">
+                                <div class="m-title">爱丽丝花境</div>
+                                <div class="m-price">双11剁手价<span><i>￥</i>238.4</span> <s>原价：￥298</s></div>
+                                <div class="m-btn">立即订购</div>
+                            </li>
+                            <li data-pond="2磅,3磅,5磅" data-price="298,428,728" data-time="提示：需提前1小时预订,提示：需提前5小时预订,提示：需提前2小时预订,提示：需提前4小时预订" data-postid="02,03,04" data-tips="尺寸：4-7人食 18cm*4cm,尺寸：8-12人食 22cm*4.5cm,尺寸：12-20人食 25cm*5.5cm">
+                                <img src="images/img-3.png" class="zoom" alt="">
+                                <div class="m-title">法香奶油可丽</div>
+                                <div class="m-price">双11剁手价<span><i>￥</i>238.4</span> <s>原价：￥298</s></div>
+                                <div class="m-btn">立即订购</div>
+                            </li>
+                            <li data-pond="2磅,3磅,5磅" data-price="298,428,728" data-time="提示：需提前1小时预订,提示：需提前5小时预订,提示：需提前2小时预订,提示：需提前4小时预订" data-postid="02,03,04" data-tips="尺寸：4-7人食 18cm*4cm,尺寸：8-12人食 22cm*4.5cm,尺寸：12-20人食 25cm*5.5cm">
+                                <img src="images/img-4.png" class="zoom" alt="">
+                                <div class="m-title">经典香草拿破仑</div>
+                                <div class="m-price">双11剁手价<span><i>￥</i>238.4</span> <s>原价：￥298</s></div>
+                                <div class="m-btn">立即订购</div>
+                            </li>
+                            <li data-pond="2磅,3磅,5磅" data-price="298,428,728" data-time="提示：需提前1小时预订,提示：需提前5小时预订,提示：需提前2小时预订,提示：需提前4小时预订" data-postid="02,03,04" data-tips="尺寸：4-7人食 18cm*4cm,尺寸：8-12人食 22cm*4.5cm,尺寸：12-20人食 25cm*5.5cm">
+                                <img src="images/img-5.png" class="zoom" alt="">
+                                <div class="m-title">天使巧克力</div>
+                                <div class="m-price">双11剁手价<span><i>￥</i>238.4</span> <s>原价：￥298</s></div>
+                                <div class="m-btn">立即订购</div>
+                            </li>
+                            <li data-pond="2磅,3磅,5磅" data-price="298,428,728" data-time="提示：需提前1小时预订,提示：需提前5小时预订,提示：需提前2小时预订,提示：需提前4小时预订" data-postid="02,03,04" data-tips="尺寸：4-7人食 18cm*4cm,尺寸：8-12人食 22cm*4.5cm,尺寸：12-20人食 25cm*5.5cm">
+                                <img src="images/img-6.png" class="zoom" alt="">
+                                <div class="m-title">提拉米苏</div>
+                                <div class="m-price">双11剁手价<span><i>￥</i>238.4</span> <s>原价：￥298</s></div>
+                                <div class="m-btn">立即订购</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!--积分膨胀-->
+                <div class="sec sec-cakes jifen">
+                    <div class="title"><img src="images/num-3.png" alt=""></div>
+                    <div class="jf-pz"><img src="images/jf-pz.png" alt=""></div>
+                    <div class="moon prolist">
+                        <ul class="clearfix">
+                            <li data-pond="2磅,3磅,5磅" data-price="298,428,728" data-time="提示：需提前1小时预订,提示：需提前5小时预订,提示：需提前2小时预订,提示：需提前4小时预订" data-postid="02,03,04" data-tips="尺寸：4-7人食 18cm*4cm,尺寸：8-12人食 22cm*4.5cm,尺寸：12-20人食 25cm*5.5cm">
+                                <img src="images/cake-1.png" class="zoom" alt="">
+                                <div class="lijian"><img src="images/jian-50.png" alt=""></div>
+                                <div class="m-title">尼诺</div>
+                                <div class="m-price"><img src="images/zhekou.png" alt="" class="zhekou" >
+                                    <span><i>￥</i>248</span> <s>原价：￥298</s>
+                                    <div class="jf">+500积分</div>
+                                </div>
+
+                                <div class="m-btn">立即订购</div>
+                            </li>
+                            <li data-pond="2磅,3磅,5磅" data-price="298,428,728" data-time="提示：需提前1小时预订,提示：需提前5小时预订,提示：需提前2小时预订,提示：需提前4小时预订" data-postid="02,03,04" data-tips="尺寸：4-7人食 18cm*4cm,尺寸：8-12人食 22cm*4.5cm,尺寸：12-20人食 25cm*5.5cm">
+                                <img src="images/cake-2.png" class="zoom" alt="">
+                                <div class="lijian"><img src="images/jian-50.png" alt=""></div>
+                                <div class="m-title">巧克力黑兰</div>
+                                <div class="m-price"><img src="images/zhekou.png" alt="" class="zhekou" >
+                                    <span><i>￥</i>248</span> <s>原价：￥298</s>
+                                    <div class="jf">+500积分</div>
+                                </div>
+
+                                <div class="m-btn">立即订购</div>
+                            </li>
+                            <li data-pond="2磅,3磅,5磅" data-price="298,428,728" data-time="提示：需提前1小时预订,提示：需提前5小时预订,提示：需提前2小时预订,提示：需提前4小时预订" data-postid="02,03,04" data-tips="尺寸：4-7人食 18cm*4cm,尺寸：8-12人食 22cm*4.5cm,尺寸：12-20人食 25cm*5.5cm">
+                                <img src="images/cake-3.png" class="zoom" alt="">
+                                <div class="lijian"><img src="images/jian-30.png" alt=""></div>
+                                <div class="m-title">棒棒糖</div>
+                                <div class="m-price"><img src="images/zhekou.png" alt="" class="zhekou" >
+                                    <span><i>￥</i>268</span> <s>原价：￥298</s>
+                                    <div class="jf">+300积分</div>
+                                </div>
+
+                                <div class="m-btn">立即订购</div>
+                            </li>
+                            <li data-pond="2磅,3磅,5磅" data-price="298,428,728" data-time="提示：需提前1小时预订,提示：需提前5小时预订,提示：需提前2小时预订,提示：需提前4小时预订" data-postid="02,03,04" data-tips="尺寸：4-7人食 18cm*4cm,尺寸：8-12人食 22cm*4.5cm,尺寸：12-20人食 25cm*5.5cm">
+                                <img src="images/cake-4.png" class="zoom" alt="">
+                                <div class="lijian"><img src="images/jian-30.png" alt=""></div>
+                                <div class="m-title">芒果•Mangue</div>
+                                <div class="m-price"><img src="images/zhekou.png" alt="" class="zhekou" >
+                                    <span><i>￥</i>268</span> <s>原价：￥298</s>
+                                    <div class="jf">+300积分</div>
+                                </div>
+
+                                <div class="m-btn">立即订购</div>
+                            </li>
+                            <li data-pond="2磅,3磅,5磅" data-price="298,428,728" data-time="提示：需提前1小时预订,提示：需提前5小时预订,提示：需提前2小时预订,提示：需提前4小时预订" data-postid="02,03,04" data-tips="尺寸：4-7人食 18cm*4cm,尺寸：8-12人食 22cm*4.5cm,尺寸：12-20人食 25cm*5.5cm">
+                                <img src="images/cake-5.png" class="zoom" alt="">
+                                <div class="lijian"><img src="images/jian-20.png" alt=""></div>
+                                <div class="m-title">黑森林拿破仑</div>
+                                <div class="m-price"><img src="images/zhekou.png" alt="" class="zhekou" >
+                                    <span><i>￥</i>278</span> <s>原价：￥298</s>
+                                    <div class="jf">+200积分</div>
+                                </div>
+
+                                <div class="m-btn">立即订购</div>
+                            </li>
+                            <li data-pond="2磅,3磅,5磅" data-price="298,428,728" data-time="提示：需提前1小时预订,提示：需提前5小时预订,提示：需提前2小时预订,提示：需提前4小时预订" data-postid="02,03,04" data-tips="尺寸：4-7人食 18cm*4cm,尺寸：8-12人食 22cm*4.5cm,尺寸：12-20人食 25cm*5.5cm">
+                                <img src="images/cake-6.png" class="zoom" alt="">
+                                <div class="lijian"><img src="images/jian-20.png" alt=""></div>
+                                <div class="m-title">君度可可</div>
+                                <div class="m-price"><img src="images/zhekou.png" alt="" class="zhekou" >
+                                    <span><i>￥</i>278</span> <s>原价：￥298</s>
+                                    <div class="jf">+200积分</div>
+                                </div>
+
+                                <div class="m-btn">立即订购</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--小食第二件半价-->
+                <div class="sec sec-cakes xiaoshi">
+                    <div class="title"><img src="images/num-4.png" alt=""></div>
+                    <div class="moon prolist">
+                        <ul class="clearfix">
+                            <li data-pond="2磅,3磅,5磅" data-price="298,428,728" data-time="提示：需提前1小时预订,提示：需提前5小时预订,提示：需提前2小时预订,提示：需提前4小时预订" data-postid="02,03,04" data-tips="尺寸：4-7人食 18cm*4cm,尺寸：8-12人食 22cm*4.5cm,尺寸：12-20人食 25cm*5.5cm">
+                                <img src="images/xiaoshi-1.png" class="zoom" alt="">
+                                <div class="m-title">萝拉小朵（原味）</div>
+                                <div class="m-price">双11囤货价<span><i>￥</i>72/</span><strong>2件</strong> <s>原价：96元</s></div>
+                                <div class="m-btn">立即订购</div>
+
+                            </li>
+                            <li data-pond="100克,200克,300克,500克" data-price="48,78,108,168" data-time="提示：需提前1小时预订,提示：需提前5小时预订,提示：需提前2小时预订,提示：需提前4小时预订" data-postid="01,02,03,04" data-tips="尺寸： 2-3人食 15cm*3.5cm,尺寸：4-7人食 18cm*4cm,尺寸：8-12人食 22cm*4.5cm,尺寸：12-20人食 25cm*5.5cm">
+                                <img src="images/xiaoshi-2.png" class="zoom" alt="">
+                                <div class="m-title">萝拉小朵（抹茶）</div>
+                                <div class="m-price">双11囤货价<span><i>￥</i>72/</span><strong>2件</strong> <s>原价：96元</s></div>
+                                <div class="m-btn">立即订购</div>
+
+                            </li>
+                            <li data-pond="100克,200克,300克,500克" data-price="48,78,108,168" data-time="提示：需提前1小时预订,提示：需提前5小时预订,提示：需提前2小时预订,提示：需提前4小时预订" data-postid="01,02,03,04" data-tips="尺寸： 2-3人食 15cm*3.5cm,尺寸：4-7人食 18cm*4cm,尺寸：8-12人食 22cm*4.5cm,尺寸：12-20人食 25cm*5.5cm">
+                                <img src="images/xiaoshi-3.png" class="zoom" alt="">
+                                <div class="m-title">半熟芝士（原味）</div>
+                                <div class="m-price">双11囤货价<span><i>￥</i>72/</span><strong>2件</strong> <s>原价：96元</s></div>
+                                <div class="m-btn">立即订购</div>
+
+                            </li>
+                            <li data-pond="100克,200克,300克,500克" data-price="48,78,108,168" data-time="提示：需提前1小时预订,提示：需提前5小时预订,提示：需提前2小时预订,提示：需提前4小时预订" data-postid="01,02,03,04" data-tips="尺寸： 2-3人食 15cm*3.5cm,尺寸：4-7人食 18cm*4cm,尺寸：8-12人食 22cm*4.5cm,尺寸：12-20人食 25cm*5.5cm">
+                                <img src="images/xiaoshi-4.png" class="zoom" alt="">
+                                <div class="m-title">半熟芝士（草莓味）</div>
+                                <div class="m-price">双11囤货价<span><i>￥</i>72/</span><strong>2件</strong> <s>原价：96元</s></div>
+                                <div class="m-btn">立即订购</div>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!--组合推荐-->
+                <div class="sec sec-xp ">
+                    <div class="title"><img src="images/num-5.png" alt=""></div>
+                    <div class="content">
+                        <div class="xp-img"><img src="images/cake.png" alt=""></div>
+                        <div class="xp xincake" data-anim="slide-up" data-delay="0.8"  data-pond="1.5磅,2.5磅,3.5磅,5.5磅" data-price="218,318,458,750" data-time="提示：需提前1小时预订,提示：需提前5小时预订,提示：需提前2小时预订,提示：需提前4小时预订" data-postid="01,02,03,04" data-tips="尺寸： 2-3人食 15cm*3.5cm,尺寸：4-7人食 18cm*4cm,尺寸：8-12人食 22cm*4.5cm,尺寸：12-20人食 25cm*5.5cm">
+                            <div class="buy-price"><img src="images/price.png" alt=""></div>
+                            <div class="buy-btns clearfix">
+                                <div class="buy-btn buy-xp-btn on"><span>立即订购</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="sec sec-footer">
+                    <div class="more"><img src="images/more.png" alt=""></div>
+                    <div class="code"><img src="images/code.png" alt=""></div>
+                    <div class="txt">
+                        <h2>活动规则：</h2>
+                        <p>1、活动时间：2018年10月31日-2018年11月16日</p>
+                        <p>2、活动城市：上海、北京、苏州、杭州</p>
+                        <p>3、支付方式：微信、支付宝、现金</p>
+                        <p>4、活动内容：<br>
+                            · 1元限时抢购60元优惠券，满299元可使用，不与折扣，立减，积分抵扣活动同享，
+                            每笔订单仅限使用1张，有效期至2018年12月31日<br>
+                            · 19.9元限时抢购萝拉小朵巧克力味（100g），活动期间每人仅限参与1次，可以其他优惠同享<br>
+                            · 积分抵扣，每10积分即可抵扣1元，在结算页面-使用卡券卡券抵扣中，选择抵扣积分，
+                            即可抵扣相应积分，每笔订单最高可抵扣500积分，不与其他优惠同享<br>
+                            · 凡活动页面购买爱丽丝花境，白色恋人，法香奶油可丽，天使巧克力，经典香草拿破仑，提拉米苏，
+                            2磅及2磅以上享8折优惠，不与其他优惠同享<br>
+                            · 凡活动页面购买小食商品第二件可享半价优惠，不与其他优惠同享</p>
+                        <p>5、本活动与会员等级制度、积分同享，但不与其他优惠同享</p>
+                        <p>6、本活动最终解释权归MCAKE所有</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+<!--蛋糕选择弹窗-->
+<div class="Dialogbg-Select" ontouchmove="return false;"></div>
+<div class="Dialog-Select" ontouchmove="return false;">
+    <div class="s-closes"></div>
+    <div class="Select" ontouchmove="return false;">
+        <div class="s-title">
+            <h2>选择您要订购的磅数：</h2>
+            <b>Sélectionnez la commande le nombre de livres：</b>
+        </div>
+        <div class="s-bangshu clearfix">
+            <ul class="clearfix"></ul>
+            <div class="d-tips">
+                <div class="time">提示：需提前5小时预订</div>
+                <div class="tips">尺寸： 4-7人食 18cm*4cm（不含玫瑰花瓣）</div>
+            </div>
+        </div>
+        <div class="s-num">
+            <b>数量：</b>
+            <div class="nums">
+                <a href="javascript:;" class="minus"></a>
+                <input class="num" value="1" readonly="" type="text" data-num="">
+                <a href="javascript:;" class="plus"></a>
+            </div>
+        </div>
+        <div class="s-prices">
+            <input type="hidden" class="postid" data-postid="">
+            <b>价格：</b>
+           <!-- <p>￥ <span class="s-price">00</span></p>-->
+            <p>￥ <span class="s-new-price">00</span> <s class="old-p">￥<i class="s-price">00</i></s></p>
+        </div>
+        <div class="btns">
+            <div class="go-car">加入购物车</div>
+            <div class="go-buy">立即订购</div>
+        </div>
+
+    </div>
+</div>
+
+
+<script src="https://act.mcake.com/fangli/2018/wap/commonjs/flexible.js"></script>
+<script src="https://act.mcake.com/fangli/2018/wap/shuang11/scripts/goTime.js"></script>
+
+<!-- build:js scripts/index.js -->
+<script src="../commonjs/fastclick.js"></script>
+<script src="../commonjs/pubsub.js"></script>
+<script src="../commonjs/loader.js"></script>
+
+<script src="../commonjs/iscroll.js"></script>
+<script src="../commonjs/velocity.js"></script>
+<script src="../commonjs/wap-scrollAnimate.js"></script>
+
+<script src="../commonjs/public-shimily.js"></script>
+<script src="../commonjs/movieclip.js"></script>
+<script src="scripts/resdata.js"></script>
+
+<script src="scripts/index.js"></script>
+<!-- endbuild -->
+
+<script>
+
+    function actEnd() {
+        $("#timer1").html("活动结束！")
+    }
+    function actEnd2() {
+        $("#timer2").html("活动结束啦！")
+    }
+
+    __END_DATE__ = '2018-10-29 20:26:30';    /*手机上需要转换成时间戳*/
+    goTime(__END_DATE__,'#timer1',actEnd);
+    goTime(__END_DATE__,'#timer2',actEnd2);
+
+    $(".zhekou .prolist li").each(function () {
+        var self = this;
+        $(this).find('.m-car').click(function () {
+            $(".go-buy").hide(0).siblings().show(0);
+            SelectShow(self,0.8,true,0,0);
+        });
+        $(this).find('.m-btn').click(function () {
+            $(".go-car").hide(0).siblings().show(0);
+            SelectShow(self,0.8,true,0,0);
+        });
+    });
+
+    $(".jifen .prolist li").each(function () {
+        var self = this;
+        $(this).find('.m-car').click(function () {
+            $(".go-buy").hide(0).siblings().show(0);
+            SelectShow(self,1,true,0,0);
+        });
+        $(this).find('.m-btn').click(function () {
+            $(".go-car").hide(0).siblings().show(0);
+            SelectShow(self,1,true,0,0);
+        });
+    });
+
+    $(".xiaoshi .prolist li").each(function () {
+        var self = this;
+        $(this).find('.m-car').click(function () {
+            $(".go-buy").hide(0).siblings().show(0);
+            SelectShow(self,1,true,0,1);
+        });
+        $(this).find('.m-btn').click(function () {
+            $(".go-car").hide(0).siblings().show(0);
+            SelectShow(self,1,true,0,1);
+        });
+    });
+
+    $(".go-car").click(function () {
+        SelectHide();
+    });
+    $(".go-buy,.s-closes").click(function () {
+        SelectHide();
+    });
+
+    $(".xincake").each(function () {
+        var self = this;
+        $(".buy-xp-card").click(function () {
+            $(".go-buy").hide(0).siblings().show(0);
+            SelectShow(self,1,true,1);
+        });
+        $(".buy-xp-btn").click(function () {
+            $(".go-car").hide(0).siblings().show(0);
+            SelectShow(self,1,true,1);
+        });
+    });
+
+
+    /*点击抽奖*/
+    var random= parseInt(Math.random()*(6+1),10);
+    var arr = [0,1,2,3,4,5,6];
+    var num = 0;
+    $(".jiang-btn").click(function () {
+        var timer = setInterval(function () {
+
+            if(num>=7){
+                num=0;
+            }
+            $(".choujiang li").eq(num).addClass("on").siblings().removeClass("on");
+            num++;
+        },100);
+
+
+        setTimeout(function () {
+            num=random;
+            clearInterval(timer);
+            $(".choujiang li").eq(arr[random]).addClass("on").siblings().removeClass("on");
+
+            var jpArr=[
+                {leve:"1等奖",name:"SU live项链",price:"1888.00"},
+                {leve:"2等奖",name:"LINKS手链",price:"1800.00"},
+                {leve:"3等奖",name:"雅氏蛋卷鞋",price:"1260.00"},
+                {leve:"4等奖",name:"彼得罗夫 ·玫瑰舒润瞬采凝霜",price:"620.00"},
+                {leve:"5等奖",name:"彼得罗夫PTR清凉香薰面膜",price:"380.00"},
+                {leve:"6等奖",name:"半熟芝士(原味) 1盒",price:"48.00"},
+                {leve:"7等奖",name:"100元优惠券1张",price:"100.00"}
+            ];
+            new choujiang(".Dialogbg-tip",".Dialog-tip",num,jpArr);
+        },3000)
+    });
+
+</script>
+</body>
+</html>

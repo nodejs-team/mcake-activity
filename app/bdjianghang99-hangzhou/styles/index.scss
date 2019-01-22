@@ -82,6 +82,7 @@
         span{color: #319c8b; margin: 0; vertical-align: text-bottom;}
       }
       p{font-size: px2rem(36); color: #000; font-weight: normal;}
+
       .word{position: absolute; top: px2rem(270); left: px2rem(140);}
       .w-2{ left: px2rem(460);}
       .plate{ width:px2rem(199); top: px2rem(200); left:px2rem(290);
@@ -117,13 +118,13 @@
         }
         .fr{float:right; }
         .p1{margin:px2rem(10) 0 0; width:98%;}
-        .p2{padding-top:px2rem(1); width:98%; margin: 0;
+        .p2{padding-top:px2rem(1); width:98%; margin: 0; display: none;
           .fr{color: #bc2323;
             span{font-size:px2rem(33);}
           }
           .fl{padding-top:px2rem(2);}
         }
-        .buybtn{width:99%; height:px2rem(54); display:block; border-radius:px2rem(2);
+        .buybtn{width:99%; height:px2rem(54); display:inline-block; border-radius:px2rem(2);
           text-decoration: none; margin:px2rem(5) 0 0 0; background:#677b95; color:#ffffff; border-radius: px2rem(10);
           text-align:center; line-height:px2rem(54); font-size:px2rem(26); position:static;}
       }
@@ -148,6 +149,7 @@
     }
     .text1893{width:px2rem(260); margin:px2rem(20) auto;}
 
+
   }
 
   .section-footer{position: relative;  background: url("../images/bg-2.jpg") repeat;
@@ -158,4 +160,13 @@
   }
 
 
+}
+
+
+/*浮动*/
+.floater{  position: fixed; width: px2rem(145); height: px2rem(145); bottom: px2rem(20); right: px2rem(10);  z-index: 11; cursor: pointer; display: none;
+  img{ width: 100%;}
+  .tips{ position: absolute; width: px2rem(50); height: px2rem(50); right:px2rem(-5); top:px2rem(-5); border-radius: 50%; background:url("../images/tips.png") center no-repeat; background-size: 100%; text-align: center; z-index: 12;
+    span{display: block; font-size:px2rem(20); color: #fff; line-height:px2rem(50);}
+  }
 }

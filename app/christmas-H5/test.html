@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<title>测试</title>
+	<style>
+		*{margin: 0; padding: 0;}
+		.box{ width: 100%; background: #e0e0e0;}
+	</style>
+</head>
+<body>
+ <script src="https://act.mcake.com/fangli/2018/wap/commonjs/flexible.js"></script>
+ <div class="box">测试 <br>
+	 <div>屏幕的宽度:<span class="txt1"></span></div>
+	 <div>屏幕的高度:<span class="txt2"></span></div>
+
+ </div>
+
+	<script src="https://act.mcake.com/fangli/2018/wap/commonjs/jquery.min.js"></script>
+	<script type="text/javascript">
+		var wS = $(window).width();
+		var wh = $(window).height();
+		$(".txt1").html(wS);
+		$(".txt2").html(wh);
+		$(".box").height(wh);
+	</script>
+</body>
+</html>

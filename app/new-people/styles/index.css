@@ -1,7 +1,7 @@
 @charset "UTF-8";
 #evt_content {
-  background: url("../images/bg.jpg") repeat;
-  /*价格*/ }
+  background: #eff0e5;
+  /*价格计算【通用】*/ }
   #evt_content div {
     position: absolute; }
   #evt_content img {
@@ -9,374 +9,339 @@
   #evt_content .sec {
     position: relative; }
   #evt_content .sec-top {
-    height: 12.81333rem;
-    background: url("../images/top-bg.png") repeat;
+    z-index: 1;
+    height: 7.41333rem;
+    background: url("../images/banner-wap.jpg") repeat;
     background-size: 100%;
     z-index: 1;
     overflow: hidden; }
-    #evt_content .sec-top .title {
-      width: 9.12rem;
-      top: 0.13333rem;
-      left: 0.30667rem; }
-    #evt_content .sec-top .cake {
-      width: 8.96rem;
-      top: 3.2rem;
-      right: 0; }
-  #evt_content .sec-main .quan {
-    position: relative;
-    width: 7.92rem;
-    margin: 0.53333rem auto;
-    cursor: pointer; }
-    #evt_content .sec-main .quan .quan-1 {
-      width: 7.92rem;
-      position: relative;
-      margin-bottom: 0.4rem; }
-    #evt_content .sec-main .quan .quan-2 {
-      width: 7.92rem;
+    #evt_content .sec-top .banner-t {
+      width: 10rem;
+      top: 2.66667rem;
+      left: 0; }
+  #evt_content .sec-0 {
+    z-index: 2;
+    margin-top: -1.06667rem; }
+    #evt_content .sec-0 div {
       position: relative; }
-    #evt_content .sec-main .quan .word {
+    #evt_content .sec-0 .hongbao {
+      width: 10rem;
+      margin: -0.06667rem auto 0.53333rem; }
+    #evt_content .sec-0 .btn-hb {
       position: absolute;
-      top: 0.13333rem;
-      right: 0.8rem;
-      width: 2.10667rem;
-      height: 2.10667rem;
-      background: url("../images/w-1.png") no-repeat;
-      background-size: 100%; }
-    #evt_content .sec-main .quan .word.sced {
-      background: url("../images/w-2.png") no-repeat;
-      background-size: 100%; }
-  #evt_content .sec-main .row {
-    position: relative; }
-  #evt_content .sec-main .row1 {
-    height: 7.77333rem; }
+      bottom: 0.66667rem;
+      left: 50%;
+      margin-left: -1.06667rem; }
+      #evt_content .sec-0 .btn-hb span {
+        padding: 0.04rem 0.4rem;
+        font-size: 0.32rem;
+        line-height: 0.8rem;
+        background: #e6e7d8;
+        color: #6a6e44; }
+  #evt_content .hy-title {
+    position: relative;
+    width: 10rem;
+    margin: 0.4rem auto; }
+  #evt_content .sec-main {
+    padding: 0.66667rem 0 0.13333rem;
+    margin: 0 0.16rem 0.66667rem;
+    background: #fff; }
+    #evt_content .sec-main .dis-1 {
+      position: absolute;
+      width: 0.52rem;
+      top: -0.13333rem;
+      right: 0.26667rem; }
+    #evt_content .sec-main .dis-2 {
+      position: absolute;
+      width: 0.96rem;
+      top: -0.8rem;
+      left: 0.26667rem; }
+    #evt_content .sec-main .dis-3 {
+      position: absolute;
+      width: 0.64rem;
+      top: -0.13333rem;
+      right: 0.13333rem; }
+    #evt_content .sec-main .dis-4 {
+      position: absolute;
+      width: 1.18667rem;
+      bottom: 0.13333rem;
+      left: 0.53333rem; }
+    #evt_content .sec-main .price_num dl dd.reduce {
+      background: url("../images/reduce-2.png") center no-repeat;
+      background-size: 90%; }
+    #evt_content .sec-main .price_num dl dd.add {
+      background: url("../images/add-2.png") center no-repeat scroll;
+      background-size: 90%; }
+    #evt_content .sec-main .row {
+      position: relative;
+      height: 5.6rem; }
     #evt_content .sec-main .row1 .cake {
-      width: 6.16rem;
-      top: 1.06667rem;
-      left: 0rem;
+      width: 4.49333rem;
+      top: 0;
+      right: 0.16rem;
       z-index: 1; }
     #evt_content .sec-main .row1 .price {
-      top: 1.86667rem;
-      left: 5.73333rem; }
-  #evt_content .price {
-    position: absolute;
-    width: 4.26667rem;
-    text-align: left;
-    z-index: 2; }
-    #evt_content .price .title {
-      position: relative;
-      width: 3.53333rem;
-      margin: 0.4rem 0; }
-    #evt_content .price h2 {
-      font-size: 0.4rem;
-      font-weight: normal;
-      line-height: 0.66667rem;
-      color: #fdd372; }
-      #evt_content .price h2 i {
-        font-size: 0.26667rem;
-        font-style: normal;
-        vertical-align: top; }
-      #evt_content .price h2 span {
-        font-size: 0.62667rem; }
-    #evt_content .price s {
-      font-size: 0.34667rem;
-      color: #888888;
-      font-weight: normal;
-      line-height: 0.4rem; }
-    #evt_content .price ul.buy_btn_box {
-      overflow: hidden;
-      margin-top: 0.4rem; }
-    #evt_content .price ul.buy_btn_box li {
-      float: left;
-      margin-right: 0.13333rem; }
-    #evt_content .price ul.buy_btn_box li:last-child {
-      margin-right: 0; }
-    #evt_content .price ul.buy_btn_box li:last-child span {
-      background: #ffc529; }
-    #evt_content .price ul.buy_btn_box li span {
-      display: block;
-      background: #887967;
-      color: #fff;
-      cursor: pointer;
-      height: 0.8rem;
-      line-height: 0.8rem;
-      font-size: 0.32rem;
-      width: 2rem;
-      text-align: center;
-      border-radius: 0.13333rem; }
+      top: 0rem;
+      left: 0.26667rem;
+      z-index: 2; }
+    #evt_content .sec-main .row2 .cake {
+      width: 4.17333rem;
+      top: 0;
+      left: 0.16rem;
+      z-index: 1; }
+    #evt_content .sec-main .row2 .price {
+      top: 0rem;
+      left: auto;
+      right: 0.26667rem; }
+    #evt_content .sec-main .row3 .cake {
+      width: 5.26667rem;
+      top: 0;
+      right: 0.16rem;
+      z-index: 1; }
+    #evt_content .sec-main .row3 .price {
+      top: 0rem;
+      left: 0.26667rem;
+      z-index: 2; }
+    #evt_content .sec-main .row4 .cake {
+      width: 5.70667rem;
+      top: 0;
+      left: -0.13333rem;
+      z-index: 1; }
+    #evt_content .sec-main .row4 .price {
+      top: 0rem;
+      left: auto;
+      right: 0.26667rem; }
+  #evt_content .sec-zp {
+    position: relative;
+    z-index: 2;
+    background: #fff;
+    padding-top: 0.01333rem; }
+    #evt_content .sec-zp div {
+      position: relative; }
+    #evt_content .sec-zp .quan {
+      width: 10rem;
+      margin: 0.66667rem auto 0;
+      z-index: 1; }
   #evt_content .sec-footer {
     background: #fff;
-    background-size: 100%;
+    background-size: 12%;
     position: relative;
-    padding-bottom: 0.26667rem; }
+    padding-bottom: 0.66667rem;
+    z-index: 1; }
+    #evt_content .sec-footer .dis-5 {
+      position: absolute;
+      width: 1.32rem;
+      top: -0.93333rem;
+      left: 0.4rem; }
     #evt_content .sec-footer .txt {
       position: relative;
-      width: 8rem;
-      padding-top: 0.93333rem;
+      width: 9.33333rem;
+      padding-top: 0.66667rem;
       margin: 0 auto;
-      color: #8a796d; }
+      color: #000;
+      text-align: left; }
       #evt_content .sec-footer .txt h2 {
-        font-size: 0.4rem;
+        font-size: 0.37333rem;
         font-weight: normal; }
       #evt_content .sec-footer .txt p {
         font-size: 0.30667rem;
         padding-left: 0.46667rem;
         line-height: 0.53333rem;
         text-indent: -0.46667rem;
-        margin: 0.06667rem 0; }
+        margin: 0.06667rem 0;
+        text-align: left; }
+        #evt_content .sec-footer .txt p span {
+          display: block;
+          padding-left: 0.13333rem;
+          text-indent: -0.13333rem; }
+  #evt_content .price {
+    position: absolute;
+    width: 4.66667rem;
+    text-align: center;
+    z-index: 2; }
+    #evt_content .price .icons {
+      width: 0.66667rem;
+      position: absolute;
+      left: 0.4rem;
+      top: -0.17333rem; }
+    #evt_content .price .title {
+      position: relative;
+      width: 4.50667rem;
+      margin: 0.13333rem auto; }
+    #evt_content .price .jiage {
+      position: relative;
+      width: 4.66667rem; }
+    #evt_content .price h2 {
+      float: left;
+      font-size: 0.4rem;
+      font-weight: normal;
+      line-height: 0.66667rem;
+      color: #000; }
+      #evt_content .price h2 b {
+        font-size: 0.37333rem; }
+      #evt_content .price h2 i {
+        font-size: 0.26667rem;
+        line-height: 0.4rem;
+        font-style: normal;
+        vertical-align: middle; }
+      #evt_content .price h2 span {
+        font-size: 0.53333rem; }
+    #evt_content .price s {
+      float: left;
+      margin-left: 0.13333rem;
+      font-size: 0.21333rem;
+      vertical-align: bottom;
+      line-height: 0.8rem;
+      color: #000;
+      font-weight: normal; }
+      #evt_content .price s b {
+        font-weight: normal; }
+    #evt_content .price ul.price_p {
+      margin: 0.13333rem 0;
+      color: #000;
+      width: 3.73333rem; }
+    #evt_content .price ul.price_p.short1 {
+      color: #000;
+      width: 0.86667rem; }
+    #evt_content .price ul.price_p.short2 {
+      color: #000;
+      width: 1.73333rem; }
+    #evt_content .price ul.price_p.short3 {
+      color: #000;
+      width: 2.73333rem; }
+    #evt_content .price ul.price_p.short4 {
+      color: #000;
+      width: 3.73333rem; }
+    #evt_content .price .bs.bslang {
+      font-size: 0.26667rem; }
+    #evt_content .price ul.price_p.minshort {
+      margin: 0.13333rem auto;
+      color: #000;
+      width: 1.73333rem; }
+    #evt_content .price ul.price_p li {
+      cursor: pointer;
+      float: left;
+      height: 0.66667rem;
+      line-height: 0.66667rem;
+      text-align: center;
+      width: 0.66667rem;
+      background: #ffffff;
+      margin-right: 0.13333rem;
+      color: #000;
+      font-size: 0.26667rem;
+      border: #000 0.01333rem solid; }
+    #evt_content .price ul.price_p .samllFont {
+      font-size: 0.25333rem; }
+    #evt_content .price ul.price_p li:last-child {
+      margin-right: 0; }
+    #evt_content .price ul.price_p .bd {
+      width: 1.6rem !important;
+      margin-left: 2rem !important; }
+    #evt_content .price ul.price_p li.cur {
+      background: #e6e7d8 !important;
+      color: #000 !important; }
+    #evt_content .price .huangou {
+      position: relative;
+      width: 3.06667rem;
+      font-size: 0.29333rem;
+      color: #9b4245;
+      margin: 0 auto 0.13333rem;
+      text-align: left;
+      padding-left: 0.46667rem; }
+      #evt_content .price .huangou .icnone {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 0.4rem;
+        height: 0.4rem;
+        margin-top: -0.2rem;
+        z-index: 1; }
+      #evt_content .price .huangou .icon {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 0.4rem;
+        height: 0.4rem;
+        margin-top: -0.2rem;
+        z-index: 2; }
+    #evt_content .price .jisuan {
+      position: relative;
+      width: 4.66667rem; }
+    #evt_content .price .price_num {
+      position: absolute;
+      bottom: 0;
+      right: 0; }
+    #evt_content .price .price_num dl {
+      float: left;
+      padding-left: 0.06667rem; }
+    #evt_content .price .price_num dl dd {
+      cursor: pointer;
+      float: left;
+      height: 0.4rem;
+      width: 0.4rem; }
+    #evt_content .price .price_num dl dt {
+      float: left;
+      height: 0.4rem;
+      width: 0.4rem; }
+    #evt_content .price .price_num dl dt span {
+      display: block;
+      font-size: 0.26667rem;
+      background: transparent none repeat scroll 0 0;
+      border: none;
+      color: #000;
+      height: 100%;
+      line-height: 0.4rem;
+      text-align: center;
+      width: 100%; }
+    #evt_content .price ul.buy_btn_box {
+      width: 1.86667rem;
+      overflow: hidden;
+      margin: 0.26667rem auto; }
+    #evt_content .price ul.buy_btn_box.twoBtn {
+      width: 4.66667rem; }
+    #evt_content .price ul.buy_btn_box li {
+      float: left;
+      margin-right: 0.13333rem; }
+    #evt_content .price ul.buy_btn_box li:last-child {
+      margin-right: 0;
+      float: right; }
+    #evt_content .price ul.buy_btn_box li span {
+      display: block;
+      background: #e6e7d8;
+      background-size: 100%;
+      cursor: pointer;
+      line-height: 0.53333rem;
+      font-size: 0.29333rem;
+      text-align: center;
+      width: 2.13333rem;
+      overflow: hidden;
+      color: #000; }
 
-.pro-num {
-  position: absolute;
-  width: 4rem;
-  height: 0.53333rem;
-  left: 50%;
-  top: 0;
-  font-size: 0;
-  margin-left: -2rem; }
-  .pro-num a {
+/*浮动*/
+.floater {
+  position: fixed;
+  width: 1.93333rem;
+  height: 1.93333rem;
+  bottom: 0.26667rem;
+  right: 0.13333rem;
+  z-index: 11;
+  cursor: pointer;
+  display: none; }
+  .floater img {
+    width: 100%; }
+  .floater .tips {
     position: absolute;
     width: 0.66667rem;
     height: 0.66667rem;
-    display: block;
-    top: 0.05333rem; }
-  .pro-num .minus {
-    background: url(../images/minus.png);
+    right: -0.06667rem;
+    top: -0.06667rem;
+    border-radius: 50%;
+    background: url("../images/tips.png") center no-repeat;
     background-size: 100%;
-    left: 0; }
-  .pro-num .plus {
-    background: url(../images/plus.png);
-    background-size: 100%;
-    right: 0; }
-  .pro-num input {
-    border: none;
-    display: block;
-    font-size: 0.26667rem;
-    background: url(../images/input.png);
-    background-size: 100%;
-    width: 2.46667rem;
-    height: 0.66667rem;
-    line-height: 0.52rem;
-    position: absolute;
-    top: 0.06667rem;
-    left: 0.73333rem;
     text-align: center;
-    color: #626262;
-    padding: 0; }
-
-.buybtn {
-  position: absolute;
-  bottom: 0.34667rem;
-  left: 50%;
-  margin-left: -2rem;
-  width: 4rem;
-  height: 0.64rem;
-  background: url("../images/btnbg.png");
-  background-size: 100%;
-  text-align: center;
-  text-decoration: none; }
-  .buybtn span {
-    color: #fff;
-    line-height: 0.64rem;
-    font-size: 0.32rem; }
-
-.des {
-  position: absolute;
-  width: 4rem;
-  bottom: 0.26667rem;
-  left: 50%;
-  margin-left: -2rem; }
-  .des p {
-    font-size: 0.32rem;
-    color: #000;
-    font-weight: bolder; }
-  .des .cl {
-    position: relative;
-    margin: 0.13333rem auto;
-    padding-left: 0.24rem;
-    line-height: 0.66667rem;
-    color: #b08d67; }
-    .des .cl i {
-      font-style: normal;
-      position: absolute;
-      top: -0.05333rem;
-      left: 0;
-      font-size: 0.21333rem; }
-    .des .cl span {
-      font-size: 0.4rem; }
-  .des .gobtn {
-    width: 3.78667rem;
-    height: 0.64rem;
-    text-align: center;
-    line-height: 0.64rem;
-    background: url("../images/btnbg.png") center no-repeat;
-    background-size: 100%;
-    border-radius: 5px;
-    margin-top: 0.26667rem; }
-    .des .gobtn span {
+    z-index: 12; }
+    .floater .tips span {
+      display: block;
       font-size: 0.26667rem;
-      color: #fff; }
-  .des .js_bshu {
-    position: absolute;
-    right: 0;
-    top: 0;
-    display: block;
-    width: 1.33333rem;
-    height: 0.52rem;
-    z-index: 2;
-    font-size: 0.21333rem !important;
-    line-height: 0.52rem;
-    cursor: pointer;
-    text-indent: 0.13333rem;
-    background: url("../images/sele-li.png") left no-repeat;
-    background-size: 100%; }
-    .des .js_bshu b {
-      font-style: normal;
-      line-height: 0.52rem; }
-
-.Dialogbg-Select {
-  background-color: #000;
-  height: 100%;
-  left: 0;
-  opacity: 0.85;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 200;
-  display: none; }
-
-.Dialog-Select {
-  background: #fff none repeat scroll 0 0;
-  box-shadow: 0 0 0 #999;
-  font-size: 0.18667rem;
-  width: 8rem;
-  height: 8.8rem;
-  margin-top: -4.4rem;
-  margin-left: -4rem;
-  left: 50%;
-  padding: 0;
-  position: fixed;
-  top: 50%;
-  z-index: 99999;
-  display: none;
-  border-radius: 0.26667rem; }
-
-.Select {
-  position: relative;
-  color: #000;
-  height: 100%; }
-  .Select .s-title {
-    height: 1.37333rem;
-    background: #f2f2f2;
-    position: relative;
-    border-top-left-radius: 0.26667rem;
-    border-top-right-radius: 0.26667rem; }
-    .Select .s-title h2 {
-      font-size: 0.37333rem;
-      line-height: 0.66667rem;
-      padding-left: 0.33333rem;
-      padding-top: 0.13333rem; }
-    .Select .s-title b {
-      font-size: 0.18667rem;
-      color: #9a9a9a;
-      font-weight: normal;
-      padding-left: 0.26667rem; }
-  .Select .s-bangshu {
-    padding-top: 0.8rem;
-    padding-bottom: 0.8rem;
-    border-bottom: #ededed 1px solid; }
-    .Select .s-bangshu ul {
-      margin-left: 0.53333rem; }
-      .Select .s-bangshu ul li {
-        float: left;
-        width: 1.2rem;
-        height: 1.2rem;
-        background: #f2f2f2;
-        border-radius: 50%;
-        text-align: center;
-        line-height: 1.2rem;
-        font-size: 0.30667rem;
-        color: #000;
-        margin-right: 0.66667rem;
-        font-weight: bold; }
-      .Select .s-bangshu ul li.on {
-        background: #887967;
-        color: #fff; }
-  .Select .s-num {
-    height: 1.86667rem; }
-    .Select .s-num b {
-      display: inline-block;
-      width: 2.66667rem;
-      margin: 0.53333rem 0.26667rem;
-      line-height: 0.74667rem;
-      float: left;
-      font-size: 0.4rem;
-      color: #737373;
-      font-weight: normal; }
-    .Select .s-num .nums {
-      display: inline-block;
-      margin: 0.53333rem 0.26667rem;
-      float: right;
-      height: 0.74667rem;
-      position: relative;
-      width: 2.66667rem; }
-    .Select .s-num .nums a {
-      display: block;
-      width: 0.74667rem;
-      height: 0.74667rem;
-      position: absolute;
-      top: 0.02667rem; }
-    .Select .s-num .nums .minus {
-      background: transparent url("../images/btn-1.png") no-repeat;
-      background-size: 100%;
-      left: 0; }
-    .Select .s-num .nums .plus {
-      background: transparent url("../images/btn-2.png") no-repeat;
-      background-size: 100%;
-      right: 0; }
-    .Select .s-num .nums input {
-      background: none;
-      border: none;
-      color: #626262;
-      display: block;
-      font-size: 0.4rem;
-      height: 0.74667rem;
-      left: 0.8rem;
-      line-height: 0.74667rem;
-      padding: 0;
-      position: absolute;
-      text-align: center;
-      top: 0;
-      width: 1.06667rem; }
-  .Select .s-prices {
-    font-size: 0.29333rem;
-    padding-left: 0.26667rem; }
-    .Select .s-prices span {
-      font-size: 0.6rem; }
-  .Select .btns {
-    width: 100%;
-    position: absolute;
-    bottom: 0rem;
-    display: flex;
-    height: 1.33333rem;
-    line-height: 1.33333rem;
-    flex-direction: row;
-    text-align: center;
-    font-size: 0.4rem;
-    color: #fff; }
-    .Select .btns div {
-      flex: 1;
-      cursor: pointer;
-      width: 50%; }
-    .Select .btns .go-car {
-      background: #887967;
-      border-bottom-left-radius: 0.26667rem;
-      float: left; }
-    .Select .btns .go-buy {
-      background: #ffc529;
-      border-bottom-right-radius: 0.26667rem;
-      float: left; }
-
-@media screen and (max-width: 320px) {
-  .sel-li {
-    top: -0.13333rem !important; }
-  i {
-    top: 0.04rem !important; } }
+      color: #fff;
+      line-height: 0.66667rem; }

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 #evt_content img {
   width: 100%; }
 
@@ -254,7 +255,8 @@
       #evt_content .section-main .slideOuter li .p2 {
         padding-top: 0.01333rem;
         width: 98%;
-        margin: 0; }
+        margin: 0;
+        display: none; }
         #evt_content .section-main .slideOuter li .p2 .fr {
           color: #bc2323; }
           #evt_content .section-main .slideOuter li .p2 .fr span {
@@ -264,7 +266,7 @@
       #evt_content .section-main .slideOuter li .buybtn {
         width: 99%;
         height: 0.72rem;
-        display: block;
+        display: inline-block;
         border-radius: 0.02667rem;
         text-decoration: none;
         margin: 0.06667rem 0 0 0;
@@ -371,3 +373,32 @@
       margin: 0.13333rem 0;
       text-align: justify;
       text-justify: inter-word; }
+
+/*浮动*/
+.floater {
+  position: fixed;
+  width: 1.93333rem;
+  height: 1.93333rem;
+  bottom: 0.26667rem;
+  right: 0.13333rem;
+  z-index: 11;
+  cursor: pointer;
+  display: none; }
+  .floater img {
+    width: 100%; }
+  .floater .tips {
+    position: absolute;
+    width: 0.66667rem;
+    height: 0.66667rem;
+    right: -0.06667rem;
+    top: -0.06667rem;
+    border-radius: 50%;
+    background: url("../images/tips.png") center no-repeat;
+    background-size: 100%;
+    text-align: center;
+    z-index: 12; }
+    .floater .tips span {
+      display: block;
+      font-size: 0.26667rem;
+      color: #fff;
+      line-height: 0.66667rem; }

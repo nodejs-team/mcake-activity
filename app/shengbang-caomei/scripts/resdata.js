@@ -1,8 +1,13 @@
 var resData = [
     {
-        "name":"shuangxiong_png",
+        "name":"price-3_png",
         "type":"image",
-        "url":"shuangxiong.png"
+        "url":"price-3.png"
+    },
+    {
+        "name":"title-1_png",
+        "type":"image",
+        "url":"title-1.png"
     },
     {
         "name":"cake-1_png",
@@ -15,19 +20,24 @@ var resData = [
         "url":"cake-2.png"
     },
     {
-        "name":"carows_png",
+        "name":"cake-3_png",
         "type":"image",
-        "url":"carows.png"
+        "url":"cake-3.png"
     },
     {
-        "name":"line-1_png",
+        "name":"cake-4_png",
         "type":"image",
-        "url":"line-1.png"
+        "url":"cake-4.png"
     },
     {
-        "name":"price_png",
+        "name":"cake-5_png",
         "type":"image",
-        "url":"price.png"
+        "url":"cake-5.png"
+    },
+    {
+        "name":"more_png",
+        "type":"image",
+        "url":"more.png"
     },
     {
         "name":"price-1_png",
@@ -35,8 +45,8 @@ var resData = [
         "url":"price-1.png"
     },
     {
-        "name":"title_png",
+        "name":"price-2_png",
         "type":"image",
-        "url":"title.png"
+        "url":"price-2.png"
     }
 ];

@@ -1,72 +1,48 @@
 var resData = [
     {
-        "name":"cake-1_png",
+        "name":"s-sction-2-bg_jpg",
         "type":"image",
-        "url":"cake-1.png"
+        "url":"s-sction-2-bg.jpg"
     },
     {
-        "name":"icon-xs_png",
+        "name":"s-sction-4_png",
         "type":"image",
-        "url":"icon-xs.png"
+        "url":"s-sction-4.png"
     },
     {
-        "name":"in-l_png",
+        "name":"s-sction-5_png",
         "type":"image",
-        "url":"in-l.png"
+        "url":"s-sction-5.png"
     },
     {
-        "name":"in-r_png",
+        "name":"banner-wap_jpg",
         "type":"image",
-        "url":"in-r.png"
+        "url":"banner-wap.jpg"
     },
     {
-        "name":"qkl-1_png",
+        "name":"by-btn_png",
         "type":"image",
-        "url":"qkl-1.png"
+        "url":"by-btn.png"
     },
     {
-        "name":"qkl-2_png",
+        "name":"more-bg_png",
         "type":"image",
-        "url":"qkl-2.png"
+        "url":"more-bg.png"
     },
     {
-        "name":"rose_png",
+        "name":"section-3-title_png",
         "type":"image",
-        "url":"rose.png"
+        "url":"section-3-title.png"
     },
     {
-        "name":"sw1-next_png",
+        "name":"s-sction-1_png",
         "type":"image",
-        "url":"sw1-next.png"
+        "url":"s-sction-1.png"
     },
     {
-        "name":"sw1-prev_png",
+        "name":"s-sction-2_png",
         "type":"image",
-        "url":"sw1-prev.png"
-    },
-    {
-        "name":"sw2-next_png",
-        "type":"image",
-        "url":"sw2-next.png"
-    },
-    {
-        "name":"sw2-prev_png",
-        "type":"image",
-        "url":"sw2-prev.png"
-    },
-    {
-        "name":"ad-1_png",
-        "type":"image",
-        "url":"ad-1.png"
-    },
-    {
-        "name":"banner_jpg",
-        "type":"image",
-        "url":"banner.jpg"
-    },
-    {
-        "name":"bar_png",
-        "type":"image",
-        "url":"bar.png"
+        "url":"s-sction-2.png"
     }
+
 ];

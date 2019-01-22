@@ -1,0 +1,209 @@
+@charset "UTF-8";
+#evt_container {
+  background: url(../images/bg.jpg); }
+  #evt_container .banner .content {
+    position: relative;
+    width: 1200px;
+    height: 820px;
+    margin: 0 auto; }
+    #evt_container .banner .content div {
+      position: absolute; }
+  #evt_container .banner .s-logo {
+    top: 60px;
+    left: 50px; }
+  #evt_container .banner .zhishi {
+    top: 0;
+    left: 689px; }
+  #evt_container .banner .s-title {
+    top: 209px;
+    left: 50%;
+    margin-left: -680px; }
+  #evt_container .banner .dis-1 {
+    top: 258px;
+    left: -370px; }
+  #evt_container .banner .dis-3 {
+    top: 1330px;
+    left: -370px; }
+  #evt_container .banner .dis-2 {
+    top: 680px;
+    right: -370px; }
+  #evt_container .act {
+    width: 1200px;
+    margin: 100px auto 50px;
+    text-align: center; }
+    #evt_container .act .act-start {
+      display: inline-block;
+      margin: 0;
+      vertical-align: middle; }
+    #evt_container .act .act-tips {
+      display: inline-block;
+      margin: 0;
+      vertical-align: middle; }
+    #evt_container .act .act-end {
+      display: inline-block;
+      margin: 0;
+      vertical-align: middle; }
+    #evt_container .act .act-word {
+      display: inline-block;
+      vertical-align: middle;
+      height: 70px;
+      font-size: 40px;
+      color: #f97a35;
+      line-height: 58px; }
+  #evt_container .slider {
+    width: 1200px;
+    position: relative;
+    margin: 0 auto; }
+    #evt_container .slider .prev, #evt_container .slider .next {
+      width: 79px;
+      top: 148px;
+      position: absolute; }
+    #evt_container .slider .prev {
+      left: 0; }
+    #evt_container .slider .next {
+      right: 0; }
+    #evt_container .slider img {
+      width: 100%; }
+  #evt_container .slideOuter {
+    position: relative;
+    width: 1028px;
+    height: 360px;
+    overflow: hidden;
+    margin: 0 auto; }
+    #evt_container .slideOuter ul {
+      position: relative;
+      width: 5000px; }
+    #evt_container .slideOuter li {
+      position: relative;
+      width: 242px;
+      margin: 0 20px 18px 0;
+      color: #242424;
+      font-size: 12px;
+      float: left; }
+      #evt_container .slideOuter li .fl {
+        float: left;
+        text-align: left; }
+      #evt_container .slideOuter li .fl.ftitle {
+        width: 98px;
+        height: 40px;
+        overflow: hidden;
+        align-items: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: left;
+        justify-content: left;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center; }
+      #evt_container .slideOuter li .fr {
+        float: right;
+        text-align: left; }
+      #evt_container .slideOuter li .p1 {
+        margin: 10px 0 3px 0; }
+      #evt_container .slideOuter li .p2 .fr {
+        color: #f97a35; }
+        #evt_container .slideOuter li .p2 .fr span {
+          font-size: 19px; }
+      #evt_container .slideOuter li .p2 .fl {
+        padding-top: 5px; }
+      #evt_container .slideOuter li .buybtn {
+        width: 100%;
+        height: 30px;
+        display: block;
+        border-radius: 2px;
+        margin: 16px 0 0 0;
+        background: #f97a35;
+        color: #ffffff;
+        text-align: center;
+        line-height: 30px;
+        font-size: 16px;
+        position: static; }
+    #evt_container .slideOuter .pro-num {
+      position: relative;
+      display: inline-block;
+      float: right;
+      margin-top: 10px;
+      width: 140px;
+      height: 20px; }
+      #evt_container .slideOuter .pro-num a {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        display: block;
+        top: 2px; }
+      #evt_container .slideOuter .pro-num .minus {
+        background: url(../images/btn-1.png);
+        left: 0;
+        background-size: 100%; }
+      #evt_container .slideOuter .pro-num .plus {
+        background: url(../images/btn-2.png);
+        right: 0;
+        background-size: 100%; }
+      #evt_container .slideOuter .pro-num input {
+        border: none;
+        display: block;
+        background: url(../images/input.png);
+        background-size: 100%;
+        width: 100px;
+        height: 25px;
+        line-height: 25px;
+        position: absolute;
+        top: 0;
+        left: 20px;
+        text-align: center;
+        color: #626262;
+        font-size: 12px;
+        padding: 0; }
+  #evt_container .tower1 {
+    width: 533px;
+    left: 50%;
+    margin-left: 427px;
+    top: 732px;
+    position: absolute; }
+  #evt_container .tower2 {
+    width: 444px;
+    left: 50%;
+    margin-left: -960px;
+    bottom: 0;
+    position: absolute; }
+  #evt_container .text1893 {
+    width: 457px;
+    margin: 26px auto 0 auto; }
+  #evt_container .sec-foot {
+    background: url("../images/foot-bg.png") repeat-x;
+    padding: 100px 0;
+    margin-top: 50px; }
+    #evt_container .sec-foot .rules {
+      width: 900px;
+      font-size: 18px;
+      color: #5f2a02;
+      line-height: 28px;
+      margin: 0 auto; }
+      #evt_container .sec-foot .rules h2 {
+        font-size: 22px;
+        font-weight: normal;
+        text-indent: -28px;
+        margin-top: 20px; }
+      #evt_container .sec-foot .rules p {
+        text-indent: -28px; }
+
+/*ie浏览器*/
+.ftitle.ieCss {
+  height: 25px !important;
+  line-height: 25px;
+  overflow: hidden;
+  /* 内容超出宽度时隐藏超出部分的内容 */
+  text-overflow: ellipsis;
+  /* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+  white-space: nowrap;
+  /* 不换行 */ }
+
+.pro-num.ieCss {
+  margin-top: 0 !important; }
+
+.slideOuter.ieCss {
+  height: 365px !important; }

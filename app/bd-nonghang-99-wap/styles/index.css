@@ -64,7 +64,7 @@
       #evt_content .section-main .act .plate span {
         position: absolute;
         display: block;
-        color: #24907f;
+        color: #c41700;
         font-size: 1.64rem;
         width: 1.33333rem;
         height: 1.33333rem;
@@ -87,7 +87,7 @@
       left: 4.18667rem; }
   #evt_content .section-main .act_nextgou {
     text-align: center;
-    color: #249180;
+    color: #c41700;
     height: 2.66667rem; }
     #evt_content .section-main .act_nextgou h2 {
       font-size: 0.44rem; }
@@ -101,7 +101,7 @@
     position: absolute; }
   #evt_content .section-main .tower2 {
     width: 1.90667rem;
-    bottom: 0;
+    bottom: 12.93333rem;
     left: 0;
     position: absolute; }
   #evt_content .section-main .tower1-w {
@@ -180,7 +180,7 @@
         float: left;
         text-decoration: none;
         margin: 0.06667rem 0 0 0;
-        background: #319c8b;
+        background: #c41700;
         color: #ffffff;
         text-align: center;
         line-height: 0.72rem;
@@ -224,13 +224,51 @@
         color: #626262;
         font-size: 0.24rem;
         padding: 0; }
+    #evt_content .section-main .slideOuter .pro-num-num {
+      position: relative;
+      float: right;
+      width: 3.06667rem;
+      height: 0.53333rem;
+      margin-top: 0.13333rem;
+      display: inline-block; }
+      #evt_content .section-main .slideOuter .pro-num-num a {
+        position: absolute;
+        width: 0.53333rem;
+        height: 0.53333rem;
+        display: block; }
+      #evt_content .section-main .slideOuter .pro-num-num .jian {
+        display: inline-block;
+        background: url(../images/btn-1.png);
+        left: 0.8rem;
+        background-size: 100%; }
+      #evt_content .section-main .slideOuter .pro-num-num .add {
+        display: inline-block;
+        background: url(../images/btn-2.png);
+        right: 0;
+        background-size: 100%; }
+      #evt_content .section-main .slideOuter .pro-num-num span {
+        border: #f0f0f0 1px solid !important;
+        display: inline-block;
+        width: 1.06667rem;
+        height: 0.53333rem;
+        line-height: 0.53333rem;
+        position: absolute;
+        top: 0;
+        left: 1.37333rem;
+        text-align: center;
+        font-size: 0.29333rem;
+        padding: 0;
+        color: #000; }
+  #evt_content .section-main .slideOuter.slideOuter2 li .buybtn {
+    width: 100%; }
   #evt_content .section-main .text1893 {
     width: 2.32rem;
     margin: 0.26667rem auto; }
   #evt_content .section-main .rules {
     padding: 0.66667rem 0.8rem 1.06667rem;
     color: #2b2b2b;
-    line-height: 0.53333rem; }
+    line-height: 0.53333rem;
+    background: #ffefe6; }
     #evt_content .section-main .rules h2 {
       font-weight: normal;
       font-size: 0.48rem;

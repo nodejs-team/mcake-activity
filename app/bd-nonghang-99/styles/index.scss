@@ -9,7 +9,7 @@
     .act_sheng{width:79px; position:absolute; top:307px; left:50%; margin-left:-428px;}
     .act_ge{width:40px; position:absolute; top:307px; left:50%; margin-left:340px;}
     .plate{width:521px; top:64px; left:50%;margin-left:-270px; position:absolute;
-      span{position:absolute; display:block;  color:#24907f; font-size:222px; top:145px; left:196px; width:150px; height:250px; line-height:250px; text-align:center; text-shadow: 2px 2px 2px #000;}
+      span{position:absolute; display:block;  color:#c41700; font-size:222px; top:145px; left:196px; width:150px; height:250px; line-height:250px; text-align:center; text-shadow: 2px 2px 2px #000;}
       .word{width:166px; position:absolute; top:186px; left:186px;}
     }
     .plate1{margin-left:-544px;}
@@ -26,14 +26,15 @@
 
 
 
-  .slider{width:1200px; position:relative; margin:100px auto 0;
+  .slider{width:1200px; position:relative; margin:50px auto 0;
+    img{width:100%;}
     .prev,.next{width:79px; top:148px; position:absolute;}
     .prev{left:0;}
     .next{right:0;}
   }
-  .slideOuter{position:relative; width:1028px; height:370px; border-bottom:2px solid #959595; overflow:hidden; margin:0 auto;
-    ul{position:relative; width:1650px; height: 360px; overflow: hidden; }
-    li{position:relative; width:242px; margin:0 20px 25px 0; color:#242424; font-size:12px; float:left;
+  .slideOuter{position:relative; width:1028px; height:402px; border-bottom:2px solid #959595; overflow:hidden; margin:0 auto;
+    ul{position:relative; width:1650px; height:402px; overflow: hidden; }
+    li{position:relative; width:242px; margin:0 20px 50px 0; color:#242424; font-size:12px; float:left;
       img{width: 242px; height: 242px;}
       .fl{float:left; text-align: left;}
       .fl.ftitle{ width: 98px; height:40px;  overflow:hidden; align-items: center;
@@ -49,7 +50,7 @@
         -ms-flex-align: center;
         -webkit-align-items: center;
 
-        }
+      }
       .fr{float:right; text-align: left;}
       .p1{margin:10px 0 3px 0;}
       .p2{ display: none;
@@ -58,7 +59,7 @@
         }
         .fl{padding-top:5px;}
       }
-      .buybtn{width:48%; height:30px; display:inline-block; float:left; border-radius:2px; margin:16px 0 0 0; background:#249180; color:#ffffff; text-align:center; line-height:30px; font-size:16px; position:static;}
+      .buybtn{width:48%; height:30px; display:inline-block; float:left; border-radius:2px; margin:16px 0 0 0; background:#c41700; color:#ffffff; text-align:center; line-height:30px; font-size:16px; position:static;}
       .go-buy{float: right;}
     }
 
@@ -71,15 +72,63 @@
 
     }
 
+  }
+  .slideOuter.slideOuter2{
+    li .buybtn{ width: 100%;}
+  }
 
+  .slideOuter .pro-num-num {
+    position: relative;
+    display: inline-block;
+    float: right;
+    margin-top: 10px;
+    width: 140px;
+    height: 20px; }
+  .slideOuter .pro-num-num a {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    display: block;
+    top: 2px; }
+  .slideOuter .pro-num-num .jian {
+    background: url(../images/btn-1.png);
+    left:41px;
+    background-size: 100%; }
+  .slideOuter .pro-num-num .add {
+    background: url(../images/btn-2.png);
+    right: 0; left: auto;
+    background-size: 100%; }
+
+  .slideOuter .pro-num-num span.num {
+    display: block; border: #f0efef 1px solid;
+    background-size: 100%;
+    width: 50px;
+    height: 20px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 64px;
+    text-align: center;
+    color: #626262;
+    font-size: 12px;
+    padding: 0; }
+
+
+
+
+
+
+
+  .tower1{width:450px; left:50%; margin-left:517px; top:732px; position:absolute;}
+  .tower2{width:360px; left:50%; margin-left:-960px; bottom:500px; position:absolute; z-index: 1;}
+  .text1893{width:410px; margin:26px auto 80px auto;}
+  .footer{position: relative; background: #ffefe6; padding: 50px 0; z-index: 2;
+    .rules{width:960px; font-size:20px; color:#2b2b2b; margin:20px auto 20px auto;
+      h2{font-weight:normal; font-size:22px; margin-top: 48px;}
+      p{text-indent: -30px; padding-left: 30px; line-height: 40px; }
+    }
   }
-  .tower1{width:533px; left:50%; margin-left:427px; top:732px; position:absolute;}
-  .tower2{width:444px; left:50%; margin-left:-960px; bottom:0; position:absolute;}
-  .text1893{width:410px; margin:26px auto 0 auto;}
-  .rules{width:960px; font-size:20px; color:#2b2b2b; margin:90px auto 152px auto;
-    h2{font-weight:normal; font-size:22px; margin-top: 48px;}
-    p{text-indent: -30px; padding-left: 30px; line-height: 40px; }
-  }
+
 }
 
 /*ie浏览器*/

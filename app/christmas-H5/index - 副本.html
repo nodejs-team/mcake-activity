@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>mcake活动</title>
+
+    <link rel="stylesheet" href="https://act.mcake.com/fangli/2018/wap/commoncss/comm_header.css" />
+    <!-- build:css styles/index.css -->
+    <link rel="stylesheet" href="../commoncss/wap-normalize.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <!-- endbuild-->
+    <script src="https://act.mcake.com/fangli/2018/wap/commonjs/flexible.js"></script>
+</head>
+<body>
+<audio id="audio" src="http://%61%63%74%2E%6D%63%61%6B%65%2E%63%6F%6D/fangli/2018/wap/christmas-H5/music/1.mp3" preload="auto" autoplay="autoplay" loop></audio>
+<div id="evt_container">
+    <div id="iscroll">
+        <div class="wrap">
+            <div id="evt_loading" style="display:block;">
+                <div class="qiu yaoing"><img src="images/loading.png" alt=""></div>
+                <span id="loading">0%</span>
+            </div>
+            <div id="evt_content" style="display:none;">
+                <div class="music cur"></div>
+                <div class="sec-page1 pages">
+                    <div class="txt-shengdan"><img src="images/txt-shengdan.png"/></div>
+                    <div class="merry"><img src="images/merry.png"/></div>
+                    <div class="xue-wu"><img src="images/xue-wu.png"/></div>
+                    <div class="btn-go"><img src="images/btn-go.png"/></div>
+                </div>
+                <div class="sec-denglu pages">
+                    <div class="denglu">
+                        <div class="lingquan">
+                            <ul>
+                                <li><input type="tel" maxlength="11" placeholder="请输入手机号码"></li>
+                                <li><input type="tel" maxlength="6" placeholder="请输入图片验证码">
+                                    <span class="tp-yzm">图片验证码</span>
+                                </li>
+                                <li><input type="tel" maxlength="6" placeholder="请输入短信验证码">
+                                    <input type="button" class="yzm" id="btn" value="发送验证码" onclick="settime(this)">
+                                </li>
+                                <div class="btn-denglu"></div>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="sec-page2 pages">
+                    <div class="iphone iphoneSwing"><img src="images/iphone.png"/></div>
+                    <div class="txt-yy"><img src="images/txt-yy.png"/></div>
+                    <div class="cake"><img src="images/cake.png"/></div>
+                    <div class="count-txt">您还有<span>3</span>次机会</div>
+                </div>
+
+                <div class="sec-page3 pages">
+                    <div class="closex"><img src="images/close.png"/></div>
+                    <div class="card-bottom"><img src="images/card-bottom.png"/></div>
+                    <div class="card-middle"><img src="images/card-middle.png"/></div>
+                    <div class="txt-1">
+                        <div class="content">
+                            <div class="share-txt"><img src="images/share-txt.png"/></div>
+                            <div class="btn-share"><img src="images/btn-share.png"/></div>
+                        </div>
+                    </div>
+                    <div class="txt-2">
+                        <div class="content">
+                            <div class="gz-txt"><img src="images/gz-txt.png"/></div>
+                        </div>
+                    </div>
+
+                    <div class="card-top"><img src="images/card-top.png"/></div>
+                    <div class="btn-gz"></div>
+                </div>
+
+                <div class="sec-page4 pages"></div>
+
+            </div>
+        </div>
+    </div>
+    <canvas id="snow"></canvas>
+</div>
+
+<!--锁屏提示-->
+<div id="tipmask" class="landscape-tip" >
+    <div class="landtip"></div>
+</div>
+<script>
+    var count = 3;
+</script>
+
+<script src="https://act.mcake.com/fangli/2018/wap/commonjs/jquery.min.js"></script>
+<script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+<!-- build:js scripts/index.js -->
+<script src="../commonjs/fastclick.js"></script>
+<script src="../commonjs/pubsub.js"></script>
+<script src="../commonjs/loader.js"></script>
+<script src="scripts/resdata.js"></script>
+<script src="scripts/snow.js"></script>
+<script src="scripts/index.js"></script>
+<!-- endbuild -->
+<script>
+    window.onload = function () {
+        var audio = document.getElementById("audio");
+        setTimeout(function () {
+            audio.play();
+        },1000);
+
+        var wh = window.screen.height;
+        //var sh = px2rem(wh*2);
+       // $(".pages").height(sh+'rem');
+
+        alert(wh);
+
+
+
+    }
+
+    var countdown=60;
+    function settime(obj) {
+        if (countdown == 0) {
+            obj.removeAttribute("disabled");
+            obj.value="免费获取验证码";
+            countdown = 60;
+            return;
+        } else {
+            obj.setAttribute("disabled", true);
+            obj.value="重新发送(" + countdown + "s)";
+            countdown--;
+        }
+        setTimeout(function() {
+                settime(obj) }
+            ,1000)
+    }
+
+    $(".btn-denglu").click(function () {
+        $(".sec-denglu").fadeOut(100);
+    });
+
+</script>
+</body>
+</html>

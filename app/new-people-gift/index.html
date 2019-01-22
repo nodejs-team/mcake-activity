@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../commoncss/wap-normalize.css">
     <link rel="stylesheet" href="styles/index.css">
     <!-- endbuild-->
-    <link rel="stylesheet" type="text/css" href="http://www.mcake.com/wap/theme/xth1/css/comm_header.css?v=1508207710" />
+    <link rel="stylesheet" href="https://act.mcake.com/fangli/2019/wap/commoncss/comm_header.css" />
 
 </head>
 <body>
@@ -30,11 +30,11 @@
 
                 <div class="sec sec-0">
                     <div class="title t-1"><img src="images/title-1.png" alt=""></div>
-                    <div class="cakes products">
+                    <div class="cakes">
                         <ul>
-                            <li data-pond="1磅,2磅,3磅,5磅" data-price="198,298,428,728" data-time="提示：需提前1小时预订,提示：需提前5小时预订,提示：需提前2小时预订,提示：需提前4小时预订" data-postid="01,02,03,04" data-tips="尺寸： 2-3人食 15cm*3.5cm,尺寸：4-7人食 18cm*4cm,尺寸：8-12人食 22cm*4.5cm,尺寸：12-20人食 25cm*5.5cm">
+                            <li data-pond="1磅,2磅,3磅,5磅" data-price="198,298,428,728" data-time="提示：需提前1小时预订,提示：需提前5小时预订,提示：需提前2小时预订,提示：需提前4小时预订" data-postid="01,02,03,04" data-tips="尺寸： 2-3人食 15cm*3.5cm,尺寸：4-7人食 18cm*4cm,尺寸：8-12人食 22cm*4.5cm,尺寸：12-20人食 25cm*5.5cm" data-sku="01,02,03,04" data-method="01,02,03,04" data-pid="01,02,03,04" data-ptype="1,2,3,4" data-channel="11,21,31,41">
                                 <div class="price">
-                                    <h2><span><i>￥</i>229</span> （新人福利）</h2>
+                                    <h2><span><i>￥</i>229</span> （新人福利）1111</h2>
                                     <s>原价 ￥298</s>
                                     <div class="buy-btn"></div>
                                 </div>
@@ -134,8 +134,8 @@
     </div>
 </div>
 
-<script type="text/javascript" src="http://www.mcake.com/framework/jquery/jquery.min.js?v=1405950469"></script>
-<script src="http://edm.mcake.com/weifengwang/common/flexible.js"></script>
+<script src="https://act.mcake.com/fangli/2019/wap/commonjs/jquery.min.js"></script>
+<script src="https://act.mcake.com/fangli/2019/wap/commonjs/flexible.js"></script>
 <!-- build:js scripts/index.js -->
 <script src="../commonjs/fastclick.js"></script>
 <script src="../commonjs/pubsub.js"></script>
@@ -151,20 +151,5 @@
 <!-- endbuild -->
 
 
-<script>
-    $(".products li").each(function () {
-        var self = this;
-        $(this).find('.buy-btn').click(function () {
-            $(".go-car").hide(0).siblings().show(0);
-            SelectShow(self);
-        });
-    });
-    $(".go-car").click(function () {
-        SelectHide();
-    });
-    $(".go-buy,.s-closes").click(function () {
-        SelectHide();
-    });
-</script>
 </body>
 </html>

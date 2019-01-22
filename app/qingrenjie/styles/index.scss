@@ -1,5 +1,5 @@
 @function px2rem($n) {
-  @return ($n * 10 / 750) * 1rem;
+  @return ($n * 10 / 750) * 1rem; //设计稿一般都是750宽
 }
 
 @mixin font-dpr($font-size){
@@ -15,137 +15,77 @@
 
 }
 
-#evt_content{  background:#fef8fa;
+#evt_content{  background:#fff3df;
   div{position:absolute;}
   img{width:100%;}
-  .sec{position: relative; color: #000;}
-  .sec-top{ height: px2rem(1041); background:url("../images/banner.jpg") repeat; background-size: 100%; z-index: 1; overflow: hidden; }
-  .rose{position:absolute !important; width: px2rem(461); height: px2rem(434); background: url("../images/rose.png") no-repeat; background-size: 100%;}
-  .rose-1{ right:px2rem(-200); top:px2rem(-200);}
-  .rose-2{left:px2rem(-200); top:px2rem(795);}
-  .rose-3{right:px2rem(-250); top:px2rem(622);}
-  .rose-4{left:px2rem(-250); top:px2rem(1800);}
+  .sec{position: relative; }
 
-  .rose-5{right:px2rem(-250); top:px2rem(1596);}
-  .rose-6{left:px2rem(-250); top:px2rem(2698);}
+  .sec-top{
+    height: px2rem(349); background:url("../images/banner-wap.jpg") repeat; background-size: 100%; z-index: 1; overflow: hidden;}
 
-  .rose-7{right:px2rem(-250); top:px2rem(-150);}
-  .rose-8{left:px2rem(-250); top:auto; bottom: px2rem(-200);}
-
-
-  .sec-1{
+  .sec-1{ padding: px2rem(50) 0 px2rem(70); background:#f8e4e4; background-size: 100%;
     div{position:relative;}
-    .title,.cake{margin: 0 auto;}
-    .title{margin-top: px2rem(46);}
-    .swiper1{ height:px2rem(543);}
-    .word{ margin-top:px2rem(100); text-align: center;
-      h2{font-size:px2rem(50); line-height:px2rem(80);  font-weight: normal; }
-      p{font-size:px2rem(24); line-height:px2rem(30);}
+    .s-sction-1{width:px2rem(750); margin:0 auto;}
+  }
+  .sec-2{ height: px2rem(667); background:url("../images/s-sction-2-bg.jpg"); background-size: 100%;
+    .s-sction-2{width:px2rem(750); top:px2rem(-50);}
+    .buy-btn{ width:px2rem(163); top: px2rem(405); left: px2rem(120);}
+    .cake-link{ width:px2rem(400); height: px2rem(350); top: px2rem(150); right:0; }
+  }
+  .sec-3{ padding: px2rem(50) 0 px2rem(40); background:#f8e4e4; background-size: 100%;
+    div{position:relative;}
+    .section-3-title{width:px2rem(515); margin:0 auto;}
+    .video{width:px2rem(677); margin:0 auto;}
+    video{width: 100%;}
+    p{color: #700001; font-size: px2rem(18); text-align: center; line-height: px2rem(30);}
+  }
+
+  .sec-4{ padding: px2rem(50) 0 px2rem(40); background:url("../images/s-sction-2-bg.jpg"); background-size: 100%; z-index: 2;
+    div{position:relative;}
+    .s-sction-4{width:px2rem(750); margin:0 auto; z-index: 2;}
+    .recording{position: absolute; bottom: px2rem(50); left: px2rem(58); width: px2rem(100); height: px2rem(29); background: url("../images/recording.png"); background-size: 100%;  z-index: 5;
+      .rec-1{position: absolute; top:px2rem(7); left:px2rem(10); width: px2rem(21); height: px2rem(16); background: url("../images/record-icon.png"); background-size: 100%;}
+      .rec-2{position: absolute; top:px2rem(7); left:px2rem(10); width: px2rem(21); height: px2rem(16); display: none; background: url("../images/record-icon.gif"); background-size: 100%;}
+      .recording-hd{position: absolute; right: px2rem(-10);
+        em{ position: absolute; display: block; width:px2rem(10); height:px2rem(10); background: #e60012; border-radius: 100%; top:px2rem(8); -webkit-animation:fadeToggle 2s infinite ease-in-out; animation:fadeToggle 2s infinite ease-in-out; }
+        b{ display: block; width: 100%; height: 100%; margin: 0; line-height:px2rem(33); color: #000; }
+      }
     }
-    .row-cake{position: relative; width: px2rem(705); margin:px2rem(77) auto 0;}
-    .swiper1{position: relative; }
-    .swiper-button{position: absolute; width: px2rem(44); height: px2rem(44); top: 50%; z-index: 10; margin-top: px2rem(-22);}
-    .swiper-button-prev1{ background: url("../images/sw1-prev.png") no-repeat; background-size: 100%; left: px2rem(20);}
-    .swiper-button-next1{ background: url("../images/sw1-next.png") no-repeat; background-size: 100%; right: px2rem(20);}
+    .piaodai{position: absolute; bottom: px2rem(-76); left:0; width:px2rem(117);z-index: 1;}
   }
-
-  .sec-2{ position: relative;
+  .sec-5{ padding: px2rem(50) 0 px2rem(100); background:#f9e3e4; background-size: 100%; z-index: 1;
     div{position:relative;}
-    .cake-slides{width: px2rem(705); margin:px2rem(77) auto px2rem(140);}
-    .bar{position: absolute;  bottom: px2rem(-184); width:px2rem(750); height:px2rem(295);background: url("../images/bar.png") center no-repeat; background-size: 100%; z-index: 2;}
-    .swiper-button{position: absolute; width: px2rem(60); height: px2rem(60); top: 50%; z-index: 10; margin-top: px2rem(-60);}
-    .swiper-button-prev2{ background: url("../images/sw2-prev.png") no-repeat; background-size: 100%; left: px2rem(80);}
-    .swiper-button-next2{ background: url("../images/sw2-next.png") no-repeat; background-size: 100%; right: px2rem(80);}
+    .s-sction-5{width:px2rem(750); margin:0 auto;}
   }
+  .hy-title{position: relative; width: px2rem(750); margin:px2rem(30) auto; }
 
-
-  .sec-3{ position: relative;
-    div{position:relative;}
-    .title,.cake{margin: 0 auto;}
-    .word{ margin-top:px2rem(60); text-align: center;
-      icon{margin: 0 auto;}
-      h2{font-size: px2rem(50); line-height:px2rem(80);  font-weight: normal; }
-      h3{font-size: px2rem(40); line-height: px2rem(80); font-weight: normal;}
-      h4{font-size: px2rem(40); line-height: px2rem(80); font-weight: normal;}
-      p{font-size: px2rem(22); line-height: px2rem(34);}
-      span{font-size: px2rem(24);line-height:px2rem(40);}
+  .sec-footer{background:#5e0700; background-size: 12%; position: relative; padding-bottom: px2rem(50); z-index:1;
+    .more-bg{width:px2rem(750); top: px2rem(-100);
+      .more{width: px2rem(169); top: px2rem(150); left: px2rem(280);}
     }
-    .ad{width: px2rem(705); margin:px2rem(77) auto 0;}
-    .tips{width: px2rem(597); margin:px2rem(10) auto 0;}
-    .ewm{width: px2rem(416); margin:px2rem(20) auto 0;}
-    .cake{width: px2rem(705); margin:px2rem(70) auto 0;}
-    .w-icon{width: px2rem(38); margin: 0 auto;}
-  }
-
-
-
-
-  .sec-footer{ background-size: 100%; position: relative; padding-bottom: px2rem(20);
-    .txt{ position: relative; width:px2rem(700); padding-top: px2rem(70); margin: 0 auto;  color: #000;
-      h2{font-size: px2rem(30); font-weight: normal; }
-      p{ font-size: px2rem(22); padding-left: px2rem(35); line-height:px2rem(40);  text-indent: px2rem(-35);
-        margin:px2rem(5) 0;}
+    .txt{ position: relative; width:px2rem(700); padding-top: px2rem(180); margin: 0 auto;  color: #fff; text-align: left;
+      h2{font-size: px2rem(28); font-weight: normal; }
+      p{ font-size: px2rem(23); padding-left: px2rem(35); line-height:px2rem(40);  text-indent: px2rem(-35);
+        margin:px2rem(5) 0;text-align: left;
+        span{display: block; padding-left: px2rem(10); text-indent: px2rem(-10);}
+      }
     }
   }
 
-}
 
 
 
-/*价格*/
-.price{ position: relative;  width:px2rem(230); text-align: center; margin:px2rem(60) auto;
-  .icon-xs{width:px2rem(183); margin:0 auto px2rem(20) auto;}
-  h2{font-size:px2rem(20); font-weight: normal; line-height:px2rem(50); color: #f57994;
-    i{font-size:px2rem(22); font-style: normal;vertical-align: baseline; }
-    span{font-size:px2rem(40); color: #f57994; }
-  }
-  s{font-size:px2rem(24); color: #888888; font-weight: normal; line-height:px2rem(30); text-decoration: sh;}
-
-  .price_num{width:px2rem(200); margin:px2rem(20) auto px2rem(30);}
-  .price_num dl {  float: left;  }
-  .price_num dl dd {  background: #fff url("../images/in-l.png") center no-repeat; background-size: 100%;  cursor: pointer;  float: left;  height: px2rem(50);  width: px2rem(50); }
-  .price_num dl dd.nopoint {  background: #fff url("../images/in-r.png") center no-repeat; background-size: 100%; }
-  .price_num dl dd.on {  background: #fff url("../images/in-l-h.png") center no-repeat; background-size: 100%; }
-  .price_num dl dd.nopoint.on {  background: #fff url("../images/in-r-h.png") center no-repeat; background-size: 100%; }
-
-  .price_num dl dt {  float: left;  height:px2rem(50); margin: 0 px2rem(5);  }
-  .price_num dl dt span { display: block; background: rgba(0, 0, 0, 0) none repeat scroll 0 0;  border: medium none;  color: #000;  height:px2rem(50); text-align: center;  width:px2rem(80); font-size:px2rem(28); line-height:px2rem(50); font-weight: bold; }
-
-  ul.buy_btn_box {  overflow: hidden; width:px2rem(200); margin:px2rem(10) auto; }
-  ul.buy_btn_box li {margin-right:px2rem(5); }
-  ul.buy_btn_box li span { display: block; width:px2rem(200); background:none;  border:#c9c9c9 1px solid; color: #000; cursor: pointer;line-height:px2rem(60); font-size:px2rem(26);  text-align: center;  border-radius:px2rem(10);  }
 
 }
 
-
-
-.swiper-container {
-  position: relative !important;
-  width: 100%;
-  height:100%;
-  margin-left: auto;
-  margin-right: auto;
+/*录音闪烁*/
+@-webkit-keyframes fadeToggle{
+  0%{opacity: 0;}
+  50%{opacity: 1;}
+  100%{opacity: 0;}
 }
-.swiper-slide {
-  text-align: center;
-  background: #fff;
-  height:100%;
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-}
-
-
-@media screen and (max-width: 320px) {
-
+@keyframes fadeToggle{
+  0%{opacity: 0;}
+  50%{opacity: 1;}
+  100%{opacity:0;}
 }

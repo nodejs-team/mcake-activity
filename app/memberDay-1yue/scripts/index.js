@@ -42,6 +42,16 @@
 
     var loader;
 
+
+    var loadComplete = function () {
+        $(".floater").fadeIn(100);
+        new Price('.js_price',{
+            add:'.add',
+            reduce:'.reduce'
+        },[20,40,60,0],1);
+
+        initScroll();
+    };
     function startLoading(){
         loader = new Loader('images/');
         var domLoad = document.getElementById('evt_loading');
@@ -62,190 +72,99 @@
 
 
 
-   /*推荐列表选择磅数*/
-    function  Select() {
-        var discount = 0.85;
-        var price = 0;
-        var postid = 0;
-        var totalPrice = 0;
-        $(".product .pro-li").each(function(){
-            var self = $(this);
-
-            $(this).find(".selects-l").on("change",function(){
-                price= self.find("option:selected",this).data("price");
-                postid = self.find("option:selected",this).data("postid");
-                console.log(price);
-                totalPrice = price*discount;
-                totalPrice = parseFloat(totalPrice.toFixed(2));
-                self.find(".pro-price").text(totalPrice);
-                self.find(".old-price").text(price);
-                self.find(".postid").data("postid",postid);
-            });
-
-            /*初始化*/
-            price=  $(this).find("option:selected",this).data("price");
-            postid =  $(this).find("option:selected",this).data("postid");
-            $(this).find(".pro-price").html(price*discount);
-            $(this).find(".old-price").html(price);
-
-        });
-        //$(".selects-l").val("200克");
-
-    }
 
 
-    /*主页磅数选择*/
-    function Price(els,opts) {
-        this.$els = $(els);
-        this.$add = this.$els.find(opts.add);
-        this.$reduce = this.$els.find(opts.reduce);
-        this.num=0;
-        this.max=50;
-        this.oldPrice =0;
-        this.totalOldprice =0;
-        this.totalPrice =0;
-        this._init();
-    }
-
-    Price.prototype={
-        add:function (ele) {
-            var self = this;
-            self.num = ele.parents(".price").find('.num').val();
-            if(self.num<self.max){
-                self.num++;
-            }
-            ele.siblings().find('.num').val(self.num);
-            self.numCounts(ele);
-        },
-        reduce:function (ele) {
-            var self = this;
-            self.num = ele.parents(".price").find('.num').val();
-            if(self.num>1){
-                self.num--;
-            }
-            ele.siblings().find('.num').val(self.num);
-            self.numCounts(ele);
-        },
-        numCounts:function (ele) {
-            var self = this;
-            var cur = ele.parents(".price").find('.price_p li.cur');
-            self.oldPrice = cur.data('oldprice');
-            self.num = ele.parents(".price").find('.num').val();
-            var ix = parseInt(self.num / 2);
-            self.totalOldprice =self.oldPrice * self.num;
-            self.totalPrice =(self.oldPrice * self.num) - (self.oldPrice/2 * ix);
-            ele.parents(".price").find('.old-price').html(self.totalOldprice);
-            ele.parents(".price").find('.now-price').html(self.totalPrice);
-        },
-        counts:function (ele) {
-            var self = this;
-            self.oldPrice = ele.data('oldprice');
-            self.num = ele.parents(".price").find('.num').val();
-            var ix = parseInt(self.num / 2);
-            self.totalOldprice =self.oldPrice * self.num;
-            self.totalPrice =(self.oldPrice * self.num) - (self.oldPrice/2 * ix);
-            ele.parents(".price").find('.old-price').html(self.totalOldprice);
-            ele.parents(".price").find('.now-price').html(self.totalPrice);
-        },
-        /*初始化*/
-        numInit:function () {
-            var self = this;
-            var Oldprice = 0;
-
-            this.$els.each(function () {
-                Oldprice = $(this).find('.price_p li.cur').data('oldprice');
-                var totalNum = $(this).find(".num").val();
-                var totalOldprice = Oldprice * totalNum;
-                var ix = parseInt(totalNum / 2);
-                var totalPrice =(Oldprice * totalNum) - (Oldprice/2 * ix);
-                $(this).find('.old-price').html(totalOldprice);
-                $(this).find('.now-price').html(totalPrice);
-
-            });
-
-        },
-        /*磅数选择*/
-        bsSelect:function (ele) {
-            var self = this;
-            ele.hover(function () {
-                ele.addClass('hover').siblings().removeClass('hover');
-            },function () {
-                ele.removeClass('hover');
-            });
-            ele.click(function () {
-                ele.addClass('cur').siblings().removeClass('cur');
-                self.counts($(this));
-            });
-        },
-        _init:function () {
-            var self = this;
-
-            this.numInit();
-
-            this.$els.find('.price_p li').each(function () {
-                self.bsSelect($(this));
-            });
-
-            this.$add.hover(function () {
-                $(this).addClass("on");
-            },function () {
-                $(this).removeClass("on");
-            });
-            this.$reduce.hover(function () {
-                $(this).addClass("on");
-            },function () {
-                $(this).removeClass("on");
-            });
-
-            this.$add.click(function () {
-                self.add($(this));
-            });
-            this.$reduce.click(function () {
-                self.reduce($(this));
-            });
-        }
-    };
-
-    var loadComplete = function () {
-        $(".floater").fadeIn(100);
-       Select();
-        new Price('.price',{
-            add:'.add',
-            reduce:'.reduce'
-        });
-
-        $(".sel-li dd").click(function () {
-            $(this).addClass("on").siblings().removeClass("on");
-        });
-
-
-
-        initScroll();
-    }
     var initScroll = function (){
         window.scrollAnimate('#evt_container', [
-             {dom: '.m-c1',x:-100, y:-50,duration:500,delay:200}
-             ,{dom: '.m-c3',x:100, y:-50,duration:500,delay:200}
-             ,{dom: '.m-c2',x:-100, y:0,duration:500,delay:200}
-             ,{dom: '.m-c4',x:0, y:50,duration:500,delay:400}
-             ,{dom: '.m-text',x:0, y:50,duration:500,delay:200}
-             ,{dom: '.quan',x:0, y:50,duration:500,delay:200}
-             ,{dom: '.sec-1 .title',x:0, y:50,duration:500,delay:200}
-             ,{dom: '.product',x:0, y:50,duration:500,delay:200}
-             ,{dom: '.vip',x:0, y:50,duration:500,delay:200}
-             ,{dom: '.row1 .cake',x:-100, y:0,duration:500,delay:200}
-             ,{dom: '.row1 .price',x:100, y:0,duration:500,delay:200}
+            ,{dom: '.banner-t',x:0, y:100,duration:500,delay:200}
+            ,{dom: '.sec-0 .quanyi',x:0, y:50,duration:500,delay:200}
+            ,{dom: '.sec-0 .hongbao',x:0, y:50,duration:500,delay:400}
 
-            ,{dom: '.row2 .cake',x:100, y:0,duration:500,delay:200}
-            ,{dom: '.row2 .price',x:-100, y:0,duration:500,delay:200}
+             ,{dom: '.sec-main .hy-title',x:0, y:50,duration:500,delay:400}
+             ,{dom: '.row1 .cake',x:-100, y:50,duration:500,delay:400}
+             ,{dom: '.row1 .price',x:0, y:50,duration:500,delay:400}
 
-            ,{dom: '.row3 .cake',x:-100, y:0,duration:500,delay:200}
-            ,{dom: '.row3 .price',x:100, y:0,duration:500,delay:200}
+            ,{dom: '.row2 .cake',x:100, y:50,duration:500,delay:400}
+            ,{dom: '.row2 .price',x:0, y:50,duration:500,delay:400}
 
-            ,{dom: '.row4 .cake',x:100, y:0,duration:500,delay:200}
-            ,{dom: '.row4 .price',x:-100, y:0,duration:500,delay:200}
+            ,{dom: '.row3 .cake',x:-100, y:50,duration:500,delay:400}
+            ,{dom: '.row3 .price',x:0, y:50,duration:500,delay:400}
+
+            ,{dom: '.row4 .cake',x:100, y:50,duration:500,delay:400}
+            ,{dom: '.row4 .price',x:0, y:50,duration:500,delay:400}
+
+            ,{dom: '.row5 .cake',x:-100, y:50,duration:500,delay:400}
+            ,{dom: '.row5 .price',x:0, y:50,duration:500,delay:400}
+
+            ,{dom: '.row6 .cake',x:100, y:50,duration:500,delay:400}
+            ,{dom: '.row6 .price',x:0, y:50,duration:500,delay:400}
+
+            ,{dom: '.more',x:0, y:50,duration:500,delay:400}
+
+
         ])
     };
+
+
+})();
+
+function getNowFormatDate() {
+    var date = new Date();
+    var seperator1 = "-";
+    var year = date.getFullYear();
+    var month = date.getMonth() + 1;
+    var strDate = date.getDate();
+    if (month >= 1 && month <= 9) {
+        month = "0" + month;
+    }
+    if (strDate >= 0 && strDate <= 9) {
+        strDate = "0" + strDate;
+    }
+    var currentdate = year + seperator1 + month + seperator1 + strDate;
+    return currentdate;
+}
+
+
++!(function () {
+
+    var Stamp;
+    Stamp = new Date();
+
+    if (Stamp.getDay() == 2){
+        __END_DATE__ = getNowFormatDate() +' 10:00:00';
+    } else {
+        var num = 7-Stamp.getDay()+2;
+        Stamp.setDate(Stamp.getDate() + num);
+
+        var year = Stamp.getFullYear(); //获取完整的年份(4位,1970-????)
+        var month = Stamp.getMonth() +1; //获取当前月份(0-11,0代表1月)
+        var mvar ='';
+        if(month<10){
+            mvar = '0' + month;
+        }else{
+            mvar = month+'';
+        }
+        var day = Stamp.getDate();
+        var dvar ='';
+        if(day<10){
+            dvar = '0' + day;
+        }else{
+            dvar = day+'';
+        }
+        __END_DATE__ = year+"-"+mvar+'-'+dvar +' 10:00:00';    /*手机上需要转换成时间戳*/
+    }
+
+
+    var data = new Date(__END_DATE__).getTime();
+    /*console.log(__END_DATE__);*/
+    function actEnd1() {
+        status = 1;
+        $(".no-buy1").fadeOut(0);
+        $(".now-buy1").fadeIn(0);
+        $(".no-buy2").fadeOut(0);
+        $(".now-buy2").fadeIn(0);
+    }
+    goTime(data,'#timer1',actEnd1);
 
 
 })();

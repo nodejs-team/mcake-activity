@@ -42,6 +42,19 @@
 
     var loader;
 
+
+    var loadComplete = function () {
+        $(".floater").fadeIn(100);
+        var myVideo=document.getElementById("video");
+        myVideo.play();
+        initScroll();
+
+        $('#js_recording').bind('click',function(e){;
+            recording();
+        })
+        audioPlay();
+        
+    };
     function startLoading(){
         loader = new Loader('images/');
         var domLoad = document.getElementById('evt_loading');
@@ -61,132 +74,89 @@
     startLoading();
 
 
+    var recording = function () {
+        var $elIco = $('#js_ioc');
+        var $elGif = $('#js_gif');
 
+        if($elGif.is(":hidden")) {
+            $elIco.hide();
+            $('.recording-hd').find('em').hide();
+            $elGif.show();
+        } else {
+            $elIco.show();
+            $('.recording-hd').find('em').show();
+            $elGif.hide();
+        }
+    };
 
-    var loadComplete = function () {
+    var audioPlay = function () {
+        var post_id = '10853';
+        var audio;
+        var timer = null;
+        $(function(){
+            audio = document.getElementById('audio');
 
-        var swiper1 = new Swiper('.swiper1', {
-            slidesPerView: 1,
-            speed:300,
-            autoplay : {
-                delay:3000
-            },
-            loop: true,
-            navigation: {
-                nextEl: '.swiper-button-next1',
-                prevEl: '.swiper-button-prev1',
-            }
+            //播放录音
+            $(".recording").click(function(){
+                var $elIco = $('#js_ioc');
+                var $elGif = $('#js_gif');
+
+                if (audio.paused){
+                    audio.play();
+                    /*countdown(230);*/
+                    $elIco.hide();
+                    $elGif.show();
+
+                }else{
+                    $elIco.show();
+                    $elGif.hide();
+                    audio.pause();
+                    audio.currentTime = 0.0;
+                    clearInterval(timer);
+                    //$("#countdown_id").html('240s');
+                }
+                $(".recording-hd em").hide();
+            });
         });
-        var swiper2 = new Swiper('.swiper2', {
-            slidesPerView: 1,
-            speed:300,
-            autoplay : {
-                delay:3000
-            },
-            loop: true,
-            navigation: {
-                nextEl: '.swiper-button-next2',
-                prevEl: '.swiper-button-prev2',
-            }
-        });
 
-        new Price('.price',{
-            add:'.add',
-            reduce:'.reduce'
-        });
+        function countdown(time){
 
-
-        initScroll();
+            timer = setInterval(function(){
+                if(time - 1 >= 0){
+                    time = time - 1;
+                    $("#countdown_id").html(time + 's');
+                }else{
+                    $("#countdown_id").html('240s');
+                    var $elIco = $('#js_ioc');
+                    var $elGif = $('#js_gif');
+                    $elIco.show();
+                    $elGif.hide();
+                    audio.pause();
+                    audio.currentTime = 0.0;
+                    clearInterval(timer);
+                }
+            }, 1000);
+        }
     }
+
+
     var initScroll = function (){
         window.scrollAnimate('#evt_container', [
-             {dom: '.rose-1',x:100, y:0,duration:500,delay:500}
-             ,{dom: '.rose-2',x:-100, y:0,duration:500,delay:500}
-             ,{dom: '.rose-3',x:100, y:0,duration:500,delay:500}
-             ,{dom: '.rose-4',x:-100, y:0,duration:500,delay:500}
-             ,{dom: '.rose-5',x:100, y:0,duration:500,delay:500}
-             ,{dom: '.rose-6',x:-100, y:0,duration:500,delay:500}
-             ,{dom: '.rose-7',x:100, y:0,duration:500,delay:500}
-             ,{dom: '.rose-8',x:0, y:100,duration:500,delay:500}
-             ,{dom: '.sec-1 .title',x:0, y:100,duration:500,delay:500}
-             ,{dom: '.sec-1 .word',x:0, y:100,duration:500,delay:500}
-             ,{dom: '.sec-1 .row-cake',x:0, y:100,duration:500,delay:500}
-             ,{dom: '.sec-1 .price',x:0, y:100,duration:500,delay:500}
-             ,{dom: '.sec-1 .w-2',x:0, y:100,duration:500,delay:500}
-             ,{dom: '.sec-2 .cake-slides',x:0, y:100,duration:500,delay:500}
-             ,{dom: '.sec-2 .bar',x:0, y:0,duration:500,delay:500}
-             ,{dom: '.sec-2 .price',x:0, y:100,duration:500,delay:500}
-             ,{dom: '.sec-3 .title',x:0, y:100,duration:500,delay:500}
-             ,{dom: '.sec-3 .row-cake',x:0, y:100,duration:500,delay:500}
-             ,{dom: '.sec-3 .word',x:0, y:100,duration:500,delay:500}
-             ,{dom: '.sec-3 .ad',x:0, y:100,duration:500,delay:500}
-             ,{dom: '.sec-3 .word',x:0, y:100,duration:500,delay:500}
-             ,{dom: '.sec-3 .ewm',x:0, y:100,duration:500,delay:500}
-             ,{dom: '.sec-3 .tips',x:0, y:100,duration:500,delay:500}
+            {dom: '.sec-top',x:0, y:100,duration:500,delay:200}
 
-
+             ,{dom: '.sec-1 .s-sction-1',x:0, y:50,duration:500,delay:400}
+             ,{dom: '.sec-2 .s-sction-2',x:0, y:50,duration:500,delay:400}
+             ,{dom: '.sec-2 .buy-btn',x:0, y:50,duration:500,delay:400}
+             ,{dom: '.sec-3 .section-3-title',x:0, y:50,duration:500,delay:400}
+             ,{dom: '.sec-4 .s-sction-4',x:0, y:50,duration:500,delay:400}
+             ,{dom: '.sec-4 .piaodai',x:-50, y:50,duration:500,delay:400}
+             ,{dom: '.sec-5 .s-sction-5',x:0, y:50,duration:500,delay:400}
+             ,{dom: '.recording',x:0, y:50,duration:500,delay:400}
+             ,{dom: '.more-bg',x:0, y:50,duration:500,delay:400}
         ])
     };
 
 
-
-
-    function Price(els,opts) {
-        this.$els = $(els);
-        this.$add = this.$els.find(opts.add);
-        this.$reduce = this.$els.find(opts.reduce);
-        this.num=0;
-        this.max=50;
-        this.oldPrice =0;
-        this.totalOldprice =0;
-        this.totalPrice =0;
-        this.discount = 0; /*立减69*/
-        this._init();
-    }
-    Price.prototype= {
-        add: function (ele) {
-            var self = this;
-            self.num = ele.parents(".price").find('.num').text()-0;
-            if (self.num < self.max) {
-                self.num++;
-            }
-
-            ele.siblings().find('.num').text(self.num);
-            self.numCounts(ele);
-        },
-        reduce: function (ele) {
-            var self = this;
-            self.num = ele.parents(".price").find('.num').text()-0;
-            if (self.num > 1) {
-                self.num--;
-            }
-            ele.siblings().find('.num').text(self.num);
-            self.numCounts(ele);
-        },
-        numCounts:function (ele) {  /*加减计算价格*/
-            var self = this;
-            self.oldPrice = ele.parents(".price").find('.old-price').data("price");
-            self.nowPrice = ele.parents(".price").find('.now-price').data("price");
-
-            self.num = ele.parents(".price").find('.num').text()-0;
-            self.totalOldprice =self.oldPrice * self.num ;
-            self.totalnowPrice =self.nowPrice * self.num ;
-            ele.parents(".price").find('.old-price').html(self.totalOldprice);
-            ele.parents(".price").find('.now-price').html(self.totalnowPrice+".00");
-        },
-        _init:function () {
-            var self = this;
-
-            //this.numInit();
-
-
-            this.$add.click(function () {
-                self.add($(this));
-            });
-            this.$reduce.click(function () {
-                self.reduce($(this));
-            });
-        }
-    }
-
 })();
+
+

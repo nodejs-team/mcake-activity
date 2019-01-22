@@ -42,6 +42,19 @@
 
     var loader;
 
+
+    var loadComplete = function () {
+        $(".floater").fadeIn(100);
+
+
+
+        new Price('.js_price2',{
+            add:'.add',
+            reduce:'.reduce'
+        },[0,0,0,0],0.78);
+
+        initScroll();
+    };
     function startLoading(){
         loader = new Loader('images/');
         var domLoad = document.getElementById('evt_loading');
@@ -63,148 +76,29 @@
 
 
 
-    var loadComplete = function () {
 
-
-
-
-
-        initScroll();
-    }
     var initScroll = function (){
         window.scrollAnimate('#evt_container', [
-             {dom: '.sec-top .title',x:0, y:-50,duration:500,delay:500}
-             ,{dom: '.sec-top .cake',x:100, y:50,duration:500,delay:200}
-             ,{dom: '.products .cake',x:-100, y:0,duration:500,delay:200}
-             ,{dom: '.price',x:0, y:100,duration:500,delay:200}
-             ,{dom: '.quan-1',x:0, y:100,duration:500,delay:200}
-             ,{dom: '.quan-2',x:0, y:100,duration:500,delay:200}
+            ,{dom: '.banner-t',x:0, y:100,duration:500,delay:200}
+
+             ,{dom: '.sec-0 .hy-title',x:0, y:50,duration:500,delay:400}
+             ,{dom: '.row1 .cake',x:100, y:50,duration:500,delay:400}
+             ,{dom: '.row1 .price',x:0, y:50,duration:500,delay:400}
+
+            ,{dom: '.row2 .cake',x:-100, y:50,duration:500,delay:400}
+            ,{dom: '.row2 .price',x:0, y:50,duration:500,delay:400}
+
+            ,{dom: '.row3 .cake',x:100, y:50,duration:500,delay:400}
+            ,{dom: '.row3 .price',x:0, y:50,duration:500,delay:400}
+
+            ,{dom: '.row4 .cake',x:-100, y:50,duration:500,delay:400}
+            ,{dom: '.row4 .price',x:0, y:50,duration:500,delay:400}
+
 
         ])
     };
 
 
-
-
-    var $Select = $(".Select"),
-        $bangshu = $Select.find(".s-bangshu"),
-        $price = $Select.find(".s-price");
-    var num = 1,
-        pond = 2,
-        price = 0,
-        postid = 0,
-        totaPrice=0,
-        discount = 69;
-    /*数量选择*/
-    function SelectShow(ele) {
-        var ponds = [];
-        var prices = [];
-        var postids = [];
-        var pondsingle = $(ele).data("pond").indexOf(",");
-
-        /*只有1盒*/
-        if(pondsingle<0){
-            ponds = $(ele).data("pond").split(',');
-            prices = $(ele).data("price");
-            postids = $(ele).data("postid");
-
-            /*初始化默认*/
-            $price.html(prices-discount);
-            $(".postid").data('postid',postids);
-            $Select.find("li").eq(1).addClass("on").siblings().removeClass("on");
-            $(".num").val(1);
-            price = prices;
-
-            var str = '';
-            str = '<li class="on" data-pond="'+ponds+'">'+ponds+'</li>';
-            $bangshu.find("ul").append(str);
-
-
-        }else{  /*多磅数选择*/
-            ponds = $(ele).data("pond").split(',').map(function(str){ return str.replace(/(^\s*)|(\s*$)/g, "")});
-            prices = $(ele).data("price").split(',').map(function(str){ return str.replace(/(^\s*)|(\s*$)/g, "")});
-            postids = $(ele).data("postid").split(',').map(function(str){ return str.replace(/(^\s*)|(\s*$)/g, "")});
-
-
-            /*初始化默认*/
-            $price.html(prices[1]-discount);
-            $(".postid").data('postid',postids[1]);
-            $Select.find("li").eq(1).addClass("on").siblings().removeClass("on");
-            $(".num").val(1);
-            price = prices[1];
-
-
-            var len = ponds.length;
-
-            for(var i=0; i<len; i++){
-                var str = '';
-                if(i==1){
-                    str = '<li class="on" data-pond="'+ponds[i]+'">'+ponds[i]+'</li>';
-                }else{
-                    str += '<li data-pond="'+ponds[i]+'">'+ponds[i]+'</li>';
-                }
-
-                $bangshu.find("ul").append(str);
-
-                $bangshu.find("li").each(function (i) {  /*磅数选择*/
-                    var self = $(this);
-                    $(this).data("price",prices[i]);
-                    $(this).data("postid",postids[i]);
-
-                    $(this).click(function () {
-                        postid = self.data("postid");
-                        $(".postid").data('postid',postid);
-
-                        price = self.data("price");
-                        totaPrice = price * num;
-                        $price.html(totaPrice-discount);
-                        self.addClass("on").siblings().removeClass("on");
-                    });
-                });
-
-            }
-        }
-
-        $(".Dialogbg-Select,.Dialog-Select").fadeIn(500);
-    }
-
-    /*加*/
-    $(".plus").click(function () {
-        if(num>=50){
-            return;
-        }else{
-            num+=1;
-        }
-        $(".num").val(num);
-
-        totaPrice = price * num;
-        $price.html(totaPrice-discount);
-    });
-
-    /*减*/
-    $(".minus").click(function () {
-        if(num<=1){
-            return;
-        }else{
-            num-=1;
-        }
-        $(".num").val(num);
-        totaPrice = price * num;
-        $price.html(totaPrice-discount);
-    });
-
-    function SelectHide() {
-        num = 1;
-        $bangshu.find("ul").empty();
-        $(".Dialogbg-Select,.Dialog-Select").fadeOut(0);
-    }
-
-    $(".Dialogbg-Select").click(function () {
-        SelectHide();
-    });
-
-
-    window.SelectShow = SelectShow;
-    window.SelectHide = SelectHide;
-
 })();
+
+

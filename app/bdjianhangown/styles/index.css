@@ -1,0 +1,305 @@
+@charset "UTF-8";
+.clearfix:after {
+  content: ".";
+  height: 0;
+  visibility: hidden;
+  clear: both; }
+
+#evt_content {
+  background: url("../images/bg_03.jpg") repeat;
+  /*蛋糕控制磅数*/
+  /*小食控制数量*/ }
+  #evt_content img {
+    width: 100%; }
+  #evt_content .section-top {
+    position: relative;
+    height: 3.81333rem;
+    z-index: 2;
+    background: #c7e2fa; }
+    #evt_content .section-top > div {
+      position: absolute; }
+    #evt_content .section-top .top_icon {
+      width: 4.04rem;
+      top: 2.30667rem;
+      left: 0.8rem; }
+    #evt_content .section-top .cake-1 {
+      width: 4.52rem;
+      top: 0;
+      left: 0; }
+    #evt_content .section-top .b-title {
+      top: 0.70667rem;
+      left: 50%;
+      width: 5.25333rem;
+      margin-left: -2.62667rem; }
+    #evt_content .section-top .cake-2 {
+      width: 2.46667rem;
+      top: 0;
+      right: 0; }
+  #evt_content .buy-btn {
+    width: 100%; }
+    #evt_content .buy-btn .go-btn {
+      width: 2.2rem;
+      height: 0.77333rem;
+      background: url("../images/btn-bg2.png") center no-repeat;
+      background-size: 100%;
+      text-align: center;
+      margin: 0.4rem auto;
+      float: left; }
+      #evt_content .buy-btn .go-btn span {
+        color: #fff;
+        line-height: 0.77333rem;
+        font-size: 0.30667rem; }
+  #evt_content .section-main {
+    position: relative;
+    background: url("../images/top-bar_02.png") top no-repeat;
+    z-index: 0;
+    height: 8.33333rem; }
+    #evt_content .section-main .product {
+      width: 10rem;
+      padding-top: 2rem; }
+      #evt_content .section-main .product ul {
+        margin: 0;
+        padding: 0; }
+        #evt_content .section-main .product ul li {
+          float: left;
+          width: 4.53333rem;
+          margin-left: 0.26667rem;
+          list-style: none; }
+      #evt_content .section-main .product p {
+        line-height: 0.4rem;
+        margin-top: 0.26667rem;
+        margin-bottom: 0;
+        text-align: center;
+        font-size: 0.34rem; }
+      #evt_content .section-main .product .pro-top {
+        width: 4.18667rem;
+        height: 2.74667rem;
+        background: url("../images/pr-bd.png") no-repeat;
+        background-size: 100%; }
+        #evt_content .section-main .product .pro-top img {
+          margin: 0.2rem 0 0 0.26667rem; }
+      #evt_content .section-main .product .price {
+        width: 1.86667rem;
+        float: left;
+        font-size: 0.54667rem;
+        line-height: 0.4rem; }
+        #evt_content .section-main .product .price i {
+          font-size: 0.24rem;
+          font-style: normal;
+          vertical-align: super; }
+        #evt_content .section-main .product .price b {
+          font-size: 0.26667rem;
+          font-weight: normal;
+          vertical-align: inherit; }
+      #evt_content .section-main .product .pro-info {
+        width: 3.54667rem;
+        margin: 0.26667rem auto;
+        color: #ad8e69; }
+      #evt_content .section-main .product .postid {
+        visibility: hidden; }
+      #evt_content .section-main .product .select-item {
+        float: right;
+        z-index: 10;
+        height: 0.53333rem;
+        position: relative;
+        margin-top: 0.06667rem; }
+        #evt_content .section-main .product .select-item .selects-l {
+          width: 1.6rem;
+          height: 0.53333rem;
+          background: url(../images/bangshu.png) center center no-repeat;
+          border: none;
+          color: #ad8e69;
+          text-indent: 0.13333rem; }
+  #evt_content .section-bottom {
+    position: relative; }
+    #evt_content .section-bottom .title-line {
+      position: absolute;
+      width: 9.45333rem;
+      top: 0px;
+      left: 50%;
+      margin-left: -4.72667rem; }
+    #evt_content .section-bottom .slides {
+      position: relative;
+      height: 10rem; }
+    #evt_content .section-bottom .slideContain {
+      position: absolute;
+      width: 100%;
+      height: 5.73333rem;
+      left: 0;
+      top: 1.33333rem; }
+      #evt_content .section-bottom .slideContain a {
+        display: block;
+        position: absolute; }
+    #evt_content .section-bottom .slideContent {
+      position: absolute;
+      width: 7.2rem;
+      height: 100%;
+      left: 50%;
+      top: 0;
+      margin-left: -3.6rem; }
+    #evt_content .section-bottom li.slideItem {
+      width: 4.8rem;
+      height: 5.6rem;
+      position: absolute;
+      list-style: none;
+      overflow: hidden; }
+      #evt_content .section-bottom li.slideItem .product {
+        position: absolute;
+        top: 3%;
+        left: 4.5%;
+        width: 91%; }
+      #evt_content .section-bottom li.slideItem span {
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: 0.26667rem;
+        font-size: 0.24rem;
+        color: #626262;
+        text-align: center;
+        width: 100%;
+        line-height: 0.24rem; }
+    #evt_content .section-bottom .slidePrev, #evt_content .section-bottom .slideNext {
+      width: 0.84rem;
+      height: 0.6rem;
+      top: 50%;
+      margin-top: -0.29333rem;
+      z-index: 10; }
+    #evt_content .section-bottom .slidePrev {
+      background: url(../images/prev.png);
+      background-size: 100%;
+      left: 0.26667rem; }
+    #evt_content .section-bottom .slideNext {
+      background: url(../images/next.png);
+      background-size: 100%;
+      right: 0.26667rem; }
+  #evt_content .pro-num {
+    position: absolute;
+    width: 4rem;
+    height: 0.53333rem;
+    left: 50%;
+    top: 7.2rem;
+    font-size: 0;
+    margin-left: -2rem; }
+    #evt_content .pro-num a {
+      position: absolute;
+      width: 0.66667rem;
+      height: 0.66667rem;
+      display: block;
+      top: 0.05333rem; }
+    #evt_content .pro-num .minus {
+      background: url(../images/minus.png);
+      background-size: 100%;
+      left: 0; }
+    #evt_content .pro-num .plus {
+      background: url(../images/plus.png);
+      background-size: 100%;
+      right: 0; }
+    #evt_content .pro-num input {
+      border: none;
+      display: block;
+      font-size: 0.26667rem;
+      background: url(../images/input.png);
+      background-size: 100%;
+      width: 2.46667rem;
+      height: 0.66667rem;
+      line-height: 0.66667rem;
+      position: absolute;
+      top: 0.06667rem;
+      left: 0.76rem;
+      text-align: center;
+      color: #626262;
+      padding: 0; }
+  #evt_content .pro-number {
+    position: absolute;
+    width: 4rem;
+    height: 0.53333rem;
+    left: 50%;
+    top: 7.2rem;
+    font-size: 0;
+    margin-left: -2rem; }
+    #evt_content .pro-number a {
+      position: absolute;
+      width: 0.66667rem;
+      height: 0.66667rem;
+      display: block;
+      top: 0.05333rem; }
+    #evt_content .pro-number .minus-number {
+      background: url(../images/minus.png);
+      background-size: 100%;
+      left: 0.66667rem; }
+    #evt_content .pro-number .plus-number {
+      background: url(../images/plus.png);
+      background-size: 100%;
+      right: 0.66667rem; }
+    #evt_content .pro-number input {
+      border: none;
+      display: block;
+      font-size: 0.26667rem;
+      background: url(../images/input-number.png) center no-repeat;
+      background-size: 100%;
+      width: 1.06667rem;
+      height: 0.66667rem;
+      line-height: 0.66667rem;
+      position: absolute;
+      top: 0.06667rem;
+      left: 1.46667rem;
+      text-align: center;
+      color: #626262;
+      padding: 0; }
+  #evt_content .buybtn {
+    position: absolute;
+    top: 8.4rem;
+    left: 50%;
+    margin-left: -3.33333rem;
+    width: 2.66667rem;
+    height: 0.93333rem;
+    background: url("../images/btn-bg2.png") center no-repeat;
+    background-size: 100%;
+    text-align: center;
+    text-decoration: none; }
+    #evt_content .buybtn span {
+      color: #fff;
+      line-height: 0.93333rem;
+      font-size: 0.32rem; }
+  #evt_content .buy_btn {
+    margin-left: 0.53333rem; }
+  #evt_content .bg-ds {
+    position: absolute;
+    bottom: -1.06667rem;
+    left: 0;
+    width: 0.93333rem; }
+  #evt_content .bg-ds-2 {
+    bottom: 5.06667rem;
+    left: 0;
+    width: 1.16rem; }
+  #evt_content .bg-ds-3 {
+    bottom: -0.66667rem;
+    left: auto;
+    right: 0;
+    width: 0.73333rem; }
+  #evt_content .bg-ds-4 {
+    bottom: 2.4rem;
+    left: auto;
+    right: 0.13333rem;
+    width: 1.65333rem; }
+
+.footer {
+  position: relative;
+  width: 10rem;
+  padding: 0.26667rem 0 0.66667rem; }
+  .footer .txt {
+    position: relative;
+    width: 9.06667rem;
+    padding-top: 0.13333rem;
+    padding-bottom: 0.13333rem;
+    margin: 0 auto;
+    color: #7296b5; }
+    .footer .txt h2 {
+      font-size: 0.34667rem;
+      font-weight: normal; }
+    .footer .txt p {
+      font-size: 0.28rem;
+      padding-left: 0.46667rem;
+      line-height: 0.4rem;
+      text-indent: -0.46667rem;
+      margin: 0.06667rem 0; }

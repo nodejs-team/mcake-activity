@@ -135,6 +135,8 @@
         top: 0,
         bottom: 0
       });
+      $(el).addClass("isIphone");
+
       /*document.addEventListener('touchmove', preventDefaultHandler, false);*/
       myScroll = new IScroll(el, {probeType: 3, click: false, bounce: false, deceleration: 0.003});
       myScroll.on('scroll', function () {
