@@ -1,0 +1,33 @@
+var resData = [
+    {
+        "name":"cake-1_png",
+        "type":"image",
+        "url":"cake-1.png"
+    },
+    {
+        "name":"cake-2_png",
+        "type":"image",
+        "url":"cake-2.png"
+    },
+    {
+        "name":"cake-3_png",
+        "type":"image",
+        "url":"cake-3.png"
+    },
+    {
+        "name":"cake-4_png",
+        "type":"image",
+        "url":"cake-4.png"
+    },
+    {
+        "name":"cart_png",
+        "type":"image",
+        "url":"cart.png"
+    },
+    {
+        "name":"banner-quan_jpg",
+        "type":"image",
+        "url":"banner-quan.jpg"
+    }
+
+];

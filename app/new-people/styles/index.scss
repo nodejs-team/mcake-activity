@@ -28,8 +28,7 @@
   .sec-0{ z-index: 2; margin-top:px2rem(-80);
     div{position:relative;}
     .hongbao{width:px2rem(750); margin:px2rem(-5) auto px2rem(40);}
-    .btn-hb{position: absolute; bottom: px2rem(50); left: 50%; margin-left: px2rem(-80);
-      span{padding:px2rem(3) px2rem(30); font-size: px2rem(24); line-height: px2rem(60); background: #e6e7d8; color: #6a6e44; }
+    .btn-hb{position: absolute; bottom: px2rem(55); left: 50%; margin-left: px2rem(-80); width: px2rem(160); font-size: px2rem(24); line-height: px2rem(50); background: #e6e7d8; color: #6a6e44; text-align: center;
     }
   }
 
@@ -119,10 +118,10 @@
     .jisuan{position: relative; width: px2rem(350);}
     .price_num{ position: absolute; bottom: 0; right: 0;}
     .price_num dl {  float: left;  padding-left: px2rem(5);}
-    .price_num dl dd { cursor: pointer; float: left; height: px2rem(30); width: px2rem(30);}
+    .price_num dl dd { cursor: pointer; float: left; height: px2rem(42); width: px2rem(42); }
 
-    .price_num dl dt { float: left;  height: px2rem(30); width: px2rem(30);}
-    .price_num dl dt span {display: block; font-size: px2rem(20); background: rgba(0, 0, 0, 0) none repeat scroll 0 0;  border: none;  color: #000;  height: 100%; line-height: px2rem(30); text-align: center;  width: 100%;  }
+    .price_num dl dt { float: left; width: px2rem(30);height: px2rem(42);}
+    .price_num dl dt span {display: block; font-size: px2rem(20); background: rgba(0, 0, 0, 0) none repeat scroll 0 0;  border: none;  color: #000;  height: 100%; line-height: px2rem(42); text-align: center;  width: 100%;  }
 
 
 
@@ -130,7 +129,7 @@
     ul.buy_btn_box.twoBtn {  width: px2rem(350);}
     ul.buy_btn_box li { float: left; margin-right:  px2rem(10);  }
     ul.buy_btn_box li:last-child{margin-right: 0; float: right;}
-    ul.buy_btn_box li span { display: block; background:#e6e7d8; background-size: 100%; cursor: pointer; line-height: px2rem(40); font-size: px2rem(22); text-align: center;  width: px2rem(160);  overflow: hidden; color: #000; }
+    ul.buy_btn_box li span { display: block; background:#e6e7d8; background-size: 100%; cursor: pointer; font-size: px2rem(22); padding: px2rem(2) 0; text-align: center;  width: px2rem(160);  overflow: hidden; color: #000; vertical-align: middle;}
   }
 
 

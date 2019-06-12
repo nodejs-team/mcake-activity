@@ -81,6 +81,8 @@
         width: 0.30667rem;
         height: 0.66667rem; }
       #evt_content .section-main .act .act_bar .sz-start {
+        margin-left: -0.26667rem; }
+      #evt_content .section-main .act .act_bar .sz-midlle {
         margin-left: -0.10667rem; }
       #evt_content .section-main .act .act_bar .sz-end {
         margin-left: 0.44rem; }
@@ -373,6 +375,44 @@
       margin: 0.13333rem 0;
       text-align: justify;
       text-justify: inter-word; }
+
+/*彈窗提示*/
+.Dialog-base-box {
+  background: #fff !important;
+  margin: -2.33333rem auto 0 -4rem !important; }
+
+.Dialog-tip {
+  color: #944226;
+  text-align: center;
+  padding: 0.8rem 0;
+  font-size: 0.34667rem; }
+  .Dialog-tip h2 {
+    font-size: 0.4rem;
+    color: #255b9b; }
+  .Dialog-tip input {
+    margin: 0.26667rem auto 0;
+    display: block;
+    background: #ebf0f4;
+    line-height: 0.66667rem;
+    border-radius: 0.13333rem;
+    border: none;
+    width: 5.06667rem;
+    height: 0.66667rem;
+    color: #8b462a;
+    padding: 0 0.13333rem;
+    z-index: 1;
+    color: #2469ac; }
+  .Dialog-tip .btn-ok {
+    width: 2.13333rem;
+    line-height: 0.8rem;
+    background: #255b9b;
+    color: #fff;
+    border-radius: 0.13333rem;
+    margin: 0.4rem auto 0.26667rem;
+    cursor: pointer;
+    z-index: 5;
+    border: none;
+    font-size: 0.34667rem !important; }
 
 /*浮动*/
 .floater {

@@ -45,14 +45,16 @@
 
     var loadComplete = function () {
         $(".floater").fadeIn(100);
-        var myVideo=document.getElementById("video");
-        myVideo.play();
+
         initScroll();
 
         $('#js_recording').bind('click',function(e){;
             recording();
         })
         audioPlay();
+
+
+
         
     };
     function startLoading(){

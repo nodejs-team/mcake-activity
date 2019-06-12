@@ -1,4 +1,4 @@
-/**
+/**  wap端做动画
  new MovieClip(canvasID, imgObject, clipArray).play();
  */
 

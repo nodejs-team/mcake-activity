@@ -39,7 +39,7 @@
                     <div class="act act_start" style="display:block;">
                         <div class="act_text"><img src="https://act.mcake.com/fangli/2019/wap/commoncss/no.jpg" alt="" src-fix="act_text_png"></div>
                         <div class="act_bar number">
-                            <span class="sz-start sz-0"></span><span class="sz-end sz-0"></span>
+                            <span class="sz-start sz-0"></span><span class="sz-midlle sz-0"></span><span class="sz-end sz-0"></span>
                         </div>
 
                     </div>
@@ -228,6 +228,15 @@
     </div>
 </div>
 
+<!--弹窗提示-->
+<div class="Dialog-base-cover Dialogbg-tip" style="display: none;" ></div>
+<div class="Dialog-base-box Dialog-tip" style="display: none;" >
+    <h2>请输入杭州建行信用卡卡号</h2>
+    <input type="text" placeholder="请输入卡号前七位">
+    <button class="btn-ok">确定</button>
+    <!--<div class="btn-ok">确定</div>-->
+</div>
+
 <div class="floater">
     <div class="tips noselect" unselectable="on"><span>1234</span></div>
     <img src="images/go-buy.png" alt="">
@@ -255,6 +264,9 @@
     }
     numLast(4,8);
 
+    $(".btn-ok").click(function () {
+        $(".Dialogbg-tip,.Dialog-tip").fadeOut(200);
+    });
 </script>
 
 </body>

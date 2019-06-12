@@ -41,7 +41,8 @@
       .act_bar{width: px2rem(488); height: px2rem(94); background: url("../images/bar-start.png"); background-size: 100%; margin:px2rem(50) auto; position: relative; text-align: center;
         b{display: block; position: absolute; top:px2rem(30); left: 50%; width: px2rem(154); margin-left: px2rem(-80); }
         span{ display: block; position: absolute; top:px2rem(30); left: 50%; font-size: px2rem(40); color: #485a70; background: url("../images/zi.png") center no-repeat; background-size: 100%; width:px2rem(23); height: px2rem(50); }
-        .sz-start{margin-left: px2rem(-8);}
+        .sz-start{margin-left: px2rem(-20);}
+        .sz-midlle{margin-left: px2rem(-8);}
         .sz-end{margin-left: px2rem(33);}
         .sz-0{background: url("../images/zi.png") 0 0 no-repeat; background-size: 100%;}
         .sz-1{background: url("../images/zi.png") 0 px2rem(-50) no-repeat; background-size: 100%;}
@@ -160,6 +161,16 @@
   }
 
 
+}
+
+
+/*彈窗提示*/
+.Dialogbg-tip{}
+.Dialog-base-box{background: #fff !important; margin: -2.33333rem auto 0 -4rem !important;}
+.Dialog-tip{ color: #944226; text-align: center; padding: px2rem(60) 0; font-size: px2rem(26);
+  h2{font-size: px2rem(30); color: #255b9b; }
+  input{margin: px2rem(20) auto 0; display: block; background: #ebf0f4; line-height:px2rem(50);border-radius:px2rem(10); border: none; width:px2rem(380); height:px2rem(50); color: #8b462a; padding: 0 px2rem(10); z-index: 1; color: #2469ac;}
+  .btn-ok{width:px2rem(160); line-height:px2rem(60); background: #255b9b; color: #fff; border-radius:px2rem(10); margin:px2rem(30) auto px2rem(20); cursor: pointer; z-index: 5; border: none;font-size: px2rem(26) !important;}
 }
 
 

@@ -176,8 +176,15 @@
    /*实例化： new ShareFriend('.Dialog-share-cover','.Dialog-share');*/
 
 
-
-
+    /*微信打开网页键盘弹起后页面会被顶上去，键盘收起，页面没有回到原来的位置
+     *解决方案：根据当前滚动条的位置来计算，失去焦点后，重新让滚动条滚动到之前的位置
+     */
+    $("input").blur(function () {
+        setTimeout(function() {
+                var scrollHeight = document.documentElement.scrollTop || document.body.scrollTop || 0;
+                window.scrollTo(0, Math.max(scrollHeight - 1, 0));
+        }, 100);
+    });
 })();
 
 

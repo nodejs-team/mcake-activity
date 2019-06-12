@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>mcake活动</title>
+    <!-- build:css styles/index.css -->
+    <link rel="stylesheet" href="../commoncss/wap-normalize.css">
+    <link rel="stylesheet" href="styles/swiper.min.css">
+    <link rel="stylesheet" href="styles/tuya.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <!-- endbuild-->
+    <link rel="stylesheet" type="text/css" href="http://www.mcake.com/wap/theme/xth1/css/comm_header.css?v=1508207710" />
+    <script src="scripts/zepto.min.js"></script>
+    <script src="scripts/tuya.js"></script>
+
+</head>
+<body>
+
+<div id="evt_container">
+    <div id="iscroll">
+        <div class="wrap">
+            <header>
+                <a href="http://m.mcake.com/wap" class="icon-back"></a>
+                <div class="title">
+                    <span>活动</span><br><span>mcake</span>
+                </div>
+                <a href="http://m.mcake.com/wap" class="icon-home"></a>
+            </header>
+            <div id="evt_loading" style="display:none;">0%</div>
+            <div id="evt_content" style="display:none;">
+                <div class="sec sec-game">
+                    <div class="board">
+                        <!--<img  id="board-img" src="img/huaban.png" alt="">-->
+                        <canvas class="mycanvas" id="mycanvas"></canvas>
+                        <div class="huabi" id="colorBox">
+                            <div class="item active"><i></i><img src="img/hui.png" alt=""></div>
+                            <div class="item"><i></i><img src="img/lv.png" alt=""></div>
+                            <div class="item"><i></i><img src="img/huang.png" alt=""></div>
+                            <div class="item"><i></i><img src="img/hong.png" alt=""></div>
+                            <div class="item"><i></i><img src="img/lan.png" alt=""></div>
+                            <div class="item"><i></i><img src="img/zi.png" alt=""></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+<script type="text/javascript" src="http://www.mcake.com/framework/jquery/jquery.min.js?v=1405950469"></script>
+<script src="http://edm.mcake.com/weifengwang/common/flexible.js"></script>
+
+
+<!-- build:js scripts/index-h5.js -->
+<script src="../commonjs/fastclick.js"></script>
+<script src="../commonjs/pubsub.js"></script>
+<script src="../commonjs/loader.js"></script>
+
+<script src="../commonjs/iscroll.js"></script>
+<script src="../commonjs/velocity.js"></script>
+<script src="../commonjs/wap-scrollAnimate.js"></script>
+
+<script src="../commonjs/public-shimily.js"></script>
+
+<script src="../commonjs/movieclip.js"></script>
+<script src="scripts/swiper.min.js"></script>
+<script src="scripts/resdata.js"></script>
+<script src="scripts/index-h5.js"></script>
+<!-- endbuild -->
+<script>
+    var ty=new tuya({
+        Base64ck:function (data) {
+            console.log(data)
+        }
+    });
+</script>
+</body>
+</html>

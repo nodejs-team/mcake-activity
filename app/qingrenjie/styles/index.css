@@ -185,3 +185,31 @@
     opacity: 1; }
   100% {
     opacity: 0; } }
+
+/*公告无缝滚动*/
+.moveBox {
+  position: relative;
+  width: 100%;
+  margin: 0 auto 0.66667rem;
+  overflow: hidden;
+  white-space: nowrap; }
+
+.move {
+  position: absolute;
+  width: 22.66667rem;
+  top: 0;
+  left: 100%;
+  white-space: nowrap;
+  animation: moveAni 15s infinite linear normal; }
+
+.item {
+  float: left;
+  width: 10.66667rem;
+  font-size: 0.26667rem; }
+
+@keyframes moveAni {
+  0% {
+    left: 0; }
+  100% {
+    left: -10.66667rem; }
+  /*left移动的长度和item的宽度一致*/ }

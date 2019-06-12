@@ -1,0 +1,96 @@
+@function px2rem($n) {
+  @return ($n * 10 / 750) * 1rem;
+}
+
+@mixin font-dpr($font-size){
+  font-size: $font-size;
+
+  [data-dpr="2"] & {
+    font-size: $font-size * 2;
+  }
+
+  [data-dpr="3"] & {
+    font-size: $font-size * 3;
+  }
+
+}
+
+#evt_content{background: url("../images/bg.jpg") repeat; background-size: 5%;
+  div{position:absolute;}
+  img{width:100%;}
+  .sec{position: relative; }
+  .sec-banner{height: px2rem(650); z-index: 1; background:url("../images/banner.png"); background-size: 100%; }
+
+
+  .sec-2{ z-index: 1;
+    .s-title{position: relative; width: px2rem(460); margin: px2rem(35) auto;}
+    .item{position: relative; width: px2rem(750); height: px2rem(546); background: url("../images/item-bg.png") no-repeat; background-size: 100%;}
+    .cake{position: absolute; width:px2rem(320); top:px2rem(80); right:px2rem(10); z-index: 1;}
+    .price{position: absolute; width:px2rem(460); top:px2rem(100); left: px2rem(30); z-index: 3;
+      .title{ position:relative; width: px2rem(440);}
+      .s-price{ position:relative; width: px2rem(335); margin-top: px2rem(20);}
+    }
+    .select{position: absolute; top:px2rem(100); left: px2rem(335); z-index: 5;
+      ul{
+        li{ width: px2rem(60); height: px2rem(60); background: url("../images/gou-1-1.png") center no-repeat; background-size: 80%; margin-bottom: px2rem(25); display: block;}
+        li.on{ background: url("../images/gou-1-2.png") center no-repeat; background-size: 80%;}
+      }
+    }
+
+    .item-2{
+      .cake{width: px2rem(310); left: px2rem(30); right: auto;}
+      .price{top:px2rem(80); left: px2rem(330);
+        .title{ width: px2rem(352); }
+      }
+      .select{ top:px2rem(130);}
+      ul{
+        li{background: url("../images/gou-2-1.png") center no-repeat; background-size: 80%; margin-bottom: px2rem(25);}
+        li.on{background: url("../images/gou-2-2.png") center no-repeat; background-size: 80%;}
+      }
+      .go-btn{
+        span{background: url("../images/go-buy-2.png") center no-repeat; background-size: 100%;}
+      }
+    }
+
+    .item-3{
+      .cake{width: px2rem(320);}
+      .price{
+        .title{ width: px2rem(349); }
+      }
+      .select{top:px2rem(95);}
+      ul{
+        li{background: url("../images/gou-3-1.png") center no-repeat; background-size: 80%; margin-bottom: px2rem(30);}
+        li.on{background: url("../images/gou-3-2.png") center no-repeat; background-size: 80%;}
+      }
+      .go-btn{
+        span{background: url("../images/go-buy-3.png") center no-repeat; background-size: 100%;}
+      }
+    }
+
+  }
+
+
+  .sec-3{
+    .more{position: relative; width: px2rem(255); margin: px2rem(40) auto px2rem(60);}
+
+  }
+
+  .go-btn{position: relative; width: px2rem(165);  padding: px2rem(25) 0 0;
+    span{display: block; width: px2rem(165); margin: 0 auto; height: px2rem(42); background: url("../images/go-buy-1.png") center no-repeat; background-size: 100%; }
+  }
+
+  .sec-footer{background:#e8edd7; background-size: 100%; position: relative; padding-bottom: px2rem(20); z-index: 2;
+    .txt{position: relative; width:px2rem(680); padding: px2rem(70) 0 px2rem(50); margin: 0 auto;  color: #000;
+      h2{font-size: px2rem(30); font-weight: normal; }
+      p{font-size: px2rem(22); padding-left: px2rem(35); line-height:px2rem(40);  text-indent: px2rem(-35);
+        margin:px2rem(5) 0;
+        span{display: block; padding-left: px2rem(11);  text-indent: px2rem(-11); margin: 0; }
+      }
+    }
+  }
+}
+
+
+
+
+

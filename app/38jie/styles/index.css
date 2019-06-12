@@ -1,0 +1,561 @@
+@charset "UTF-8";
+#evt_content {
+  background: #fef5f5;
+  /*价格计算【通用】*/ }
+  #evt_content div {
+    position: absolute; }
+  #evt_content img {
+    width: 100%; }
+  #evt_content .sec {
+    position: relative; }
+  #evt_content .sec-top {
+    z-index: 1;
+    height: 8.45333rem;
+    background: url("../images/banner-wap.png") repeat;
+    background-size: 100%;
+    z-index: 1;
+    overflow: hidden; }
+    #evt_content .sec-top .banner-t {
+      width: 10rem;
+      top: 2.66667rem;
+      left: 0; }
+  #evt_content .sec-0 {
+    z-index: 2;
+    margin-top: -1.86667rem; }
+    #evt_content .sec-0 div {
+      position: relative; }
+    #evt_content .sec-0 .hongbao {
+      width: 10rem;
+      margin: -0.06667rem auto 0; }
+  #evt_content .sec-choujiang {
+    z-index: 2;
+    padding-bottom: 1.06667rem;
+    background: #fef5f5 url("../images/jiang-bg.jpg") bottom no-repeat;
+    background-size: 100%; }
+    #evt_content .sec-choujiang div {
+      position: relative; }
+    #evt_content .sec-choujiang .choujiang {
+      width: 10rem;
+      padding: 0 0.13333rem;
+      margin: 0 auto; }
+      #evt_content .sec-choujiang .choujiang ul {
+        margin-left: 0.13333rem; }
+        #evt_content .sec-choujiang .choujiang ul li {
+          position: relative;
+          float: left;
+          width: 4.13333rem;
+          height: 4.13333rem;
+          margin: 0.4rem 0.30667rem;
+          border: #fff 0.02667rem solid;
+          border-radius: 50%; }
+          #evt_content .sec-choujiang .choujiang ul li img {
+            width: 100%; }
+          #evt_content .sec-choujiang .choujiang ul li .cover {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4.13333rem;
+            height: 4.13333rem;
+            background: url("../images/aixin.png") no-repeat;
+            background-size: 100%;
+            opacity: 0.8;
+            transition: all 1s; }
+          #evt_content .sec-choujiang .choujiang ul li p {
+            text-align: center;
+            font-size: 0.24rem;
+            line-height: 0.66667rem;
+            color: #d3938e; }
+        #evt_content .sec-choujiang .choujiang ul li:nth-of-type(2n) p {
+          color: #91a8bc; }
+        #evt_content .sec-choujiang .choujiang ul li.on {
+          border-radius: 50%; }
+          #evt_content .sec-choujiang .choujiang ul li.on .cover {
+            display: block; }
+    #evt_content .sec-choujiang .jiang-btn {
+      width: 2.66667rem;
+      margin: 1.06667rem auto 0;
+      cursor: pointer; }
+  #evt_content .sec-2 {
+    z-index: 2;
+    background: #fff;
+    padding: 0.01333rem 0; }
+    #evt_content .sec-2 div {
+      position: relative; }
+    #evt_content .sec-2 .lipin {
+      width: 10rem;
+      margin: 0.4rem auto; }
+  #evt_content .hy-title {
+    position: relative;
+    width: 10rem;
+    margin: 0.4rem auto; }
+  #evt_content .sec-main {
+    background: #fff;
+    padding-top: 0.01333rem; }
+    #evt_content .sec-main .dis-1 {
+      position: absolute;
+      width: 0.52rem;
+      top: -0.13333rem;
+      right: 0.26667rem; }
+    #evt_content .sec-main .dis-2 {
+      position: absolute;
+      width: 0.96rem;
+      top: -0.8rem;
+      left: 0.26667rem; }
+    #evt_content .sec-main .dis-3 {
+      position: absolute;
+      width: 0.64rem;
+      top: -0.13333rem;
+      right: 0.13333rem; }
+    #evt_content .sec-main .dis-4 {
+      position: absolute;
+      width: 1.18667rem;
+      bottom: 0.13333rem;
+      left: 0.53333rem; }
+    #evt_content .sec-main .price_num dl dd.reduce {
+      background: url("../images/reduce-2.png") center no-repeat;
+      background-size: 90%; }
+    #evt_content .sec-main .price_num dl dd.add {
+      background: url("../images/add-2.png") center no-repeat scroll;
+      background-size: 90%; }
+    #evt_content .sec-main .row {
+      position: relative;
+      height: 6.13333rem; }
+    #evt_content .sec-main .row1 {
+      margin-top: 0.66667rem; }
+      #evt_content .sec-main .row1 .cake {
+        width: 4.17333rem;
+        top: 0;
+        left: 0.16rem;
+        z-index: 2; }
+      #evt_content .sec-main .row1 .txt {
+        width: 3.84rem;
+        top: 3.73333rem;
+        left: 5.06667rem; }
+      #evt_content .sec-main .row1 .price {
+        top: -0.53333rem;
+        left: auto;
+        right: 0.06667rem;
+        z-index: 1; }
+    #evt_content .sec-main .row2 .cake {
+      width: 4.49333rem;
+      top: 0;
+      right: 0.16rem;
+      z-index: 2; }
+    #evt_content .sec-main .row2 .txt {
+      width: 4.82667rem;
+      top: 0.13333rem;
+      left: 0.26667rem; }
+    #evt_content .sec-main .row2 .price {
+      top: 0.93333rem;
+      left: 0.06667rem;
+      z-index: 1;
+      background: #e5ecf3; }
+    #evt_content .sec-main .row3 .cake {
+      width: 4.4rem;
+      top: 0.66667rem;
+      left: 0.16rem;
+      z-index: 2; }
+    #evt_content .sec-main .row3 .txt {
+      width: 4.02667rem;
+      top: 4.4rem;
+      left: 5.06667rem; }
+    #evt_content .sec-main .row3 .price {
+      top: 0rem;
+      left: auto;
+      right: 0.06667rem;
+      z-index: 1; }
+    #evt_content .sec-main .row4 .cake {
+      width: 4.49333rem;
+      top: 0;
+      right: 0.16rem;
+      z-index: 2; }
+    #evt_content .sec-main .row4 .txt {
+      width: 4.02667rem;
+      top: 0;
+      left: 0.53333rem; }
+    #evt_content .sec-main .row4 .price {
+      top: 0.93333rem;
+      left: 0.06667rem;
+      z-index: 1;
+      background: #e5ecf3; }
+  #evt_content .sec-zp {
+    position: relative;
+    z-index: 2;
+    background: #faecec;
+    padding-top: 0.01333rem;
+    padding-bottom: 0.66667rem; }
+    #evt_content .sec-zp div {
+      position: relative; }
+    #evt_content .sec-zp .hy-title {
+      margin-bottom: 0; }
+    #evt_content .sec-zp .pro-list ul {
+      margin-top: 0.26667rem;
+      margin-left: -0.13333rem; }
+      #evt_content .sec-zp .pro-list ul li {
+        position: relative;
+        float: left;
+        width: 4.73333rem;
+        margin-left: 0.26667rem;
+        padding: 0.26667rem;
+        text-align: center;
+        background: #fff;
+        margin-top: 0.46667rem; }
+        #evt_content .sec-zp .pro-list ul li img {
+          width: 100%; }
+        #evt_content .sec-zp .pro-list ul li p {
+          font-size: 0.26667rem;
+          line-height: 0.4rem;
+          margin-top: 0.13333rem;
+          color: #000; }
+        #evt_content .sec-zp .pro-list ul li .num {
+          width: 1.33333rem;
+          margin: 0.2rem auto; }
+          #evt_content .sec-zp .pro-list ul li .num .m_left {
+            width: 0.4rem;
+            height: 0.4rem;
+            background: url("../images/reduce-1.png") no-repeat;
+            background-size: 100%;
+            float: left;
+            cursor: pointer; }
+          #evt_content .sec-zp .pro-list ul li .num dt {
+            width: 0.53333rem;
+            float: left;
+            line-height: 0.4rem;
+            font-size: 0.26667rem; }
+          #evt_content .sec-zp .pro-list ul li .num .m_right {
+            width: 0.4rem;
+            height: 0.4rem;
+            background: url("../images/add-1.png") no-repeat;
+            background-size: 100%;
+            float: left;
+            cursor: pointer; }
+        #evt_content .sec-zp .pro-list ul li .buy-btn {
+          width: 4.26667rem;
+          margin: 0 auto;
+          cursor: pointer; }
+          #evt_content .sec-zp .pro-list ul li .buy-btn span {
+            display: block;
+            width: 2rem;
+            color: #fff;
+            background: #ecd4d4;
+            line-height: 0.53333rem;
+            text-align: center;
+            float: left;
+            margin: 0 0.06667rem;
+            font-size: 0.26667rem; }
+        #evt_content .sec-zp .pro-list ul li .nums {
+          position: absolute;
+          top: -0.17333rem;
+          left: 0;
+          width: 21px;
+          height: 15px; }
+        #evt_content .sec-zp .pro-list ul li .nums.num1 {
+          background: url("../images/num.png") 0 0 no-repeat; }
+        #evt_content .sec-zp .pro-list ul li .nums.num2 {
+          background: url("../images/num.png") -39px 0 no-repeat; }
+        #evt_content .sec-zp .pro-list ul li .nums.num3 {
+          background: url("../images/num.png") -79px 0 no-repeat; }
+        #evt_content .sec-zp .pro-list ul li .nums.num4 {
+          background: url("../images/num.png") -120px 0 no-repeat; }
+  #evt_content .sec-footer {
+    background: #fff;
+    background-size: 12%;
+    position: relative;
+    padding-bottom: 0.66667rem;
+    z-index: 1; }
+    #evt_content .sec-footer .dis-5 {
+      position: absolute;
+      width: 1.32rem;
+      top: -0.93333rem;
+      left: 0.4rem; }
+    #evt_content .sec-footer .txt {
+      position: relative;
+      width: 9.33333rem;
+      padding-top: 0.66667rem;
+      margin: 0 auto;
+      color: #000;
+      text-align: left; }
+      #evt_content .sec-footer .txt h2 {
+        font-size: 0.37333rem;
+        font-weight: normal; }
+      #evt_content .sec-footer .txt p {
+        font-size: 0.30667rem;
+        padding-left: 0.46667rem;
+        line-height: 0.53333rem;
+        text-indent: -0.46667rem;
+        margin: 0.06667rem 0;
+        text-align: left; }
+        #evt_content .sec-footer .txt p span {
+          display: block;
+          padding-left: 0.13333rem;
+          text-indent: -0.13333rem; }
+  #evt_content .price {
+    position: absolute;
+    width: 5.6rem;
+    text-align: center;
+    z-index: 2;
+    background: #faecec; }
+    #evt_content .price .content {
+      position: relative;
+      margin: 0.4rem; }
+    #evt_content .price .icons {
+      width: 0.66667rem;
+      position: absolute;
+      left: 0.4rem;
+      top: -0.17333rem; }
+    #evt_content .price .title {
+      position: relative;
+      width: 4.50667rem;
+      margin: 0.13333rem auto; }
+    #evt_content .price .jiage {
+      position: relative;
+      width: 4.66667rem; }
+    #evt_content .price h2 {
+      font-size: 0.34667rem;
+      font-weight: normal;
+      line-height: 0.66667rem;
+      color: #000;
+      text-align: left; }
+      #evt_content .price h2 b {
+        font-size: 0.37333rem; }
+      #evt_content .price h2 i {
+        font-size: 0.26667rem;
+        line-height: 0.4rem;
+        font-style: normal;
+        vertical-align: middle; }
+      #evt_content .price h2 span {
+        font-size: 0.45333rem; }
+    #evt_content .price s {
+      float: left;
+      margin-left: 0.13333rem;
+      font-size: 0.21333rem;
+      vertical-align: bottom;
+      line-height: 0.8rem;
+      color: #000;
+      font-weight: normal; }
+      #evt_content .price s b {
+        font-weight: normal; }
+    #evt_content .price ul.price_p {
+      margin: 0.13333rem 0;
+      color: #000;
+      width: 3.73333rem; }
+    #evt_content .price ul.price_p.short1 {
+      color: #000;
+      width: 0.86667rem; }
+    #evt_content .price ul.price_p.short2 {
+      color: #000;
+      width: 1.73333rem; }
+    #evt_content .price ul.price_p.short3 {
+      color: #000;
+      width: 2.73333rem; }
+    #evt_content .price ul.price_p.short4 {
+      color: #000;
+      width: 3.73333rem; }
+    #evt_content .price .bs.bslang {
+      font-size: 0.26667rem; }
+    #evt_content .price ul.price_p.minshort {
+      margin: 0.13333rem auto;
+      color: #000;
+      width: 1.73333rem; }
+    #evt_content .price ul.price_p li {
+      cursor: pointer;
+      float: left;
+      height: 0.66667rem;
+      line-height: 0.66667rem;
+      text-align: center;
+      width: 0.66667rem;
+      margin-right: 0.13333rem;
+      color: #000;
+      font-size: 0.26667rem;
+      border: #000 0.01333rem solid; }
+    #evt_content .price ul.price_p .samllFont {
+      font-size: 0.21333rem; }
+    #evt_content .price ul.price_p li:last-child {
+      margin-right: 0; }
+    #evt_content .price ul.price_p .bd {
+      width: 1.6rem !important;
+      margin-left: 2rem !important; }
+    #evt_content .price ul.price_p li.cur {
+      background: #fff !important;
+      color: #000 !important; }
+    #evt_content .price .huangou {
+      position: relative;
+      font-size: 0.26667rem;
+      color: #000;
+      margin: 0 0 0 0.13333rem;
+      text-align: left;
+      float: left;
+      padding-right: 0.4rem; }
+      #evt_content .price .huangou .icnone {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        width: 0.33333rem;
+        height: 0.33333rem;
+        margin-top: -0.17333rem;
+        z-index: 1;
+        background: url("../images/icon-1.png") no-repeat;
+        background-size: 100%; }
+      #evt_content .price .huangou .icon {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        width: 0.33333rem;
+        height: 0.33333rem;
+        margin-top: -0.2rem;
+        z-index: 2;
+        background: url("../images/icon-1.png") no-repeat;
+        background-size: 100%; }
+      #evt_content .price .huangou .icon.on {
+        background: url("../images/icon-1-h.png") no-repeat;
+        background-size: 100%; }
+    #evt_content .price .jisuan {
+      position: relative;
+      width: 4.66667rem; }
+    #evt_content .price .price_num {
+      position: absolute;
+      bottom: 0;
+      right: 0; }
+    #evt_content .price .price_num dl {
+      float: left;
+      padding-left: 0.06667rem; }
+    #evt_content .price .price_num dl dd {
+      cursor: pointer;
+      float: left;
+      height: 0.56rem;
+      width: 0.56rem; }
+    #evt_content .price .price_num dl dt {
+      float: left;
+      width: 0.4rem;
+      height: 0.56rem; }
+    #evt_content .price .price_num dl dt span {
+      display: block;
+      font-size: 0.26667rem;
+      background: transparent none repeat scroll 0 0;
+      border: none;
+      color: #000;
+      height: 100%;
+      line-height: 0.56rem;
+      text-align: center;
+      width: 100%; }
+    #evt_content .price ul.buy_btn_box {
+      width: 1.86667rem;
+      overflow: hidden;
+      margin: 0.26667rem auto; }
+    #evt_content .price ul.buy_btn_box.twoBtn {
+      width: 4.66667rem; }
+    #evt_content .price ul.buy_btn_box li {
+      float: left;
+      margin-right: 0.13333rem; }
+    #evt_content .price ul.buy_btn_box li:last-child {
+      margin-right: 0;
+      float: right; }
+    #evt_content .price ul.buy_btn_box li span {
+      display: block;
+      background: #fff;
+      background-size: 100%;
+      cursor: pointer;
+      font-size: 0.29333rem;
+      padding: 0.02667rem 0;
+      text-align: center;
+      width: 2.13333rem;
+      overflow: hidden;
+      color: #000;
+      vertical-align: middle; }
+
+/*浮动*/
+.floater {
+  position: fixed;
+  width: 1.93333rem;
+  height: 1.93333rem;
+  bottom: 0.26667rem;
+  right: 0.13333rem;
+  z-index: 11;
+  cursor: pointer;
+  display: none; }
+  .floater img {
+    width: 100%; }
+  .floater .tips {
+    position: absolute;
+    width: 0.66667rem;
+    height: 0.66667rem;
+    right: -0.06667rem;
+    top: -0.06667rem;
+    border-radius: 50%;
+    background: url("../images/tips.png") center no-repeat;
+    background-size: 100%;
+    text-align: center;
+    z-index: 12; }
+    .floater .tips span {
+      display: block;
+      font-size: 0.26667rem;
+      color: #fff;
+      line-height: 0.66667rem; }
+
+/*彈窗提示*/
+.Dialog-base-box {
+  background: #fff !important; }
+
+.Dialog-tip {
+  /*关闭按钮*/ }
+  .Dialog-tip .box-item .box-item-header {
+    text-align: center;
+    padding: 0.26667rem 0;
+    background: #fff;
+    border-radius: 0.2rem 0.2rem 0 0; }
+    .Dialog-tip .box-item .box-item-header .jp {
+      width: 2.66667rem;
+      height: 2.66667rem;
+      border-radius: 50%;
+      margin: 0.13333rem auto 0.26667rem; }
+    .Dialog-tip .box-item .box-item-header h2 {
+      font-size: 0.45333rem;
+      line-height: 0.8rem;
+      color: #f44053; }
+    .Dialog-tip .box-item .box-item-header p {
+      font-size: 0.17333rem;
+      line-height: 0.4rem;
+      color: #000; }
+      .Dialog-tip .box-item .box-item-header p b {
+        color: #828282; }
+      .Dialog-tip .box-item .box-item-header p span {
+        font-size: 0.41333rem;
+        color: #f44053;
+        line-height: 0.66667rem; }
+  .Dialog-tip .box-item .box-item-footer {
+    border-top: #d0d0d0 0.01333rem solid;
+    text-align: center;
+    margin: 0.13333rem 0.26667rem;
+    padding: 0.26667rem 0; }
+    .Dialog-tip .box-item .box-item-footer p {
+      font-size: 0.2rem;
+      color: #828282;
+      line-height: 0.32rem; }
+  .Dialog-tip .box-item .go-btn {
+    position: relative;
+    width: 5.6rem;
+    margin: 0.26667rem auto;
+    overflow: hidden; }
+    .Dialog-tip .box-item .go-btn span {
+      display: block;
+      width: 2.4rem;
+      height: 0.66667rem;
+      border-radius: 0.66667rem;
+      background: #fc6267;
+      text-align: center;
+      line-height: 0.66667rem;
+      float: left;
+      font-size: 0.34667rem;
+      color: #fff;
+      cursor: pointer; }
+    .Dialog-tip .box-item .go-btn .go-share {
+      float: right;
+      background: #fc6267;
+      color: #fff; }
+    .Dialog-tip .box-item .go-btn.ok-btn {
+      width: 2.4rem; }
+  .Dialog-tip .closes {
+    right: -0.8rem !important;
+    background: url("../images/close.png") center center no-repeat;
+    background-size: 50%; }

@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>mcake活动</title>
+    <!-- build:css styles/index.css -->
+    <link rel="stylesheet" href="../commoncss/wap-normalize.css">
+    <link rel="stylesheet" href="styles/swiper.min.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <!-- endbuild-->
+    <link rel="stylesheet" type="text/css" href="http://www.mcake.com/wap/theme/xth1/css/comm_header.css?v=1508207710" />
+
+</head>
+<body>
+
+<div id="evt_container">
+    <div id="iscroll">
+        <div class="wrap">
+            <header>
+                <a href="http://m.mcake.com/wap" class="icon-back"></a>
+                <div class="title">
+                    <span>活动</span><br><span>mcake</span>
+                </div>
+                <a href="http://m.mcake.com/wap" class="icon-home"></a>
+            </header>
+            <div id="evt_loading" style="display:none;">0%</div>
+            <div id="evt_content" style="display:none;">
+                <div class="sec sec-top">
+                    <div class="banner-bg"><img src="images/banner-bg.png" alt=""></div>
+                    <div class="banner-title"><img src="images/banner-title.png" alt=""></div>
+                    <div class="banner-cake"><img src="images/banner-cake.png" alt=""></div>
+                </div>
+
+                <div class="sec sec-1">
+                   <div class="video">
+
+
+                       <i class="video-i" data-src="http://edm.mcake.com/fangli/2018-wap/children-Day/video/video.mp4">
+                           <img src="images/play-btn.png" class="video-go " />
+                       </i>
+
+                   </div>
+                   <div class="video-kuang"><img src="images/vode-kuang.png" alt=""></div>
+                    <div class="mengbao"><img src="images/mengbao.png" alt=""></div>
+                   <div class="play-btn"><img src="images/play-btn.png" alt=""></div>
+                    <div class="v-bj"><img src="images/v-bj.png" alt=""></div>
+                </div>
+
+                <div class="sec sec-2">
+                    <div class="cakes">
+                        <div class="swiper-container swiper1">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide" > <img src="images/img-1.png" alt=""></div>
+                                <div class="swiper-slide" > <img src="images/img-2.png" alt=""></div>
+                                <div class="swiper-slide" > <img src="images/img-3.png" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cake-kuang"></div>
+                    <div class="s-title"><img src="images/s-title.png" alt=""></div>
+                    <div class="wanfa"><img src="images/wanfa.png" alt=""></div>
+                    <div class="cake-1"><img src="images/cake-1.png" alt=""></div>
+                    <div class="cake-price"><img src="images/cake-price.png" alt=""></div>
+                    <div class="cake-btn"><a href="#"><img src="images/cake-btn.png" alt=""></a></div>
+                    <div class="line"><img src="images/line.png" alt=""></div>
+                </div>
+
+                <div class="sec sec-3">
+                    <div class="step-1"><img src="images/step-1.png" alt=""></div>
+                    <div class="step-2">
+                        <img src="images/step-2.png" alt="">
+                        <div class="satang"><img src="images/satang.gif" alt=""></div>
+                    </div>
+                    <div class="step-3"><img src="images/step-3.png" alt=""></div>
+                    <div class="step-txt"><img src="images/step-txt.png" alt=""></div>
+
+                </div>
+
+                <div class="sec sec-4">
+                    <div class="zp"><img src="images/zp.png" alt=""></div>
+                </div>
+
+                <div class="sec-footer">
+                    <div class="txt">
+                        <h2>活动规则:</h2>
+                        <p>1、活动时间：5月18-6月4日</p>
+                        <p>2、活动城市：上海、苏州、杭州</p>
+                        <p>3、支付方式：微信、支付宝、现金</p>
+                        <p>4、赠品规则：凡活动页面每天前20名 下单即可获赠
+                        (数量有限，赠完即止)</p>
+                        <p>5、本活动不与其他优惠同享</p>
+                        <p>6、本活动最终解释权归MCAKE所有</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+<script type="text/javascript" src="http://www.mcake.com/framework/jquery/jquery.min.js?v=1405950469"></script>
+<script src="http://edm.mcake.com/weifengwang/common/flexible.js"></script>
+<script>
+    var initScroll = function (){
+        window.scrollAnimate('#evt_container', [
+            {dom: '.banner-bg',x:0, y:0,duration:500,delay:500}
+            ,{dom: '.banner-title',x:0, y:50,duration:500,delay:600}
+            ,{dom: '.banner-cake',x:-100, y:0,duration:500,delay:200}
+            ,{dom: '.mengbao',x:0, y:50,duration:500,delay:200}
+            ,{dom: '.v-bj',x:0, y:0,duration:500,delay:200}
+            ,{dom: '.zp',x:0, y:100,duration:500,delay:200}
+
+            ,{dom: '.s-title',x:0, y:100,duration:500,delay:200}
+            ,{dom: '.wanfa',x:0, y:0,duration:500,delay:200}
+            ,{dom: '.cakes',x:0, y:0,duration:500,delay:200}
+            ,{dom: '.cake-1',x:0, y:100,duration:500,delay:200}
+            ,{dom: '.cake-price',x:0, y:100,duration:500,delay:200}
+            ,{dom: '.cake-btn',x:0, y:100,duration:500,delay:200}
+            ,{dom: '.line',x:0, y:200,duration:500,delay:200}
+            ,{dom: '.step-1',x:0, y:100,duration:500,delay:200}
+            ,{dom: '.step-2',x:0, y:100,duration:500,delay:200}
+            ,{dom: '.step-3',x:0, y:100,duration:500,delay:200}
+        ])
+    };
+</script>
+
+<!-- build:js scripts/index.js -->
+<script src="../commonjs/fastclick.js"></script>
+<script src="../commonjs/pubsub.js"></script>
+<script src="../commonjs/loader.js"></script>
+
+<script src="../commonjs/iscroll.js"></script>
+<script src="../commonjs/velocity.js"></script>
+<script src="../commonjs/wap-scrollAnimate.js"></script>
+
+<script src="../commonjs/public-shimily.js"></script>
+
+<script src="../commonjs/movieclip.js"></script>
+<script src="scripts/swiper.min.js"></script>
+<script src="scripts/resdata.js"></script>
+<script src="scripts/index.js"></script>
+<!-- endbuild -->
+<script>
+    //判断访问终端
+    if (/(Android)/i.test(navigator.userAgent)) {  //判断Android
+        $(".video-kuang").fadeOut(0);
+    }
+
+var myVideo=document.getElementById("video");
+
+
+$(".play-btn,.video-kuang,.video").click(function () {
+    myVideo.play();
+    $(".play-btn").fadeOut(20);
+});
+
+
+    /**
+     * 视频部分兼容处理
+     */
+    var creat_video = function() {
+        var _video = document.getElementsByClassName('video-i');
+
+        if (_video.length > 0) {
+            console.log(_video.length);
+            for (var i = 0; i < _video.length; i++) {
+                var _that = _video[i];
+                _that.addEventListener('click',
+                    function(e) {
+                        var _this = e.currentTarget,
+                            _videoUrl = _this.getAttribute('data-src'),
+                            _img = _this.children[0].getAttribute('src'),
+                            _dom = document.createElement('video'),
+                            _autoPlayAllowed = true,
+                            _loading = document.createElement('div'),
+                            _p,
+                            _process = document.createElement('i');
+                        if (_this.getAttribute('data-video')) {
+                            var _video = _this.parentNode.querySelectorAll('video');
+                            if (_video.length > 0) {
+                                _dom = _video[0];
+                                if (_dom.ended) {
+                                    _dom.play();
+                                    _this.classList.add('hide');
+                                    _dom.classList.remove('hide');
+                                }
+                            }
+                            return;
+                        }
+                        _this.setAttribute('data-video', '1');
+                        _process.setAttribute('class', 'vjs-process');
+                        _process.innerHTML = '加载中...';
+                        _loading.setAttribute('class', 'vjs-loading-spinner');
+                        _dom.setAttribute('src', _videoUrl);
+                        _dom.setAttribute('controls', 'controls');
+                        _dom.setAttribute('autoPlay', 'false');
+                        _this.parentNode.appendChild(_loading);
+                        _this.parentNode.appendChild(_process);
+                        _this.parentNode.classList.add('vjs-waiting');
+                        // _dom.setAttribute('webkit-playsinline', 'webkit-playsinline');
+                        // _dom.setAttribute('playsinline', 'playsinline');
+
+                        _dom.setAttribute('poster', _img);
+                        _p = _dom.play();
+                        console.time("加载毫秒");
+                        var _dom_buffered = function() {
+
+                            var _end = _dom.buffered.end(0);
+                            var _duration = _dom.duration;
+                            var _a = Math.round(_end / _duration * 100);
+                            _process.innerHTML = _a + '%';
+
+                            if (_a < 10) {
+                                setTimeout(_dom_buffered, 200);
+                            } else {
+                                _this.parentNode.classList.remove('vjs-waiting');
+                                _this.classList.add('hide');
+                                _process.classList.add('hide');
+                                _this.parentNode.appendChild(_dom);
+                                _dom.addEventListener('ended',
+                                    function() {
+                                        _dom.classList.add('hide');
+                                        _this.classList.remove('hide');
+                                    });
+                                _dom.currentTime = 0;
+                                console.timeEnd("加载毫秒");
+                            }
+                        };
+                        if (_p instanceof Promise) {
+                            _p.
+                            catch(function(error) {
+                                console.log(error.message);
+                                if (error.name === 'NotAllowedError') {
+                                    _autoPlayAllowed = false;
+                                }
+                            }).then(function(e) {
+                                if (_autoPlayAllowed) {
+                                    _dom_buffered();
+                                }
+                            });
+                        }else{
+                            //这里是IOS 8、9低版本的处理
+                        }
+                    });
+
+            }
+        }
+    };
+
+    new creat_video();
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+html, body {
+  background: #fff; }
+
+#evt_content {
+  background: #fff; }
+  #evt_content div {
+    position: absolute; }
+  #evt_content img {
+    width: 100%; }
+  #evt_content .sec {
+    position: relative; }
+  #evt_content .sec-banner {
+    z-index: 1; }
+  #evt_content .sec-main {
+    position: relative;
+    z-index: 2;
+    background: #fff;
+    padding: 1.06667rem 0; }
+    #evt_content .sec-main div {
+      position: relative; }
+    #evt_content .sec-main .buy-btn {
+      margin: 0 auto;
+      z-index: 1;
+      text-align: center; }
+      #evt_content .sec-main .buy-btn span {
+        padding: 0.06667rem 0.53333rem;
+        line-height: 0.66667rem !important;
+        font-size: 0.4rem !important;
+        background: #5a82a6;
+        color: #fff;
+        border-radius: 0.13333rem; }
+  #evt_content .sec-footer {
+    background: #fff;
+    background-size: 12%;
+    position: relative;
+    padding-bottom: 0.66667rem;
+    z-index: 1;
+    text-align: left; }
+    #evt_content .sec-footer .txt {
+      position: relative;
+      width: 9.06667rem;
+      padding: 0.26667rem 0;
+      margin: 0 auto;
+      color: #000;
+      text-align: left; }
+      #evt_content .sec-footer .txt h2 {
+        font-size: 0.37333rem;
+        font-weight: normal; }
+      #evt_content .sec-footer .txt p {
+        font-size: 0.30667rem;
+        padding-left: 0.46667rem;
+        line-height: 0.53333rem;
+        text-indent: -0.46667rem;
+        margin: 0.06667rem 0;
+        text-align: left !important; }
+        #evt_content .sec-footer .txt p span {
+          display: block;
+          padding-left: 0.13333rem;
+          text-indent: -0.13333rem; }

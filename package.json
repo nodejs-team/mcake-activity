@@ -34,11 +34,11 @@
     "yargs": "^6.4.0"
   },
   "buildConfig": {
-    "projectName": "new-people",
+    "projectName": "618",
     "basePath-edm": "http://edm.mcake.com/fangli/2019-wap/",
     "basePath": "https://act.mcake.com/fangli/2019/wap/",
-    "tinypngKey": "scz0D_NUirlIzDuA1U6m4rwvS24z7s0o",
-    "beiyong": "Lv4IxKbb9SJ6M3OG-lyEA86akPCQBmqE",
+    "tinypngKey": "Lv4IxKbb9SJ6M3OG-lyEA86akPCQBmqE",
+    "beiyong": "scz0D_NUirlIzDuA1U6m4rwvS24z7s0o",
     "server": {
       "path": "./app",
       "port": "8088"

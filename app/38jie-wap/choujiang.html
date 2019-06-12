@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../commoncss/wap-normalize.css">
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+
+<div class="choujiang">
+    <div class="hy-title" data-anim="slide-up" data-delay="0.4"><img src="images/hy-title-1.png" alt=""></div>
+    <ul class="clearfix">
+        <li><div class="cover"></div>
+            <img src="images/jiang-3.png" alt="">
+            <p>gotrip28寸拉杆箱寸拉杆箱</p>
+        </li>
+        <li>
+            <div class="cover"></div>
+            <img src="images/jiang-1.png" alt="">
+            <p>gotrip旅行收纳袋旅行收纳袋</p>
+        </li>
+        <li><div class="cover"></div>
+            <img src="images/jiang-4.png" alt="">
+            <p class="p2">满428元立减50元优惠券1张</p>
+        </li>
+        <li>
+            <div class="cover"></div>
+            <img src="images/jiang-2.png" alt="">
+            <p class="p2">5元红包</p>
+        </li>
+
+
+    </ul>
+    <div class="jiang-btn" onclick="sendMessage()"><img src="images/jiang-btn.png" alt=""></div>
+</div>
+
+<script src="https://act.mcake.com/fangli/2019/wap/commonjs/jquery.min.js"></script>
+<script src="https://act.mcake.com/fangli/2019/wap/commonjs/flexible.js"></script>
+
+<script>
+
+        /*点击抽奖*/
+
+        var arr = [0,1,2,3];
+        var num = 0;
+
+        window.addEventListener('message', function (event) {
+            /*if(window.parent !== event.source){ return false; }*/
+            Scheduler.translate(event)
+        }, false);
+
+        var Scheduler = {
+
+            // 消息事件对象
+            event: {},
+
+            // 参数
+            params: {},
+
+            // 翻译
+            translate: function (data) {
+                this.event = event;
+                this.params = typeof(event.data) == 'string' ? JSON.parse(event.data) : event.data;
+                this.execute();
+            },
+            // 执行
+            execute: function () {
+
+                switch (this.params.method) {
+
+                    // 抽奖
+                    case 'choujiang':
+                        console.log(this.params.data.id);
+                        start(this.params.data.id);
+                        break;
+
+                    // 默认
+                    default:
+                }
+            }
+        }
+
+        function sendMessage() {
+            top.postMessage({method: 'choujiang',data:{id:1}}, "*");
+        }
+
+        function start(id) {
+            var timer = setInterval(function () {
+
+                if(num>=4){
+                    num=0;
+                }
+                $(".choujiang li").eq(num).addClass("on").siblings().removeClass("on");
+                num++;
+            },200);
+
+
+            setTimeout(function () {
+                num=id-1;
+                clearInterval(timer);
+                $(".choujiang li").eq(arr[num]).addClass("on").siblings().removeClass("on");
+
+                var jpArr={
+                    "1":{leve:"1等奖",imgNum:"3",name:"gotrip28寸拉杆箱寸拉杆箱",price:"1888.00",txt:"实物礼品将随订单配送"},
+                    "2":{leve:"2等奖",imgNum:"1",name:"gotrip旅行收纳袋旅行收纳袋",price:"1800.00",txt:"实物礼品将随订单配送"},
+                    "3":{leve:"3等奖",imgNum:"4",name:"满428元立减50元优惠券1张",price:"50.00",txt:"已发放至您的个人账户"},
+                    "4":{leve:"4等奖",imgNum:"2",name:"5元红包",price:"5.00",txt:"已发放至您的个人账户"}
+                };
+
+                /*显示抽奖结果*/
+                var autoMessage = {method:'choujiangResult',message:'抽奖结果展示',data:{DialogCover:".Dialogbg-tip",DialogBox:".Dialog-tip",n:id,arr:jpArr}};
+                top.postMessage(autoMessage,'*');
+               // new parent.choujiang(".Dialogbg-tip",".Dialog-tip",id,jpArr);
+                //new top.choujiang(".Dialogbg-tip",".Dialog-tip",id,jpArr);
+            },3000)
+        }
+
+
+
+</script>
+</body>
+</html>

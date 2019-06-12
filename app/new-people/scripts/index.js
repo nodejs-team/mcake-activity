@@ -53,7 +53,7 @@
             reduce:'.reduce'
         },[0,0,0,0],0.78);
 
-        initScroll();
+       /* initScroll();*/
     };
     function startLoading(){
         loader = new Loader('images/');

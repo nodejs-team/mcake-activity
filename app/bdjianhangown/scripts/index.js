@@ -118,7 +118,10 @@
         return function(ix){
             currentItem = items[ix];
             if(currentItem.ponds.length>1){
-                $input.val(currentItem.ponds[1]).attr('data-postID', currentItem.ids[1]);
+                /*修改默认磅数1磅  2018.4.1*/
+                $input.val(currentItem.ponds[0]).attr('data-postID', currentItem.ids[0]);
+                currentItem.ix=0;
+
                 $inputNumber.attr('data-postID', currentItem.ids[1]);
                 $inputNumber.val(1);
                 Number=1;
@@ -127,7 +130,7 @@
                 $(".buybtn").attr("data-pid",currentItem.pid[1]);
                 $(".buybtn").attr("data-ptype",currentItem.ptype[1]);
                 $(".buybtn").attr("data-channel",currentItem.channel[1]);
-                currentItem.ix=1;
+
             }else {
                 $input.val(currentItem.ponds[currentItem.ix]).attr('data-postID', currentItem.ids[currentItem.ix]);
                 $inputNumber.attr('data-postID', currentItem.ids[currentItem.ix]);

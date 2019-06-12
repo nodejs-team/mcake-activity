@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../commoncss/wap-normalize.css">
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+<div class="jiangBox">
+    <div class="chuizi"><img src="images/chuizi.png" alt=""></div>
+    <div class="choujiang">
+        <img src="images/dadan.png" alt="">
+        <div class="egg egg1"  onclick="sendMessage()"></div>
+        <div class="egg egg2"  onclick="sendMessage()"></div>
+    </div>
+</div>
+<script src="https://act.mcake.com/fangli/2019/wap/commonjs/jquery.min.js"></script>
+<script src="https://act.mcake.com/fangli/2019/wap/commonjs/flexible.js"></script>
+<script src="https://act.mcake.com/fangli/2019/wap/commonjs/fastclick.js"></script>
+
+<script>
+
+        /*点击抽奖*/
+
+        window.addEventListener('message', function (event) {
+            /*if(window.parent !== event.source){ return false; }*/
+            Scheduler.translate(event)
+        }, false);
+
+        var Scheduler = {
+
+            // 消息事件对象
+            event: {},
+
+            // 参数
+            params: {},
+
+            // 翻译
+            translate: function (data) {
+                this.event = event;
+                this.params = typeof(event.data) == 'string' ? JSON.parse(event.data) : event.data;
+                this.execute();
+            },
+            // 执行
+            execute: function () {
+
+                switch (this.params.method) {
+                    // 抽奖
+                    case 'choujiang':
+                        console.log(this.params.data);
+                        start(this.params.data.id);
+                        break;
+
+                    // 默认
+                    default:
+                }
+            }
+        }
+
+
+        /* ************** 执行点击事件 ********************* */
+        function sendMessage() {
+            top.postMessage({method: 'choujiang',data:{id:2}}, "*");  //后台配置活的id
+        }
+
+        /* ************** 做动画效果,显示抽奖结果********************* */
+        function start(id) {
+
+            /*显示抽奖结果*/
+            /*data只里面的参数是弹窗里需要接受的参数*/
+            var autoMessage = {method:'choujiangResult',message:'抽奖结果展示',data:{DialogCover:".Dialogbg-quan",DialogBox:".Dialog-quan",n:id-4}};
+            top.postMessage(autoMessage,'*');
+
+        }
+
+        /*砸蛋动画*/
+        var breakEgg={
+            $egg:$(".egg"),
+            $ele:$(".chuizi"),
+            move:function (ele) {
+                var self = this;
+                var eX = ele.position().left;
+                var eY = ele.position().top;
+                self.$ele.animate({
+                    "left":(eX+30)+"px",
+                    "top":(eY+50)+"px"
+                },100);
+
+            },
+            init:function () {
+                var self = this;
+                $(".egg").click(function () {
+                    self.move($(this));
+                });
+            }
+        }
+        breakEgg.init();
+
+</script>
+</body>
+</html>

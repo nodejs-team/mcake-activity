@@ -77,7 +77,8 @@
             }
 
             ele.parents(".price").find('.old-price').html(self.totalOldprice.toFixed(2));
-            ele.parents(".price").find('.now-price').html(self.totalPrice.toFixed(2));
+            /*ele.parents(".price").find('.now-price').html(Math.floor(self.totalPrice)+'.00');*/  /*现价向下取整*/
+            ele.parents(".price").find('.now-price').html(self.totalPrice.toFixed(2));  /*保留两位小数*/
 
             ele.parents(".price").find('.go-buy').attr("data-num",self.num);
         },
@@ -114,14 +115,16 @@
                 self.totalPrice =(self.oldPrice-self.disCount) * this.percent * self.num;
             }
             ele.parents(".price").find('.old-price').html(self.totalOldprice.toFixed(2));
+            /*ele.parents(".price").find('.now-price').html(Math.floor(self.totalPrice)+'.00');*/
             ele.parents(".price").find('.now-price').html(self.totalPrice.toFixed(2));
 
             /*新版wap需要配置data*/
             var that = $(this);
             var eleCur = ele;
-
+ console.log(ele);
             /*循环所有的attribute*/
             eleCur.each(function() {
+               
                 var thisele = $(this);
                 $.each(this.attributes, function() {
                     if(this.specified) {
@@ -137,19 +140,31 @@
             ele.parents(".price").find('.go-buy').attr("data-num",self.num);
 
         },
-        /*折扣：通过判断磅数决定减多少*/
+        /*折扣：通过判断磅数决定减多少   增加1.5磅，2.5磅，3.5磅立减 2019-1-28*/
         disFun:function (bs,discount) {
             switch (bs){
                 case 1:
                     this.dis = discount[0];
                     break;
+                case 1.5:
+                    this.dis = discount[0];
+                    break;
                 case 2:
+                    this.dis = discount[1];
+                    break;
+                case 2.5:
                     this.dis = discount[1];
                     break;
                 case 3:
                     this.dis = discount[2];
                     break;
+                case 3.5:
+                    this.dis = discount[2];
+                    break;
                 case 5:
+                    this.dis = discount[3];
+                    break;
+                case 5.5:
                     this.dis = discount[3];
                     break;
             }
@@ -172,6 +187,7 @@
                 var totalPrice =(Oldprice - self.disCount) * self.percent * totalNum;
 
                 $(this).find('.old-price').html(totalOldprice.toFixed(2));
+                /*$(this).find('.now-price').html(Math.floor(totalPrice)+'.00');*/
                 $(this).find('.now-price').html(totalPrice.toFixed(2));
 
 
@@ -213,12 +229,12 @@
             this.$els.find('.huangou').each(function () {
                 var a = false;
                 $(this).click(function () {
-                    if(a){
+                    if(!a){
                         $(this).find(".icon").addClass("on");
-                        a = false;
+                        a = !a;
                     }else{
                         $(this).find(".icon").removeClass("on");
-                        a = true;
+                        a = !a;
                     }
                 });
             });

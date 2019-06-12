@@ -20,7 +20,7 @@
         this.$els = $(els);
         this.$add = this.$els.find(opts.add);
         this.$reduce = this.$els.find(opts.reduce);
-        this.num=0;
+        this.num=1;
         this.max=50;
         this.oldPrice =0;
         this.totalOldprice =0;
@@ -37,50 +37,6 @@
 
     Price.prototype={
         attrsArr:[],
-        add:function (ele) {
-            var self = this;
-            self.num = ele.parents(".price").find('.num').text()-0;
-            if(self.num<self.max){
-                self.num++;
-            }
-            ele.siblings().find('.num').text(self.num);
-            self.numCounts(ele);
-        },
-        reduce:function (ele) {
-            var self = this;
-            self.num = ele.parents(".price").find('.num').text()-0;
-            if(self.num>1){
-                self.num--;
-            }
-            ele.siblings().find('.num').text(self.num);
-            self.numCounts(ele);
-        },
-        /*数量加减后计算价格*/
-        numCounts:function (ele) {
-            var self = this;
-            var cur = ele.parents(".price").find('.price_p li.cur');
-            self.oldPrice = cur.data('oldprice');
-            self.num = ele.parents(".price").find('.num').text()-0;
-            var ix = parseInt(self.num / 2);
-
-            self.bs = cur.data('bs');
-
-            self.disCount = self.disFun(self.bs,self.disArr); /*计算折扣*/
-
-            self.totalOldprice =self.oldPrice * self.num;
-
-            if(this.double){ /*第二件半价*/
-                var ix = parseInt(self.num / 2);  /*向下取整*/
-                self.totalPrice =self.totalOldprice - self.oldPrice/2 * ix;
-            }else{
-                self.totalPrice =(self.oldPrice-self.disCount) * this.percent * self.num;
-            }
-
-            ele.parents(".price").find('.old-price').html(self.totalOldprice.toFixed(2));
-            ele.parents(".price").find('.now-price').html(self.totalPrice.toFixed(2));
-
-            ele.parents(".price").find('.go-buy').attr("data-num",self.num);
-        },
         /*磅数选择*/
         bsSelect:function (ele) {
             var self = this;
@@ -170,7 +126,6 @@
                 self.bs = $(this).find('.price_p li.cur').data('bs');
                 self.disCount = self.disFun(self.bs,self.disArr); /*计算折扣*/
                 var totalPrice =(Oldprice - self.disCount) * self.percent * totalNum;
-
                 $(this).find('.old-price').html(totalOldprice.toFixed(2));
                 $(this).find('.now-price').html(totalPrice.toFixed(2));
 
@@ -223,23 +178,7 @@
                 });
             });
 
-            this.$add.hover(function () {
-                $(this).addClass("on");
-            },function () {
-                $(this).removeClass("on");
-            });
-            this.$reduce.hover(function () {
-                $(this).addClass("on");
-            },function () {
-                $(this).removeClass("on");
-            });
 
-            this.$add.click(function () {
-                self.add($(this));
-            });
-            this.$reduce.click(function () {
-                self.reduce($(this));
-            });
         }
     };
 

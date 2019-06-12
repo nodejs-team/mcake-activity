@@ -68,13 +68,13 @@
       margin-left: -120px; }
   #evt_container .act_next {
     text-align: center;
-    color: #249180;
-    height: 295px; }
+    color: #c41700;
+    height: 200px; }
     #evt_container .act_next h2 {
-      margin: 0 0 68px 0;
-      font-size: 60px; }
+      margin: 0 0 40px 0;
+      font-size: 40px; }
     #evt_container .act_next p {
-      font-size: 36px; }
+      font-size: 24px; }
   #evt_container .slider {
     width: 1200px;
     position: relative;

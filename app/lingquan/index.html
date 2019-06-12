@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>mcake活动</title>
+    <script src="https://act.mcake.com/fangli/2019/wap/commonjs/flexible.js"></script>
+    <link rel="stylesheet" href="https://act.mcake.com/fangli/2019/wap/commoncss/comm_header.css?v=1488352348">
+    <!-- build:css styles/index.css -->
+    <link rel="stylesheet" href="../commoncss/wap-normalize.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <!-- endbuild-->
+
+</head>
+<body>
+
+<div id="evt_container">
+    <div id="iscroll">
+        <div class="wrap">
+
+            <div id="evt_content" style="display:block;background: #f0f0f0;">
+
+                <div class="sec sec-2">
+                    <div class="lingquan">
+                        <div class="tip"><img src="images/tt.png" alt=""></div>
+                        <div class="line"><i class="icon"></i><input type="tel" placeholder="请输入手机号码" maxlength="11"></div>
+                        <div class="line line2"><i class="icon code"></i><input type="text" placeholder="输入图片验证码" maxlength="11">
+                            <div class="yzm"><img id="yzm_img" style="cursor:pointer;" title="点击刷新验证码" src="images/yzm.png" onclick="E.captcha('yzm_img');">
+                            </div>
+                        </div>
+                        <div class="line line2">
+                            <i class="icon ys"></i><input type="tel" placeholder="输入短信验证码" maxlength="8">
+                            <div class="yzm"><input type="button" id="btn" value="获取验证码" onclick="settime(this)" /> </div>
+                        </div>
+                        <div class="btn yong-btn"><img src="images/quan-btn.png" alt=""></div>
+                    </div>
+
+
+                </div>
+                <div class="sec sec-bottom">
+                    <div class="txt">
+                        <div class="logos"><img src="images/sm.png" alt=""></div>
+                        <h2>活动时间：</h2>
+                        <p>2019年3月1日-3月31日</p>
+                        <h2>参与规则：</h2>
+                        <p>1、参与活动的新用户可获得蛋糕立减优惠券。</p>
+                        <p>2、每位用户限领一次，同一个订单仅限使用一张优惠券。</p>
+                        <p>3、本活动只限首次用户参与，不与其他优惠同享。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="Dialog-bg" ontouchmove="return false;"></div>
+<div class="Dialog" ontouchmove="return false;">
+    <p>成功领取优惠券</p>
+    <div class="gobtn"></div>
+    <div class="closeX"></div>
+</div>
+<script type="text/javascript" src="https://act.mcake.com/fangli/2019/wap/commonjs/jquery.min.js?v=1411888163"></script>
+<!-- build:js scripts/demo.js -->
+<script src="scripts/demoUtils.js"></script>
+<script src="scripts/demo.js"></script>
+<!-- endbuild -->
+
+<script>
+    $(".yong-btn").click(function () {
+        DialogShow();
+    });
+    $(".gobtn").click(function () {
+        DialogHide();
+    });
+
+    $("input,select").blur(function () {
+        setTimeout(function() {
+                var scrollHeight = document.documentElement.scrollTop || document.body.scrollTop || 0;
+                window.scrollTo(0, Math.max(scrollHeight - 1, 0));
+        }, 100);
+    });
+</script>
+</body>
+</html>

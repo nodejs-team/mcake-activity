@@ -1,0 +1,92 @@
+html, body {
+  background: #fff; }
+
+#evt_content {
+  background: url("../images/bg.jpg") repeat;
+  background-size: 23%; }
+  #evt_content div {
+    position: absolute; }
+  #evt_content img {
+    width: 100%; }
+  #evt_content .sec {
+    position: relative; }
+  #evt_content .sec-banner {
+    z-index: 1; }
+  #evt_content .sec-guize {
+    position: relative;
+    z-index: 1;
+    text-align: left;
+    padding-top: 0.66667rem; }
+    #evt_content .sec-guize .dis-1 {
+      position: absolute;
+      top: 2.13333rem;
+      left: 0.13333rem;
+      width: 1rem; }
+    #evt_content .sec-guize .dis-2 {
+      position: absolute;
+      top: 4.90667rem;
+      right: 0.4rem;
+      width: 0.65333rem; }
+    #evt_content .sec-guize .txt {
+      position: relative;
+      width: 7.06667rem;
+      padding: 0.26667rem 0;
+      margin: 0 auto;
+      color: #000;
+      text-align: left; }
+      #evt_content .sec-guize .txt h2 {
+        font-size: 0.4rem;
+        font-weight: normal; }
+      #evt_content .sec-guize .txt p {
+        font-size: 0.24rem;
+        padding-left: 0.2rem;
+        line-height: 0.53333rem;
+        text-indent: -0.2rem;
+        margin: 0.06667rem 0;
+        text-align: left !important; }
+        #evt_content .sec-guize .txt p span {
+          display: block;
+          padding-left: 0.13333rem;
+          text-indent: -0.13333rem; }
+  #evt_content .sec-list {
+    position: relative;
+    z-index: 2;
+    padding: 0.66667rem 0; }
+    #evt_content .sec-list div {
+      position: relative; }
+    #evt_content .sec-list .cakes {
+      width: 9.33333rem;
+      margin: 0 auto; }
+      #evt_content .sec-list .cakes ul {
+        margin-left: -0.2rem; }
+        #evt_content .sec-list .cakes ul li {
+          width: 4.54667rem;
+          float: left;
+          margin-left: 0.2rem;
+          margin-top: 0.26667rem;
+          color: #000; }
+          #evt_content .sec-list .cakes ul li .price {
+            position: relative;
+            padding: 0.13333rem 0; }
+            #evt_content .sec-list .cakes ul li .price p {
+              font-size: 0.34667rem;
+              line-height: 0.53333rem; }
+            #evt_content .sec-list .cakes ul li .price span {
+              font-size: 0.24rem;
+              line-height: 0.26667rem; }
+            #evt_content .sec-list .cakes ul li .price h2 {
+              font-size: 0.4rem; }
+            #evt_content .sec-list .cakes ul li .price i {
+              font-size: 0.24rem; }
+            #evt_content .sec-list .cakes ul li .price .car-btn {
+              position: absolute;
+              width: 0.70667rem;
+              height: 0.70667rem;
+              right: 0;
+              top: 0.13333rem;
+              background: url("../images/cart.png");
+              background-size: 100%; }
+  #evt_content .more {
+    position: relative;
+    width: 2.90667rem;
+    margin: 0.66667rem auto; }

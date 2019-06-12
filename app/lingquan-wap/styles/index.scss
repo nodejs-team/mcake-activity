@@ -1,0 +1,68 @@
+@function px2rem($n) {
+  @return ($n * 10 / 750) * 1rem; //设计稿一般都是750宽
+}
+
+@mixin font-dpr($font-size){
+  font-size: $font-size;
+
+  [data-dpr="2"] & {
+    font-size: $font-size * 2;
+  }
+
+  [data-dpr="3"] & {
+    font-size: $font-size * 3;
+  }
+
+}
+
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+/*html,body,#evt_container{height: 100%;}*/
+#iscroll {
+  position: relative;
+  z-index: 1;
+  width: 100%; height: 100%;
+  overflow: hidden;
+}
+
+html,body{height: 100%; }
+input:disabled{
+  color:#000;opacity: 0.5;
+}
+#evt_container{ width: px2rem(750); height: 100%;}
+.bg{ height: 100%; width: px2rem(750); }
+img{width:100%;}
+.lingquan{position: absolute; bottom:px2rem(50); left: 50%; margin-left: px2rem(-349); width: px2rem(699); text-align: center; background: #fff; padding: px2rem(50) px2rem(30); border-radius: px2rem(20); z-index: 10;
+  .tip{ width: px2rem(452); margin:0 auto px2rem(20); line-height: px2rem(100); font-size: px2rem(30); color: #fff;}
+  .line{position: relative; width: 100%; height: px2rem(100); margin-bottom: px2rem(30); background: #fff; border-radius: px2rem(50);
+    .icon{display: block; position: absolute; left:px2rem(70); top: 50%; width: px2rem(40); height: px2rem(44); background: url("../images/icon-1.png"); background-size: 100%; margin-top: px2rem(-22);}
+    .icon.ys{background: url("../images/icon-2.png"); background-size: 100%; }
+    .icon.code{background: url("../images/code.png"); background-size: 100%; }
+
+    input{width: 100%; height: 100%; border: none; background: #ececec; padding-left: px2rem(130);font-size: px2rem(26); border-radius:px2rem(20);}
+    .yzm{display: block; position: absolute; right:px2rem(-210); top: 0;  color: #fb4445; cursor: pointer; text-align: left; width: px2rem(200);
+      span{float: left;}
+      input{color: #686868; padding: 0; float: left; line-height: px2rem(100); border-radius: 0;}
+      #yzm_img{ vertical-align: middle; margin:px2rem(10) 0; padding: 0;}
+    }
+  }
+  .line.line2{width:66%;}
+  .btn{position:relative; width: px2rem(644); background: #ffe32a; margin: 0 auto; color: #000; font-size: px2rem(34); line-height: px2rem(80);border-radius:px2rem(20);}
+}
+
+
+
+
+.Dialog-bg{
+  background-color: #000;  height: 100%;  left: 0;  opacity: 0.85;  position: fixed;  top: 0;  width: 100%;  z-index: 200; display: none;  }
+.Dialog{  box-shadow: 0 0 0 #999;  font-size:px2rem(14);  width:px2rem(640);  height:px2rem(400);  margin-top: px2rem(-200);  margin-left: px2rem(-320);  left: 50%;  padding: 0;  position: fixed;  top: 50%;  z-index: 99999; display: none; border-radius:px2rem(20); background: #fff;
+  p{ font-size: px2rem(40); line-height:px2rem(50); text-align: center; margin: px2rem(100) auto px2rem(80); color: #770000; }
+  .closeX{position: absolute; top:px2rem(20); right: px2rem(20); width: px2rem(29); height: px2rem(29);background: url("../images/close.png"); background-size: 100%;}
+  .gobtn{ width: px2rem(277); line-height: px2rem(70);font-size: px2rem(34); text-align: center; margin: 0 auto; background: #ffe32a; color: #000;border-radius:px2rem(20);}
+}

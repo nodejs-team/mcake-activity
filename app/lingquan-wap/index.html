@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>mcake活动</title>
+    <script src="https://act.mcake.com/fangli/2019/wap/commonjs/flexible.js"></script>
+    <!-- build:css styles/index.css -->
+    <link rel="stylesheet" href="../commoncss/wap-normalize.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <!-- endbuild-->
+
+</head>
+<body>
+
+<div id="evt_container">
+    <div class="bg"><img src="images/bg.jpg" alt=""></div>
+    <div class="lingquan">
+        <!-- <div class="tip"><img src="images/tt.png" alt=""></div>-->
+        <div class="line"><i class="icon"></i><input type="tel" placeholder="请输入手机号码" maxlength="11"></div>
+        <div class="line line2"><i class="icon code"></i><input type="text" placeholder="输入图片验证码" maxlength="11">
+            <div class="yzm"><img id="yzm_img" style="cursor:pointer;" title="点击刷新验证码" src="images/yzm.png" onclick="E.captcha('yzm_img');">
+            </div>
+        </div>
+        <div class="line line2">
+            <i class="icon ys"></i><input type="tel" placeholder="输入短信验证码" maxlength="8">
+            <div class="yzm"><input type="button" id="btn" value="获取验证码" onclick="settime(this)" /> </div>
+        </div>
+        <div class="btn yong-btn"><span>立即领取</span></div>
+    </div>
+</div>
+
+<div class="Dialog-bg" ontouchmove="return false;"></div>
+<div class="Dialog" ontouchmove="return false;">
+    <p>您已成功领取优惠券</p>
+    <div class="gobtn"><span>立即使用</span></div>
+    <div class="closeX"></div>
+</div>
+<script type="text/javascript" src="https://act.mcake.com/fangli/2019/wap/commonjs/jquery.min.js?v=1411888163"></script>
+<!-- build:js scripts/index.js -->
+<script src="scripts/demoUtils.js"></script>
+<script src="scripts/index.js"></script>
+<!-- endbuild -->
+
+<script>
+    $(".yong-btn").click(function () {
+        DialogShow();
+    });
+    $(".gobtn").click(function () {
+        DialogHide();
+    });
+
+
+</script>
+</body>
+</html>

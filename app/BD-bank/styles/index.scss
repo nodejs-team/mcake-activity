@@ -1,0 +1,51 @@
+@function px2rem($n) {
+  @return ($n * 10 / 750) * 1rem; //设计稿一般都是750宽
+}
+
+@mixin font-dpr($font-size){
+  font-size: $font-size;
+
+  [data-dpr="2"] & {
+    font-size: $font-size * 2;
+  }
+
+  [data-dpr="3"] & {
+    font-size: $font-size * 3;
+  }
+
+}
+html,body{ background:#fff;}
+#evt_content{  background:#fff;
+  div{position:absolute;}
+  img{width:100%;}
+  .sec{position: relative; }
+
+  .sec-banner{ z-index: 1;}
+
+
+  .sec-main{ position: relative; z-index:2; background: #fff; padding: px2rem(80) 0;
+    div{position:relative;}
+    .buy-btn{ margin:0 auto; z-index: 1; text-align: center;
+      span{padding: px2rem(5) px2rem(40); line-height: px2rem(50) !important; font-size: px2rem(30) !important; background: #5a82a6; color: #fff; border-radius: px2rem(10);}
+    }
+
+  }
+  .sec-footer{background:#fff; background-size: 12%; position: relative; padding-bottom: px2rem(50); z-index:1; text-align: left;
+    .txt{ position: relative; width:px2rem(680); padding: px2rem(20) 0; margin: 0 auto;  color: #000; text-align: left;
+      h2{font-size: px2rem(28); font-weight: normal; }
+      p{ font-size: px2rem(23); padding-left: px2rem(35); line-height:px2rem(40);  text-indent: px2rem(-35);
+        margin:px2rem(5) 0; text-align: left !important;
+        span{display: block; padding-left: px2rem(10); text-indent: px2rem(-10);}
+      }
+    }
+  }
+
+
+}
+
+
+
+
+@media screen and (max-width: 320px) {
+
+}

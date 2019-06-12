@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>mcake活动</title>
+    <link rel="stylesheet" href="https://act.mcake.com/fangli/2018/wap/commoncss/comm_header.css" />
+    <!-- build:css styles/index.css -->
+    <link rel="stylesheet" href="../commoncss/wap-normalize.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <!-- endbuild-->
+
+</head>
+<body>
+
+<div id="evt_container">
+    <div id="iscroll">
+        <div class="wrap">
+            <div id="evt_loading" style="display:none;">0%</div>
+            <div id="evt_content" class="detail" style="display:none;">
+                <div class="sec sec-top">
+                    <div class="banner"><img src="images/img-1.jpg" alt=""></div>
+                </div>
+
+                <div class="sec sec-pintuan">
+                    <div class="pintuan">
+                        <div class="tuaning"><b>距离拼团结束还有</b>
+                            <samp><span class="lastTime"></span></samp>
+                        </div>
+                        <div class="cake-detail">
+                            <div class="content">
+                                <div class="cake-title">
+                                    <h2>远山雪莓 0.5磅</h2>
+                                    <!-- <p>老带新团，老用户可开团，新用户可参团/开团</p>-->
+                                </div>
+                                <div class="price">
+                                    <h3>开团价：</h3>
+                                    <p><i>￥</i><span>49.90</span> (免运费)  <b>原价：<i>￥</i>99.00</b></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="user">
+                                <ul class="clearfix">
+                                    <li><div class="useface" style="background:#cccccc  url('images/img-1.jpg') center no-repeat; background-size: cover;"></div>
+                                    <div class="userleve"><span>团长</span></div>
+                                    </li>
+                                    <li><div class="useface" style="background:#cccccc url('images/nobody.png') center no-repeat; background-size: cover;"></div>
+                                    </li>
+                                    <li><div class="useface" style="background:#cccccc url('images/nobody.png') center no-repeat; background-size: cover;"></div>
+                                    </li>
+                                </ul>
+                                <div class="enough">还差2人成团</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--<div class="content">
+                        <div class="line"></div>
+                        <div class="overTime">
+                            离拼团结束还剩：<b id="timer"></b>
+                        </div>
+                    </div>-->
+
+                </div>
+
+                <div class="sec sec-detail">
+                    <div class="pinguize">
+                        <h2>参团提醒</h2>
+                        <p>1、新老用户均可开团，仅限新用户参与团购优惠；</p>
+                        <p>2、开团成功付款后可邀请好友参团；</p>
+                        <p>3、达到拼团人数则顺利开团；</p>
+                        <p>4、若2小时内拼团不成功，全额退款。</p>
+                    </div>
+
+                    <div class="detail">
+                        <img src="images/detail-1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="sec-footer">
+                    <div class="txt">
+                        <h2>活动规则</h2>
+                        <p>1、活动城市：上海、北京、杭州、苏州；</p>
+                        <p>2、团购规则：<br>
+                            <span>· 新老用户均可开团，仅限新用户参与团购优惠（注：新用户指未购买任何Mcake产品用户）。若该次拼团失败，可重新参与其他拼团；</span><br>
+                            <span>· 拼团成功后，请至“我的服务—订单查询”内查看拼团详情；</span></p>
+                        <p>3、配送时间：XXXXXXXXXXXX</p>
+                        <p>4、若拼团失败，退款将按原路返还。返还时间1—3个工作日内。若有问题可咨询400客服电话：4006-678-678（8:00-22:00）</p>
+                        <p>5、拼团商品每日数量有限，拼完即止，次日零点即可继续参与；</p>
+                        <p>6、商品配送范围：详情请查看官网免费配送范围；</p>
+                        <p>7、本活动不与其他优惠同享；</p>
+                        <p>8、本活动最终解释权归Mcake所有。</p>
+                    </div>
+                </div>
+                <div class="pintuanBar">
+                    <div class="tuanbtn"><span>我要参团</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="https://act.mcake.com/fangli/2018/wap/commonjs/jquery.min.js"></script>
+<script src="https://act.mcake.com/fangli/2018/wap/commonjs/flexible.js"></script>
+<!-- build:js scripts/index.js -->
+<script src="../commonjs/fastclick.js"></script>
+<script src="../commonjs/pubsub.js"></script>
+<script src="../commonjs/loader.js"></script>
+
+<script src="../commonjs/iscroll.js"></script>
+<script src="../commonjs/velocity.js"></script>
+<script src="../commonjs/wap-scrollAnimate.js"></script>
+<script src="../commonjs/movieclip.js"></script>
+<script src="../commonjs/public-shimily.js"></script>
+<script src="scripts/resdata.js"></script>
+<script src="scripts/index.js"></script>
+<!-- endbuild -->
+<script>
+
+    function actEnd() {
+        window.location.reload();
+        $(".tuanbtn").addClass("none").html("<span>拼团结束！</span>")
+    }
+    /*该活动倒计时*/
+   /* __END_DATE__ = '2019-8-10 10:00:00';
+    goTime(__END_DATE__,'#timer',actEnd);*/
+
+
+    /*拼团中倒计时*/
+    __END_Time__ = new Date(new Date().getTime() + 2 * 3600 * 1000); /*当前时间加2小时*/
+    timeLast(__END_Time__,'.lastTime',actEnd);
+</script>
+</body>
+</html>

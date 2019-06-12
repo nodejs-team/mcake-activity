@@ -1,0 +1,321 @@
+@charset "UTF-8";
+h1, h2, h3, h4 {
+  font-weight: normal; }
+
+b, strong, samp, i {
+  font-style: normal;
+  font-weight: normal; }
+
+i {
+  font-size: 0.4rem; }
+
+#evt_content.detail {
+  background: #fff; }
+
+#evt_content {
+  background: #f5f5f5;
+  background-size: 100%;
+  /*拼团页*/
+  /*详情页*/ }
+  #evt_content img {
+    width: 100%; }
+  #evt_content .sec {
+    position: relative; }
+  #evt_content .sec-top .banner {
+    position: relative;
+    width: 10rem; }
+  #evt_content .sec-main {
+    padding-bottom: 0.66667rem; }
+    #evt_content .sec-main div {
+      position: relative; }
+    #evt_content .sec-main .cakes {
+      position: relative; }
+      #evt_content .sec-main .cakes ul {
+        margin-left: 0.6rem;
+        margin-right: -0.4rem; }
+        #evt_content .sec-main .cakes ul li {
+          position: relative;
+          width: 8.93333rem;
+          margin-top: 0.66667rem;
+          padding: 0 0 0.66667rem;
+          background: #fff;
+          border-radius: 0.13333rem;
+          box-shadow: 0 0.13333rem 0.53333rem #dedede; }
+          #evt_content .sec-main .cakes ul li .price {
+            padding: 0.26667rem 0.66667rem 0; }
+            #evt_content .sec-main .cakes ul li .price h2 {
+              font-size: 0.4rem;
+              font-weight: normal;
+              color: #000000; }
+              #evt_content .sec-main .cakes ul li .price h2 span {
+                float: right;
+                color: #da7999;
+                font-size: 0.32rem;
+                margin-top: 0.13333rem; }
+            #evt_content .sec-main .cakes ul li .price p {
+              font-size: 0.24rem;
+              color: #da7999;
+              line-height: 0.93333rem; }
+              #evt_content .sec-main .cakes ul li .price p span {
+                font-size: 0.53333rem; }
+              #evt_content .sec-main .cakes ul li .price p s {
+                color: #838383; }
+              #evt_content .sec-main .cakes ul li .price p b {
+                color: #7a7a7a;
+                font-weight: normal; }
+        #evt_content .sec-main .cakes ul li.sec-2 h2 span, #evt_content .sec-main .cakes ul li.sec-2 p {
+          color: #975535; }
+        #evt_content .sec-main .cakes ul li.sec-2 .btns.kaituanBtn {
+          background: #975535; }
+        #evt_content .sec-main .cakes ul li.sec-3 h2 span, #evt_content .sec-main .cakes ul li.sec-3 p {
+          color: #8f5663; }
+        #evt_content .sec-main .cakes ul li.sec-3 .btns.kaituanBtn {
+          background: #874b59; }
+  #evt_content .sec-pintuan .content {
+    padding: 0 0.66667rem; }
+  #evt_content .sec-pintuan .cake-detail .cake-title {
+    padding: 0.53333rem 0 0;
+    margin-bottom: 0.26667rem; }
+    #evt_content .sec-pintuan .cake-detail .cake-title h2 {
+      font-size: 0.66667rem;
+      font-weight: normal;
+      color: #000000; }
+      #evt_content .sec-pintuan .cake-detail .cake-title h2 span {
+        float: right;
+        line-height: 0.53333rem;
+        border-radius: 0.53333rem;
+        padding: 0 0.37333rem;
+        color: #ff8c74;
+        font-size: 0.26667rem;
+        border: #b2b2b2 0.01333rem solid; }
+    #evt_content .sec-pintuan .cake-detail .cake-title p {
+      color: #000000;
+      font-size: 0.32rem;
+      line-height: 0.66667rem; }
+  #evt_content .sec-pintuan .cake-detail .price {
+    padding: 0.26667rem 0; }
+    #evt_content .sec-pintuan .cake-detail .price h3 {
+      font-size: 0.32rem;
+      font-weight: normal;
+      color: #000000;
+      margin-bottom: 0.26667rem; }
+    #evt_content .sec-pintuan .cake-detail .price p {
+      font-size: 0.24rem;
+      color: #000;
+      line-height: 0.93333rem; }
+      #evt_content .sec-pintuan .cake-detail .price p span {
+        font-size: 0.8rem;
+        color: #ff8c74; }
+      #evt_content .sec-pintuan .cake-detail .price p b {
+        color: #000;
+        float: right;
+        font-weight: normal;
+        font-size: 0.4rem;
+        margin-top: 0.13333rem; }
+  #evt_content .sec-pintuan .pintuan .tuaning {
+    background: #ff8c74;
+    color: #fff;
+    padding: 0.66667rem 0.53333rem;
+    line-height: 0.66667rem; }
+    #evt_content .sec-pintuan .pintuan .tuaning b {
+      font-size: 0.66667rem;
+      vertical-align: middle; }
+    #evt_content .sec-pintuan .pintuan .tuaning samp {
+      font-size: 0.32rem;
+      vertical-align: middle; }
+      #evt_content .sec-pintuan .pintuan .tuaning samp span {
+        font-size: 0.57333rem;
+        vertical-align: bottom; }
+  #evt_content .sec-pintuan .pintuan .user {
+    margin: 0 auto;
+    padding: 0.8rem 0 0.8rem; }
+    #evt_content .sec-pintuan .pintuan .user ul {
+      display: flex; }
+      #evt_content .sec-pintuan .pintuan .user ul li {
+        flex: 1; }
+        #evt_content .sec-pintuan .pintuan .user ul li .useface {
+          width: 1.81333rem;
+          height: 1.81333rem;
+          border-radius: 50%;
+          margin: 0 auto; }
+        #evt_content .sec-pintuan .pintuan .user ul li .userleve {
+          margin: 0.4rem auto 0;
+          text-align: center; }
+          #evt_content .sec-pintuan .pintuan .user ul li .userleve span {
+            line-height: 0.53333rem;
+            padding: 0 0.26667rem;
+            background: #ff8c74;
+            color: #fff;
+            border-radius: 0.53333rem; }
+    #evt_content .sec-pintuan .pintuan .user .enough {
+      text-align: center;
+      font-size: 0.34667rem;
+      color: #000;
+      line-height: 0.53333rem;
+      padding: 0.13333rem 0 0; }
+  #evt_content .sec-detail {
+    padding: 0.06667rem 0; }
+    #evt_content .sec-detail .guize {
+      background: #f1f1f1;
+      margin: 0.4rem 0.66667rem 0;
+      padding: 0.4rem 0.66667rem;
+      font-size: 0.32rem;
+      line-height: 0.53333rem; }
+      #evt_content .sec-detail .guize h2 {
+        font-size: 0.42667rem;
+        color: #000;
+        line-height: 0.8rem; }
+    #evt_content .sec-detail .pinguize {
+      font-size: 0.32rem;
+      line-height: 0.53333rem;
+      padding: 0 0.66667rem; }
+      #evt_content .sec-detail .pinguize h2 {
+        font-size: 0.42667rem;
+        color: #000;
+        line-height: 0.8rem; }
+    #evt_content .sec-detail .detail {
+      margin: 0.66667rem 0.26667rem 0; }
+  #evt_content .sec-footer {
+    position: relative;
+    padding-bottom: 1.6rem;
+    z-index: 1; }
+    #evt_content .sec-footer .txt {
+      position: relative;
+      width: 8.66667rem;
+      padding-top: 0.66667rem;
+      margin: 0 auto;
+      color: #8d8d8d; }
+      #evt_content .sec-footer .txt h2 {
+        font-size: 0.42667rem;
+        font-weight: normal;
+        color: #000; }
+      #evt_content .sec-footer .txt p {
+        font-size: 0.34667rem;
+        padding-left: 0.6rem;
+        line-height: 0.4rem;
+        text-indent: -0.53333rem;
+        margin: 0.13333rem 0; }
+        #evt_content .sec-footer .txt p span {
+          padding-left: 0.2rem;
+          text-indent: -0.2rem;
+          display: inline-block; }
+
+.line {
+  border-bottom: #aeaeae 0.01333rem solid;
+  height: 1px;
+  margin: 0.13333rem auto; }
+
+.buy-btn {
+  position: relative;
+  width: 100%;
+  padding: 0 0.66667rem;
+  display: flex;
+  text-align: center;
+  font-size: 0.32rem; }
+  .buy-btn .btns {
+    flex: 1;
+    border: #b2b2b2 1px solid;
+    border-radius: 0.46667rem;
+    color: #000; }
+    .buy-btn .btns span {
+      display: block;
+      line-height: 0.93333rem; }
+  .buy-btn .btns.shareBtn {
+    margin-right: 0.13333rem; }
+  .buy-btn .btns.kaituanBtn {
+    margin-left: 0.13333rem;
+    background: #da7999;
+    border: none;
+    color: #fff; }
+
+.overTime {
+  line-height: 0.66667rem;
+  font-size: 0.32rem;
+  margin: 0.53333rem auto; }
+  .overTime b {
+    float: right;
+    font-size: 0.53333rem;
+    color: #ff1233; }
+
+.pintuanBar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 0;
+  display: flex;
+  z-index: 10;
+  background: #fff;
+  max-width: 10rem; }
+  .pintuanBar .share {
+    flex: 3;
+    background: #ffc2b5;
+    text-align: center;
+    color: #fff; }
+    .pintuanBar .share span {
+      width: 100%;
+      line-height: 1.22667rem;
+      font-size: 0.4rem; }
+  .pintuanBar .tuanbtn {
+    flex: 3;
+    background: #ff8c74;
+    text-align: center;
+    color: #fff; }
+    .pintuanBar .tuanbtn span {
+      width: 100%;
+      line-height: 1.22667rem;
+      font-size: 0.4rem; }
+  .pintuanBar .tuanbtn.none {
+    background: #ccc; }
+
+/*弹窗*/
+.Dialog-base-box {
+  margin-top: -5.86667rem;
+  background: #fff;
+  overflow: hidden; }
+
+.Dialog-base-box .box-wrap {
+  display: block;
+  padding: 0; }
+  .Dialog-base-box .box-wrap .box-item-header {
+    padding: 0; }
+    .Dialog-base-box .box-wrap .box-item-header img {
+      width: 100%; }
+  .Dialog-base-box .box-wrap .box-item-footer {
+    padding: 0.13333rem 0.53333rem; }
+    .Dialog-base-box .box-wrap .box-item-footer .go-btn {
+      position: relative;
+      width: 100%;
+      margin: 0.26667rem auto; }
+      .Dialog-base-box .box-wrap .box-item-footer .go-btn span {
+        display: block;
+        width: 100%;
+        height: 1.2rem;
+        background: #ff8c74;
+        text-align: center;
+        line-height: 1.2rem;
+        font-size: 0.34667rem;
+        color: #fff;
+        cursor: pointer;
+        margin-top: 0.26667rem; }
+      .Dialog-base-box .box-wrap .box-item-footer .go-btn .ok-btn {
+        background: none;
+        border: #b5b5b5 0.01333rem solid;
+        color: #696969;
+        height: 0.93333rem !important;
+        line-height: 0.93333rem !important; }
+    .Dialog-base-box .box-wrap .box-item-footer p {
+      font-size: 0.26667rem;
+      line-height: 0.53333rem;
+      margin-bottom: 0.4rem; }
+
+.Dialog-base-box .closes {
+  top: 0.13333rem;
+  right: 0.13333rem;
+  width: 0.53333rem;
+  height: 0.53333rem;
+  background: url("../images/close.png") center no-repeat;
+  background-size: 70%; }
+
+.Dialog-share {
+  background: url("../images/share.png") no-repeat;
+  background-size: 100%; }

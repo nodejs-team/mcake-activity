@@ -1,0 +1,116 @@
+@function px2rem($n) {
+  @return ($n * 10 / 750) * 1rem; //设计稿一般都是750宽
+}
+#evt_content *{
+  vertical-align: baseline !important;
+}
+#evt_content{  background:url("../images/bg.jpg") repeat;
+
+  img{width:100%;}
+  .sec{position: relative; }
+
+  .sec-top{height: px2rem(809); background:url("../images/banner-wap.jpg") repeat; background-size: 100%; z-index: 1; overflow: hidden;}
+
+  .sec-shengbang{ padding: px2rem(50) 0;
+    div{position: relative;}
+    .shengbang-price{width: px2rem(750); margin:px2rem(-50) auto 0;
+
+      .gou{position: absolute; top:px2rem(120); left:px2rem(330); width:px2rem(40); height:px2rem(40); background: url("../images/gou-1-1.png") center no-repeat; background-size: 90%; vertical-align: middle; margin-left:px2rem(10);}
+      .gou.on{background: url("../images/gou-1-2.png") center no-repeat; background-size: 90%;}
+
+      .select{position: absolute; top:px2rem(165); left: px2rem(520); z-index: 5;
+        ul{
+          li{ width: px2rem(40); height: px2rem(40); background: url("../images/gou-1-1.png") center no-repeat; background-size: 80%; margin-bottom: px2rem(25); display: block;}
+          li.on{ background: url("../images/gou-1-2.png") center no-repeat; background-size: 80%;}
+        }
+      }
+    }
+  }
+  .go-btn{position: relative; width: px2rem(145);  padding: px2rem(25) 0 0; margin: 0 auto;
+    span{display: block; width: px2rem(145); margin: 0 auto; height: px2rem(50); background: url("../images/gobuy.png") center no-repeat; background-size: 100%; }
+  }
+  .sec-0{ padding: px2rem(50) 0 px2rem(100); background: url("../images/s-bg.png") top no-repeat; background-size: 100%;
+    .row{position: relative; width: px2rem(700); height: px2rem(354); margin:px2rem(50) auto px2rem(80); background: #fff; border-radius: px2rem(10); overflow: hidden; }
+    .cake,.price{position: absolute;}
+    .price{
+      h2, h2 span,s,.price_num dl dt span,.huangou{color: #4c5c84;}
+      ul.price_p li.cur, .buy_btn_box span{background: #7998c1 !important;}
+    }
+    .row1{
+      .cake{width:px2rem(355); top:0; right:0; z-index: 1;}
+      .price{top: px2rem(20); left:px2rem(30); z-index: 2; }
+    }
+    .row2{
+      .cake{width:px2rem(355); top:0; left:0; z-index: 1;}
+      .price{top: px2rem(20); left: px2rem(385);}
+
+    }
+    .row3{
+      .cake{width:px2rem(355); top:0; right:0; z-index: 1;}
+      .price{top: px2rem(20); left:px2rem(30); z-index: 2; }
+
+    }
+  }
+
+  .hy-title{position: relative; width: px2rem(653); margin:px2rem(30) auto; }
+
+  .sec-code{position: relative;
+    .code{ width: px2rem(585); margin: px2rem(50) auto;}
+  }
+
+  .sec-footer{background:#d9e1eb url("../images/line.png") top no-repeat; background-size: 100%; position: relative; padding-bottom: px2rem(50); z-index:1;
+    .family{position: absolute; bottom:px2rem(-20); right: px2rem(20); width: px2rem(180);}
+    .txt{ position: relative; width:px2rem(680); padding-top: px2rem(50); margin: 0 auto;  color: #6a6a6a;
+      h2{font-size: px2rem(28); font-weight: normal; }
+      p{ font-size: px2rem(22); padding-left: px2rem(35); line-height:px2rem(40);  text-indent: px2rem(-35); margin:px2rem(5) 0;
+        span{display: block; padding-left: px2rem(10); text-indent: px2rem(-10);}
+      }
+    }
+  }
+
+
+  /*价格计算【通用】*/
+  .price{ position: absolute;  width: px2rem(350); text-align: left; z-index: 2;
+    .icons{width: px2rem(50); position: absolute; left: px2rem(30); top: px2rem(-13);}
+    .title{position: relative; width: px2rem(200); margin:px2rem(10) 0 px2rem(50);}
+    h2{font-size:  px2rem(20); font-weight: normal; line-height: px2rem(50); color: #4c5c84;
+      i{font-size:  px2rem(20); line-height: px2rem(30); font-style: normal; vertical-align:middle; }
+      span{font-size: px2rem(35); }
+    }
+    s{ font-size:  px2rem(20); color: #c7818b; font-weight: normal;
+      span{font-size: px2rem(20); }
+    }
+
+
+    .huangou{position: relative;width:100%; font-size:px2rem(22); color: #9b4245; margin:0 auto px2rem(20); text-align: left; }
+    .huangou p{ padding-left: px2rem(45);}
+    .huangou .icon{position: absolute; top: 50%; margin-top: px2rem(-20); width: px2rem(40); height: px2rem(40); background: url("../images/gou-1-1.png") no-repeat; background-size: 100%;}
+    .huangou .icon.on{ background: url("../images/gou-1-2.png") no-repeat; background-size: 100%;}
+    .xs{ width: px2rem(60); position: absolute; right: px2rem(120); top: px2rem(110);}
+    ul.buy_btn_box { width: px2rem(170); overflow: hidden; margin: px2rem(10) 0;  }
+    ul.buy_btn_box.twoBtn {  width: px2rem(350);}
+    ul.buy_btn_box li { float: left; margin-right:  px2rem(10);  }
+    ul.buy_btn_box li:last-child{margin-right: 0;}
+    ul.buy_btn_box li span { display: block; background: #db8f93 none repeat scroll 0 0;  color: #fff; cursor: pointer; line-height: px2rem(45); font-size: px2rem(22); text-align: center; width: px2rem(170); }
+  }
+
+
+}
+
+
+
+
+/*浮动*/
+.floater{  position: fixed; width: px2rem(145); height: px2rem(145); bottom: px2rem(20); right: px2rem(10);  z-index: 11; cursor: pointer; display: none;
+  img{ width: 100%;}
+  .tips{ position: absolute; width: px2rem(50); height: px2rem(50); right:px2rem(-5); top:px2rem(-5); border-radius: 50%; background:url("../images/tips.png") center no-repeat; background-size: 100%; text-align: center; z-index: 12;
+    span{display: block; font-size:px2rem(20); color: #fff; line-height:px2rem(50);}
+  }
+}
+
+
+
+
+@media screen and (max-width: 320px) {
+
+}

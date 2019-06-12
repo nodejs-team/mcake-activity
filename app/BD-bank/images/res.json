@@ -1,0 +1,18 @@
+{
+	"groups":[{
+			"keys":"banner-jianhang_jpg,banner-gonghang_jpg",
+			"name":"preload"
+		}],
+	"resources":[
+		{
+			"name":"banner-jianhang_jpg",
+			"type":"image",
+			"url":"banner-jianhang.jpg"
+		},
+		{
+			"name":"banner-gonghang_jpg",
+			"type":"image",
+			"url":"banner-gonghang.jpg"
+		}
+	]
+}

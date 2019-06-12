@@ -1,0 +1,63 @@
+@function px2rem($n) {
+  @return ($n * 10 / 750) * 1rem; //设计稿一般都是750宽
+}
+
+@mixin font-dpr($font-size){
+  font-size: $font-size;
+
+  [data-dpr="2"] & {
+    font-size: $font-size * 2;
+  }
+
+  [data-dpr="3"] & {
+    font-size: $font-size * 3;
+  }
+
+}
+html,body{ background:#fff;}
+#evt_content{  background:url("../images/bg.jpg") repeat; background-size:23%;
+  div{position:absolute;}
+  img{width:100%;}
+  .sec{position: relative; }
+
+  .sec-banner{ z-index: 1;}
+
+  .sec-guize{ position: relative;  z-index:1; text-align: left; padding-top: px2rem(50);
+    .dis-1{position: absolute; top: px2rem(160); left:px2rem(10); width: px2rem(75);}
+    .dis-2{position: absolute; top: px2rem(368); right: px2rem(30); width: px2rem(49);}
+    .txt{ position: relative; width:px2rem(530); padding: px2rem(20) 0; margin: 0 auto;  color: #000; text-align: left;
+      h2{font-size: px2rem(30); font-weight: normal; }
+      p{ font-size: px2rem(18); padding-left: px2rem(15); line-height:px2rem(40);  text-indent: px2rem(-15);
+        margin:px2rem(5) 0; text-align: left !important;
+        span{display: block; padding-left: px2rem(10); text-indent: px2rem(-10);}
+      }
+    }
+  }
+  .sec-list{ position: relative; z-index:2; padding: px2rem(50) 0;
+    div{position:relative;}
+     .cakes{ width: px2rem(700); margin: 0 auto;
+       ul{ margin-left: px2rem(-15);
+         li{ width:px2rem(341); float: left; margin-left: px2rem(15); margin-top: px2rem(20); color: #000;
+            .price{ position: relative; padding: px2rem(10) 0;
+              p{font-size: px2rem(26); line-height: px2rem(40);}
+              span{font-size:px2rem(18); line-height: px2rem(20);}
+              h2{font-size: px2rem(30);}
+              i{font-size: px2rem(18);}
+              .car-btn{position: absolute; width: px2rem(53); height: px2rem(53); right: 0; top:px2rem(10); background: url("../images/cart.png"); background-size: 100%;}
+            }
+         }
+       }
+     }
+
+  }
+
+  .more{ position: relative; width: px2rem(218); margin: px2rem(50) auto;}
+
+}
+
+
+
+
+@media screen and (max-width: 320px) {
+
+}

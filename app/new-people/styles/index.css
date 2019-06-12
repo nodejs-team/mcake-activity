@@ -29,15 +29,15 @@
       margin: -0.06667rem auto 0.53333rem; }
     #evt_content .sec-0 .btn-hb {
       position: absolute;
-      bottom: 0.66667rem;
+      bottom: 0.73333rem;
       left: 50%;
-      margin-left: -1.06667rem; }
-      #evt_content .sec-0 .btn-hb span {
-        padding: 0.04rem 0.4rem;
-        font-size: 0.32rem;
-        line-height: 0.8rem;
-        background: #e6e7d8;
-        color: #6a6e44; }
+      margin-left: -1.06667rem;
+      width: 2.13333rem;
+      font-size: 0.32rem;
+      line-height: 0.66667rem;
+      background: #e6e7d8;
+      color: #6a6e44;
+      text-align: center; }
   #evt_content .hy-title {
     position: relative;
     width: 10rem;
@@ -277,12 +277,12 @@
     #evt_content .price .price_num dl dd {
       cursor: pointer;
       float: left;
-      height: 0.4rem;
-      width: 0.4rem; }
+      height: 0.56rem;
+      width: 0.56rem; }
     #evt_content .price .price_num dl dt {
       float: left;
-      height: 0.4rem;
-      width: 0.4rem; }
+      width: 0.4rem;
+      height: 0.56rem; }
     #evt_content .price .price_num dl dt span {
       display: block;
       font-size: 0.26667rem;
@@ -290,7 +290,7 @@
       border: none;
       color: #000;
       height: 100%;
-      line-height: 0.4rem;
+      line-height: 0.56rem;
       text-align: center;
       width: 100%; }
     #evt_content .price ul.buy_btn_box {
@@ -310,12 +310,13 @@
       background: #e6e7d8;
       background-size: 100%;
       cursor: pointer;
-      line-height: 0.53333rem;
       font-size: 0.29333rem;
+      padding: 0.02667rem 0;
       text-align: center;
       width: 2.13333rem;
       overflow: hidden;
-      color: #000; }
+      color: #000;
+      vertical-align: middle; }
 
 /*浮动*/
 .floater {
