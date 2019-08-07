@@ -1,0 +1,11 @@
+{
+	"groups":[{
+			"keys":"b-title_png",
+			"name":"preload"
+		}],
+	"resources":[{
+			"name":"b-title_png",
+			"type":"image",
+			"url":"b-title.png"
+		}]
+}

@@ -25,6 +25,7 @@
         this.oldPrice =0;
         this.totalOldprice =0;
         this.bs = 0;
+        this.weight = 0;
         this.totalPrice =0;
         this.dis = 0;
         this.disCount = 0;
@@ -64,7 +65,7 @@
             var ix = parseInt(self.num / 2);
 
             self.bs = cur.data('bs');
-
+            self.weight = cur.data('weight');
             self.disCount = self.disFun(self.bs,self.disArr); /*计算折扣*/
 
             self.totalOldprice =self.oldPrice * self.num;
@@ -79,6 +80,8 @@
             ele.parents(".price").find('.old-price').html(self.totalOldprice.toFixed(2));
             /*ele.parents(".price").find('.now-price').html(Math.floor(self.totalPrice)+'.00');*/  /*现价向下取整*/
             ele.parents(".price").find('.now-price').html(self.totalPrice.toFixed(2));  /*保留两位小数*/
+            ele.parents(".price").find('.p-bs').html(self.bs);
+            ele.parents(".price").find('.p-weight').html(self.weight);
 
             ele.parents(".price").find('.go-buy').attr("data-num",self.num);
         },
@@ -104,6 +107,7 @@
             var ix = parseInt(self.num / 2);
 
             self.bs = ele.data('bs');
+            self.weight = ele.data('weight');
             self.disCount = self.disFun(self.bs,self.disArr); /*计算折扣*/
 
             self.totalOldprice =self.oldPrice * self.num;
@@ -117,7 +121,8 @@
             ele.parents(".price").find('.old-price').html(self.totalOldprice.toFixed(2));
             /*ele.parents(".price").find('.now-price').html(Math.floor(self.totalPrice)+'.00');*/
             ele.parents(".price").find('.now-price').html(self.totalPrice.toFixed(2));
-
+            ele.parents(".price").find('.p-bs').html(self.bs);
+            ele.parents(".price").find('.p-weight').html(self.weight);
             /*新版wap需要配置data*/
             var that = $(this);
             var eleCur = ele;
@@ -183,13 +188,15 @@
                 var ix = parseInt(totalNum / 2);
 
                 self.bs = $(this).find('.price_p li.cur').data('bs');
+                self.weight = $(this).find('.price_p li.cur').data('weight');
                 self.disCount = self.disFun(self.bs,self.disArr); /*计算折扣*/
                 var totalPrice =(Oldprice - self.disCount) * self.percent * totalNum;
 
                 $(this).find('.old-price').html(totalOldprice.toFixed(2));
                 /*$(this).find('.now-price').html(Math.floor(totalPrice)+'.00');*/
                 $(this).find('.now-price').html(totalPrice.toFixed(2));
-
+                $(this).find('.p-bs').html(self.bs);
+                $(this).find('.p-weight').html(self.weight);
 
                 /*新版wap需要配置data*/
                 var that = $(this);

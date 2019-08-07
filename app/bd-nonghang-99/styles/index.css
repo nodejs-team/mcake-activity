@@ -9,7 +9,7 @@
     width: 100%; }
   #evt_container .top_icon {
     position: absolute;
-    width: 24.9%;
+    width: 31%;
     top: 405px;
     left: 50%;
     margin: 0 0 0 -28.5%; }
@@ -44,7 +44,7 @@
       #evt_container .act .plate span {
         position: absolute;
         display: block;
-        color: #c41700;
+        color: #df2946;
         font-size: 222px;
         top: 145px;
         left: 196px;
@@ -68,7 +68,7 @@
       margin-left: -120px; }
   #evt_container .act_next {
     text-align: center;
-    color: #c41700;
+    color: #df2946;
     height: 200px; }
     #evt_container .act_next h2 {
       margin: 0 0 40px 0;
@@ -150,7 +150,7 @@
         float: left;
         border-radius: 2px;
         margin: 16px 0 0 0;
-        background: #c41700;
+        background: #df2946;
         color: #ffffff;
         text-align: center;
         line-height: 30px;

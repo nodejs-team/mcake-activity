@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>mcake活动</title>
+
+    <!-- build:css styles/index.css -->
+    <link rel="stylesheet" href="../commoncss/wap-normalize.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <!-- endbuild-->
+
+</head>
+<body>
+
+<div id="evt_container">
+    <div id="iscroll">
+        <div class="wrap">
+            <header>
+                <a href="http://m.mcake.com/wap" class="icon-back"></a>
+                <div class="title">
+                    <span>活动</span><br><span>activity</span>
+                </div>
+                <a href="http://m.mcake.com/wap" class="icon-home"></a>
+            </header>
+            <div id="evt_loading" style="display:none;">0%</div>
+            <div id="evt_content" style="display:none;">
+                <div class="sec sec-top"></div>
+
+                <div class="sec sec-0">
+                    <div class="hy-title"><img src="images/hy-title-1.png" alt=""></div>
+                    <div class="pct">
+                        <div class="cover"></div>
+                       <div class="guaguaka" ontouchmove="return false;">
+                           <img src="images/dot.png" id="imageBackground" style="display: none;" alt="">
+                           <img src="images/cover.png" id="pictureOver" style="display: none;" alt="">
+                           <!--刮刮卡-->
+                           <div class="scratch_container">
+                               <div class="scratch_viewport">
+                                   <!-- result picture -->
+                                   <canvas id="js-scratch-canvas"></canvas>
+                               </div>
+                           </div>
+                       </div>
+                        <div class="pct-question">
+                            <div class="qt q1" data-answer="0" style="display: block;">
+                                <h2>1.您是从什么渠道知道MCAKE的？(单选)</h2>
+                                <div class="options toMuch clearfix">
+                                    <span data-id="1"><div class="select"></div>A.朋友推荐</span>
+                                    <span data-id="2"><div class="select"></div>B.官网/微信/微博</span>
+                                    <span data-id="3"><div class="select"></div>C.媒体广告</span>
+                                    <span data-id="4"><div class="select"></div>D.线下试吃 </span>
+                                    <span data-id="5"><div class="select"></div>E.其他 </span>
+                                    <span></span>
+                                </div>
+                                <div class="next">下一题</div>
+                            </div>
+                            <div class="qt q2" data-answer="0">
+                                <h2>2.您选择MCAKE的理由是什么？（单选）</h2>
+                                <div class="options  clearfix">
+                                    <span data-id="1"><div class="select"></div>A.品牌</span>
+                                    <span data-id="2"><div class="select"></div>B.口味</span>
+                                    <span data-id="3"><div class="select"></div>C.价格</span>
+                                    <span data-id="4"><div class="select"></div>D.服务</span>
+                                </div>
+                                <div class="next">下一题</div>
+                            </div>
+                            <div class="qt q3" data-answer="0">
+                                <h2>3.您喜欢什么形状的蛋糕？（单选）</h2>
+                                <div class="options toShort clearfix">
+                                    <span data-id="1"><div class="select"></div>A.圆形</span>
+                                    <span data-id="2"><div class="select"></div>B.方形</span>
+                                    <span data-id="3"><div class="select"></div>C.其他</span>
+                                </div>
+                                <div class="next">下一题</div>
+                            </div>
+                            <div class="qt q4" data-answer="0">
+                                <h2>4.您更青睐什么口味？（单选）</h2>
+                                <div class="options clearfix">
+                                    <span data-id="1"><div class="select"></div>A.拿破仑</span>
+                                    <span data-id="2"><div class="select"></div>B.鲜奶</span>
+                                    <span data-id="3"><div class="select"></div>C.水果</span>
+                                    <span data-id="4"><div class="select"></div>D.其它</span>
+                                </div>
+                                <div class="next">下一题</div>
+                            </div>
+                            <div class="qt q5">
+                                <h2>5.请留下您的意见或建议：</h2>
+                                <div class="options">
+                                    <textarea></textarea>
+                                </div>
+                                <div class="submit">提交答案</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sec sec-1">
+                    <div class="hy-title"><img src="images/hy-title-2.png" alt=""></div>
+                    <div class="cakes products" data-anim="slide-up" data-delay="0.8">
+                        <ul class="clearfix">
+                            <li data-sku="111" data-price="298">
+                                <img src="images/cake-1.png" class="zoom" alt="">
+                                <div class="m-title">蓝莓轻乳拿破仑</div>
+                                <div class="m-price">优惠价<span><i>￥</i>258.00</span>/2磅 <s>原价：￥298.00</s></div>
+                                <div class="m-btn"><span>立即购买</span></div>
+                                <div class="m-car"></div>
+                            </li>
+                            <li data-sku="112" data-price="298">
+                                <img src="images/cake-2.png" class="zoom" alt="">
+                                <div class="m-title">香溢新芝</div>
+                                <div class="m-price">优惠价<span><i>￥</i>258.00</span>/2磅 <s>原价：￥298.00</s></div>
+                                <div class="m-btn"><span>立即购买</span></div>
+                                <div class="m-car"></div>
+                            </li>
+                            <li data-sku="113" data-price="318">
+                                <img src="images/cake-3.png" class="zoom" alt="">
+                                <div class="m-title">榴莲雪塔</div>
+                                <div class="m-price">优惠价<span><i>￥</i>278.00</span>/2磅 <s>原价：￥318.00</s></div>
+                                <div class="m-btn"><span>立即购买</span></div>
+                                <div class="m-car"></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="sec sec-xiaoshi">
+                    <div class="hy-title"><img src="images/hy-title-3.png" alt=""></div>
+                    <div class="select-li" data-anim="slide-up" data-delay="0.6">
+                        <ul class="clearfix">
+                            <li data-sku="001" data-price="48"><img src="images/xiaoshi-1.png" alt=""><div class="m-car "></div></li>
+                            <li data-sku="002" data-price="48"><img src="images/xiaoshi-2.png" alt=""><div class="m-car"></div></li>
+                            <li class="noBd" data-sku="003" data-price="48"><img src="images/xiaoshi-3.png" alt=""><div class="m-car"></div></li>
+                        </ul>
+                        <div class="price">
+                            <p>蛋糕+小食 合计: ￥<span class="zuhe">298</span></p>
+                            <s>原价<span class="zuhe-old">346</span>元</s>
+                            <div class="buy-btn"><span>立即购买</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sec-footer">
+                    <div class="txt">
+                        <h2>活动规则:</h2>
+                        <p>1、活动时间：2019年7月2日-2019年7月30日（每周二上午10：00）</p>
+                        <p>2、活动城市：上海、北京、苏州、杭州</p>
+                        <p>3、支付方式：微信、支付宝、现金</p>
+                        <p>4、活动内容：<br>
+                            . 活动页面单独购买指定3款蛋糕（花漾·年华2磅、Mojito 柠•漾2磅、 摩登茶道2磅）中的任意一款，
+                            可享受立减40元会员优惠价<br>
+                            . 活动页面下单订购指定3款蛋糕（花漾·年华2磅、Mojito 柠•漾2磅、 摩登茶道2磅）中的任意一款
+                            搭配指定3款小食（原味萝拉小朵100g、 知识小生100g、 草莓味半熟芝士）中的任意一款可享受
+                            会员优惠价298元（原价346元）</p>
+                        <p>5、单笔订单中立减商品不可与优惠券同享</p>
+                        <p>6、本活动与会员等级制度、积分同享，但不与其他优惠同享</p>
+                        <p>7、本活动最终解释权归MCAKE所有</p>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<div class="Dialogbg-quan"></div>
+<div class="Dialog-quan">
+    <div class="closes"></div>
+    <div class="quan quan-1" style="display: block;">
+        <a class="go-use" href="#cake"><img src="images/go-use.png" alt=""></a>
+        <div class="card"><img src="images/card-1.png" alt=""></div>
+    </div>
+
+</div>
+
+
+<script src="https://act.mcake.com/fangli/2019/wap/commonjs/jquery.min.js"></script>
+<script src="https://act.mcake.com/fangli/2019/wap/commonjs/flexible.js"></script>
+<!--从2月会员日开始，因为新版移动端，点击链接跳转出去再返回，页面无法滑动了，需要把加载进入的全部动画效果（initScroll）去掉-->
+<!-- build:js scripts/index.js -->
+<script src="../commonjs/fastclick.js"></script>
+<script src="../commonjs/pubsub.js"></script>
+<script src="../commonjs/loader.js"></script>
+
+<script type="text/javascript" src="scripts/Scratch.js"></script>
+<script src="../commonjs/public-shimily.js"></script>
+<script src="scripts/resdata.js"></script>
+<script src="scripts/index.js"></script>
+<!-- endbuild -->
+<script>
+    $(".submit").click(function () {
+        QuanDialog(2);
+    });
+
+</script>
+
+</body>
+</html>

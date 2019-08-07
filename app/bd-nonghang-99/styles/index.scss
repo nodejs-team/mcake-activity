@@ -2,14 +2,14 @@
 
 #evt_container{background:url(../images/bg.jpg);
   img{width:100%;}
-  .top_icon{position:absolute; width:24.9%; top:405px; left:50%; margin:0 0 0 -28.5%;}
+  .top_icon{position:absolute; width:31%; top:405px; left:50%; margin:0 0 0 -28.5%;}
   .top_quality{width:167px; margin:-83px auto 0 auto;}
   .act{height:625px; margin:55px 0 0 0; position:relative;
     .act_text{width:429px; margin:0 auto;}
     .act_sheng{width:79px; position:absolute; top:307px; left:50%; margin-left:-428px;}
     .act_ge{width:40px; position:absolute; top:307px; left:50%; margin-left:340px;}
     .plate{width:521px; top:64px; left:50%;margin-left:-270px; position:absolute;
-      span{position:absolute; display:block;  color:#c41700; font-size:222px; top:145px; left:196px; width:150px; height:250px; line-height:250px; text-align:center; text-shadow: 2px 2px 2px #000;}
+      span{position:absolute; display:block;  color:#df2946; font-size:222px; top:145px; left:196px; width:150px; height:250px; line-height:250px; text-align:center; text-shadow: 2px 2px 2px #000;}
       .word{width:166px; position:absolute; top:186px; left:186px;}
     }
     .plate1{margin-left:-544px;}
@@ -19,7 +19,7 @@
     .plate5{margin-left:-120px;}
 
   }
-  .act_next{text-align:center; color:#c41700;height: 200px;
+  .act_next{text-align:center; color:#df2946;height: 200px;
     h2{margin:0 0 40px 0; font-size:40px;}
     p{font-size:24px;}
   }
@@ -59,7 +59,7 @@
         }
         .fl{padding-top:5px;}
       }
-      .buybtn{width:48%; height:30px; display:inline-block; float:left; border-radius:2px; margin:16px 0 0 0; background:#c41700; color:#ffffff; text-align:center; line-height:30px; font-size:16px; position:static;}
+      .buybtn{width:48%; height:30px; display:inline-block; float:left; border-radius:2px; margin:16px 0 0 0; background:#df2946; color:#ffffff; text-align:center; line-height:30px; font-size:16px; position:static;}
       .go-buy{float: right;}
     }
 

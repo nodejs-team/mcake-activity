@@ -17,7 +17,7 @@
 h2,h3,h4,b,i,strong,samp{font-weight: normal;font-style: normal;}
 i{font-size:px2rem(18);}
 
-
+#evt_content *{ vertical-align: baseline!important;}
 .buy-btns{position: absolute; bottom:px2rem(126); left:px2rem(40); z-index: 2;
   .buy-btn{ float: left; font-size:px2rem(20); text-align: center; width:px2rem(150); line-height:px2rem(44); color: #000; background: #ffffff; border-radius:px2rem(44); cursor: pointer; margin: 0 px2rem(5);}
   .buy-btn.on{background: #ffe328; }
@@ -36,13 +36,13 @@ i{font-size:px2rem(18);}
   .sec-top{ z-index: 1; overflow: hidden;}
 
 
-  .sec-1{ position: relative; background:#ffdbd7; padding: 0;
+  .sec-1{ position: relative;padding:0; background:#ffdbd7;
     .time-1{ position: relative; width: px2rem(750);}
-    .lipin{ position: relative; width: px2rem(750);}
+    .lipin{ position: relative; width: px2rem(750);padding:0; margin: 0;}
   }
 
   .prolist ul li div{margin: 0;}
-  .sec-cakes{ padding-top: px2rem(30); background: #ffa49b;
+  .sec-cakes{ padding-top: px2rem(30); background: #ffa49b; padding-bottom: px2rem(10); margin-top: px2rem(-10);
     div{position:relative;}
     .moon{width: px2rem(730); margin: 0 auto; background: none !important;
       ul{ margin-left:px2rem(-2); background: none !important; margin-right: 0;

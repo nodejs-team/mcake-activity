@@ -1,0 +1,158 @@
+#evt_content {
+  background: #fffafa; }
+  #evt_content div {
+    position: absolute; }
+  #evt_content img {
+    width: 100%; }
+  #evt_content .sec {
+    position: relative; }
+  #evt_content .sec-banner {
+    height: 11.44rem;
+    background: url("../images/banner.png");
+    background-size: 100%;
+    z-index: 1; }
+  #evt_content .sec-0 {
+    margin-top: -2.93333rem;
+    padding-top: 0.01333rem;
+    z-index: 2; }
+    #evt_content .sec-0 div {
+      position: relative; }
+    #evt_content .sec-0 .hongbao {
+      width: 9.82667rem;
+      margin: 0 auto; }
+      #evt_content .sec-0 .hongbao .hb {
+        position: absolute;
+        width: 1.46667rem;
+        line-height: 0.53333rem;
+        text-align: center;
+        color: #fff;
+        bottom: 1.62667rem;
+        font-size: 0.29333rem; }
+      #evt_content .sec-0 .hongbao .hb1 {
+        left: 1.06667rem; }
+      #evt_content .sec-0 .hongbao .hb2 {
+        left: 4.18667rem; }
+      #evt_content .sec-0 .hongbao .hb3 {
+        left: 7.33333rem; }
+      #evt_content .sec-0 .hongbao .hb.on {
+        color: #a19d9d; }
+  #evt_content .sec-2 {
+    z-index: 1;
+    width: 9.6rem;
+    padding-top: 0.26667rem;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 0 5px 20px #efebe9; }
+    #evt_content .sec-2 .s-title {
+      position: relative;
+      width: 6.13333rem;
+      margin: 0.66667rem auto; }
+    #evt_content .sec-2 .item {
+      position: relative;
+      padding-bottom: 1.33333rem;
+      text-align: center; }
+    #evt_content .sec-2 .cake {
+      position: relative;
+      width: 8.85333rem;
+      margin: 0 auto;
+      z-index: 1; }
+    #evt_content .sec-2 .price {
+      position: relative;
+      width: 8.2rem;
+      margin: 0 auto;
+      z-index: 3; }
+      #evt_content .sec-2 .price .title {
+        position: relative;
+        width: 8.2rem;
+        margin: 0 auto; }
+      #evt_content .sec-2 .price .s-price {
+        position: relative;
+        width: 5.38667rem;
+        margin: 0.26667rem auto 0; }
+    #evt_content .sec-2 .select {
+      position: absolute;
+      top: 1.46667rem;
+      right: 1.06667rem;
+      z-index: 5; }
+      #evt_content .sec-2 .select ul li {
+        width: 0.8rem;
+        height: 0.8rem;
+        background: url("../images/gou-1-1.png") center no-repeat;
+        background-size: 80%;
+        margin-bottom: 0.33333rem;
+        display: block; }
+      #evt_content .sec-2 .select ul li.on {
+        background: url("../images/gou-1-2.png") center no-repeat;
+        background-size: 80%; }
+    #evt_content .sec-2 .item-2 .cake {
+      width: 8.10667rem;
+      left: 0.4rem;
+      right: auto; }
+    #evt_content .sec-2 .item-2 .select {
+      top: 1.6rem; }
+    #evt_content .sec-2 .item-2 ul li {
+      background: url("../images/gou-2-1.png") center no-repeat;
+      background-size: 80%;
+      margin-bottom: 0.33333rem; }
+    #evt_content .sec-2 .item-2 ul li.on {
+      background: url("../images/gou-2-2.png") center no-repeat;
+      background-size: 80%; }
+    #evt_content .sec-2 .item-2 .go-btn span {
+      background: url("../images/go-buy-2.png") center no-repeat;
+      background-size: 100%; }
+    #evt_content .sec-2 .item-3 .cake {
+      width: 7.90667rem; }
+    #evt_content .sec-2 .item-3 .select {
+      top: 1.46667rem; }
+    #evt_content .sec-2 .item-3 ul li {
+      background: url("../images/gou-3-1.png") center no-repeat;
+      background-size: 80%;
+      margin-bottom: 0.4rem; }
+    #evt_content .sec-2 .item-3 ul li.on {
+      background: url("../images/gou-3-2.png") center no-repeat;
+      background-size: 80%; }
+    #evt_content .sec-2 .item-3 .go-btn span {
+      background: url("../images/go-buy-3.png") center no-repeat;
+      background-size: 100%; }
+  #evt_content .sec-3 .more {
+    position: relative;
+    width: 3.4rem;
+    margin: 0.53333rem auto 0.8rem; }
+  #evt_content .go-btn {
+    position: relative;
+    width: 2.2rem;
+    margin: 0 auto;
+    padding: 0.33333rem 0 0; }
+    #evt_content .go-btn span {
+      display: block;
+      width: 2.2rem;
+      margin: 0 auto;
+      height: 0.56rem;
+      background: url("../images/go-buy-1.png") center no-repeat;
+      background-size: 100%; }
+  #evt_content .sec-footer {
+    background: #f1f9ff;
+    margin-top: 1.33333rem;
+    background-size: 100%;
+    position: relative;
+    padding-bottom: 0.26667rem;
+    z-index: 2; }
+    #evt_content .sec-footer .txt {
+      position: relative;
+      width: 9.06667rem;
+      padding: 0.93333rem 0 0.66667rem;
+      margin: 0 auto;
+      color: #000; }
+      #evt_content .sec-footer .txt h2 {
+        font-size: 0.4rem;
+        font-weight: normal; }
+      #evt_content .sec-footer .txt p {
+        font-size: 0.29333rem;
+        padding-left: 0.46667rem;
+        line-height: 0.53333rem;
+        text-indent: -0.46667rem;
+        margin: 0.06667rem 0; }
+        #evt_content .sec-footer .txt p span {
+          display: block;
+          text-indent: -0.14667rem;
+          margin: 0; }

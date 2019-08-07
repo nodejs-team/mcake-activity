@@ -32,6 +32,7 @@
     */
     function SelectShow(ele,arr,d,isShow,n,db) {
         var ponds = [];
+        var weight = [];
         var prices = [];
         var postids = [];
         var tips = [];
@@ -58,6 +59,7 @@
         /*只有1盒*/
         if(pondsingle<0){
             ponds = $(ele).data("pond").split(',');
+            weight = $(ele).data("weight").split(',');
             prices = $(ele).data("price");
             postids = $(ele).data("postid");
             tips = $(ele).data("tips");
@@ -93,14 +95,21 @@
             price = prices;
 
             var str = '';
-            str = '<li class="on" data-pond="'+ponds+'">'+ponds+'</li>';
+            str = '<li class="on" data-pond="'+ponds+'"><span>'+ponds+'<br><i>'+weight+'</i></span></li>';
             $bangshu.find("ul").append(str);
 
-
+            /*判断原价和现价是否一致，如果一致，原价不显示；d为1，说明不打折  db第二件是否半价*/
+            newPrice = (prices-disCount)*dis;
+            if(d==1 && db==0 && newPrice==prices){
+                $(".old-p").hide(0);
+            }else{
+                $(".old-p").show(0);
+            }
 
 
         }else{  /*多磅数选择*/
             ponds = $(ele).data("pond").split(',').map(function(str){ return str.replace(/(^\s*)|(\s*$)/g, "")});
+            weight = $(ele).data("weight").split(',').map(function(str){ return str.replace(/(^\s*)|(\s*$)/g, "")});
             prices = $(ele).data("price").split(',').map(function(str){ return str.replace(/(^\s*)|(\s*$)/g, "")});
             postids = $(ele).data("postid").split(',').map(function(str){ return str.replace(/(^\s*)|(\s*$)/g, "")});
             tips = $(ele).data("tips").split(',').map(function(str){ return str.replace(/(^\s*)|(\s*$)/g, "")});
@@ -129,6 +138,7 @@
             $(".postid").data('postid',postids[n]);
             $Select.find("li").eq(n).addClass("on").siblings().removeClass("on");
             $(".num").val(1);
+
             $(".tips").html(tips[n]);
             $(".time").html(time[n]);
             price = prices[n];
@@ -146,9 +156,9 @@
             for(var i=0; i<len; i++){
                 var str = '';
                 if(i==n){
-                    str = '<li class="on" data-pond="'+ponds[i]+'">'+ponds[i]+'</li>';
+                    str = '<li class="on" data-pond="'+ponds[i]+'"><span>'+ponds[i]+'<br><i>'+weight[i]+'</i></span></li>';
                 }else{
-                    str += '<li data-pond="'+ponds[i]+'">'+ponds[i]+'</li>';
+                    str += '<li data-pond="'+ponds[i]+'"><span>'+ponds[i]+'<br><i>'+weight[i]+'</i></span></li>';
                 }
 
                 $bangshu.find("ul").append(str);
@@ -185,7 +195,7 @@
                         $price.html(totaPrice.toFixed(2));
                         $newprice.html((newPrice).toFixed(2));
 
-                        $(".tips-n").html(tips);
+                        $(".tips").html(tips);
                         $(".time").html(time);
 
                         $(".go-buy,.go-car").attr('data-sku',sku[i]);

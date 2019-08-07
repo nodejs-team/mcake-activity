@@ -1,0 +1,70 @@
+
+步骤：
+
+
+1.正常页面中布局完成。
+
+2.引用方法：
+
+ <div class="sec sec-choujiang"><iframe class="cjIframe" id="choujiang" src="choujiang.html" scrolling="no" frameborder="0"></iframe></div>
+
+3.样式：
+
+ <link rel="stylesheet" href="styles/zhuanpan.css">
+    <link rel="stylesheet" href="styles/index.css">
+
+/*通iframe嵌套抽奖页面*/
+.cjIframe{ width: px2rem(750);  min-height: px2rem(700); }
+body{margin: 0;}
+img{width: 100%;}
+.hy-title{ width: px2rem(750); margin:px2rem(30) auto; }
+.choujiang{ width:px2rem(750);  margin: 0 auto;}
+
+
+3.给抽奖按钮添加方法：
+
+<div class="zp-btn" id="zp-start"  onclick="sendMessage()"><img src="images/zp-btn.png" alt=""></div>
+
+
+4.设置奖品  和  抽奖id
+
+
+5.抽奖效果
+
+
+6.抽奖结果弹窗。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

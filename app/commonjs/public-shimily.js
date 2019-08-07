@@ -76,10 +76,12 @@
         DialogTipShow:function () {
             this.$DialogCover.fadeIn(500);
             this.$DialogBox.fadeIn(500);
+            $("#evt_container").css({"position":"fixed"});
         },
         DialogTipHide:function () {
             this.$DialogCover.fadeOut(20);
             this.$DialogBox.fadeOut(20);
+            $("#evt_container").css({"position":"static"});
         },
         _Init:function () {
             var self = this;

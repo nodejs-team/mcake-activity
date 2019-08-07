@@ -14,7 +14,7 @@
   }
 
 }
-
+#evt_content *{ vertical-align: baseline!important;}  /*价格符号不对齐*/
 #evt_content{  background:#fffdf1;
   div{position:absolute;}
   img{width:100%;}

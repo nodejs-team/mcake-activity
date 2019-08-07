@@ -6,6 +6,9 @@ h2, h3, h4, b, i, strong, samp {
 i {
   font-size: 0.24rem; }
 
+#evt_content * {
+  vertical-align: baseline !important; }
+
 .buy-btns {
   position: absolute;
   bottom: 1.68rem;
@@ -57,19 +60,23 @@ i {
     overflow: hidden; }
   #evt_content .sec-1 {
     position: relative;
-    background: #ffdbd7;
-    padding: 0; }
+    padding: 0;
+    background: #ffdbd7; }
     #evt_content .sec-1 .time-1 {
       position: relative;
       width: 10rem; }
     #evt_content .sec-1 .lipin {
       position: relative;
-      width: 10rem; }
+      width: 10rem;
+      padding: 0;
+      margin: 0; }
   #evt_content .prolist ul li div {
     margin: 0; }
   #evt_content .sec-cakes {
     padding-top: 0.4rem;
-    background: #ffa49b; }
+    background: #ffa49b;
+    padding-bottom: 0.13333rem;
+    margin-top: -0.13333rem; }
     #evt_content .sec-cakes div {
       position: relative; }
     #evt_content .sec-cakes .moon {

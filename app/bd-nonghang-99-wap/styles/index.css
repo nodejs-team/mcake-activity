@@ -14,13 +14,13 @@
 
 #evt_content .section-top {
   position: relative;
-  height: 5.41333rem;
+  height: 4.74667rem;
   z-index: 2; }
   #evt_content .section-top > div {
     position: absolute; }
   #evt_content .section-top .top_icon {
     width: 4.06667rem;
-    top: 0.53333rem;
+    top: 1.33333rem;
     left: 0.74667rem; }
   #evt_content .section-top .top_btn {
     width: 2.17333rem;
@@ -31,7 +31,7 @@
     text-decoration: none; }
   #evt_content .section-top .top_quality {
     width: 1.25333rem;
-    top: 5rem;
+    top: 4.2rem;
     left: 4.41333rem; }
 
 #evt_content .section-main {
@@ -64,7 +64,7 @@
       #evt_content .section-main .act .plate span {
         position: absolute;
         display: block;
-        color: #c41700;
+        color: #df2946;
         font-size: 1.64rem;
         width: 1.33333rem;
         height: 1.33333rem;
@@ -87,7 +87,7 @@
       left: 4.18667rem; }
   #evt_content .section-main .act_nextgou {
     text-align: center;
-    color: #c41700;
+    color: #df2946;
     height: 2.66667rem; }
     #evt_content .section-main .act_nextgou h2 {
       font-size: 0.44rem; }
@@ -180,7 +180,7 @@
         float: left;
         text-decoration: none;
         margin: 0.06667rem 0 0 0;
-        background: #c41700;
+        background: #df2946;
         color: #ffffff;
         text-align: center;
         line-height: 0.72rem;
