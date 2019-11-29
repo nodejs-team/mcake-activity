@@ -126,7 +126,7 @@
             /*新版wap需要配置data*/
             var that = $(this);
             var eleCur = ele;
- console.log(ele);
+
             /*循环所有的attribute*/
             eleCur.each(function() {
                
@@ -234,7 +234,7 @@
 
             /*换购*/
             this.$els.find('.huangou').each(function () {
-                var a = false;
+                var a = true;
                 $(this).click(function () {
                     if(!a){
                         $(this).find(".icon").addClass("on");

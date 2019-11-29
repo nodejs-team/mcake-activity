@@ -16,7 +16,7 @@ acticle,footer,header,nav,section{display:block}
 .clear{padding:0;margin:0;clear:both}
 body{
     margin:0;
-    font-size:14px;-webkit-text-size-adjust:none;color:#767676;background:#f2f6f7;min-width:320px;
+    font-size:14px;-webkit-text-size-adjust:none;color:#767676;min-width:320px;
     font-family: "Microsoft Yahei", simhei, Arial;
 }
 .clearfix:after{

@@ -45,7 +45,7 @@
 
     var loadComplete = function () {
 
-
+        $(".floater").fadeIn(20);
 
 
 

@@ -1,0 +1,596 @@
+@charset "UTF-8";
+h1, h2, h3, h4 {
+  font-weight: normal; }
+
+b, strong, samp, i {
+  font-style: normal;
+  font-weight: normal; }
+
+i {
+  font-size: 0.4rem; }
+
+#evt_content.detail {
+  background: #ff804d url("../images/kj-bg.png") top repeat-x;
+  background-size: 7%; }
+
+#evt_content.me {
+  padding: 0.13333rem 0; }
+  #evt_content.me .sec-main {
+    padding-bottom: 0 !important; }
+
+#evt_content.detail {
+  padding: 0.13333rem 0; }
+
+html, body {
+  background: #ffe3e1 !important; }
+
+#evt_loading, #evt_container {
+  background: #ffe3e1; }
+
+#evt_content {
+  background: #ffe3e1;
+  background-size: 100%;
+  /*底部按钮*/
+  /*砍价详情页*/
+  /*砍价进行中*/
+  /*正在帮我砍价列表*/ }
+  #evt_content img {
+    width: 100%; }
+  #evt_content .sec {
+    position: relative; }
+  #evt_content .sec-top .b-time {
+    position: absolute;
+    top: 3.33333rem;
+    left: 0.73333rem;
+    z-index: 2;
+    font-size: 0.29333rem;
+    color: #fff; }
+  #evt_content .sec-top .banner {
+    position: relative;
+    width: 10rem;
+    z-index: 1; }
+  #evt_content .sec-main {
+    width: 9.46667rem;
+    margin: -0.66667rem auto 0;
+    padding-bottom: 1.33333rem;
+    z-index: 2; }
+    #evt_content .sec-main div {
+      position: relative; }
+    #evt_content .sec-main .kj-title {
+      background: #ffeded;
+      line-height: 1.33333rem;
+      text-align: center;
+      color: #ff6e6b;
+      font-size: 0.45333rem; }
+    #evt_content .sec-main .cakes {
+      position: relative; }
+      #evt_content .sec-main .cakes ul li {
+        position: relative;
+        width: 100%;
+        margin-bottom: 0.26667rem;
+        padding: 0;
+        background: #fff;
+        border-radius: 0.13333rem;
+        overflow: hidden; }
+        #evt_content .sec-main .cakes ul li .img {
+          float: left;
+          width: 2.49333rem;
+          margin: 0.46667rem; }
+        #evt_content .sec-main .cakes ul li .price {
+          position: relative;
+          float: left;
+          width: 6rem;
+          padding: 0.46667rem 0; }
+          #evt_content .sec-main .cakes ul li .price h2 {
+            font-size: 0.42667rem;
+            font-weight: normal;
+            color: #000000; }
+            #evt_content .sec-main .cakes ul li .price h2 b {
+              font-size: 0.24rem; }
+            #evt_content .sec-main .cakes ul li .price h2 span {
+              float: right;
+              color: #da7999;
+              font-size: 0.32rem;
+              margin-top: 0.13333rem; }
+          #evt_content .sec-main .cakes ul li .price strong {
+            display: block;
+            color: #f94f55;
+            font-weight: normal;
+            font-size: 0.26667rem; }
+          #evt_content .sec-main .cakes ul li .price p {
+            font-size: 0.29333rem;
+            color: #000;
+            line-height: 0.53333rem;
+            margin-top: 0.86667rem; }
+            #evt_content .sec-main .cakes ul li .price p span {
+              font-size: 0.53333rem;
+              color: #f94f55; }
+            #evt_content .sec-main .cakes ul li .price p s {
+              color: #949494; }
+            #evt_content .sec-main .cakes ul li .price p i {
+              color: #f94f55;
+              font-weight: normal;
+              font-size: 0.26667rem; }
+        #evt_content .sec-main .cakes ul li .go-pt {
+          position: absolute;
+          right: 0.26667rem;
+          bottom: 0.46667rem;
+          border-radius: 0.46667rem;
+          background: #ff7164; }
+          #evt_content .sec-main .cakes ul li .go-pt span {
+            display: block;
+            width: 1.73333rem;
+            font-size: 0.34667rem;
+            text-align: center;
+            padding: 0.10667rem 0;
+            line-height: 0.4rem;
+            color: #fff; }
+      #evt_content .sec-main .cakes ul .btns.kaituanBtn a {
+        color: #fff; }
+  #evt_content .btns {
+    position: fixed;
+    bottom: 0;
+    width: 9.73333rem;
+    left: 50%;
+    margin-left: -4.86667rem;
+    padding: 0;
+    z-index: 10; }
+    #evt_content .btns .home {
+      float: left;
+      width: 4.84rem;
+      height: 1.04rem;
+      background: url("../images/get-pp.png") no-repeat;
+      background-size: 100%;
+      text-align: center; }
+      #evt_content .btns .home span {
+        color: #fff;
+        font-size: 0.34667rem;
+        line-height: 0.86667rem; }
+    #evt_content .btns .my {
+      float: right;
+      width: 4.84rem;
+      height: 1.04rem;
+      background: url("../images/go-buy.png") no-repeat;
+      background-size: 100%;
+      text-align: center; }
+      #evt_content .btns .my span {
+        color: #fff;
+        font-size: 0.34667rem;
+        line-height: 0.86667rem; }
+  #evt_content .sec-detail-top {
+    width: 9.46667rem;
+    margin: 0 auto 0.26667rem;
+    padding-top: 0.26667rem; }
+    #evt_content .sec-detail-top .banner {
+      border-radius: 0.13333rem;
+      overflow: hidden; }
+    #evt_content .sec-detail-top .guize-btn {
+      top: 0.53333rem; }
+  #evt_content .backhome {
+    position: relative;
+    width: 9.46667rem;
+    height: 0.90667rem;
+    background: #fff7f6;
+    z-index: 5;
+    border-radius: 0.13333rem;
+    margin: 0.13333rem auto; }
+    #evt_content .backhome img {
+      width: 2.8rem; }
+  #evt_content .kanjia {
+    background: #fff;
+    color: #000;
+    padding: 0.26667rem 0.53333rem;
+    border-radius: 0.13333rem;
+    margin: 0.26667rem 0.26667rem 0;
+    position: relative; }
+    #evt_content .kanjia .last-time {
+      text-align: center;
+      margin-top: 0.4rem; }
+    #evt_content .kanjia .kjtitle {
+      display: flex;
+      width: 90%;
+      margin: 0.4rem auto;
+      flex-direction: row; }
+      #evt_content .kanjia .kjtitle .line {
+        border-bottom: #c4c4c4 1px solid;
+        flex: 1;
+        height: 1px;
+        position: relative;
+        top: 0.33333rem; }
+      #evt_content .kanjia .kjtitle .text {
+        flex: 1;
+        padding: 0 0.26667rem;
+        text-align: center;
+        font-size: 0.45333rem; }
+    #evt_content .kanjia .kj-percent {
+      /*砍价中*/ }
+      #evt_content .kanjia .kj-percent .piao-num {
+        width: 8.4rem;
+        padding-bottom: 0.34667rem;
+        margin: 0; }
+        #evt_content .kanjia .kj-percent .piao-num h3 {
+          color: #fd655b;
+          font-size: 0.32rem;
+          text-align: left;
+          line-height: 0.66667rem; }
+          #evt_content .kanjia .kj-percent .piao-num h3 .k-price {
+            float: right;
+            color: #000;
+            font-size: 0.4rem; }
+        #evt_content .kanjia .kj-percent .piao-num .percent-wrap {
+          position: relative;
+          width: 8.4rem;
+          height: 0.33333rem;
+          background: url("../images/percent-1.png");
+          background-size: 100%;
+          border-radius: 0.33333rem; }
+          #evt_content .kanjia .kj-percent .piao-num .percent-wrap .percent {
+            z-index: 1;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 0.33333rem;
+            background: #ff5a64;
+            background-size: cover;
+            border-radius: 0.33333rem;
+            max-width: 8.4rem; }
+            #evt_content .kanjia .kj-percent .piao-num .percent-wrap .percent span {
+              position: relative;
+              float: right;
+              margin-top: -0.06667rem;
+              display: block;
+              width: 1.44rem;
+              height: 0.50667rem;
+              font-size: 0.21333rem;
+              background: #ffca56;
+              color: #4f3601;
+              border-radius: 0.50667rem;
+              text-align: center;
+              line-height: 0.50667rem; }
+            #evt_content .kanjia .kj-percent .piao-num .percent-wrap .percent i {
+              font-size: 0.21333rem; }
+          #evt_content .kanjia .kj-percent .piao-num .percent-wrap .ptxt, #evt_content .kanjia .kj-percent .piao-num .percent-wrap .pold {
+            position: absolute;
+            top: 0.53333rem;
+            right: 0;
+            font-size: 0.29333rem;
+            color: #ff4335; }
+            #evt_content .kanjia .kj-percent .piao-num .percent-wrap .ptxt i, #evt_content .kanjia .kj-percent .piao-num .percent-wrap .pold i {
+              font-style: normal;
+              font-size: 0.29333rem; }
+          #evt_content .kanjia .kj-percent .piao-num .percent-wrap .pold {
+            left: 0;
+            color: #4f4f4f; }
+  #evt_content .kanBar {
+    width: 8.66667rem;
+    margin: 0.8rem auto 0.26667rem; }
+    #evt_content .kanBar .go-home, #evt_content .kanBar .go-buy, #evt_content .kanBar .kan-btn, #evt_content .kanBar .share-btn, #evt_content .kanBar .bang-kan {
+      width: 4.24rem;
+      height: 0.92rem;
+      background: url("../images/get-pp.png");
+      background-size: 100%;
+      float: left;
+      text-align: center; }
+      #evt_content .kanBar .go-home span, #evt_content .kanBar .go-buy span, #evt_content .kanBar .kan-btn span, #evt_content .kanBar .share-btn span, #evt_content .kanBar .bang-kan span {
+        color: #fff;
+        font-size: 0.34667rem;
+        line-height: 0.8rem; }
+    #evt_content .kanBar .go-buy {
+      background: url("../images/go-buy.png");
+      background-size: 100%;
+      float: right; }
+    #evt_content .kanBar .kan-btn {
+      background: url("../images/go-buy.png");
+      background-size: 100%;
+      float: right; }
+    #evt_content .kanBar .share-btn {
+      background: url("../images/get-pp.png");
+      background-size: 100%;
+      float: right; }
+    #evt_content .kanBar .bang-kan {
+      background: url("../images/get-pp.png");
+      background-size: 100%;
+      float: right; }
+  #evt_content .sec-kanjia .kjtitle {
+    display: flex;
+    width: 80%;
+    margin: 0.4rem auto;
+    flex-direction: row; }
+    #evt_content .sec-kanjia .kjtitle .line {
+      border-bottom: #c4c4c4 1px solid;
+      flex: 1;
+      height: 1px;
+      position: relative;
+      top: 0.33333rem; }
+    #evt_content .sec-kanjia .kjtitle .text {
+      flex: 1;
+      padding: 0 0.26667rem;
+      text-align: center;
+      font-size: 0.45333rem; }
+  #evt_content .sec-kanjia .kanjia-list {
+    color: #000;
+    background: #fff;
+    padding: 0.26667rem 0.53333rem;
+    border-radius: 0.13333rem;
+    margin: 0.26667rem 0.26667rem 0; }
+    #evt_content .sec-kanjia .kanjia-list h2 {
+      font-size: 0.34667rem;
+      margin-bottom: 0.26667rem;
+      line-height: 0.66667rem; }
+      #evt_content .sec-kanjia .kanjia-list h2 span {
+        float: right;
+        color: #ef9279; }
+    #evt_content .sec-kanjia .kanjia-list .list {
+      font-size: 0.29333rem;
+      max-height: 5.33333rem;
+      overflow-y: scroll; }
+      #evt_content .sec-kanjia .kanjia-list .list ul li {
+        display: flex;
+        padding: 0.26667rem 0;
+        border-bottom: #dedede dashed 1px;
+        /*.nickname{flex: 2;  display: flex; align-items: center; }*/ }
+        #evt_content .sec-kanjia .kanjia-list .list ul li .useface {
+          width: 1.33333rem;
+          height: 1.33333rem;
+          border-radius: 0.66667rem;
+          margin: 0 0.26667rem 0 0; }
+        #evt_content .sec-kanjia .kanjia-list .list ul li .nickname {
+          flex: 2;
+          text-align: left;
+          display: flex;
+          justify-content: center;
+          flex-direction: column; }
+          #evt_content .sec-kanjia .kanjia-list .list ul li .nickname span {
+            line-height: 0.4rem;
+            float: left; }
+        #evt_content .sec-kanjia .kanjia-list .list ul li .center {
+          flex: 2;
+          text-align: right;
+          display: flex;
+          justify-content: center;
+          flex-direction: column; }
+          #evt_content .sec-kanjia .kanjia-list .list ul li .center span {
+            font-size: 0.29333rem;
+            line-height: 0.32rem;
+            color: #ff2f43; }
+  #evt_content .sec-footer {
+    position: relative;
+    padding-top: 0.26667rem;
+    padding-bottom: 0.4rem;
+    z-index: 1; }
+    #evt_content .sec-footer .detail {
+      position: relative;
+      width: 9.46667rem;
+      margin: 0 auto; }
+
+.guize-btn {
+  position: absolute;
+  top: 0.26667rem;
+  right: 0.26667rem;
+  width: 1.6rem;
+  height: 0.53333rem;
+  background: url("../images/guize-btn.png");
+  background-size: 100%;
+  z-index: 5; }
+
+/*规则彈窗*/
+.Dialogbg-guize {
+  background-color: #000;
+  height: 100%;
+  left: 0;
+  opacity: 0.8;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 200;
+  display: none;
+  -moz-opacity: .7;
+  filter: alpha(opacity=70); }
+
+.Dialog-guize {
+  box-shadow: 0 0 0 #999;
+  font-size: 0.18667rem;
+  width: 8rem;
+  height: auto !important;
+  padding: 0.01333rem;
+  top: 50%;
+  left: 50%;
+  margin: -6.4rem auto 0 -4rem !important;
+  position: fixed;
+  z-index: 99999;
+  display: none; }
+  .Dialog-guize .closes {
+    width: 0.66667rem;
+    height: 0.66667rem;
+    position: absolute;
+    top: 0.4rem;
+    right: 0.53333rem;
+    cursor: pointer;
+    z-index: 8;
+    background: url("../images/close2.png") no-repeat;
+    background-size: 100%; }
+  .Dialog-guize .quan {
+    position: relative;
+    padding: 0;
+    border-radius: 0.13333rem;
+    overflow: hidden;
+    background: #fff; }
+    .Dialog-guize .quan .txt {
+      position: relative;
+      padding: 0.4rem 0.53333rem;
+      margin: 0.26667rem auto;
+      color: #8d8d8d;
+      background: #fff;
+      border-radius: 0.13333rem; }
+      .Dialog-guize .quan .txt h2 {
+        font-size: 0.4rem;
+        font-weight: normal;
+        color: #000; }
+      .Dialog-guize .quan .txt p {
+        font-size: 0.34667rem;
+        padding-left: 0.6rem;
+        line-height: 0.48rem;
+        text-indent: -0.53333rem;
+        margin: 0.13333rem 0; }
+  .Dialog-guize .quan-2 .go-use {
+    bottom: 1.33333rem; }
+
+#evt_content.me .sec-main {
+  margin-top: 0; }
+
+#evt_content.me .kanjia {
+  padding: 0;
+  margin: 0.26667rem 0.46667rem 0; }
+
+#evt_content.me .kj-title {
+  background: #fff7f6;
+  color: #000;
+  text-align: left;
+  padding-left: 0.46667rem; }
+
+/*.line{ border-bottom: #aeaeae px2rem(1) solid; height: 1px; margin: px2rem(10) auto;}*/
+.buy-btn {
+  position: relative;
+  width: 100%;
+  padding: 0 0.66667rem;
+  display: flex;
+  text-align: center;
+  font-size: 0.32rem; }
+  .buy-btn .btns {
+    flex: 1;
+    border: #b2b2b2 1px solid;
+    border-radius: 0.46667rem;
+    color: #000; }
+    .buy-btn .btns span {
+      display: block;
+      line-height: 0.93333rem; }
+  .buy-btn .btns.shareBtn {
+    margin-right: 0.13333rem; }
+  .buy-btn .btns.kaituanBtn {
+    margin-left: 0.13333rem;
+    background: #da7999;
+    border: none;
+    color: #fff; }
+
+.overTime {
+  line-height: 0.66667rem;
+  font-size: 0.32rem;
+  margin: 0.53333rem auto; }
+  .overTime b {
+    float: right;
+    font-size: 0.53333rem;
+    color: #ff1233; }
+
+.pintuanBar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 0;
+  display: flex;
+  z-index: 10;
+  background: #fff;
+  max-width: 10rem; }
+  .pintuanBar .share {
+    flex: 3;
+    background: #ffc2b5;
+    text-align: center;
+    color: #fff; }
+    .pintuanBar .share span {
+      width: 100%;
+      line-height: 1.22667rem;
+      font-size: 0.4rem; }
+  .pintuanBar .tuanbtn {
+    flex: 3;
+    background: #ff8c74;
+    text-align: center;
+    color: #fff; }
+    .pintuanBar .tuanbtn span {
+      width: 100%;
+      line-height: 1.22667rem;
+      font-size: 0.4rem; }
+  .pintuanBar .tuanbtn.none {
+    background: #ccc; }
+
+/*弹窗*/
+.Dialog-base-box {
+  margin-top: -2.66667rem;
+  background: #fff;
+  overflow: hidden; }
+
+.Dialog-base-box .box-wrap {
+  display: block;
+  padding: 0; }
+  .Dialog-base-box .box-wrap .box-item-header {
+    padding: 0; }
+    .Dialog-base-box .box-wrap .box-item-header img {
+      width: 100%; }
+  .Dialog-base-box .box-wrap .box-item-footer {
+    padding: 1.33333rem 0.53333rem; }
+    .Dialog-base-box .box-wrap .box-item-footer .go-share {
+      width: 2.74667rem;
+      height: 0.64rem;
+      margin: 0 auto;
+      background: url("../images/share-btn.png");
+      background-size: 100%; }
+    .Dialog-base-box .box-wrap .box-item-footer p {
+      font-size: 0.37333rem;
+      line-height: 0.53333rem;
+      margin-bottom: 0.4rem;
+      color: #000; }
+
+.Dialog-base-box .closes {
+  top: 0.13333rem;
+  right: 0.13333rem;
+  width: 0.53333rem;
+  height: 0.53333rem;
+  background: url("../images/close.png") center no-repeat;
+  background-size: 70%; }
+
+.Dialog-share {
+  background: url("../images/share.png") no-repeat;
+  background-size: 100%; }
+
+.Dialog-tuaning-cover {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #000;
+  height: 100%;
+  opacity: 0.85;
+  z-index: 250;
+  display: none; }
+
+.Dialog-tuaning {
+  position: fixed;
+  background: #fff;
+  font-size: 0.18667rem;
+  bottom: 0;
+  left: 50%;
+  padding: 0.26667rem;
+  margin-left: -5rem;
+  display: none;
+  z-index: 99999;
+  border-radius: 0.26667rem 0.26667rem 0 0; }
+  .Dialog-tuaning .tuaning {
+    position: relative;
+    border: none;
+    width: 9.46667rem; }
+    .Dialog-tuaning .tuaning .list {
+      font-size: 0.29333rem;
+      overflow-y: scroll;
+      min-height: 1.33333rem;
+      max-height: 9.33333rem; }
+      .Dialog-tuaning .tuaning .list li {
+        border-bottom: #dedede 1px solid; }
+
+.Dialog-tuaning .closes {
+  position: absolute;
+  top: 0.13333rem;
+  left: auto;
+  right: 0.13333rem;
+  width: 0.53333rem;
+  height: 0.53333rem;
+  background: url("../images/close.png") center no-repeat;
+  background-size: 70%; }

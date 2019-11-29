@@ -67,6 +67,16 @@
       .price{top: px2rem(50); left:px2rem(10); z-index: 2; }
       .disc{ left:0; }
     }
+    .row7{
+      .cake{width:px2rem(500); top:0; left:px2rem(-50); z-index: 1;}
+      .price{top: px2rem(50); left: auto; right:px2rem(10);}
+      .disc{ left:px2rem(20); }
+    }
+    .row8{
+      .cake{width:px2rem(500); top:px2rem(20); right:0; z-index: 1;}
+      .price{top: px2rem(50); left:px2rem(10); z-index: 2; }
+      .disc{ left:0; }
+    }
 
 
   }
@@ -108,6 +118,37 @@
   }
 
 
+}
+
+#evt_content.page3{
+  .sec-top{ height: px2rem(601); background: url("../images/banner3-wap.png"); background-size: 100%;}
+  .row1{
+    .cake{width:px2rem(480); top:px2rem(10); left:0; z-index: 1;}
+  }
+  .row2{
+    .cake{width:px2rem(400); right: 0;}
+  }
+  .row3{
+    .cake{width:px2rem(450); top:px2rem(-20);}
+  }
+  .row4{
+    .cake{width:px2rem(500); right: 0;}
+  }
+  .row5{
+    .cake{width:px2rem(500); top:0; }
+  }
+  .row6{
+    .cake{width:px2rem(500); }
+  }
+  .row7{
+    .cake{width:px2rem(480); top:px2rem(-20);}
+  }
+  .row8{
+    .cake{width:px2rem(480);}
+  }
+  .bangshu {position: relative; width: 100%; color: #8b462a; font-size:px2rem(26); line-height:px2rem(50); text-align: center;
+    b{font-size: px2rem(18);}
+  }
 }
 
 

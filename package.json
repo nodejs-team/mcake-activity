@@ -34,7 +34,7 @@
     "yargs": "^6.4.0"
   },
   "buildConfig": {
-    "projectName": "bd-guangfa",
+    "projectName": "yaoyaole",
     "basePath-edm": "http://edm.mcake.com/fangli/2019-wap/",
     "basePath": "https://act.mcake.com/fangli/2019/wap/",
     "tinypngKey": "Lv4IxKbb9SJ6M3OG-lyEA86akPCQBmqE",

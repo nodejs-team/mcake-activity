@@ -21,14 +21,15 @@
       font-size: 0.34667rem;
       color: #feebcf;
       text-align: center;
-      letter-spacing: 0.04rem; }
+      letter-spacing: 0.04rem;
+      display: none; }
     #evt_content .sec-top .goubtn {
       position: absolute;
-      bottom: 0.33333rem;
+      bottom: 0.26667rem;
       left: 50%;
-      margin-left: -1.56rem;
-      width: 3.12rem;
-      height: 0.88rem;
+      margin-left: -2.34667rem;
+      width: 4.69333rem;
+      height: 1.2rem;
       background: url("../images/btn.png");
       background-size: 100%; }
   #evt_content .sec-0 {
@@ -42,7 +43,7 @@
     background: #fff4e7;
     position: relative;
     margin-top: 1.33333rem;
-    padding-bottom: 0.66667rem;
+    padding-bottom: 1.33333rem;
     z-index: 2; }
     #evt_content .sec-footer .txt {
       position: relative;
@@ -66,72 +67,16 @@
           padding-left: 0.13333rem;
           text-indent: -0.13333rem; }
 
-.swiper-container {
-  position: relative !important;
-  width: 5.46667rem;
-  height: 5.02667rem;
-  margin-left: auto;
-  margin-right: auto;
-  overflow: hidden; }
-
-.swiper-slide {
-  text-align: center;
-  width: 105%;
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center; }
-
-.swiper-slide img {
-  width: 100%; }
-
-.swiper-pagination {
-  width: 100%;
-  position: absolute !important;
-  bottom: 0.13333rem !important; }
-
-.swiper-pagination-bullet {
-  margin: 0 0.06667rem !important;
-  background: #fff !important;
-  opacity: 1 !important; }
-
-.swiper-pagination-bullet.swiper-pagination-bullet-active {
-  background: #626262 !important; }
-
 /*浮动*/
 .floater {
   position: fixed;
-  width: 1.93333rem;
-  height: 1.93333rem;
-  bottom: 0.26667rem;
-  right: 0.13333rem;
+  width: 9.52rem;
+  height: 1.2rem;
+  bottom: -0.13333rem;
+  left: 50%;
+  margin-left: -4.76rem;
   z-index: 11;
   cursor: pointer;
   display: none; }
   .floater img {
     width: 100%; }
-  .floater .tips {
-    position: absolute;
-    width: 0.66667rem;
-    height: 0.66667rem;
-    right: -0.06667rem;
-    top: -0.06667rem;
-    border-radius: 50%;
-    background: url("../images/tips.png") center no-repeat;
-    background-size: 100%;
-    text-align: center;
-    z-index: 12; }
-    .floater .tips span {
-      display: block;
-      font-size: 0.26667rem;
-      color: #fff;
-      line-height: 0.66667rem; }

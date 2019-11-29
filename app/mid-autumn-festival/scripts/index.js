@@ -74,18 +74,23 @@
         });
 
         /*分时间显示*/
-        var myDate = new Date();
-      
+        var vDate = new Date();
 
+        var myDate = vDate.getFullYear() + '-' + (vDate.getMonth() + 1) + '-' + vDate.getDate(); /*解决安卓浏览器时间显示问题*/
 
         /*8.16日后显示礼品卡兑换*/
-        if(myDate.toLocaleDateString()>='2019/8/16'){
+        if(myDate>='2019-8-16'){
+
             $(".act-end").fadeOut();
             $(".act-start").fadeIn();
+        }else{
+
+            $(".act-end").fadeIn();
+            $(".act-start").fadeOut();
         }
 
         /*9.1日后显示月饼原价*/
-        if(myDate.toLocaleDateString()>='2019/9/1'){
+        if(myDate>='2019-9-1'){
             $(".new-price1").html("258");
             $(".new-price2").html("338");
         }

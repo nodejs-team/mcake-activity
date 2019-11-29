@@ -1,5 +1,5 @@
 /**
- * Created by shimily on 2018/8/30.
+ * Created by shimily on 2019/7/23.  9月会员日
  */
 ;(function($){
 
