@@ -1,0 +1,72 @@
+@function px2rem($n) {
+  @return ($n * 10 / 750) * 1rem; //设计稿一般都是750宽
+}
+*{ vertical-align: baseline !important;}  /*价格符号不对齐*/
+#app, body, html,.container-wrap, .evt_content{background:url("../images/qs-bg.png") repeat-y !important; background-size: 100%; }
+#evt_content{background:url("../images/qs-bg.png") repeat-y !important; background-size: 100%;  padding-top: 1px;
+  img{width:100%; display: block;}
+  .sec{position: relative; }
+
+  .hy-title{ width: px2rem(750); margin:px2rem(50) auto 0; }
+
+  .sec-qingshu{ position: relative; z-index: 2; width: px2rem(750); padding-top: 1px;
+    .content{ position: absolute; left: 50%; top:px2rem(280); width:px2rem(637);  margin-left: px2rem(-316); background: url("../images/qingshu.png"); background-size: 100%; height: 0; overflow: hidden; text-align: center;
+      .data-time{position: absolute; top:px2rem(71); left:px2rem(230); line-height:px2rem(38); font-size:px2rem(18); color: #958eb0; }
+      .writer{position: absolute; top:px2rem(600); right:px2rem(120); line-height:px2rem(38); font-size:px2rem(18); color: #958eb0; }
+
+      textarea{margin: px2rem(265) auto px2rem(200); width: px2rem(403); height: px2rem(290); line-height: px2rem(58); color: #9d96a4; font-size:px2rem(22);  border:none;  background:none;  text-align: left; }
+      textarea:disabled{-webkit-text-fill-color: #9d96a4;/*是用来做填充色使用的*/
+        -webkit-opacity: 1;
+        color: #9d96a4;}
+    }
+    .content.default{background: url("../images/qingshu-default.png"); background-size: 100%; }
+    .content.open{height: px2rem(804); transition: all 1s;}
+    .qs-btn{position: absolute; bottom: px2rem(50); left: 50%; width: px2rem(447); margin-left: px2rem(-223.5); opacity: 0;}
+    .qs-btn.open{opacity: 1; transition: all 1s;}
+  }
+
+  .sec-test{
+
+  }
+}
+
+
+/*彈窗*/
+.Dialogbg{  background-color: #000;  height: 100%;  left: 0;   position: fixed;  top: 0;  width: 100%; z-index: 200; display: none; opacity: 0.85; -moz-opacity:.85;filter:alpha(opacity=85); }
+
+.DialogBox{  box-shadow: 0 0 0 #999;  font-size:px2rem(14);  width:px2rem(600); height:auto !important; padding:px2rem(1); top: 50%; left: 50%;  margin:px2rem(-350) auto 0 px2rem(-300) !important;  position: fixed; z-index: 99999; display: none;
+  .closes{ width:px2rem(60); height:px2rem(60); position: absolute; top:px2rem(10); right:px2rem(10); cursor: pointer; z-index: 8; background: url("../images/close.png") center no-repeat; background-size: 60%;}
+  .quan{position: relative; padding:0; border-radius:px2rem(10);
+    img{margin: 0 auto; width: 100%;}
+    .txt{ position: absolute; width:px2rem(354); height: px2rem(345); text-align: center; top:px2rem(140); left: 50%; margin-left:px2rem(-180); letter-spacing: px2rem(3); vertical-align: baseline !important;
+       .cneter{position: relative; width: 100%; height: 100%;
+         .iphone,.code,.pic-code{position: absolute; top: px2rem(48); width: 100%;height: px2rem(50); overflow: hidden; }
+         input{width: 100%; height: 100%; line-height: px2rem(50); font-size: px2rem(26); border:none; background: none;outline: none; border-radius: px2rem(50);}
+
+         .pic-code{top: px2rem(129);}
+         .pic-yzm{position: absolute;  top: px2rem(129); right:px2rem(-10); width: px2rem(128); height: px2rem(50); background: #d8ccea; color: #5a4a73; text-align: center; border-radius:px2rem(50); font-size: px2rem(18);
+           img{width: 100%; height: 100%;}
+         }
+
+         .code{top: px2rem(212); }
+         .yzm{position: absolute; top: px2rem(211); right:px2rem(-10); width: px2rem(170); height: px2rem(50); background: #d8ccea; color: #5a4a73; text-align: center; border-radius:px2rem(50); font-size: px2rem(18);
+          input{color: #5a4a73;}
+         }
+
+         .get-letter{position: absolute; bottom: 0; width:px2rem(350)}
+
+       }
+
+      .go-use{ position: absolute; bottom:0; left: 50%; width:px2rem(340); margin-left: px2rem(-170); line-height:px2rem(70); cursor: pointer; background: #bfaed7; color: #fff; border-radius:px2rem(43); text-align: center; font-size:px2rem(30);
+      }
+    }
+
+  }
+  .quan-1{
+    .txt{  position: absolute; width:px2rem(520); margin-left: px2rem(-260); height: px2rem(240); top:px2rem(450);
+      .iphone{ top: px2rem(28) !important; height: px2rem(80) !important;}
+      .iphone input{ font-size: px2rem(30); height: 100%; line-height: px2rem(80) !important;}
+    }
+  }
+}
+

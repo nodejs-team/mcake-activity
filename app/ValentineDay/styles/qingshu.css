@@ -1,0 +1,216 @@
+@charset "UTF-8";
+* {
+  vertical-align: baseline !important; }
+
+/*价格符号不对齐*/
+#app, body, html, .container-wrap, .evt_content {
+  background: url("../images/qs-bg.png") repeat-y !important;
+  background-size: 100%; }
+
+#evt_content {
+  background: url("../images/qs-bg.png") repeat-y !important;
+  background-size: 100%;
+  padding-top: 1px; }
+  #evt_content img {
+    width: 100%;
+    display: block; }
+  #evt_content .sec {
+    position: relative; }
+  #evt_content .hy-title {
+    width: 10rem;
+    margin: 0.66667rem auto 0; }
+  #evt_content .sec-qingshu {
+    position: relative;
+    z-index: 2;
+    width: 10rem;
+    padding-top: 1px; }
+    #evt_content .sec-qingshu .content {
+      position: absolute;
+      left: 50%;
+      top: 3.73333rem;
+      width: 8.49333rem;
+      margin-left: -4.21333rem;
+      background: url("../images/qingshu.png");
+      background-size: 100%;
+      height: 0;
+      overflow: hidden;
+      text-align: center; }
+      #evt_content .sec-qingshu .content .data-time {
+        position: absolute;
+        top: 0.94667rem;
+        left: 3.06667rem;
+        line-height: 0.50667rem;
+        font-size: 0.24rem;
+        color: #958eb0; }
+      #evt_content .sec-qingshu .content .writer {
+        position: absolute;
+        top: 8rem;
+        right: 1.6rem;
+        line-height: 0.50667rem;
+        font-size: 0.24rem;
+        color: #958eb0; }
+      #evt_content .sec-qingshu .content textarea {
+        margin: 3.53333rem auto 2.66667rem;
+        width: 5.37333rem;
+        height: 3.86667rem;
+        line-height: 0.77333rem;
+        color: #9d96a4;
+        font-size: 0.29333rem;
+        border: none;
+        background: none;
+        text-align: left; }
+      #evt_content .sec-qingshu .content textarea:disabled {
+        -webkit-text-fill-color: #9d96a4;
+        /*是用来做填充色使用的*/
+        -webkit-opacity: 1;
+        color: #9d96a4; }
+    #evt_content .sec-qingshu .content.default {
+      background: url("../images/qingshu-default.png");
+      background-size: 100%; }
+    #evt_content .sec-qingshu .content.open {
+      height: 10.72rem;
+      transition: all 1s; }
+    #evt_content .sec-qingshu .qs-btn {
+      position: absolute;
+      bottom: 0.66667rem;
+      left: 50%;
+      width: 5.96rem;
+      margin-left: -2.98rem;
+      opacity: 0; }
+    #evt_content .sec-qingshu .qs-btn.open {
+      opacity: 1;
+      transition: all 1s; }
+
+/*彈窗*/
+.Dialogbg {
+  background-color: #000;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 200;
+  display: none;
+  opacity: 0.85;
+  -moz-opacity: .85;
+  filter: alpha(opacity=85); }
+
+.DialogBox {
+  box-shadow: 0 0 0 #999;
+  font-size: 0.18667rem;
+  width: 8rem;
+  height: auto !important;
+  padding: 0.01333rem;
+  top: 50%;
+  left: 50%;
+  margin: -4.66667rem auto 0 -4rem !important;
+  position: fixed;
+  z-index: 99999;
+  display: none; }
+  .DialogBox .closes {
+    width: 0.8rem;
+    height: 0.8rem;
+    position: absolute;
+    top: 0.13333rem;
+    right: 0.13333rem;
+    cursor: pointer;
+    z-index: 8;
+    background: url("../images/close.png") center no-repeat;
+    background-size: 60%; }
+  .DialogBox .quan {
+    position: relative;
+    padding: 0;
+    border-radius: 0.13333rem; }
+    .DialogBox .quan img {
+      margin: 0 auto;
+      width: 100%; }
+    .DialogBox .quan .txt {
+      position: absolute;
+      width: 4.72rem;
+      height: 4.6rem;
+      text-align: center;
+      top: 1.86667rem;
+      left: 50%;
+      margin-left: -2.4rem;
+      letter-spacing: 0.04rem;
+      vertical-align: baseline !important; }
+      .DialogBox .quan .txt .cneter {
+        position: relative;
+        width: 100%;
+        height: 100%; }
+        .DialogBox .quan .txt .cneter .iphone, .DialogBox .quan .txt .cneter .code, .DialogBox .quan .txt .cneter .pic-code {
+          position: absolute;
+          top: 0.64rem;
+          width: 100%;
+          height: 0.66667rem;
+          overflow: hidden; }
+        .DialogBox .quan .txt .cneter input {
+          width: 100%;
+          height: 100%;
+          line-height: 0.66667rem;
+          font-size: 0.34667rem;
+          border: none;
+          background: none;
+          outline: none;
+          border-radius: 0.66667rem; }
+        .DialogBox .quan .txt .cneter .pic-code {
+          top: 1.72rem; }
+        .DialogBox .quan .txt .cneter .pic-yzm {
+          position: absolute;
+          top: 1.72rem;
+          right: -0.13333rem;
+          width: 1.70667rem;
+          height: 0.66667rem;
+          background: #d8ccea;
+          color: #5a4a73;
+          text-align: center;
+          border-radius: 0.66667rem;
+          font-size: 0.24rem; }
+          .DialogBox .quan .txt .cneter .pic-yzm img {
+            width: 100%;
+            height: 100%; }
+        .DialogBox .quan .txt .cneter .code {
+          top: 2.82667rem; }
+        .DialogBox .quan .txt .cneter .yzm {
+          position: absolute;
+          top: 2.81333rem;
+          right: -0.13333rem;
+          width: 2.26667rem;
+          height: 0.66667rem;
+          background: #d8ccea;
+          color: #5a4a73;
+          text-align: center;
+          border-radius: 0.66667rem;
+          font-size: 0.24rem; }
+          .DialogBox .quan .txt .cneter .yzm input {
+            color: #5a4a73; }
+        .DialogBox .quan .txt .cneter .get-letter {
+          position: absolute;
+          bottom: 0;
+          width: 4.66667rem; }
+      .DialogBox .quan .txt .go-use {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 4.53333rem;
+        margin-left: -2.26667rem;
+        line-height: 0.93333rem;
+        cursor: pointer;
+        background: #bfaed7;
+        color: #fff;
+        border-radius: 0.57333rem;
+        text-align: center;
+        font-size: 0.4rem; }
+  .DialogBox .quan-1 .txt {
+    position: absolute;
+    width: 6.93333rem;
+    margin-left: -3.46667rem;
+    height: 3.2rem;
+    top: 6rem; }
+    .DialogBox .quan-1 .txt .iphone {
+      top: 0.37333rem !important;
+      height: 1.06667rem !important; }
+    .DialogBox .quan-1 .txt .iphone input {
+      font-size: 0.4rem;
+      height: 100%;
+      line-height: 1.06667rem !important; }

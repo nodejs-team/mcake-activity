@@ -1,0 +1,169 @@
+@charset "UTF-8";
+* {
+  vertical-align: baseline !important; }
+
+/*价格符号不对齐*/
+#evt_content {
+  background: #f0e5dc;
+  /*价格计算【通用】*/ }
+  #evt_content img {
+    width: 100%;
+    display: block; }
+  #evt_content .sec {
+    position: relative; }
+  #evt_content .hy-title {
+    width: 10rem;
+    margin: 0.66667rem auto 0.66667rem; }
+  #evt_content .sec-main {
+    padding: 1px 0 0.26667rem;
+    /*刮刮卡*/ }
+    #evt_content .sec-main .guaguaka {
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 4.02667rem;
+      height: 0.8rem;
+      z-index: 90; }
+    #evt_content .sec-main .cover {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: #fff;
+      width: 100%;
+      height: 100%;
+      height: 0.8rem;
+      z-index: 2; }
+    #evt_content .sec-main .youhuiquan {
+      background: #fff;
+      width: 100%;
+      height: 100%;
+      font-size: 0.30667rem;
+      text-align: center;
+      line-height: 0.8rem;
+      color: #cc2924;
+      letter-spacing: 2px;
+      z-index: 1; }
+    #evt_content .sec-main .shou {
+      position: absolute;
+      bottom: -0.26667rem;
+      right: 10px;
+      width: 0.48rem;
+      height: 0.73333rem;
+      background: url("../images/shou.png");
+      background-size: 100%;
+      z-index: 5; }
+    #evt_content .sec-main .row {
+      position: relative; }
+      #evt_content .sec-main .row .cake {
+        position: absolute; }
+      #evt_content .sec-main .row .price {
+        position: absolute; }
+    #evt_content .sec-main .row1 {
+      height: 7.06667rem; }
+      #evt_content .sec-main .row1 .cake {
+        width: 6rem;
+        top: 0;
+        left: -0.66667rem;
+        z-index: 1; }
+      #evt_content .sec-main .row1 .price {
+        top: 0.4rem;
+        left: auto;
+        right: 0; }
+    #evt_content .sec-main .row2 {
+      height: 7.06667rem; }
+      #evt_content .sec-main .row2 .cake {
+        width: 8rem;
+        top: 0;
+        right: -0.53333rem;
+        z-index: 1; }
+      #evt_content .sec-main .row2 .price {
+        top: 0;
+        left: 0.53333rem;
+        z-index: 2; }
+    #evt_content .sec-main .row3 {
+      height: 7.06667rem; }
+      #evt_content .sec-main .row3 .cake {
+        width: 6.8rem;
+        top: 0;
+        left: -1.73333rem;
+        z-index: 1; }
+      #evt_content .sec-main .row3 .price {
+        top: 0;
+        left: auto;
+        right: 0; }
+  #evt_content .sec-footer {
+    background: #efdccc;
+    position: relative;
+    padding-bottom: 0.66667rem;
+    z-index: 1; }
+    #evt_content .sec-footer .txt {
+      position: relative;
+      width: 9.33333rem;
+      padding-top: 1.06667rem;
+      margin: 0 auto;
+      color: #5b3c23;
+      text-align: left; }
+      #evt_content .sec-footer .txt h2 {
+        font-size: 0.37333rem;
+        font-weight: normal; }
+      #evt_content .sec-footer .txt p {
+        font-size: 0.29333rem;
+        padding-left: 0.46667rem;
+        line-height: 0.53333rem;
+        text-indent: -0.46667rem;
+        margin: 0.06667rem 0; }
+        #evt_content .sec-footer .txt p span {
+          display: block;
+          padding-left: 0.13333rem;
+          text-indent: -0.13333rem; }
+  #evt_content .price {
+    position: absolute;
+    width: 4.53333rem;
+    text-align: left;
+    z-index: 2; }
+    #evt_content .price .title {
+      position: relative;
+      width: 4rem;
+      margin: 0.13333rem 0 0.4rem 0; }
+    #evt_content .price h2 {
+      font-size: 0.26667rem;
+      font-weight: normal;
+      line-height: 0.66667rem;
+      color: #a46630; }
+      #evt_content .price h2 span {
+        font-size: 0.26667rem; }
+    #evt_content .price s {
+      font-size: 0.26667rem;
+      color: #f4f6d2;
+      font-weight: normal;
+      margin-left: 0.13333rem; }
+      #evt_content .price s span {
+        font-size: 0.26667rem; }
+      #evt_content .price s b {
+        font-weight: normal; }
+    #evt_content .price ul.buy_btn_box {
+      width: 3.33333rem;
+      overflow: hidden;
+      margin: 0.4rem 0.13333rem 0 0;
+      float: left; }
+    #evt_content .price ul.buy_btn_box li span {
+      display: block;
+      border: #ca996f 1px solid;
+      color: #ca996f;
+      cursor: pointer;
+      line-height: 0.56rem;
+      padding-top: 0.02667rem;
+      font-size: 0.29333rem;
+      text-align: center;
+      width: 2rem; }
+
+.shoudong {
+  animation: shoudong 1.5s infinite alternate; }
+
+@keyframes shoudong {
+  0% {
+    transform: translate3d(-10px, 0, 0);
+    transform-origin: 50% 100%; }
+  100% {
+    transform: translate3d(10px, 0, 0);
+    transform-origin: 50% 100%; } }

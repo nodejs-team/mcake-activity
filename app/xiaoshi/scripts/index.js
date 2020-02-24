@@ -42,6 +42,25 @@
 
     var loader;
 
+
+    var loadComplete = function () {
+        /**蛋糕*/
+        $(".pro-list li").each(function () {
+            var self = this;
+            $(this).find('.go-btn').click(function () {
+                SelectShow(self,[0,0,0,0],0.88,true,1,0);
+            });
+        });
+        $(".go-car").click(function () {
+            SelectHide();
+        });
+        $(".go-buy,.s-closes").click(function () {
+            SelectHide();
+        });
+
+
+        /*initScroll();  新版wap端跳转新页面再返回来之后，页面无法滑动了*/
+    };
     function startLoading(){
         loader = new Loader('images/');
         var domLoad = document.getElementById('evt_loading');
@@ -61,41 +80,15 @@
     startLoading();
 
 
-
-
-
-    /*页面加载完成*/
-    var loadComplete = function () {
-
-        $("html,body").animate({scrollTop:0},500);
-
-
-        $(".cakes.prolist dd").each(function () {
-            var self = this;
-            $(this).find('.m-btn').click(function () {
-                $(".go-car").hide(0).siblings().show(0);
-                SelectShow(self,[0,0,0,0],0.88,true,1,0);
-            });
-        });
-
-
-        $(".go-car").click(function () {
-            SelectHide();
-        });
-        $(".go-buy,.s-closes").click(function () {
-            SelectHide();
-        });
-
-
-
+    var initScroll = function (){
+        window.scrollAnimate('#evt_container', [
+            ,{dom: '.banner-t',x:0, y:100,duration:500,delay:200}
+        ])
     };
 
 
-
-
-
-
 })();
+
 
 
 

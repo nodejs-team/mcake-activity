@@ -44,11 +44,25 @@
 
 
     var loadComplete = function () {
-        $(".floater").fadeIn(100);
-        new Price('.js_price',{
-            add:'.add',
-            reduce:'.reduce'
-        },[20,40,60,0],1);
+        /*日期判断，更换日历*/
+        var vDate = new Date();
+        var myDate = vDate.getFullYear() + '-' + (vDate.getMonth() + 1) + '-' + vDate.getDate(); /*解决安卓浏览器时间显示问题*/
+        var myDay = vDate.getDate();
+        switch (myDay){
+            case 4:
+                $(".calendar img").attr("src","https://act.mcake.com/fangli/2020/wap/memberDay-2yue/images/calendar-1.png");
+                break;
+            case 11:
+                $(".calendar img").attr("src","https://act.mcake.com/fangli/2020/wap/memberDay-2yue/images/calendar-2.png");
+                break;
+            case 18:
+                $(".calendar img").attr("src","https://act.mcake.com/fangli/2020/wap/memberDay-2yue/images/calendar-3.png");
+                break;
+            case 25:
+                $(".calendar img").attr("src","https://act.mcake.com/fangli/2020/wap/memberDay-2yue/images/calendar-4.png");
+                break;
+        }
+
 
         /*initScroll();  新版wap端跳转新页面再返回来之后，页面无法滑动了*/
     };
@@ -71,41 +85,15 @@
     startLoading();
 
 
-
-
-
     var initScroll = function (){
         window.scrollAnimate('#evt_container', [
             ,{dom: '.banner-t',x:0, y:100,duration:500,delay:200}
-
-            ,{dom: '.sec-0 .hongbao',x:0, y:50,duration:500,delay:400}
-
-             ,{dom: '.sec-main .hy-title',x:0, y:50,duration:500,delay:400}
-             ,{dom: '.row1 .cake',x:-100, y:50,duration:500,delay:400}
-             ,{dom: '.row1 .price',x:0, y:50,duration:500,delay:400}
-
-            ,{dom: '.row2 .cake',x:100, y:50,duration:500,delay:400}
-            ,{dom: '.row2 .price',x:0, y:50,duration:500,delay:400}
-
-            ,{dom: '.row3 .cake',x:-100, y:50,duration:500,delay:400}
-            ,{dom: '.row3 .price',x:0, y:50,duration:500,delay:400}
-
-            ,{dom: '.row4 .cake',x:100, y:50,duration:500,delay:400}
-            ,{dom: '.row4 .price',x:0, y:50,duration:500,delay:400}
-
-            ,{dom: '.row5 .cake',x:-100, y:50,duration:500,delay:400}
-            ,{dom: '.row5 .price',x:0, y:50,duration:500,delay:400}
-
-            ,{dom: '.row6 .cake',x:100, y:50,duration:500,delay:400}
-            ,{dom: '.row6 .price',x:0, y:50,duration:500,delay:400}
-
-            ,{dom: '.more',x:0, y:50,duration:500,delay:400}
-
-
         ])
     };
 
 
 })();
+
+
 
 

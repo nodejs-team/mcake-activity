@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../commoncss/wap-normalize.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <style>
+        .scratch_container canvas {
+            position: relative;
+            width: 4.02667rem !important;
+            height: 0.8rem !important;
+            z-index: 1; }
+    </style>
+</head>
+<body>
+<div class="choujiang">
+        <div class="guaguaka" ontouchmove="return false;">
+            <img src="images/dot.png" class="imageBackground" style="display: none;" alt="">
+            <img src="images/guagua-cover.png" class="pictureOver" style="display: none;" alt="">
+            <!--刮刮卡-->
+            <div class="scratch_container">
+                <div class="scratch_viewport">
+                    <!-- result picture -->
+                    <canvas id="js-canvas"></canvas>
+                </div>
+            </div>
+            <div class="youhuiquan">+<span class="money">?</span>元升磅</div>
+            <div class="shou shoudong"></div>
+        </div>
+    <div class="buy_btn" id="buy_btn"><span>立即订购</span></div>
+        <!--<div class="qian-btn" onclick="sendMessage()"></div>-->
+</div>
+<script src="https://act.mcake.com/fangli/2019/wap/commonjs/jquery.min.js"></script>
+<script src="https://act.mcake.com/fangli/2019/wap/commonjs/flexible.js"></script>
+<script src="https://act.mcake.com/fangli/2019/wap/commonjs/fastclick.js"></script>
+<script src="https://act.mcake.com/fangli/2019/wap/commonjs/vconsole.min.js"></script>
+<script src="scripts/guaguaka.js"></script>
+<script>
+
+    /*var vConsole = new VConsole();*/
+        window.addEventListener('message', function (event) {
+            /*if(window.parent !== event.source){ return false; }*/
+            Scheduler.translate(event)
+        }, false);
+        var Scheduler = {
+            // 消息事件对象
+            event: {},
+            // 参数
+            params: {},
+            // 翻译
+            translate: function (data) {
+                this.event = event;
+                this.params = typeof(event.data) == 'string' ? JSON.parse(event.data) : event.data;
+                this.execute();
+            },
+            // 执行
+            execute: function () {
+                switch (this.params.method) {
+                    // 抽奖
+                    case 'choujiang':
+                        //console.log(this.params.data.id);
+                        start(this.params.data);
+                        break;
+
+                    // 默认
+                    default:
+                }
+            }
+        }
+
+        var sendMessage=function() {
+            top.postMessage({method: 'choujiang',data:{id:7}}, "*");
+        }
+
+        /*开始抽奖*/
+        function start(data) {
+            var arr = [40,48,50,58];
+            var random = 2;
+            console.log(data.id);
+            var money = arr[data.id];
+            console.log(money);
+            $(".sb").text(money);
+            $(".money").text(money);
+            $(".buy_btn").attr("data-money",money);
+
+            /*显示抽奖结果,向首页提交弹窗结果*/
+            var autoMessage = {method:'choujiangResult',message:'抽奖结果展示',data:{DialogCover:".Dialogbg-quan",DialogBox:".Dialog-quan",n:data.id,arr:arr}};
+            top.postMessage(autoMessage,'*');
+        }
+
+
+
+    /*刮刮卡*/
+    var imageBackground=$(".imageBackground").attr("src");   /*刮开之后的底图*/
+    var pictureOver=$(".pictureOver").attr("src");  /*覆盖图*/
+
+    setTimeout(function () { //解决刚加载进来无法识别canvas宽高
+
+        var scratch = new Scratch({
+            canvasId: 'js-canvas',
+            imageBackground: imageBackground,
+            pictureOver: pictureOver,
+            cursor: {
+                x: '-20',
+                y: '-20'
+            },
+            radius: 20,
+            nPoints: 1000,
+            percent: 30,
+            pointSize: { x: 5, y: 5},
+            callback: function (ele) {/*刮刮之后的函数*/
+                console.log(ele);
+                sendMessage();
+            }
+        });
+        $(".guaguaka").fadeIn(0);
+    },1000)
+
+
+
+</script>
+</body>
+</html>

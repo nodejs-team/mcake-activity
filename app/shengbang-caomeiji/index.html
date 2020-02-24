@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>mcake活动</title>
+
+    <!-- build:css styles/index.css -->
+    <link rel="stylesheet" href="../commoncss/wap-normalize.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <!-- endbuild-->
+
+</head>
+<body>
+
+<div id="evt_container">
+    <div id="iscroll">
+        <div class="wrap">
+            <header>
+                <a href="http://m.mcake.com/wap" class="icon-back"></a>
+                <div class="title">
+                    <span>活动</span><br><span>activity</span>
+                </div>
+                <a href="http://m.mcake.com/wap" class="icon-home"></a>
+            </header>
+            <div id="evt_loading" style="display:none;">0%</div>
+            <div id="evt_content" style="display:none;">
+                <div class="sec sec-top"><img src="images/banner.png" alt=""></div>
+
+                <iframe name="choujiang" id="choujiang" class="cjIframe" src="choujiang.html" scrolling="no" frameborder="0"></iframe>
+
+                <div class="sec-footer">
+                    <div class="txt">
+                        <h2>活动规则</h2>
+                        <p>1、活动时间：2019年12月26日-2020年1月22日</p>
+                        <p>2、活动城市：上海、北京、苏州、杭州</p>
+                        <p>3、支付方式：微信、支付宝、现金；仅限微信、支付宝、现金全额支付的用户参与</p>
+                        <p>4、活动内容：<br>
+                            ·在活动页面根据刮出价格不同 ，可享受不同价格1磅升2磅，仅限购买拿破仑莓恋、白色恋人、鲜莓印雪<br>
+                            ·活动页面蛋糕仅限1磅升2磅，其他磅数不予参与，不与其他优惠同享</p>
+                        <p>5、本活动与积分同享，但不与优惠券、红包以及现金卡、储值卡、专享卡、礼品卡、小食卡、月饼卡等代金卡同享</p>
+                        <p>6、本活动最终解释权归MCAKE所有</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script src="https://act.mcake.com/fangli/2019/wap/commonjs/jquery.min.js"></script>
+<script src="https://act.mcake.com/fangli/2019/wap/commonjs/flexible.js"></script>
+<!--从2月会员日开始，因为新版移动端，点击链接跳转出去再返回，页面无法滑动了，需要把加载进入的全部动画效果（initScroll）去掉-->
+<!-- build:js scripts/index.js -->
+<script src="../commonjs/fastclick.js"></script>
+<script src="../commonjs/pubsub.js"></script>
+<script src="../commonjs/loader.js"></script>
+<script src="scripts/resdata.js"></script>
+<script src="scripts/guaguaka.js"></script>
+<script src="scripts/index.js"></script>
+<!-- endbuild -->
+<script>
+
+    window.addEventListener('message', function (event) {
+        Scheduler.translate(event);
+    }, false);
+
+    var Scheduler = {
+        // 消息事件对象
+        event: {},
+        // 参数
+        params: {},
+        // 翻译
+        translate: function (event) {
+            this.event = event;
+            this.params = typeof(event.data) == 'string' ? JSON.parse(event.data) : event.data;
+            this.execute();
+        },
+        // 执行
+        execute: function () {
+            switch (this.params.method) {
+
+                case 'choujiang':
+                    this.choujiang();
+                    break;
+                case 'choujiangResult':
+                    this.choujiangResult();
+                    break;
+                default:
+                    console.log(this.params.message);
+            }
+        },
+        // 抽奖
+        choujiang: function () {
+            console.log(this.params.data);  //接收从iframe里sendMessage的方法传过来的值
+            //var prize = ['23', '22', '19', '20', '18', '21'];    //此处要跟跟choujiang里的jpArr的数字对应
+            console.log('请求抽奖接口');
+            console.log('将抽奖结果发送给抽奖页面');
+            this.event.source.postMessage({
+                method: 'choujiang',
+                message: '开始抽奖',
+                data: {"id":'1',"ele":this.params.data.ele}
+            }, "*")
+        }
+        ,
+        // 抽奖
+        choujiangResult: function () {
+            console.log(this.params.data);
+
+            var money = this.params.data.arr[this.params.data.n];
+            console.log(money,this.params.data.n);
+
+
+            //new choujiang(this.params.data);  //接收choujiang.html传过来的data,弹窗
+        }
+    }
+
+
+    function guaguaEnd(ele){
+        console.log("擦除结束"+ele);
+    }
+
+    function gobuy1(ele){
+        alert("购买")
+    }
+    console.log($(".choujiang").contents().find("#buy_btn"));
+    $(".choujiang").contents().find("#buy_btn1").click(function () {
+        alert(1)
+    });
+</script>
+
+</body>
+</html>

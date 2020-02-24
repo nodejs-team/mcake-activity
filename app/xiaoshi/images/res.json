@@ -1,9 +1,59 @@
 {
 	"groups":[{
-			"keys":"cake-1_png,cake-2_png,cake-3_png,cake-4_png,close_png,floater_png,hd-title-1_png,hd-title-2_png,t-1_png,t-2_png,t-3_png,t-4_png,text_png,xs-1_png,xs-2_png,btn-1_png,btn-2_png,btn-buy_png,btn-cart_png",
+			"keys":"hy-title-1_png,hy-title-2_png,in-1_png,in-2_png,jiang-bg_png,WAP_06_png,xiaoshibao_png,banner_png,btn-jf-1_png,btn-jf-2_png,cake-1_png,cake-2_png,cake-3_png,cake-4_png,hua-1_png,hua-2_png",
 			"name":"preload"
 		}],
 	"resources":[
+		{
+			"name":"hy-title-1_png",
+			"type":"image",
+			"url":"hy-title-1.png"
+		},
+		{
+			"name":"hy-title-2_png",
+			"type":"image",
+			"url":"hy-title-2.png"
+		},
+		{
+			"name":"in-1_png",
+			"type":"image",
+			"url":"in-1.png"
+		},
+		{
+			"name":"in-2_png",
+			"type":"image",
+			"url":"in-2.png"
+		},
+		{
+			"name":"jiang-bg_png",
+			"type":"image",
+			"url":"jiang-bg.png"
+		},
+		{
+			"name":"WAP_06_png",
+			"type":"image",
+			"url":"WAP_06.png"
+		},
+		{
+			"name":"xiaoshibao_png",
+			"type":"image",
+			"url":"xiaoshibao.png"
+		},
+		{
+			"name":"banner_png",
+			"type":"image",
+			"url":"banner.png"
+		},
+		{
+			"name":"btn-jf-1_png",
+			"type":"image",
+			"url":"btn-jf-1.png"
+		},
+		{
+			"name":"btn-jf-2_png",
+			"type":"image",
+			"url":"btn-jf-2.png"
+		},
 		{
 			"name":"cake-1_png",
 			"type":"image",
@@ -25,79 +75,14 @@
 			"url":"cake-4.png"
 		},
 		{
-			"name":"close_png",
+			"name":"hua-1_png",
 			"type":"image",
-			"url":"close.png"
+			"url":"hua-1.png"
 		},
 		{
-			"name":"floater_png",
+			"name":"hua-2_png",
 			"type":"image",
-			"url":"floater.png"
-		},
-		{
-			"name":"hd-title-1_png",
-			"type":"image",
-			"url":"hd-title-1.png"
-		},
-		{
-			"name":"hd-title-2_png",
-			"type":"image",
-			"url":"hd-title-2.png"
-		},
-		{
-			"name":"t-1_png",
-			"type":"image",
-			"url":"t-1.png"
-		},
-		{
-			"name":"t-2_png",
-			"type":"image",
-			"url":"t-2.png"
-		},
-		{
-			"name":"t-3_png",
-			"type":"image",
-			"url":"t-3.png"
-		},
-		{
-			"name":"t-4_png",
-			"type":"image",
-			"url":"t-4.png"
-		},
-		{
-			"name":"text_png",
-			"type":"image",
-			"url":"text.png"
-		},
-		{
-			"name":"xs-1_png",
-			"type":"image",
-			"url":"xs-1.png"
-		},
-		{
-			"name":"xs-2_png",
-			"type":"image",
-			"url":"xs-2.png"
-		},
-		{
-			"name":"btn-1_png",
-			"type":"image",
-			"url":"btn-1.png"
-		},
-		{
-			"name":"btn-2_png",
-			"type":"image",
-			"url":"btn-2.png"
-		},
-		{
-			"name":"btn-buy_png",
-			"type":"image",
-			"url":"btn-buy.png"
-		},
-		{
-			"name":"btn-cart_png",
-			"type":"image",
-			"url":"btn-cart.png"
+			"url":"hua-2.png"
 		}
 	]
 }

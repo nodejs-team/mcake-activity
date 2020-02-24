@@ -1,183 +1,201 @@
 @charset "UTF-8";
-h2, h3, h4, b, i, strong, samp {
-  font-weight: normal;
-  font-style: normal; }
-
-i {
-  font-size: 0.24rem; }
-
 #evt_content * {
   vertical-align: baseline !important; }
 
-.buy-btns {
-  position: absolute;
-  bottom: 1.68rem;
-  left: 0.53333rem;
-  z-index: 2; }
-  .buy-btns .buy-btn {
-    float: left;
-    font-size: 0.26667rem;
-    text-align: center;
-    width: 2rem;
-    line-height: 0.58667rem;
-    color: #000;
-    background: #ffffff;
-    border-radius: 0.58667rem;
-    cursor: pointer;
-    margin: 0 0.06667rem; }
-  .buy-btns .buy-btn.on {
-    background: #ffe328; }
-
+/*价格符号不对齐*/
 #evt_content {
-  background: #fffcf5;
-  padding-bottom: 0.01333rem; }
-  #evt_content div {
-    position: absolute; }
+  background: url("../images/bg.png") repeat-y;
+  background-size: 100%; }
   #evt_content img {
     width: 100%; }
   #evt_content .sec {
     position: relative; }
-  #evt_content .title {
-    position: relative !important;
-    width: 5.68rem;
-    margin: 0.4rem auto 0.4rem; }
-    #evt_content .title .hd-titme {
-      position: absolute;
-      width: 100%;
-      bottom: -0.4rem;
-      font-size: 0.26667rem;
-      color: #000;
-      text-align: center; }
-    #evt_content .title .hd-txt {
-      position: absolute;
-      width: 100%;
-      bottom: -0.8rem;
-      font-size: 0.24rem;
-      color: #000;
-      text-align: center; }
   #evt_content .sec-top {
+    height: 13.46667rem;
+    background: url("../images/banner.png") repeat;
+    background-size: 100%;
     z-index: 1;
     overflow: hidden; }
-  #evt_content .sec-1 {
-    position: relative;
-    padding: 0;
+  #evt_content .sec-0 {
+    padding-top: 0.01333rem;
     z-index: 2; }
-    #evt_content .sec-1 .text {
+    #evt_content .sec-0 .jiang-bg {
       position: relative;
       width: 10rem;
-      margin-top: -0.66667rem; }
-  #evt_content .prolist ul li div {
-    margin: 0; }
-  #evt_content .sec-cakes {
-    padding-top: 0.4rem;
-    padding-bottom: 0.13333rem; }
-    #evt_content .sec-cakes div {
-      position: relative; }
-    #evt_content .sec-cakes .floter {
-      position: absolute;
-      background: none !important;
-      top: 0rem;
-      left: auto;
-      right: 0.26667rem;
-      width: 1.6rem;
-      z-index: 10; }
-    #evt_content .sec-cakes .cakes, #evt_content .sec-cakes .cakes-list {
-      width: 9.73333rem;
+      height: 5.66667rem;
+      background: url("../images/jiang-bg.png");
+      background-size: 100%;
       margin: 0 auto;
-      background: none !important; }
-      #evt_content .sec-cakes .cakes dl, #evt_content .sec-cakes .cakes-list dl {
-        margin-left: -0.02667rem;
-        background: none !important;
-        margin-right: 0; }
-        #evt_content .sec-cakes .cakes dl dd, #evt_content .sec-cakes .cakes-list dl dd {
-          width: 9.6rem;
-          margin: 0.4rem auto 1.06667rem;
-          position: relative;
-          overflow: hidden; }
-          #evt_content .sec-cakes .cakes dl dd img.zoom, #evt_content .sec-cakes .cakes-list dl dd img.zoom {
-            position: relative;
-            float: left;
-            width: 4.53333rem;
-            z-index: 2; }
-          #evt_content .sec-cakes .cakes dl dd .content, #evt_content .sec-cakes .cakes-list dl dd .content {
-            position: relative;
-            float: left;
-            padding: 0.26667rem 0.66667rem 0.26667rem 1.33333rem;
-            margin-top: 0.33333rem;
-            margin-left: -0.53333rem;
-            text-align: left;
-            color: #b50003;
-            background: #fff6e0;
-            z-index: 1; }
-            #evt_content .sec-cakes .cakes dl dd .content .m-title, #evt_content .sec-cakes .cakes-list dl dd .content .m-title {
-              width: 3.6rem; }
-            #evt_content .sec-cakes .cakes dl dd .content .m-price, #evt_content .sec-cakes .cakes-list dl dd .content .m-price {
-              margin-top: 0.13333rem;
-              font-size: 0.24rem;
-              color: #fc5a00; }
-              #evt_content .sec-cakes .cakes dl dd .content .m-price span, #evt_content .sec-cakes .cakes-list dl dd .content .m-price span {
-                font-size: 0.4rem; }
-            #evt_content .sec-cakes .cakes dl dd .content s, #evt_content .sec-cakes .cakes-list dl dd .content s {
-              font-size: 0.24rem;
-              color: #9b794f; }
-            #evt_content .sec-cakes .cakes dl dd .content .m-btn, #evt_content .sec-cakes .cakes-list dl dd .content .m-btn {
-              margin-top: 0.13333rem;
-              width: 2.26667rem;
-              line-height: 0.53333rem;
-              background: #f95900;
-              cursor: pointer;
-              text-align: center;
-              color: #fff; }
-        #evt_content .sec-cakes .cakes dl dd:nth-of-type(2n) img.zoom, #evt_content .sec-cakes .cakes-list dl dd:nth-of-type(2n) img.zoom {
-          float: left;
-          margin-left: -0.53333rem; }
-        #evt_content .sec-cakes .cakes dl dd:nth-of-type(2n) .content, #evt_content .sec-cakes .cakes-list dl dd:nth-of-type(2n) .content {
-          float: left;
-          margin-left: 0;
-          padding: 0.26667rem 1.33333rem 0.26667rem 0.66667rem; }
-  #evt_content .sec-2 {
-    position: relative;
-    background: #fff6e0;
-    padding: 0.06667rem 0 1.06667rem 0; }
-    #evt_content .sec-2 .xs {
-      position: relative;
+      overflow: hidden; }
+      #evt_content .sec-0 .jiang-bg .txt {
+        width: 6.66667rem;
+        height: 2.66667rem;
+        margin: 2.26667rem auto 0;
+        font-size: 0.34667rem;
+        color: #870004;
+        line-height: 0.4rem;
+        font-family: '宋体';
+        font-weight: bold;
+        text-align: center; }
+        #evt_content .sec-0 .jiang-bg .txt h2 {
+          font-size: 0.50667rem;
+          font-weight: bold; }
+        #evt_content .sec-0 .jiang-bg .txt span {
+          color: #da0300; }
+        #evt_content .sec-0 .jiang-bg .txt b {
+          font-weight: normal; }
+      #evt_content .sec-0 .jiang-bg .txt.no-start {
+        font-size: 0.34667rem;
+        line-height: 0.66667rem; }
+      #evt_content .sec-0 .jiang-bg .hua {
+        position: absolute;
+        width: 0; }
+      #evt_content .sec-0 .jiang-bg .hua img {
+        width: 100%; }
+      #evt_content .sec-0 .jiang-bg .hua1 {
+        top: 1.06667rem;
+        left: 1.6rem; }
+      #evt_content .sec-0 .jiang-bg .hua2 {
+        top: 3.33333rem;
+        right: 2rem; }
+      #evt_content .sec-0 .jiang-bg .hua1.on {
+        width: 1.04rem;
+        transition: all 0.2s; }
+      #evt_content .sec-0 .jiang-bg .hua2.on {
+        width: 0.8rem;
+        transition: all 1s; }
+      #evt_content .sec-0 .jiang-bg .shou {
+        position: absolute;
+        bottom: 0.8rem;
+        left: 50%;
+        margin-left: -0.41333rem;
+        width: 0.82667rem;
+        height: 1.08rem;
+        background: url("../images/shou.png");
+        z-index: 5;
+        background-size: 100%; }
+    #evt_content .sec-0 .quan-btns {
+      width: 8.66667rem;
+      margin: 0.13333rem auto 0; }
+      #evt_content .sec-0 .quan-btns .quan-btn {
+        width: 4.05333rem;
+        float: left;
+        margin: 0 0.13333rem; }
+  #evt_content .sec-1 {
+    padding-top: 0.01333rem;
+    z-index: 2; }
+    #evt_content .sec-1 .xiaoshibao {
       width: 10rem;
-      margin: 0 auto 0.53333rem auto; }
-    #evt_content .sec-2 .m-btn {
+      margin: 0 auto; }
+    #evt_content .sec-1 .quan-btn {
       position: absolute;
-      bottom: 0.66667rem;
+      bottom: 1.33333rem;
       left: 50%;
-      margin-left: 0.26667rem;
-      width: 2.26667rem;
-      line-height: 0.53333rem;
-      background: #f95900;
-      cursor: pointer;
+      margin-left: -1.33333rem;
+      width: 2.66667rem;
+      line-height: 0.66667rem;
+      background: #8f0100;
+      color: #fff5df;
+      font-size: 0.32rem;
       text-align: center;
-      color: #fff; }
+      border-radius: 0.66667rem; }
+  #evt_content .hy-title {
+    width: 9.46667rem;
+    margin: 0.66667rem auto; }
+  #evt_content .pro-list {
+    width: 10rem;
+    overflow: hidden;
+    margin: 0 auto;
+    padding-bottom: 0.66667rem; }
+    #evt_content .pro-list ul {
+      width: 10rem;
+      margin-left: -0.13333rem; }
+    #evt_content .pro-list li {
+      width: 4.70667rem;
+      margin: 0 0 0 0.26667rem;
+      color: #242424;
+      font-size: 0.26667rem;
+      float: left;
+      list-style: none;
+      padding-bottom: 0.53333rem; }
+      #evt_content .pro-list li .fl {
+        float: left; }
+      #evt_content .pro-list li .fl.ftitle {
+        width: 2.66667rem;
+        height: 0.8rem;
+        overflow: hidden;
+        align-items: center; }
+      #evt_content .pro-list li h2 {
+        text-align: center;
+        font-size: 0.4rem;
+        color: #f5f0c8;
+        font-weight: normal;
+        margin-top: 0.13333rem; }
+      #evt_content .pro-list li .c-price {
+        text-align: center;
+        margin: 0.13333rem auto 0; }
+        #evt_content .pro-list li .c-price i {
+          font-style: normal;
+          font-size: 0.24rem; }
+        #evt_content .pro-list li .c-price b {
+          font-size: 0.4rem;
+          font-weight: normal;
+          color: #f5f0c8; }
+        #evt_content .pro-list li .c-price s {
+          color: #f5f0c8; }
+      #evt_content .pro-list li .center {
+        width: 4.28rem;
+        margin: 0.26667rem auto 0; }
+      #evt_content .pro-list li .go-btn {
+        width: 1.86667rem;
+        float: left;
+        background: #ffe8c8;
+        color: #90000a;
+        border-radius: 0.22667rem;
+        cursor: pointer;
+        margin: 0 0.13333rem; }
+        #evt_content .pro-list li .go-btn span {
+          display: block;
+          line-height: 0.45333rem;
+          font-size: 0.21333rem;
+          text-align: center;
+          letter-spacing: 0.02667rem; }
   #evt_content .sec-footer {
+    background: url("../images/foot-bg.png");
+    background-size: 100%;
     position: relative;
-    padding: 0.66667rem 0;
+    padding-bottom: 0.66667rem;
     z-index: 1; }
-    #evt_content .sec-footer .dis-1 {
-      position: absolute;
-      width: 2.53333rem;
-      top: -1.06667rem;
-      right: -0.26667rem; }
     #evt_content .sec-footer .txt {
       position: relative;
-      width: 8.8rem;
-      padding-top: 0.26667rem;
+      width: 9.33333rem;
+      padding-top: 0.66667rem;
       margin: 0 auto;
-      color: #5b5b5b; }
+      color: #fff0cf; }
       #evt_content .sec-footer .txt h2 {
         font-size: 0.37333rem;
         font-weight: normal; }
       #evt_content .sec-footer .txt p {
-        font-size: 0.30667rem;
+        font-size: 0.32rem;
         padding-left: 0.46667rem;
-        line-height: 0.53333rem;
+        line-height: 0.6rem;
         text-indent: -0.46667rem;
         margin: 0.06667rem 0; }
+        #evt_content .sec-footer .txt p span {
+          display: block;
+          padding-left: 0.13333rem;
+          text-indent: -0.13333rem; }
+
+.shoudong {
+  animation: shoudong 1.5s infinite alternate; }
+
+@keyframes shoudong {
+  0% {
+    transform: translate3d(0, -0.13333rem, 0);
+    transform-origin: 50% 100%; }
+  100% {
+    transform: translate3d(0, 0.13333rem, 0);
+    transform-origin: 50% 100%; } }
 
 /*蛋糕选择弹窗*/
 .Dialogbg-Select {
@@ -248,14 +266,21 @@ i {
         background: #f2f2f2;
         border-radius: 50%;
         text-align: center;
-        line-height: 1.2rem;
-        font-size: 0.30667rem;
         color: #4a4a4a;
         margin-right: 0.66667rem;
-        font-weight: bold; }
+        font-size: 0.30667rem;
+        line-height: 0.26667rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column; }
+        .Select .s-bangshu ul li i {
+          font-size: 0.21333rem;
+          line-height: 0.26667rem;
+          font-style: normal; }
       .Select .s-bangshu ul li.on {
-        background: #f95900;
-        color: #fff; }
+        background: #ffc559;
+        color: #000; }
   .Select .d-tips {
     padding: 0.26667rem 0.53333rem;
     color: #4c4c4c;
@@ -342,25 +367,20 @@ i {
     flex-direction: row;
     text-align: center;
     font-size: 0.4rem;
-    color: #fff;
+    color: #000;
     padding: 0; }
     .Select .btns div {
       flex: 1;
-      cursor: pointer;
-      width: 50%; }
-    .Select .btns .go-car {
-      background: #f95900;
-      border-bottom-left-radius: 0.13333rem;
-      border-bottom-right-radius: 0.13333rem;
-      float: left;
-      color: #fff; }
+      cursor: pointer; }
     .Select .btns .go-buy {
-      background: #f95900;
+      background: #ffe9ca;
       border-bottom-right-radius: 0.13333rem;
+      color: #9d000e; }
+    .Select .btns .go-car {
+      background: #ffc559;
       border-bottom-left-radius: 0.13333rem;
-      float: left;
-      color: #fff; }
+      float: left; }
     .Select .btns .go-buy.single {
       border-bottom-left-radius: 0.26667rem;
       background: #ffe32a;
-      color: #000; }
+      color: #c43818; }

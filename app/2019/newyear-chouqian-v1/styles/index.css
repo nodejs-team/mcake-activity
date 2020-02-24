@@ -1,0 +1,466 @@
+@charset "UTF-8";
+* {
+  vertical-align: baseline !important; }
+
+/*价格符号不对齐*/
+#evt_content img {
+  width: 100%;
+  display: block; }
+
+#evt_content .sec {
+  position: relative; }
+
+#evt_content .sec-top {
+  width: 10rem;
+  z-index: 1;
+  overflow: hidden; }
+
+#evt_content .hy-title {
+  width: 5.78667rem;
+  margin: 0.66667rem auto 0.66667rem; }
+
+#evt_content .sec-qian {
+  position: relative;
+  z-index: 2;
+  padding-bottom: 0.13333rem;
+  background: url("../images/sec-chouqian.png");
+  background-size: 100%;
+  padding-top: 1px; }
+  #evt_content .sec-qian .chouqian {
+    position: relative;
+    width: 9.64rem;
+    height: 7.46667rem;
+    background: url("../images/qian-bg.png") no-repeat;
+    background-size: 100%;
+    margin: 0.66667rem auto 0; }
+    #evt_content .sec-qian .chouqian .qian {
+      position: absolute;
+      top: 0;
+      left: 2.53333rem;
+      width: 4.49333rem;
+      height: 5.66667rem; }
+    #evt_content .sec-qian .chouqian .qian-1 {
+      background: url("../images/qian-1.png") no-repeat;
+      background-size: 100%; }
+    #evt_content .sec-qian .chouqian .qian-2 {
+      background: url("../images/qian-2.png") no-repeat;
+      background-size: 100%; }
+    #evt_content .sec-qian .chouqian .qian-3 {
+      background: url("../images/qian-3.png") no-repeat;
+      background-size: 100%; }
+    #evt_content .sec-qian .chouqian .qian-4 {
+      background: url("../images/qian-4.png") no-repeat;
+      background-size: 100%; }
+    #evt_content .sec-qian .chouqian .qian-5 {
+      background: url("../images/qian-5.png") no-repeat;
+      background-size: 100%; }
+    #evt_content .sec-qian .chouqian .qian-6 {
+      background: url("../images/qian-6.png") no-repeat;
+      background-size: 100%; }
+    #evt_content .sec-qian .chouqian .qian-7 {
+      background: url("../images/qian-7.png") no-repeat;
+      background-size: 100%; }
+    #evt_content .sec-qian .chouqian .qian-tong {
+      position: absolute;
+      top: 2.66667rem;
+      left: 2.94667rem;
+      width: 3.58667rem;
+      height: 4.66667rem;
+      background: url("../images/qian-tong.png") no-repeat;
+      background-size: 100%; }
+  #evt_content .sec-qian .qian-btn {
+    width: 5.28rem;
+    margin: 0.4rem auto;
+    cursor: pointer; }
+  #evt_content .sec-qian .shou {
+    position: absolute;
+    bottom: 0.26667rem;
+    right: 1.06667rem;
+    width: 1.06667rem; }
+
+#evt_content .sec-cake {
+  padding: 0.66667rem 0 3.73333rem;
+  background: url("../images/sec-cake.png") top no-repeat;
+  background-size: 100%; }
+  #evt_content .sec-cake .cake-content {
+    position: relative;
+    width: 9.73333rem;
+    margin: 0 auto; }
+  #evt_content .sec-cake .cake {
+    position: relative;
+    width: 9.73333rem;
+    height: 6.54667rem;
+    margin: 0 auto;
+    z-index: 1; }
+  #evt_content .sec-cake .cake-1 {
+    background: url("../images/cake-1.png") no-repeat;
+    background-size: 100%; }
+  #evt_content .sec-cake .cake-2 {
+    background: url("../images/cake-2.png") no-repeat;
+    background-size: 100%; }
+  #evt_content .sec-cake .cake-3 {
+    background: url("../images/cake-3.png") no-repeat;
+    background-size: 100%; }
+  #evt_content .sec-cake .cake-4 {
+    background: url("../images/cake-4.png") no-repeat;
+    background-size: 100%; }
+  #evt_content .sec-cake .cake-5 {
+    background: url("../images/cake-5.png") no-repeat;
+    background-size: 100%; }
+  #evt_content .sec-cake .cake-6 {
+    background: url("../images/cake-6.png") no-repeat;
+    background-size: 100%; }
+  #evt_content .sec-cake .cake-7 {
+    background: url("../images/cake-7.png") no-repeat;
+    background-size: 100%; }
+  #evt_content .sec-cake .cake-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 9.73333rem;
+    height: 6.54667rem;
+    background: url("../images/cake-cover.png") no-repeat;
+    background-size: 100%;
+    z-index: 2; }
+  #evt_content .sec-cake .buy-btn {
+    width: 2.52rem;
+    margin: 0.66667rem auto 0;
+    display: none; }
+
+#evt_content .sec-foot {
+  background: url("../images/sec-footer.png") bottom;
+  background-size: 100%;
+  position: relative;
+  padding-bottom: 3.46667rem;
+  z-index: 1; }
+  #evt_content .sec-foot .txt {
+    position: relative;
+    width: 9.33333rem;
+    padding-top: 0.26667rem;
+    margin: 0 auto;
+    color: #f9e3c3; }
+    #evt_content .sec-foot .txt h2 {
+      font-size: 0.37333rem;
+      font-weight: normal; }
+    #evt_content .sec-foot .txt p {
+      font-size: 0.29333rem;
+      padding-left: 0.46667rem;
+      line-height: 0.53333rem;
+      text-indent: -0.46667rem;
+      margin: 0.06667rem 0; }
+      #evt_content .sec-foot .txt p span {
+        display: block;
+        padding-left: 0.13333rem;
+        text-indent: -0.13333rem; }
+
+/*彈窗*/
+.Dialogbg-quan {
+  background-color: #000;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 200;
+  display: none;
+  opacity: 0.9;
+  -moz-opacity: .9;
+  filter: alpha(opacity=90); }
+
+.Dialog-quan {
+  box-shadow: 0 0 0 #999;
+  font-size: 0.18667rem;
+  width: 6.09333rem;
+  height: auto !important;
+  padding: 0.01333rem;
+  top: 50%;
+  left: 50%;
+  margin: -5.33333rem auto 0 -3.04667rem !important;
+  position: fixed;
+  z-index: 99999;
+  display: none; }
+  .Dialog-quan .closes {
+    width: 0.66667rem;
+    height: 0.66667rem;
+    position: absolute;
+    top: 0.4rem;
+    right: 0.53333rem;
+    cursor: pointer;
+    z-index: 8;
+    background: url("../images/close2.png") no-repeat;
+    background-size: 100%; }
+  .Dialog-quan .quan {
+    position: relative;
+    padding: 0;
+    border-radius: 0.13333rem;
+    overflow: hidden; }
+    .Dialog-quan .quan img {
+      margin: 0 auto;
+      width: 100%; }
+    .Dialog-quan .quan .go-use {
+      display: block;
+      position: absolute;
+      bottom: 1.33333rem;
+      left: 50%;
+      margin-left: -0.86667rem;
+      width: 1.33333rem;
+      line-height: 0.4rem;
+      cursor: pointer;
+      background: #5f0900;
+      color: #dcb584;
+      border-radius: 0.4rem;
+      text-align: center;
+      font-size: 0.26667rem; }
+  .Dialog-quan .quan-2 .go-use {
+    bottom: 1.33333rem; }
+
+.Dialog-quan.show {
+  animation: show 1s forwards;
+  display: block; }
+
+/*蛋糕选择弹窗*/
+.Dialogbg-Select {
+  background-color: #000;
+  height: 100%;
+  left: 0;
+  opacity: 0.85;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 200;
+  display: none; }
+
+.Dialog-Select {
+  background: #fff none repeat scroll 0 0;
+  box-shadow: 0 0 0 #999;
+  font-size: 0.18667rem;
+  width: 8rem;
+  height: auto;
+  margin-top: -4.26667rem;
+  margin-left: -4rem;
+  left: 50%;
+  padding: 0;
+  position: fixed;
+  top: 50%;
+  z-index: 99999;
+  display: none;
+  border-radius: 0.13333rem; }
+
+.s-closes {
+  position: absolute;
+  top: 0.13333rem !important;
+  right: -0.50667rem !important;
+  width: 0.36rem !important;
+  height: 0.36rem !important;
+  background: url("../images/close.png");
+  background-size: 100%; }
+
+.Select {
+  position: relative;
+  color: #000;
+  height: 100%;
+  text-align: left; }
+  .Select .s-title {
+    height: 1.37333rem;
+    background: #f2f2f2;
+    position: relative;
+    border-top-left-radius: 0.13333rem;
+    border-top-right-radius: 0.13333rem; }
+    .Select .s-title h2 {
+      font-size: 0.37333rem;
+      line-height: 0.4rem;
+      padding-left: 0.53333rem;
+      padding-top: 0.4rem; }
+    .Select .s-title b {
+      font-size: 0.18667rem;
+      color: #9a9a9a;
+      font-weight: normal;
+      padding-left: 0.53333rem; }
+  .Select .s-bangshu {
+    padding-top: 0.26667rem; }
+    .Select .s-bangshu ul {
+      margin-left: 0.53333rem; }
+      .Select .s-bangshu ul li {
+        float: left;
+        width: 1.2rem;
+        height: 1.2rem;
+        background: #f2f2f2;
+        border-radius: 50%;
+        text-align: center;
+        color: #4a4a4a;
+        margin-right: 0.66667rem;
+        font-size: 0.30667rem;
+        line-height: 0.26667rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column; }
+        .Select .s-bangshu ul li i {
+          font-size: 0.21333rem;
+          line-height: 0.26667rem;
+          font-style: normal; }
+      .Select .s-bangshu ul li.on {
+        background: #ac0000;
+        color: #fff; }
+  .Select .d-tips {
+    padding: 0.26667rem 0.53333rem;
+    color: #4c4c4c;
+    font-size: 0.24rem; }
+  .Select .s-num {
+    height: 1.33333rem;
+    padding-left: 0.53333rem;
+    border-top: #ededed 1px solid; }
+    .Select .s-num b {
+      display: inline-block;
+      width: 2.66667rem;
+      margin: 0.26667rem 0;
+      line-height: 0.74667rem;
+      float: left;
+      font-size: 0.4rem;
+      color: #737373;
+      font-weight: normal; }
+    .Select .s-num .nums {
+      display: inline-block;
+      margin: 0.26667rem 0.53333rem 0.26667rem 0.26667rem;
+      float: right;
+      height: 0.74667rem;
+      position: relative;
+      width: 2.66667rem; }
+    .Select .s-num .nums a {
+      display: block;
+      width: 0.74667rem;
+      height: 0.74667rem;
+      position: absolute;
+      top: 0.02667rem; }
+    .Select .s-num .nums .minus {
+      background: url("../images/btn-1.png") no-repeat;
+      background-size: 100%;
+      left: 0; }
+    .Select .s-num .nums .plus {
+      background: url("../images/btn-2.png") no-repeat;
+      background-size: 100%;
+      right: 0; }
+    .Select .s-num .nums input {
+      background: none;
+      border: none;
+      color: #626262;
+      display: block;
+      font-size: 0.4rem;
+      height: 0.74667rem;
+      left: 0.8rem;
+      line-height: 0.74667rem;
+      padding: 0;
+      position: absolute;
+      text-align: center;
+      top: 0;
+      width: 1.06667rem; }
+  .Select .s-prices {
+    font-size: 0.29333rem;
+    padding: 0.4rem 0.53333rem;
+    border-top: #ededed 1px solid;
+    color: #4a4a4a; }
+    .Select .s-prices b {
+      display: inline-block;
+      width: 2.66667rem;
+      margin: 0;
+      line-height: 0.74667rem;
+      float: left;
+      font-size: 0.4rem;
+      color: #737373;
+      font-weight: normal; }
+    .Select .s-prices p {
+      display: block;
+      line-height: 0.74667rem;
+      text-align: right; }
+    .Select .s-prices i {
+      font-style: normal; }
+    .Select .s-prices span {
+      font-size: 0.6rem; }
+  .Select s {
+    color: #7e7e7e; }
+  .Select .btns {
+    width: 100%;
+    position: relative;
+    bottom: 0rem;
+    display: flex;
+    height: 1.33333rem;
+    line-height: 1.33333rem;
+    flex-direction: row;
+    text-align: center;
+    font-size: 0.4rem;
+    color: #000;
+    padding: 0; }
+    .Select .btns div {
+      flex: 1;
+      cursor: pointer; }
+    .Select .btns .go-buy {
+      background: #ac0000;
+      border-bottom-left-radius: 0.13333rem;
+      color: #fff; }
+    .Select .btns .go-car {
+      background: #f2c278;
+      border-bottom-right-radius: 0.13333rem;
+      float: left; }
+    .Select .btns .go-buy.single {
+      border-bottom-left-radius: 0.26667rem;
+      background: #ffe32a;
+      color: #c43818; }
+
+.yaoyao1 {
+  animation: yaoyao 0.2s infinite alternate; }
+
+.yaoyao2 {
+  animation: yaoyao 0.25s infinite alternate; }
+
+.yaoyao3 {
+  animation: yaoyao 0.18s infinite alternate; }
+
+.yaoyao4 {
+  animation: yaoyao 0.25s infinite alternate; }
+
+.yaoyao5 {
+  animation: yaoyao 0.15s infinite alternate; }
+
+.yaoyao6 {
+  animation: yaoyao 0.21s infinite alternate; }
+
+.yaoyao7 {
+  animation: yaoyao 0.17s infinite alternate; }
+
+.yaodong {
+  animation: yaodong 0.25s infinite alternate; }
+
+.shoudong {
+  animation: shoudong 0.2s infinite alternate; }
+
+@keyframes yaoyao {
+  0% {
+    transform: rotate(-3deg);
+    transform-origin: 50% 100%; }
+  100% {
+    transform: rotate(3deg);
+    transform-origin: 50% 100%; } }
+
+@keyframes yaodong {
+  0% {
+    transform: rotate(-4deg);
+    transform-origin: 50% 100%; }
+  100% {
+    transform: rotate(4deg);
+    transform-origin: 50% 100%; } }
+
+@keyframes shoudong {
+  0% {
+    transform: rotate(0);
+    transform-origin: 0% 100%; }
+  100% {
+    transform: rotate(10deg);
+    transform-origin: 0% 100%; } }
+
+@keyframes show {
+  0% {
+    transform: scale(0); }
+  80% {
+    transform: scale(2); }
+  100% {
+    transform: scale(1); } }

@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>mcake活动</title>
+
+    <!-- build:css styles/index.css -->
+    <link rel="stylesheet" href="../commoncss/wap-normalize.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <!-- endbuild-->
+
+</head>
+<body>
+
+<div id="evt_container">
+    <div id="iscroll">
+        <div class="wrap">
+            <header>
+                <a href="http://m.mcake.com/wap" class="icon-back"></a>
+                <div class="title">
+                    <span>活动</span><br><span>activity</span>
+                </div>
+                <a href="http://m.mcake.com/wap" class="icon-home"></a>
+            </header>
+            <div id="evt_loading" style="display:none;">0%</div>
+            <div id="evt_content" style="display:none;">
+                <div class="sec sec-top"><img src="images/banner.png" alt=""></div>
+
+                <div class="sec sec-main">
+                    <div class="row row1">
+                        <div class="guaguaka" ontouchmove="return false;">
+                            <img src="images/dot.png" class="imageBackground" style="display: none;" alt="">
+                            <img src="images/guagua-cover.png" class="pictureOver" style="display: none;" alt="">
+                            <!--刮刮卡-->
+                            <div class="scratch_container">
+                                <div class="scratch_viewport">
+                                    <!-- result picture -->
+                                    <canvas id="js-canvas0"></canvas>
+                                </div>
+                            </div>
+                            <div class="youhuiquan">+<span class="money">?</span>元升磅</div>
+                            <div class="shou shoudong"></div>
+                        </div>
+                    </div>
+                    <div class="row row1">
+                        <div class="guaguaka" ontouchmove="return false;">
+                            <img src="images/dot.png" class="imageBackground" style="display: none;" alt="">
+                            <img src="images/guagua-cover2.png" class="pictureOver" style="display: none;" alt="">
+                            <!--刮刮卡-->
+                            <div class="scratch_container">
+                                <div class="scratch_viewport">
+                                    <!-- result picture -->
+                                    <canvas id="js-canvas1"></canvas>
+                                </div>
+                            </div>
+                            <div class="youhuiquan">+<span class="money">?</span>元升磅</div>
+                            <div class="shou shoudong"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<script src="https://act.mcake.com/fangli/2019/wap/commonjs/jquery.min.js"></script>
+<script src="https://act.mcake.com/fangli/2019/wap/commonjs/flexible.js"></script>
+<!--从2月会员日开始，因为新版移动端，点击链接跳转出去再返回，页面无法滑动了，需要把加载进入的全部动画效果（initScroll）去掉-->
+<!-- build:js scripts/index.js -->
+<script src="../commonjs/fastclick.js"></script>
+<script src="../commonjs/pubsub.js"></script>
+<script src="../commonjs/loader.js"></script>
+<script src="scripts/resdata.js"></script>
+<script src="scripts/guaguaka.js"></script>
+<script src="scripts/index.js"></script>
+<!-- endbuild -->
+
+<script>
+    function guaguaEnd(ele){
+        console.log("擦除结束"+ele);
+    }
+
+    var arr = [40,48,50,58];
+
+    var money = [];
+    $(".row").each(function (i) {
+        var self = $(this);
+        money.push(arr[Math.floor(Math.random()*(3-0+1))+0]);
+        /*刮刮卡*/
+        var imageBackground=$(this).find(".imageBackground").attr("src");   /*刮开之后的底图*/
+        var pictureOver=$(this).find(".pictureOver").attr("src");  /*覆盖图*/
+        var canvasId=$(this).find('js-canvas'+i).selector;
+        var scratch = new Scratch({
+            canvasId: 'js-canvas'+i,
+            imageBackground: imageBackground,
+            pictureOver: pictureOver,
+            cursor: {
+                x: '-20',
+                y: '-20'
+            },
+            radius: 20,
+            nPoints: 1000,
+            percent: 30,
+            pointSize: { x: 5, y: 5},
+            callback: function () {/*刮刮之后的函数*/
+                self.find(".scratch_container").fadeOut(100);
+                self.find(".sb").html(money[i]);
+                self.find(".money").html(money[i]);
+                self.find(".buy_btn").attr("data-money",money[i]);
+                self.find(".shou").fadeOut(100);
+                guaguaEnd(canvasId);
+            }
+        });
+    });
+</script>
+</body>
+</html>

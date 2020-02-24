@@ -1,23 +1,18 @@
 var resData = [
     {
-        "name":"hongbao_png",
+        "name":"hy-title-2_png",
         "type":"image",
-        "url":"hongbao.png"
+        "url":"hy-title-2.png"
     },
     {
-        "name":"miaosha_png",
+        "name":"in-a-1_png",
         "type":"image",
-        "url":"miaosha.png"
+        "url":"in-a-1.png"
     },
     {
-        "name":"more_png",
+        "name":"in-a-2_png",
         "type":"image",
-        "url":"more.png"
-    },
-    {
-        "name":"quanyi_png",
-        "type":"image",
-        "url":"quanyi.png"
+        "url":"in-a-2.png"
     },
     {
         "name":"t-1_png",
@@ -35,44 +30,14 @@ var resData = [
         "url":"t-3.png"
     },
     {
-        "name":"t-4_png",
+        "name":"xinnian_png",
         "type":"image",
-        "url":"t-4.png"
+        "url":"xinnian.png"
     },
     {
-        "name":"t-5_png",
+        "name":"banner-wap_png",
         "type":"image",
-        "url":"t-5.png"
-    },
-    {
-        "name":"t-6_png",
-        "type":"image",
-        "url":"t-6.png"
-    },
-    {
-        "name":"title-1_png",
-        "type":"image",
-        "url":"title-1.png"
-    },
-    {
-        "name":"title-3_png",
-        "type":"image",
-        "url":"title-3.png"
-    },
-    {
-        "name":"title-4_png",
-        "type":"image",
-        "url":"title-4.png"
-    },
-    {
-        "name":"banner-t_png",
-        "type":"image",
-        "url":"banner-t.png"
-    },
-    {
-        "name":"banner-wap_jpg",
-        "type":"image",
-        "url":"banner-wap.jpg"
+        "url":"banner-wap.png"
     },
     {
         "name":"cake-1_png",
@@ -90,18 +55,28 @@ var resData = [
         "url":"cake-3.png"
     },
     {
-        "name":"cake-4_png",
+        "name":"cake-tuijian_png",
         "type":"image",
-        "url":"cake-4.png"
+        "url":"cake-tuijian.png"
     },
     {
-        "name":"cake-5_png",
+        "name":"canyu-btn_png",
         "type":"image",
-        "url":"cake-5.png"
+        "url":"canyu-btn.png"
     },
     {
-        "name":"cake-6_png",
+        "name":"dis-1_png",
         "type":"image",
-        "url":"cake-6.png"
+        "url":"dis-1.png"
+    },
+    {
+        "name":"hongbao_png",
+        "type":"image",
+        "url":"hongbao.png"
+    },
+    {
+        "name":"hy-title-1_png",
+        "type":"image",
+        "url":"hy-title-1.png"
     }
 ];

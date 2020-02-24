@@ -1,0 +1,181 @@
+@charset "UTF-8";
+#evt_content * {
+  vertical-align: baseline !important; }
+
+/*价格符号不对齐*/
+#evt_content {
+  background: #fffeea; }
+  #evt_content img {
+    width: 100%; }
+  #evt_content .sec {
+    position: relative; }
+  #evt_content .sec-top {
+    height: 10.92rem;
+    background: url("../images/banner-wap.png") repeat;
+    background-size: 100%;
+    z-index: 1;
+    overflow: hidden; }
+    #evt_content .sec-top .banner-t {
+      position: absolute;
+      width: 10rem;
+      top: 2rem;
+      left: 0; }
+  #evt_content .sec-0 {
+    padding-top: 0.01333rem;
+    z-index: 2;
+    background: #fffeea; }
+    #evt_content .sec-0 .quan {
+      width: 10rem;
+      margin: 0 auto;
+      background: #fffeea !important; }
+    #evt_content .sec-0 .quan-btn {
+      width: 2.66667rem;
+      margin: 0 auto;
+      line-height: 0.66667rem;
+      background: #ffac16;
+      color: #fff;
+      font-size: 0.32rem;
+      text-align: center;
+      border-radius: 0.66667rem; }
+  #evt_content .hy-title {
+    width: 9.46667rem;
+    margin: 0.66667rem auto; }
+  #evt_content .pro-list {
+    width: 10rem;
+    overflow: hidden;
+    margin: 0.66667rem auto 0;
+    background: #fef8ce url("../images/sec-cake-bg.png") center top no-repeat;
+    background-size: 100%;
+    padding-top: 0.26667rem; }
+    #evt_content .pro-list ul {
+      width: 10rem;
+      margin-left: -0.13333rem; }
+    #evt_content .pro-list li {
+      width: 4.70667rem;
+      margin: 0 0 0 0.26667rem;
+      color: #242424;
+      font-size: 0.26667rem;
+      float: left;
+      list-style: none;
+      padding-bottom: 0.53333rem; }
+      #evt_content .pro-list li .fl {
+        float: left; }
+      #evt_content .pro-list li .fl.ftitle {
+        width: 2.66667rem;
+        height: 0.8rem;
+        overflow: hidden;
+        align-items: center; }
+      #evt_content .pro-list li h2 {
+        text-align: center;
+        font-size: 0.4rem;
+        color: #000;
+        font-weight: normal;
+        margin-top: 0.13333rem; }
+      #evt_content .pro-list li .c-price {
+        text-align: center;
+        margin: 0.13333rem auto 0; }
+        #evt_content .pro-list li .c-price i {
+          font-style: normal;
+          font-size: 0.24rem; }
+        #evt_content .pro-list li .c-price b {
+          font-size: 0.4rem;
+          font-weight: normal;
+          color: #ffac16; }
+      #evt_content .pro-list li .fr {
+        float: right; }
+      #evt_content .pro-list li .p1 {
+        width: 4.70667rem;
+        margin: 0.13333rem auto 0; }
+      #evt_content .pro-list li .buybtn {
+        width: 1.73333rem;
+        height: 0.66667rem;
+        display: inline-block;
+        border-radius: 0.66667rem;
+        float: left;
+        text-decoration: none;
+        background: #ffac16;
+        color: #fff;
+        text-align: center;
+        line-height: 0.66667rem;
+        font-size: 0.26667rem;
+        position: static; }
+      #evt_content .pro-list li .buybtn.go-buy {
+        float: right; }
+    #evt_content .pro-list .pro-num {
+      position: relative;
+      float: left;
+      width: 2.8rem;
+      height: 0.66667rem;
+      display: inline-block;
+      background: #ffac16;
+      color: #fff;
+      border-radius: 0.4rem; }
+      #evt_content .pro-list .pro-num a {
+        position: absolute;
+        top: -0.06667rem;
+        width: 0.8rem;
+        height: 0.8rem;
+        display: block; }
+      #evt_content .pro-list .pro-num .minus {
+        display: inline-block;
+        background: url(../images/in-1.png) center no-repeat;
+        left: 0;
+        background-size: 50%; }
+      #evt_content .pro-list .pro-num .plus {
+        display: inline-block;
+        background: url(../images/in-2.png) center no-repeat;
+        right: 0;
+        background-size: 50%; }
+      #evt_content .pro-list .pro-num .bang {
+        display: inline-block;
+        width: 1.73333rem;
+        line-height: 0.66667rem;
+        position: absolute;
+        top: 0;
+        left: 0.53333rem;
+        text-align: center;
+        color: #fff;
+        background: none;
+        font-size: 0.26667rem;
+        padding: 0; }
+  #evt_content .sec-qy {
+    z-index: 2;
+    padding: 0.8rem 0;
+    background: #fffeea url("../images/sec-qy.png") center top no-repeat;
+    background-size: 100%; }
+    #evt_content .sec-qy div {
+      position: relative; }
+    #evt_content .sec-qy .zpin {
+      width: 10rem;
+      margin: 0 auto; }
+    #evt_content .sec-qy .register-btn {
+      width: 4.22667rem;
+      margin: 0.26667rem auto 0; }
+  #evt_content .sec-qy.qy-4 {
+    background: #fef7d0 url("../images/sec-cake-bg.png") center top no-repeat;
+    background-size: 100%; }
+  #evt_content .sec-footer {
+    background: #fef0bf;
+    background-size: 12%;
+    position: relative;
+    padding-bottom: 0.66667rem;
+    z-index: 1; }
+    #evt_content .sec-footer .txt {
+      position: relative;
+      width: 9.33333rem;
+      padding-top: 0.66667rem;
+      margin: 0 auto;
+      color: #000; }
+      #evt_content .sec-footer .txt h2 {
+        font-size: 0.37333rem;
+        font-weight: normal; }
+      #evt_content .sec-footer .txt p {
+        font-size: 0.29333rem;
+        padding-left: 0.46667rem;
+        line-height: 0.53333rem;
+        text-indent: -0.46667rem;
+        margin: 0.06667rem 0; }
+        #evt_content .sec-footer .txt p span {
+          display: block;
+          padding-left: 0.13333rem;
+          text-indent: -0.13333rem; }

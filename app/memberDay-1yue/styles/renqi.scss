@@ -1,0 +1,74 @@
+@function px2rem($n) {
+  @return ($n * 10 / 750) * 1rem; //设计稿一般都是750宽
+}
+*{ vertical-align: baseline !important;}  /*价格符号不对齐*/
+#evt_content{background:url("../images/bg.jpg") top repeat-x; background-size: 100%; padding-top: 1px;
+  img{width:100%; display: block;}
+  .sec{position: relative; }
+
+  .hy-title{ width: px2rem(750); margin:px2rem(50) auto 0; }
+
+  .sec-cake{ position: relative; z-index: 2; padding: px2rem(50) 0 0;
+    .content{width:px2rem(592); padding-bottom:px2rem(20); margin: 0 auto; background: #c5302b; box-shadow:px2rem(5) px2rem(20) px2rem(20) #921613;
+      .cake{}
+      .t-renqi{ width: px2rem(233); margin:px2rem(20) auto;}
+      .price{ text-align:center;
+        h2{font-size: px2rem(24); color: #ffe9ca; font-weight: normal;
+          span{font-size: px2rem(40);}
+          s{font-size: px2rem(18);}
+        }
+      }
+      .act-btn{ width: px2rem(184); margin:px2rem(20) auto; background: #f8e2c0; color: #8d0d0a; line-height: px2rem(50); border-radius: px2rem(50); text-align: center; z-index: 2;}
+      .act-btn.on{background:#a4a4a4;}
+    }
+    .renqi{width:px2rem(592); padding:px2rem(40) 0; margin: 0 auto;
+        ul{width:px2rem(592); margin-left: px2rem(-10);}
+        ul li{ float: left; margin-left: px2rem(30); width:px2rem(165); height: px2rem(165); background: url("../images/user.png"); background-size: 100%; box-shadow:px2rem(5) px2rem(10) px2rem(20) #921613;}
+        li.on{  background: url("../images/user-on.png"); background-size: 100%;}
+      .invite-btn{ width: px2rem(184); margin:px2rem(30) auto; background: #f8e2c0; color: #8d0d0a; line-height: px2rem(50); border-radius: px2rem(50); text-align: center; z-index: 2;}
+      .invite-btn.on{background:#a9a9a9; color: #fff;}
+    }
+  }
+
+
+
+  .sec-footer{ position: relative;  z-index:1;
+    .txt{ position: relative; width:px2rem(563); padding: px2rem(30); margin: 0 auto;  color: #f4dfbd; border: #f4dfbd 1px dashed; border-radius: px2rem(10);
+      h2{font-size: px2rem(28); font-weight: normal; }
+      p{ font-size: px2rem(22); padding-left: px2rem(35); line-height:px2rem(40);  text-indent: px2rem(-35); margin:px2rem(5) 0;
+        span{display: block; padding-left: px2rem(10); text-indent: px2rem(-10);}
+      }
+    }
+    .happy{ position: relative; width: px2rem(750); margin-top: px2rem(20);}
+  }
+
+}
+
+
+/*彈窗*/
+.Dialogbg{  background-color: #000;  height: 100%;  left: 0;  opacity: 0.7;  position: fixed;  top: 0;  width: 100%; z-index: 200; display: none;-moz-opacity:.7;filter:alpha(opacity=70); }
+
+.DialogBox{  box-shadow: 0 0 0 #999;  font-size:px2rem(14);  width:px2rem(600); height:auto !important; padding:px2rem(1); top: 50%; left: 50%;  margin:px2rem(-300) auto 0 px2rem(-300) !important;  position: fixed; z-index: 99999; display: none;
+  .closes{ width:px2rem(60); height:px2rem(60); position: absolute; top:px2rem(10); right:px2rem(10); cursor: pointer; z-index: 8; background: url("../images/close2.png") center no-repeat; background-size: 60%;}
+  .quan{position: relative; padding:0; border-radius:px2rem(10); overflow: hidden;
+    img{margin: 0 auto; width: 100%;}
+    .txt{ width:px2rem(400); position: absolute; text-align: center; top:px2rem(140); left: 50%; margin-left:px2rem(-200); letter-spacing: px2rem(3); vertical-align: baseline !important;
+      h2{font-size:px2rem(24); color: #83481b; line-height:px2rem(50);}
+      span{ vertical-align: baseline !important; }
+      p{font-size:px2rem(24); line-height:px2rem(40); color: #8d0d0a; vertical-align: baseline !important;
+        span{font-weight: bold;}
+      }
+      .go-use{display: block; width:px2rem(180); margin:px2rem(30) auto; line-height:px2rem(43); cursor: pointer; background: #a80600; color: #fae4c5; border-radius:px2rem(43); text-align: center; font-size:px2rem(24);
+      }
+    }
+
+  }
+  .quan-2{
+    .go-use{bottom: px2rem(100);}
+  }
+}
+
+
+/*分享到朋友圈*/
+.Dialog-share-cover{  background-color: #000;  height: 100%;  left: 0;  opacity: 0;  position: fixed;  top: 0;  width: 100%; z-index: 200; display: none;-moz-opacity:0;filter:alpha(opacity=0); }
+.Dialog-share{ width: px2rem(750); background: url("../images/share.png") no-repeat; background-size: 100%; }

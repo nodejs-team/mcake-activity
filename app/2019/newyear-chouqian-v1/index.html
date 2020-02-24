@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>mcake活动</title>
+
+    <!-- build:css styles/index.css -->
+    <link rel="stylesheet" href="../commoncss/wap-normalize.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <!-- endbuild-->
+
+</head>
+<body>
+
+<div id="evt_container">
+    <div id="iscroll">
+        <div class="wrap">
+            <header>
+                <a href="http://m.mcake.com/wap" class="icon-back"></a>
+                <div class="title">
+                    <span>活动</span><br><span>activity</span>
+                </div>
+                <a href="http://m.mcake.com/wap" class="icon-home"></a>
+            </header>
+            <div id="evt_loading" style="display:none;">0%</div>
+            <div id="evt_content" style="display:none;">
+                <div class="sec sec-top"><img src="images/banner-wap.jpg" alt=""></div>
+                
+                <div class="sec-qian">
+                    <div class="chouqian">
+                        <div class="qian qian-1"></div>
+                        <div class="qian qian-2"></div>
+                        <div class="qian qian-3"></div>
+                        <div class="qian qian-4"></div>
+                        <div class="qian qian-5"></div>
+                        <div class="qian qian-6"></div>
+                        <div class="qian qian-7"></div>
+                        <div class="qian-tong"></div>
+                    </div>
+                    <div class="qian-btn"><img src="images/yao-btn.png" alt=""></div>
+                    <div class="shou" id="cake"><img src="images/yaoyao.png" class="shoudong" alt=""></div>
+                </div>
+
+                <div class="sec-cake">
+                    <div class="hy-title"><img src="images/step-2.png" alt=""></div>
+                    <div class="cake-content">
+                        <div class="cake-cover"></div>
+                        <div class="cake"></div>
+                    </div>
+                    <div class="buy-btn"><img src="images/buy-btn.png" alt=""></div>
+                </div>
+
+                <div class="sec-foot">
+                    <div class="txt">
+                        <h2>活动规则</h2>
+                        <p>1、活动时间：2019年12月20日-2020年1月10日</p>
+                        <p>2、活动城市：上海、北京、苏州、杭州</p>
+                        <p>3、支付方式：微信、支付宝、现金；仅限微信、支付宝、现金全额支付的用户参与</p>
+                        <p>4、活动内容：<br>
+                            ·在活动期间每个用户id可抽签3次，抽到签的用户可拿到对应这款蛋糕的优惠券，优惠券有效期：1月31日</p>
+                        <p>5、本活动与积分、红包同享，但不与现金卡、储值卡、专享卡、礼品卡、小食卡、月饼卡等代金卡以及优惠券同享</p>
+                        <p>6、本活动最终解释权归MCAKE所有</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<div class="Dialogbg-quan" style="display: none;"></div>
+<div class="Dialog-quan" style="display: none;">
+    <a href="#cake"><div class="closes"></div></a>
+    <div class="quan quan-1" style="display: block;">
+        <a href="#cake"><div class="go-use">立即使用</div></a>
+        <img src="images/jieqian-1.png" class="jieqian" alt="">
+    </div>
+</div>
+
+<!--蛋糕选择弹窗-->
+<div class="Dialogbg-Select" ontouchmove="return false;"></div>
+<div class="Dialog-Select" ontouchmove="return false;">
+    <div class="s-closes"></div>
+    <div class="Select" ontouchmove="return false;">
+        <div class="s-title">
+            <h2>选择您要订购的磅数：</h2>
+            <b>Sélectionnez la commande le nombre de livres：</b>
+        </div>
+        <div class="s-bangshu clearfix">
+            <ul class="clearfix"></ul>
+            <div class="d-tips">
+                <div class="time">提示：需提前5小时预订</div>
+                <div class="tips">尺寸： 4-7人食 18cm*4cm（不含玫瑰花瓣）</div>
+            </div>
+        </div>
+        <div class="s-num">
+            <b>数量：</b>
+            <div class="nums">
+                <a href="javascript:;" class="minus"></a>
+                <input class="num" value="1" readonly="" type="text" data-num="">
+                <a href="javascript:;" class="plus"></a>
+            </div>
+        </div>
+        <div class="s-prices">
+            <input type="hidden" class="postid" data-postid="">
+            <b>价格：</b>
+            <!--<p>￥ <span class="s-price">00</span></p>-->
+            <p>￥ <span class="s-new-price">00</span> <s class="old-p">￥<i class="s-price">00</i></s></p>
+        </div>
+        <div class="btns">
+            <div class="go-buy">立即购买</div>
+            <div class="go-car">加入购物车</div>
+        </div>
+
+    </div>
+</div>
+
+<script src="https://act.mcake.com/fangli/2019/wap/commonjs/jquery.min.js"></script>
+<script src="https://act.mcake.com/fangli/2019/wap/commonjs/flexible.js"></script>
+<!--从2月会员日开始，因为新版移动端，点击链接跳转出去再返回，页面无法滑动了，需要把加载进入的全部动画效果（initScroll）去掉-->
+
+<!-- build:js scripts/index.js -->
+<script src="../commonjs/fastclick.js"></script>
+<script src="../commonjs/pubsub.js"></script>
+<script src="../commonjs/loader.js"></script>
+<script src="scripts/resdata.js"></script>
+<script src="scripts/yaoyaole.js"></script>
+<script src="../commonjs/public-shimily-price-Dialogbg.js"></script>
+<script src="scripts/index.js"></script>
+<!-- endbuild -->
+
+<script>
+    var data = {"title":'美貌签'};  //中一等奖
+    $(".qian-btn").click(function () {
+        choujiang(this,data);
+
+        //yaoyao();
+    });
+
+</script>
+</body>
+</html>

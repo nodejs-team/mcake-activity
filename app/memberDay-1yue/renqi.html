@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>mcake活动</title>
+
+    <!-- build:css styles/renqi.css -->
+    <link rel="stylesheet" href="../commoncss/wap-normalize.css">
+    <link rel="stylesheet" href="styles/renqi.css">
+    <!-- endbuild-->
+
+</head>
+<body>
+
+<div id="evt_container">
+    <div id="iscroll">
+        <div class="wrap">
+            <header>
+                <a href="http://m.mcake.com/wap" class="icon-back"></a>
+                <div class="title">
+                    <span>活动</span><br><span>activity</span>
+                </div>
+                <a href="http://m.mcake.com/wap" class="icon-home"></a>
+            </header>
+            <div id="evt_loading" style="display:none;">0%</div>
+            <div id="evt_content" style="display:none;">
+                <div class="hy-title"><img src="images/t.png" alt=""></div>
+                
+                <div class="sec-cake">
+                    <div class="content">
+                        <div class="cake"><img src="images/cake.png" alt=""></div>
+                        <div class="t-renqi"><img src="images/t-renqi.png" alt=""></div>
+                        <div class="price"><h2>活动价 ￥<span>258</span>/2磅 <s> 原价￥298 </s></h2></div>
+                        <div class="act-btn">查看活动</div>
+                    </div>
+                    <div class="renqi">
+                        <ul class="clearfix">
+                            <li class="on"></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <div class="invite-btn invite-1">邀请好友</div>
+                        <div class="invite-btn invite-2">帮Ta加人气</div>
+                        <div class="invite-btn invite-3 on">人气已满</div>
+                    </div>
+                </div>
+
+
+                <div class="sec-footer">
+                    <div class="txt">
+                        <h2>活动规则</h2>
+                        <p>1、每人每日仅能帮同1位好友加1次人气</p>
+                        <p>2、好友人气值加满，即可获得10元无门槛红包1个</p>
+                        <p>3、红包仅限购买拿破仑莓恋、蔓越莓红丝绒、黛西的旅行、鲜莓印雪四款产品使用</p>
+                        <p>4、红包有效期至：2020年1月31日</p>
+                    </div>
+                    <div class="happy"><img src="images/happy.png" alt=""></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+<div class="Dialogbg"></div>
+<div class="DialogBox">
+    <div class="closes"></div>
+    <div class="quan quan-1" style="display: block;">
+        <div class="txt">
+            <p>您已成功帮好友<br>提升1次人气值<br>MCAKE祝您2020好运一整年！</p>
+        </div>
+        <img src="images/card-1.png" alt="">
+    </div>
+    <div class="quan quan-2" style="display: block;">
+        <div class="txt">
+            <p><span><b class="hb">10</b>元红包</span><br>已加入您的账户</p>
+            <div class="go-use">立即使用</div>
+        </div>
+        <img src="images/card-1.png" alt="">
+    </div>
+</div>
+
+<!--分享到朋友圈-->
+<div class="Dialog-share-cover"></div>
+<div class="Dialog-share"></div>
+
+<script src="https://act.mcake.com/fangli/2020/wap/commonjs/jquery.min.js"></script>
+<script src="https://act.mcake.com/fangli/2020/wap/commonjs/flexible.js"></script>
+
+<!-- build:js scripts/renqi.js -->
+<script src="../commonjs/fastclick.js"></script>
+<script src="../commonjs/pubsub.js"></script>
+<script src="../commonjs/loader.js"></script>
+<script src="scripts/resdata.js"></script>
+<script src="scripts/Dialog.js"></script>
+<script src="scripts/share.js"></script>
+<script src="scripts/renqi.js"></script>
+<!-- endbuild -->
+<script>
+    $(".invite-1").click(function () {
+        new ShareFriend('.Dialog-share-cover','.Dialog-share');
+    });
+
+
+    $(".invite-2").click(function () {
+        new Dialog(".Dialogbg",'.DialogBox',{
+            close:'.closes',
+            btn:'.go-use'
+        },1,10);
+    });
+
+    $(".invite-3").click(function () {
+        new Dialog(".Dialogbg",'.DialogBox',{
+            close:'.closes',
+            btn:'.go-use'
+        },2,10);
+    });
+</script>
+
+</body>
+</html>

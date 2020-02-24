@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>mcake活动</title>
+
+    <!-- build:css styles/qingshu.css -->
+    <link rel="stylesheet" href="../commoncss/wap-normalize.css">
+    <link rel="stylesheet" href="styles/qingshu.css">
+    <!-- endbuild-->
+
+</head>
+<body>
+
+<div id="evt_container">
+    <div id="iscroll">
+        <div class="wrap">
+            <header>
+                <a href="http://m.mcake.com/wap" class="icon-back"></a>
+                <div class="title">
+                    <span>活动</span><br><span>activity</span>
+                </div>
+                <a href="http://m.mcake.com/wap" class="icon-home"></a>
+            </header>
+            <div id="evt_loading" style="display:none;">0%</div>
+            <div id="evt_content" style="display:none;">
+                <div class="sec-qingshu">
+                    <img src="images/qingshu-bg.png" alt="">
+                    <div class="content">
+                        <div class="data-time">2020.2.14</div>
+                        <textarea placeholder="情人节快乐" disabled>手动拉净空法师多了几分类似的手动拉净空法师多了几分类似的手动拉净空法师多了几分类似的手动拉净空法师多了几分类似的手动拉净空法师多了几分类似的手动拉净空法师多了几分类似的手动拉净空法师多了几分类似的手动拉净空法师多了几分类似的手动拉净空法师多了几分类似的手动拉净空法师多了几分类似的手动拉净空法师多了几分类似的手动拉净空法师多了几分类似的手动拉净空法师多了几分类似的</textarea>
+                        <div class="writer">会员名称</div>
+                    </div>
+                    <div class="content default" style="display: none;">
+                        <div class="data-time">2020.2.14</div>
+                        <div class="writer">会员名称</div>
+                    </div>
+                    <div class="qs-btn"><img src="images/qs-btn.png" alt=""></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+<div class="Dialogbg" ontouchmove="return false;"></div>
+<div class="DialogBox" ontouchmove="return false;">
+   <!-- <div class="closes"></div>-->
+    <div class="quan quan-1" style="display: block;">
+        <div class="txt">
+            <div class="cneter">
+                <div class="iphone"><input type="text" placeholder="输入订购人手机号即可开启"></div>
+                <div class="go-use">立即开启</div>
+            </div>
+        </div>
+        <img src="images/qs-xin.png" alt="">
+    </div>
+    <div class="quan quan-2" style="display: block;">
+        <div class="txt">
+            <div class="cneter">
+                <div class="iphone"><input type="number" maxlength="13" placeholder="输入手机号"></div>
+                <div class="pic-code"><input type="text" maxlength="6"></div>
+                <div class="pic-yzm"><img src="images/yzm.png" alt=""> </div>
+                <div class="code"><input type="text" maxlength="6"></div>
+                <div class="yzm"><input type="button" id="btn" value="获取验证码" onclick="settime(this)" /> </div>
+                <div class="get-letter"><img src="images/get-letter.png" alt=""></div>
+            </div>
+
+        </div>
+        <img src="images/quan.png" alt="">
+    </div>
+
+</div>
+
+
+
+<script src="https://act.mcake.com/fangli/2020/wap/commonjs/jquery.min.js"></script>
+<script src="https://act.mcake.com/fangli/2020/wap/commonjs/flexible.js"></script>
+
+<!-- build:js scripts/qingshu.js -->
+<script src="../commonjs/fastclick.js"></script>
+<script src="../commonjs/pubsub.js"></script>
+<script src="../commonjs/loader.js"></script>
+<script src="scripts/resdata.js"></script>
+<script src="scripts/Dialog.js"></script>
+<script src="scripts/share.js"></script>
+<script src="scripts/qingshu.js"></script>
+<!-- endbuild -->
+<script>
+
+    new Letter(".Dialogbg",'.DialogBox',{
+        close:'.closes',
+        btn:'.go-use'
+    },1,10);
+    $(".go-use").click(function () {
+        new Letter(".Dialogbg",'.DialogBox',1,10).hide();
+    });
+
+    $(".qs-btn").click(function () {
+        new Dialog(".Dialogbg",'.DialogBox',{
+            close:'.closes',
+            btn:'.get-letter'
+        },2,10);
+    });
+
+    /*60秒倒计时*/
+    var countdown=60;
+    function settime(obj) {
+        if (countdown == 0) {
+            obj.removeAttribute("disabled");
+            obj.value="免费获取验证码";
+            countdown = 60;
+            return;
+        } else {
+            obj.setAttribute("disabled", true);
+            obj.value="重新发送(" + countdown + "s)";
+            countdown--;
+        }
+        setTimeout(function() {
+            settime(obj);
+            console.log(1111);
+        },1000)
+    }
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,208 @@
+@charset "UTF-8";
+* {
+  vertical-align: baseline !important; }
+
+/*价格符号不对齐*/
+#evt_content {
+  background: url("../images/bg.jpg") top repeat-x;
+  background-size: 100%;
+  padding-top: 1px; }
+  #evt_content img {
+    width: 100%;
+    display: block; }
+  #evt_content .sec {
+    position: relative; }
+  #evt_content .hy-title {
+    width: 10rem;
+    margin: 0.66667rem auto 0; }
+  #evt_content .sec-cake {
+    position: relative;
+    z-index: 2;
+    padding: 0.66667rem 0 0; }
+    #evt_content .sec-cake .content {
+      width: 7.89333rem;
+      padding-bottom: 0.26667rem;
+      margin: 0 auto;
+      background: #c5302b;
+      box-shadow: 0.06667rem 0.26667rem 0.26667rem #921613; }
+      #evt_content .sec-cake .content .t-renqi {
+        width: 3.10667rem;
+        margin: 0.26667rem auto; }
+      #evt_content .sec-cake .content .price {
+        text-align: center; }
+        #evt_content .sec-cake .content .price h2 {
+          font-size: 0.32rem;
+          color: #ffe9ca;
+          font-weight: normal; }
+          #evt_content .sec-cake .content .price h2 span {
+            font-size: 0.53333rem; }
+          #evt_content .sec-cake .content .price h2 s {
+            font-size: 0.24rem; }
+      #evt_content .sec-cake .content .act-btn {
+        width: 2.45333rem;
+        margin: 0.26667rem auto;
+        background: #f8e2c0;
+        color: #8d0d0a;
+        line-height: 0.66667rem;
+        border-radius: 0.66667rem;
+        text-align: center;
+        z-index: 2; }
+      #evt_content .sec-cake .content .act-btn.on {
+        background: #a4a4a4; }
+    #evt_content .sec-cake .renqi {
+      width: 7.89333rem;
+      padding: 0.53333rem 0;
+      margin: 0 auto; }
+      #evt_content .sec-cake .renqi ul {
+        width: 7.89333rem;
+        margin-left: -0.13333rem; }
+      #evt_content .sec-cake .renqi ul li {
+        float: left;
+        margin-left: 0.4rem;
+        width: 2.2rem;
+        height: 2.2rem;
+        background: url("../images/user.png");
+        background-size: 100%;
+        box-shadow: 0.06667rem 0.13333rem 0.26667rem #921613; }
+      #evt_content .sec-cake .renqi li.on {
+        background: url("../images/user-on.png");
+        background-size: 100%; }
+      #evt_content .sec-cake .renqi .invite-btn {
+        width: 2.45333rem;
+        margin: 0.4rem auto;
+        background: #f8e2c0;
+        color: #8d0d0a;
+        line-height: 0.66667rem;
+        border-radius: 0.66667rem;
+        text-align: center;
+        z-index: 2; }
+      #evt_content .sec-cake .renqi .invite-btn.on {
+        background: #a9a9a9;
+        color: #fff; }
+  #evt_content .sec-footer {
+    position: relative;
+    z-index: 1; }
+    #evt_content .sec-footer .txt {
+      position: relative;
+      width: 7.50667rem;
+      padding: 0.4rem;
+      margin: 0 auto;
+      color: #f4dfbd;
+      border: #f4dfbd 1px dashed;
+      border-radius: 0.13333rem; }
+      #evt_content .sec-footer .txt h2 {
+        font-size: 0.37333rem;
+        font-weight: normal; }
+      #evt_content .sec-footer .txt p {
+        font-size: 0.29333rem;
+        padding-left: 0.46667rem;
+        line-height: 0.53333rem;
+        text-indent: -0.46667rem;
+        margin: 0.06667rem 0; }
+        #evt_content .sec-footer .txt p span {
+          display: block;
+          padding-left: 0.13333rem;
+          text-indent: -0.13333rem; }
+    #evt_content .sec-footer .happy {
+      position: relative;
+      width: 10rem;
+      margin-top: 0.26667rem; }
+
+/*彈窗*/
+.Dialogbg {
+  background-color: #000;
+  height: 100%;
+  left: 0;
+  opacity: 0.7;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 200;
+  display: none;
+  -moz-opacity: .7;
+  filter: alpha(opacity=70); }
+
+.DialogBox {
+  box-shadow: 0 0 0 #999;
+  font-size: 0.18667rem;
+  width: 8rem;
+  height: auto !important;
+  padding: 0.01333rem;
+  top: 50%;
+  left: 50%;
+  margin: -4rem auto 0 -4rem !important;
+  position: fixed;
+  z-index: 99999;
+  display: none; }
+  .DialogBox .closes {
+    width: 0.8rem;
+    height: 0.8rem;
+    position: absolute;
+    top: 0.13333rem;
+    right: 0.13333rem;
+    cursor: pointer;
+    z-index: 8;
+    background: url("../images/close2.png") center no-repeat;
+    background-size: 60%; }
+  .DialogBox .quan {
+    position: relative;
+    padding: 0;
+    border-radius: 0.13333rem;
+    overflow: hidden; }
+    .DialogBox .quan img {
+      margin: 0 auto;
+      width: 100%; }
+    .DialogBox .quan .txt {
+      width: 5.33333rem;
+      position: absolute;
+      text-align: center;
+      top: 1.86667rem;
+      left: 50%;
+      margin-left: -2.66667rem;
+      letter-spacing: 0.04rem;
+      vertical-align: baseline !important; }
+      .DialogBox .quan .txt h2 {
+        font-size: 0.32rem;
+        color: #83481b;
+        line-height: 0.66667rem; }
+      .DialogBox .quan .txt span {
+        vertical-align: baseline !important; }
+      .DialogBox .quan .txt p {
+        font-size: 0.32rem;
+        line-height: 0.53333rem;
+        color: #8d0d0a;
+        vertical-align: baseline !important; }
+        .DialogBox .quan .txt p span {
+          font-weight: bold; }
+      .DialogBox .quan .txt .go-use {
+        display: block;
+        width: 2.4rem;
+        margin: 0.4rem auto;
+        line-height: 0.57333rem;
+        cursor: pointer;
+        background: #a80600;
+        color: #fae4c5;
+        border-radius: 0.57333rem;
+        text-align: center;
+        font-size: 0.32rem; }
+  .DialogBox .quan-2 .go-use {
+    bottom: 1.33333rem; }
+
+/*分享到朋友圈*/
+.Dialog-share-cover {
+  background-color: #000;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 200;
+  display: none;
+  -moz-opacity: 0;
+  filter: alpha(opacity=0); }
+
+.Dialog-share {
+  width: 10rem;
+  background: url("../images/share.png") no-repeat;
+  background-size: 100%; }

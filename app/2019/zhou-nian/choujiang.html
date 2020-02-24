@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../commoncss/wap-normalize.css">
+    <link rel="stylesheet" href="styles/hongbao.css">
+</head>
+<body>
+
+
+
+<!--红包雨专区-->
+
+<div class="hongbao-wrapper">
+    <div class="hob-cd">5s</div>
+    <!--<div class="hob-close"></div>-->
+    <div class="btn-l btn-red for-get-now">快点击抢红包！</div>
+</div>
+
+
+<script src="https://act.mcake.com/fangli/2019/wap/commonjs/jquery.min.js"></script>
+<script src="https://act.mcake.com/fangli/2019/wap/commonjs/flexible.js"></script>
+<script src="https://act.mcake.com/fangli/2019/wap/commonjs/fastclick.js"></script>
+<!--<script type="text/javascript" src="scripts/hongbao.js"></script>-->
+<script>
+    var childValue = "sdkfjlsdjkf";
+       /*开始抢红包*/
+       /*$("body",parent.document).find(".hob-inlet-01").click(function () {
+            $("body",parent.document).find('.hongbaoCj').fadeIn(10);
+            hobYU(parent.Hbend);
+        });*/
+
+        /*点击抽奖*/
+
+       /* var arr = [0,1,2,3];
+        var num = 0;*/
+
+        window.addEventListener('message', function (event) {
+            /*if(window.parent !== event.source){ return false; }*/
+            Scheduler.translate(event)
+        }, false);
+
+        var Scheduler = {
+
+            // 消息事件对象
+            event: {},
+
+            // 参数
+            params: {},
+
+            // 翻译
+            translate: function (data) {
+                this.event = event;
+                this.params = typeof(event.data) == 'string' ? JSON.parse(event.data) : event.data;
+                this.execute();
+            },
+            // 执行
+            execute: function () {
+
+                switch (this.params.method) {
+
+                    // 抽奖
+                    case 'choujiang':
+                        console.log(this.params.data.id,'抽奖');
+                        start(this.params.data.success);
+                        break;
+                    case 'hby':
+                        console.log(this.params.data.id,'红包雨开始拉');
+                        hbyBegin(this.params.data.id);
+                        break;
+                    // 默认
+                    default:
+                }
+            }
+        }
+
+        function sendMessage() {
+            top.postMessage({method: 'choujiang',data:{id:4}}, "*");
+        }
+
+        $(document).on("click","i.hb",sendMessage); /*添加点击事件，向外部发送通知*/
+
+        function start(data) {
+
+                $(document).on("click","i.hb",function(){
+                    $(this).addClass('gethb');
+                    $(this).find("b").text(data);
+                    var self = $(this);
+                    setTimeout(function () {
+                        self.hide();
+                    },200);
+                });
+        }
+
+        /*开始红包雨*/
+        function hbyBegin(id) {
+            function hobYU() {
+                var _top = $(document).height() + 300;
+                $(".hongbao-wrapper i").remove();
+
+                $('.hongbao-wrapper').fadeIn();
+                var h_con = 0,
+                    speed = 320,/*下红包个数200*/
+                    isPc;
+                var HONGBAO = setInterval(function() {
+                    var _r = ['70%', '80%', '90%', '100%'];
+                    var _w = ['5', '30', '80', '90','70'];
+                    $(window).width() > 800 ? isPc = 0 : isPc = 1;
+
+                    /* var HTML_i = $('<i style="background-size:' + _r[parseInt(Math.random() * 4)] + ';top:' + -200+'px; left:' + (parseInt(Math.random() * 20) - isPc) * 20 + '%"><b>+1</b></i>');*/
+
+                    var max = 90;
+                    var min = 3;
+                    var random = Math.random()*(max-min)+min;
+
+                    var HTML_i = $('<i class="hb" style="background-size:' + _r[parseInt(Math.random() * 4)] + ';top:' + -200+'px; left:' +  random + '%"><b></b></i>');
+
+console.log(HTML_i);
+                    $('.hongbao-wrapper').append(HTML_i);
+                    var _left = HTML_i.offset().left;
+
+                    HTML_i.animate({
+                        'top': _top,/*红包雨的整体高度*/
+                        'left': _left
+                    }, 5000, 'linear');   /*红包雨的速度 原来是8000*/
+
+                    /*倒计时*/
+
+
+                    $('.hob-cd').html(20 - parseInt(h_con / 3.125) + 's');  /*1000/speed(300)=3.33*/
+
+
+                    if (h_con === 62) {   /* 20*3.125 =62.5*/
+                        clearTimeout(HONGBAO);
+                        /*var _x =  $("body",parent.document).find('.hob-inlet-02').offset().left - $(window).scrollLeft() + 60,
+                            _y =  $("body",parent.document).find('.hob-inlet-02').offset().top - $(window).scrollTop() + 50;
+*/
+
+                        $('.hongbao-wrapper').addClass('rotate').animate({
+                            'width': 0,
+                            'height': 0,
+                            'top': '100%',
+                            'left': '100%',
+                            'opacity': 0
+                        }, 500);
+                        $('.hongbao-wrapper *').addClass('rotate').animate({
+                            'width': 0,
+                            'height': 0,
+                            'top': '100%',
+                            'left': '100%',
+                            'opacity': 0
+                        });
+
+                        /*红包雨结束*/
+                        $('.hongbao-wrapper').fadeOut(100);
+                        /*$("body",parent.document).find(".hob-inlet").fadeOut(10);*/
+                        $(".modal,.shade").fadeIn(200);
+                        $(".hongbao-wrapper i").remove();
+                        /*向外传递参数：显示抽奖结果*/
+                        var autoMessage = {method:'hbResult',message:'抽奖结果展示',data:{DialogCover:".shade",DialogBox:".modal",id:4}};
+                        top.postMessage(autoMessage,'*');
+                    } else {
+                        h_con++;
+                    }
+                }, speed);  /*下红包的个数*/
+            }
+
+
+            hobYU();
+
+
+        }
+
+</script>
+</body>
+</html>

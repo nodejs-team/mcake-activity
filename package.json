@@ -12,7 +12,7 @@
   "license": "ISC",
   "devDependencies": {
     "del": "^2.2.2",
-    "gulp": "latest",
+    "gulp": "~3.9.1",
     "gulp-cache": "^0.4.5",
     "gulp-cheerio": "^0.6.2",
     "gulp-concat": "^2.6.0",
@@ -20,7 +20,7 @@
     "gulp-imagemin": "^3.1.1",
     "gulp-minify-css": "^1.2.4",
     "gulp-replace": "^0.5.4",
-    "gulp-sass": "^2.3.2",
+    "gulp-sass": "^3.0.0",
     "gulp-tinypng": "^1.0.2",
     "gulp-uglify": "^1.5.4",
     "gulp-useref": "^3.1.2",
@@ -29,14 +29,13 @@
     "gulp-webserver": "^0.9.1",
     "imagemin-pngquant": "^5.0.0",
     "lazypipe": "^1.0.1",
-    "run-sequence": "^1.2.2",
+    "run-sequence": "^2.0.0",
     "vinyl-ftp": "^0.5.0",
     "yargs": "^6.4.0"
   },
   "buildConfig": {
-    "projectName": "yaoyaole",
-    "basePath-edm": "http://edm.mcake.com/fangli/2019-wap/",
-    "basePath": "https://act.mcake.com/fangli/2019/wap/",
+    "projectName": "memberDay-2yue",
+    "basePath": "https://act.mcake.com/fangli/2020/wap/",
     "tinypngKey": "Lv4IxKbb9SJ6M3OG-lyEA86akPCQBmqE",
     "beiyong": "scz0D_NUirlIzDuA1U6m4rwvS24z7s0o",
     "server": {
