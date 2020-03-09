@@ -43,49 +43,7 @@
     var loader;
 
 
-    var loadComplete = function () {
-        /*解决：当前页面点击“立即订购”后跳转到新页面后，再返回当前页，会出现页面里的弹窗定位不准确的问题。*/
-        $("html,body").animate({scrollTop:0},100);
 
-        var swiper1 = new Swiper('.swiper1', {
-            observer:true,
-            observeParents:true,
-            speed:300,
-            autoplay : {
-                delay:3000,
-                disableOnInteraction: false,
-            },
-            loop: true,
-
-            pagination: {
-                el: '.swiper-pagination1',
-                clickable: true
-            }
-        });
-
-        /*指定锚点跳转位置*/
-        function scrollTopAni(ele,callback) {
-            var sTop = $(ele).offset().top-80;
-            $("html,body").animate({scrollTop:sTop},500,function () {
-                callback && callback();
-            });
-        }
-
-        /*使用红包*/
-        $(".fls2,.go-use").click(function () {
-            $(".modal,.shade,.hob-inlet,.shade1").fadeOut(10);
-            scrollTopAni("#zhekou"); /*锚点定位*/
-            return false;
-        });
-
-        /*关闭红包*/
-        $(".mod-close").click(function () {
-            $(".hob-inlet,.shade1").fadeOut(10);
-            $(".modal,.shade").fadeOut(10);
-            return false;
-        });
-
-    };
     function startLoading(){
         loader = new Loader('images/');
         var domLoad = document.getElementById('evt_loading');
@@ -104,7 +62,32 @@
     }
     startLoading();
 
+    var loadComplete = function () {
+        /*日期判断，更换日历*/
+        var vDate = new Date();
+        var myDate = vDate.getFullYear() + '-' + (vDate.getMonth() + 1) + '-' + vDate.getDate(); /*解决安卓浏览器时间显示问题*/
+        var myDay = vDate.getDate();
+        switch (myDay){
+            case 3:
+                $(".calendar img").attr("src","https://act.mcake.com/fangli/2020/wap/memberDay-2yue/images/calendar-1.png");
+                break;
+            case 10:
+                $(".calendar img").attr("src","https://act.mcake.com/fangli/2020/wap/memberDay-2yue/images/calendar-2.png");
+                break;
+            case 17:
+                $(".calendar img").attr("src","https://act.mcake.com/fangli/2020/wap/memberDay-2yue/images/calendar-3.png");
+                break;
+            case 24:
+                $(".calendar img").attr("src","https://act.mcake.com/fangli/2020/wap/memberDay-2yue/images/calendar-4.png");
+                break;
+            case 31:
+                $(".calendar img").attr("src","https://act.mcake.com/fangli/2020/wap/memberDay-2yue/images/calendar-5.png");
+                break;
+        }
 
+
+        /*initScroll();  新版wap端跳转新页面再返回来之后，页面无法滑动了*/
+    };
 
 })();
 

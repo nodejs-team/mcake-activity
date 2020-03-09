@@ -53,8 +53,8 @@
 
 .flower-1 {
   position: absolute;
-  width: 0.57333rem;
-  height: 0.78667rem;
+  width: 0.8rem;
+  height: 0.8rem;
   background: url("../images/flower-1.png");
   background-size: 100%;
   bottom: 2rem;
@@ -65,13 +65,13 @@
 
 .flower-2 {
   position: absolute;
-  width: 0.78667rem;
-  height: 0.57333rem;
+  width: 0.8rem;
+  height: 0.8rem;
   background: url("../images/flower-2.png");
   background-size: 100%;
-  bottom: 2.66667rem;
+  bottom: 1.46667rem;
   left: 50%;
-  margin-left: -0.13333rem;
+  margin-left: 1.2rem;
   z-index: 2;
   display: none; }
 
@@ -105,11 +105,11 @@ img {
 
 @keyframes hob_btn {
   10%, 30%, 50%, 70%, 90% {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1); }
-  20%, 40%, 60%, 80% {
     -webkit-transform: scale(1);
-    transform: scale(1); } }
+    transform: scale(1); }
+  20%, 40%, 60%, 80% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9); } }
 
 .hob-mb {
   display: none; }
@@ -170,8 +170,9 @@ img {
   display: block;
   position: absolute;
   cursor: pointer;
-  width: 1.28rem;
-  height: 2rem;
+  width: 1.33333rem;
+  height: 1.46667rem;
+  z-index: 10;
   top: -2.66667rem;
   -webkit-tap-highlight-color: transparent;
   -webkit-appearance: none;
@@ -189,8 +190,8 @@ img {
 
 .hongbao-wrapper i b {
   position: absolute;
-  top: -0.06667rem;
-  right: -0.06667rem;
+  top: -0.2rem;
+  right: -0.13333rem;
   color: #ffdf83;
   font-size: 0.32rem;
   opacity: 0;

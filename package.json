@@ -34,7 +34,7 @@
     "yargs": "^6.4.0"
   },
   "buildConfig": {
-    "projectName": "38jie",
+    "projectName": "memberDay-3yue",
     "basePath": "https://act.mcake.com/fangli/2020/wap/",
     "tinypngKey": "Lv4IxKbb9SJ6M3OG-lyEA86akPCQBmqE",
     "beiyong": "scz0D_NUirlIzDuA1U6m4rwvS24z7s0o",

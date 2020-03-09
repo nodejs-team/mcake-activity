@@ -37,8 +37,8 @@
 }
 
 .flower-cake{width:px2rem(750); position: absolute; bottom:px2rem(-100); left: 50%; margin-left: px2rem(-375); }
-.flower-1{position: absolute; width:px2rem(43); height: px2rem(59); background: url("../images/flower-1.png"); background-size: 100%;  bottom:px2rem(150); left: 50%; margin-left: px2rem(60); z-index: 2; display: none; }
-.flower-2{position: absolute; width:px2rem(59);  height: px2rem(43); background: url("../images/flower-2.png"); background-size: 100%;  bottom:px2rem(200); left: 50%; margin-left: px2rem(-10); z-index: 2; display: none;}
+.flower-1{position: absolute; width:px2rem(60); height: px2rem(60); background: url("../images/flower-1.png"); background-size: 100%;  bottom:px2rem(150); left: 50%; margin-left: px2rem(60); z-index: 2; display: none; }
+.flower-2{position: absolute; width:px2rem(60);  height: px2rem(60); background: url("../images/flower-2.png"); background-size: 100%;  bottom:px2rem(110); left: 50%; margin-left: px2rem(90); z-index: 2; display: none;}
 
 img{width: 100%;}
 
@@ -81,13 +81,13 @@ img{width: 100%;}
 
 @keyframes hob_btn {
   10%,30%,50%,70%,90% {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1)
+    -webkit-transform: scale(1);
+    transform: scale(1)
   }
 
   20%,40%,60%,80% {
-    -webkit-transform: scale(1);
-    transform: scale(1)
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9)
   }
 }
 
@@ -166,8 +166,8 @@ img{width: 100%;}
 .hongbao-wrapper i {
   display: block;
   position: absolute; cursor: pointer;
-  width: px2rem(96);
-  height: px2rem(150);
+  width: px2rem(100);
+  height: px2rem(110); z-index: 10;
   top: px2rem(-200); -webkit-tap-highlight-color: transparent; -webkit-appearance: none;
   background: url(../images/flower-1.png) center no-repeat; background-size: 100%;
  /* -webkit-transform: rotate(-15deg);
@@ -180,7 +180,7 @@ img{width: 100%;}
   -o-transition: 1s transform;
   transition: 1s transform
 }
-.hongbao-wrapper i b{ position: absolute; top: px2rem(-5); right: px2rem(-5); color: #ffdf83; font-size:px2rem(24); opacity: 0; font-style: normal;}
+.hongbao-wrapper i b{ position: absolute; top: px2rem(-15); right: px2rem(-10); color: #ffdf83; font-size:px2rem(24); opacity: 0; font-style: normal;}
 
 .hongbao-wrapper i.gethb b{ transition: all 0.2s; top: px2rem(-20); right: px2rem(-20); opacity:0.9;}
 

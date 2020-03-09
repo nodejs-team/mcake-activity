@@ -8,7 +8,7 @@
             speed = 320,/*下红包个数200*/
             isPc;
         var HONGBAO = setInterval(function() {
-            var _r = ['70%', '80%', '90%', '100%'];
+            var _r = ['90%', '95%', '98%', '99%'];
             var _w = ['5', '30', '80', '90','70'];
             var _src = ['1','2', '3'];
             $(window).width() > 800 ? isPc = 0 : isPc = 1;
@@ -47,15 +47,15 @@
                 $('.hongbao-wrapper').addClass('rotate').animate({
                     'width': 0,
                     'height': 0,
-                    'top': '100%',
-                    'left': '100%',
+                    'top': '50%',
+                    'left': '50%',
                     'opacity': 0
                 }, 500);
                 $('.hongbao-wrapper *').addClass('rotate').animate({
                     'width': 0,
                     'height': 0,
-                    'top': '100%',
-                    'left': '100%',
+                    'top': '50%',
+                    'left': '50%',
                     'opacity': 0
                 });
 

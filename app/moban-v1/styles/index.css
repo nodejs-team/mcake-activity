@@ -1,0 +1,55 @@
+@charset "UTF-8";
+* {
+  vertical-align: baseline !important; }
+
+/*价格符号不对齐*/
+#evt_content img {
+  width: 100%;
+  display: block; }
+
+#evt_content .sec {
+  position: relative; }
+
+#evt_content .sec-top {
+  height: 13.38667rem;
+  background: url("../images/banner-t.png") repeat;
+  background-size: 100%;
+  z-index: 2; }
+
+#evt_content .hy-title {
+  width: 10rem;
+  margin: 0 auto;
+  padding: 0.66667rem 0; }
+
+#evt_content .sec-cake {
+  position: relative;
+  z-index: 1;
+  padding: 0 0 0.4rem;
+  background: url("../images/banner-bg.png") bottom no-repeat;
+  background-size: 100%; }
+
+#evt_content .sec-footer {
+  background: url("../images/foot-bg.jpg");
+  background-size: 10%;
+  position: relative;
+  padding-bottom: 0.66667rem;
+  z-index: 1; }
+  #evt_content .sec-footer .f-txt {
+    position: relative;
+    width: 9.33333rem;
+    padding-top: 1.06667rem;
+    margin: 0 auto;
+    color: #69413c; }
+    #evt_content .sec-footer .f-txt h2 {
+      font-size: 0.37333rem;
+      font-weight: normal; }
+    #evt_content .sec-footer .f-txt p {
+      font-size: 0.29333rem;
+      padding-left: 0.46667rem;
+      line-height: 0.53333rem;
+      text-indent: -0.46667rem;
+      margin: 0.06667rem 0; }
+      #evt_content .sec-footer .f-txt p span {
+        display: block;
+        padding-left: 0.13333rem;
+        text-indent: -0.13333rem; }
