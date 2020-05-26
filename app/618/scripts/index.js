@@ -42,6 +42,28 @@
 
     var loader;
 
+
+    var loadComplete = function () {
+        $(".prolist li").each(function () {
+            var self = this;
+            $(this).find('.btns').click(function () {
+                $(".go-car").hide(0).siblings().show(0);
+                SelectShow(self,[0,0,0,0],1,true,0,0);
+            });
+            $(this).find('.cart').click(function () {
+                $(".go-buy").hide(0).siblings().show(0);
+                SelectShow(self,[0,0,0,0],1,true,0,0);
+            });
+        });
+        $(".go-car").click(function () {
+            SelectHide();
+        });
+        $(".go-buy,.s-closes").click(function () {
+            SelectHide();
+        });
+
+        floater();
+    };
     function startLoading(){
         loader = new Loader('images/');
         var domLoad = document.getElementById('evt_loading');
@@ -61,68 +83,40 @@
     startLoading();
 
 
-
-
-
-    /*页面加载完成*/
-    var loadComplete = function () {
-
-        $("html,body").animate({scrollTop:0},500);
-
-        $(".moon.prolist li").each(function () {
-            var self = this;
-            $(this).find('.m-car').click(function () {
-                $(".go-buy").hide(0).siblings().show(0);
-                SelectShow(self,[0,0,0,0],1,true,1,0);
-            });
-            $(this).find('.m-btn').click(function () {
-                $(".go-car").hide(0).siblings().show(0);
-                SelectShow(self,[0,0,0,0],1,true,1,0);
-            });
-        });
-
-        $(".cakes.prolist dd").each(function () {
-            var self = this;
-            $(this).find('.m-btn').click(function () {
-                $(".go-car").hide(0).siblings().show(0);
-                SelectShow(self,[0,0,0,0],0.88,true,1,0);
-            });
-        });
-
-        $(".cakes-list.prolist dd").each(function () {
-            var self = this;
-            $(this).find('.m-btn').click(function () {
-                $(".go-car").hide(0).siblings().show(0);
-                SelectShow(self,[0,0,0,0],0.9,true,1,0);
-            });
-        });
-        $(".go-car").click(function () {
-            SelectHide();
-        });
-        $(".go-buy,.s-closes").click(function () {
-            SelectHide();
-        });
-
-        /*按钮变色*/
-        $(".zn-btn,.buy-yuanbtn,.m-car,.m-btn,.go-buy,go-car").hover(function () {
-            $(this).addClass("on");
-        },function () {
-            $(this).removeClass("on");
-        });
-
-        $(".buy-btn").hover(function () {
-            $(this).addClass("on").siblings().removeClass("on");
-        });
-
-
-    };
-
-
-
-
-
-
 })();
 
 
 
+function floater(){
+    var height = $(".part-2").offset().top;
+    var secheight = $(".part-2").outerHeight();
+    var fHeight = 177;
+    var fTop = 100;
+    var fRight = 10;
+    var floater = $('#floater');
+    var floaterPosition = 'absolute';
+    var winWidth = $(window).width();
+    var absRight = winWidth<1280 ? (1280-winWidth+fRight) : fRight;
+
+    $(window).on("scroll", function(){
+        var sTop = $(this).scrollTop();
+
+        if(floaterPosition === 'fixed' &&  sTop <= height ){
+            floater.css({position: "absolute"});
+            floaterPosition = 'absolute';
+        }
+
+        if(floaterPosition === 'absolute' &&  sTop > height && sTop <= height+secheight-330){
+            floater.css({position: "fixed"});
+            floaterPosition = 'fixed';
+        }
+
+        if(floaterPosition === 'fixed' && sTop > height+secheight-330){
+            floater.css({position: "absolute"});
+            floaterPosition = 'absolute';
+
+        }
+    });
+
+
+};

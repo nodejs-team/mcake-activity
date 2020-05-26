@@ -133,6 +133,7 @@
 
             disCount = disFun(bs,disArr);
 
+
             $price.html((prices[n]-0).toFixed(2));
             $newprice.html(((prices[n]-disCount)*dis).toFixed(2));
             $(".postid").data('postid',postids[n]);
@@ -181,14 +182,15 @@
                         /*按磅数立减*/
                         bs= ponds[i].replace(/[^\d|.]/g, '')-0; /*当前磅数*/
                         disCount = disFun(bs,disArr);
+
                         price = self.data("price");
-                        totaPrice = (price-disCount) * num;
+                        totaPrice = (price) * num;
 
                         if(double){ /*第二件半价*/
                             var ix = parseInt(num / 2);  /*向下取整*/
                             newPrice = (totaPrice - price/2 * ix)*dis;
                         }else{
-                            newPrice = totaPrice*dis;
+                            newPrice = totaPrice*dis-disCount*num;
                         }
 
 
@@ -256,13 +258,13 @@
 
         /*按磅数立减*/
         disCount = disFun(bs,disArr);
-        totaPrice = (price-disCount) * num;
+        totaPrice = (price) * num;
 
         if(double){ /*第二件半价*/
             var ix = parseInt(num / 2);  /*向下取整*/
             newPrice = (totaPrice - price/2 * ix)*dis;
         }else{
-            newPrice = totaPrice*dis;
+            newPrice = totaPrice*dis-disCount*num;
         }
         $(".go-buy,.go-car").attr('data-num',num);
         $price.html(totaPrice.toFixed(2));
@@ -280,13 +282,13 @@
 
         /*按磅数立减*/
         disCount = disFun(bs,disArr);
-        totaPrice = (price-disCount) * num;
+        totaPrice = (price) * num;
 
         if(double){ /*第二件半价*/
             var ix = parseInt(num / 2);  /*向下取整*/
             newPrice = (totaPrice - price/2 * ix)*dis;
         }else{
-            newPrice = totaPrice*dis;
+            newPrice = totaPrice*dis-disCount*num;
         }
         $(".go-buy,.go-car").attr('data-num',num);
         $price.html(totaPrice.toFixed(2));

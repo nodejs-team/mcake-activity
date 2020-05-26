@@ -1,0 +1,48 @@
+html, body {
+  height: 100%; }
+
+#evt_content {
+  max-width: 10rem;
+  margin: 0 auto; }
+  #evt_content div {
+    position: absolute; }
+  #evt_content img {
+    width: 100%; }
+  #evt_content .sec {
+    position: relative; }
+  #evt_content .sec-banner {
+    z-index: 1; }
+  #evt_content .sec-footer {
+    background: #b17b52;
+    background-size: 12%;
+    position: relative;
+    padding-bottom: 0.66667rem;
+    z-index: 1;
+    text-align: left;
+    color: #fff; }
+    #evt_content .sec-footer .txt {
+      position: relative;
+      width: 8.26667rem;
+      padding: 2rem 0;
+      margin: 0 auto;
+      text-align: left; }
+      #evt_content .sec-footer .txt h2 {
+        font-size: 0.37333rem;
+        font-weight: normal; }
+      #evt_content .sec-footer .txt p {
+        font-size: 0.36rem;
+        padding-left: 0.46667rem;
+        line-height: 0.53333rem;
+        text-indent: -0.46667rem;
+        margin: 0.06667rem 0;
+        text-align: left !important; }
+        #evt_content .sec-footer .txt p span {
+          display: block;
+          padding-left: 0.13333rem;
+          text-indent: -0.13333rem; }
+  #evt_content .sec-foot {
+    position: relative; }
+  #evt_content .foot-dis {
+    position: absolute;
+    bottom: 0;
+    width: 10rem; }

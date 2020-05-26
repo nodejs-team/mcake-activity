@@ -1,0 +1,89 @@
+@charset "UTF-8";
+#evt_content img {
+  width: 100%; }
+
+#evt_content .sec {
+  position: relative; }
+
+#evt_content .sec-banner {
+  z-index: 1; }
+
+#evt_content .sec-express .express {
+  width: 10rem;
+  margin: 0.93333rem auto; }
+
+#evt_content .sec-footer {
+  background: #b17b52;
+  background-size: 12%;
+  position: relative;
+  padding-bottom: 0.66667rem;
+  z-index: 1;
+  text-align: left;
+  color: #fff; }
+  #evt_content .sec-footer .txt {
+    position: relative;
+    width: 8.26667rem;
+    padding: 2rem 0;
+    margin: 0 auto;
+    text-align: left; }
+    #evt_content .sec-footer .txt h2 {
+      font-size: 0.37333rem;
+      font-weight: normal; }
+    #evt_content .sec-footer .txt p {
+      font-size: 0.36rem;
+      padding-left: 0.46667rem;
+      line-height: 0.53333rem;
+      text-indent: -0.46667rem;
+      margin: 0.06667rem 0;
+      text-align: left !important; }
+      #evt_content .sec-footer .txt p span {
+        display: block;
+        padding-left: 0.13333rem;
+        text-indent: -0.13333rem; }
+
+/*彈窗*/
+.Dialogbg-quan {
+  background-color: #000;
+  height: 100%;
+  left: 0;
+  opacity: 0.7;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 200;
+  display: none; }
+
+.Dialog-quan {
+  box-shadow: 0 0 0 #999;
+  font-size: 0.18667rem;
+  width: 9.01333rem;
+  padding: 0.4rem 0;
+  top: 50%;
+  left: 50%;
+  margin-bottom: 0;
+  margin-left: -4.50667rem;
+  margin-right: auto;
+  margin-top: -4.4rem;
+  position: fixed;
+  z-index: 99999;
+  border-radius: 0.13333rem;
+  display: none; }
+  .Dialog-quan img {
+    width: 100%; }
+  .Dialog-quan .quan {
+    position: relative;
+    display: none; }
+    .Dialog-quan .quan .go-use {
+      display: block;
+      position: absolute;
+      bottom: 0.82667rem;
+      left: 50%;
+      width: 2.24rem;
+      line-height: 0.65333rem;
+      background: #aea778;
+      margin-left: -1.12rem;
+      font-size: 0.29333rem;
+      text-align: center;
+      color: #fff;
+      cursor: pointer;
+      border-radius: 0.65333rem; }

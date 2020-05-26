@@ -1,0 +1,137 @@
+@function px2rem($n) {
+  @return ($n * 10 / 750) * 1rem; //设计稿一般都是750宽
+}
+*{ vertical-align: baseline !important;}  /*价格符号不对齐*/
+#evt_content{width: px2rem(750); background:url("../images/bg.png") center bottom; background-size: 100%;
+  img{width:100%; display: block;}
+  .sec{position: relative; }
+
+  .sec-top{ width: px2rem(750); height: px2rem(895); background:url("../images/banner.png") repeat; background-size: 100%; z-index: 1; overflow: hidden;
+  }
+
+
+  .hy-title{ width: px2rem(750); margin:px2rem(77) auto px2rem(20); }
+
+
+  .sec-cake{ position: relative; z-index: 1; padding-top: px2rem(50);
+    .cake{ width:px2rem(750);  margin: 0 auto; z-index: 1; overflow: hidden; }
+    .star{ position: absolute; width: px2rem(92); top: px2rem(90); right: px2rem(30); z-index: 10; }
+    .price{width: px2rem(750); margin: px2rem(50) auto; }
+    .cake-title{ width: px2rem(438); float: left; margin:px2rem(50) 0 0 px2rem(20);}
+    .price{ position: relative; float: right; width: px2rem(280); text-align: center;
+      .icon_50{ top: px2rem(-5); left: px2rem(-50);}
+      h2{color: #4c2610;}
+      s{display: block; color: #4c2610;}
+      ul.buy_btn_box{ clear: both; float: none; margin: px2rem(10) auto; width: px2rem(150);}
+      ul.buy_btn_box li span{ width: px2rem(150); background: #e2ba1a; line-height: px2rem(42); border-radius: px2rem(42);}
+    }
+  }
+
+  .icon{position: absolute; width:px2rem(89); height:px2rem(71); left:px2rem(180); top:px2rem(8); }
+  .icon_20{background: url("../images/icon_20.png"); background-size: 100%;}
+  .icon_40{background: url("../images/icon_40.png"); background-size: 100%;}
+  .icon_60{background: url("../images/icon_60.png"); background-size: 100%;}
+  .icon_50{background: url("../images/icon_50.png"); background-size: 100%;}
+
+  .sec-main{ width: px2rem(750); padding:1px 0 px2rem(20);
+    .dis{position: absolute; width: px2rem(52); left: 0; top:px2rem(100);}
+    .pro-num{ position: relative; float: left; width: px2rem(200); height: px2rem(45); display: inline-block; border: #c65459 1px solid; border-radius: px2rem(45);
+      a{ position: absolute; top:px2rem(-20); width:px2rem(80); height:px2rem(80); display:block; z-index: 2;}
+      .minus{display:inline-block;background:url(../images/in-a-1.png) center no-repeat; left:px2rem(-20); background-size: 50%;}
+      .plus{display:inline-block;background:url(../images/in-a-2.png) center no-repeat; right:px2rem(-20); background-size: 50%;}
+      .bang{ display:inline-block; width:px2rem(130); line-height:px2rem(45); position:absolute; top:0; left:px2rem(35); text-align:center; color:#c65459; background: none; font-size:px2rem(20); padding:0; z-index: 1;}
+    }
+
+    .row{ position: relative;
+      .cake{position: absolute;}
+      .price{position: absolute;}
+    }
+    .row1{height: px2rem(500);
+      .icon{ left:px2rem(230); top:px2rem(28);}
+      .cake{ width:px2rem(405); top:0; right:0; z-index: 1;}
+      .price{ top: px2rem(150); left:px2rem(30); z-index: 2;
+        h2,s{color: #5c4c0d;}
+        ul.buy_btn_box li span{background: #ebd679;}
+        .pro-num{ border: #5c4c0d 1px solid;
+          span.bang{color:#5c4c0d;}
+        }
+        .minus{ background:url(../images/in-a-1.png) center no-repeat; background-size: 50%;}
+        .plus{ background:url(../images/in-a-2.png) center no-repeat; background-size: 50%;}
+      }
+    }
+    .row2{height: px2rem(580);
+      .cake{width:px2rem(349); top:0; left:0; z-index: 1;}
+      .price{top:px2rem(150); left: auto; right:0;
+        h2,s{color: #5c4c0d;}
+        ul.buy_btn_box li span{background: #ebd679;}
+        .pro-num{ border: #5c4c0d 1px solid;
+          span.bang{color:#5c4c0d;}
+        }
+        .minus{ background:url(../images/in-b-1.png) center no-repeat; background-size: 50%;}
+        .plus{ background:url(../images/in-b-2.png) center no-repeat; background-size: 50%;}
+      }
+    }
+
+    .row3{height: px2rem(500);
+      .icon{  left:px2rem(160);}
+      .cake{ width:px2rem(364); top:0; right:0; z-index: 1;}
+      .price{ top: px2rem(80); left:px2rem(30); z-index: 2;
+        h2,s{color: #a70001;}
+        ul.buy_btn_box li span{background: #c65459;}
+        .pro-num{ border: #a70001 1px solid;
+          span.bang{color:#a70001;}
+        }
+        .minus{ background:url(../images/in-c-1.png) center no-repeat; background-size: 50%;}
+        .plus{ background:url(../images/in-c-2.png) center no-repeat; background-size: 50%;}
+      }
+    }
+
+    .row4{height: px2rem(580);
+      .icon{  left:px2rem(190);}
+      .cake{width:px2rem(377); top:0; left:0; z-index: 1;}
+      .price{top:px2rem(150); left: auto; right:0;
+        h2,s{color: #77564d;}
+        ul.buy_btn_box li span{background: #77564d;}
+        .pro-num{ border: #77564d 1px solid;
+          span.bang{color:#77564d;}
+        }
+        .minus{ background:url(../images/in-d-1.png) center no-repeat; background-size: 50%;}
+        .plus{ background:url(../images/in-d-2.png) center no-repeat; background-size: 50%;}
+      }
+    }
+
+
+
+  }
+
+  .sec-footer{ position: relative; padding-bottom: px2rem(60); z-index:1; background: url("../images/foot-bg.png") repeat; background-size: 5%;
+    .txt{ position: relative; width:px2rem(700); padding-top: px2rem(80); margin: 0 auto;  color: #5e5c5d;
+      h2{font-size: px2rem(22); font-weight: normal; }
+      p{ font-size: px2rem(21); padding-left: px2rem(35); line-height:px2rem(35);  text-indent: px2rem(-35); margin:px2rem(5) 0;
+        span{display: block; text-indent: px2rem(80);}
+      }
+    }
+  }
+
+
+  /*价格计算【通用】*/
+  .price{ position: absolute;  width: px2rem(400); text-align: left; z-index: 2;
+
+    .title{position: relative; width: px2rem(353); margin:px2rem(10) 0 px2rem(50) 0;}
+    h2{position: relative; font-size:  px2rem(20); font-weight: normal; line-height: px2rem(50); color: #a70001;
+      i{font-size:  px2rem(20); line-height: px2rem(30); font-style: normal;vertical-align:middle; }
+      span{font-size: px2rem(34); }
+      em{font-style:normal;}
+    }
+    s{ font-size:  px2rem(20); color: #a70001; font-weight: normal; margin-left: px2rem(10);
+      span{font-size: px2rem(20); }
+      b{font-weight:normal;}
+    }
+
+    ul.buy_btn_box { width: px2rem(150); overflow: hidden; margin:0 px2rem(20) 0 0; float: left;   }
+    ul.buy_btn_box li span { display: block; background: #c65459 none repeat scroll 0 0;  color: #fff; cursor: pointer; line-height: px2rem(42); padding-top: px2rem(2); font-size: px2rem(22); text-align: center; border-radius: px2rem(27.5); width: px2rem(150); }
+  }
+
+}
+
+

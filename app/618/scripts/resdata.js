@@ -1,13 +1,18 @@
 var resData = [
     {
-        "name":"time-1_png",
+        "name":"part2_title_4_png",
         "type":"image",
-        "url":"time-1.png"
+        "url":"part2_title_4.png"
     },
     {
-        "name":"title-3_png",
+        "name":"s-title-1_png",
         "type":"image",
-        "url":"title-3.png"
+        "url":"s-title-1.png"
+    },
+    {
+        "name":"s-title-2_png",
+        "type":"image",
+        "url":"s-title-2.png"
     },
     {
         "name":"banner_png",
@@ -15,98 +20,83 @@ var resData = [
         "url":"banner.png"
     },
     {
-        "name":"btn-1_png",
+        "name":"foot_bg_png",
         "type":"image",
-        "url":"btn-1.png"
+        "url":"foot_bg.png"
     },
     {
-        "name":"btn-2_png",
+        "name":"part1_cake_1_png",
         "type":"image",
-        "url":"btn-2.png"
+        "url":"part1_cake_1.png"
     },
     {
-        "name":"btn-buy_png",
+        "name":"part1_cake_2_png",
         "type":"image",
-        "url":"btn-buy.png"
+        "url":"part1_cake_2.png"
     },
     {
-        "name":"btn-cart_png",
+        "name":"part1_cake_3_png",
         "type":"image",
-        "url":"btn-cart.png"
+        "url":"part1_cake_3.png"
     },
     {
-        "name":"cake-1_png",
+        "name":"part1_cake_4_png",
         "type":"image",
-        "url":"cake-1.png"
+        "url":"part1_cake_4.png"
     },
     {
-        "name":"cake-2_png",
+        "name":"part1_title_1_png",
         "type":"image",
-        "url":"cake-2.png"
+        "url":"part1_title_1.png"
     },
     {
-        "name":"cake-3_png",
+        "name":"part1_title_2_png",
         "type":"image",
-        "url":"cake-3.png"
+        "url":"part1_title_2.png"
     },
     {
-        "name":"cake-4_png",
+        "name":"part1_title_3_png",
         "type":"image",
-        "url":"cake-4.png"
+        "url":"part1_title_3.png"
     },
     {
-        "name":"cake-5_png",
+        "name":"part1_title_4_png",
         "type":"image",
-        "url":"cake-5.png"
+        "url":"part1_title_4.png"
     },
     {
-        "name":"cake-6_png",
+        "name":"part2_cake_1_png",
         "type":"image",
-        "url":"cake-6.png"
+        "url":"part2_cake_1.png"
     },
     {
-        "name":"cake-7_png",
+        "name":"part2_cake_2_png",
         "type":"image",
-        "url":"cake-7.png"
+        "url":"part2_cake_2.png"
     },
     {
-        "name":"cake-8_png",
+        "name":"part2_cake_3_png",
         "type":"image",
-        "url":"cake-8.png"
+        "url":"part2_cake_3.png"
     },
     {
-        "name":"car_png",
+        "name":"part2_cake_4_png",
         "type":"image",
-        "url":"car.png"
+        "url":"part2_cake_4.png"
     },
     {
-        "name":"car-on_png",
+        "name":"part2_title_1_png",
         "type":"image",
-        "url":"car-on.png"
+        "url":"part2_title_1.png"
     },
     {
-        "name":"close_png",
+        "name":"part2_title_2_png",
         "type":"image",
-        "url":"close.png"
+        "url":"part2_title_2.png"
     },
     {
-        "name":"close2_png",
+        "name":"part2_title_3_png",
         "type":"image",
-        "url":"close2.png"
-    },
-    {
-        "name":"dot_png",
-        "type":"image",
-        "url":"dot.png"
-    },
-    {
-        "name":"hy-title-1_png",
-        "type":"image",
-        "url":"hy-title-1.png"
-    },
-    {
-        "name":"lipin-1_png",
-        "type":"image",
-        "url":"lipin-1.png"
+        "url":"part2_title_3.png"
     }
 ];

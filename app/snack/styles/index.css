@@ -1,0 +1,215 @@
+html, body {
+  height: 100%; }
+
+#vue-header {
+  width: 10rem;
+  margin: 0 auto; }
+
+.navTab {
+  width: 10rem; }
+  .navTab img {
+    width: 100%; }
+
+#evt_content {
+  max-width: 10rem;
+  margin: 0 auto;
+  background: #fffcee; }
+  #evt_content img {
+    width: 100%; }
+  #evt_content .sec {
+    position: relative; }
+  #evt_content .sec-banner {
+    z-index: 1;
+    width: 10rem;
+    height: 14rem; }
+  #evt_content .sec_title {
+    margin: 0.26667rem auto; }
+  #evt_content .sec-1 {
+    background: url("../images/sec_bg_1.png") top;
+    background-size: 100%;
+    padding: 0.01333rem 0 2rem; }
+    #evt_content .sec-1 .star {
+      position: absolute;
+      top: 0.48rem;
+      right: 1.10667rem;
+      width: 1.36rem;
+      height: 1.56rem;
+      background: url("../images/star.png");
+      background-size: 100%;
+      z-index: 5; }
+    #evt_content .sec-1 .star.bj {
+      background: url("../images/star_bj.png");
+      background-size: 100%; }
+    #evt_content .sec-1 .bread {
+      position: relative;
+      width: 10rem;
+      height: 5.85333rem;
+      margin: 0.66667rem auto 0.66667rem; }
+    #evt_content .sec-1 .bread_t {
+      width: 7.46667rem;
+      margin: 0 auto; }
+  #evt_content .sec-2 {
+    margin-top: -2rem;
+    background: url("../images/sec_bg_2.png") top;
+    background-size: 100%;
+    padding: 2.53333rem 0 1.73333rem;
+    z-index: 2; }
+    #evt_content .sec-2 .bread_group {
+      margin: 1.06667rem auto 0; }
+  #evt_content .sec-2.bj {
+    padding: 2.33333rem 0 1.53333rem; }
+  #evt_content .sec-3 {
+    background: url("../images/sec_bg_3.png");
+    background-size: 100%;
+    margin-top: -0.66667rem;
+    padding: 1.33333rem 0;
+    z-index: 1; }
+    #evt_content .sec-3 .bread_offer {
+      position: relative; }
+    #evt_content .sec-3 .btn-buy {
+      position: absolute;
+      top: 6.06667rem;
+      left: 0.72rem;
+      width: 8.53333rem;
+      height: 1.33333rem;
+      opacity: 0; }
+    #evt_content .sec-3 .buy2 {
+      top: 13.4rem; }
+    #evt_content .sec-3 .buy3 {
+      top: 20.86667rem; }
+  #evt_content .buy_btns {
+    position: relative;
+    width: 2.33333rem;
+    float: right;
+    background: #fff;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.46667rem; }
+    #evt_content .buy_btns span {
+      display: block;
+      color: #8a462c;
+      font-size: 0.32rem;
+      line-height: 0.70667rem; }
+  #evt_content .buy_btns2 {
+    position: relative;
+    width: 2.33333rem;
+    margin: 0.26667rem auto;
+    background: #918dca;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.46667rem; }
+    #evt_content .buy_btns2 span {
+      display: block;
+      color: #fff;
+      font-size: 0.32rem;
+      line-height: 0.64rem; }
+  #evt_content .sec-footer {
+    background: url("../images/foot_bg.png") repeat;
+    background-size: 12%;
+    position: relative;
+    z-index: 1;
+    text-align: left;
+    color: #5e6c69; }
+    #evt_content .sec-footer .txt {
+      position: relative;
+      width: 8.26667rem;
+      padding: 1.6rem 0;
+      margin: 0 auto;
+      text-align: left; }
+      #evt_content .sec-footer .txt h2 {
+        font-size: 0.36rem;
+        font-weight: normal; }
+      #evt_content .sec-footer .txt p {
+        font-size: 0.36rem;
+        padding-left: 0.46667rem;
+        line-height: 0.66667rem;
+        text-indent: -0.46667rem;
+        margin: 0.06667rem 0;
+        text-align: left !important; }
+        #evt_content .sec-footer .txt p span {
+          display: block;
+          padding-left: 0.13333rem;
+          text-indent: -0.13333rem; }
+
+.price {
+  width: 7.46667rem;
+  margin: 0 auto;
+  padding: 0.6rem 0 0 0; }
+  .price h2 {
+    color: #ff8a00;
+    float: left;
+    line-height: 0.53333rem;
+    margin-top: 0.04rem; }
+    .price h2 i {
+      font-size: 0.24rem;
+      font-style: normal; }
+    .price h2 b {
+      font-size: 0.66667rem;
+      font-weight: normal; }
+  .price .bangshu {
+    width: 1.86667rem;
+    height: 0.46667rem;
+    margin: 0.13333rem 0.4rem;
+    float: left; }
+    .price .bangshu dd {
+      float: left; }
+    .price .bangshu dt {
+      float: left;
+      width: 0.73333rem;
+      text-align: center;
+      line-height: 0.46667rem; }
+      .price .bangshu dt span {
+        display: block;
+        color: #c65459;
+        font-size: 0.32rem; }
+  .price .nopoint {
+    width: 0.46667rem;
+    height: 0.46667rem;
+    background: url("../images/in-a-1.png") center no-repeat;
+    background-size: 100%;
+    cursor: pointer; }
+  .price .nopoint.plus {
+    background: url("../images/in-a-2.png") center no-repeat;
+    background-size: 100%; }
+
+.swiper-container {
+  position: relative !important;
+  width: 8.41333rem;
+  height: 5.85333rem;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden; }
+
+.swiper-slide {
+  text-align: center;
+  width: 100%;
+  background: none;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center; }
+
+.swiper-slide img {
+  width: 100%; }
+
+.swiper-pagination {
+  width: 100%;
+  position: absolute !important;
+  bottom: 0.13333rem !important; }
+
+.swiper-pagination-bullet {
+  margin: 0 0.06667rem !important;
+  background: #fff !important;
+  opacity: 1 !important; }
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #8782e0 !important; }

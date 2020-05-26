@@ -1,0 +1,59 @@
+@function px2rem($n) {
+  @return ($n * 10 / 750) * 1rem; //设计稿一般都是750宽
+}
+*{ vertical-align: baseline !important;}  /*价格符号不对齐*/
+#evt_content{width: px2rem(750);
+  img{width:100%; display: block;}
+  .sec{position: relative; }
+
+  .sec-top{ width: px2rem(750); height: px2rem(1213); background:url("../images/banner.png") repeat; background-size: 100%; z-index: 1; overflow: hidden;
+    .price{ position: absolute; left: px2rem(428); top: px2rem(1000);
+      .buy_btn{margin: 0;}
+    }
+  }
+
+
+  .hy-title{ width: px2rem(750); margin:0 auto px2rem(77); }
+
+  .sec-cake{ position: relative; z-index: 1;  padding: px2rem(50) 0 px2rem(120); background:url("../images/sec_1_bg.png") repeat; background-size: 100%;
+    .cake{width: px2rem(750);}
+    .zuhe{width: px2rem(274); margin: 0 auto;}
+
+  }
+
+
+
+  .sec-main{ width: px2rem(750); padding: px2rem(60) 0 px2rem(100); background:url("../images/sec_2_bg.png") repeat; background-size: 100%;
+    .gift{width: px2rem(750);}
+
+  }
+
+  .sec-footer{ position: relative; z-index:1;background:url("../images/foot-bg.png") repeat; background-size: 100%; }
+
+
+}
+
+
+.price{  position: relative; width:px2rem(320); margin: 0 auto;
+  .price_t{}
+  .qkl{position:absolute; width: px2rem(119); top:px2rem(-150); right: px2rem(-80);}
+  .huangou{ position: relative; color: #bfa3bd; font-size:px2rem(20); padding-left: px2rem(29); margin:px2rem(20) 0; cursor: pointer;
+    .hook{position: absolute; width:px2rem(26); height:px2rem(26); left: 0; top: 50%; margin-top:px2rem(-13); background: url("../images/hook.jpg") no-repeat; background-size: 100%; }
+    .hook.on{background: url("../images/hook_on.jpg") no-repeat; background-size: 100%;}
+  }
+  .buy_btn{ cursor: pointer; width: px2rem(224); margin: 0 auto;}
+}
+
+
+
+/*彈窗*/
+.Dialogbg-quan{  background-color: #000;  height: 100%;  left: 0;  opacity: 0.7;  position: fixed;  top: 0;  width: 100%; z-index: 200; display: none; }
+
+.Dialog-quan{   box-shadow: 0 0 0 #999;  font-size:px2rem(14);  width:px2rem(740); padding: px2rem(30) 0; top: 50%; left: 50%;   margin: px2rem(-462) auto auto px2rem(-370);  position: fixed; z-index: 99999; border-radius:px2rem(10);display: none;
+  img{width: 100%;}
+  .closes{ width:px2rem(50); height:px2rem(50); position: absolute; top:px2rem(-50); right: px2rem(20);  cursor: pointer; z-index: 8; background: url("../images/close.png") no-repeat; background-size: 100%;}
+  .quan{position: relative; display: none;
+    .go-use {display: block; position: absolute; bottom:px2rem(140); left: 50%; width: px2rem(180); margin-left:px2rem(-90); cursor: pointer;
+    }
+  }
+}

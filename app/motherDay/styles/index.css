@@ -1,0 +1,132 @@
+@charset "UTF-8";
+* {
+  vertical-align: baseline !important; }
+
+/*价格符号不对齐*/
+#evt_content {
+  width: 10rem; }
+  #evt_content img {
+    width: 100%;
+    display: block; }
+  #evt_content .sec {
+    position: relative; }
+  #evt_content .sec-top {
+    width: 10rem;
+    height: 16.17333rem;
+    background: url("../images/banner.png") repeat;
+    background-size: 100%;
+    z-index: 1;
+    overflow: hidden; }
+    #evt_content .sec-top .price {
+      position: absolute;
+      left: 5.70667rem;
+      top: 13.33333rem; }
+      #evt_content .sec-top .price .buy_btn {
+        margin: 0; }
+  #evt_content .hy-title {
+    width: 10rem;
+    margin: 0 auto 1.02667rem; }
+  #evt_content .sec-cake {
+    position: relative;
+    z-index: 1;
+    padding: 0.66667rem 0 1.6rem;
+    background: url("../images/sec_1_bg.png") repeat;
+    background-size: 100%; }
+    #evt_content .sec-cake .cake {
+      width: 10rem; }
+    #evt_content .sec-cake .zuhe {
+      width: 3.65333rem;
+      margin: 0 auto; }
+  #evt_content .sec-main {
+    width: 10rem;
+    padding: 0.8rem 0 1.33333rem;
+    background: url("../images/sec_2_bg.png") repeat;
+    background-size: 100%; }
+    #evt_content .sec-main .gift {
+      width: 10rem; }
+  #evt_content .sec-footer {
+    position: relative;
+    z-index: 1;
+    background: url("../images/foot-bg.png") repeat;
+    background-size: 100%; }
+
+.price {
+  position: relative;
+  width: 4.26667rem;
+  margin: 0 auto; }
+  .price .qkl {
+    position: absolute;
+    width: 1.58667rem;
+    top: -2rem;
+    right: -1.06667rem; }
+  .price .huangou {
+    position: relative;
+    color: #bfa3bd;
+    font-size: 0.26667rem;
+    padding-left: 0.38667rem;
+    margin: 0.26667rem 0;
+    cursor: pointer; }
+    .price .huangou .hook {
+      position: absolute;
+      width: 0.34667rem;
+      height: 0.34667rem;
+      left: 0;
+      top: 50%;
+      margin-top: -0.17333rem;
+      background: url("../images/hook.jpg") no-repeat;
+      background-size: 100%; }
+    .price .huangou .hook.on {
+      background: url("../images/hook_on.jpg") no-repeat;
+      background-size: 100%; }
+  .price .buy_btn {
+    cursor: pointer;
+    width: 2.98667rem;
+    margin: 0 auto; }
+
+/*彈窗*/
+.Dialogbg-quan {
+  background-color: #000;
+  height: 100%;
+  left: 0;
+  opacity: 0.7;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 200;
+  display: none; }
+
+.Dialog-quan {
+  box-shadow: 0 0 0 #999;
+  font-size: 0.18667rem;
+  width: 9.86667rem;
+  padding: 0.4rem 0;
+  top: 50%;
+  left: 50%;
+  margin: -6.16rem auto auto -4.93333rem;
+  position: fixed;
+  z-index: 99999;
+  border-radius: 0.13333rem;
+  display: none; }
+  .Dialog-quan img {
+    width: 100%; }
+  .Dialog-quan .closes {
+    width: 0.66667rem;
+    height: 0.66667rem;
+    position: absolute;
+    top: -0.66667rem;
+    right: 0.26667rem;
+    cursor: pointer;
+    z-index: 8;
+    background: url("../images/close.png") no-repeat;
+    background-size: 100%; }
+  .Dialog-quan .quan {
+    position: relative;
+    display: none; }
+    .Dialog-quan .quan .go-use {
+      display: block;
+      position: absolute;
+      bottom: 1.86667rem;
+      left: 50%;
+      width: 2.4rem;
+      margin-left: -1.2rem;
+      cursor: pointer; }

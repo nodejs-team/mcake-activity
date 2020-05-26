@@ -1,0 +1,38 @@
+var resData = [
+    {
+        "name":"s1-cake_png",
+        "type":"image",
+        "url":"s1-cake.png"
+    },
+    {
+        "name":"s2-cake_png",
+        "type":"image",
+        "url":"s2-cake.png"
+    },
+    {
+        "name":"s3-cake_png",
+        "type":"image",
+        "url":"s3-cake.png"
+    },
+    {
+        "name":"s4-cake_png",
+        "type":"image",
+        "url":"s4-cake.png"
+    },
+    {
+        "name":"s5-cake_png",
+        "type":"image",
+        "url":"s5-cake.png"
+    },
+    {
+        "name":"s6-cake_png",
+        "type":"image",
+        "url":"s6-cake.png"
+    },
+    {
+        "name":"banner_png",
+        "type":"image",
+        "url":"banner.png"
+    }
+
+];

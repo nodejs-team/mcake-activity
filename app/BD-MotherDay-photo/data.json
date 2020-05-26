@@ -1,0 +1,34 @@
+
+{
+    "votelist": [
+        {
+           
+            "uid":"021",
+            "mumber":"1025",
+            "ranking":"2",
+            "imgSrc":"images/pic.jpg",
+            "voted":true
+        },
+        {
+            "uid":"025",
+            "mumber":"1025",
+            "ranking":"2",
+            "imgSrc":"images/pic.jpg",
+            "voted":false
+        },
+        {
+            "uid":"024",
+            "mumber":"1025",
+            "ranking":"2",
+            "imgSrc":"images/pic.jpg",
+            "voted":true
+        },
+        {
+            "uid":"022",
+            "mumber":"1025",
+            "ranking":"2",
+            "imgSrc":"images/pic.jpg",
+            "voted":false
+        }
+    ]
+}
