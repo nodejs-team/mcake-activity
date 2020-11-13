@@ -1,0 +1,276 @@
+@charset "UTF-8";
+* {
+  vertical-align: baseline !important; }
+
+/*价格符号不对齐*/
+#evt_content {
+  width: 10rem;
+  /*价格计算【通用】*/ }
+  #evt_content img {
+    width: 100%;
+    display: block; }
+  #evt_content .sec {
+    position: relative; }
+  #evt_content .sec-top {
+    width: 10rem;
+    height: 11.84rem;
+    background: url("../images/banner.png") no-repeat;
+    background-size: 100%;
+    z-index: 1;
+    overflow: hidden; }
+  #evt_content .hy-title {
+    width: 10rem;
+    margin: 1.06667rem auto 1.06667rem; }
+  #evt_content .sec-cake {
+    position: relative;
+    margin-top: -0.02667rem;
+    z-index: 1;
+    background: url("../images/sec-bg1.png") no-repeat;
+    background-size: 100%; }
+    #evt_content .sec-cake .cake {
+      width: 9.33333rem;
+      margin: 0 auto;
+      z-index: 1;
+      overflow: hidden; }
+    #evt_content .sec-cake .star {
+      position: absolute;
+      width: 1.22667rem;
+      top: 1.2rem;
+      right: 0.4rem;
+      z-index: 10; }
+    #evt_content .sec-cake .content {
+      width: 9.33333rem;
+      margin: 0 auto; }
+    #evt_content .sec-cake .price {
+      width: 10rem;
+      margin: 0 auto; }
+    #evt_content .sec-cake .cake-title {
+      width: 4.6rem;
+      float: left;
+      margin: 0; }
+    #evt_content .sec-cake .price {
+      position: relative;
+      float: right;
+      width: 3.73333rem;
+      text-align: center; }
+      #evt_content .sec-cake .price .icon_50 {
+        top: -0.06667rem;
+        left: -1.06667rem; }
+      #evt_content .sec-cake .price h2 {
+        color: #393c3f; }
+      #evt_content .sec-cake .price s {
+        display: block;
+        color: #393c3f; }
+      #evt_content .sec-cake .price ul.buy_btn_box {
+        clear: both;
+        float: none;
+        margin: 0.13333rem auto;
+        width: 2.44rem; }
+      #evt_content .sec-cake .price ul.buy_btn_box li span {
+        display: block;
+        width: 2.44rem;
+        background: url("../images/go-buy.png") no-repeat;
+        background-size: 100%;
+        height: 0.89333rem; }
+  #evt_content .icon {
+    position: absolute;
+    width: 1.18667rem;
+    height: 0.93333rem;
+    top: -0.13333rem;
+    left: 2.73333rem; }
+  #evt_content .icon_20 {
+    background: url("../images/icon_20.png") no-repeat;
+    background-size: 100%; }
+  #evt_content .icon_40 {
+    background: url("../images/icon_40.png") no-repeat;
+    background-size: 100%; }
+  #evt_content .icon_60 {
+    background: url("../images/icon_60.png") no-repeat;
+    background-size: 100%; }
+  #evt_content .icon_50 {
+    background: url("../images/icon_50.png") no-repeat;
+    background-size: 100%; }
+  #evt_content .jf {
+    position: absolute;
+    width: 1.22667rem;
+    height: 0.33333rem;
+    left: 1.73333rem;
+    top: 0.13333rem; }
+  #evt_content .jf_20 {
+    background: url("../images/jf-200.png") no-repeat;
+    background-size: 100%; }
+  #evt_content .jf_40 {
+    background: url("../images/jf-400.png") no-repeat;
+    background-size: 100%; }
+  #evt_content .jf_60 {
+    background: url("../images/jf-600.png") no-repeat;
+    background-size: 100%; }
+  #evt_content .jf_80 {
+    background: url("../images/jf-800.png") no-repeat;
+    background-size: 100%; }
+  #evt_content .sec-main {
+    width: 10rem;
+    padding: 0;
+    background: url("../images/sec-bg2.png") no-repeat;
+    background-size: 100%;
+    overflow: hidden; }
+    #evt_content .sec-main .pro-num {
+      position: relative;
+      float: left;
+      width: 2.50667rem;
+      height: 0.82667rem;
+      display: inline-block;
+      background: url("../images/bs-bg.png") no-repeat;
+      background-size: 100%; }
+      #evt_content .sec-main .pro-num a {
+        position: absolute;
+        top: -0.2rem;
+        width: 1.06667rem;
+        height: 1.06667rem;
+        display: block;
+        z-index: 2; }
+      #evt_content .sec-main .pro-num .minus {
+        display: inline-block;
+        background: url(../images/in-a-1.png) center no-repeat;
+        left: -0.2rem;
+        background-size: 50%; }
+      #evt_content .sec-main .pro-num .plus {
+        display: inline-block;
+        background: url(../images/in-a-2.png) center no-repeat;
+        right: -0.13333rem;
+        background-size: 50%; }
+      #evt_content .sec-main .pro-num .bang {
+        display: inline-block;
+        width: 1.73333rem;
+        line-height: 0.70667rem;
+        position: absolute;
+        top: 0;
+        left: 0.33333rem;
+        text-align: center;
+        color: #fff;
+        background: none;
+        font-size: 0.24rem;
+        padding: 0;
+        z-index: 1; }
+    #evt_content .sec-main .row {
+      position: relative; }
+      #evt_content .sec-main .row .cake {
+        position: absolute; }
+      #evt_content .sec-main .row .price {
+        position: absolute; }
+    #evt_content .sec-main .row1 {
+      height: 6.66667rem; }
+      #evt_content .sec-main .row1 .icon {
+        left: 3.33333rem; }
+      #evt_content .sec-main .row1 .jf {
+        left: 0.93333rem; }
+      #evt_content .sec-main .row1 .cake {
+        width: 5.13333rem;
+        top: 0;
+        left: 0;
+        z-index: 1; }
+      #evt_content .sec-main .row1 .price {
+        top: 1.86667rem;
+        left: auto;
+        right: -0.66667rem; }
+    #evt_content .sec-main .row2 {
+      height: 7.33333rem; }
+      #evt_content .sec-main .row2 .cake {
+        width: 5.33333rem;
+        top: 0;
+        right: 0;
+        z-index: 1; }
+      #evt_content .sec-main .row2 .price {
+        top: 2rem;
+        left: 0.4rem;
+        z-index: 2; }
+    #evt_content .sec-main .row3 {
+      height: 6rem; }
+      #evt_content .sec-main .row3 .cake {
+        width: 5.37333rem;
+        top: 0;
+        left: 0;
+        z-index: 1; }
+      #evt_content .sec-main .row3 .price {
+        top: 1.33333rem;
+        left: auto;
+        right: -0.4rem; }
+    #evt_content .sec-main .row4 {
+      height: 6.66667rem; }
+      #evt_content .sec-main .row4 .cake {
+        width: 5.17333rem;
+        top: 0;
+        right: 0;
+        z-index: 1; }
+      #evt_content .sec-main .row4 .price {
+        top: 1.6rem;
+        left: 0.4rem;
+        z-index: 2; }
+  #evt_content .sec-footer {
+    position: relative;
+    padding-bottom: 0.66667rem;
+    z-index: 1;
+    background: url("../images/foot-bg.png") repeat;
+    background-size: 100%; }
+    #evt_content .sec-footer .txt {
+      position: relative;
+      width: 9.33333rem;
+      padding-top: 0.53333rem;
+      margin: 0 auto;
+      color: #393c3f; }
+      #evt_content .sec-footer .txt h2 {
+        font-size: 0.29333rem;
+        font-weight: normal; }
+      #evt_content .sec-footer .txt p {
+        font-size: 0.28rem;
+        padding-left: 0.46667rem;
+        line-height: 0.46667rem;
+        text-indent: -0.46667rem;
+        margin: 0.06667rem 0; }
+        #evt_content .sec-footer .txt p span {
+          display: block;
+          text-indent: 1.06667rem; }
+  #evt_content .price {
+    position: absolute;
+    width: 5.33333rem;
+    text-align: left;
+    z-index: 2; }
+    #evt_content .price .title {
+      position: relative;
+      width: 2.66667rem;
+      margin: 0.13333rem 0 1.06667rem 0; }
+    #evt_content .price h2 {
+      position: relative;
+      font-size: 0.26667rem;
+      font-weight: normal;
+      line-height: 1.06667rem;
+      color: #393c3f; }
+      #evt_content .price h2 i {
+        font-size: 0.26667rem;
+        line-height: 0.4rem;
+        font-style: normal;
+        vertical-align: middle; }
+      #evt_content .price h2 span {
+        font-size: 0.45333rem; }
+      #evt_content .price h2 em {
+        font-style: normal; }
+    #evt_content .price s {
+      font-size: 0.26667rem;
+      color: #393c3f;
+      font-weight: normal;
+      margin-left: 0.13333rem; }
+      #evt_content .price s span {
+        font-size: 0.26667rem; }
+      #evt_content .price s b {
+        font-weight: normal; }
+    #evt_content .price ul.buy_btn_box {
+      width: 2.25333rem;
+      overflow: hidden;
+      margin: 0;
+      float: left; }
+    #evt_content .price ul.buy_btn_box li span {
+      display: block;
+      width: 2.25333rem;
+      background: url("../images/go-buy1.png") no-repeat;
+      background-size: 100%;
+      height: 0.82667rem; }

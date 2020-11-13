@@ -1,69 +1,9 @@
 {
 	"groups":[{
-			"keys":"quan-2_png,quan-3_png,time-bar_png,title-1_png,title-2_png,title-3_png,wx-code_png,xp_png,xp-img_png,zn-title-1_png,zn-title-2_png,zn-title-3_png,zn-title-4_png,zn-title-5_png,zn-title-6_png,zn-title-7_png,zn-title-8_png,zp-1_png,zp-2_png,zp-3_png,zp-4_png,banner_png,btn-1_png,btn-2_png,buy-card_png,cake-1_png,cake-2_png,cake-3_png,car_png,car-on_png,close_png,close2_png,dot_png,go-buy-1_png,go-buy-2_png,go-buy-3_png,gou-1-1_png,gou-1-2_png,gou-2_png,gou-2-1_png,gou-2-2_png,gou-3-1_png,gou-3-2_png,img-1_png,img-2_png,img-3_png,img-4_png,img-5_png,img-6_png,img-7_png,img-8_png,kanjia_png,manzeng_png,manzeng-1_png,mcard_png,more_png,part-b-1_png,part-b-2_png,part-b-3_png,part-b-4_png,part-c-1_png,part-c-2_png,part-c-3_png,part-t-1_png,part-t-2_png,part-t-3_png,part-t-4_png,part-t-5_png,price-1_png,price-2_png,price-3_png,quan_png,quan-1_png",
+			"keys":"zn-title-4_png,zn-title-5_png,zn-title-6_png,zn-title-7_png,zn-title-8_png,zn-title-9_png,zn-title-10_png,zn-title-11_png,zn-title-12_png,zp-1_png,zp-2_png,zp-3_png,zp-4_png,zp-5_png,cake-1_png,cake-2_png,cake-3_png,card-1_png,icon-50_png,img-1_png,img-2_png,img-3_png,img-4_png,manzeng_png,man-zeng_png,manzeng-1_png,man-zeng-2_png,man-zeng-3_png,man-zeng-4_png,mcake-1_png,mcake-2_png,part-a-1_png,part-a-2_png,part-a-3_png,part-a-4_png,part-b-1_png,part-b-2_png,part-b-3_png,part-b-4_png,part-c-1_png,part-c-2_png,part-c-3_png,shengbang-1_png,shengbang-2_png,shengbang-3_png,shengbang-quan_png,title-1_png,title-2_png,title-3_png,wx-code_png,zn-title-1_png,zn-title-2_png,zn-title-3_png",
 			"name":"preload"
 		}],
 	"resources":[
-		{
-			"name":"quan-2_png",
-			"type":"image",
-			"url":"quan-2.png"
-		},
-		{
-			"name":"quan-3_png",
-			"type":"image",
-			"url":"quan-3.png"
-		},
-		{
-			"name":"time-bar_png",
-			"type":"image",
-			"url":"time-bar.png"
-		},
-		{
-			"name":"title-1_png",
-			"type":"image",
-			"url":"title-1.png"
-		},
-		{
-			"name":"title-2_png",
-			"type":"image",
-			"url":"title-2.png"
-		},
-		{
-			"name":"title-3_png",
-			"type":"image",
-			"url":"title-3.png"
-		},
-		{
-			"name":"wx-code_png",
-			"type":"image",
-			"url":"wx-code.png"
-		},
-		{
-			"name":"xp_png",
-			"type":"image",
-			"url":"xp.png"
-		},
-		{
-			"name":"xp-img_png",
-			"type":"image",
-			"url":"xp-img.png"
-		},
-		{
-			"name":"zn-title-1_png",
-			"type":"image",
-			"url":"zn-title-1.png"
-		},
-		{
-			"name":"zn-title-2_png",
-			"type":"image",
-			"url":"zn-title-2.png"
-		},
-		{
-			"name":"zn-title-3_png",
-			"type":"image",
-			"url":"zn-title-3.png"
-		},
 		{
 			"name":"zn-title-4_png",
 			"type":"image",
@@ -90,6 +30,26 @@
 			"url":"zn-title-8.png"
 		},
 		{
+			"name":"zn-title-9_png",
+			"type":"image",
+			"url":"zn-title-9.png"
+		},
+		{
+			"name":"zn-title-10_png",
+			"type":"image",
+			"url":"zn-title-10.png"
+		},
+		{
+			"name":"zn-title-11_png",
+			"type":"image",
+			"url":"zn-title-11.png"
+		},
+		{
+			"name":"zn-title-12_png",
+			"type":"image",
+			"url":"zn-title-12.png"
+		},
+		{
 			"name":"zp-1_png",
 			"type":"image",
 			"url":"zp-1.png"
@@ -110,24 +70,9 @@
 			"url":"zp-4.png"
 		},
 		{
-			"name":"banner_png",
+			"name":"zp-5_png",
 			"type":"image",
-			"url":"banner.png"
-		},
-		{
-			"name":"btn-1_png",
-			"type":"image",
-			"url":"btn-1.png"
-		},
-		{
-			"name":"btn-2_png",
-			"type":"image",
-			"url":"btn-2.png"
-		},
-		{
-			"name":"buy-card_png",
-			"type":"image",
-			"url":"buy-card.png"
+			"url":"zp-5.png"
 		},
 		{
 			"name":"cake-1_png",
@@ -145,79 +90,14 @@
 			"url":"cake-3.png"
 		},
 		{
-			"name":"car_png",
+			"name":"card-1_png",
 			"type":"image",
-			"url":"car.png"
+			"url":"card-1.png"
 		},
 		{
-			"name":"car-on_png",
+			"name":"icon-50_png",
 			"type":"image",
-			"url":"car-on.png"
-		},
-		{
-			"name":"close_png",
-			"type":"image",
-			"url":"close.png"
-		},
-		{
-			"name":"close2_png",
-			"type":"image",
-			"url":"close2.png"
-		},
-		{
-			"name":"dot_png",
-			"type":"image",
-			"url":"dot.png"
-		},
-		{
-			"name":"go-buy-1_png",
-			"type":"image",
-			"url":"go-buy-1.png"
-		},
-		{
-			"name":"go-buy-2_png",
-			"type":"image",
-			"url":"go-buy-2.png"
-		},
-		{
-			"name":"go-buy-3_png",
-			"type":"image",
-			"url":"go-buy-3.png"
-		},
-		{
-			"name":"gou-1-1_png",
-			"type":"image",
-			"url":"gou-1-1.png"
-		},
-		{
-			"name":"gou-1-2_png",
-			"type":"image",
-			"url":"gou-1-2.png"
-		},
-		{
-			"name":"gou-2_png",
-			"type":"image",
-			"url":"gou-2.png"
-		},
-		{
-			"name":"gou-2-1_png",
-			"type":"image",
-			"url":"gou-2-1.png"
-		},
-		{
-			"name":"gou-2-2_png",
-			"type":"image",
-			"url":"gou-2-2.png"
-		},
-		{
-			"name":"gou-3-1_png",
-			"type":"image",
-			"url":"gou-3-1.png"
-		},
-		{
-			"name":"gou-3-2_png",
-			"type":"image",
-			"url":"gou-3-2.png"
+			"url":"icon-50.png"
 		},
 		{
 			"name":"img-1_png",
@@ -240,34 +120,14 @@
 			"url":"img-4.png"
 		},
 		{
-			"name":"img-5_png",
-			"type":"image",
-			"url":"img-5.png"
-		},
-		{
-			"name":"img-6_png",
-			"type":"image",
-			"url":"img-6.png"
-		},
-		{
-			"name":"img-7_png",
-			"type":"image",
-			"url":"img-7.png"
-		},
-		{
-			"name":"img-8_png",
-			"type":"image",
-			"url":"img-8.png"
-		},
-		{
-			"name":"kanjia_png",
-			"type":"image",
-			"url":"kanjia.png"
-		},
-		{
 			"name":"manzeng_png",
 			"type":"image",
 			"url":"manzeng.png"
+		},
+		{
+			"name":"man-zeng_png",
+			"type":"image",
+			"url":"man-zeng.png"
 		},
 		{
 			"name":"manzeng-1_png",
@@ -275,14 +135,49 @@
 			"url":"manzeng-1.png"
 		},
 		{
-			"name":"mcard_png",
+			"name":"man-zeng-2_png",
 			"type":"image",
-			"url":"mcard.png"
+			"url":"man-zeng-2.png"
 		},
 		{
-			"name":"more_png",
+			"name":"man-zeng-3_png",
 			"type":"image",
-			"url":"more.png"
+			"url":"man-zeng-3.png"
+		},
+		{
+			"name":"man-zeng-4_png",
+			"type":"image",
+			"url":"man-zeng-4.png"
+		},
+		{
+			"name":"mcake-1_png",
+			"type":"image",
+			"url":"mcake-1.png"
+		},
+		{
+			"name":"mcake-2_png",
+			"type":"image",
+			"url":"mcake-2.png"
+		},
+		{
+			"name":"part-a-1_png",
+			"type":"image",
+			"url":"part-a-1.png"
+		},
+		{
+			"name":"part-a-2_png",
+			"type":"image",
+			"url":"part-a-2.png"
+		},
+		{
+			"name":"part-a-3_png",
+			"type":"image",
+			"url":"part-a-3.png"
+		},
+		{
+			"name":"part-a-4_png",
+			"type":"image",
+			"url":"part-a-4.png"
 		},
 		{
 			"name":"part-b-1_png",
@@ -320,54 +215,59 @@
 			"url":"part-c-3.png"
 		},
 		{
-			"name":"part-t-1_png",
+			"name":"shengbang-1_png",
 			"type":"image",
-			"url":"part-t-1.png"
+			"url":"shengbang-1.png"
 		},
 		{
-			"name":"part-t-2_png",
+			"name":"shengbang-2_png",
 			"type":"image",
-			"url":"part-t-2.png"
+			"url":"shengbang-2.png"
 		},
 		{
-			"name":"part-t-3_png",
+			"name":"shengbang-3_png",
 			"type":"image",
-			"url":"part-t-3.png"
+			"url":"shengbang-3.png"
 		},
 		{
-			"name":"part-t-4_png",
+			"name":"shengbang-quan_png",
 			"type":"image",
-			"url":"part-t-4.png"
+			"url":"shengbang-quan.png"
 		},
 		{
-			"name":"part-t-5_png",
+			"name":"title-1_png",
 			"type":"image",
-			"url":"part-t-5.png"
+			"url":"title-1.png"
 		},
 		{
-			"name":"price-1_png",
+			"name":"title-2_png",
 			"type":"image",
-			"url":"price-1.png"
+			"url":"title-2.png"
 		},
 		{
-			"name":"price-2_png",
+			"name":"title-3_png",
 			"type":"image",
-			"url":"price-2.png"
+			"url":"title-3.png"
 		},
 		{
-			"name":"price-3_png",
+			"name":"wx-code_png",
 			"type":"image",
-			"url":"price-3.png"
+			"url":"wx-code.png"
 		},
 		{
-			"name":"quan_png",
+			"name":"zn-title-1_png",
 			"type":"image",
-			"url":"quan.png"
+			"url":"zn-title-1.png"
 		},
 		{
-			"name":"quan-1_png",
+			"name":"zn-title-2_png",
 			"type":"image",
-			"url":"quan-1.png"
+			"url":"zn-title-2.png"
+		},
+		{
+			"name":"zn-title-3_png",
+			"type":"image",
+			"url":"zn-title-3.png"
 		}
 	]
 }

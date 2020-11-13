@@ -1,0 +1,74 @@
+@charset "UTF-8";
+* {
+  vertical-align: baseline !important; }
+
+/*价格符号不对齐*/
+#evt_content {
+  background: #271c50; }
+  #evt_content img {
+    width: 100%;
+    display: block; }
+  #evt_content .sec {
+    position: relative; }
+  #evt_content .sec-top {
+    height: 16.48rem;
+    background: url("../images/banner-t.png") repeat;
+    background-size: 100%;
+    z-index: 2; }
+  #evt_content .cake-txt {
+    width: 10rem;
+    z-index: 2; }
+    #evt_content .cake-txt .go-btn {
+      position: absolute;
+      width: 2.01333rem;
+      bottom: 0.93333rem;
+      left: 50%;
+      margin-left: -0.94rem; }
+  #evt_content .cake-block {
+    width: 10rem;
+    z-index: 2; }
+  #evt_content .hy-title {
+    width: 10rem;
+    margin: 0.66667rem auto 0.66667rem; }
+  #evt_content .sec-main {
+    padding: 4.4rem 0 1.06667rem;
+    height: 22.37333rem;
+    background: url("../images/main-bg.png");
+    background-size: 100%; }
+    #evt_content .sec-main .row {
+      position: relative;
+      width: 4.66667rem;
+      float: left;
+      margin-top: 0.66667rem;
+      margin-left: 0.26667rem; }
+      #evt_content .sec-main .row .cake {
+        width: 4.66667rem;
+        margin: 0 auto; }
+      #evt_content .sec-main .row .go-btn {
+        width: 2.01333rem;
+        height: 0.58667rem;
+        margin: 0.26667rem auto; }
+  #evt_content .sec-footer {
+    background: #271c50;
+    position: relative;
+    padding-bottom: 0.66667rem;
+    z-index: 1; }
+    #evt_content .sec-footer .f-txt {
+      position: relative;
+      width: 9.33333rem;
+      padding-top: 1.06667rem;
+      margin: 0 auto;
+      color: #d7cbf0; }
+      #evt_content .sec-footer .f-txt h2 {
+        font-size: 0.37333rem;
+        font-weight: normal; }
+      #evt_content .sec-footer .f-txt p {
+        font-size: 0.29333rem;
+        padding-left: 0.46667rem;
+        line-height: 0.53333rem;
+        text-indent: -0.46667rem;
+        margin: 0.06667rem 0; }
+        #evt_content .sec-footer .f-txt p span {
+          display: block;
+          padding-left: 0.13333rem;
+          text-indent: -0.13333rem; }

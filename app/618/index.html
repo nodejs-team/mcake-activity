@@ -6,6 +6,7 @@
     <title>活动</title>
     <!-- build:css styles/index.css -->
     <link rel="stylesheet" href="../commoncss/wap-normalize.css">
+    <link rel="stylesheet" href="styles/swiper.min.css">
     <link rel="stylesheet" href="styles/index.css">
     <!-- endbuild-->
 
@@ -73,7 +74,7 @@
         </div>
 
         <div class="sec sec-1 part-2">
-            <div class="Notstarted">
+            <div class="Notstarted" style="display: none;">
                 <p id="floater">活动未开始<br>敬请期待</p>
                 <div class="Notstarted-box"></div>
             </div>
@@ -120,7 +121,27 @@
                     </div>
                 </li>
             </ul>
-            <div class="zeng"><img src="images/zeng_2.png" alt=""></div>
+            <div class="zeng">
+                <div class="zp-jiu">
+                    <div class="swiper-container swiper1">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" ><img src="images/zp-jiu-1.png" alt=""></div>
+                            <div class="swiper-slide" ><img src="images/zp-jiu-2.png" alt=""></div>
+                        </div>
+                       <!-- <div class="swiper-pagination swiper-pagination1"></div>-->
+                    </div>
+                </div>
+                <div class="zp-bao">
+                    <div class="swiper-container swiper2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" ><img src="images/zp-bao-1.png" alt=""></div>
+                            <div class="swiper-slide" ><img src="images/zp-bao-2.png" alt=""></div>
+                        </div>
+                        <!-- <div class="swiper-pagination swiper-pagination1"></div>-->
+                    </div>
+                </div>
+                <img src="images/zeng_2.png" alt="">
+            </div>
         </div>
         <div class="sec-footer">
             <div class="txt">
@@ -195,6 +216,7 @@
 <script src="../commonjs/fastclick.js"></script>
 <script src="../commonjs/pubsub.js"></script>
 <script src="../commonjs/loader.js"></script>
+<script src="scripts/swiper.min.js"></script>
 <script src="../commonjs/public-shimily-price-Dialogbg.js"></script>
 <script src="scripts/resdata.js"></script>
 <script src="scripts/index.js"></script>

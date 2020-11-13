@@ -74,60 +74,70 @@
     var loadComplete = function () {
 
         $("html,body").animate({scrollTop:0},500);
-        /*var video = document.getElementById("shakeVideo");
 
-        if(!video.paused){
-            video.play();
-        }else {
-            video.play();
+        /*根据日期判断进度条*/
+        var vDate = new Date();
+        var myDate = '';
+        if((vDate.getMonth() + 1)<10){
+            if(vDate.getDate()<10){
+                myDate = vDate.getFullYear() + '-' +'0'+ (vDate.getMonth() + 1) + '-' +'0'+  vDate.getDate();
+            }else {
+                myDate = vDate.getFullYear() + '-' +'0'+  (vDate.getMonth() + 1) + '-' + vDate.getDate();
+            }
+
+        }else{
+            if(vDate.getDate()<10){
+                myDate = vDate.getFullYear() + '-' + (vDate.getMonth() + 1) + '-' +'0'+  vDate.getDate();
+            }else {
+                myDate = vDate.getFullYear() + '-' + (vDate.getMonth() + 1) + '-' + vDate.getDate();
+            }
         }
 
 
-        document.addEventListener('WeixinJSBridgeReady',function(){
-            video.play();
-        },false);*/
 
-        var video = document.getElementById("shakeVideo");
-        $(".video").click(function () {
-            $(this).toggleClass("on");
-            if($(this).hasClass("on")){
-                video.play();
-            }else{
-                video.pause();
-            }
-        });
+       /* console.log('您的当前时间：',myDate);*/
 
-        $("video").click(function () {
-            console.log(11111);
-            $(".video").removeClass("on");
-            video.pause();
-        });
+        if(myDate<'2020-10-22'){
+            $(".progress span").width("10%");
+            $(".progress i").css("left","10%");
+
+        }else if(myDate>='2020-10-22' && myDate<'2020-10-26') {
+            $(".progress span").width("34%");
+            $(".progress i").css("left","34%");
+        }else if(myDate>='2020-10-26' && myDate<'2020-10-29') {
+            $(".progress span").width("60%");
+            $(".progress i").css("left","60%");
+        }else if(myDate>='2020-10-29') {
+            $(".progress span").width("87%");
+            $(".progress i").css("left","87%");
+            $(".icon").addClass("icon-100");
+        }
 
 
-       /* $(".tab-bar span").click(function () {
+        if(myDate>='2020-10-30' && myDate<='2020-11-05'){
+            $(".mcake-1").find(".buy-btn").removeClass("on").html("立即购买");
+        }else if(myDate>='2020-11-06' && myDate<='2020-11-10'){
+            $(".mcake-1").find(".buy-btn").addClass("on").html("已结束");
+            $(".mcake-2").find(".buy-btn").removeClass("on").html("立即购买");
+        }else if(myDate>'2020-11-10'){
+            $(".mcake-1").find(".buy-btn").addClass("on").html("已结束");
+            $(".mcake-2").find(".buy-btn").addClass("on").html("已结束");
+        }
+
+
+
+      /*  $(".tab-bar span").click(function () {
             var index = $(this).index();
             $(this).addClass("cur").siblings().removeClass("cur");
             $(".tab-box .part").eq(index).fadeIn(100).siblings().fadeOut(10);
+            $(".sub-bar .sec-title").eq(index).fadeIn(100).siblings().fadeOut(10);
             $(".sec-cakes").fadeIn(0);
             if(index == 2){
                 $(".sec-cakes").fadeOut(0);
             }
         });*/
 
-        /**蛋糕*/
-        $(".prolist li").each(function () {
-            var self = this;
-            $(this).click(function () {
-                SelectShow(self,[0,0,0,0],1,true,1,0);
-            });
 
-        });
-        $(".go-car").click(function () {
-            SelectHide();
-        });
-        $(".go-buy,.s-closes").click(function () {
-            SelectHide();
-        });
 
         /*奖品*/
         var swiper1 = new Swiper('.swiper1', {
@@ -137,7 +147,7 @@
             direction : 'vertical',
             loop: true,
             autoplay : {
-                delay:3000,
+                delay:5000,
                 disableOnInteraction: false,
             },
             on: {
@@ -177,55 +187,60 @@
 
 
         /*电话号码中间4位用*代替*/
-       /* $(".bangList li,.awardlist li").each(function () {
+        $(".bangList li,.awardlist li").each(function () {
             var mobile = $(this).find('.tel-phone').text();
             var reg = new RegExp("(\\d{3})(\\d{4})(\\d{4})");
             var tel = mobile.replace(reg, "$1****$3");
             $(this).find('.tel-phone').text(tel);
-        });*/
+        });
         /*消费金额*/
-        /*$(".bangList li").each(function () {
+        $(".bangList li").each(function () {
             var money = $(this).find('.price').html();
             var reg = new RegExp("(\\d{1})(\\d*)");
             var tel = money.replace(reg, "*$2");
             $(this).find('.price').html(tel);
-        });*/
+        });
 
         /*指定锚点跳转位置*/
 
         /*指定锚点跳转位置*/
-        $(".whdlink").click(function () {
-            scrollTopAni("#whd");
+        $(".hllink").click(function () {
+            scrollTopAni("#hl");
         });
 
         $(".quanlink").click(function () {
             scrollTopAni("#quan");
         });
-        $(".xplink").click(function () {
-            scrollTopAni("#xp");
+        $(".cakelink").click(function () {
+            scrollTopAni("#cake");
         });
-        $(".manzenglink").click(function () {
-            scrollTopAni("#manzeng");
-        });
-
-
-        $(".winlink").click(function () {
-            scrollTopAni("#win");
+        $(".wxlink").click(function () {
+            scrollTopAni("#wx");
         });
 
-        $(".Mcardlink").click(function () {
-            scrollTopAni("#Mcard");
-        });
 
-        $(".zenglink").click(function () {
-            scrollTopAni("#zeng");
-        });
 
-        $(".zhelink").click(function () {
-            scrollTopAni("#zhekou");
-        });
-        $(".shenglink").click(function () {
+        $(".shengbanglink").click(function () {
             scrollTopAni("#shengbang");
+        });
+
+
+        $(".wxCodelink").click(function () {
+            scrollTopAni("#wxCode");
+        });
+
+
+        $(".zuhelink").click(function () {
+            scrollTopAni("#zuhe");
+        });
+
+
+        $(".cake99link").click(function () {
+            scrollTopAni("#cake99");
+        });
+
+        $(".cake86link").click(function () {
+            scrollTopAni("#cake86");
         });
 
 
@@ -261,14 +276,22 @@
         if(len <= 0){
             $(".bangList ul").html('暂无数据');
         }
-        else if(len > 2){
+        else if(len > 4){
             $(".mores").fadeIn(0);
-            $(".bangList ul li:gt(1)").hide();
+            $(".bangList ul li:gt(3)").hide();
         }
 
+        var more = true;
         $(".mores").click(function () {
-            $(this).fadeOut(200);
-            $(".bangList ul li:gt(1)").show();
+            if(more){
+                $(this).addClass('on');
+                $(".bangList ul li:gt(3)").show();
+                more=!more;
+            }else {
+                $(this).removeClass('on');
+                $(".bangList ul li:gt(3)").hide();
+                more=!more;
+            }
         });
 
 

@@ -1,0 +1,127 @@
+@function px2rem($n) {
+  @return ($n * 10 / 750) * 1rem; //设计稿一般都是750宽
+}
+*{ vertical-align: baseline !important;}  /*价格符号不对齐*/
+#evt_content{width: px2rem(750); background: #d44840;
+  img{width:100%; display: block;}
+  .sec{position: relative; }
+
+  .sec-top{ width: px2rem(750); height: px2rem(907); background:url("../images/banner.png") repeat; background-size: 100%; z-index: 1; overflow: hidden;
+  }
+
+  .hy-title{ width: px2rem(390); margin:px2rem(77) auto px2rem(80); }
+
+  .icon{position: absolute; width:px2rem(87); height:px2rem(106); right:px2rem(20); top:px2rem(0); }
+
+  .icon_20{background: url("../images/icon_20.png"); background-size: 100%;}
+  .icon_40{background: url("../images/icon_40.png"); background-size: 100%;}
+  .icon_60{background: url("../images/icon_60.png"); background-size: 100%;}
+
+  .sec-main{ width: px2rem(750); height: px2rem(2152); background:url("../images/sec-1.png") no-repeat; background-size: 100%; overflow: hidden;
+    .dis{position: absolute; width: px2rem(52); left: 0; top:px2rem(100);}
+    .pro-num{ position: relative; float: left; width: px2rem(200); height: px2rem(45); display: inline-block; border: #c65459 1px solid; border-radius: px2rem(45);
+      a{ position: absolute; top:px2rem(-20); width:px2rem(80); height:px2rem(80); display:block; z-index: 2;}
+      .minus{display:inline-block;background:url(../images/in-a-1.png) center no-repeat; left:px2rem(-20); background-size: 50%;}
+      .plus{display:inline-block;background:url(../images/in-a-2.png) center no-repeat; right:px2rem(-20); background-size: 50%;}
+      .bang{ display:inline-block; width:px2rem(130); line-height:px2rem(45); position:absolute; top:0; left:px2rem(35); text-align:center; color:#c65459; background: none; font-size:px2rem(20); padding:0; z-index: 1;}
+    }
+
+    .row{ position: relative;height: px2rem(440);
+      .buy-btn{position: absolute; width: px2rem(151);}
+      .btn1{display: none;}
+    }
+    .row1{
+      .cake{ width:px2rem(750);}
+      .buy-btn{ top: px2rem(250); left: px2rem(440);}
+    }
+    .row2{
+      .cake{width:px2rem(750);}
+      .buy-btn{ top: px2rem(250); left: px2rem(30);}
+    }
+
+    .row3{
+      .cake{ width:px2rem(750);}
+      .buy-btn{ top: px2rem(290); left: px2rem(400);}
+    }
+
+    .row4{
+      .cake{width:px2rem(750);}
+      .buy-btn{ top: px2rem(310); left: px2rem(30);}
+    }
+
+
+  }
+
+  .sec-xiaoshi{ background:#ffc297; overflow: hidden;
+
+
+    .xiaoshiBox{width:px2rem(750); margin:px2rem(20) auto 0;
+      dl{margin-left:px2rem(-8);
+        dd{ width: px2rem(350); height: px2rem(550); margin-left:px2rem(25); margin-bottom:px2rem(50); float: left; position: relative;
+          .xiaoshi{position: relative; border-radius:px2rem(20); overflow: hidden;
+            .noStartbox{ position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+              .cover{position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #000; opacity: 0.6;}
+            }
+            .time{ position: absolute; top: 50%; left: 0; width: 100%; color: #fff; text-align: center; font-size:px2rem(23); }
+          }
+          img{display: block;}
+          .content{ background: #ffe9ca; text-align: center; padding:px2rem(35) px2rem(10); border-radius:px2rem(20);
+            h2{font-size:px2rem(22); color: #000;font-weight: normal;  line-height:px2rem(40);
+              b{font-weight: normal; font-size:px2rem(20);}
+            }
+            p{font-size:px2rem(18); color: #000; line-height:px2rem(40);
+              span{color: #d01f19; font-size:px2rem(30);
+                i{font-size:px2rem(16); font-style: normal;}
+              }
+              s{ color: #99989d; margin-left:px2rem(10);}
+            }
+            .btn-hg,.noStart{ width:px2rem(178); height:px2rem(40);font-size: px2rem(20); background: #d01f19; text-align: center; line-height:px2rem(40); color: #fff; cursor: pointer; margin:px2rem(5) auto 0; border-radius:px2rem(40); }
+            .noStart{background: #969696; cursor: default;}
+          }
+
+        }
+        .row1{
+          .buy_btn_box{float: none; margin: 0 auto;}
+        }
+      }
+    }
+  }
+
+  .sec-footer{ position: relative; padding-bottom: px2rem(80); z-index:1; background: #ffc297;
+    .txt{ position: relative; width:px2rem(640); padding-top: px2rem(80); margin: 0 auto;  color: #1e0c02;
+      h2{font-size: px2rem(22); font-weight: normal; }
+      p{ font-size: px2rem(21); padding-left: px2rem(35); line-height:px2rem(35);  text-indent: px2rem(-35); margin:px2rem(5) 0;
+        span{display: block; text-indent: px2rem(80);}
+      }
+    }
+  }
+
+
+  /*价格计算【通用】*/
+  .price{ position: absolute;  width: px2rem(360); text-align: center; z-index: 2; margin-left: px2rem(-5);
+
+    .title{position: relative; width: px2rem(247); margin:px2rem(20) auto px2rem(15) auto;}
+    h2{position: relative; font-size:  px2rem(20); font-weight: normal; line-height: px2rem(55); color: #cb3c00;
+      i{font-size:  px2rem(20); line-height: px2rem(30); font-style: normal;vertical-align:middle; color: #cb3c00; }
+      span{font-size: px2rem(34); color: #cb3c00; }
+      em{font-style:normal; color: #cb3c00;}
+    }
+    s{ font-size:  px2rem(20); color: #cb3c00; font-weight: normal; margin-left: px2rem(10);
+      span{font-size: px2rem(20); }
+      b{font-weight:normal;}
+    }
+
+    ul.buy_btn_box { width: px2rem(172); overflow: hidden;  float: left;   }
+    ul.buy_btn_box li span {width: px2rem(169); display: block; background:url("../images/gobuy-btn.png"); background-size: 100%;  color: #fff; cursor: pointer; line-height: px2rem(55); height: px2rem(62); font-size: px2rem(18); text-align: center;  }
+  }
+
+  .pro-num{ position: relative; float: left; width: px2rem(181); height: px2rem(62); display: inline-block; background: url("../images/mun-btn.png"); background-size: 100%;
+    a{ position: absolute; top:px2rem(5); width:px2rem(40); height:px2rem(40); display:block; z-index: 2;}
+    .minus{display:inline-block;background:url(../images/in-a-1.png) center no-repeat; left:px2rem(0); background-size: 100%;}
+    .plus{display:inline-block;background:url(../images/in-a-2.png) center no-repeat; right:px2rem(5); background-size: 100%;}
+    .bang{ display:inline-block; width:px2rem(130); line-height:px2rem(45); position:absolute; top:px2rem(3); left:px2rem(25); text-align:center; color:#fff; background: none; font-size:px2rem(18); padding:0; z-index: 1;}
+  }
+
+}
+
+

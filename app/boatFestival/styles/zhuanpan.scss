@@ -1,0 +1,96 @@
+@function px2rem($n) {
+  @return ($n * 10 / 750) * 1rem; //设计稿一般都是750宽
+}
+
+@mixin font-dpr($font-size) {
+  font-size: $font-size;
+
+  [data-dpr="2"] & {
+    font-size: $font-size * 2;
+  }
+
+  [data-dpr="3"] & {
+    font-size: $font-size * 3;
+  }
+
+}
+
+
+.zhuanpan{
+  img {
+    width: 100%;
+  }
+}
+
+
+
+.btns{position: relative; float: right; width:px2rem(130); height:px2rem(40); background:#ffcd20;  text-align: center; border-radius:px2rem(20); cursor: pointer;
+  span{ display: block; color: #000; font-size:px2rem(22); line-height:px2rem(40);}
+}
+
+/*彈窗*/
+.zhuanpan-cover{
+  background-color: #000;
+  height: 100%;
+  left: 0;
+  opacity: 0.85;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 200; display: none;
+}
+
+.zhuanpan{
+  box-shadow: 0 0 0 #999;
+  font-size:px2rem(14);
+  width:px2rem(702);
+  height:px2rem(487);
+  margin-top: px2rem(-245);
+  margin-left: px2rem(-351);
+  left: 50%;
+  padding: 0;
+  position: fixed;
+  top: 50%;
+  z-index: 99999;  border-radius:px2rem(10); display: none;
+}
+
+
+.closes{ width:px2rem(40); height:px2rem(40); position: absolute; top:px2rem(20); right:px2rem(30); cursor: pointer; z-index: 10; background: url("../images/close.png") top no-repeat; background-size: 100%; }
+
+.zhuanpanBg{ width: 100%; height: 100%; position: relative; background: url("../images/wap-zpbg.png") center no-repeat; background-size: 100%; border-radius: px2rem(10);}
+.zhuanpan-center{width: 100%; height: 100%; top: 0; left: 0; z-index: 1;
+  .title{ font-size:px2rem(33); text-align: center; color: #000; line-height:px2rem(160);}
+  .zp{position: relative; width:px2rem(697); margin:px2rem(10) auto;
+    .zp-pan{position: relative; width:px2rem(697); height:px2rem(697); margin: 0 auto;  z-index: 2;}
+    .zp-btn{position: absolute; top: 50%; left: 50%; width:px2rem(223); margin-left:px2rem(-116); margin-top:px2rem(-140); z-index: 2; cursor: pointer; }
+    .zhijia{position: relative; width:px2rem(342); height:px2rem(93);  margin:px2rem(-35) auto 0; z-index: 1;
+      .txt{position: absolute; width: 100%; bottom: 0; text-align: center; color: #fff; font-size:px2rem(16); line-height:px2rem(48);
+        b{color: #ffe070;}
+      }
+    }
+    p{text-align: center; margin-top:px2rem(20); font-size:px2rem(18); color: #186e88;}
+
+  }
+}
+
+.zhuanpan .zhuanpan-award{
+  position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 2; display: none;
+  .award{position: absolute; width:px2rem(500); height:px2rem(350); top: 50%; left: 50%; margin-left: px2rem(-250); margin-top: px2rem(-175); display: none;
+    .txt{position: absolute; top:px2rem(70); right:px2rem(50); text-align: right; color: #fff; font-size:px2rem(28); vertical-align: sub !important;
+      span{font-size: px2rem(150); font-weight: bold; line-height:px2rem(144); vertical-align: sub !important;  font-family: "Microsoft YaHei", Tahoma, Arial; }
+    }
+    .quan{ width: px2rem(420); margin:px2rem(30) auto 0;}
+    .word{position: absolute; width: 100%; bottom: 0; left: 50%; margin-left: -50%; text-align: center; color: #000;font-size: px2rem(26); font-weight: bold;
+      span,b{ vertical-align:baseline !important;}
+    }
+    .text{position: absolute; width: 100%; top:27%; left: 50%; margin-left: -50%; text-align: center; color: #460d99;font-size: px2rem(24); font-weight: bold;
+      span{ font-size: px2rem(30); font-weight: bold; color: #460d99; line-height: px2rem(80); vertical-align:baseline !important;}
+      b{ font-size: px2rem(20); font-weight: normal; color: #aaa; vertical-align:baseline !important;}
+      p{font-size: px2rem(18); color: #460d99;}
+    }
+
+
+  }
+
+}
+

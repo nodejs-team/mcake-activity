@@ -1,0 +1,73 @@
+*{margin:0;padding:0;font-family:'Microsoft YaHei','寰蒋闆呴粦','榛戜綋',SimHei;-webkit-text-size-adjust:100%}
+section{min-width:320px;max-width:360px;margin:0 auto}
+input{color:#767676}
+input[type=button],input[type=submit],input[type=reset]{-webkit-appearance:none;cursor:pointer}
+.clear{padding:0;margin:0;clear:both}
+table{width:100%}
+table{border-spacing:0;border-collapse:collapse}
+td,th{word-wrap:break-word}
+li,ul{list-style:none}
+a{outline:0;text-decoration:none;color:#767676;-webkit-tap-highlight-color:rgba(200,200,200,.5);cursor:pointer}
+a:hover{text-decoration:none}
+a:active{-webkit-tap-highlight-color:rgba(200,200,200,0)}
+img{border:0 none;vertical-align:middle}
+acticle,footer,header,nav,section{display:block}
+
+.clear{padding:0;margin:0;clear:both}
+body{
+    margin:0;
+    font-size:14px;-webkit-text-size-adjust:none;color:#767676;min-width:320px;
+    font-family: "Microsoft Yahei", simhei, Arial;
+}
+.clearfix:after{
+    content: "";     /*内容为“.”就是一个英文的句号而已。也可以不写。*/
+    display: block;   /*加入的这个元素转换为块级元素。*/
+    clear: both;     /*清除左右两边浮动。*/
+    visibility: hidden;      /*可见度设为隐藏。注意它和display:none;是有区别的。visibility:hidden;仍然占据空间，只是看不到而已；*/
+    height: 0;     /*高度为0；*/
+}
+#evt_container{position:relative;width:10rem; margin:0 auto;}
+#evt_container *{  box-sizing: border-box;  background-repeat: no-repeat;   -webkit-tap-highlight-color: rgba(0,0,0,0);  tap-highlight-color: rgba(0,0,0,0);  -webkit-appearance: none;  -moz-appearance: none;  appearance: none;  -webkit-focus-ring-color: rgba(0,0,0,0);  focus-ring-color: rgba(0,0,0,0);  resize: none;  outline: 0;}
+#evt_container *:before, #evt_container *:after { box-sizing: border-box;}
+#evt_container a:focus {outline: thin dotted;}
+#evt_container a:active, #evt_container a:hover {outline: 0;}
+#evt_container .wrap{width:10rem; position:relative;}
+#evt-loading{text-align:center; margin-top:50%; position:static; color:#000000; font-size:0.5rem;}
+#evt_container header{background-color:#ffffff;text-align:center; position:relative; z-index: 10; width:100%; height:1.5rem; font-size:0.5rem; line-height:0.5rem;}
+#evt_container header a{display:block; width:1rem; height:1rem; position:absolute; top:50%; margin-top:-0.5rem; z-index:10;}
+#evt_container header a.icon-back{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAqCAYAAACpxZteAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpFRDYzNjNFRkFFRTAxMUU2OTRFMkY3QzdFRTVEM0U0MyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpFRDYzNjNGMEFFRTAxMUU2OTRFMkY3QzdFRTVEM0U0MyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkVENjM2M0VEQUVFMDExRTY5NEUyRjdDN0VFNUQzRTQzIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkVENjM2M0VFQUVFMDExRTY5NEUyRjdDN0VFNUQzRTQzIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+TXtgVQAAAVVJREFUeNq0lz0PwUAYx+85lbKJQWL0LdhEjD5DB7PFZJAYsJgsZkNXq0QkIvGpkKDuLq14a3svz3NJk2vx+7VO7v8HDGlMFsvyveSvxDSIL4WFy3XgYcBn43nlUvJ3Ytp8u9wXQsZR4LXqNzwZASeEq8Ep4XIdOBUcgB3lIgMVnJ+vveloeAZKuDqnhGsLbOFaAhd4rsAVninAgKcKsOB/BZjwHwE2/ENAAX8JqODqc3ESHSngaruOY44EnuRBQAV3ChwTQZj2YhSxzqPsb+U6WQtU6oivgkoCSaeREAlD/5m+FycKCXy3M2wJ/KuAmBJI65lYEsgqsxgSyGvMrpLc0HeVaNUWF4l28bKVGFVHG4lx+TWVgM0GZiIp2AhOh/2t3e5uWNFridNGytsakefVrQNHPr68w6yt3vk/mo7EOTJzJCFKJicSMV2L4xYfa5mWTwEGAGpCXbF3EcpEAAAAAElFTkSuQmCC) center no-repeat; background-size: auto 60%; left:0.3rem;}
+#evt_container header a.icon-home{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAqCAYAAADI3bkcAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpFRDYzNjNGM0FFRTAxMUU2OTRFMkY3QzdFRTVEM0U0MyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpFRDYzNjNGNEFFRTAxMUU2OTRFMkY3QzdFRTVEM0U0MyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkVENjM2M0YxQUVFMDExRTY5NEUyRjdDN0VFNUQzRTQzIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkVENjM2M0YyQUVFMDExRTY5NEUyRjdDN0VFNUQzRTQzIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+xmJAYgAAAZdJREFUeNrs1z1KxEAUB/D5B5tFEDtBsLAV7C08hZWNFtpo/NhVC5GIhdmACuoGdbXRQu/gCYT1AILldoInEFE2vsmuoiaRZPdNJsJMM5kP5v2YJLwZCObi+PUFqvbkM4RYqZbtG871oQB7/qt70SvbF4UDJ2DZ0cgBy4pGTlg2NJRgg9ZRe3VrnRsNFVivsrwRzqmdHnKjoQLr1M6GZdOrLD1xo6EEC9y1+4JJbjQUYUc7I01uNBRihQo0FGPZ0cgBy4pGl0nhihaez4BlQyNHbBTt1y+pPZcFjZyxPaOhAdsTGpqwXaOhEdsVGpqxmdHY9uszgRDXGrGp0bS7sxZhTwqAFWEMiiVjytjSEMlVQhxYBcGmRZcseRWnh/evdKsPG4/+vL2QUVrDn25n/7gk693NtRfN2Nhv2nWqg28D/a/SF5c4GlRNMAe/p1d5mzTYCsQYVdMxQw+0y+PfO/piJg1xb5XEuqu2+8e5ZSoBPBJZS/yzYsAGbMAGbMAGbMAGzA1+LpDvMQ14Kzw86y/NjuVH+RBgACESe6iJkpe7AAAAAElFTkSuQmCC) center no-repeat; background-size:auto 60%; right:0.3rem;}
+#evt_container header .title{padding-top:0.24rem; color:#767676; line-height:0.45rem;}
+#evt_container header .title span{font-size:0.4rem;}
+
+
+/*彈窗选择磅数*/
+.Dialogbg-Select { position: fixed; background-color: #000; height: 100%; left: 0; opacity: 0.85; top: 0; width: 100%; z-index: 200; display: none; }
+
+.Dialog-Select { position: fixed; box-shadow: 0 0 0 #999; font-size: 0.18667rem; width: 8rem; height: 7.06667rem; margin-top: -4.4rem; margin-left: -4rem; left: 50%; padding: 0; top: 50%; z-index: 99999; display: none; border-radius: 0.26667rem; background: #fff; }
+.Dialog-Select .s-closes{position: absolute; width: 0.8rem; height: 0.8rem; top: 0; right: 0; cursor: pointer; z-index: 8;}
+
+
+/*弹窗提示 头尾*/
+.Dialog-base-cover{ background-color: #000;  height: 100%;  left: 0;  opacity: 0.7;  position: fixed;  top: 0;  width: 100%; z-index: 200; display: none; -moz-opacity:.7; filter:alpha(opacity=70); }
+.Dialog-base-box{ position: fixed; top: 50%; left: 50%; box-shadow: 0 0 0 #999; font-size: 14px; width: 8rem;  margin: -3.33333rem auto 0 -4rem; padding: 0; z-index: 210;  display: none;  border-radius: 0.2rem; background: #f2f2f2;}
+.Dialog-base-box .box-wrap {display: none; position: relative; }
+.Dialog-base-box .box-wrap .box-item-header { text-align: center;  padding: 0.53333rem 0;  background: #fff;  border-radius: 0.2rem 0.2rem 0 0; }
+.Dialog-base-box .box-wrap .box-item-footer {text-align: center;  padding: 0.53333rem 0;  background: #fff;  border-radius: 0 0 0.2rem 0.2rem; }
+.Dialog-base-box .closes {position: absolute; width: 0.8rem; height: 0.8rem; top: 0; right: 0; cursor: pointer; z-index: 8; }
+
+
+
+
+
+/*分享到朋友圈提示*/
+.Dialog-share-cover { position: fixed;  top: 0; left: 0;  width: 100%;  background-color: #000;  height: 100%;  opacity: 0.85;  z-index: 250;  display: none; }
+
+.Dialog-share { position: fixed;background-size: 100%; box-shadow: 0 0 0 #999; font-size: 0.18667rem; width: 100%; height: 100%; top: 0; left: 50%; padding: 0; border-radius: 0.26667rem; max-width: 10rem; margin-left: -5rem;display: none; z-index: 99999; }
+
+
+
+@media screen and (max-width: 320px) {
+    .Dialog-share { max-width: 8rem; margin-left: -4rem; }
+}
+

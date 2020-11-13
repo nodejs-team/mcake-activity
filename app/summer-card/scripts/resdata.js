@@ -1,0 +1,32 @@
+var resData = [
+    {
+        "name":"banner_png",
+        "type":"image",
+        "url":"banner.png"
+    },
+    {
+        "name":"buy-btn_png",
+        "type":"image",
+        "url":"buy-btn.png"
+    },
+    {
+        "name":"card_png",
+        "type":"image",
+        "url":"card.png"
+    },
+    {
+        "name":"quan-1_png",
+        "type":"image",
+        "url":"quan-1.png"
+    },
+    {
+        "name":"quan-2_png",
+        "type":"image",
+        "url":"quan-2.png"
+    },
+    {
+        "name":"quan-3_png",
+        "type":"image",
+        "url":"quan-3.png"
+    }
+];

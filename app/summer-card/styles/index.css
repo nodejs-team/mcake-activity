@@ -1,0 +1,78 @@
+@charset "UTF-8";
+#evt_content * {
+  vertical-align: baseline !important; }
+
+/*价格符号不对齐*/
+#evt_content {
+  background: #fff; }
+  #evt_content img {
+    width: 100%;
+    display: block; }
+  #evt_content .sec {
+    position: relative; }
+  #evt_content .sec-top {
+    height: 11.14667rem;
+    background: url("../images/banner.png") repeat;
+    background-size: 100%;
+    z-index: 1; }
+  #evt_content .sec-1 {
+    z-index: 2; }
+    #evt_content .sec-1 div {
+      position: relative; }
+    #evt_content .sec-1 .card {
+      width: 10rem; }
+    #evt_content .sec-1 .goubtn {
+      position: absolute;
+      top: 3.86667rem;
+      left: 50%;
+      margin-left: -1.12667rem;
+      width: 2.25333rem;
+      height: 2.50667rem;
+      background: url("../images/buy-btn.png");
+      background-size: 100%; }
+  #evt_content .sec-2 {
+    z-index: 2; }
+    #evt_content .sec-2 div {
+      position: relative; }
+    #evt_content .sec-2 .qy {
+      width: 10rem; }
+  #evt_content .sec-footer {
+    background: #2f8be3;
+    position: relative;
+    padding-bottom: 1.33333rem;
+    z-index: 2; }
+    #evt_content .sec-footer .txt {
+      position: relative;
+      width: 9.33333rem;
+      padding-top: 0.66667rem;
+      margin: 0 auto;
+      color: #fff;
+      text-align: left; }
+      #evt_content .sec-footer .txt h2 {
+        font-size: 0.37333rem;
+        font-weight: normal; }
+      #evt_content .sec-footer .txt p {
+        font-size: 0.26667rem;
+        padding-left: 0.46667rem;
+        line-height: 0.53333rem;
+        text-indent: -0.46667rem;
+        margin: 0.06667rem 0;
+        text-align: left; }
+        #evt_content .sec-footer .txt p span {
+          display: block;
+          padding-left: 0.13333rem;
+          text-indent: -0.13333rem; }
+
+/*浮动*/
+.floater {
+  position: fixed;
+  width: 9.52rem;
+  height: 1.2rem;
+  bottom: -0.13333rem;
+  left: 50%;
+  margin-left: -4.76rem;
+  z-index: 11;
+  cursor: pointer;
+  display: none; }
+  .floater img {
+    width: 100%; }

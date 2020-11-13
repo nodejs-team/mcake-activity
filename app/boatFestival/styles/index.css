@@ -1,0 +1,313 @@
+@charset "UTF-8";
+#evt_content * {
+  vertical-align: baseline !important; }
+
+/*价格符号不对齐*/
+#evt_content {
+  background: #caaefb; }
+  #evt_content .sec {
+    position: relative;
+    overflow: hidden; }
+  #evt_content img {
+    width: 100%; }
+  #evt_content .section-top {
+    position: relative;
+    height: 16.53333rem;
+    background: url("../images/banner.png") no-repeat;
+    background-size: 100%;
+    z-index: 2; }
+  #evt_content .buy-btns {
+    position: absolute;
+    width: 2.66667rem;
+    bottom: 0.4rem;
+    left: 50%;
+    margin-left: -1.33333rem;
+    background: #ffea00;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.66667rem;
+    z-index: 2; }
+    #evt_content .buy-btns span {
+      display: block;
+      color: #b07ab8;
+      font-size: 0.32rem;
+      line-height: 0.66667rem; }
+  #evt_content .section-zhuanpan {
+    position: relative;
+    background: url("../images/zhuanpan-bg.png") no-repeat;
+    background-size: 100%;
+    z-index: 2;
+    height: 14.64rem; }
+  #evt_content .s-title {
+    width: 4.73333rem;
+    margin: 0.53333rem auto; }
+  #evt_content .sec-1 {
+    background: url("../images/row1-bg.png");
+    background-size: 102%; }
+  #evt_content .sec-2 {
+    background: url("../images/row2-bg.png");
+    background-size: 102%; }
+  #evt_content .sec-3 {
+    background: url("../images/row3-bg.png");
+    background-size: 102%; }
+  #evt_content .sec-zp {
+    background: url("../images/zp-bg.png");
+    background-size: 102%; }
+  #evt_content .sec-zuhe1 {
+    background: url("../images/zuhe-1-bg.png");
+    background-size: 102%; }
+    #evt_content .sec-zuhe1 ul li {
+      width: 3.2rem;
+      float: left;
+      margin: 0.66667rem 0.06667rem; }
+      #evt_content .sec-zuhe1 ul li .buy-btns {
+        position: relative;
+        bottom: auto; }
+  #evt_content .section-footer {
+    position: relative;
+    background: url("../images/foot-bg.png") no-repeat;
+    background-size: 100%; }
+    #evt_content .section-footer .rules {
+      padding: 0.66667rem 0.53333rem 0.53333rem;
+      color: #fff;
+      line-height: 0.53333rem; }
+      #evt_content .section-footer .rules h2 {
+        font-weight: normal;
+        font-size: 0.4rem;
+        line-height: 0.8rem;
+        color: #fff; }
+      #evt_content .section-footer .rules p {
+        font-size: 0.32rem;
+        padding-left: 0.46667rem;
+        line-height: 0.53333rem;
+        text-indent: -0.50667rem;
+        margin: 0.13333rem 0;
+        text-align: justify;
+        text-justify: inter-word; }
+        #evt_content .section-footer .rules p img {
+          width: 0.93333rem;
+          vertical-align: middle;
+          margin: 0 0.13333rem; }
+        #evt_content .section-footer .rules p span {
+          display: inline-block;
+          padding-left: 1.73333rem;
+          text-indent: -1.73333rem; }
+
+/*蛋糕选择弹窗*/
+.Dialogbg-Select {
+  background-color: #000;
+  height: 100%;
+  left: 0;
+  opacity: 0.85;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 200;
+  display: none; }
+
+/*蛋糕选择弹窗*/
+.Dialogbg-Select {
+  background-color: #000;
+  height: 100%;
+  left: 0;
+  opacity: 0.85;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 200;
+  display: none; }
+
+.Dialog-Select {
+  background: #fff none repeat scroll 0 0;
+  box-shadow: 0 0 0 #999;
+  font-size: 0.18667rem;
+  width: 8rem;
+  height: auto;
+  margin-top: -4.26667rem;
+  margin-left: -4rem;
+  left: 50%;
+  padding: 0;
+  position: fixed;
+  top: 50%;
+  z-index: 99999;
+  display: none;
+  border-radius: 0.13333rem; }
+
+.s-closes {
+  position: absolute;
+  top: 0.13333rem !important;
+  right: -0.50667rem !important;
+  width: 0.36rem !important;
+  height: 0.36rem !important;
+  background: url("../images/close1.png");
+  background-size: 100%; }
+
+.Select {
+  position: relative;
+  color: #000;
+  height: 100%;
+  text-align: left; }
+  .Select .s-title {
+    height: 1.37333rem;
+    background: #f2f2f2;
+    position: relative;
+    border-top-left-radius: 0.13333rem;
+    border-top-right-radius: 0.13333rem; }
+    .Select .s-title h2 {
+      font-size: 0.37333rem;
+      line-height: 0.4rem;
+      padding-left: 0.53333rem;
+      padding-top: 0.4rem; }
+    .Select .s-title b {
+      font-size: 0.18667rem;
+      color: #9a9a9a;
+      font-weight: normal;
+      padding-left: 0.53333rem; }
+  .Select .s-bangshu {
+    padding-top: 0.26667rem; }
+    .Select .s-bangshu ul {
+      margin-left: 0.53333rem; }
+      .Select .s-bangshu ul li {
+        float: left;
+        width: 1.2rem;
+        height: 1.2rem;
+        background: #f2f2f2;
+        border-radius: 50%;
+        text-align: center;
+        color: #4a4a4a;
+        margin-right: 0.66667rem;
+        font-size: 0.30667rem;
+        line-height: 0.26667rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column; }
+        .Select .s-bangshu ul li i {
+          font-size: 0.21333rem;
+          line-height: 0.26667rem;
+          font-style: normal; }
+      .Select .s-bangshu ul li.on {
+        background: #ffc559;
+        color: #000; }
+  .Select .d-tips {
+    padding: 0.26667rem 0.53333rem;
+    color: #4c4c4c;
+    font-size: 0.24rem; }
+  .Select .s-num {
+    height: 1.33333rem;
+    padding-left: 0.53333rem;
+    border-top: #ededed 1px solid; }
+    .Select .s-num b {
+      display: inline-block;
+      width: 2.66667rem;
+      margin: 0.26667rem 0;
+      line-height: 0.74667rem;
+      float: left;
+      font-size: 0.4rem;
+      color: #737373;
+      font-weight: normal; }
+    .Select .s-num .nums {
+      display: inline-block;
+      margin: 0.26667rem 0.53333rem 0.26667rem 0.26667rem;
+      float: right;
+      height: 0.74667rem;
+      position: relative;
+      width: 2.66667rem; }
+    .Select .s-num .nums a {
+      display: block;
+      width: 0.74667rem;
+      height: 0.74667rem;
+      position: absolute;
+      top: 0.02667rem; }
+    .Select .s-num .nums .minus {
+      background: url("../images/btn-1.png") no-repeat;
+      background-size: 100%;
+      left: 0; }
+    .Select .s-num .nums .plus {
+      background: url("../images/btn-2.png") no-repeat;
+      background-size: 100%;
+      right: 0; }
+    .Select .s-num .nums input {
+      background: none;
+      border: none;
+      color: #626262;
+      display: block;
+      font-size: 0.4rem;
+      height: 0.74667rem;
+      left: 0.8rem;
+      line-height: 0.74667rem;
+      padding: 0;
+      position: absolute;
+      text-align: center;
+      top: 0;
+      width: 1.06667rem; }
+  .Select .s-prices {
+    font-size: 0.29333rem;
+    padding: 0.4rem 0.53333rem;
+    border-top: #ededed 1px solid;
+    color: #4a4a4a; }
+    .Select .s-prices b {
+      display: inline-block;
+      width: 2.66667rem;
+      margin: 0;
+      line-height: 0.74667rem;
+      float: left;
+      font-size: 0.4rem;
+      color: #737373;
+      font-weight: normal; }
+    .Select .s-prices p {
+      display: block;
+      line-height: 0.74667rem;
+      text-align: right; }
+    .Select .s-prices i {
+      font-style: normal; }
+    .Select .s-prices span {
+      font-size: 0.6rem; }
+  .Select s {
+    color: #7e7e7e; }
+  .Select .btns {
+    width: 100%;
+    position: relative;
+    bottom: 0rem;
+    display: flex;
+    height: 1.33333rem;
+    line-height: 1.33333rem;
+    flex-direction: row;
+    text-align: center;
+    font-size: 0.4rem;
+    color: #000;
+    padding: 0; }
+    .Select .btns div {
+      flex: 1;
+      cursor: pointer; }
+    .Select .btns .go-buy {
+      background: #ffe328;
+      border-bottom-left-radius: 0.13333rem;
+      color: #000; }
+    .Select .btns .go-car {
+      background: #ffc559;
+      border-bottom-right-radius: 0.13333rem;
+      float: left; }
+    .Select .btns .go-buy.single {
+      border-bottom-left-radius: 0.26667rem;
+      background: #ffe32a;
+      color: #c43818; }
+
+/*通iframe嵌套抽奖页面*/
+.cjIframe {
+  width: 10rem;
+  min-height: 14.64rem; }
+
+body {
+  margin: 0; }
+
+img {
+  width: 100%; }
+
+.hy-title {
+  width: 10rem;
+  margin: 0.4rem auto; }
+
+.choujiang {
+  width: 10rem;
+  margin: 2.4rem auto 0; }

@@ -1,0 +1,304 @@
+@charset "UTF-8";
+* {
+  vertical-align: baseline !important; }
+
+/*价格符号不对齐*/
+#evt_content {
+  width: 10rem;
+  background: #d44840;
+  /*价格计算【通用】*/ }
+  #evt_content img {
+    width: 100%;
+    display: block; }
+  #evt_content .sec {
+    position: relative; }
+  #evt_content .sec-top {
+    width: 10rem;
+    height: 11.04rem;
+    background: url("../images/banner.png") repeat;
+    background-size: 100%;
+    z-index: 1;
+    overflow: hidden; }
+  #evt_content .hy-title {
+    width: 5.2rem;
+    margin: 1.02667rem auto 1.06667rem; }
+  #evt_content .icon {
+    position: absolute;
+    width: 1.16rem;
+    height: 1.41333rem;
+    right: 0.4rem;
+    top: 0.17333rem; }
+  #evt_content .icon_20 {
+    background: url("../images/icon_20.png");
+    background-size: 100%; }
+  #evt_content .icon_40 {
+    background: url("../images/icon_40.png");
+    background-size: 100%; }
+  #evt_content .icon_60 {
+    background: url("../images/icon_60.png");
+    background-size: 100%; }
+  #evt_content .sec-main {
+    width: 10rem;
+    height: 17.97333rem;
+    background: url("../images/sec-1.png") no-repeat;
+    background-size: 100%;
+    overflow: hidden; }
+    #evt_content .sec-main .hy-title {
+      margin-bottom: 1.33333rem; }
+    #evt_content .sec-main .dis {
+      position: absolute;
+      width: 0.69333rem;
+      left: 0;
+      top: 1.33333rem; }
+    #evt_content .sec-main .pro-num {
+      position: relative;
+      float: left;
+      width: 2.66667rem;
+      height: 0.6rem;
+      display: inline-block;
+      border: #c65459 1px solid;
+      border-radius: 0.6rem; }
+      #evt_content .sec-main .pro-num a {
+        position: absolute;
+        top: -0.26667rem;
+        width: 1.06667rem;
+        height: 1.06667rem;
+        display: block;
+        z-index: 2; }
+      #evt_content .sec-main .pro-num .minus {
+        display: inline-block;
+        background: url(../images/in-a-1.png) center no-repeat;
+        left: -0.26667rem;
+        background-size: 50%; }
+      #evt_content .sec-main .pro-num .plus {
+        display: inline-block;
+        background: url(../images/in-a-2.png) center no-repeat;
+        right: -0.26667rem;
+        background-size: 50%; }
+      #evt_content .sec-main .pro-num .bang {
+        display: inline-block;
+        width: 1.73333rem;
+        line-height: 0.6rem;
+        position: absolute;
+        top: 0;
+        left: 0.46667rem;
+        text-align: center;
+        color: #c65459;
+        background: none;
+        font-size: 0.26667rem;
+        padding: 0;
+        z-index: 1; }
+    #evt_content .sec-main .row {
+      position: relative;
+      height: 7.33333rem; }
+      #evt_content .sec-main .row .buy-btn {
+        position: absolute;
+        width: 2.01333rem; }
+      #evt_content .sec-main .row .btn1 {
+        display: none; }
+    #evt_content .sec-main .row1 .cake {
+      width: 10rem; }
+    #evt_content .sec-main .row1 .buy-btn {
+      top: 4.66667rem;
+      left: 5.4rem; }
+    #evt_content .sec-main .row2 .cake {
+      width: 10rem; }
+    #evt_content .sec-main .row2 .buy-btn {
+      top: 3.33333rem;
+      left: 0.6rem; }
+  #evt_content .sec-xiaoshi {
+    background: #ffeae3;
+    overflow: hidden; }
+    #evt_content .sec-xiaoshi .xiaoshiBox {
+      width: 10rem;
+      margin: 0.26667rem auto 0;
+      padding-bottom: 0.13333rem; }
+      #evt_content .sec-xiaoshi .xiaoshiBox dl {
+        margin-left: -0.10667rem; }
+        #evt_content .sec-xiaoshi .xiaoshiBox dl dd {
+          width: 4.86667rem;
+          height: 8rem;
+          margin-left: 0.13333rem;
+          margin-bottom: 0.66667rem;
+          float: left;
+          position: relative; }
+          #evt_content .sec-xiaoshi .xiaoshiBox dl dd .xiaoshi {
+            position: relative;
+            border-radius: 0.26667rem;
+            overflow: hidden; }
+            #evt_content .sec-xiaoshi .xiaoshiBox dl dd .xiaoshi .noStartbox {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%; }
+              #evt_content .sec-xiaoshi .xiaoshiBox dl dd .xiaoshi .noStartbox .cover {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: #000;
+                opacity: 0.6; }
+            #evt_content .sec-xiaoshi .xiaoshiBox dl dd .xiaoshi .time {
+              position: absolute;
+              top: 50%;
+              left: 0;
+              width: 100%;
+              color: #fff;
+              text-align: center;
+              font-size: 0.30667rem; }
+          #evt_content .sec-xiaoshi .xiaoshiBox dl dd img {
+            display: block; }
+          #evt_content .sec-xiaoshi .xiaoshiBox dl dd .content {
+            background: #ffe9ca;
+            text-align: center;
+            padding: 0.46667rem 0.13333rem;
+            border-radius: 0.26667rem; }
+            #evt_content .sec-xiaoshi .xiaoshiBox dl dd .content h2 {
+              font-size: 0.29333rem;
+              color: #000;
+              font-weight: normal;
+              line-height: 0.53333rem; }
+              #evt_content .sec-xiaoshi .xiaoshiBox dl dd .content h2 b {
+                font-weight: normal;
+                font-size: 0.26667rem; }
+            #evt_content .sec-xiaoshi .xiaoshiBox dl dd .content p {
+              font-size: 0.24rem;
+              color: #000;
+              line-height: 0.53333rem; }
+              #evt_content .sec-xiaoshi .xiaoshiBox dl dd .content p span {
+                color: #d01f19;
+                font-size: 0.4rem; }
+                #evt_content .sec-xiaoshi .xiaoshiBox dl dd .content p span i {
+                  font-size: 0.21333rem;
+                  font-style: normal; }
+              #evt_content .sec-xiaoshi .xiaoshiBox dl dd .content p s {
+                color: #99989d;
+                margin-left: 0.13333rem; }
+            #evt_content .sec-xiaoshi .xiaoshiBox dl dd .content .btn-hg, #evt_content .sec-xiaoshi .xiaoshiBox dl dd .content .noStart {
+              width: 2.37333rem;
+              height: 0.53333rem;
+              font-size: 0.26667rem;
+              background: #d01f19;
+              text-align: center;
+              line-height: 0.53333rem;
+              color: #fff;
+              cursor: pointer;
+              margin: 0.06667rem auto 0;
+              border-radius: 0.53333rem; }
+            #evt_content .sec-xiaoshi .xiaoshiBox dl dd .content .noStart {
+              background: #969696;
+              cursor: default; }
+  #evt_content .sec-footer {
+    position: relative;
+    padding-bottom: 1.06667rem;
+    z-index: 1;
+    background: #ffeae3; }
+    #evt_content .sec-footer .txt {
+      position: relative;
+      width: 9.06667rem;
+      padding-top: 0.66667rem;
+      margin: 0 auto;
+      color: #1e0c02; }
+      #evt_content .sec-footer .txt h2 {
+        font-size: 0.29333rem;
+        font-weight: normal; }
+      #evt_content .sec-footer .txt p {
+        font-size: 0.28rem;
+        padding-left: 0.46667rem;
+        line-height: 0.46667rem;
+        text-indent: -0.46667rem;
+        margin: 0.06667rem 0; }
+        #evt_content .sec-footer .txt p span {
+          display: block;
+          text-indent: 1.06667rem; }
+  #evt_content .price {
+    position: absolute;
+    width: 4.8rem;
+    text-align: center;
+    z-index: 2; }
+    #evt_content .price .title {
+      position: relative;
+      width: 3.29333rem;
+      margin: 0.26667rem auto 0.2rem auto; }
+    #evt_content .price h2 {
+      position: relative;
+      font-size: 0.26667rem;
+      font-weight: normal;
+      line-height: 0.73333rem;
+      color: #cb3c00; }
+      #evt_content .price h2 i {
+        font-size: 0.26667rem;
+        line-height: 0.4rem;
+        font-style: normal;
+        vertical-align: middle;
+        color: #cb3c00; }
+      #evt_content .price h2 span {
+        font-size: 0.45333rem;
+        color: #cb3c00; }
+      #evt_content .price h2 em {
+        font-style: normal;
+        color: #cb3c00; }
+    #evt_content .price s {
+      font-size: 0.26667rem;
+      color: #cb3c00;
+      font-weight: normal;
+      margin-left: 0.13333rem; }
+      #evt_content .price s span {
+        font-size: 0.26667rem; }
+      #evt_content .price s b {
+        font-weight: normal; }
+    #evt_content .price ul.buy_btn_box {
+      width: 2.29333rem;
+      overflow: hidden;
+      float: left; }
+    #evt_content .price ul.buy_btn_box li span {
+      width: 2.25333rem;
+      display: block;
+      background: url("../images/gobuy-btn.png");
+      background-size: 100%;
+      color: #fff;
+      cursor: pointer;
+      line-height: 0.73333rem;
+      height: 0.82667rem;
+      font-size: 0.24rem;
+      text-align: center; }
+  #evt_content .pro-num {
+    position: relative;
+    float: left;
+    width: 2.41333rem;
+    height: 0.82667rem;
+    display: inline-block;
+    background: url("../images/mun-btn.png");
+    background-size: 100%; }
+    #evt_content .pro-num a {
+      position: absolute;
+      top: 0.06667rem;
+      width: 0.53333rem;
+      height: 0.53333rem;
+      display: block;
+      z-index: 2; }
+    #evt_content .pro-num .minus {
+      display: inline-block;
+      background: url(../images/in-a-1.png) center no-repeat;
+      left: 0rem;
+      background-size: 100%; }
+    #evt_content .pro-num .plus {
+      display: inline-block;
+      background: url(../images/in-a-2.png) center no-repeat;
+      right: 0.06667rem;
+      background-size: 100%; }
+    #evt_content .pro-num .bang {
+      display: inline-block;
+      width: 1.73333rem;
+      line-height: 0.6rem;
+      position: absolute;
+      top: 0.04rem;
+      left: 0.33333rem;
+      text-align: center;
+      color: #fff;
+      background: none;
+      font-size: 0.24rem;
+      padding: 0;
+      z-index: 1; }

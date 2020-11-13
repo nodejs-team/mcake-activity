@@ -1,0 +1,187 @@
+@charset "UTF-8";
+.zhuanpan img {
+  width: 100%; }
+
+.btns {
+  position: relative;
+  float: right;
+  width: 1.73333rem;
+  height: 0.53333rem;
+  background: #ffcd20;
+  text-align: center;
+  border-radius: 0.26667rem;
+  cursor: pointer; }
+  .btns span {
+    display: block;
+    color: #000;
+    font-size: 0.29333rem;
+    line-height: 0.53333rem; }
+
+/*彈窗*/
+.zhuanpan-cover {
+  background-color: #000;
+  height: 100%;
+  left: 0;
+  opacity: 0.85;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 200;
+  display: none; }
+
+.zhuanpan {
+  box-shadow: 0 0 0 #999;
+  font-size: 0.18667rem;
+  width: 9.36rem;
+  height: 6.49333rem;
+  margin-top: -3.26667rem;
+  margin-left: -4.68rem;
+  left: 50%;
+  padding: 0;
+  position: fixed;
+  top: 50%;
+  z-index: 99999;
+  border-radius: 0.13333rem;
+  display: none; }
+
+.closes {
+  width: 0.53333rem;
+  height: 0.53333rem;
+  position: absolute;
+  top: 0.26667rem;
+  right: 0.4rem;
+  cursor: pointer;
+  z-index: 10;
+  background: url("../images/close.png") top no-repeat;
+  background-size: 100%; }
+
+.zhuanpanBg {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: url("../images/wap-zpbg.png") center no-repeat;
+  background-size: 100%;
+  border-radius: 0.13333rem; }
+
+.zhuanpan-center {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1; }
+  .zhuanpan-center .title {
+    font-size: 0.44rem;
+    text-align: center;
+    color: #000;
+    line-height: 2.13333rem; }
+  .zhuanpan-center .zp {
+    position: relative;
+    width: 9.29333rem;
+    margin: 0.13333rem auto; }
+    .zhuanpan-center .zp .zp-pan {
+      position: relative;
+      width: 9.29333rem;
+      height: 9.29333rem;
+      margin: 0 auto;
+      z-index: 2; }
+    .zhuanpan-center .zp .zp-btn {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 2.97333rem;
+      margin-left: -1.54667rem;
+      margin-top: -1.86667rem;
+      z-index: 2;
+      cursor: pointer; }
+    .zhuanpan-center .zp .zhijia {
+      position: relative;
+      width: 4.56rem;
+      height: 1.24rem;
+      margin: -0.46667rem auto 0;
+      z-index: 1; }
+      .zhuanpan-center .zp .zhijia .txt {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        text-align: center;
+        color: #fff;
+        font-size: 0.21333rem;
+        line-height: 0.64rem; }
+        .zhuanpan-center .zp .zhijia .txt b {
+          color: #ffe070; }
+    .zhuanpan-center .zp p {
+      text-align: center;
+      margin-top: 0.26667rem;
+      font-size: 0.24rem;
+      color: #186e88; }
+
+.zhuanpan .zhuanpan-award {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: none; }
+  .zhuanpan .zhuanpan-award .award {
+    position: absolute;
+    width: 6.66667rem;
+    height: 4.66667rem;
+    top: 50%;
+    left: 50%;
+    margin-left: -3.33333rem;
+    margin-top: -2.33333rem;
+    display: none; }
+    .zhuanpan .zhuanpan-award .award .txt {
+      position: absolute;
+      top: 0.93333rem;
+      right: 0.66667rem;
+      text-align: right;
+      color: #fff;
+      font-size: 0.37333rem;
+      vertical-align: sub !important; }
+      .zhuanpan .zhuanpan-award .award .txt span {
+        font-size: 2rem;
+        font-weight: bold;
+        line-height: 1.92rem;
+        vertical-align: sub !important;
+        font-family: "Microsoft YaHei", Tahoma, Arial; }
+    .zhuanpan .zhuanpan-award .award .quan {
+      width: 5.6rem;
+      margin: 0.4rem auto 0; }
+    .zhuanpan .zhuanpan-award .award .word {
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      left: 50%;
+      margin-left: -50%;
+      text-align: center;
+      color: #000;
+      font-size: 0.34667rem;
+      font-weight: bold; }
+      .zhuanpan .zhuanpan-award .award .word span, .zhuanpan .zhuanpan-award .award .word b {
+        vertical-align: baseline !important; }
+    .zhuanpan .zhuanpan-award .award .text {
+      position: absolute;
+      width: 100%;
+      top: 27%;
+      left: 50%;
+      margin-left: -50%;
+      text-align: center;
+      color: #460d99;
+      font-size: 0.32rem;
+      font-weight: bold; }
+      .zhuanpan .zhuanpan-award .award .text span {
+        font-size: 0.4rem;
+        font-weight: bold;
+        color: #460d99;
+        line-height: 1.06667rem;
+        vertical-align: baseline !important; }
+      .zhuanpan .zhuanpan-award .award .text b {
+        font-size: 0.26667rem;
+        font-weight: normal;
+        color: #aaa;
+        vertical-align: baseline !important; }
+      .zhuanpan .zhuanpan-award .award .text p {
+        font-size: 0.24rem;
+        color: #460d99; }

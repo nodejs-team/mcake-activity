@@ -245,6 +245,61 @@
         #evt_content .sec-main .row4 .price .plus {
           background: url(../images/in-d-2.png) center no-repeat;
           background-size: 50%; }
+    #evt_content .sec-main .row5 {
+      height: 6.66667rem; }
+      #evt_content .sec-main .row5 .icon {
+        left: 3.06667rem;
+        top: 0.37333rem; }
+      #evt_content .sec-main .row5 .cake {
+        width: 5.4rem;
+        top: 0;
+        right: 0;
+        z-index: 1; }
+      #evt_content .sec-main .row5 .price {
+        top: 2rem;
+        left: 0.4rem;
+        z-index: 2; }
+        #evt_content .sec-main .row5 .price h2, #evt_content .sec-main .row5 .price s {
+          color: #a70001; }
+        #evt_content .sec-main .row5 .price ul.buy_btn_box li span {
+          background: #c65459; }
+        #evt_content .sec-main .row5 .price .pro-num {
+          border: #a70001 1px solid; }
+          #evt_content .sec-main .row5 .price .pro-num span.bang {
+            color: #a70001; }
+        #evt_content .sec-main .row5 .price .minus {
+          background: url(../images/in-c-1.png) center no-repeat;
+          background-size: 50%; }
+        #evt_content .sec-main .row5 .price .plus {
+          background: url(../images/in-c-2.png) center no-repeat;
+          background-size: 50%; }
+    #evt_content .sec-main .row6 {
+      height: 7.73333rem; }
+      #evt_content .sec-main .row6 .icon {
+        left: 3.33333rem; }
+      #evt_content .sec-main .row6 .cake {
+        width: 5.02667rem;
+        top: 0;
+        left: 0;
+        z-index: 1; }
+      #evt_content .sec-main .row6 .price {
+        top: 2rem;
+        left: auto;
+        right: 0; }
+        #evt_content .sec-main .row6 .price h2, #evt_content .sec-main .row6 .price s {
+          color: #3f517d; }
+        #evt_content .sec-main .row6 .price ul.buy_btn_box li span {
+          background: #647db8; }
+        #evt_content .sec-main .row6 .price .pro-num {
+          border: #647db8 1px solid; }
+          #evt_content .sec-main .row6 .price .pro-num span.bang {
+            color: #647db8; }
+        #evt_content .sec-main .row6 .price .minus {
+          background: url(../images/in-e-1.png) center no-repeat;
+          background-size: 50%; }
+        #evt_content .sec-main .row6 .price .plus {
+          background: url(../images/in-e-2.png) center no-repeat;
+          background-size: 50%; }
   #evt_content .sec-footer {
     position: relative;
     padding-bottom: 0.8rem;

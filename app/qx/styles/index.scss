@@ -1,0 +1,68 @@
+@function px2rem($n) {
+  @return ($n * 10 / 750) * 1rem; //设计稿一般都是750宽
+}
+*{ vertical-align: baseline !important;}  /*价格符号不对齐*/
+#evt_content{width: px2rem(750); background:url("../images/bg.png") repeat; background-size: 25%;
+  img{width:100%; display: block;}
+  .sec{position: relative; }
+
+  .sec-top{ width: px2rem(750); height: px2rem(946); background:url("../images/banner.png") repeat; background-size: 100%; z-index: 1; overflow: hidden;
+  }
+
+
+  .hy-title{ width: px2rem(326); margin:px2rem(77) auto px2rem(20); }
+
+
+  .sec-tip{ position: relative; z-index: 1; background: url("../images/s-bg-1.png"); background-size: 100%;overflow: hidden;
+    .tip{ width:px2rem(750);  margin: 0 auto; z-index: 1; overflow: hidden; }
+
+  }
+  .sec-cake{ position: relative; z-index: 1; height: px2rem(1263); background: url("../images/s-bg-2.png"); background-size: 100%;overflow: hidden;
+    .qx-cake{position: relative; width:px2rem(694);  margin:px2rem(60) auto; z-index: 1;
+      .buy-btn{position: absolute; width: px2rem(171); top: px2rem(200); right: px2rem(80);}
+    }
+    .qx-box{ width:px2rem(750);  margin: 0 auto; z-index: 1;  }
+
+  }
+
+  .sec-main{ width: px2rem(750);
+
+    .row-cake{ position: relative; width:px2rem(750); margin:0 auto;
+      .buy-lq{position: absolute; width: px2rem(177); bottom:0; left: 50%; margin-left: px2rem(-88.5)}
+    }
+
+  }
+
+
+  .sec-wx{ position: relative; z-index: 1; height: px2rem(771); background: url("../images/wx-bg.png"); background-size: 100%;overflow: hidden;
+    .wx{width: px2rem(750); margin-top: px2rem(100); }
+  }
+
+  .sec-footer{ position: relative; padding-bottom: px2rem(60); z-index:1; background: url("../images/foot-bg.png") repeat; background-size: 100%;
+    .txt{ position: relative; width:px2rem(700); padding-top: px2rem(80); margin: 0 auto;  color: #000;
+      h2{font-size: px2rem(22); font-weight: normal; }
+      p{ font-size: px2rem(21); padding-left: px2rem(35); line-height:px2rem(35);  text-indent: px2rem(-35); margin:px2rem(5) 0;
+        span{display: block; text-indent: px2rem(80);}
+      }
+    }
+  }
+
+
+}
+
+
+/*彈窗*/
+.Dialogbg-quan{  background-color: #000;  height: 100%;  left: 0;  opacity: 0.7;  position: fixed;  top: 0;  width: 100%; z-index: 200; display: none; }
+
+.Dialog-quan{   box-shadow: 0 0 0 #999;  font-size:px2rem(14);  width:px2rem(700); padding: px2rem(30) 0; top: 50%; left: 50%;  margin-bottom: 0; margin-left: px2rem(-350);  margin-right: auto;  margin-top: px2rem(-300);  position: fixed; z-index: 99999; border-radius:px2rem(10); overflow: hidden; display: none;
+  img{width: 100%;}
+  .closes{ width:px2rem(30); height:px2rem(30); position: absolute; top:px2rem(50); right: px2rem(30);  cursor: pointer; z-index: 8; background: url("../images/close2.png") center no-repeat; background-size: 100%;}
+  .quan{position: relative; display: none; text-align: center; width: px2rem(700); height: px2rem(460); background: url("../images/card-0.png") no-repeat; background-size: 100%;
+
+    .go-use {display: block; position: absolute; bottom:px2rem(100); left: 50%; width: px2rem(180); margin-left:px2rem(-90); cursor: pointer; background: #ffb3be;font-size: px2rem(22); line-height: px2rem(50); color: #000;
+    }
+  }
+  .quan-1{ background: url("../images/card-1.png") no-repeat; background-size: 100%;}
+
+  .quan-2{ background: url("../images/card-2.png") no-repeat; background-size: 100%;}
+}

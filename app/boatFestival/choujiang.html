@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- build:css styles/zhuanpan.css -->
+    <link rel="stylesheet" href="../commoncss/wap-normalize.css">
+    <link rel="stylesheet" href="styles/zhuanpan.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <!-- endbuild-->
+</head>
+<body>
+
+<div class="choujiang">
+    <!--第一步-->
+    <div class="zhuanpan-center">
+        <div class="zp">
+            <div class="zp-pan" id="pan"><img src="images/zp-pan.png" alt=""></div>
+            <!--<div class="zhijia"><img src="images/zhijia.png" alt="">
+                <div class="txt"><span>您有<b>3</b>次抽奖机会</span></div>
+            </div>-->
+            <div class="zp-btn" id="zp-start"  onclick="sendMessage()"><img src="images/zp-btn.png" alt=""></div>
+           <!-- <p>点击[立即抽奖]按钮开始游戏吧~ <br>
+                <span>*游戏一天仅限一次</span>
+            </p>-->
+        </div>
+    </div>
+
+
+   <!-- <div class="jiang-btn" onclick="sendMessage()"><img src="images/jiang-btn.png" alt=""></div>-->
+</div>
+
+
+
+<script src="https://act.mcake.com/fangli/2019/wap/commonjs/jquery.min.js"></script>
+<script src="https://act.mcake.com/fangli/2019/wap/commonjs/flexible.js"></script>
+<!-- build:js scripts/zhuanpan.js -->
+<script type="text/javascript" src="scripts/jquery.rotate.min.js"></script>
+<script src="../commonjs/fastclick.js"></script>
+<script src="scripts/zhuanpan.js"></script>
+<!-- endbuild -->
+
+<script>
+
+        /*点击抽奖*/
+       /* var arr = [0,1,2,3];
+        var num = 0;*/
+
+
+        window.addEventListener('message', function (event) {
+            /*if(window.parent !== event.source){ return false; }*/
+            Scheduler.translate(event)
+        }, false);
+        var Scheduler = {
+            // 消息事件对象
+            event: {},
+            // 参数
+            params: {},
+            // 翻译
+            translate: function (data) {
+                this.event = event;
+                this.params = typeof(event.data) == 'string' ? JSON.parse(event.data) : event.data;
+                this.execute();
+            },
+            // 执行
+            execute: function () {
+                switch (this.params.method) {
+                    // 抽奖
+                    case 'choujiang':
+                        console.log(this.params.data.id);
+                        start(this.params.data.id);
+                        break;
+
+                    // 默认
+                    default:
+                }
+            }
+        }
+
+        function sendMessage() {
+            /*第八步，更换活动id*/
+            top.postMessage({method: 'choujiang',data:{id:9}}, "*");
+        }
+
+        /*开始抽奖*/
+        function start(id) {
+            console.log('从上个页面获取的抽奖id:',id);
+            /*第四步*/
+            /*设置抽奖数据*/
+            var jpArr={   /*id是用来对应转盘上面的格子*/
+                "46":{id:"0",name:"恭喜您抽中<br><span>5.5元无门槛红包</span><br><b></b><p>已经发送您的账户，请在“会员中心”查看</p>",price:"1398.00"},
+                "47":{id:"1",name:"恭喜您抽中<br><span>腾讯视频会员季卡</span><br><b></b><p>将在活动结束后15个工作日内发送给您</p>",price:"299.00"},
+                "44":{id:"2",name:"恭喜您抽中<br><span>MCAKE夏日潮流水杯</span><p>将在活动结束后15个工作日内寄送给您</p>",price:"10"},
+                "46":{id:"3",name:"恭喜您抽中<br><span>5.5元无门槛红包</span><br><b></b><p>已经发送您的账户，请在“会员中心”查看</p>",price:"1398.00"},
+                "43":{id:"4",name:"恭喜您抽中<br><span>腾讯视频会员月卡</span><p>将在活动结束后15个工作日内发送给您</p>",price:"100.00"},
+                "45":{id:"5",name:"恭喜您抽中<br><span>30元蛋糕优惠券</span><br><b></b><p>已经发送您的账户，请在“会员中心”查看</p>",price:"299.00"},
+                "41":{id:"6",name:"恭喜您抽中<br><span>历师定制抱枕</span><br><b></b><p>将在活动结束后15个工作日内寄送给您</p>",price:"299.00"},
+                "42":{id:"7",name:"恭喜您抽中<br><span>历师CV大神签名照</span><br><b></b><p>将在活动结束后15个工作日内寄送给您</p>",price:"299.00"}
+            };
+
+           /*第二步*/
+            /*抽奖效果*/
+            console.log(jpArr[id].id);
+            rotation(jpArr[id].id);
+
+            /*第三步*/
+            /*显示抽奖结果*/
+            var autoMessage = {method:'choujiangResult',message:'抽奖结果展示',data:{DialogCover:".zhuanpan-cover",DialogBox:".zhuanpan",n:id,arr:jpArr}};
+            top.postMessage(autoMessage,'*'); /*向外部抛出autoMessage*/
+
+
+
+        }
+
+
+
+</script>
+</body>
+</html>

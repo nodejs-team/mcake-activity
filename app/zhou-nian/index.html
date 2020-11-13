@@ -8,11 +8,9 @@
     <!-- build:css styles/index.css -->
     <link rel="stylesheet" href="../commoncss/wap-normalize.css">
     <link rel="stylesheet" href="styles/swiper.min.css">
-    <link rel="stylesheet" href="styles/hongbao.css">
     <link rel="stylesheet" href="styles/index.css">
     <!-- endbuild-->
     <script src="https://act.mcake.com/fangli/2019/wap/commonjs/jquery.min.js"></script>
-    <script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
 
 </head>
 <body>
@@ -30,219 +28,41 @@
             <div id="evt_loading" style="display:none;">0%</div>
             <div id="evt_content" style="display:none;">
                 <div class="sec sec-top"></div>
-                <div class="sec sec-video" >
 
-                   <!-- <video id="shakeVideo" style="border: none; background: none; z-index: 1;" poster="https://act.mcake.com//video/2019/zhou-nian.jpg" src="https://act.mcake.com//video/2019/zhou-nian.mp4" preload="auto" controls  autoplay="autoplay" x5-playsinline="" playsinline="true" webkit-playsinline="true" x-webkit-airplay="true" x5-video-player-type="h5" x5-video-player-fullscreen="" x5-video-orientation="portraint">
-                    </video>-->
-
-                    <!--兼容安卓手机解决方案-->
-                    <div class="video">
-                        <div class="video-bg">
-                            <img src="images/tips.jpg" alt="">
-                        </div>
-                        <video id="shakeVideo" style="border: none; background: none; z-index: 1;" poster="images/tips.jpg" src="https://act.mcake.com//video/2019/zhou-nian.mp4"  loop="loop" preload="auto" controls="controls"   x5-playsinline="" playsinline="true" webkit-playsinline="true" x-webkit-airplay="true" x5-video-player-type="h5" x5-video-player-fullscreen="true" x5-video-orientation="portraint">
-                        </video>
-
-                    </div>
-
-
-                </div>
                 <div class="sec-main">
                     <!--tab切换-->
                     <div class="tab-bar">
-                        <span class="cur">10.10-10.19</span>
-                        <span>10.20-10.29</span>
-                        <span>10.30-11.10</span>
+                        <span></span>
+                        <span></span>
+                        <span class="cur"></span>
                     </div>
-                    <div class="tab-box">
-                        <div class="part part-1" style="display: block;">
-                            <div class="sec-title">
-                                <ul class="clearfix">
-                                    <li class="scaleImg whdlink"><img src="images/part-t-1.png" class="scale" alt=""></li>
-                                    <li class="scaleImg quanlink"><img src="images/part-t-2.png" class="scale" alt=""></li>
-                                    <li class="scaleImg xplink"><img src="images/part-t-3.png" class="scale" alt=""></li>
-                                    <li class="scaleImg manzenglink"><img src="images/part-t-4.png" class="scale" alt=""></li>
-                                    <li class="scaleImg winlink"><img src="images/part-t-5.png" class="scale" alt=""></li>
-                                </ul>
-                            </div>
-                            <div class="hdtitle" id="whd"><img src="images/zn-title-1.png" alt=""></div>
-                            <div class="wx">
-                                <img src="images/wx-code.png" alt="">
-                                <img src="images/wb-code.png" alt="">
-                            </div>
-                            <div class="hdtitle" id="quan"><img src="images/zn-title-2.png" alt=""></div>
-                            <div class="quan">
-                                <img src="images/quan.png" alt="">
-                                <div class="hb hb1">立即领取</div>
-                                <div class="hb hb2 on">已领取</div>
-                                <div class="hb hb3">立即领取</div>
-                            </div>
-                            <div class="hdtitle" id="xp"><img src="images/zn-title-3.png" alt=""></div>
-                            <div class="kanjia"><img src="images/kanjia.png" alt=""></div>
-                            <div class="hdtitle" id="manzeng"><img src="images/zn-title-4.png" alt=""></div>
-                            <div class="manzeng"><img src="images/manzeng-1.png" alt=""></div>
-
-                        </div>
-                        <div class="part part-2">
-                            <div class="sec-title">
-                                <ul class="clearfix">
-                                    <li class="scaleImg Mcardlink"><img src="images/part-b-3.png" class="scale" alt=""></li>
-                                    <li class="scaleImg zenglink"><img src="images/part-b-1.png" class="scale" alt=""></li>
-                                    <li class="scaleImg"><img src="images/part-b-2.png" class="scale" alt=""></li>
-                                    <li class="scaleImg winlink"><img src="images/part-b-4.png" class="scale" alt=""></li>
-                                </ul>
-                            </div>
-                            <div class="hdtitle" id="Mcard"><img src="images/zn-title-8.png" alt=""></div>
-                            <div class="mcard"><img src="images/mcard.png" alt=""></div>
-                            <div class="hdtitle" id="zeng"><img src="images/zn-title-4.png" alt=""></div>
-                            <div class="manzeng"><img src="images/manzeng.png" alt=""></div>
-
-                        </div>
-                        <div class="part part-3">
-                            <div class="sec-title">
-                                <ul class="clearfix">
-                                    <li class="scaleImg zhelink"><img src="images/part-c-1.png" class="scale" alt=""></li>
-                                    <li class="scaleImg shenglink"><img src="images/part-c-2.png" class="scale" alt=""></li>
-                                    <li class="scaleImg winlink"><img src="images/part-c-3.png" class="scale" alt=""></li>
-                                </ul>
-                            </div>
-                            <div class="hdtitle" id="zhekou"><img src="images/zn-title-6.png" alt=""></div>
-                            <div class="xp"><img src="images/xp.png" alt=""></div>
-                            <div class="shengbang">
-                                <div class="hdtitle" id="shengbang"><img src="images/zn-title-7.png" alt=""></div>
-                                <div class="item">
-                                    <div class="cake"><img src="images/cake-1.png" alt=""></div>
-                                    <div class="price">
-                                        <div class="title"><img src="images/title-1.png" alt=""></div>
-                                        <div class="s-price"><img src="images/price-1.png" alt=""></div>
-                                        <div class="select">
-                                            <ul>
-                                                <li class="on" data-sku="101" data-method="111" data-pid="1001" data-ptype="1" data-channel="1" data-num="1"></li>
-                                                <li data-sku="102" data-method="112" data-pid="1002" data-ptype="3" data-channel="2" data-num="1"></li>
-                                            </ul>
-                                        </div>
-                                        <div class="go-btn" data-method="111" data-pid="1001" data-ptype="1" data-channel="1" data-num="1">
-                                            <a href="#"><span></span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item item-2">
-                                    <div class="cake"><img src="images/cake-2.png" alt=""></div>
-                                    <div class="price">
-                                        <div class="title"><img src="images/title-2.png" alt=""></div>
-                                        <div class="s-price"><img src="images/price-2.png" alt=""></div>
-                                        <div class="select">
-                                            <ul>
-                                                <li class="on" data-sku="101" data-method="111" data-pid="1001" data-ptype="1" data-channel="1" data-num="1"></li>
-                                                <li data-sku="102" data-method="112" data-pid="1002" data-ptype="3" data-channel="2" data-num="1"></li>
-                                            </ul>
-                                        </div>
-                                        <div class="go-btn" data-method="111" data-pid="1001" data-ptype="1" data-channel="1" data-num="1">
-                                            <a href="#"><span></span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item item-3">
-                                    <div class="cake"><img src="images/cake-3.png" alt=""></div>
-                                    <div class="price">
-                                        <div class="title"><img src="images/title-3.png" alt=""></div>
-                                        <div class="s-price"><img src="images/price-3.png" alt=""></div>
-                                        <div class="select">
-                                            <ul>
-                                                <li class="on" data-sku="101" data-method="111" data-pid="1001" data-ptype="1" data-channel="1" data-num="1"></li>
-                                                <li data-sku="102" data-method="112" data-pid="1002" data-ptype="3" data-channel="2" data-num="1"></li>
-                                            </ul>
-                                        </div>
-                                        <div class="go-btn" data-method="111" data-pid="1001" data-ptype="1" data-channel="1" data-num="1">
-                                            <a href="#"><span></span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--7.7专场-->
-                    <div class="hdtitle"><img src="images/zn-title-9.png" alt=""></div>
-                    <div class="sec sec-cakes">
-                        <div class="moon prolist">
+                    <div class="sub-bar">
+                        <div class="sec-title">
                             <ul class="clearfix">
-                                <li data-pond="1磅,2磅,3磅,5磅" data-weight="100g,1.25kg,1.58kg,2.88kg" data-price="198,298,428,728" data-time="提示：需提前1小时预订,提示：需提前5小时预订,提示：需提前2小时预订,提示：需提前4小时预订" data-postid="01,02,03,04" data-tips="尺寸： 2-3人食 15cm*3.5cm,尺寸：4-7人食 18cm*4cm,尺寸：8-12人食 22cm*4.5cm,尺寸：12-20人食 25cm*5.5cm" data-sku="01,02,03,04" data-method="01,02,03,04" data-pid="01,02,03,04" data-ptype="1,2,3,4" data-channel="11,21,31,41">
-                                    <img src="images/img-1.png" alt="">
-                                    <div class="m-title">朗姆醇栗</div>
-                                    <div class="m-subtitle">Mont Blanc</div>
-                                    <!--<div class="m-price">￥<span>229.46</span></div>-->
-                                    <div class="m-old-price">￥<span>298.00</span></div>
-                                    <div class="m-car"></div>
-                                    <!--<div class="m-last">剩余：99</div>-->
-                                </li>
-                                <li data-pond="1磅,2磅,3磅,5磅" data-weight="100g,1.25kg,1.58kg,2.88kg" data-price="198,298,428,728" data-time="提示：需提前1小时预订,提示：需提前5小时预订,提示：需提前2小时预订,提示：需提前4小时预订" data-postid="01,02,03,04" data-tips="尺寸： 2-3人食 15cm*3.5cm,尺寸：4-7人食 18cm*4cm,尺寸：8-12人食 22cm*4.5cm,尺寸：12-20人食 25cm*5.5cm" data-sku="01,02,03,04" data-method="01,02,03,04" data-pid="01,02,03,04" data-ptype="1,2,3,4" data-channel="11,21,31,41">
-                                    <img src="images/img-2.png" class="zoom" alt="">
-                                    <div class="m-title">鲜莓印雪</div>
-                                    <div class="m-subtitle">Fraise-Chantilly</div>
-                                    <!--<div class="m-price">￥<span>229.46</span></div>-->
-                                    <div class="m-old-price">￥<span>198.00</span></div>
-                                    <div class="m-car"></div>
-                                   <!-- <div class="m-last">剩余：99</div>-->
-                                </li>
-                                <li data-pond="1磅,2磅,3磅,5磅" data-weight="100g,1.25kg,1.58kg,2.88kg" data-price="198,298,428,728" data-time="提示：需提前1小时预订,提示：需提前5小时预订,提示：需提前2小时预订,提示：需提前4小时预订" data-postid="01,02,03,04" data-tips="尺寸： 2-3人食 15cm*3.5cm,尺寸：4-7人食 18cm*4cm,尺寸：8-12人食 22cm*4.5cm,尺寸：12-20人食 25cm*5.5cm" data-sku="01,02,03,04" data-method="01,02,03,04" data-pid="01,02,03,04" data-ptype="1,2,3,4" data-channel="11,21,31,41">
-                                    <img src="images/img-3.png" class="zoom" alt="">
-                                    <div class="m-title">尼诺</div>
-                                    <div class="m-subtitle">Nino</div>
-                                   <!-- <div class="m-price">￥<span>229.46</span></div>-->
-                                    <div class="m-old-price">￥<span>298.00</span></div>
-                                    <div class="m-car"></div>
-                                  <!--  <div class="m-last">剩余：99</div>-->
-                                </li>
-                                <li data-pond="1磅,2磅,3磅,5磅" data-weight="100g,1.25kg,1.58kg,2.88kg" data-price="198,298,428,728" data-time="提示：需提前1小时预订,提示：需提前5小时预订,提示：需提前2小时预订,提示：需提前4小时预订" data-postid="01,02,03,04" data-tips="尺寸： 2-3人食 15cm*3.5cm,尺寸：4-7人食 18cm*4cm,尺寸：8-12人食 22cm*4.5cm,尺寸：12-20人食 25cm*5.5cm" data-sku="01,02,03,04" data-method="01,02,03,04" data-pid="01,02,03,04" data-ptype="1,2,3,4" data-channel="11,21,31,41">
-                                    <img src="images/img-4.png" class="zoom" alt="">
-                                    <div class="m-title">Mojito 柠•漾</div>
-                                    <div class="m-subtitle">Le MOJITO</div>
-                                   <!-- <div class="m-price">￥<span>229.46</span></div>-->
-                                    <div class="m-old-price">￥<span>198.00</span></div>
-                                    <div class="m-car"></div>
-                                   <!-- <div class="m-last">剩余：99</div>-->
-                                </li>
-                                <li data-pond="1磅,2磅,3磅,5磅" data-weight="100g,1.25kg,1.58kg,2.88kg" data-price="198,298,428,728" data-time="提示：需提前1小时预订,提示：需提前5小时预订,提示：需提前2小时预订,提示：需提前4小时预订" data-postid="01,02,03,04" data-tips="尺寸： 2-3人食 15cm*3.5cm,尺寸：4-7人食 18cm*4cm,尺寸：8-12人食 22cm*4.5cm,尺寸：12-20人食 25cm*5.5cm" data-sku="01,02,03,04" data-method="01,02,03,04" data-pid="01,02,03,04" data-ptype="1,2,3,4" data-channel="11,21,31,41">
-                                    <img src="images/img-5.png" class="zoom" alt="">
-                                    <div class="m-title">黛西的旅行</div>
-                                    <div class="m-subtitle">Voyage de Daisy</div>
-                                    <!--<div class="m-price">￥<span>229.46</span></div>-->
-                                    <div class="m-old-price">￥<span>218.00</span></div>
-                                    <div class="m-car"></div>
-                                    <!--<div class="m-last">剩余：99</div>-->
-                                </li>
-                                <li data-pond="1磅,2磅,3磅,5磅" data-weight="100g,1.25kg,1.58kg,2.88kg" data-price="198,298,428,728" data-time="提示：需提前1小时预订,提示：需提前5小时预订,提示：需提前2小时预订,提示：需提前4小时预订" data-postid="01,02,03,04" data-tips="尺寸： 2-3人食 15cm*3.5cm,尺寸：4-7人食 18cm*4cm,尺寸：8-12人食 22cm*4.5cm,尺寸：12-20人食 25cm*5.5cm" data-sku="01,02,03,04" data-method="01,02,03,04" data-pid="01,02,03,04" data-ptype="1,2,3,4" data-channel="11,21,31,41">
-                                    <img src="images/img-6.png" class="zoom" alt="">
-                                    <div class="m-title">沙布雷芭菲</div>
-                                    <div class="m-subtitle">Sablé parfait</div>
-                                    <!--<div class="m-price">￥<span>229.46</span></div>-->
-                                    <div class="m-old-price">￥<span>198.00</span></div>
-                                    <div class="m-car"></div>
-                                   <!-- <div class="m-last">剩余：99</div>-->
-                                </li>
-                                <li data-pond="1磅,2磅,3磅,5磅" data-weight="100g,1.25kg,1.58kg,2.88kg" data-price="198,298,428,728" data-time="提示：需提前1小时预订,提示：需提前5小时预订,提示：需提前2小时预订,提示：需提前4小时预订" data-postid="01,02,03,04" data-tips="尺寸： 2-3人食 15cm*3.5cm,尺寸：4-7人食 18cm*4cm,尺寸：8-12人食 22cm*4.5cm,尺寸：12-20人食 25cm*5.5cm" data-sku="01,02,03,04" data-method="01,02,03,04" data-pid="01,02,03,04" data-ptype="1,2,3,4" data-channel="11,21,31,41">
-                                    <img src="images/img-7.png" class="zoom" alt="">
-                                    <div class="m-title">摩登茶道</div>
-                                    <div class="m-subtitle">Le Thé</div>
-                                    <!--<div class="m-price">￥<span>229.46</span></div>-->
-                                    <div class="m-old-price">￥<span>198.00</span></div>
-                                    <div class="m-car"></div>
-                                    <!-- <div class="m-last">剩余：99</div>-->
-                                </li>
-                                <li data-pond="1磅,2磅,3磅,5磅" data-weight="100g,1.25kg,1.58kg,2.88kg" data-price="198,298,428,728" data-time="提示：需提前1小时预订,提示：需提前5小时预订,提示：需提前2小时预订,提示：需提前4小时预订" data-postid="01,02,03,04" data-tips="尺寸： 2-3人食 15cm*3.5cm,尺寸：4-7人食 18cm*4cm,尺寸：8-12人食 22cm*4.5cm,尺寸：12-20人食 25cm*5.5cm" data-sku="01,02,03,04" data-method="01,02,03,04" data-pid="01,02,03,04" data-ptype="1,2,3,4" data-channel="11,21,31,41">
-                                    <img src="images/img-8.png" class="zoom" alt="">
-                                    <div class="m-title">芒果•Mangue</div>
-                                    <div class="m-subtitle">Mangue chantilly</div>
-                                    <!--<div class="m-price">￥<span>229.46</span></div>-->
-                                    <div class="m-old-price">￥<span>198.00</span></div>
-                                    <div class="m-car"></div>
-                                    <!-- <div class="m-last">剩余：99</div>-->
-                                </li>
+                                <li class="scaleImg hllink"><img src="images/part-a-1.png" ></li>
+                                <li class="scaleImg quanlink"><img src="images/part-a-2.png" ></li>
+                                <li class="scaleImg cakelink"><img src="images/part-a-3.png" ></li>
+                                <li class="scaleImg wxlink"><img src="images/part-a-4.png" ></li>
+                            </ul>
+                        </div>
+                        <div class="sec-title">
+                            <ul class="clearfix">
+                                <li class="scaleImg hllink"><img src="images/part-b-1.png" ></li>
+                                <li class="scaleImg zuhelink"><img src="images/part-b-2.png" ></li>
+                                <li class="scaleImg shengbanglink"><img src="images/part-b-3.png" ></li>
+                                <li class="scaleImg wxCodelink"><img src="images/part-b-4.png" ></li>
+                            </ul>
+                        </div>
+                        <div class="sec-title" style="display: block;">
+                            <ul class="clearfix">
+                                <li class="scaleImg hllink"><img src="images/part-c-1.png" ></li>
+                                <li class="scaleImg cake99link"><img src="images/part-c-2.png" ></li>
+                                <li class="scaleImg cake86link"><img src="images/part-c-3.png" ></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="hdtitle" id="win"><img src="images/zn-title-5.png" alt=""></div>
+
+                    <div class="hdtitle" id="hl" style="margin-top: 0 !important;"><img src="images/zn-title-1.png" alt=""></div>
                     <!--top消费-->
                     <div class="sec sec-topbang">
                         <div class="xiaofei" data-anim="slide-up" data-delay="0.8">
@@ -253,14 +73,16 @@
                                         <div class="swiper-slide swiper-slide2" ></div>
                                         <div class="swiper-slide swiper-slide3" ></div>
                                         <div class="swiper-slide swiper-slide4" ></div>
+                                        <div class="swiper-slide swiper-slide5" ></div>
                                     </div>
                                 </div>
                                 <div class="prize-nub">
                                     <ul class="clearfix">
-                                        <li class="on"><b>TOP1</b><p>FolliFollie手表，价值3795元</p></li>
-                                        <li><b>TOP2</b><p>su live兰心蕙质项链，价值3688元</p> </li>
-                                        <li><b>TOP3-TOP7</b><p>维多利亚海德手表&手链礼盒<br>-挽霜999元、浮梦899元，随机赠送</p></li>
-                                        <li class="nobd"><b>TOP8</b><p>niceclaup女士风衣，价值858元</p></li>
+                                        <li class="on"><b><img src="images/top-1.png" alt=""></b><p>恺丽之家沙发,价值2998元</p></li>
+                                        <li><b><img src="images/top-2.png" alt=""></b><p>富士instax SQ6,价值858元</p> </li>
+                                        <li><b><img src="images/top-3.png" alt=""></b><p>富士instax mini25,价值699元</p></li>
+                                        <li><b><img src="images/top-4.png" alt=""></b><p>贝佳斯（矿物营养洁肤膏1支+焕彩修复紧致面膜1罐）价值600元</p></li>
+                                        <li><b><img src="images/top-5.png" alt=""></b><p>水芒芒（复合乳酸菌芒果汁饮料一箱12瓶装）+1张升磅券（1磅升2磅）价值200元</p></li>
                                     </ul>
                                 </div>
                             </div>
@@ -268,72 +90,215 @@
                                 <div class="title-txt">榜单排名</div>
                                 <div class="bang-list">
                                     <div id="box" class="min-height">
-                                        <ul id="ul1">
-                                           <!-- <li class="clearfix"><b>1</b><span class="tel-phone">13482289820</span><span class="price"><i>￥</i>9684,5455,6556,38.00</span></li>-->
+                                        <ul id="ul1" class="clearfix">
+                                             <li class="clearfix"><b>1</b><span class="tel-phone">13482289820</span><span class="price"><i>￥</i>9684.00</span></li>
+                                            <li class="clearfix"><b>2</b><span class="tel-phone">13482289820</span><span class="price"><i>￥</i>9684.00</span></li>
+                                            <li class="clearfix"><b>3</b><span class="tel-phone">13482289820</span><span class="price"><i>￥</i>638.00</span></li>
+                                            <li class="clearfix"><b>4</b><span class="tel-phone">13482289820</span><span class="price"><i>￥</i>3238.00</span></li>
+                                            <li class="clearfix"><b>5</b><span class="tel-phone">13482289820</span><span class="price"><i>￥</i>9684.00</span></li>
+                                            <li class="clearfix"><b>6</b><span class="tel-phone">13482289820</span><span class="price"><i>￥</i>9684.00</span></li>
+                                            <li class="clearfix"><b>7</b><span class="tel-phone">13482289820</span><span class="price"><i>￥</i>638.00</span></li>
+                                            <li class="clearfix"><b>8</b><span class="tel-phone">13482289820</span><span class="price"><i>￥</i>3238.00</span></li>
+                                            <li class="clearfix"><b>9</b><span class="tel-phone">13482289820</span><span class="price"><i>￥</i>3238.00</span></li>
 
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="mores"><img src="images/more.png" alt=""></div>
+                                <div class="mores"></div>
                             </div>
                         </div>
                     </div>
+                    <div class="word"><img src="images/word-1.png" alt=""></div>
+
+                    <div class="tab-box">
+                        <div class="part part-1">
+                            <div class="hdtitle" id="quan"><img src="images/zn-title-2.png" alt=""></div>
+                            <div class="quan">
+                                <div class="buy"><img src="images/buy-btn.png" alt=""></div>
+                                <img src="images/card-1.png" alt="">
+                            </div>
+
+                            <!--7.7专场-->
+                            <div class="hdtitle" id="cake"><img src="images/zn-title-3.png" alt=""></div>
+                            <div class="sec sec-cakes">
+                                <div class="cake-wrap">
+                                    <ul class="clearfix">
+                                        <li>
+                                            <img src="images/img-1.png" class="zoom" alt="">
+                                            <div class="m-title">尼诺（908g）</div>
+                                            <div class="m-subtitle">Nino</div>
+                                            <div class="m-price">满减价￥<span>259.00</span></div>
+                                            <s class="m-old-price">原价￥<span>298</span></s>
+                                            <div class="m-car"></div>
+                                            <!--<div class="m-last">剩余：99</div>-->
+                                        </li>
+                                        <li>
+                                            <img src="images/img-2.png" class="zoom" alt="">
+                                            <div class="m-title">安逸兔（681g）</div>
+                                            <div class="m-subtitle">lapin détendu</div>
+                                            <div class="m-price">满减价￥<span>179.00</span></div>
+                                            <s class="m-old-price">原价￥<span>218</span></s>
+                                            <div class="m-car"></div>
+                                        </li>
+                                        <li>
+                                            <img src="images/img-3.png" class="zoom" alt="">
+                                            <div class="m-title">Finn的蘑菇星球（681g）</div>
+                                            <div class="m-subtitle">La planète champignon de Finn</div>
+                                            <div class="m-price">满减价￥<span>259.00</span></div>
+                                            <s class="m-old-price">原价￥<span>298.00</span></s>
+                                            <div class="m-car"></div>
+                                        </li>
+                                        <li>
+                                            <img src="images/img-4.png" class="zoom" alt="">
+                                            <div class="m-title">沙布雷芭菲（908g）</div>
+                                            <div class="m-subtitle">Sablé parfait</div>
+                                            <div class="m-price">满减价￥<span>259.00</span></div>
+                                            <s class="m-old-price">原价￥<span>298.00</span></s>
+                                            <div class="m-car"></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="hdtitle" id="manzeng"><img src="images/zn-title-4.png" alt=""></div>
+                            <div class="manzeng"><img src="images/man-zeng.png" alt=""></div>
+
+                            <div class="hdtitle" id="wx"><img src="images/zn-title-5.png" alt=""></div>
+                            <div class="wx">
+                                <img src="images/wx-code.png" alt="">
+                                <img src="images/wx-code-1.png" alt="">
+                            </div>
+
+
+                        </div>
+                        <div class="part part-2">
+                            <div class="hdtitle" id="zuhe"><img src="images/zn-title-6.png" alt=""></div>
+                            <div class="zuhe">
+                                <div class="buy-btns"><div class="buy-btn">立即购买</div></div>
+                                <img src="images/shengbang-1.png" alt="">
+                            </div>
+                            <div class="zuhe">
+                                <div class="buy-btns"><div class="buy-btn">立即购买</div></div>
+                                <img src="images/shengbang-2.png" alt="">
+                            </div>
+                            <div class="zuhe">
+                                <div class="buy-btns"><div class="buy-btn">立即购买</div></div>
+                                <img src="images/shengbang-3.png" alt="">
+                            </div>
+
+
+                            <div class="hdtitle" ><img src="images/zn-title-7.png" alt=""></div>
+                            <div class="mcard"><img src="images/man-zeng-2.png" alt=""></div>
+                            <div class="hdtitle" id="shengbang"><img src="images/zn-title-8.png" alt=""></div>
+                            <div class="shengbang-quan">
+                                <div class="progress-wrap">
+                                    <div class="shengbang-txt clearfix">
+                                        <span>秒杀时间</span>
+                                        <span>10月22日12:00</span>
+                                        <span>10月26日12:00</span>
+                                        <span>10月29日12:00</span>
+                                    </div>
+                                    <div class="progress">
+                                        <span></span>
+                                        <i></i>
+                                    </div>
+                                    <div class="shengbang-txt"><img src="images/shengbang-txt-2.png" alt=""></div>
+                                </div>
+
+                                <div class="icon"></div>
+                                <div class="btn-gobuy"><img src="images/btn-gobuy.png" alt=""></div>
+                                <img src="images/shengbang-quan.png" alt="">
+                            </div>
+
+                            <div class="hdtitle" id="wxCode"><img src="images/zn-title-5.png" alt=""></div>
+                            <div class="manzeng"><img src="images/wx-code.png" alt=""><img src="images/wx-code-1.png" alt=""></div>
+
+                        </div>
+                        <div class="part part-3" style="display: block;">
+                            <div class="hdtitle" id="cake99"><img src="images/zn-title-9.png" alt=""></div>
+                            <div class="mcake mcake-1">
+                                <div class="buy-btns"><div class="buy-btn on">即将开始</div></div>
+                                <img src="images/mcake-1.png" alt="">
+                            </div>
+                            <div class="mcake mcake-2">
+                                <div class="buy-btns"><div class="buy-btn on">即将开始</div></div>
+                                <img src="images/mcake-2.png" alt="">
+                            </div>
+                            <div class="hdtitle"><img src="images/zn-title-10.png" alt=""></div>
+                            <div class="xp"><img src="images/man-zeng-3.png" alt=""></div>
+                            <div class="hdtitle" id="cake86"><img src="images/zn-title-11.png" alt=""></div>
+                            <div class="shengbang">
+                                <div class="star star-1"></div>
+                                <div class="star star-2"></div>
+                                <div class="item">
+                                    <div class="cake"><img src="images/cake-1.png" alt=""></div>
+                                    <div class="price">
+                                        <div class="title"><img src="images/title-1.png" alt=""></div>
+                                        <div class="go-btn" data-method="111" data-pid="1001" data-ptype="1" data-channel="1" data-num="1">
+                                            <a href="#"><span></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item item-2">
+                                    <div class="cake"><img src="images/cake-2.png" alt=""></div>
+                                    <div class="price">
+                                        <div class="title"><img src="images/title-2.png" alt=""></div>
+                                        <div class="go-btn" data-method="111" data-pid="1001" data-ptype="1" data-channel="1" data-num="1">
+                                            <a href="#"><span></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item item-3">
+                                    <div class="cake"><img src="images/cake-3.png" alt=""></div>
+                                    <div class="price">
+                                        <div class="title"><img src="images/title-3.png" alt=""></div>
+                                        <div class="go-btn" data-method="111" data-pid="1001" data-ptype="1" data-channel="1" data-num="1">
+                                            <a href="#"><span></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hdtitle"><img src="images/zn-title-12.png" alt=""></div>
+                            <div class="xp"><img src="images/man-zeng-4.png" alt=""></div>
+                        </div>
+                    </div>
+
+
                     <div class="sec-footer">
                         <div class="rule">
                             <h2>活动规则</h2>
-                            <p>1、活动时间：2019年10月10日-2019年11月10日</p>
+                            <p>1、活动时间：2020年10月10日-2020年11月10日</p>
                             <p>2、活动城市：上海、北京、苏州、杭州</p>
                             <p>3、支付方式：微信、支付宝、现金</p>
-                            <p>4、本活动仅限支付宝、微信、现金全额用户参与</p>
+                            <p>4、本活动仅限微信、支付宝、现金全额用户参与</p>
                             <p>5、活动内容：</p>
-                            <div><p>1）10.10-11.10
-                                <span>· 头号赢家：活动期间内，凡在活动页下单订单金额排名前8位的用户可获得礼品，榜单实时更新。<br>
-                        TOP1：FolliFollie手表一只，价值3795元；<br>
-                        TOP2：su live兰心蕙质项链一条，价值3688元<br>
-                        TOP3-5：维多利亚海德挽霜礼盒（手表+手链礼盒）一份，价值999元<br>
-                        TOP6-7：维多利亚海德浮梦礼盒（手表+手链礼盒）一份，价值899元<br>
-                        TOP8：niceclaup女士风衣一件，价值858元</span></p>
-                            </div>
-                            <div><p>2）10.10-10.19
-                                <span>· 微信话题互动：关注微信参与话题互动，评论处留言点赞前20名，随机抽取5名锦鲤，送MCAKE定制大礼包，价值1688元
-                            （10月11日-10月18日）</span>
-                                <span>· 微博话题互动：关注并转发八周年微博内容@五位好友随机抽取5名锦鲤，送MCAKE定制大礼包，价值1688元
-                            （10月11日-10月18日）</span>
-                                <span>· 神券限量抢：每日10点起，限量发大额优惠券；券有效期：10.10-11.10</span>
-                                <span>· 新品砍价低价拿：新品蛋糕在指定时间内砍价成功，即可低价购买新品蛋糕；砍价不成功则按原价购买</span>
-                                <span>· 满额赠礼：<br>
-                            a.凡活动下单，订单满268元即可获得popscent小样香水一份；数量有限，先到先得<br>
-                            b.凡活动下单，订单满308元即可获得米客米酒一份，价值20元；数量有限，先到先得<br>
-                            c.凡活动下单，订单满338元即可获得米客米酒微甜礼盒一份，价值79元；数量有限，先到先得<br>
-                            d.凡活动下单，订单满368元即可获得niceclaup一份，价值99元；数量有限，先到先得</span></p>
-                            </div>
-                            <div><p>3）10.20-10.29<br>
-                                <span>· 红包雨：活动期间内每天下红包雨，每个用户每天可抢一次；红包中有不定额的红包和优惠券，具体以领到的红包为准</span>
-                                <span>· 满额赠礼：<br>
-                        a.凡活动下单，订单满288元即可获得DHC果味饮料一份；数量有限，先到先得<br>
-                        b.凡活动下单，订单满368元即可获得reclassififed好厉害香水一份，价值220元；数量有限，先到先得<br>
-                        c.凡活动下单，订单满468元即可获得DHC原蛋白肽固体饮料一份，价值358元；数量有限，先到先得</span>
-                                <span>· 下单赠礼：活动期间内，活动页购买Mojito柠•漾赠送DHC果味饮料一份；数量有限，先到先得</span></p>
-                            </div>
-                            <div><p>4）10.30-11.10<br>
-                                <span>· 限时折扣：活动期间全场蛋糕8.8折，加18元换购小食</span>
-                                <span>· 限时升磅：活动期间内安逸兔、蔓越莓红丝绒、香溢新芝活动页购买，加48元免费加大，仅限1磅升2磅，1.5磅升2.5磅</span></p></div>
-                            <p>6、本活动最终解释权归MCAKE所有</p>
+                            <p>1) 10.10-11.10</p>
+                            <p>头号赢家：活动期间内，凡在活动页下单，订单金额排名前9位的用户可获得礼品，榜单实时更新。</p>
+                            <p>TOP1：恺丽之家沙发，价值2998元；</p>
+                            <p>TOP2-3：富士instax SQ6，价值858元；</p>
+                            <p>TOP4-5：富士instax mini25，价值699元（实物以实际为准，图片仅参考）；</p>
+                            <p>TOP6-7：贝佳斯（矿物营养洁肤膏1支+焕彩修复紧致面膜1罐）价值600元</p>
+                            <p>TOP8-9：水芒芒（复合乳酸菌芒果汁饮料一箱12瓶装）+1张升磅券（1磅升2磅）价值200元</p>
+                            <p>自11月10日23点59分活动结束日起，排名前9名的用户7个工作日内在微信公众号MCAKE蛋糕上，提供排名截图+姓名+手机号+收货地址，逾期则视为放弃领奖。</p>
+                            <p>2) 10.10-10.29</p>
+                            <p>微信话题互动：</p>
+                            <p>微博话题互动：</p>
+                            <p>3) 10.10-10.19</p>
+                            <p>周年卡：使用时间为自购买日起180天内有效，特权卡中的优惠券每次仅限使用一张，且与其它优惠不同享；</p>
+                            <p>指定蛋糕满减：活动期间购买尼诺（908g）、安逸兔（1.5磅）、Finn的蘑菇星球（1.5磅）、沙布蕾芭菲（2磅）立减39元，赠送皓乐齿净澈气息口香喷剂1瓶，数量有限，先到先得</p>
+                            <p>4）10.20-10.29</p>
+                            <p>组合购：活动期间购买指定蛋糕小食组合，下单即送摩隆洗护旅行装1份，数量有限，先到先得</p>
+                            <p>升磅券：活动期间每位用户限购一次，单笔订单只可使用一张升磅券，且不能与平台其它优惠同时使用，升磅券有效期至11月10日</p>
+                            <p>5）10.30-11.10</p>
+                            <p>活动期间，摩登茶道（1磅）和香溢新芝（1磅）指定时间，限时限量99元抢，下单即送摩隆洗护便携装1份，数量有限，先到先得
+                                活动期间，购买花样年华（2磅）、君度可可（2磅）、蓝莓轻乳拿破仑（2磅）专享86折，下单即送贝佳斯活力亮采美肤泥浆膜
+                                便携装1份，数量有效，先到先得</p>
+                            <p>6、全场活动不与现金卡、储值卡、专享卡、礼品卡、小食卡、月饼卡等代金卡以及优惠券同享</p>
                         </div>
                     </div>
                 </div>
 
 
-                <div class="hongbaoCj">
-                    <iframe name="choujiang" class="cjIframe" id="choujiang" src="choujiang.html" scrolling="no" frameborder="0"></iframe>
-                </div>
-                <div class="hob-inlet">
-                    <!--<div class="hob-inlet-03"></div>-->
-                    <div class="mod-close"></div>
-                    <div class="hob-inlet-02"></div>
-                    <div class="hob-inlet-01"></div>
-                </div>
-
             </div>
         </div>
     </div>
@@ -341,85 +306,7 @@
 
 
 
-<!--红包雨专区-->
-<!--<div class="hob-inlet">
-    <div class="mod-close"></div>
-    <div class="hob-inlet-02"></div>
-    <div class="hob-inlet-01"></div>
-</div>
-<div class="hongbao-wrapper">
-    <div class="hob-cd">5s</div>
-    <div class="btn-l btn-red for-get-now">快点击抢红包！</div>
-</div>
-<div class="shade" style="display: none;"></div>
-<div class="modal">
-    <div class="mod-close"></div>
-    <div class="mod-body">
-        <div class="txt">
-            <ul>
-                <li><span>3</span>元红包 X <b>10</b></li>
-                <li><span>5</span>元红包 X <b>5</b></li>
-                <li><span>8.8</span>元红包 X <b>1</b></li>
-                <li><span>6</span>元红包 X <b>1</b></li>
-            </ul>
-            <div class="go-use"><img src="images/go-use.png" alt=""></div>
-        </div>
-    </div>
 
-</div>-->
-
-
-
-<!--蛋糕选择弹窗-->
-<div class="Dialogbg-Select" ontouchmove="return false;"></div>
-<div class="Dialog-Select" ontouchmove="return false;">
-    <div class="s-closes"></div>
-    <div class="Select" ontouchmove="return false;">
-        <div class="s-title">
-            <h2>选择您要订购的磅数：</h2>
-            <b>Sélectionnez la commande le nombre de livres：</b>
-        </div>
-        <div class="s-bangshu clearfix">
-            <ul class="clearfix"></ul>
-            <div class="d-tips">
-                <div class="time">提示：需提前5小时预订</div>
-                <div class="tips">尺寸： 4-7人食 18cm*4cm（不含玫瑰花瓣）</div>
-            </div>
-        </div>
-        <div class="s-num">
-            <b>数量：</b>
-            <div class="nums">
-                <a href="javascript:;" class="minus"></a>
-                <input class="num" value="1" readonly="" type="text" data-num="">
-                <a href="javascript:;" class="plus"></a>
-            </div>
-        </div>
-        <div class="s-prices">
-            <input type="hidden" class="postid" data-postid="">
-            <b>价格：</b>
-            <!--<p>￥ <span class="s-price">00</span></p>-->
-            <p>￥ <span class="s-new-price">00</span> <s class="old-p">￥<i class="s-price">00</i></s></p>
-        </div>
-        <div class="btns">
-            <div class="go-buy">立即购买</div>
-            <div class="go-car">加入购物车</div>
-        </div>
-
-    </div>
-</div>
-
-<div class="shade" style="display: none;"></div>
-<div class="modal">
-    <div class="mod-close"></div>
-    <div class="mod-body">
-        <div class="txt">
-            <ul>
-                <li><span>3元红包</span> X <b>10</b></li>
-            </ul>
-            <div class="go-use"><img src="images/go-use.png" alt=""></div>
-        </div>
-    </div>
-</div>
 
 <script src="https://act.mcake.com/fangli/2019/wap/commonjs/flexible.js"></script>
 <!-- build:js scripts/index.js -->
@@ -429,108 +316,11 @@
 
 
 <script src="../commonjs/public-shimily.js"></script>
-<script src="../commonjs/public-shimily-price-Dialogbg.js"></script>
 <script src="scripts/swiper.min.js"></script>
 
 <script src="scripts/resdata.js"></script>
 <script src="scripts/index.js"></script>
 <!-- endbuild -->
-<script>
-    /*点击抢红包*/
-   /* setTimeout(function () {
-        $(".hob-inlet").fadeIn(200);
-    },3000);*/
 
-</script>
-<script>
-    window.addEventListener('message', function (event) {
-        Scheduler.translate(event);
-    }, false);
-
-    var Scheduler = {
-
-        // 消息事件对象
-        event: {},
-
-        // 参数
-        params: {},
-
-        // 翻译
-        translate: function (event) {
-            this.event = event;
-            this.params = typeof(event.data) == 'string' ? JSON.parse(event.data) : event.data;
-            this.execute();
-        },
-        // 执行
-        execute: function () {
-
-            switch (this.params.method) {
-
-                case 'choujiang':
-                    this.choujiang();
-                    break;
-                case 'choujiangResult':
-                    this.choujiangResult();
-                    break;
-                case 'hbResult':
-                    this.hbResult();
-                    break;
-                default:
-                    console.log(this.params.message,'接收事件名称');
-            }
-
-        },
-        // 抽奖
-        choujiang: function () {
-            console.log(this.params.message)
-            var prize = ['2', '4', '3', '1'];
-            console.log('请求抽奖接口');
-            console.log('将抽奖结果发送给抽奖页面');
-            this.event.source.postMessage({
-                method: 'choujiang',
-                message: '开始抽奖',
-                data: {'success':'+5元'}
-            }, "*")
-        }
-        ,
-        // 抽奖
-        choujiangResult: function () {
-            console.log("抽奖结果:",this.params.data);
-            //new choujiang(this.params.data);
-        },
-        hbResult:function () {
-            console.log("红包结束,显示抽奖结果:",this.params.data);
-           /* $('.hongbao-wrapper').fadeOut(100);
-            $(".hob-inlet").fadeOut(10);
-            $(".modal,.shade").fadeIn(200);*/
-
-            this.params.data.arr = '<li><span>5元红包</span> X <b>20</b></li>';
-
-            new hbchoujiang(this.params.data);
-        }
-    }
-
-
-    function sendHb() {
-        document.getElementById("choujiang").contentWindow.postMessage({method: 'hby',data:{id:4}}, "*");
-    }
-
-    var iframe = document.getElementById("choujiang");
-    $(".hob-inlet-01").click(function () {
-        $('.hongbaoCj').fadeIn(10);
-        //iframe.contentWindow.hobYU(Hbend);
-        sendHb();
-        $(".hob-inlet").fadeOut(10);
-    });
-
-
-    /*function Hbend() {
-        $('.hongbao-wrapper').fadeOut(100);
-        $(".hob-inlet").fadeOut(10);
-        $(".modal,.shade").fadeIn(200);
-    }*/
-
-   /* window.Hbend=Hbend;*/
-</script>
 </body>
 </html>

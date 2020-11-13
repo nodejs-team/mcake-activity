@@ -1,0 +1,122 @@
+@function px2rem($n) {
+  @return ($n * 10 / 750) * 1rem; //设计稿一般都是750宽
+}
+
+@mixin font-dpr($font-size){
+  font-size: $font-size;
+
+  [data-dpr="2"] & {
+    font-size: $font-size * 2;
+  }
+
+  [data-dpr="3"] & {
+    font-size: $font-size * 3;
+  }
+
+}
+#evt_content *{ vertical-align: baseline!important;}  /*价格符号不对齐*/
+#evt_content{ background: #caaefb;
+  .sec{position: relative; overflow: hidden; }
+  img{width:100%;}
+
+  .section-top{position: relative; height:px2rem(1240); background: url("../images/banner.png") no-repeat; background-size: 100%; z-index: 2; }
+
+  .buy-btns{ position: absolute; width:px2rem(200); bottom: px2rem(30); left:50%;margin-left: px2rem(-100); background:#ffea00; text-align: center; cursor: pointer; border-radius: px2rem(50); z-index: 2;
+    span{ display: block; color: #b07ab8; font-size:px2rem(24);  line-height:px2rem(50);}
+  }
+  .section-zhuanpan{position: relative; background: url("../images/zhuanpan-bg.png") no-repeat; background-size: 100%; z-index: 2; height: px2rem(1098); }
+
+  .s-title{ width: px2rem(355); margin: px2rem(40) auto;}
+
+  .sec-1{ background: url("../images/row1-bg.png"); background-size: 102%;}
+  .sec-2{ background: url("../images/row2-bg.png"); background-size: 102%;}
+  .sec-3{ background: url("../images/row3-bg.png"); background-size: 102%;}
+  .sec-zp{ background: url("../images/zp-bg.png"); background-size: 102%;}
+  .sec-zuhe1{ background: url("../images/zuhe-1-bg.png"); background-size: 102%;
+    ul{
+      li{ width: px2rem(240); float: left; margin:px2rem(50) px2rem(5);
+        .buy-btns{position: relative; bottom: auto;}
+      }
+    }
+  }
+
+
+
+  .section-footer{position: relative; background: url("../images/foot-bg.png") no-repeat; background-size: 100%;
+    .rules{padding:px2rem(50) px2rem(40) px2rem(40);  color:#fff; line-height:px2rem(40);
+      h2{font-weight:normal;  font-size:px2rem(30); line-height:px2rem(60); color: #fff; }
+      p{ font-size: px2rem(24); padding-left: px2rem(35); line-height:px2rem(40);  text-indent: px2rem(-38);  margin:px2rem(10) 0; text-align:justify;  text-justify:inter-word;
+        img{width: px2rem(70); vertical-align:middle; margin: 0 px2rem(10);}
+        span{display: inline-block; padding-left: px2rem(130);   text-indent: px2rem(-130);}
+      }
+    }
+  }
+
+
+}
+
+
+/*蛋糕选择弹窗*/
+
+.Dialogbg-Select{ background-color: #000; height: 100%; left: 0; opacity: 0.85; position: fixed; top: 0; width: 100%; z-index: 200; display: none;
+}
+
+
+
+
+/*蛋糕选择弹窗*/
+
+.Dialogbg-Select{ background-color: #000; height: 100%; left: 0; opacity: 0.85; position: fixed; top: 0; width: 100%; z-index: 200; display: none; }
+.Dialog-Select{ background: #fff none repeat scroll 0 0; box-shadow: 0 0 0 #999; font-size:px2rem(14); width:px2rem(600); height: auto; margin-top: px2rem(-320); margin-left: px2rem(-300); left: 50%; padding: 0; position: fixed; top: 50%; z-index: 99999; display: none; border-radius:px2rem(10);
+}
+.s-closes{position: absolute; top: px2rem(10) !important; right: px2rem(-38) !important; width: px2rem(27) !important; height:px2rem(27) !important; background: url("../images/close1.png"); background-size: 100%;}
+
+.Select{ position: relative; color: #000; height: 100%; text-align: left;
+  .s-title{ height:px2rem(103); background: #f2f2f2; position: relative; border-top-left-radius:px2rem(10);  border-top-right-radius:px2rem(10);
+    h2{ font-size: px2rem(28); line-height: px2rem(30); padding-left: px2rem(40); padding-top: px2rem(30); }
+    b{font-size: px2rem(14); color: #9a9a9a; font-weight: normal; padding-left: px2rem(40);}
+  }
+  .s-bangshu{ padding-top: px2rem(20);
+    ul{ margin-left: px2rem(40);
+      li{ float: left; width:px2rem(90); height: px2rem(90); background: #f2f2f2; border-radius: 50%; text-align: center; color: #4a4a4a; margin-right:px2rem(50); font-size: px2rem(23); line-height: px2rem(20);  display: flex; align-items: center; justify-content: space-around; flex-direction: column;
+        i{ font-size: px2rem(16); line-height: px2rem(20); font-style: normal;}
+      }
+      li.on{ background: #ffc559; color: #000;}
+    }
+  }
+  .d-tips{padding:px2rem(20) px2rem(40); color: #4c4c4c; font-size:px2rem(18);}
+  .s-num{ height: px2rem(100);padding-left:px2rem(40);border-top: #ededed 1px solid;
+    b{display: inline-block; width:px2rem(200); margin:px2rem(20) 0; line-height: px2rem(56); float: left; font-size:px2rem(30); color: #737373; font-weight: normal;}
+    .nums {  display: inline-block; margin:px2rem(20) px2rem(40) px2rem(20) px2rem(20);  float: right;  height:px2rem(56);  position: relative;  width:px2rem(200);  }
+    .nums a {  display: block;   width:px2rem(56); height:px2rem(56);  position: absolute;  top:px2rem(2);  }
+    .nums .minus {  background: url("../images/btn-1.png") no-repeat; background-size: 100%;  left: 0;  }
+    .nums .plus {  background: url("../images/btn-2.png") no-repeat; background-size: 100%;  right: 0;  }
+    .nums input {  background:none;  border: none;  color: #626262;  display: block;  font-size:px2rem(30);  height:px2rem(56);  left:px2rem(60);  line-height:px2rem(56);  padding: 0;  position: absolute;  text-align: center;  top: 0;  width:px2rem(80);  }
+  }
+  .s-prices{font-size: px2rem(22); padding: px2rem(30) px2rem(40);border-top: #ededed 1px solid;  color: #4a4a4a;
+    b{display: inline-block; width:px2rem(200); margin:0; line-height: px2rem(56); float: left; font-size:px2rem(30); color: #737373; font-weight: normal;}
+    p{display:block; line-height: px2rem(56); text-align: right;}
+    i{font-style: normal;}
+    span{ font-size: px2rem(45);}
+  }
+  s{color: #7e7e7e;}
+  .btns{ width: 100%; position: relative; bottom:px2rem(0); display: flex; height: px2rem(100); line-height: px2rem(100); flex-direction: row;  text-align: center; font-size: px2rem(30); color: #000; padding: 0;
+    div{ flex: 1; cursor: pointer;}
+    .go-buy{background:#ffe328; border-bottom-left-radius:px2rem(10); color: #000; }
+    .go-car{background:#ffc559; border-bottom-right-radius:px2rem(10); float: left;}
+    .go-buy.single{border-bottom-left-radius:px2rem(20); background: #ffe32a; color: #c43818;}
+  }
+
+}
+
+
+/*通iframe嵌套抽奖页面*/
+.cjIframe{ width: px2rem(750);  min-height: px2rem(1098); }
+body{margin: 0;}
+img{width: 100%;}
+.hy-title{ width: px2rem(750); margin:px2rem(30) auto; }
+.choujiang{ width:px2rem(750);  margin:px2rem(180) auto 0;}
+
+
+
+

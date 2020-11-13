@@ -1,0 +1,78 @@
+@function px2rem($n) {
+  @return ($n * 10 / 750) * 1rem; //设计稿一般都是750宽
+}
+*{ vertical-align: baseline !important;}  /*价格符号不对齐*/
+html,body,#containerWrap{ height: 100%; background: #3c5796;
+  img{width:100%; display: block;}
+}
+#evt-loading{position:absolute; top: 0;  width: 100%; height: 100%; margin-top: 0; background:#003e8f url("../images/loading.png"); background-size: 100%;
+
+}
+
+
+
+.frend-tip{position:absolute; top: 0; left:0; width:100%; z-index: 100; display: none; z-index: 100;}
+
+
+#evt_content{
+  img{width:100%; display: block;}
+  .sec{position: relative; }
+  .result-top{ width:px2rem(750); height: px2rem(652); background: url("../images/result-top.png"); background-size: 100%; overflow: hidden;
+    .jiang-wrap{ width: px2rem(675); height: px2rem(490); background: url("../images/jiang-wrap.png"); background-size: 100%; margin:px2rem(90) auto 0; overflow: hidden;
+      ul{ width: px2rem(620); margin:px2rem(30) auto 0;
+        li{ float: left; width: px2rem(192); height: px2rem(201); margin: px2rem(8) px2rem(7); background: url("../images/icon-0.png"); background-size: 100%;}
+        li:nth-of-type(1){ background: url("../images/icon-0.png") top no-repeat; background-size: 100%;}
+        li:nth-of-type(2){ background: url("../images/icon-1.png") top no-repeat; background-size: 100%;}
+        li:nth-of-type(3){ background: url("../images/icon-2.png") top no-repeat; background-size: 100%;}
+        li:nth-of-type(4){ background: url("../images/icon-3.png") top no-repeat; background-size: 100%;}
+        li:nth-of-type(5){ background: url("../images/icon-4.png") top no-repeat; background-size: 100%;}
+        li:nth-of-type(6){ background: url("../images/icon-5.png") top no-repeat; background-size: 100%;}
+
+        li:nth-of-type(1).h{ background: url("../images/icon-0-h.png") top no-repeat; background-size: 100%;}
+        li:nth-of-type(2).h{ background: url("../images/icon-1-h.png") top no-repeat; background-size: 100%;}
+        li:nth-of-type(3).h{ background: url("../images/icon-2-h.png") top no-repeat; background-size: 100%;}
+        li:nth-of-type(4).h{ background: url("../images/icon-3-h.png") top no-repeat; background-size: 100%;}
+        li:nth-of-type(6).h{ background: url("../images/icon-5-h.png") top no-repeat; background-size: 100%;}
+
+      }
+
+    }
+  }
+  .result-main{ width:px2rem(750); height: px2rem(654); background: url("../images/result-main.png") no-repeat; background-size: 100%;
+    .gobuy{position: absolute; bottom: px2rem(80); left: 50%; width: px2rem(422); height: px2rem(123); margin-left: px2rem(-211); background: url("../images/gobuy.png"); background-size: 100%;}
+
+  }
+}
+
+.acrow{position: fixed; bottom: px2rem(80); left: 50%; margin-left: px2rem(-32); width:px2rem(64); height: px2rem(88); background: url("../images/acrow-1.png"); background-size: 100%; animation:acrow 2s linear infinite;}
+
+
+/*彈窗*/
+.Dialogbg{  background-color: #000;  height: 100%;  left: 0;  opacity: 0.7;  position: fixed;  top: 0;  width: 100%; z-index: 200; display: none;-moz-opacity:.7;filter:alpha(opacity=70); }
+
+.DialogBox{  box-shadow: 0 0 0 #999;  font-size:px2rem(14);  width:px2rem(496); height:auto !important; padding:px2rem(1); top: 50%; left: 50%;  margin:px2rem(-380) auto 0 px2rem(-248) !important;  position: fixed; z-index: 99999; display: none;
+  .closes{ width:px2rem(30); height:px2rem(29); position: absolute; top:px2rem(120); right:px2rem(30); cursor: pointer; z-index: 8; background: url("../images/close2.png") center no-repeat; background-size: 60%;}
+  .Yhquan{position: relative; padding:0; border-radius:px2rem(10); display: none;
+    img{margin: 0 auto; width: 100%;}
+    .txt{ width:px2rem(400); position: absolute; text-align: center; top:px2rem(140); left: 50%; margin-left:px2rem(-200); letter-spacing: px2rem(3); vertical-align: baseline !important;
+      h2{font-size:px2rem(24); color: #83481b; line-height:px2rem(50);}
+      span{ vertical-align: baseline !important; }
+      p{font-size:px2rem(24); line-height:px2rem(40); color: #8d0d0a; vertical-align: baseline !important;
+        span{font-weight: bold;}
+      }
+
+    }
+    .go-use{position: absolute; bottom: px2rem(-150); left: 50%; width:px2rem(329); margin-left: px2rem(-164.5); line-height:px2rem(43); cursor: pointer; background: #a80600; color: #fae4c5; border-radius:px2rem(43); text-align: center; font-size:px2rem(24);
+    }
+  }
+  .quan-2{}
+
+}
+
+@keyframes acrow{
+  0%{transform:translate(0%,0%);}
+  80%{transform:translate(0%,-100%); opacity: 0;}
+  100%{transform:translate(0%,-100%); opacity: 0;}
+}
+
+

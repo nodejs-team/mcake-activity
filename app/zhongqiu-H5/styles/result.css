@@ -1,0 +1,209 @@
+@charset "UTF-8";
+* {
+  vertical-align: baseline !important; }
+
+/*价格符号不对齐*/
+html, body, #containerWrap {
+  height: 100%;
+  background: #3c5796; }
+  html img, body img, #containerWrap img {
+    width: 100%;
+    display: block; }
+
+#evt-loading {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  margin-top: 0;
+  background: #003e8f url("../images/loading.png");
+  background-size: 100%; }
+
+.frend-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  display: none;
+  z-index: 100; }
+
+#evt_content img {
+  width: 100%;
+  display: block; }
+
+#evt_content .sec {
+  position: relative; }
+
+#evt_content .result-top {
+  width: 10rem;
+  height: 8.69333rem;
+  background: url("../images/result-top.png");
+  background-size: 100%;
+  overflow: hidden; }
+  #evt_content .result-top .jiang-wrap {
+    width: 9rem;
+    height: 6.53333rem;
+    background: url("../images/jiang-wrap.png");
+    background-size: 100%;
+    margin: 1.2rem auto 0;
+    overflow: hidden; }
+    #evt_content .result-top .jiang-wrap ul {
+      width: 8.26667rem;
+      margin: 0.4rem auto 0; }
+      #evt_content .result-top .jiang-wrap ul li {
+        float: left;
+        width: 2.56rem;
+        height: 2.68rem;
+        margin: 0.10667rem 0.09333rem;
+        background: url("../images/icon-0.png");
+        background-size: 100%; }
+      #evt_content .result-top .jiang-wrap ul li:nth-of-type(1) {
+        background: url("../images/icon-0.png") top no-repeat;
+        background-size: 100%; }
+      #evt_content .result-top .jiang-wrap ul li:nth-of-type(2) {
+        background: url("../images/icon-1.png") top no-repeat;
+        background-size: 100%; }
+      #evt_content .result-top .jiang-wrap ul li:nth-of-type(3) {
+        background: url("../images/icon-2.png") top no-repeat;
+        background-size: 100%; }
+      #evt_content .result-top .jiang-wrap ul li:nth-of-type(4) {
+        background: url("../images/icon-3.png") top no-repeat;
+        background-size: 100%; }
+      #evt_content .result-top .jiang-wrap ul li:nth-of-type(5) {
+        background: url("../images/icon-4.png") top no-repeat;
+        background-size: 100%; }
+      #evt_content .result-top .jiang-wrap ul li:nth-of-type(6) {
+        background: url("../images/icon-5.png") top no-repeat;
+        background-size: 100%; }
+      #evt_content .result-top .jiang-wrap ul li:nth-of-type(1).h {
+        background: url("../images/icon-0-h.png") top no-repeat;
+        background-size: 100%; }
+      #evt_content .result-top .jiang-wrap ul li:nth-of-type(2).h {
+        background: url("../images/icon-1-h.png") top no-repeat;
+        background-size: 100%; }
+      #evt_content .result-top .jiang-wrap ul li:nth-of-type(3).h {
+        background: url("../images/icon-2-h.png") top no-repeat;
+        background-size: 100%; }
+      #evt_content .result-top .jiang-wrap ul li:nth-of-type(4).h {
+        background: url("../images/icon-3-h.png") top no-repeat;
+        background-size: 100%; }
+      #evt_content .result-top .jiang-wrap ul li:nth-of-type(6).h {
+        background: url("../images/icon-5-h.png") top no-repeat;
+        background-size: 100%; }
+
+#evt_content .result-main {
+  width: 10rem;
+  height: 8.72rem;
+  background: url("../images/result-main.png") no-repeat;
+  background-size: 100%; }
+  #evt_content .result-main .gobuy {
+    position: absolute;
+    bottom: 1.06667rem;
+    left: 50%;
+    width: 5.62667rem;
+    height: 1.64rem;
+    margin-left: -2.81333rem;
+    background: url("../images/gobuy.png");
+    background-size: 100%; }
+
+.acrow {
+  position: fixed;
+  bottom: 1.06667rem;
+  left: 50%;
+  margin-left: -0.42667rem;
+  width: 0.85333rem;
+  height: 1.17333rem;
+  background: url("../images/acrow-1.png");
+  background-size: 100%;
+  animation: acrow 2s linear infinite; }
+
+/*彈窗*/
+.Dialogbg {
+  background-color: #000;
+  height: 100%;
+  left: 0;
+  opacity: 0.7;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 200;
+  display: none;
+  -moz-opacity: .7;
+  filter: alpha(opacity=70); }
+
+.DialogBox {
+  box-shadow: 0 0 0 #999;
+  font-size: 0.18667rem;
+  width: 6.61333rem;
+  height: auto !important;
+  padding: 0.01333rem;
+  top: 50%;
+  left: 50%;
+  margin: -5.06667rem auto 0 -3.30667rem !important;
+  position: fixed;
+  z-index: 99999;
+  display: none; }
+  .DialogBox .closes {
+    width: 0.4rem;
+    height: 0.38667rem;
+    position: absolute;
+    top: 1.6rem;
+    right: 0.4rem;
+    cursor: pointer;
+    z-index: 8;
+    background: url("../images/close2.png") center no-repeat;
+    background-size: 60%; }
+  .DialogBox .Yhquan {
+    position: relative;
+    padding: 0;
+    border-radius: 0.13333rem;
+    display: none; }
+    .DialogBox .Yhquan img {
+      margin: 0 auto;
+      width: 100%; }
+    .DialogBox .Yhquan .txt {
+      width: 5.33333rem;
+      position: absolute;
+      text-align: center;
+      top: 1.86667rem;
+      left: 50%;
+      margin-left: -2.66667rem;
+      letter-spacing: 0.04rem;
+      vertical-align: baseline !important; }
+      .DialogBox .Yhquan .txt h2 {
+        font-size: 0.32rem;
+        color: #83481b;
+        line-height: 0.66667rem; }
+      .DialogBox .Yhquan .txt span {
+        vertical-align: baseline !important; }
+      .DialogBox .Yhquan .txt p {
+        font-size: 0.32rem;
+        line-height: 0.53333rem;
+        color: #8d0d0a;
+        vertical-align: baseline !important; }
+        .DialogBox .Yhquan .txt p span {
+          font-weight: bold; }
+    .DialogBox .Yhquan .go-use {
+      position: absolute;
+      bottom: -2rem;
+      left: 50%;
+      width: 4.38667rem;
+      margin-left: -2.19333rem;
+      line-height: 0.57333rem;
+      cursor: pointer;
+      background: #a80600;
+      color: #fae4c5;
+      border-radius: 0.57333rem;
+      text-align: center;
+      font-size: 0.32rem; }
+
+@keyframes acrow {
+  0% {
+    transform: translate(0%, 0%); }
+  80% {
+    transform: translate(0%, -100%);
+    opacity: 0; }
+  100% {
+    transform: translate(0%, -100%);
+    opacity: 0; } }

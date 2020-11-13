@@ -1,0 +1,169 @@
+@charset "UTF-8";
+* {
+  vertical-align: baseline !important; }
+
+/*价格符号不对齐*/
+#evt_content {
+  width: 10rem;
+  background: url("../images/bg.png") repeat;
+  background-size: 25%; }
+  #evt_content img {
+    width: 100%;
+    display: block; }
+  #evt_content .sec {
+    position: relative; }
+  #evt_content .sec-top {
+    width: 10rem;
+    height: 12.61333rem;
+    background: url("../images/banner.png") repeat;
+    background-size: 100%;
+    z-index: 1;
+    overflow: hidden; }
+  #evt_content .hy-title {
+    width: 4.34667rem;
+    margin: 1.02667rem auto 0.26667rem; }
+  #evt_content .sec-tip {
+    position: relative;
+    z-index: 1;
+    background: url("../images/s-bg-1.png");
+    background-size: 100%;
+    overflow: hidden; }
+    #evt_content .sec-tip .tip {
+      width: 10rem;
+      margin: 0 auto;
+      z-index: 1;
+      overflow: hidden; }
+  #evt_content .sec-cake {
+    position: relative;
+    z-index: 1;
+    height: 16.84rem;
+    background: url("../images/s-bg-2.png");
+    background-size: 100%;
+    overflow: hidden; }
+    #evt_content .sec-cake .qx-cake {
+      position: relative;
+      width: 9.25333rem;
+      margin: 0.8rem auto;
+      z-index: 1; }
+      #evt_content .sec-cake .qx-cake .buy-btn {
+        position: absolute;
+        width: 2.28rem;
+        top: 2.66667rem;
+        right: 1.06667rem; }
+    #evt_content .sec-cake .qx-box {
+      width: 10rem;
+      margin: 0 auto;
+      z-index: 1; }
+  #evt_content .sec-main {
+    width: 10rem; }
+    #evt_content .sec-main .row-cake {
+      position: relative;
+      width: 10rem;
+      margin: 0 auto; }
+      #evt_content .sec-main .row-cake .buy-lq {
+        position: absolute;
+        width: 2.36rem;
+        bottom: 0;
+        left: 50%;
+        margin-left: -1.18rem; }
+  #evt_content .sec-wx {
+    position: relative;
+    z-index: 1;
+    height: 10.28rem;
+    background: url("../images/wx-bg.png");
+    background-size: 100%;
+    overflow: hidden; }
+    #evt_content .sec-wx .wx {
+      width: 10rem;
+      margin-top: 1.33333rem; }
+  #evt_content .sec-footer {
+    position: relative;
+    padding-bottom: 0.8rem;
+    z-index: 1;
+    background: url("../images/foot-bg.png") repeat;
+    background-size: 100%; }
+    #evt_content .sec-footer .txt {
+      position: relative;
+      width: 9.33333rem;
+      padding-top: 1.06667rem;
+      margin: 0 auto;
+      color: #000; }
+      #evt_content .sec-footer .txt h2 {
+        font-size: 0.29333rem;
+        font-weight: normal; }
+      #evt_content .sec-footer .txt p {
+        font-size: 0.28rem;
+        padding-left: 0.46667rem;
+        line-height: 0.46667rem;
+        text-indent: -0.46667rem;
+        margin: 0.06667rem 0; }
+        #evt_content .sec-footer .txt p span {
+          display: block;
+          text-indent: 1.06667rem; }
+
+/*彈窗*/
+.Dialogbg-quan {
+  background-color: #000;
+  height: 100%;
+  left: 0;
+  opacity: 0.7;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 200;
+  display: none; }
+
+.Dialog-quan {
+  box-shadow: 0 0 0 #999;
+  font-size: 0.18667rem;
+  width: 9.33333rem;
+  padding: 0.4rem 0;
+  top: 50%;
+  left: 50%;
+  margin-bottom: 0;
+  margin-left: -4.66667rem;
+  margin-right: auto;
+  margin-top: -4rem;
+  position: fixed;
+  z-index: 99999;
+  border-radius: 0.13333rem;
+  overflow: hidden;
+  display: none; }
+  .Dialog-quan img {
+    width: 100%; }
+  .Dialog-quan .closes {
+    width: 0.4rem;
+    height: 0.4rem;
+    position: absolute;
+    top: 0.66667rem;
+    right: 0.4rem;
+    cursor: pointer;
+    z-index: 8;
+    background: url("../images/close2.png") center no-repeat;
+    background-size: 100%; }
+  .Dialog-quan .quan {
+    position: relative;
+    display: none;
+    text-align: center;
+    width: 9.33333rem;
+    height: 6.13333rem;
+    background: url("../images/card-0.png") no-repeat;
+    background-size: 100%; }
+    .Dialog-quan .quan .go-use {
+      display: block;
+      position: absolute;
+      bottom: 1.33333rem;
+      left: 50%;
+      width: 2.4rem;
+      margin-left: -1.2rem;
+      cursor: pointer;
+      background: #ffb3be;
+      font-size: 0.29333rem;
+      line-height: 0.66667rem;
+      color: #000; }
+  .Dialog-quan .quan-1 {
+    background: url("../images/card-1.png") no-repeat;
+    background-size: 100%; }
+  .Dialog-quan .quan-2 {
+    background: url("../images/card-2.png") no-repeat;
+    background-size: 100%; }

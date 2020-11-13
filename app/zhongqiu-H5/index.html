@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>mcake活动</title>
+
+    <!-- build:css styles/index.css -->
+    <link rel="stylesheet" href="styles/wap-normalize.css">
+    <link rel="stylesheet" href="styles/swiper.min.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <!-- endbuild-->
+
+</head>
+<body>
+
+<div id="containerWrap">
+    <div id="evt-loading" style="display:none;">
+        <div class="moon"><img src="images/moon.png" alt=""></div>
+        <div class="moon-bg"><img src="images/moon-bg.png" alt=""></div>
+        <div class="ren"><img src="images/ren.png" alt=""></div>
+        <div class="loading_content">
+            <div id="progress">0%</div>
+            <div class="loading_progress">
+                <span></span>
+            </div>
+        </div>
+        <div class="star star-1"><img src="images/star-1.png" alt=""></div>
+        <div class="star star-2"><img src="images/star.png" alt=""></div>
+    </div>
+    <div class="leading" id="leading">
+        <div class="leading-title"><img src="images/leading-title.png" alt=""></div>
+        <div class="leading-quan-wrap">
+            <div class="leading-quan"><img src="images/leading-quan-1.png" alt=""></div>
+            <div class="leading-quan quanAni"><img src="images/leading-quan-2.png" alt=""></div>
+            <div class="leading-quan-txt"><img src="images/leading-quan-txt.png" alt=""></div>
+        </div>
+    </div>
+    <!--音乐 start-->
+    <div class="music-btn" id="music"></div>
+    <audio src="music/zhongqiu.mp3" loop="loop" autoplay="autoplay" preload="auto"  preload="auto" id="audio"  type="audio/mp3"></audio>
+    <div class="frend-tip"><img src="images/frend-tip.png" alt=""></div>
+    <div id="evt_content" style="display:none;">
+        <div class="sec main">
+            <div class="s_title"><img src="images/title.png" alt=""></div>
+            <div class="zhongqiu">
+                <div class="city-tab">
+                    <ul>
+                        <li class="nav-1 cur"></li>
+                        <li class="nav-2"></li>
+                        <li class="nav-3"></li>
+                        <li class="nav-4"></li>
+                    </ul>
+                </div>
+                <div class="citys">
+                    <div class="city city0" style="display: block;">
+                       <!-- <div class="city-icon"><img src="images/city-icon-0.png" alt=""></div>-->
+                        <div class="swiper-container swiper1">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide" >
+                                        <div class="noPoint noPoint-1" data-point="1"></div>
+                                        <div class="point point-1" data-point="1"></div>
+                                        <div class="point point-2" data-point="2"></div>
+                                        <div class="cityTipp ctTipp-1"><p>Oops…今天的月亮好圆啊~</p></div>
+                                        <div class="cityTip ctTip-1"><p>Bingo~被你发现啦~</p></div>
+                                        <div class="cityTip ctTip-2"><p>不会吧！这么快就找到了！</p></div>
+                                        <img src="images/page_sh_1.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide" ><img src="images/page_sh_2.png" alt=""></div>
+                                </div>
+                         </div>
+                        <div class="city-word-wrap">
+                            <div class="city-word">
+                                <img class="city-wordimg" src="images/city0/city0-word-1.png" alt="">
+                                <img class="city-wordimg" src="images/city0/city0-word-2.png" alt="">
+                                <img class="city-wordimg" src="images/city0/city0-word-3.png" alt="">
+                                <img class="city-wordimg" src="images/city0/city0-word-4.png" alt="">
+                                <img class="city-wordimg" src="images/city0/city0-word-5.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="city city1">
+                       <!-- <div class="city-icon"><img src="images/city-icon-1.png" alt=""></div>-->
+                        <div class="swiper-container swiper1">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide" >
+                                    <div class="point point-3" data-point="3"></div>
+                                    <div class="cityTip ctTip-3"><p>Cool，不愧是你！</p></div>
+                                    <img src="images/page_bj_1.png" alt="">
+                                </div>
+                                <div class="swiper-slide" >
+                                    <div class="noPoint noPoint-2" data-point="2"></div>
+                                    <div class="point point-4" data-point="4"></div>
+                                    <div class="cityTipp ctTipp-2"><p>中秋快乐！ <br>去其他地方看看吧</p></div>
+                                    <div class="cityTip ctTip-4"><p>555被找到了~</p></div>
+                                    <img src="images/page_bj_2.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="city-word-wrap">
+                            <div class="city-word">
+                                <img class="city-wordimg" src="images/city1/city1-word-1.png" alt="">
+                                <img class="city-wordimg" src="images/city1/city1-word-2.png" alt="">
+                                <img class="city-wordimg" src="images/city1/city1-word-3.png" alt="">
+                                <img class="city-wordimg" src="images/city1/city1-word-4.png" alt="">
+                                <img class="city-wordimg" src="images/city1/city1-word-5.png" alt="">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="city city2">
+                       <!-- <div class="city-icon"><img src="images/city-icon-2.png" alt=""></div>-->
+                        <div class="swiper-container swiper1">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="point point-5" data-point="5"></div>
+                                    <div class="cityTip ctTip-5"><p>灵感+1，手下留情啊喂！</p></div>
+                                    <img src="images/page_hz_1.png" alt="">
+                                </div>
+                                <div class="swiper-slide" >
+                                    <div class="noPoint noPoint-3" data-point="3"></div>
+                                    <div class="cityTipp ctTipp-3"><p>今晚的月色真美<br>风儿也温柔</p></div>
+                                    <div class="point point-6" data-point="6"></div>
+                                    <div class="cityTip ctTip-6"><p>You got it! 太棒啦！</p></div>
+                                    <img src="images/page_hz_2.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="city-word-wrap">
+                            <div class="city-word">
+                                <img class="city-wordimg" src="images/city2/city2-word-1.png" alt="">
+                                <img class="city-wordimg" src="images/city2/city2-word-2.png" alt="">
+                                <img class="city-wordimg" src="images/city2/city2-word-3.png" alt="">
+                                <img class="city-wordimg" src="images/city2/city2-word-4.png" alt="">
+                                <img class="city-wordimg" src="images/city2/city2-word-5.png" alt="">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="city city3">
+                        <!--<div class="city-icon"><img src="images/city-icon-3.png" alt=""></div>-->
+                        <div class="swiper-container swiper1">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide" >
+                                    <img src="images/page_sz_1.png" alt="">
+                                </div>
+                                <div class="swiper-slide" >
+                                    <div class="noPoint noPoint-4" data-point="4"></div>
+                                    <div class="cityTipp ctTipp-4"><p>良辰美景，花好月圆</p></div>
+                                    <div class="point point-7" data-point="7"></div>
+                                    <div class="point point-8" data-point="8"></div>
+                                    <div class="cityTip ctTip-7"><p>Wow~离大奖近了一步~</p></div>
+                                    <div class="cityTip ctTip-8"><p>耶！马上就要成功啦！</p></div>
+                                    <img src="images/page_sz_2.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="city-word-wrap">
+                            <div class="city-word">
+                                <img class="city-wordimg" src="images/city3/city3-word-1.png" alt="">
+                                <img class="city-wordimg" src="images/city3/city3-word-2.png" alt="">
+                                <img class="city-wordimg" src="images/city3/city3-word-3.png" alt="">
+                                <img class="city-wordimg" src="images/city3/city3-word-4.png" alt="">
+                                <img class="city-wordimg" src="images/city3/city3-word-5.png" alt="">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hd-tips">
+                        <div class="hd-tips-left"></div>
+                        <div class="hd-tips-right"></div>
+                        <img src="images/hd-tips.png" alt="">
+                    </div>
+                </div>
+                <div class="prize-content">
+                    <div class="prize-box">
+                        <dl class="clearfix">
+                            <dt class="box2"><img src="images/box-1.png" alt=""><p>灵感x2</p></dt>
+                            <dd>———</dd>
+                            <dt class="box4"><img src="images/box-1.png" alt=""><p>灵感x4</p></dt>
+                            <dd>———</dd>
+                            <dt class="box6"><img src="images/box-1.png" alt=""><p>灵感x6</p></dt>
+                            <dd>———</dd>
+                            <dt class="box8"><a href="result.html"><img src="images/box-1.png" alt=""></a><p>灵感x8</p></dt>
+                        </dl>
+                    </div>
+                    <div class="final-prize">
+                        <div class="progress">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="tips">
+                        <p>* 每座城市包含2个灵感，找到后即可兑换相应礼品。<br>
+                            集齐所有8个灵感，可参与抽取终极大奖。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--提示-->
+            <div class="tip-cover">
+                <div class="tip tip-1"></div>
+                <div class="tip tip-2"></div>
+                <div class="tip tip-3"></div>
+                <div class="tip tip-4"></div>
+            </div>
+
+            <!--中奖弹窗-->
+            <div class="Dialogbg"></div>
+            <div class="DialogBox">
+                <div class="closes"></div>
+                <div class="quan quan-2" style="display: block;">
+                    <div class="go-use"><img src="images/btn-1.png" alt=""></div>
+                    <img src="images/jiang-1.png" alt="">
+                </div>
+                <div class="quan quan-4">
+                    <div class="go-use"><img src="images/btn-1.png" alt=""></div>
+                    <img src="images/jiang-2.png" alt="">
+                </div>
+                <div class="quan quan-6">
+                    <div class="go-use"><img src="images/btn-1.png" alt=""></div>
+                    <img src="images/jiang-3.png" alt="">
+                </div>
+                <div class="quan quan-8">
+                    <div class="go-use"><img src="images/btn-2.png" alt=""></div>
+                    <img src="images/jiang-4.png" alt="">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<script src="https://act.mcake.com/fangli/2019/wap/commonjs/jquery.min.js"></script>
+<script src="https://act.mcake.com/fangli/2019/wap/commonjs/flexible.js"></script>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script src="https://act.mcake.com/fangli/2020/wap/zhongqiu-H5/scripts/Dialog.js"></script>
+<!--从2月会员日开始，因为新版移动端，点击链接跳转出去再返回，页面无法滑动了，需要把加载进入的全部动画效果（initScroll）去掉-->
+<!-- build:js scripts/index.js -->
+<script src="../commonjs/fastclick.js"></script>
+<script src="../commonjs/pubsub.js"></script>
+<script src="../commonjs/loader.js"></script>
+<script src="scripts/swiper.min.js"></script>
+<script src="scripts/resdata.js"></script>
+<script src="scripts/index.js"></script>
+<!-- endbuild -->
+<script>
+
+    //Loading();
+
+    //choujiang();
+
+    $(".leading").click(function () {
+        $(this).fadeOut(500);
+        $("#evt_content").fadeIn(400);
+        //document.getElementById('evt_content').style.display = 'block';
+        $(".tip").fadeOut(0);
+        $(".tip").eq(0).fadeIn(0);
+        zhongQiu.Loading();
+
+        $(".music-btn").addClass("blue");
+        pointClick();
+    });
+
+    function pointClick() {
+        var self = this;
+        /*空热点*/
+        $('.noPoint').click(function () {
+            var i = $(this).data("point");
+
+            $(".ctTipp-"+i).stop(true).fadeIn(500).delay(1000).fadeOut(500);
+        });
+        /*热点点击*/
+        $('.point').click(function () {
+            var i = $(this).data("point");
+            $(".ctTip-"+i).stop(true).fadeIn(500).delay(1000).fadeOut(500);
+            if($(this).hasClass("on")){
+                return;
+            }
+            $(this).addClass("on");
+            self.choujiang(i);
+
+        });
+
+    }
+
+    function result(i) {
+        var num = $(".point.on").length;
+        if(num ==2 || num ==4 || num==6 || num==8){
+            setTimeout(function () {
+                new Dialog(".Dialogbg",'.DialogBox',{
+                    close:'.closes',
+                    btn:'.go-use'
+                },num,10);
+            },1000);
+            /*进度*/
+            $(".prize-box .box"+num).find("img").addClass("a-swing");
+            $(".prize-box .box"+num).find("img").attr("src","https://act.mcake.com/fangli/2020/wap/zhongqiu-H5/images/box-2-"+num+".png");
+            $(".progress span").width(num*(100/8)+"%");
+        }
+    }
+</script>
+</body>
+</html>

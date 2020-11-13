@@ -44,6 +44,29 @@
 
 
     var loadComplete = function () {
+        var swiper1 = new Swiper('.swiper1', {
+            observer:true,
+            observeParents:true,
+            speed:300,
+            loop: true,
+            autoplay : {
+                delay:3000,
+                disableOnInteraction: false
+            }
+        });
+
+        var swiper2 = new Swiper('.swiper2', {
+            observer:true,
+            observeParents:true,
+            speed:300,
+            loop: true,
+            autoplay : {
+                delay:3000,
+                disableOnInteraction: false
+            }
+        });
+
+
         $(".prolist li").each(function () {
             var self = this;
             $(this).find('.btns').click(function () {

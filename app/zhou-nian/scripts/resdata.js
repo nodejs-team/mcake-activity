@@ -1,65 +1,5 @@
 var resData = [
     {
-        "name":"quan-2_png",
-        "type":"image",
-        "url":"quan-2.png"
-    },
-    {
-        "name":"quan-3_png",
-        "type":"image",
-        "url":"quan-3.png"
-    },
-    {
-        "name":"time-bar_png",
-        "type":"image",
-        "url":"time-bar.png"
-    },
-    {
-        "name":"title-1_png",
-        "type":"image",
-        "url":"title-1.png"
-    },
-    {
-        "name":"title-2_png",
-        "type":"image",
-        "url":"title-2.png"
-    },
-    {
-        "name":"title-3_png",
-        "type":"image",
-        "url":"title-3.png"
-    },
-    {
-        "name":"wx-code_png",
-        "type":"image",
-        "url":"wx-code.png"
-    },
-    {
-        "name":"xp_png",
-        "type":"image",
-        "url":"xp.png"
-    },
-    {
-        "name":"xp-img_png",
-        "type":"image",
-        "url":"xp-img.png"
-    },
-    {
-        "name":"zn-title-1_png",
-        "type":"image",
-        "url":"zn-title-1.png"
-    },
-    {
-        "name":"zn-title-2_png",
-        "type":"image",
-        "url":"zn-title-2.png"
-    },
-    {
-        "name":"zn-title-3_png",
-        "type":"image",
-        "url":"zn-title-3.png"
-    },
-    {
         "name":"zn-title-4_png",
         "type":"image",
         "url":"zn-title-4.png"
@@ -85,6 +25,26 @@ var resData = [
         "url":"zn-title-8.png"
     },
     {
+        "name":"zn-title-9_png",
+        "type":"image",
+        "url":"zn-title-9.png"
+    },
+    {
+        "name":"zn-title-10_png",
+        "type":"image",
+        "url":"zn-title-10.png"
+    },
+    {
+        "name":"zn-title-11_png",
+        "type":"image",
+        "url":"zn-title-11.png"
+    },
+    {
+        "name":"zn-title-12_png",
+        "type":"image",
+        "url":"zn-title-12.png"
+    },
+    {
         "name":"zp-1_png",
         "type":"image",
         "url":"zp-1.png"
@@ -105,24 +65,9 @@ var resData = [
         "url":"zp-4.png"
     },
     {
-        "name":"banner_png",
+        "name":"zp-5_png",
         "type":"image",
-        "url":"banner.png"
-    },
-    {
-        "name":"btn-1_png",
-        "type":"image",
-        "url":"btn-1.png"
-    },
-    {
-        "name":"btn-2_png",
-        "type":"image",
-        "url":"btn-2.png"
-    },
-    {
-        "name":"buy-card_png",
-        "type":"image",
-        "url":"buy-card.png"
+        "url":"zp-5.png"
     },
     {
         "name":"cake-1_png",
@@ -140,79 +85,14 @@ var resData = [
         "url":"cake-3.png"
     },
     {
-        "name":"car_png",
+        "name":"card-1_png",
         "type":"image",
-        "url":"car.png"
+        "url":"card-1.png"
     },
     {
-        "name":"car-on_png",
+        "name":"icon-50_png",
         "type":"image",
-        "url":"car-on.png"
-    },
-    {
-        "name":"close_png",
-        "type":"image",
-        "url":"close.png"
-    },
-    {
-        "name":"close2_png",
-        "type":"image",
-        "url":"close2.png"
-    },
-    {
-        "name":"dot_png",
-        "type":"image",
-        "url":"dot.png"
-    },
-    {
-        "name":"go-buy-1_png",
-        "type":"image",
-        "url":"go-buy-1.png"
-    },
-    {
-        "name":"go-buy-2_png",
-        "type":"image",
-        "url":"go-buy-2.png"
-    },
-    {
-        "name":"go-buy-3_png",
-        "type":"image",
-        "url":"go-buy-3.png"
-    },
-    {
-        "name":"gou-1-1_png",
-        "type":"image",
-        "url":"gou-1-1.png"
-    },
-    {
-        "name":"gou-1-2_png",
-        "type":"image",
-        "url":"gou-1-2.png"
-    },
-    {
-        "name":"gou-2_png",
-        "type":"image",
-        "url":"gou-2.png"
-    },
-    {
-        "name":"gou-2-1_png",
-        "type":"image",
-        "url":"gou-2-1.png"
-    },
-    {
-        "name":"gou-2-2_png",
-        "type":"image",
-        "url":"gou-2-2.png"
-    },
-    {
-        "name":"gou-3-1_png",
-        "type":"image",
-        "url":"gou-3-1.png"
-    },
-    {
-        "name":"gou-3-2_png",
-        "type":"image",
-        "url":"gou-3-2.png"
+        "url":"icon-50.png"
     },
     {
         "name":"img-1_png",
@@ -235,34 +115,14 @@ var resData = [
         "url":"img-4.png"
     },
     {
-        "name":"img-5_png",
-        "type":"image",
-        "url":"img-5.png"
-    },
-    {
-        "name":"img-6_png",
-        "type":"image",
-        "url":"img-6.png"
-    },
-    {
-        "name":"img-7_png",
-        "type":"image",
-        "url":"img-7.png"
-    },
-    {
-        "name":"img-8_png",
-        "type":"image",
-        "url":"img-8.png"
-    },
-    {
-        "name":"kanjia_png",
-        "type":"image",
-        "url":"kanjia.png"
-    },
-    {
         "name":"manzeng_png",
         "type":"image",
         "url":"manzeng.png"
+    },
+    {
+        "name":"man-zeng_png",
+        "type":"image",
+        "url":"man-zeng.png"
     },
     {
         "name":"manzeng-1_png",
@@ -270,14 +130,49 @@ var resData = [
         "url":"manzeng-1.png"
     },
     {
-        "name":"mcard_png",
+        "name":"man-zeng-2_png",
         "type":"image",
-        "url":"mcard.png"
+        "url":"man-zeng-2.png"
     },
     {
-        "name":"more_png",
+        "name":"man-zeng-3_png",
         "type":"image",
-        "url":"more.png"
+        "url":"man-zeng-3.png"
+    },
+    {
+        "name":"man-zeng-4_png",
+        "type":"image",
+        "url":"man-zeng-4.png"
+    },
+    {
+        "name":"mcake-1_png",
+        "type":"image",
+        "url":"mcake-1.png"
+    },
+    {
+        "name":"mcake-2_png",
+        "type":"image",
+        "url":"mcake-2.png"
+    },
+    {
+        "name":"part-a-1_png",
+        "type":"image",
+        "url":"part-a-1.png"
+    },
+    {
+        "name":"part-a-2_png",
+        "type":"image",
+        "url":"part-a-2.png"
+    },
+    {
+        "name":"part-a-3_png",
+        "type":"image",
+        "url":"part-a-3.png"
+    },
+    {
+        "name":"part-a-4_png",
+        "type":"image",
+        "url":"part-a-4.png"
     },
     {
         "name":"part-b-1_png",
@@ -315,53 +210,58 @@ var resData = [
         "url":"part-c-3.png"
     },
     {
-        "name":"part-t-1_png",
+        "name":"shengbang-1_png",
         "type":"image",
-        "url":"part-t-1.png"
+        "url":"shengbang-1.png"
     },
     {
-        "name":"part-t-2_png",
+        "name":"shengbang-2_png",
         "type":"image",
-        "url":"part-t-2.png"
+        "url":"shengbang-2.png"
     },
     {
-        "name":"part-t-3_png",
+        "name":"shengbang-3_png",
         "type":"image",
-        "url":"part-t-3.png"
+        "url":"shengbang-3.png"
     },
     {
-        "name":"part-t-4_png",
+        "name":"shengbang-quan_png",
         "type":"image",
-        "url":"part-t-4.png"
+        "url":"shengbang-quan.png"
     },
     {
-        "name":"part-t-5_png",
+        "name":"title-1_png",
         "type":"image",
-        "url":"part-t-5.png"
+        "url":"title-1.png"
     },
     {
-        "name":"price-1_png",
+        "name":"title-2_png",
         "type":"image",
-        "url":"price-1.png"
+        "url":"title-2.png"
     },
     {
-        "name":"price-2_png",
+        "name":"title-3_png",
         "type":"image",
-        "url":"price-2.png"
+        "url":"title-3.png"
     },
     {
-        "name":"price-3_png",
+        "name":"wx-code_png",
         "type":"image",
-        "url":"price-3.png"
+        "url":"wx-code.png"
     },
     {
-        "name":"quan_png",
+        "name":"zn-title-1_png",
         "type":"image",
-        "url":"quan.png"
+        "url":"zn-title-1.png"
     },
     {
-        "name":"quan-1_png",
+        "name":"zn-title-2_png",
         "type":"image",
-        "url":"quan-1.png"
+        "url":"zn-title-2.png"
+    },
+    {
+        "name":"zn-title-3_png",
+        "type":"image",
+        "url":"zn-title-3.png"
     }
 ];

@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>mcake活动</title>
+
+    <!-- build:css styles/index.css -->
+    <link rel="stylesheet" href="../commoncss/wap-normalize.css">
+    <link rel="stylesheet" href="styles/swiper.min.css">
+    <link rel="stylesheet" href="styles/hongbao.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <!-- endbuild-->
+
+</head>
+<body>
+
+<div id="evt_container">
+    <div id="iscroll">
+        <div class="wrap">
+            <header>
+                <a href="http://m.mcake.com/wap" class="icon-back"></a>
+                <div class="title">
+                    <span>活动</span><br><span>activity</span>
+                </div>
+                <a href="http://m.mcake.com/wap" class="icon-home"></a>
+            </header>
+            <div id="evt_loading" style="display:none;">0%</div>
+            <div id="evt_content" style="display:none;">
+                <div class="sec sec-top"></div>
+                <div class="sec cake-txt"  id="zhekou">
+                    <div class="go-btn"><img src="images/go-btn.png" alt=""></div>
+                    <img src="images/txt.png" alt="">
+                </div>
+                <div class="sec cake-block">
+                    <img src="images/cake-block.png" alt="">
+                </div>
+
+                <div class="sec sec-main products clearfix">
+                    <!--<div class="hy-title"><img src="images/title-1.png" alt=""></div>-->
+                    <div class="row row1">
+                        <div class="cake"><img src="images/cake-1.png" alt=""></div>
+                        <div class="go-btn"><img src="images/go-btn2.png" alt=""></div>
+                    </div>
+                    <div class="row row2">
+                        <div class="cake"><img src="images/cake-2.png" alt=""></div>
+                        <div class="go-btn"><img src="images/go-btn2.png" alt=""></div>
+                    </div>
+                    <div class="row row3">
+                        <div class="cake"><img src="images/cake-3.png" alt=""></div>
+                        <div class="go-btn"><img src="images/go-btn2.png" alt=""></div>
+                    </div>
+                    <div class="row row4">
+                        <div class="cake"><img src="images/cake-4.png" alt=""></div>
+                        <div class="go-btn"><img src="images/go-btn2.png" alt=""></div>
+                    </div>
+                </div>
+
+                <div class="sec-footer">
+                    <div class="f-txt">
+                        <h2>活动规则</h2>
+                        <p>1、活动时间：2020年10月14日-2020年11月2日，<br>最晚配送日期：11月2日</p>
+                        <p>2、活动城市：上海、北京、苏州、杭州</p>
+                        <p>3、支付方式：微信、支付宝、现金；仅限微信、支付宝、现金全额支付的用户参与</p>
+                        <p>4、活动内容：<br>
+                            凡活动页购买万圣节新品蛋糕、黛西的旅行、胖达乐园、尼诺、Finn的蘑菇星球立减20元；<br>
+                            凡在活动页购买万圣节新品蛋糕赠送南瓜氛围灯一串，每日数量有限，先到先得；<br>
+                            活动页每日出现南瓜灯，点击南瓜灯可获得红包，红包有限期限：11月2日</p>
+                        <p>5、本活动与会员等级制度、积分同享，但不与现金卡、储值卡、专享卡、礼品卡、小食卡、月饼卡等代金卡同享</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--红包雨专区-->
+<div class="hob-inlet">
+    <!--<div class="hob-inlet-03"></div>-->
+    <div class="mod-close"></div>
+    <div class="fls-btn fls1"><img src="images/go-buy.png" alt=""/></div>
+    <div class="fls-btn fls2"><img src="images/go-sj.png" alt=""/></div>
+</div>
+<div class="shade1"></div>
+
+
+<!--红包雨专区-->
+<div class="hongbao-wrapper">
+    <!--<div class="hob-cd"><img src="images/time-bg.png" alt=""/><span class="time">10s</span></div>-->
+    <!--<div class="hob-close"></div>-->
+    <div class="btn-l btn-red"><img src="images/pumpkin-title.png" alt=""/></div>
+   <!-- <div class="flower-cake"><img src="images/flower-cake.png" alt=""/></div>
+    <div class="flower-1"></div>
+    <div class="flower-2"></div>-->
+</div>
+
+<div class="shade" style="display: none;"></div>
+<div class="modal">
+    <div class="mod-close"></div>
+    <div class="mod-body quan-1" style="display: block;">
+        <div class="txt">
+           <!-- <div class="flower-num">0</div>-->
+            <div class="txt-c"><img src="images/txt-1.png" class="quan-txt" alt=""/></div>
+            <div class="go-use"><img src="images/go-use.png" alt=""></div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+<script src="https://act.mcake.com/fangli/2019/wap/commonjs/jquery.min.js"></script>
+<script src="https://act.mcake.com/fangli/2019/wap/commonjs/flexible.js"></script>
+<!--从2月会员日开始，因为新版移动端，点击链接跳转出去再返回，页面无法滑动了，需要把加载进入的全部动画效果（initScroll）去掉-->
+<!-- build:js scripts/index.js -->
+<script src="../commonjs/fastclick.js"></script>
+<script src="../commonjs/pubsub.js"></script>
+<script src="../commonjs/loader.js"></script>
+<script src="scripts/resdata.js"></script>
+<script src="scripts/hongbao.js"></script>
+<script src="scripts/index.js"></script>
+<!-- endbuild -->
+
+<script>
+    /*点击抢红包*/
+     $(".hob-inlet,.shade1").fadeIn(200);
+    $(".fls1").click(function () {
+        $(".hob-inlet,.shade1").fadeOut(10);
+        hobYU(Hbend);
+    });
+    function Hbend() {
+        $('.hongbao-wrapper').fadeOut(100);
+        /*$("body",parent.document).find(".hob-inlet").fadeOut(10);*/
+        $(".modal,.shade").fadeIn(200);
+        $(".hongbao-wrapper i").remove();
+    }
+    $(document).on("click","i.hb",function(){
+        $(this).addClass('gethb');
+        $(this).find("b").text("+1");
+        var len = $("i.gethb").length;
+        /* $(".flower-num").text(len);*/
+        $(".quan-1").fadeIn(0);
+
+        $(".quan-txt").attr("src","images/txt-2.png");
+
+    });
+</script>
+</body>
+</html>

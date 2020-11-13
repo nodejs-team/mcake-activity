@@ -1,0 +1,125 @@
+;(function(){
+
+    function fixImageSrc(res){
+        var imgs = document.getElementsByTagName('img');
+        for(var i=0,len=imgs.length; i<len; i++){
+            var img = imgs[i];
+            var dataSrc = img.getAttribute('src-fix');
+            var data = res[dataSrc];
+            if(dataSrc && data){
+                img.setAttribute('src', data.url);
+            }
+        }
+    }
+
+
+
+
+
+    function startLoading(){
+        var loader = new Loader('images/');
+        var domLoad = document.getElementById('evt_loading');
+        domLoad.style.display = 'block';
+        loader.addGroup('preload', resData);
+        loader.on('progress', function(groupName, ix, len){
+            domLoad.innerHTML = parseInt(ix/len*100) + '%';
+        });
+        loader.on('complete', function(groupName){
+            fixImageSrc(loader.getAll());
+            domLoad.style.display = 'none';
+            document.getElementById('evt_content').style.display = 'block';
+            loadComplete();
+        });
+        loader.loadGroup('preload');
+    }
+    startLoading();
+
+    var loadComplete = function () {
+        $(".prolistLi").each(function () {
+            console.log(111);
+            var self = this;
+            $(this).find('.buy-btns').click(function () {
+                console.log(2);
+                /* $(".go-buy").hide(0).siblings().show(0);*/
+                SelectShow(self,[30,30,30,30],1,true,1,0);
+            });
+           /* $(this).find('.m-btn').click(function () {
+                 $(".go-car").hide(0).siblings().show(0);
+                SelectShow(self,[20,20,20,20],1,true,0,0);
+            });*/
+        });
+        $(".go-car").click(function () {
+            SelectHide();
+        });
+        $(".go-buy,.s-closes").click(function () {
+            SelectHide();
+        });
+
+    }
+
+
+
+
+
+})();
+
+
+
+
+!(function () {
+    var $zpaward = $(".zhuanpan-award"),
+        $award = $(".award");
+
+
+    function choujiang(data) {  /* n<=$item的length */
+        this.$DialogCover = $(data.DialogCover);
+        this.$DialogBox = $(data.DialogBox);
+        this.$item = $(data.DialogBox).find(".box-item");
+        this.$close = $(data.DialogBox).find(".closes");
+        this.$wait = $(data.DialogBox).find(".go-wait");
+        this._Init(data.n,data.arr);
+    }
+    choujiang.prototype={
+        DialogTipShow:function (n,arr) {
+            $award.find("span").text(arr[n].price);
+          /*  $award.find("b").text(arr[n].price);*/
+            $award.find(".text").html(arr[n].name);
+            $zpaward.find(".award-1").show(0); /*实物赠品*/
+
+           /* if(n==10){
+                $zpaward.find(".award-1").hide(0); /!*实物赠品*!/
+                $zpaward.find(".award-2").show(0); /!*蛋糕券*!/
+            }
+            else{
+                $zpaward.find(".award-1").show(0); /!*实物赠品*!/
+                $zpaward.find(".award-2").hide(0)
+            }*/
+            this.$DialogCover.delay(1000).fadeIn(500);
+            this.$DialogBox.delay(1000).fadeIn(500);
+            $zpaward.delay(1000).fadeIn(300);
+
+
+
+        },
+        DialogTipHide:function () {
+            this.$DialogCover.fadeOut(20);
+            this.$DialogBox.fadeOut(20);
+        },
+        _Init:function (n,arr) {
+            var self = this;
+            self.DialogTipShow(n,arr);
+            this.$close.click(function () {
+                self.DialogTipHide();
+            });
+            this.$wait.click(function () {
+                self.DialogTipHide();
+            });
+        }
+    };
+    window.choujiang = choujiang;
+})();
+
+
+
+
+

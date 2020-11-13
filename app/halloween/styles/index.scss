@@ -1,0 +1,40 @@
+@function px2rem($n) {
+  @return ($n * 10 / 750) * 1rem; //设计稿一般都是750宽
+}
+*{ vertical-align: baseline !important;}  /*价格符号不对齐*/
+#evt_content{ background: #271c50;
+  img{width:100%; display: block;}
+  .sec{position: relative; }
+  .sec-top{height: px2rem(1236); background:url("../images/banner-t.png") repeat; background-size: 100%; z-index: 2;}
+  .cake-txt{width: px2rem(750); z-index: 2;
+    .go-btn{position: absolute; width: px2rem(151); bottom: px2rem(70); left: 50%; margin-left: px2rem(-70.5);}
+  }
+  .cake-block{width: px2rem(750); z-index: 2;}
+
+  .hy-title{ width: px2rem(750); margin:px2rem(50) auto px2rem(50); }
+
+  .sec-main{ padding:px2rem(330) 0 px2rem(80); height:px2rem(1678); background: url("../images/main-bg.png"); background-size: 100%;
+    .row{ position: relative; width:px2rem(350); float: left; margin-top: px2rem(50); margin-left: px2rem(20);
+      .cake{ width:px2rem(350); margin: 0 auto;}
+      .go-btn{width: px2rem(151); height: px2rem(44); margin:px2rem(20) auto;}
+    }
+
+
+  }
+
+  .sec-footer{background:#271c50; position: relative; padding-bottom: px2rem(50); z-index:1;
+    .f-txt{ position: relative; width:px2rem(700); padding-top: px2rem(80); margin: 0 auto; color:#d7cbf0;
+      h2{font-size: px2rem(28); font-weight: normal; }
+      p{ font-size: px2rem(22); padding-left: px2rem(35); line-height:px2rem(40);  text-indent: px2rem(-35); margin:px2rem(5) 0;
+        span{display: block; padding-left: px2rem(10); text-indent: px2rem(-10);}
+      }
+    }
+  }
+
+}
+
+
+
+
+
+

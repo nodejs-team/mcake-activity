@@ -1,0 +1,321 @@
+@charset "UTF-8";
+#evt_content * {
+  vertical-align: baseline !important; }
+
+/*价格符号不对齐*/
+#evt_content {
+  background: #fff; }
+  #evt_content img {
+    width: 100%;
+    display: block; }
+  #evt_content .sec {
+    position: relative; }
+  #evt_content .sec-top {
+    height: 13.36rem;
+    background: url("../images/banner.png") repeat;
+    background-size: 100%;
+    z-index: 1; }
+  #evt_content .sec-1 {
+    z-index: 2;
+    height: 10.53333rem;
+    background: url("../images/main-1-bg.png") repeat;
+    background-size: 100%;
+    overflow: hidden; }
+    #evt_content .sec-1 div {
+      position: relative; }
+    #evt_content .sec-1 .text {
+      width: 10rem; }
+    #evt_content .sec-1 .card {
+      width: 9.04rem;
+      margin: 0 auto; }
+    #evt_content .sec-1 .card-1 {
+      margin-top: 1.06667rem; }
+  #evt_content .sec-2 {
+    z-index: 2;
+    height: 23.86667rem;
+    background: url("../images/main-2-bg.png") repeat;
+    background-size: 100%;
+    overflow: hidden; }
+    #evt_content .sec-2 div {
+      position: relative;
+      margin: 0 auto; }
+    #evt_content .sec-2 .card {
+      width: 9.04rem; }
+    #evt_content .sec-2 .price {
+      width: 9.04rem; }
+    #evt_content .sec-2 .goubtn {
+      position: absolute;
+      bottom: 0.66667rem;
+      left: 50%;
+      margin-left: -1.00667rem;
+      width: 2.01333rem;
+      height: 0.58667rem;
+      background: url("../images/buy-btn.png");
+      background-size: 100%; }
+    #evt_content .sec-2 p {
+      font-size: 0.24rem;
+      text-align: center;
+      color: #b8ab9a; }
+    #evt_content .sec-2 .card-2 {
+      margin-top: 0.8rem; }
+  #evt_content .sec-3 {
+    z-index: 2;
+    height: 9.6rem;
+    background: url("../images/main-3-bg.png") repeat;
+    background-size: 100%;
+    overflow: hidden; }
+    #evt_content .sec-3 div {
+      position: relative;
+      margin: 0 auto; }
+    #evt_content .sec-3 .card {
+      width: 9.04rem; }
+    #evt_content .sec-3 .card-4 {
+      margin-top: 1.6rem; }
+  #evt_content .sec-cake {
+    z-index: 2;
+    padding-top: 0.01333rem;
+    height: 42.77333rem;
+    background: url("../images/main-cake.png") repeat;
+    background-size: 100%; }
+    #evt_content .sec-cake .dh-title {
+      width: 10rem;
+      margin: 1.2rem auto; }
+    #evt_content .sec-cake ul {
+      margin-left: -0.10667rem;
+      overflow: hidden; }
+      #evt_content .sec-cake ul li {
+        float: left;
+        width: 4.53333rem;
+        margin-left: 0.37333rem;
+        margin-bottom: 1.73333rem; }
+        #evt_content .sec-cake ul li .price {
+          width: 0.94667rem;
+          margin: 0.33333rem auto 0; }
+        #evt_content .sec-cake ul li .goubtn {
+          position: relative;
+          margin: 0.37333rem auto 0;
+          width: 2.01333rem;
+          height: 0.58667rem;
+          background: url("../images/gobuy-btn.png");
+          background-size: 100%; }
+    #evt_content .sec-cake .more {
+      width: 2.57333rem;
+      margin: 1.2rem auto 0; }
+  #evt_content .sec-footer {
+    background: url("../images/foot-bg.png") repeat-y;
+    background-size: 100%;
+    position: relative;
+    padding-bottom: 1.33333rem;
+    z-index: 2; }
+    #evt_content .sec-footer .txt {
+      position: relative;
+      width: 8.8rem;
+      padding-top: 0.01333rem;
+      margin: 0 auto;
+      color: #d0bdac;
+      text-align: left; }
+      #evt_content .sec-footer .txt h2 {
+        font-size: 0.26667rem;
+        font-weight: normal;
+        margin-top: 0.66667rem; }
+      #evt_content .sec-footer .txt p {
+        font-size: 0.26667rem;
+        padding-left: 0.46667rem;
+        line-height: 0.53333rem;
+        text-indent: -0.46667rem;
+        margin: 0.06667rem 0;
+        text-align: left; }
+        #evt_content .sec-footer .txt p span {
+          display: block;
+          padding-left: 0.13333rem;
+          text-indent: -0.13333rem; }
+
+/*蛋糕选择弹窗*/
+.Dialogbg-Select {
+  background-color: #000;
+  height: 100%;
+  left: 0;
+  opacity: 0.85;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 200;
+  display: none; }
+
+.Dialog-Select {
+  background: #fff none repeat scroll 0 0;
+  box-shadow: 0 0 0 #999;
+  font-size: 0.18667rem;
+  width: 8rem;
+  height: auto;
+  margin-top: -4.26667rem;
+  margin-left: -4rem;
+  left: 50%;
+  padding: 0;
+  position: fixed;
+  top: 50%;
+  z-index: 99999;
+  display: none;
+  border-radius: 0.13333rem; }
+
+.s-closes {
+  position: absolute;
+  top: 0.13333rem !important;
+  right: -0.50667rem !important;
+  width: 0.36rem !important;
+  height: 0.36rem !important;
+  background: url("../images/close.png");
+  background-size: 100%; }
+
+.Select {
+  position: relative;
+  color: #000;
+  height: 100%;
+  text-align: left; }
+  .Select .s-title {
+    height: 1.37333rem;
+    background: #f2f2f2;
+    position: relative;
+    border-top-left-radius: 0.13333rem;
+    border-top-right-radius: 0.13333rem; }
+    .Select .s-title h2 {
+      font-size: 0.37333rem;
+      line-height: 0.4rem;
+      padding-left: 0.53333rem;
+      padding-top: 0.4rem; }
+    .Select .s-title b {
+      font-size: 0.18667rem;
+      color: #9a9a9a;
+      font-weight: normal;
+      padding-left: 0.53333rem; }
+  .Select .s-bangshu {
+    padding-top: 0.26667rem; }
+    .Select .s-bangshu ul {
+      margin-left: 0.53333rem; }
+      .Select .s-bangshu ul li {
+        float: left;
+        width: 1.2rem;
+        height: 1.2rem;
+        background: #f2f2f2;
+        border-radius: 50%;
+        text-align: center;
+        color: #4a4a4a;
+        margin-right: 0.66667rem;
+        font-size: 0.30667rem;
+        line-height: 0.26667rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column; }
+        .Select .s-bangshu ul li i {
+          font-size: 0.21333rem;
+          line-height: 0.26667rem;
+          font-style: normal; }
+      .Select .s-bangshu ul li.on {
+        background: #fff2c6;
+        color: #2a345b; }
+  .Select .d-tips {
+    padding: 0.26667rem 0.53333rem;
+    color: #4c4c4c;
+    font-size: 0.24rem; }
+  .Select .s-num {
+    height: 1.33333rem;
+    padding-left: 0.53333rem;
+    border-top: #ededed 1px solid; }
+    .Select .s-num b {
+      display: inline-block;
+      width: 2.66667rem;
+      margin: 0.26667rem 0;
+      line-height: 0.74667rem;
+      float: left;
+      font-size: 0.4rem;
+      color: #737373;
+      font-weight: normal; }
+    .Select .s-num .nums {
+      display: inline-block;
+      margin: 0.26667rem 0.53333rem 0.26667rem 0.26667rem;
+      float: right;
+      height: 0.74667rem;
+      position: relative;
+      width: 2.66667rem; }
+    .Select .s-num .nums a {
+      display: block;
+      width: 0.74667rem;
+      height: 0.74667rem;
+      position: absolute;
+      top: 0.02667rem; }
+    .Select .s-num .nums .minus {
+      background: url("../images/btn-1.png") no-repeat;
+      background-size: 100%;
+      left: 0; }
+    .Select .s-num .nums .plus {
+      background: url("../images/btn-2.png") no-repeat;
+      background-size: 100%;
+      right: 0; }
+    .Select .s-num .nums input {
+      background: none;
+      border: none;
+      color: #626262;
+      display: block;
+      font-size: 0.4rem;
+      height: 0.74667rem;
+      left: 0.8rem;
+      line-height: 0.74667rem;
+      padding: 0;
+      position: absolute;
+      text-align: center;
+      top: 0;
+      width: 1.06667rem; }
+  .Select .s-prices {
+    font-size: 0.29333rem;
+    padding: 0.4rem 0.53333rem;
+    border-top: #ededed 1px solid;
+    color: #4a4a4a; }
+    .Select .s-prices b {
+      display: inline-block;
+      width: 2.66667rem;
+      margin: 0;
+      line-height: 0.74667rem;
+      float: left;
+      font-size: 0.4rem;
+      color: #737373;
+      font-weight: normal; }
+    .Select .s-prices p {
+      display: block;
+      line-height: 0.74667rem;
+      text-align: right; }
+    .Select .s-prices i {
+      font-style: normal; }
+    .Select .s-prices span {
+      font-size: 0.6rem; }
+  .Select s {
+    color: #7e7e7e; }
+  .Select .btns {
+    width: 100%;
+    position: relative;
+    bottom: 0rem;
+    display: flex;
+    height: 1.33333rem;
+    line-height: 1.33333rem;
+    flex-direction: row;
+    text-align: center;
+    font-size: 0.4rem;
+    color: #000;
+    padding: 0; }
+    .Select .btns div {
+      flex: 1;
+      cursor: pointer; }
+    .Select .btns .go-buy {
+      background: #fff2c6;
+      border-bottom-left-radius: 0.13333rem;
+      border-bottom-right-radius: 0.13333rem;
+      color: #2a345b; }
+    .Select .btns .go-car {
+      background: #fff2c6;
+      border-bottom-left-radius: 0.13333rem;
+      border-bottom-right-radius: 0.13333rem;
+      float: left; }
+    .Select .btns .go-buy.single {
+      border-bottom-left-radius: 0.26667rem;
+      background: #ffe32a;
+      color: #c43818; }
