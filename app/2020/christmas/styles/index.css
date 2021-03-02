@@ -1,0 +1,96 @@
+@charset "UTF-8";
+* {
+  vertical-align: baseline !important; }
+
+/*价格符号不对齐*/
+#evt_content {
+  background: url("../images/bg.png") repeat;
+  background-size: 5%; }
+  #evt_content img {
+    width: 100%;
+    display: block; }
+  #evt_content .sec {
+    position: relative; }
+  #evt_content .sec-top {
+    height: 12.72rem;
+    background: url("../images/banner.png") repeat;
+    background-size: 100%;
+    z-index: 1;
+    overflow: hidden; }
+  #evt_content .buy-btn {
+    position: absolute;
+    top: 2.66667rem;
+    left: 50%;
+    margin-left: -1.4rem;
+    width: 2.81333rem; }
+  #evt_content .hy-title {
+    position: relative;
+    width: 10rem;
+    margin: 0 auto; }
+  #evt_content .cakes {
+    position: relative; }
+  #evt_content .sec-1 {
+    width: 10rem;
+    height: 12.74667rem;
+    background: url("../images/sec-1.png") center top no-repeat;
+    background-size: 100%;
+    z-index: 1; }
+    #evt_content .sec-1 .cakes {
+      width: 10rem;
+      margin: 0 auto; }
+    #evt_content .sec-1 .buy-btn {
+      top: 8.66667rem;
+      margin-left: -4.06667rem; }
+  #evt_content .sec-2 .hy-title {
+    position: relative;
+    width: 5.41333rem;
+    margin: 0.4rem auto; }
+  #evt_content .sec-2 .cakes {
+    width: 10rem; }
+  #evt_content .sec-2 .buy-btn {
+    top: 13.33333rem; }
+  #evt_content .sec-3 {
+    padding-bottom: 0.66667rem; }
+    #evt_content .sec-3 .cakes {
+      width: 10rem; }
+    #evt_content .sec-3 .buy-btn {
+      top: 4.2rem;
+      margin-left: 0.33333rem; }
+    #evt_content .sec-3 .cakes2 .buy-btn {
+      top: 3.8rem;
+      margin-left: -4.26667rem; }
+    #evt_content .sec-3 .cakes3 .buy-btn {
+      top: 4.2rem;
+      margin-left: 0.66667rem; }
+  #evt_content .sec-footer {
+    height: 11.96rem;
+    background: url("../images/sec-foot.png") top;
+    background-size: 100%;
+    position: relative;
+    overflow: hidden; }
+    #evt_content .sec-footer .txt {
+      position: relative;
+      width: 8.8rem;
+      margin: 2rem auto 0;
+      color: #edbdac; }
+      #evt_content .sec-footer .txt h2 {
+        font-size: 0.37333rem;
+        font-weight: normal; }
+      #evt_content .sec-footer .txt p {
+        font-size: 0.30667rem;
+        padding-left: 0.46667rem;
+        line-height: 0.53333rem;
+        text-indent: -0.46667rem;
+        margin: 0.06667rem 0; }
+        #evt_content .sec-footer .txt p span {
+          display: block;
+          padding-left: 0.13333rem;
+          text-indent: -0.13333rem; }
+
+#snow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
+  pointer-events: none;
+  z-index: 10; }

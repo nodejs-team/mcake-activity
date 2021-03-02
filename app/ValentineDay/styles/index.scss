@@ -1,62 +1,52 @@
 @function px2rem($n) {
   @return ($n * 10 / 750) * 1rem; //设计稿一般都是750宽
 }
-*{ vertical-align: baseline !important;}  /*价格符号不对齐*/
-#evt_content{background:url("../images/sec-bg.png") repeat-y; background-size: 100%;
-  img{width:100%; display: block;}
+#evt_content *{ vertical-align: baseline!important;}  /*价格符号不对齐*/
+#evt_content{ background:#630b09; background-size: 100%;
+  img{width:100%;}
   .sec{position: relative; }
 
-  .sec-top{height: px2rem(574); background:url("../images/banner-wap.jpg") repeat; background-size: 100%; z-index: 1; overflow: hidden; }
-
-  .banner-cake{height: px2rem(629); background:url("../images/banner-cake.png") repeat; background-size: 100%; z-index: 1; overflow: hidden; }
-
-  .sec-letter{height: px2rem(771); background:url("../images/letter-bg.png") repeat; background-size: 100%; z-index: 1; overflow: hidden;
-
-    .closeX{position: absolute; top:px2rem(10); right:px2rem(10); width:px2rem(40); height: px2rem(40); background: url("../images/close.png") center no-repeat; background-size: 60%; cursor: pointer;}
-    .tips{position: absolute; top:px2rem(530); left:px2rem(200); width:px2rem(274); text-align: left; color:#8a8989; font-size:px2rem(12);  }
-    textarea{position: absolute; top:px2rem(200); left:px2rem(187); resize:none; width:px2rem(360); height:px2rem(320); line-height:px2rem(41); font-size:px2rem(22); color:#9a96a3; display:block; border:#bfbbcd 1px dashed; border-radius:px2rem(5); background:none; padding:px2rem(10);z-index: -1; }
-    textarea {outline: none;}
-    textarea:disabled{-webkit-text-fill-color: #9d96a4;/*是用来做填充色使用的*/
-      -webkit-opacity: 1;
-      color: #9d96a4;}
-    .data-time{position: absolute; top:px2rem(85); left:px2rem(280); line-height:px2rem(38); font-size:px2rem(12); color: #958eb0; }
-    .buttombtn{position: absolute; top:px2rem(580); left: px2rem(270); width:px2rem(200); height:px2rem(50); border:none; cursor: pointer; background: #000; opacity: 0; }
-
+  .sec-top{ height: px2rem(1199); background:url("../images/banner.png") no-repeat; background-size: 100%; z-index: 1; overflow: hidden; }
+   .item{ position: absolute;}
+  .sq{position: absolute; width: px2rem(80); height: px2rem(54); background: url("../images/sq.png"); background-size: 100%; bottom:px2rem(-65); right: px2rem(140);}
+  .buy_btn{
+    span{display: block; padding: 0 px2rem(30); line-height: px2rem(40); font-size: px2rem(18); background: #910e06; color: #fff;}
   }
-  .letter-tip{ width:px2rem(750); height:px2rem(256); background: url("../images/tips.png"); background-size: 100%; z-index:5;}
-  .hy-title{ width: px2rem(750); margin:px2rem(80) auto px2rem(50); }
-
-  .sec-main{ padding:1px 0 px2rem(20);
-    .dis-1{position: absolute; top: px2rem(500); left: px2rem(-50); width: px2rem(200); z-index: 5;}
-    .row{position: relative; padding:1px 0;}
-    .cake-cover{ position:absolute; top:0; left:0; width: px2rem(750); height: px2rem(565); background: url("../images/cake-cover.png"); background-size: 100%; z-index: 2;}
-    .cake{width: px2rem(657); height: px2rem(456); margin:px2rem(40) auto px2rem(40); z-index: 1;}
-    .sq{position: absolute; width: px2rem(220); bottom: 0; right: px2rem(10);}
-    .price{position: relative; width: px2rem(750); text-align: center; color: #2e2044; z-index: 3;
-      i,strong,b{font-weight: normal; font-style: normal;}
-      h2{font-size:px2rem(22);font-weight: normal;
-        span{font-size: px2rem(34);}
-      }
-      .huangou{ position: relative; width: px2rem(300); text-align: center; font-size: px2rem(24); margin: px2rem(30) auto;
-        .icnone{position: absolute; left: 0; top:50%; width:px2rem(30); height:px2rem(30); margin-top: px2rem(-15); z-index: 1; }
-        .icon{position: absolute; left: 0; top:50%; width:px2rem(30); height:px2rem(30); margin-top: px2rem(-15);z-index: 2; }
-        .icon{background: url("../images/icon-2.png") center no-repeat !important; background-size: 80% !important; }
-        .icon.on{background: url("../images/icon-2-h.png") center no-repeat !important; background-size: 80% !important;}
-      }
-
-    }
-    .buy_btn{width: px2rem(209); margin: 0 auto; line-height: px2rem(55); border: #716780 1px solid; font-size: px2rem(24); color: #2e2044; text-align: center;}
-    .card{width: px2rem(750); margin-top: px2rem(50);}
-    .chakan{width: px2rem(121); margin:px2rem(30) auto px2rem(37);}
-
-    .liwu{width: px2rem(750); margin-top: px2rem(130);}
-
+  .hy-title{ width: px2rem(710); margin:px2rem(50) auto; }
+  .sec-1{ height: px2rem(863); background:url("../images/sec-1.png") no-repeat; background-size: 100%; overflow: hidden;
+    .title{ width: px2rem(750); margin-top: px2rem(150);}
+    .cake{ top: px2rem(310); left:px2rem(30); width: px2rem(348); z-index: 1;}
+    .tip{ top: px2rem(180); left:50%; width: px2rem(712); margin-left: px2rem(-356); z-index: 2; display: none;}
+    .close{ top: px2rem(190); right:px2rem(30); width: px2rem(20); height: px2rem(30); background: url("../images/close.png") center no-repeat; background-size: 50%;  z-index: 3;}
+    .price{ top: px2rem(310); left:px2rem(400); width: px2rem(366);}
+    .txt{ bottom: px2rem(120);  width: px2rem(750);}
+    .buy_btn{ top: px2rem(595); left:px2rem(405);}
   }
-
-  .sec-footer{ position: relative; padding-bottom: px2rem(80); z-index:1; background: url("../images/foot-bg.png") bottom no-repeat; background-size: 100%;
-    .txt{ position: relative; width:px2rem(700); padding-top: px2rem(80); margin: 0 auto;  color: #56466b;
-      h2{font-size: px2rem(28); font-weight: normal; }
-      p{ font-size: px2rem(22); padding-left: px2rem(35); line-height:px2rem(40);  text-indent: px2rem(-35); margin:px2rem(5) 0;
+  .sec-2{ height: px2rem(823); background:url("../images/sec-2.png") no-repeat; background-size: 100%; overflow: hidden;
+    .title{ width: px2rem(750); margin-top: px2rem(150);}
+    .cake{ top: px2rem(340); left:px2rem(380); width: px2rem(348);}
+    .price{ top: px2rem(290); left:px2rem(60); width: px2rem(366);}
+    .buy_btn{ top: px2rem(620); left:px2rem(65);}
+  }
+  .sec-3{ height: px2rem(841); background:url("../images/sec-3.png") no-repeat; background-size: 100%; overflow: hidden;
+    .title{ width: px2rem(750); margin-top: px2rem(150);}
+    .cake{ top: px2rem(330); left:px2rem(30); width: px2rem(348);}
+    .price{ top: px2rem(310); left:px2rem(400); width: px2rem(366);}
+    .buy_btn{ top: px2rem(615); left:px2rem(405);}
+  }
+  .sec-4{ height: px2rem(880); background:url("../images/sec-4.png") no-repeat; background-size: 100%; overflow: hidden;
+    .title{ width: px2rem(750); margin-top: px2rem(150);}
+    .cake{ top: px2rem(370); left:px2rem(400); width: px2rem(348);}
+    .price{ top: px2rem(310); left:px2rem(60); width: px2rem(366);}
+    .buy_btn{ top: px2rem(645); left:px2rem(65);}
+  }
+  .sec-5{ height: px2rem(801); background:url("../images/sec-5.png") no-repeat; background-size: 100%; overflow: hidden;
+    .card{width: px2rem(750);}
+  }
+  .sec-footer{background:url("../images/sec-foot.png") no-repeat; background-size: 100%; position: relative; padding-bottom: px2rem(50); z-index:1;
+    .txt{ position: relative; width:px2rem(700); padding-top: px2rem(50); margin: 0 auto;  color:#fdf4e3;
+      h2{font-size: px2rem(24); font-weight: normal; }
+      p{ font-size: px2rem(22); padding-left: px2rem(35); line-height:px2rem(35);  text-indent: px2rem(-35); margin:px2rem(5) 0;
         span{display: block; padding-left: px2rem(10); text-indent: px2rem(-10);}
       }
     }
@@ -66,56 +56,9 @@
 }
 
 
-
-/*彈窗*/
-.Dialogbg{  background-color: #000;  height: 100%;  left: 0;  opacity: 0.7;  position: fixed;  top: 0;  width: 100%; z-index: 200; display: none;-moz-opacity:.7;filter:alpha(opacity=70); }
-
-.DialogBox{  box-shadow: 0 0 0 #999;  font-size:px2rem(14);  width:px2rem(600); height:auto !important; padding:px2rem(1); top: 50%; left: 50%;  margin:px2rem(-300) auto 0 px2rem(-300) !important;  position: fixed; z-index: 99999; display: none;
-  .closes{ width:px2rem(60); height:px2rem(60); position: absolute; top:px2rem(10); right:px2rem(10); cursor: pointer; z-index: 8; background: url("../images/close.png") center no-repeat; background-size: 60%;}
-  .quan{position: relative; padding:0; border-radius:px2rem(10); overflow: hidden;
-    img{margin: 0 auto; width: 100%;}
-    .txt{ width:px2rem(400); position: absolute; text-align: center; top:px2rem(140); left: 50%; margin-left:px2rem(-200); letter-spacing: px2rem(3); vertical-align: baseline !important;
-      h2{font-size:px2rem(24); color: #83481b; line-height:px2rem(50);}
-      span{ vertical-align: baseline !important; }
-      p{font-size:px2rem(24); line-height:px2rem(40); color: #8d0d0a; vertical-align: baseline !important;
-        span{font-weight: bold;}
-      }
-      .go-use{display: block; width:px2rem(180); margin:px2rem(30) auto; line-height:px2rem(43); cursor: pointer; background: #a80600; color: #fae4c5; border-radius:px2rem(43); text-align: center; font-size:px2rem(24);
-      }
-    }
-
-  }
-  .quan-2{
-    .go-use{bottom: px2rem(100);}
-  }
-}
-
-.swiper-container {
-  position: relative !important;
-  width: px2rem(657); height: px2rem(456);
-  margin-left: auto;
-  margin-right: auto;  overflow: hidden;
-}
-.swiper-slide {
-  text-align: center;
-  width:100%;
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-}
-.swiper-slide img{width: 100%;}
-.swiper-pagination{width: 100%; position: absolute !important; bottom:px2rem(10) !important; }
-.swiper-pagination-bullet{margin:0 px2rem(5) !important; background: #fff !important; opacity: 1 !important;}
-.swiper-pagination-bullet.swiper-pagination-bullet-active{background: #626262 !important;}
+.huangou{position: relative;width:100%; font-size:px2rem(22); color: #9b4245; margin:px2rem(10) auto px2rem(20); text-align: left; }
+.huangou p{ padding-left: px2rem(45);}
+.huangou .icon{position: absolute; top: 50%; margin-top: px2rem(-20); width: px2rem(40); height: px2rem(40); background: url("../images/icon-1.png") center no-repeat; background-size: 60%;}
+.huangou .icon.on{ background: url("../images/icon-1-h.png") center no-repeat; background-size: 60%;}
 
 

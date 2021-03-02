@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
     <title>mcake活动</title>
-
+    <!--<link rel="stylesheet" href="styles/swiper.min.css">-->
     <!-- build:css styles/index.css -->
     <link rel="stylesheet" href="../commoncss/wap-normalize.css">
+
     <link rel="stylesheet" href="styles/index.css">
     <!-- endbuild-->
 
@@ -24,26 +25,50 @@
     <div id="evt_loading" style="display:none;">0%</div>
     <div id="evt_content" style="display:none;">
         <div class="sec sec-top"></div>
-        <div class="sec sec-calendar">
-            <div class="calendar"><img src="images/calendar-1.png" alt=""></div>
-        </div>
-        <div class="sec-cake">
-            <div class="hy-title"><img src="images/hy-title-1.png" alt=""></div>
-            <div class="price">
-                <h2>活动价<i>￥</i><span class="dis-price">248.00</span>/2磅 <br><s>原价：￥<b class="old-price">298.00</b></s></h2>
-            </div>
-            <div class="buy-btn">立即购买</div>
-            <div class="cake"><img src="images/cake-tuijian.png" alt=""></div>
-        </div>
 
+        <div class="sec sec-quan">
+            <div class="hy-title"><img src="images/hy-title-1.png" alt=""></div>
+            <div class="ggk">
+                <div class="guaguaka" >
+                    <img src="images/dot.png" class="imageBackground" style="display: none;" alt="">
+                    <img src="images/cover.png" class="pictureOver" style="display: none;" alt="">
+                    <!--刮刮卡-->
+                    <div class="scratch_container scratch_container1" ontouchmove="return false;">
+                        <div class="scratch_viewport">
+                            <!-- result picture -->
+                            <canvas id="js-canvas1"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="scratch_container scratch_container2" ontouchmove="return false;">
+                        <div class="scratch_viewport">
+                            <!-- result picture -->
+                            <canvas id="js-canvas2"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="youhuiquan"></div>
+                    <div class="shou shoudong"></div>
+                </div>
+                <div class="get-btn"><img src="images/get-btn.png" alt=""></div>
+                <div class="get-agin" style="display: none;"><img src="images/get-agin.png" alt=""></div>
+                <p>50积分再试一次，每人限一次</p>
+            </div>
+        </div>
         <div class="sec sec-main products">
 
             <div class="hy-title"><img src="images/hy-title-2.png" alt=""></div>
-            <div class="row row1" data-pond="1磅"  data-weight="618g"  data-price="198" data-postId="0,1,2" data-sku="1" data-method="1" data-pid="1" data-ptype="101" data-channel="6">
-                <div class="cake"><img src="https://act.mcake.com/fangli/2018/wap/common/no.jpg" alt="" src-fix="cake-1_png"></div>
+
+            <div class="row row1"  data-pond="1磅,2磅,3磅"  data-weight="618g,1.13kg,1.58kg"  data-price="198,298,428" data-postId="0,1,2" data-sku="1,2,3" data-method="1,2,3" data-pid="1,2,3" data-ptype="101,102,103" data-channel="6,7,8">
+                <div class="cake">
+                    <div class="icon"></div>
+                    <img src="https://act.mcake.com/fangli/2018/wap/common/no.jpg" alt="" src-fix="cake-1_png"></div>
                 <div class="price js_price">
+
+                    <!--<div class="jf jf_20"></div>-->
                     <div class="title"> <img src="https://act.mcake.com/fangli/2018/wap/common/no.jpg" alt="" src-fix="t-1_png"></div>
-                    <h2>活动价<i>￥</i><span class="dis-price">178</span><em class="d-pond"></em> <s>原价：￥<b class="old-price">198</b></s></h2>
+                    <h2>
+                        满减价 <i>￥</i><span class="dis-price">178</span><em class="d-pond"></em> <s>原价￥<b class="old-price">198</b></s></h2>
                     <ul class="buy_btn_box clearfix">
                         <li class="buybtn go-buy" data-oldPrice="" data-bs="" data-sku="" data-method="" data-pid="" data-ptype="" data-channel="" data-num="" ><span>立即购买</span></li>
                     </ul>
@@ -54,11 +79,16 @@
                     </div>
                 </div>
             </div>
-            <div class="row row2" data-pond="1.5磅,2.5磅,3磅"  data-weight="618g,1.13kg,1.58kg"  data-price="218,318,428" data-postId="0,1,2" data-sku="1,2,3" data-method="1,2,3" data-pid="1,2,3" data-ptype="101,102,103" data-channel="6,7,8">
-                <div class="cake"><img src="https://act.mcake.com/fangli/2018/wap/common/no.jpg" alt="" src-fix="cake-2_png"></div>
+            <div class="row row2" data-pond="1.5磅,2.5磅,3磅"  data-weight="618g,1.13kg,1.58kg"  data-price="298,398,428" data-postId="0,1,2" data-sku="1,2,3" data-method="1,2,3" data-pid="1,2,3" data-ptype="101,102,103" data-channel="6,7,8">
+                <div class="cake">
+                    <div class="icon"></div>
+                    <img src="https://act.mcake.com/fangli/2018/wap/common/no.jpg" alt="" src-fix="cake-2_png"></div>
                 <div class="price js_price">
+                   <!-- <div class="jf jf_20"></div>-->
                     <div class="title"> <img src="https://act.mcake.com/fangli/2018/wap/common/no.jpg" alt="" src-fix="t-2_png"></div>
-                    <h2>活动价<i>￥</i><span class="dis-price">178</span><em class="d-pond"></em> <s>原价：￥<b class="old-price">198</b></s></h2>
+                    <h2>
+                        满减价 <i>￥</i><span class="dis-price">178</span><em class="d-pond"></em> <s>原价￥<b class="old-price">198</b></s>
+                    </h2>
                     <ul class="buy_btn_box clearfix">
                         <li class="buybtn go-buy" data-oldPrice="" data-bs="" data-sku="" data-method="" data-pid="" data-ptype="" data-channel="" data-num="" ><span>立即购买</span></li>
                     </ul>
@@ -70,10 +100,32 @@
                 </div>
             </div>
             <div class="row row3" data-pond="1磅,2磅,3磅"  data-weight="618g,1.13kg,1.58kg"  data-price="198,298,428" data-postId="0,1,2" data-sku="1,2,3" data-method="1,2,3" data-pid="1,2,3" data-ptype="101,102,103" data-channel="6,7,8">
-                <div class="cake"><img src="https://act.mcake.com/fangli/2018/wap/common/no.jpg" alt="" src-fix="cake-3_png"></div>
+                <div class="cake"> <div class="icon"></div>
+                    <img src="https://act.mcake.com/fangli/2018/wap/common/no.jpg" alt="" src-fix="cake-3_png"></div>
                 <div class="price js_price">
+                    <!--<div class="jf jf_20"></div>-->
                     <div class="title"> <img src="https://act.mcake.com/fangli/2018/wap/common/no.jpg" alt="" src-fix="t-3_png"></div>
-                    <h2>活动价<i>￥</i><span class="dis-price">178</span><em class="d-pond"></em> <s>原价：￥<b class="old-price">198</b></s></h2>
+                    <h2>
+                        满减价 <i>￥</i><span class="dis-price">178</span><em class="d-pond"></em> <s>原价￥<b class="old-price">198</b></s></h2>
+                    <ul class="buy_btn_box clearfix">
+                        <li class="buybtn go-buy" data-oldPrice="" data-bs="" data-sku="" data-method="" data-pid="" data-ptype="" data-channel="" data-num="" ><span>立即购买</span></li>
+                    </ul>
+                    <div class="pro-num">
+                        <a href="javascript:;" class="minus"></a>
+                        <span class="bang">2磅(908g)</span>
+                        <a href="javascript:;" class="plus"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row row4" data-pond="1.5磅,2.5磅,3磅"  data-weight="618g,1.13kg,1.58kg"  data-price="218,318,428" data-postId="0,1,2" data-sku="1,2,3" data-method="1,2,3" data-pid="1,2,3" data-ptype="101,102,103" data-channel="6,7,8">
+                <div class="cake">
+                    <div class="icon"></div>
+                    <img src="https://act.mcake.com/fangli/2018/wap/common/no.jpg" alt="" src-fix="cake-4_png"></div>
+                <div class="price js_price">
+                    <!--<div class="jf jf_20"></div>-->
+                    <div class="title"> <img src="https://act.mcake.com/fangli/2018/wap/common/no.jpg" alt="" src-fix="t-4_png"></div>
+                    <h2>
+                        满减价 <i>￥</i><span class="dis-price">178</span><em class="d-pond"></em> <s>原价￥<b class="old-price">198</b></s></h2>
                     <ul class="buy_btn_box clearfix">
                         <li class="buybtn go-buy" data-oldPrice="" data-bs="" data-sku="" data-method="" data-pid="" data-ptype="" data-channel="" data-num="" ><span>立即购买</span></li>
                     </ul>
@@ -86,19 +138,15 @@
             </div>
         </div>
 
-
         <div class="sec-footer">
             <div class="txt">
-                <h2>活动规则</h2>
-                <p>1、活动时间：2020年3月3日-2020年3月31日（每周二上午10：00）</p>
+                <h2>活动规则：</h2>
+                <p>1、活动时间：2021年3月2日-2021年3月31日（每周二上午10：00）</p>
                 <p>2、活动城市：上海、北京、苏州、杭州</p>
-                <p>3、支付方式：微信、支付宝、现金，本活动仅限使用微信、支付宝或现金全额支付的用户参与 </p>
-                <p>4、活动内容：<br/>
-                    活动页面购买鼠嘟嘟（2磅），可立减50元<br/>
-                    活动页面购买爱之风物诗、黛西的旅行、蓝莓轻乳拿破仑，满198元立减20元，满298元立减40元，满428元立减60元</p>
-                <p>5、单笔订单中立减商品不可与优惠券同享</p>
-                <p>6、本活动不与其他优惠同享</p>
-                <p>7、本活动最终解释权归MCAKE所有 </p>
+                <p>3、支付方式：微信、支付宝、现金，本活动仅限使用微信、支付宝或现金全额支付的用户参与</p>
+                <p>4、活动内容：<br>活动页面购买爱丽丝花境、安逸兔、摩登茶道、白色恋人，满198元立减20元，满298元立减40元（仅1/2磅参加）</p>
+                <p>5、现金红包有效期：自领取之日起至2021年3月31日，每人仅有一次使用积分抽取红包的机会</p>
+                <p>6、本活动与会员等级制度、积分同享，但不与其他优惠同享</p>
             </div>
         </div>
     </div>
@@ -113,10 +161,70 @@
 <script src="../commonjs/pubsub.js"></script>
 <script src="../commonjs/loader.js"></script>
 <script src="scripts/resdata.js"></script>
+<script src="scripts/guaguaka.js"></script>
 <script src="scripts/slider-new.js"></script>
 <script src="scripts/index.js"></script>
 <!-- endbuild -->
+<script>
+    $(".ggk").each(function (i) {
 
+        $(this).find(".cover").on('touchstart',function(e) {
+            $(this).fadeOut(500);
+        });
+
+        var self = $(this);
+        var data ={"pid":'1811','money':"5"};  //中一等奖
+        /*刮刮卡*/
+        var imageBackground=$(this).find(".imageBackground").attr("src");   /*刮开之后的底图*/
+        var pictureOver=$(this).find(".pictureOver").attr("src");  /*覆盖图*/
+        var canvasId=$(this).find('js-canvas'+i).selector;
+        var scratch = new Scratch({
+            canvasId: 'js-canvas1',
+            imageBackground: imageBackground,
+            pictureOver: pictureOver,
+            cursor: {
+                x: '-20',
+                y: '-20'
+            },
+            radius: 20,
+            nPoints: 1000,
+            percent: 1,
+            pointSize: { x: 5, y: 5},
+            callback: function () {/*刮刮之后的函数*/
+                choujiang(self, data);
+                $(".get-btn").fadeOut(0);
+                $(".get-agin").fadeIn(10);
+            }
+        });
+
+        $(".get-agin").click(function () {
+            $(".scratch_container2").fadeIn(0);
+            $(".get-btn").fadeIn(10);
+            $(".get-agin").fadeOut(0);
+            $(".shou").fadeIn(0);
+            var scratch2 = new Scratch({
+                canvasId: 'js-canvas2',
+                imageBackground: imageBackground,
+                pictureOver: pictureOver,
+                cursor: {
+                    x: '-20',
+                    y: '-20'
+                },
+                radius: 20,
+                nPoints: 1000,
+                percent: 1,
+                pointSize: { x: 5, y: 5},
+                callback: function () {/*刮刮之后的函数*/
+                    choujiang(self, data);
+                    $(".get-btn").fadeIn(10);
+                    $(".get-agin").fadeOut(0);
+                }
+            });
+        });
+    });
+
+
+</script>
 
 </body>
 </html>

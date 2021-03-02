@@ -1,0 +1,65 @@
+@function px2rem($n) {
+  @return ($n * 10 / 750) * 1rem; //设计稿一般都是750宽
+}
+
+@mixin font-dpr($font-size){
+  font-size: $font-size;
+
+  [data-dpr="2"] & {
+    font-size: $font-size * 2;
+  }
+
+  [data-dpr="3"] & {
+    font-size: $font-size * 3;
+  }
+
+}
+*{ vertical-align: baseline !important;}  /*价格符号不对齐*/
+#evt_content{ background:url("../images/bg.png") repeat; background-size: 5%;
+  img{width:100%; display: block;}
+  .sec{position: relative; }
+
+  .sec-top{
+    height: px2rem(954); background:url("../images/banner.png") repeat; background-size: 100%; z-index: 1; overflow: hidden;
+
+  }
+
+  .buy-btn{position: absolute; top: px2rem(200); left: 50%; margin-left: px2rem(-105); width:px2rem(211); }
+  .hy-title{position: relative; width: px2rem(750); margin:0 auto; }
+  .cakes{position: relative;}
+  .sec-1{ width: px2rem(750); height: px2rem(956); background: url("../images/sec-1.png") center top no-repeat; background-size: 100%; z-index: 1;
+    .cakes{width: px2rem(750); margin: 0 auto;}
+    .buy-btn{ top: px2rem(650); margin-left: px2rem(-305);}
+  }
+
+  .sec-2{
+    .hy-title{position: relative; width: px2rem(406); margin:px2rem(30) auto; }
+    .cakes{width: px2rem(750);}
+    .buy-btn{ top: px2rem(1000); }
+  }
+  .sec-3{ padding-bottom: px2rem(50);
+    .cakes{width: px2rem(750);}
+    .buy-btn{ top: px2rem(315); margin-left: px2rem(25); }
+    .cakes2{
+      .buy-btn{ top: px2rem(285); margin-left: px2rem(-320); }
+    }
+    .cakes3{
+      .buy-btn{ top: px2rem(315); margin-left: px2rem(50); }
+    }
+  }
+  .sec-footer{ height: px2rem(897); background:url("../images/sec-foot.png") top; background-size: 100%; position: relative; overflow: hidden;
+    .txt{ position: relative; width:px2rem(660); margin:px2rem(150) auto 0;  color:#edbdac;
+      h2{font-size: px2rem(28); font-weight: normal; }
+      p{ font-size: px2rem(23); padding-left: px2rem(35); line-height:px2rem(40);  text-indent: px2rem(-35);
+        margin:px2rem(5) 0;
+        span{display: block; padding-left: px2rem(10); text-indent: px2rem(-10);}
+      }
+    }
+  }
+
+}
+
+#snow{position:fixed; top:0; left:0; display:block; pointer-events:none; z-index: 10;}
+
+
+

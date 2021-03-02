@@ -46,8 +46,8 @@ var Scratch = (function () {
             imageBackground: '', // Path [src]
             pictureOver: '', // Path [src]
             cursor: this.cursor, // Custom pointer
-            sceneWidth: 302, // Canvas width
-            sceneHeight: 60, // Canvas height
+            sceneWidth: 402, // Canvas width
+            sceneHeight: 160, // Canvas height
             radius: 40, // Radius of scratch zone
             nPoints: 10, // n points for clear canvas
             pointSize: this.pointSize,
@@ -243,6 +243,8 @@ var Scratch = (function () {
 
     Scratch.prototype.callback = function(callback) {
         if (callback != null && this.percent >= this.options.percent) {
+             console.log(this.percent,this.options.percent)
+            console.log(111111111111111111111)
             callback();
         }
     };

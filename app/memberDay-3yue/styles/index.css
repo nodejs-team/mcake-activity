@@ -5,8 +5,6 @@
 /*价格符号不对齐*/
 #evt_content {
   width: 10rem;
-  background: url("../images/bg.png");
-  background-size: 16%;
   /*价格计算【通用】*/ }
   #evt_content img {
     width: 100%;
@@ -15,167 +13,239 @@
     position: relative; }
   #evt_content .sec-top {
     width: 10rem;
-    height: 11.82667rem;
-    background: url("../images/banner-wap.png") repeat;
+    height: 13.8rem;
+    background: url("../images/banner.png") no-repeat;
     background-size: 100%;
     z-index: 1;
     overflow: hidden; }
   #evt_content .hy-title {
     width: 10rem;
-    margin: 1.02667rem auto 1.02667rem; }
-  #evt_content .sec-calendar {
-    margin-top: -1.73333rem;
-    z-index: 2; }
-    #evt_content .sec-calendar .calendar {
-      width: 10rem;
-      margin: 0 auto; }
-  #evt_content .sec-cake {
-    position: relative;
-    z-index: 2; }
-    #evt_content .sec-cake .cake {
-      position: relative;
-      width: 10rem;
-      margin: 0 auto; }
-    #evt_content .sec-cake .price {
-      position: absolute;
-      bottom: 0.4rem;
-      left: 0.66667rem;
-      line-height: 0.26667rem !important; }
-      #evt_content .sec-cake .price h2 {
-        color: #a0714a; }
-      #evt_content .sec-cake .price s {
-        color: #a0714a;
-        margin-left: 0 !important; }
-    #evt_content .sec-cake .buy-btn {
-      position: absolute;
-      width: 2.45333rem;
-      bottom: 0.8rem;
-      left: 6.66667rem;
-      background: #a0714a;
-      color: #fff;
+    margin: 0.8rem auto 0.53333rem; }
+  #evt_content .icon {
+    position: absolute;
+    width: 1rem;
+    height: 1.26667rem;
+    top: 0;
+    left: 0.26667rem; }
+  #evt_content .icon_20 {
+    background: url("../images/icon_20.png") no-repeat;
+    background-size: 100%; }
+  #evt_content .icon_40 {
+    background: url("../images/icon_40.png") no-repeat;
+    background-size: 100%; }
+  #evt_content .icon_60 {
+    background: url("../images/icon_60.png") no-repeat;
+    background-size: 100%; }
+  #evt_content .buy_btns {
+    position: absolute;
+    width: 1.97333rem;
+    top: 6.13333rem;
+    left: 1.2rem;
+    background: #c99d70;
+    border-radius: 0.66667rem; }
+    #evt_content .buy_btns span {
+      display: block;
       line-height: 0.66667rem;
-      border-radius: 0.66667rem;
+      font-size: 0.24rem;
+      color: #fff;
       text-align: center;
-      z-index: 2; }
+      cursor: pointer; }
+  #evt_content .buy_btns.end {
+    background: #ababab; }
+  #evt_content .sec-quan {
+    width: 10rem;
+    height: 13.14667rem;
+    padding: 0;
+    background: url("../images/sec-quan.png") no-repeat;
+    background-size: 100%;
+    overflow: hidden;
+    /*刮刮卡*/ }
+    #evt_content .sec-quan .guaguaka {
+      position: relative;
+      margin: 0 auto;
+      width: 9.44rem;
+      height: 6.69333rem;
+      z-index: 90; }
+    #evt_content .sec-quan .scratch_container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 9.44rem;
+      height: 6.69333rem; }
+    #evt_content .sec-quan .scratch_container2 {
+      display: none; }
+    #evt_content .sec-quan .scratch_viewport {
+      position: relative;
+      width: 9.44rem;
+      height: 6.69333rem;
+      margin: 0 auto;
+      z-index: 0; }
+    #evt_content .sec-quan .scratch_picture-under {
+      width: 9.44rem;
+      height: 6.69333rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      z-index: -1; }
+    #evt_content .sec-quan .scratch_container canvas {
+      background-size: 100%;
+      width: 9.44rem;
+      height: 6.69333rem;
+      position: relative;
+      z-index: 1; }
+    #evt_content .sec-quan .youhuiquan {
+      width: 100%;
+      height: 100%;
+      font-size: 0.30667rem;
+      text-align: center;
+      line-height: 0.8rem;
+      color: #cc2924;
+      letter-spacing: 2px;
+      z-index: 1; }
+    #evt_content .sec-quan .youhuiquan.quan-5 {
+      background: url("../images/quan-5.png");
+      background-size: 100%; }
+    #evt_content .sec-quan .youhuiquan.quan-10 {
+      background: url("../images/quan-10.png");
+      background-size: 100%; }
+    #evt_content .sec-quan .youhuiquan.quan-15 {
+      background: url("../images/quan-15.png");
+      background-size: 100%; }
+    #evt_content .sec-quan .shou {
+      position: absolute;
+      bottom: 0.66667rem;
+      right: 1.33333rem;
+      width: 0.77333rem;
+      height: 1.18667rem;
+      background: url("../images/shou.png");
+      background-size: 100%;
+      z-index: 5; }
+    #evt_content .sec-quan .get-btn, #evt_content .sec-quan .get-agin {
+      width: 2.66667rem;
+      margin: 0.66667rem auto 0.4rem;
+      cursor: pointer; }
+    #evt_content .sec-quan p {
+      text-align: center;
+      color: #758f84; }
   #evt_content .sec-main {
     width: 10rem;
-    padding: 1px 0 0.26667rem; }
-    #evt_content .sec-main .dis {
-      position: absolute;
-      width: 0.69333rem;
-      left: 0;
-      top: 1.33333rem; }
+    padding: 0;
+    background: url("../images/bg.png") repeat;
+    background-size: 20%;
+    overflow: hidden; }
     #evt_content .sec-main .pro-num {
       position: relative;
       float: left;
-      width: 2.66667rem;
-      height: 0.6rem;
+      width: 2.50667rem;
+      height: 0.66667rem;
       display: inline-block;
-      border: #5b9589 1px solid;
-      border-radius: 0.6rem; }
+      border: 1px solid #6a8a7f;
+      margin-left: 0.06667rem;
+      border-radius: 0.66667rem; }
       #evt_content .sec-main .pro-num a {
         position: absolute;
-        top: -0.26667rem;
+        top: 50%;
         width: 1.06667rem;
         height: 1.06667rem;
+        margin-top: -0.53333rem;
         display: block;
         z-index: 2; }
       #evt_content .sec-main .pro-num .minus {
         display: inline-block;
         background: url(../images/in-a-1.png) center no-repeat;
-        left: -0.26667rem;
+        left: -0.2rem;
         background-size: 50%; }
       #evt_content .sec-main .pro-num .plus {
         display: inline-block;
         background: url(../images/in-a-2.png) center no-repeat;
-        right: -0.26667rem;
+        right: -0.13333rem;
         background-size: 50%; }
       #evt_content .sec-main .pro-num .bang {
         display: inline-block;
         width: 1.73333rem;
-        line-height: 0.6rem;
+        line-height: 0.64rem;
         position: absolute;
         top: 0;
-        left: 0.46667rem;
+        left: 0.33333rem;
         text-align: center;
-        color: #5b9589;
+        color: #6a8a7f;
         background: none;
-        font-size: 0.26667rem;
+        font-size: 0.24rem;
         padding: 0;
         z-index: 1; }
     #evt_content .sec-main .row {
       position: relative; }
       #evt_content .sec-main .row .cake {
-        position: absolute; }
+        position: absolute;
+        width: 4.66667rem; }
       #evt_content .sec-main .row .price {
         position: absolute; }
     #evt_content .sec-main .row1 {
-      height: 5.6rem; }
+      height: 6.66667rem; }
       #evt_content .sec-main .row1 .cake {
-        width: 4rem;
         top: 0;
-        left: 0.26667rem;
+        left: 0.06667rem;
         z-index: 1; }
       #evt_content .sec-main .row1 .price {
-        top: 0.66667rem;
+        top: 0.8rem;
         left: auto;
-        right: 0; }
+        right: -0.4rem; }
     #evt_content .sec-main .row2 {
-      height: 5.6rem; }
+      height: 6.66667rem; }
       #evt_content .sec-main .row2 .cake {
-        width: 4rem;
         top: 0;
-        right: 0.26667rem;
+        right: 0.06667rem;
         z-index: 1; }
+      #evt_content .sec-main .row2 .icon {
+        left: auto;
+        right: 0.26667rem; }
       #evt_content .sec-main .row2 .price {
-        top: 0.66667rem;
-        left: 0.4rem;
+        top: 0.8rem;
+        left: 0.26667rem;
         z-index: 2; }
     #evt_content .sec-main .row3 {
-      height: 5.6rem; }
+      height: 6.66667rem; }
       #evt_content .sec-main .row3 .cake {
-        width: 4rem;
         top: 0;
-        left: 0.26667rem;
+        left: 0.06667rem;
         z-index: 1; }
       #evt_content .sec-main .row3 .price {
-        top: 0.66667rem;
+        top: 0.8rem;
         left: auto;
-        right: 0; }
-    #evt_content .sec-main .code {
-      width: 10rem;
-      padding: 0.66667rem 0; }
-    #evt_content .sec-main .more {
-      width: 2.66667rem;
-      position: relative;
-      margin: 0.53333rem auto;
-      background: #cd686d;
-      border-radius: 0.66667rem;
-      text-align: center; }
-      #evt_content .sec-main .more span {
-        display: block;
-        color: #fff;
-        font-size: 0.29333rem;
-        line-height: 0.66667rem; }
+        right: -0.4rem; }
+    #evt_content .sec-main .row4 {
+      height: 6.66667rem; }
+      #evt_content .sec-main .row4 .icon {
+        left: auto;
+        right: 0.26667rem; }
+      #evt_content .sec-main .row4 .cake {
+        top: 0;
+        right: 0.06667rem;
+        z-index: 1; }
+      #evt_content .sec-main .row4 .price {
+        top: 0.8rem;
+        left: 0.26667rem;
+        z-index: 2; }
   #evt_content .sec-footer {
-    background: url("../images/foot-bg.png") repeat;
-    background-size: 10%;
     position: relative;
-    padding-bottom: 0.66667rem;
-    z-index: 1; }
+    padding-bottom: 1.33333rem;
+    z-index: 1;
+    background: url("../images/foot-bg.png") repeat;
+    background-size: 20%; }
     #evt_content .sec-footer .txt {
       position: relative;
       width: 9.33333rem;
-      padding-top: 1.06667rem;
+      padding-top: 1.33333rem;
       margin: 0 auto;
-      color: #4c380d; }
+      color: #758f84; }
       #evt_content .sec-footer .txt h2 {
-        font-size: 0.37333rem;
+        font-size: 0.29333rem;
         font-weight: normal; }
       #evt_content .sec-footer .txt p {
-        font-size: 0.29333rem;
+        font-size: 0.28rem;
         padding-left: 0.46667rem;
-        line-height: 0.53333rem;
+        line-height: 0.73333rem;
         text-indent: -0.46667rem;
         margin: 0.06667rem 0; }
         #evt_content .sec-footer .txt p span {
@@ -188,25 +258,26 @@
     z-index: 2; }
     #evt_content .price .title {
       position: relative;
-      width: 4.70667rem;
+      width: 2.2rem;
       margin: 0.13333rem 0 0.66667rem 0; }
     #evt_content .price h2 {
-      font-size: 0.26667rem;
+      position: relative;
+      font-size: 0.32rem;
       font-weight: normal;
-      line-height: 0.66667rem;
-      color: #5b9589; }
+      line-height: 1.06667rem;
+      color: #6a8a7f; }
       #evt_content .price h2 i {
-        font-size: 0.26667rem;
+        font-size: 0.32rem;
         line-height: 0.4rem;
         font-style: normal;
         vertical-align: middle; }
       #evt_content .price h2 span {
-        font-size: 0.45333rem; }
+        font-size: 0.32rem; }
       #evt_content .price h2 em {
         font-style: normal; }
     #evt_content .price s {
       font-size: 0.26667rem;
-      color: #000;
+      color: #6a8a7f;
       font-weight: normal;
       margin-left: 0.13333rem; }
       #evt_content .price s span {
@@ -214,18 +285,27 @@
       #evt_content .price s b {
         font-weight: normal; }
     #evt_content .price ul.buy_btn_box {
-      width: 2rem;
+      width: 2.25333rem;
       overflow: hidden;
-      margin: 0 0.26667rem 0 0;
+      margin: 0;
       float: left; }
     #evt_content .price ul.buy_btn_box li span {
       display: block;
-      background: #5b9589 none repeat scroll 0 0;
-      color: #fff;
-      cursor: pointer;
-      line-height: 0.56rem;
-      padding-top: 0.02667rem;
-      font-size: 0.29333rem;
+      width: 2.25333rem;
+      background: #e0e9d4;
+      border-radius: 0.66667rem;
+      line-height: 0.66667rem;
       text-align: center;
-      border-radius: 0.36667rem;
-      width: 2rem; }
+      font-size: 0.24rem;
+      color: #6a8a7f; }
+
+.shoudong {
+  animation: shoudong 1.5s infinite alternate; }
+
+@keyframes shoudong {
+  0% {
+    transform: translate3d(-10px, 0, 0);
+    transform-origin: 50% 100%; }
+  100% {
+    transform: translate3d(10px, 0, 0);
+    transform-origin: 50% 100%; } }

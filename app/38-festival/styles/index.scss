@@ -1,0 +1,103 @@
+@function px2rem($n) {
+  @return ($n * 10 / 750) * 1rem; //设计稿一般都是750宽
+}
+*{ vertical-align: baseline !important;}  /*价格符号不对齐*/
+#evt_content{width: px2rem(750); background:#ffdbae;
+  img{width:100%; display: block;}
+  .sec{position: relative; }
+
+  .sec-top{ width: px2rem(750); height: px2rem(627); background:url("../images/banner.png") no-repeat; background-size: 100%; z-index: 1; overflow: hidden;}
+
+
+  .hy-title{ width: px2rem(492); margin:px2rem(40) auto px2rem(60); }
+
+
+
+  .sec-1{ width: px2rem(750); height: px2rem(815); overflow: hidden; background:url("../images/sec-1.png") no-repeat;  background-size: 100%;
+    .prize{margin:px2rem(30) auto 0; width:px2rem(726); padding:px2rem(50) px2rem(5);background:url("../images/award-bg.png") center top no-repeat; background-size: 100%;
+      ul{ margin: 0 auto; display: flex; flex-wrap: wrap; float: left;
+        li{position: relative; width:px2rem(194); height: px2rem(194); background:url("../images/award-li.png") center top no-repeat; background-size: 100%;  margin: 0 px2rem(22) px2rem(25);
+          .award{width:px2rem(194); height: px2rem(194);}
+          &:nth-of-type(1) .award{ background:url("../images/award-1.png") center top no-repeat; background-size: 100%; }
+          &:nth-of-type(2) .award{ background:url("../images/award-2.png") center top no-repeat; background-size: 100%; }
+          &:nth-of-type(3) .award{ background:url("../images/award-3.png") center top no-repeat; background-size: 100%; }
+          &:nth-of-type(4) .award{ background:url("../images/award-4.png") center top no-repeat; background-size: 100%; }
+          &:nth-of-type(5){background: none !important;}
+          &:nth-of-type(5) .award{ background:url("../images/award-btn.png") center top no-repeat; background-size: 100%;  cursor: pointer;}
+          &:nth-of-type(6) .award{ background:url("../images/award-5.png") center top no-repeat; background-size: 100%; }
+          &:nth-of-type(7) .award{ background:url("../images/award-6.png") center top no-repeat; background-size: 100%; }
+          &:nth-of-type(8) .award{ background:url("../images/award-7.png") center top no-repeat; background-size: 100%; }
+          &:nth-of-type(9) .award{ background:url("../images/award-8.png") center top no-repeat; background-size: 100%; }
+          &.on{ background: url("../images/award-li-on.png") center top no-repeat; background-size: 100%; }
+        }
+      }
+    }
+  }
+
+  .sec-2{ width: px2rem(750); height: px2rem(2176); background:url("../images/sec-2.png") no-repeat; background-size: 100%; overflow: hidden;
+
+    .cake{ position: relative;
+      .go-buy{ position: absolute; left: px2rem(80); bottom: px2rem(120); width: px2rem(115); height: px2rem(36); background: url("../images/go-buy.png"); background-size: 100%; }
+      &:nth-of-type(3){
+        .go-buy{left: px2rem(450); bottom: px2rem(125);}
+      }
+      &:nth-of-type(4){
+        .go-buy{ bottom: px2rem(110);}
+      }
+      &:nth-of-type(5){
+        .go-buy{left: px2rem(450); bottom: px2rem(110);}
+      }
+    }
+  }
+
+  .sec-3{ width: px2rem(750); overflow: hidden; height: px2rem(1192); background:url("../images/sec-3.png") no-repeat; background-size: 100%;
+    .select-li{ width: px2rem(740); margin: 0 auto;
+      li{ width: px2rem(350); margin:px2rem(10) px2rem(10); float: left; text-align: center; background: #fff; padding:px2rem(22);
+        .price-select{padding:px2rem(10); font-size:px2rem(20); color: #6c5b7d; margin-top:px2rem(10);
+          b{font-size:px2rem(28); color: #fd7723; font-weight: normal;}
+          i{font-size:px2rem(14); font-style: normal;}
+        }
+        img{margin:0 auto;}
+        .mun{width:px2rem(110); margin:px2rem(12) auto;
+          dd{float: left;}
+          dt{float: left; width:px2rem(40); text-align: center; line-height:px2rem(30);
+            span{display: block; color: #594215;}
+          }
+          .nopoint{ width:px2rem(34); height:px2rem(30); background: url("../images/jian.png") center no-repeat; background-size: 80%;  cursor: pointer;}
+          .nopoint.add{background: url("../images/jia.png") center no-repeat; background-size: 80%; }
+        }
+      }
+    }
+    .go-btn{ width:px2rem(115); height:px2rem(36); background:url("../images/go-buy.png"); background-size: 100%;  cursor: pointer; margin: 0 auto;}
+  }
+
+  .sec-footer{ position: relative; padding-bottom: px2rem(200); z-index:1; background:url("../images/sec-4.png") no-repeat; background-size: 100%;
+    .txt{ position: relative; width:px2rem(700); padding-top: px2rem(150); margin: 0 auto;  color: #614a5c;
+      h2{font-size: px2rem(22); font-weight: normal; }
+      p{ font-size: px2rem(21); padding-left: px2rem(35); line-height:px2rem(35);  text-indent: px2rem(-35); margin:px2rem(5) 0;
+        span{display: block; text-indent: px2rem(80);}
+      }
+    }
+  }
+}
+
+
+/*彈窗*/
+.Dialogbg-quan{  background-color: #000;  height: 100%;  left: 0;  opacity: 0.7;  position: fixed;  top: 0;  width: 100%; z-index: 200; display: none; }
+
+.Dialog-quan{   position: fixed; width:px2rem(448); height: px2rem(323); top: 50%; left: 50%;  z-index: 99999; margin: px2rem(-162.5) 0 0 px2rem(-224); display: none;
+  img{width: 100%;}
+  .closes{ width:px2rem(30); height:px2rem(30); position: absolute; top:px2rem(-40); right:0;  cursor: pointer; z-index: 8; background: url("../images/close.png") no-repeat; background-size: 100%;}
+  .quan{position: relative; display: none; text-align: center; width:px2rem(448); height: px2rem(323);
+    .go-use {display: block; position: absolute; bottom:px2rem(92); left: 50%; width: px2rem(298); height: px2rem(72); margin-left:px2rem(-148); cursor: pointer; background: #000;  opacity: 0;
+    }
+  }
+  .quan-1{ background: url("../images/quan-1.png"); background-size: 100%;}
+  .quan-2{ background: url("../images/quan-2.png"); background-size: 100%;}
+  .quan-3{ background: url("../images/quan-3.png"); background-size: 100%;}
+  .quan-4{ background: url("../images/quan-4.png"); background-size: 100%;}
+  .quan-5{ background: url("../images/quan-5.png"); background-size: 100%;}
+  .quan-6{ background: url("../images/quan-6.png"); background-size: 100%;}
+  .quan-7{ background: url("../images/quan-7.png"); background-size: 100%;}
+  .quan-8{ background: url("../images/quan-8.png"); background-size: 100%;}
+}

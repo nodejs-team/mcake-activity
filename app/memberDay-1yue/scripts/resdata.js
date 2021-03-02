@@ -1,43 +1,23 @@
 var resData = [
     {
-        "name":"hy-title-2_png",
+        "name":"price-6_png",
         "type":"image",
-        "url":"hy-title-2.png"
+        "url":"price-6.png"
     },
     {
-        "name":"in-a-1_png",
+        "name":"banner_png",
         "type":"image",
-        "url":"in-a-1.png"
+        "url":"banner.png"
     },
     {
-        "name":"in-a-2_png",
+        "name":"btn-1_png",
         "type":"image",
-        "url":"in-a-2.png"
+        "url":"btn-1.png"
     },
     {
-        "name":"t-1_png",
+        "name":"btn-2_png",
         "type":"image",
-        "url":"t-1.png"
-    },
-    {
-        "name":"t-2_png",
-        "type":"image",
-        "url":"t-2.png"
-    },
-    {
-        "name":"t-3_png",
-        "type":"image",
-        "url":"t-3.png"
-    },
-    {
-        "name":"xinnian_png",
-        "type":"image",
-        "url":"xinnian.png"
-    },
-    {
-        "name":"banner-wap_png",
-        "type":"image",
-        "url":"banner-wap.png"
+        "url":"btn-2.png"
     },
     {
         "name":"cake-1_png",
@@ -55,28 +35,58 @@ var resData = [
         "url":"cake-3.png"
     },
     {
-        "name":"cake-tuijian_png",
+        "name":"cake-4_png",
         "type":"image",
-        "url":"cake-tuijian.png"
+        "url":"cake-4.png"
     },
     {
-        "name":"canyu-btn_png",
+        "name":"cake-5_png",
         "type":"image",
-        "url":"canyu-btn.png"
+        "url":"cake-5.png"
     },
     {
-        "name":"dis-1_png",
+        "name":"cake-6_png",
         "type":"image",
-        "url":"dis-1.png"
+        "url":"cake-6.png"
     },
     {
-        "name":"hongbao_png",
+        "name":"close_png",
         "type":"image",
-        "url":"hongbao.png"
+        "url":"close.png"
+    },
+    {
+        "name":"close2_png",
+        "type":"image",
+        "url":"close2.png"
     },
     {
         "name":"hy-title-1_png",
         "type":"image",
         "url":"hy-title-1.png"
+    },
+    {
+        "name":"price-1_png",
+        "type":"image",
+        "url":"price-1.png"
+    },
+    {
+        "name":"price-2_png",
+        "type":"image",
+        "url":"price-2.png"
+    },
+    {
+        "name":"price-3_png",
+        "type":"image",
+        "url":"price-3.png"
+    },
+    {
+        "name":"price-4_png",
+        "type":"image",
+        "url":"price-4.png"
+    },
+    {
+        "name":"price-5_png",
+        "type":"image",
+        "url":"price-5.png"
     }
 ];

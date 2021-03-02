@@ -70,5 +70,19 @@
 })();
 
 
+function choujiang(obj, data){
+
+    $(obj).find(".scratch_container").delay(200).fadeOut(500);
+    /*显示抽奖结果*/
+    $(obj).find(".cover").fadeOut("1000");
+    $(".sb").html(data.money);
+    $(".youhuiquan").addClass("quan-"+data.money);
+/*    $(".money").html(data.money);*/
+    $(".buy_btn").attr("data-money",data.money);
+    $(".buy_btn").attr("data-pid",data.pid);
+    $(".shou").fadeOut(100);
+
+}
+
 
 

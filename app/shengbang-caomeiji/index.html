@@ -26,20 +26,73 @@
             <div id="evt_loading" style="display:none;">0%</div>
             <div id="evt_content" style="display:none;">
                 <div class="sec sec-top"><img src="images/banner.png" alt=""></div>
+                <div class="sec sec-1">
+                    <div class="hy-title"><img src="images/hy-title-1.png" alt=""></div>
+                    <div class="mcake"><img src="images/mcake.png" alt=""></div>
+                    <div class="buy-btn"><span>立即购买</span></div>
+                </div>
+                <div class="sec sec-main">
+                    <div class="hy-title"><img src="images/hy-title-2.png" alt=""></div>
+                    <div class="ggk">
+                        <div class="guaguaka" >
+                            <img src="images/dot.png" class="imageBackground" style="display: none;" alt="">
+                            <img src="images/guagua-cover.png" class="pictureOver" style="display: none;" alt="">
+                            <!--刮刮卡-->
+                            <div class="scratch_container" ontouchmove="return false;">
+                                <div class="scratch_viewport">
+                                    <!-- result picture -->
+                                    <canvas id="js-canvas0"></canvas>
+                                </div>
+                            </div>
+                            <div class="youhuiquan"></div>
+                            <div class="shou shoudong"></div>
+                        </div>
+                    </div>
 
-                <iframe name="choujiang" id="choujiang" class="cjIframe" src="choujiang.html" scrolling="no" frameborder="0"></iframe>
+                </div>
+                <div class="sec sec-2">
+                    <div class="row row1">
+                        <div class="cake"><img src="images/cake-1.png" alt="" src-fix="cake-1_png"></div>
+                        <div class="price js_price">
+                            <div class="title"> <img src="images/t-1.png" alt="" src-fix="t-1_png"></div>
+                            <h2>￥198+￥<span class="sb">??</span>=2磅</h2>
+
+                            <div class="buy_btn" data-price="198"><span>立即升磅</span></div>
+                            <div class="go_buy" data-price="198"><span>直接购买</span></div>
+                        </div>
+                    </div>
+                    <div class="row row2">
+                        <div class="cake"><img src="images/cake-2.png" alt="" src-fix="cake-2_png"></div>
+                        <div class="price js_price">
+                            <div class="title"> <img src="images/t-2.png" alt="" src-fix="t-2_png"></div>
+                            <h2>￥218+￥<span class="sb">??</span>=2磅</h2>
+                            <div class="buy_btn" data-price="218"><span>立即升磅</span></div>
+                            <div class="go_buy" data-price="218"><span>直接购买</span></div>
+                        </div>
+                    </div>
+                    <div class="row row3">
+                        <div class="cake"><img src="images/cake-3.png" alt="" src-fix="cake-3_png"></div>
+                        <div class="price js_price">
+                            <div class="title"> <img src="images/t-3.png" alt="" src-fix="t-3_png"></div>
+                            <h2>￥198+￥<span class="sb">??</span>=2磅</h2>
+
+                            <div class="buy_btn" data-price="198"><span>立即升磅</span></div>
+                            <div class="go_buy" data-price="218"><span>直接购买</span></div>
+                        </div>
+                    </div>
+                </div>
 
                 <div class="sec-footer">
                     <div class="txt">
                         <h2>活动规则</h2>
-                        <p>1、活动时间：2019年12月26日-2020年1月22日</p>
+                        <p>1、活动时间：2020年12月24日-2021年2月28日，最晚配送日期：2021年2月28日</p>
                         <p>2、活动城市：上海、北京、苏州、杭州</p>
                         <p>3、支付方式：微信、支付宝、现金；仅限微信、支付宝、现金全额支付的用户参与</p>
                         <p>4、活动内容：<br>
-                            ·在活动页面根据刮出价格不同 ，可享受不同价格1磅升2磅，仅限购买拿破仑莓恋、白色恋人、鲜莓印雪<br>
-                            ·活动页面蛋糕仅限1磅升2磅，其他磅数不予参与，不与其他优惠同享</p>
-                        <p>5、本活动与积分同享，但不与优惠券、红包以及现金卡、储值卡、专享卡、礼品卡、小食卡、月饼卡等代金卡同享</p>
-                        <p>6、本活动最终解释权归MCAKE所有</p>
+                            · 活动页购买甜甜莓莓2磅立减30元<br>
+                            · 根据活动页刮刮乐的金额不同，享受不同价格1磅升2磅，仅限购买拿破仑莓恋、白色恋人、鲜莓印雪3款蛋糕<br>
+                            · 活动页蛋糕仅限1磅升2磅，其他磅数不参与活动；限时升磅时间：2020年12月24日-2021年2月28日</p>
+                        <p>5、本活动与会员红包、积分同享，但不与现金卡、储值卡、专享卡、礼品卡、小食卡、月饼卡等代金卡以及优惠券同享</p>
                     </div>
                 </div>
             </div>
@@ -60,72 +113,35 @@
 <script src="scripts/index.js"></script>
 <!-- endbuild -->
 <script>
+    $(".ggk").each(function (i) {
 
-    window.addEventListener('message', function (event) {
-        Scheduler.translate(event);
-    }, false);
+        $(this).find(".cover").on('touchstart',function(e) {
+            $(this).fadeOut(500);
+        });
 
-    var Scheduler = {
-        // 消息事件对象
-        event: {},
-        // 参数
-        params: {},
-        // 翻译
-        translate: function (event) {
-            this.event = event;
-            this.params = typeof(event.data) == 'string' ? JSON.parse(event.data) : event.data;
-            this.execute();
-        },
-        // 执行
-        execute: function () {
-            switch (this.params.method) {
-
-                case 'choujiang':
-                    this.choujiang();
-                    break;
-                case 'choujiangResult':
-                    this.choujiangResult();
-                    break;
-                default:
-                    console.log(this.params.message);
+        var self = $(this);
+        var data ={"pid":'1811','money':"50"};  //中一等奖
+        /*刮刮卡*/
+        var imageBackground=$(this).find(".imageBackground").attr("src");   /*刮开之后的底图*/
+        var pictureOver=$(this).find(".pictureOver").attr("src");  /*覆盖图*/
+        var canvasId=$(this).find('js-canvas'+i).selector;
+        var scratch = new Scratch({
+            canvasId: 'js-canvas'+i,
+            imageBackground: imageBackground,
+            pictureOver: pictureOver,
+            cursor: {
+                x: '-20',
+                y: '-20'
+            },
+            radius: 20,
+            nPoints: 1000,
+            percent: 1,
+            pointSize: { x: 5, y: 5},
+            callback: function () {/*刮刮之后的函数*/
+              //  console.log(111)
+              choujiang(self, data);
             }
-        },
-        // 抽奖
-        choujiang: function () {
-            console.log(this.params.data);  //接收从iframe里sendMessage的方法传过来的值
-            //var prize = ['23', '22', '19', '20', '18', '21'];    //此处要跟跟choujiang里的jpArr的数字对应
-            console.log('请求抽奖接口');
-            console.log('将抽奖结果发送给抽奖页面');
-            this.event.source.postMessage({
-                method: 'choujiang',
-                message: '开始抽奖',
-                data: {"id":'1',"ele":this.params.data.ele}
-            }, "*")
-        }
-        ,
-        // 抽奖
-        choujiangResult: function () {
-            console.log(this.params.data);
-
-            var money = this.params.data.arr[this.params.data.n];
-            console.log(money,this.params.data.n);
-
-
-            //new choujiang(this.params.data);  //接收choujiang.html传过来的data,弹窗
-        }
-    }
-
-
-    function guaguaEnd(ele){
-        console.log("擦除结束"+ele);
-    }
-
-    function gobuy1(ele){
-        alert("购买")
-    }
-    console.log($(".choujiang").contents().find("#buy_btn"));
-    $(".choujiang").contents().find("#buy_btn1").click(function () {
-        alert(1)
+        });
     });
 </script>
 

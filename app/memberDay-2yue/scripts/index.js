@@ -43,29 +43,7 @@
     var loader;
 
 
-    var loadComplete = function () {
-        /*日期判断，更换日历*/
-        var vDate = new Date();
-        var myDate = vDate.getFullYear() + '-' + (vDate.getMonth() + 1) + '-' + vDate.getDate(); /*解决安卓浏览器时间显示问题*/
-        var myDay = vDate.getDate();
-        switch (myDay){
-            case 4:
-                $(".calendar img").attr("src","https://act.mcake.com/fangli/2020/wap/memberDay-2yue/images/calendar-1.png");
-                break;
-            case 11:
-                $(".calendar img").attr("src","https://act.mcake.com/fangli/2020/wap/memberDay-2yue/images/calendar-2.png");
-                break;
-            case 18:
-                $(".calendar img").attr("src","https://act.mcake.com/fangli/2020/wap/memberDay-2yue/images/calendar-3.png");
-                break;
-            case 25:
-                $(".calendar img").attr("src","https://act.mcake.com/fangli/2020/wap/memberDay-2yue/images/calendar-4.png");
-                break;
-        }
 
-
-        /*initScroll();  新版wap端跳转新页面再返回来之后，页面无法滑动了*/
-    };
     function startLoading(){
         loader = new Loader('images/');
         var domLoad = document.getElementById('evt_loading');
@@ -84,16 +62,91 @@
     }
     startLoading();
 
+    var loadComplete = function () {
+        var winPrize = {
+            num:0,
+            $winCover:$(".win-cover"),
+            $win:$(".win"),
+            $winaward:$(".win-award"),
+            callback:function () {
 
-    var initScroll = function (){
-        window.scrollAnimate('#evt_container', [
-            ,{dom: '.banner-t',x:0, y:100,duration:500,delay:200}
-        ])
+            },
+            event:function () {
+                var self = this;
+                $(".prize li").each(function (i) {
+                    $(this).find(".select").click(function () {
+                        $(".select").removeClass("on");
+                        $(this).parent("li").siblings().removeClass("on");
+                        $(this).parent("li").addClass("on");
+                        $(this).addClass("on");
+                        self.num=i+1;
+                    });
+
+                });
+            },
+            confirm:function () {
+                var self = this;
+                $(".confirm").click(function () {
+                    console.log(self.num);
+                    QuanDialog(self.num);
+                });
+            },
+            init:function () {
+                this.event();
+                //this.confirm();
+
+            }
+        }
+
+        winPrize.init();
+        window.winPrize = winPrize;
+
+        /*指定锚点跳转位置*/
+        function scrollTopAni(ele,callback) {
+            var sTop = $(ele).offset().top-80;
+            $("html,body").animate({scrollTop:sTop},500,function () {
+                callback && callback();
+            });
+        }
+        $(".go-use").click(function () {
+            scrollTopAni("#cake");
+        });
+
     };
-
 
 })();
 
 
+
+/*领取优惠券*/
+var $Dialogbg = $(".Dialogbg-quan"),
+    $Dialog=$(".Dialog-quan"),
+    $rules=$(".quan"),
+    $card=$(".card"),
+    $goUse=$(".go-use"),
+    $closes=$(".closes");
+
+function QuanDialog(n) {
+    $Dialogbg.fadeIn(300);
+    $Dialog.fadeIn(300);
+    $Dialog.find(".quan-"+n).fadeIn(300).siblings().not(".closes").hide();
+    /* $card.find("img").attr("src","https://act.mcake.com/fangli/2019/pc/memberDay-7yue/images/card-"+n+".png");*/
+
+   /* $Dialog.find(".quan").fadeIn(300).siblings().not(".closes").hide();*/
+}
+
+/*关闭*/
+$closes.click(function () {
+    $Dialogbg.fadeOut(300);
+    $Dialog.fadeOut(300);
+});
+
+$goUse.click(function () {
+    $Dialogbg.fadeOut(300);
+    $Dialog.fadeOut(300);
+});
+
+
+window.QuanDialog = QuanDialog;
 
 

@@ -1,0 +1,152 @@
+
+1、引入 <iframe class="cjIframe" id="choujiang" src="choujiang.html" scrolling="no" frameborder="0"></iframe>
+
+
+2、<div class="choujiang"></div>里加入抽奖效果的代码
+
+
+3、样式修改:
+
+
+/*抽奖公共*/
+.cjIframe{ width: px2rem(750);  min-height: px2rem(680); }
+body{margin: 0;}
+/*通iframe嵌套抽奖页面*/
+img{width: 100%;}
+.hy-title{ width: px2rem(750); margin:px2rem(30) auto; }
+.choujiang{position: relative; width: px2rem(750); margin: 0 auto;}
+
+
+
+5、公共弹窗
+<div class="Dialogbg-quan" style="display: none;"></div>
+<div class="Dialog-quan" style="display: none;">
+    <a href="#cake"><div class="closes"></div></a>
+    <div class="quan quan-1" style="display: block;">
+        <a href="#cake"><div class="go-use">立即使用</div></a>
+        <img src="images/jieqian-1.png" class="jieqian" alt="">
+    </div>
+</div>
+
+
+6、公共弹窗方法
+/*抽奖通用弹窗*/
+;(function () {
+    function choujiang(data) {  /* n<=$item的length */
+        this.$DialogCover = $(data.DialogCover);
+        this.$DialogBox = $(data.DialogBox);
+        this.$close = $(data.DialogBox).find(".closes");
+        this.$use = $(data.DialogBox).find(".go-use");
+        this._Init(data.n,data.arr);
+    }
+    choujiang.prototype={
+        DialogTipShow:function (n,arr,prize) {
+            this.$DialogCover.fadeIn(500);
+            this.$DialogBox.delay(500).addClass("show").fadeIn();
+            console.log(n,arr,prize);
+            this.$DialogBox.find(".jieqian").attr("src","https://act.mcake.com/fangli/2019/wap/newyear-chouqian/images/jieqian-"+n+".png");
+            $(".sec-cake .cake").attr("class","cake cake-"+n);
+            $(".buy-btn").fadeIn();
+
+
+            $(".sec-cake").data("pond",arr[n-1]["data-pond"]);
+            $(".sec-cake").data("weight",arr[n-1]["data-weight"]);
+            $(".sec-cake").data("price",arr[n-1]["data-price"]);
+            $(".sec-cake").data("time",arr[n-1]["data-time"]);
+            $(".sec-cake").data("postid",arr[n-1]["data-postid"]);
+            $(".sec-cake").data("tips",arr[n-1]["data-tips"]);
+            $(".sec-cake").data("sku",arr[n-1]["data-sku"]);
+            $(".sec-cake").data("method",arr[n-1]["data-method"]);
+            $(".sec-cake").data("pid",arr[n-1]["data-pid"]);
+            $(".sec-cake").data("ptype",arr[n-1]["data-ptype"]);
+            $(".sec-cake").data("channel",arr[n-1]["data-channel"]);
+
+        },
+        DialogTipHide:function () {
+            this.$DialogCover.fadeOut(20);
+            this.$DialogBox.delay(500).removeClass("show");
+            $(".cake-cover").delay(500).fadeOut(500);
+        },
+        _Init:function (n,arr,prize) {
+            var self = this;
+            self.DialogTipShow(n,arr,prize);
+            this.$close.click(function () {
+                self.DialogTipHide();
+            });
+
+            this.$use.click(function () {
+                self.DialogTipHide();
+            });
+        }
+    };
+    window.choujiang = choujiang;
+})();
+
+
+4、点击执行抽奖的方法：<div class="qian-btn" onclick="sendMessage()"></div>
+
+
+6、所有抽奖方法都写在这里start()
+
+5、/*显示抽奖结果,向首页提交弹窗结果*/
+ var autoMessage = {method:'choujiangResult',message:'抽奖结果展示',data:{DialogCover:".Dialogbg-quan",DialogBox:".Dialog-quan",n:random,arr:arr,prize:prize}};
+top.postMessage(autoMessage,'*');
+
+
+
+
+
+
+
+7、
+
+
+
+
+8、
+
+
+
+9、
+
+
+10、
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

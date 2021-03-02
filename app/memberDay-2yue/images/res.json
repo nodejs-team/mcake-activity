@@ -1,38 +1,23 @@
 {
 	"groups":[{
-			"keys":"t-1_png,t-2_png,t-3_png,t-4_png,banner-wap_jpg,bg_png,cake-1_png,cake-2_png,cake-3_png,cake-4_png,cake-tuijian_png,calendar-1_png,calendar-2_png,calendar-3_png,calendar-4_png,close2_png,dis-1_png,foot-bg_png,hy-title-1_png,hy-title-2_png",
+			"keys":"icon_50_png,banner_png,icon_30_png,cake-1_png,cake-2_png,cake-3_png,cake-4_png",
 			"name":"preload"
 		}],
 	"resources":[
 		{
-			"name":"t-1_png",
+			"name":"icon_50_png",
 			"type":"image",
-			"url":"t-1.png"
+			"url":"icon_50.png"
 		},
 		{
-			"name":"t-2_png",
+			"name":"banner_png",
 			"type":"image",
-			"url":"t-2.png"
+			"url":"banner.png"
 		},
 		{
-			"name":"t-3_png",
+			"name":"icon_30_png",
 			"type":"image",
-			"url":"t-3.png"
-		},
-		{
-			"name":"t-4_png",
-			"type":"image",
-			"url":"t-4.png"
-		},
-		{
-			"name":"banner-wap_jpg",
-			"type":"image",
-			"url":"banner-wap.jpg"
-		},
-		{
-			"name":"bg_png",
-			"type":"image",
-			"url":"bg.png"
+			"url":"icon_30.png"
 		},
 		{
 			"name":"cake-1_png",
@@ -53,56 +38,6 @@
 			"name":"cake-4_png",
 			"type":"image",
 			"url":"cake-4.png"
-		},
-		{
-			"name":"cake-tuijian_png",
-			"type":"image",
-			"url":"cake-tuijian.png"
-		},
-		{
-			"name":"calendar-1_png",
-			"type":"image",
-			"url":"calendar-1.png"
-		},
-		{
-			"name":"calendar-2_png",
-			"type":"image",
-			"url":"calendar-2.png"
-		},
-		{
-			"name":"calendar-3_png",
-			"type":"image",
-			"url":"calendar-3.png"
-		},
-		{
-			"name":"calendar-4_png",
-			"type":"image",
-			"url":"calendar-4.png"
-		},
-		{
-			"name":"close2_png",
-			"type":"image",
-			"url":"close2.png"
-		},
-		{
-			"name":"dis-1_png",
-			"type":"image",
-			"url":"dis-1.png"
-		},
-		{
-			"name":"foot-bg_png",
-			"type":"image",
-			"url":"foot-bg.png"
-		},
-		{
-			"name":"hy-title-1_png",
-			"type":"image",
-			"url":"hy-title-1.png"
-		},
-		{
-			"name":"hy-title-2_png",
-			"type":"image",
-			"url":"hy-title-2.png"
 		}
 	]
 }

@@ -1,94 +1,94 @@
 @function px2rem($n) {
   @return ($n * 10 / 750) * 1rem; //设计稿一般都是750宽
 }
-*{ vertical-align: baseline !important;}  /*价格符号不对齐*/
-#evt_content{background: #ffffff;
-  img{width:100%; display: block;}
+#evt_content *{ vertical-align: baseline!important;}  /*价格符号不对齐*/
+#evt_content{ background:#ffd7d0; background-size: 100%;
+  img{width:100%;}
   .sec{position: relative; }
 
-  .sec-top{height: px2rem(830); background:url("../images/banner-wap.png") repeat; background-size: 100%; z-index: 1; overflow: hidden;
+  .sec-top{ height: px2rem(784); background:url("../images/banner.png") repeat; background-size: 100%; z-index: 1; overflow: hidden; }
+
+  .hy-title{ width: px2rem(710); margin:px2rem(50) auto; }
+
+  .pro-list{width:px2rem(750); overflow:hidden; margin:0 auto; padding-bottom: px2rem(50);
+    ul{width:px2rem(750); margin-left: px2rem(-10);}
+    li{width:px2rem(353); margin:0 0 0 px2rem(20); background: #fff; color:#242424; font-size:px2rem(20); float:left; list-style: none;  padding-bottom: px2rem(40);
+      .fl{float:left;}
+      .fl.ftitle{ width:px2rem(200); height:px2rem(60);  overflow:hidden; align-items: center;}
+      h2{text-align: center; font-size: px2rem(30); color:#f5f0c8; font-weight: normal; margin-top: px2rem(10);}
+      .c-price{position: relative; }
+
+      .center{position: absolute; width:px2rem(120); top: px2rem(40); right:px2rem(10);  margin:px2rem(20) auto 0;}
+      .go-btn,.go-dh{ width:px2rem(120); float: left; background: #ffd7d0; color: #000;  border-radius:px2rem(17); cursor: pointer; margin: 0 auto px2rem(15);
+        span{display: block; line-height:px2rem(40);font-size:px2rem(16); text-align: center; letter-spacing:px2rem(2);}
+      }
+    }
+
   }
+  
 
-
-
-  .hy-title{ width: px2rem(750); margin:px2rem(50) auto px2rem(50); }
-
-  .sec-cake{ position: relative; z-index: 2;
-    .cake{ position: relative; width:px2rem(750); margin: 0 auto;}
-    .hongbao{ position: relative; width:px2rem(750); margin:px2rem(20) auto;}
-    .price{position: absolute; bottom: px2rem(130); left: px2rem(70);
-      h2{ color: #fff; }
-      s{ color: #fff; }
-    }
-    .buy-btn{position: absolute; width: px2rem(184); bottom:px2rem(130); left: px2rem(500); background: #8e0000; color: #fff; line-height: px2rem(50); border-radius: px2rem(50); text-align: center; z-index: 2;}
-    .canyu-btn{width: px2rem(171); margin:px2rem(20) auto px2rem(50);}
-  }
-
-  .sec-main{ padding:1px 0 px2rem(20); background:#fff6ea;
-    .dis{position: absolute; width: px2rem(52); left: 0; top:px2rem(100);}
-    .pro-num{ position: relative; float: left; width: px2rem(200); height: px2rem(45); display: inline-block; border: #c60500 1px solid; border-radius: px2rem(45);
-      a{ position: absolute; top:px2rem(-20); width:px2rem(80); height:px2rem(80); display:block;}
-      .minus{display:inline-block;background:url(../images/in-a-1.png) center no-repeat; left:px2rem(-20); background-size: 50%;}
-      .plus{display:inline-block;background:url(../images/in-a-2.png) center no-repeat; right:px2rem(-20); background-size: 50%;}
-      .bang{ display:inline-block; width:px2rem(130); line-height:px2rem(45); position:absolute; top:0; left:px2rem(35); text-align:center; color:#c60500; background: none; font-size:px2rem(20); padding:0;}
-    }
-
-    .row{ position: relative;
-      .cake{position: absolute;}
-      .price{position: absolute;}
-    }
-    .row1{height: px2rem(400);
-      .cake{width:px2rem(280); top:0; left:px2rem(30); z-index: 1;}
-      .price{top:px2rem(30); left: auto; right:0;}
-
-
-    }
-    .row2{height: px2rem(400);
-      .cake{ width:px2rem(280); top:0; right:px2rem(30); z-index: 1;}
-      .price{ top: px2rem(30); left:px2rem(30); z-index: 2; }
-    }
-
-    .row3{height: px2rem(400);
-      .cake{width:px2rem(280); top:0; left:px2rem(30); z-index: 1;}
-      .price{top:px2rem(30); left: auto; right:0;}
-    }
-
-    .code{width: px2rem(750); padding: px2rem(50) 0;}
-    .more{width:px2rem(200);position: relative; margin:px2rem(40) auto; background: #cd686d; border-radius:px2rem(50); text-align: center;
-      span{ display: block; color: #fff; font-size:px2rem(22); line-height:px2rem(50);}
-    }
-  }
-
-  .sec-footer{background:#ffe9ca; position: relative; padding-bottom: px2rem(50); z-index:1;
-    .txt{ position: relative; width:px2rem(700); padding-top: px2rem(80); margin: 0 auto;  color: #000;
+  .sec-footer{background:#ffc9bf; background-size: 100%; position: relative; padding-bottom: px2rem(50); z-index:1;
+    .txt{ position: relative; width:px2rem(700); padding-top: px2rem(50); margin: 0 auto;  color: #000;
       h2{font-size: px2rem(28); font-weight: normal; }
-      p{ font-size: px2rem(22); padding-left: px2rem(35); line-height:px2rem(40);  text-indent: px2rem(-35); margin:px2rem(5) 0;
+      p{ font-size: px2rem(24); padding-left: px2rem(35); line-height:px2rem(45);  text-indent: px2rem(-35); margin:px2rem(5) 0;
         span{display: block; padding-left: px2rem(10); text-indent: px2rem(-10);}
       }
     }
   }
 
 
-  /*价格计算【通用】*/
-  .price{ position: absolute;  width: px2rem(400); text-align: left; z-index: 2;
+}
 
-    .title{position: relative; width: px2rem(353); margin:px2rem(10) 0 px2rem(50) 0;}
-    h2{font-size:  px2rem(20); font-weight: normal; line-height: px2rem(50); color: #c60500;
-      i{font-size:  px2rem(20); line-height: px2rem(30); font-style: normal;vertical-align:middle; }
-      span{font-size: px2rem(34); }
-      em{font-style:normal;}
-    }
-    s{ font-size:  px2rem(20); color: #000; font-weight: normal; margin-left: px2rem(10);
-      span{font-size: px2rem(20); }
-      b{font-weight:normal;}
-    }
-
-    ul.buy_btn_box { width: px2rem(150); overflow: hidden; margin:0 px2rem(20) 0 0; float: left;   }
-    ul.buy_btn_box li span { display: block; background: #c60500 none repeat scroll 0 0;  color: #fff; cursor: pointer; line-height: px2rem(42); padding-top: px2rem(2); font-size: px2rem(22); text-align: center; border-radius: px2rem(27.5); width: px2rem(150); }
-  }
-
+.shoudong{animation: shoudong 1.5s infinite alternate;}
+@keyframes shoudong {
+  0%{transform:translate3d(0,px2rem(-10),0);transform-origin:50% 100%; }
+  100%{transform:translate3d(0,px2rem(10),0);transform-origin:50% 100%; }
 }
 
 
+/*蛋糕选择弹窗*/
 
+.Dialogbg-Select{ background-color: #000; height: 100%; left: 0; opacity: 0.85; position: fixed; top: 0; width: 100%; z-index: 200; display: none; }
+.Dialog-Select{ background: #fff none repeat scroll 0 0; box-shadow: 0 0 0 #999; font-size:px2rem(14); width:px2rem(600); height: auto; margin-top: px2rem(-320); margin-left: px2rem(-300); left: 50%; padding: 0; position: fixed; top: 50%; z-index: 99999; display: none; border-radius:px2rem(10);
+}
+.s-closes{position: absolute; top: px2rem(10) !important; right: px2rem(-38) !important; width: px2rem(27) !important; height:px2rem(27) !important; background: url("../images/close.png"); background-size: 100%;}
+
+.Select{ position: relative; color: #000; height: 100%; text-align: left;
+  .s-title{ height:px2rem(103); background: #f2f2f2; position: relative; border-top-left-radius:px2rem(10);  border-top-right-radius:px2rem(10);
+    h2{ font-size: px2rem(28); line-height: px2rem(30); padding-left: px2rem(40); padding-top: px2rem(30); }
+    b{font-size: px2rem(14); color: #9a9a9a; font-weight: normal; padding-left: px2rem(40);}
+  }
+  .s-bangshu{ padding-top: px2rem(20);
+    ul{ margin-left: px2rem(40);
+      li{ float: left; width:px2rem(90); height: px2rem(90); background: #f2f2f2; border-radius: 50%; text-align: center; color: #4a4a4a; margin-right:px2rem(50); font-size: px2rem(23); line-height: px2rem(20);  display: flex; align-items: center; justify-content: space-around; flex-direction: column;
+        i{ font-size: px2rem(16); line-height: px2rem(20); font-style: normal;}
+      }
+      li.on{ background: #d44745; color: #fff;}
+    }
+  }
+  .d-tips{padding:px2rem(20) px2rem(40); color: #4c4c4c; font-size:px2rem(18);}
+  .s-num{ height: px2rem(100);padding-left:px2rem(40);border-top: #ededed 1px solid;
+    b{display: inline-block; width:px2rem(200); margin:px2rem(20) 0; line-height: px2rem(56); float: left; font-size:px2rem(30); color: #737373; font-weight: normal;}
+    .nums {  display: inline-block; margin:px2rem(20) px2rem(40) px2rem(20) px2rem(20);  float: right;  height:px2rem(56);  position: relative;  width:px2rem(200);  }
+    .nums a {  display: block;   width:px2rem(56); height:px2rem(56);  position: absolute;  top:px2rem(2);  }
+    .nums .minus {  background: url("../images/btn-1.png") no-repeat; background-size: 100%;  left: 0;  }
+    .nums .plus {  background: url("../images/btn-2.png") no-repeat; background-size: 100%;  right: 0;  }
+    .nums input {  background:none;  border: none;  color: #626262;  display: block;  font-size:px2rem(30);  height:px2rem(56);  left:px2rem(60);  line-height:px2rem(56);  padding: 0;  position: absolute;  text-align: center;  top: 0;  width:px2rem(80);  }
+  }
+  .s-prices{font-size: px2rem(22); padding: px2rem(30) px2rem(40);border-top: #ededed 1px solid;  color: #4a4a4a;
+    b{display: inline-block; width:px2rem(230); margin:0; line-height: px2rem(56); float: left; font-size:px2rem(30); color: #737373; font-weight: normal;}
+    p{display:block; line-height: px2rem(56); text-align: right;}
+    i{font-style: normal;}
+    span{ font-size: px2rem(45);}
+  }
+  s{color: #7e7e7e;}
+  .btns{ width: 100%; position: relative; bottom:px2rem(0); display: flex; height: px2rem(100); line-height: px2rem(100); flex-direction: row;  text-align: center; font-size: px2rem(30); color: #000; padding: 0;
+    div{ flex: 1; cursor: pointer;}
+    .go-buy{background:#d44745; border-bottom-right-radius:px2rem(10);  border-bottom-left-radius:px2rem(10); color: #fff; }
+    .go-car{background: #d44745;border-bottom-right-radius:px2rem(10); border-bottom-left-radius:px2rem(10); float: left; color: #fff;}
+    .go-buy.single{border-bottom-left-radius:px2rem(20); background: #ffe32a; color: #c43818;}
+  }
+  .d-p{ color: #d44745; font-size: px2rem(16); text-align: right; padding: 0 px2rem(40) px2rem(10); margin-top: px2rem(-30); display: none; }
+  .dh{display: block;}
+}
 

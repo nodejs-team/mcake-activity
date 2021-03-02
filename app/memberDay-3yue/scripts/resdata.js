@@ -1,8 +1,18 @@
 var resData = [
     {
-        "name":"in-a-2_png",
+        "name":"quan-15_png",
         "type":"image",
-        "url":"in-a-2.png"
+        "url":"quan-15.png"
+    },
+    {
+        "name":"sec-quan_png",
+        "type":"image",
+        "url":"sec-quan.png"
+    },
+    {
+        "name":"shou_png",
+        "type":"image",
+        "url":"shou.png"
     },
     {
         "name":"t-1_png",
@@ -25,9 +35,9 @@ var resData = [
         "url":"t-4.png"
     },
     {
-        "name":"banner-wap_png",
+        "name":"banner_png",
         "type":"image",
-        "url":"banner-wap.png"
+        "url":"banner.png"
     },
     {
         "name":"bg_png",
@@ -55,49 +65,29 @@ var resData = [
         "url":"cake-4.png"
     },
     {
-        "name":"cake-tuijian_png",
+        "name":"cover_png",
         "type":"image",
-        "url":"cake-tuijian.png"
+        "url":"cover.png"
     },
     {
-        "name":"calendar-1_png",
+        "name":"dot_png",
         "type":"image",
-        "url":"calendar-1.png"
-    },
-    {
-        "name":"calendar-2_png",
-        "type":"image",
-        "url":"calendar-2.png"
-    },
-    {
-        "name":"calendar-3_png",
-        "type":"image",
-        "url":"calendar-3.png"
-    },
-    {
-        "name":"calendar-4_png",
-        "type":"image",
-        "url":"calendar-4.png"
-    },
-    {
-        "name":"calendar-5_png",
-        "type":"image",
-        "url":"calendar-5.png"
-    },
-    {
-        "name":"close2_png",
-        "type":"image",
-        "url":"close2.png"
-    },
-    {
-        "name":"dis-1_png",
-        "type":"image",
-        "url":"dis-1.png"
+        "url":"dot.png"
     },
     {
         "name":"foot-bg_png",
         "type":"image",
         "url":"foot-bg.png"
+    },
+    {
+        "name":"get-agin_png",
+        "type":"image",
+        "url":"get-agin.png"
+    },
+    {
+        "name":"get-btn_png",
+        "type":"image",
+        "url":"get-btn.png"
     },
     {
         "name":"hy-title-1_png",
@@ -110,8 +100,38 @@ var resData = [
         "url":"hy-title-2.png"
     },
     {
+        "name":"icon_20_png",
+        "type":"image",
+        "url":"icon_20.png"
+    },
+    {
+        "name":"icon_40_png",
+        "type":"image",
+        "url":"icon_40.png"
+    },
+    {
+        "name":"icon_60_png",
+        "type":"image",
+        "url":"icon_60.png"
+    },
+    {
         "name":"in-a-1_png",
         "type":"image",
         "url":"in-a-1.png"
+    },
+    {
+        "name":"in-a-2_png",
+        "type":"image",
+        "url":"in-a-2.png"
+    },
+    {
+        "name":"quan-5_png",
+        "type":"image",
+        "url":"quan-5.png"
+    },
+    {
+        "name":"quan-10_png",
+        "type":"image",
+        "url":"quan-10.png"
     }
 ];

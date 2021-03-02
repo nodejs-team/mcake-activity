@@ -329,6 +329,8 @@
         if (deviceIsIOS && targetElement.setSelectionRange && targetElement.type.indexOf('date') !== 0 && targetElement.type !== 'time' && targetElement.type !== 'month') {
             length = targetElement.value.length;
             targetElement.setSelectionRange(length, length);
+           /* ios 11.3双击火车长按才能focus*/
+            targetElement.focus();  /*修改2021.1.18*/
         } else {
             targetElement.focus();
         }

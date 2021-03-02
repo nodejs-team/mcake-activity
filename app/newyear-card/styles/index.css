@@ -1,0 +1,139 @@
+@charset "UTF-8";
+* {
+  vertical-align: baseline !important; }
+
+/*价格符号不对齐*/
+#evt_content {
+  width: 10rem;
+  background: url("../images/bg.png") repeat-y;
+  background-size: 100%;
+  /*价格计算【通用】*/ }
+  #evt_content img {
+    width: 100%;
+    display: block; }
+  #evt_content .sec {
+    position: relative; }
+  #evt_content .sec-top {
+    width: 10rem;
+    height: 9.66667rem;
+    background: url("../images/banner.png") no-repeat;
+    background-size: 100%;
+    z-index: 1;
+    overflow: hidden; }
+    #evt_content .sec-top .get-btn {
+      position: absolute;
+      width: 3.16rem;
+      bottom: 0.93333rem;
+      left: 0.93333rem; }
+  #evt_content .hy-title {
+    width: 10rem;
+    margin: 0.8rem auto 0.8rem; }
+  #evt_content .sec-1 {
+    width: 10rem;
+    padding-top: 0.26667rem;
+    overflow: hidden; }
+    #evt_content .sec-1 .card {
+      width: 10rem; }
+  #evt_content .sec-2 {
+    width: 10rem;
+    padding: 1.05333rem 0 1.73333rem;
+    background: url("../images/card-bg.png") no-repeat;
+    background-size: 100%;
+    overflow: hidden; }
+    #evt_content .sec-2 .card {
+      width: 9.30667rem;
+      margin: 0 auto; }
+  #evt_content .sec-3 {
+    width: 10rem;
+    overflow: hidden; }
+    #evt_content .sec-3 .txt {
+      width: 8.42667rem;
+      margin: 0 auto 0.4rem; }
+    #evt_content .sec-3 .kt-btn {
+      width: 4.8rem;
+      margin: 0 auto 0.4rem; }
+  #evt_content .sec-footer {
+    position: relative;
+    padding-bottom: 0.93333rem;
+    z-index: 1;
+    background: url("../images/bg.png") repeat-y;
+    background-size: 100%; }
+    #evt_content .sec-footer .txt {
+      position: relative;
+      width: 9.33333rem;
+      padding-top: 0.66667rem;
+      margin: 0 auto;
+      color: #fbc694; }
+      #evt_content .sec-footer .txt h2 {
+        font-size: 0.29333rem;
+        font-weight: normal; }
+      #evt_content .sec-footer .txt p {
+        font-size: 0.28rem;
+        padding-left: 0.46667rem;
+        line-height: 0.46667rem;
+        text-indent: -0.46667rem;
+        margin: 0.06667rem 0; }
+        #evt_content .sec-footer .txt p span {
+          display: block;
+          text-indent: 1.06667rem; }
+        #evt_content .sec-footer .txt p.p {
+          padding-left: 0.2rem;
+          text-indent: -0.18667rem; }
+  #evt_content .price {
+    position: relative;
+    width: 4.81333rem;
+    text-align: left;
+    z-index: 2; }
+    #evt_content .price .title {
+      position: relative;
+      width: 2.66667rem;
+      margin: 0.4rem auto 0;
+      font-size: 0.32rem;
+      text-align: center;
+      color: #493b66; }
+    #evt_content .price h2 {
+      position: relative;
+      font-size: 0.26667rem;
+      font-weight: normal;
+      line-height: 0.8rem;
+      color: #493b66;
+      text-align: center; }
+      #evt_content .price h2 i {
+        font-size: 0.26667rem;
+        line-height: 0.4rem;
+        font-style: normal;
+        vertical-align: middle; }
+      #evt_content .price h2 span {
+        font-size: 0.45333rem;
+        color: #e13601; }
+      #evt_content .price h2 em {
+        font-style: normal; }
+    #evt_content .price s {
+      font-size: 0.26667rem;
+      color: #393c3f;
+      font-weight: normal;
+      margin-left: 0.13333rem; }
+      #evt_content .price s span {
+        font-size: 0.26667rem; }
+      #evt_content .price s b {
+        font-weight: normal; }
+    #evt_content .price ul.buy_btn_box {
+      width: 2.32rem;
+      overflow: hidden;
+      margin: 0;
+      float: left; }
+    #evt_content .price ul.buy_btn_box li span {
+      display: block;
+      width: 2.32rem;
+      height: 0.96rem;
+      text-align: center;
+      background: url("../images/btn-bg.png") no-repeat;
+      background-size: 100%;
+      font-size: 0.21333rem;
+      line-height: 0.96rem;
+      color: #fff; }
+    #evt_content .price .buy_btn_box.one {
+      width: 4.8rem;
+      margin: 0 auto; }
+      #evt_content .price .buy_btn_box.one li span {
+        margin: 0 auto; }

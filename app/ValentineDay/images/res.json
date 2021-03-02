@@ -1,38 +1,73 @@
 {
 	"groups":[{
-			"keys":"letter-bg_png,share_png,sweet-card_png,tips_png,banner-cake_png,banner-wap_jpg,cake-1_png,cake-2_png,cake-cover_png,chakan_png,close_png,hd-title-1_png",
+			"keys":"price-4_png,sec-1_png,sec-2_png,sec-3_png,sec-4_png,sec-5_png,sec-foot_png,t-1_png,t-2_png,t-3_png,t-4_png,txt_png,banner_png,cake-1_png,cake-2_png,cake-3_png,cake-4_png,card_png,price-1_png,price-2_png,price-3_png",
 			"name":"preload"
 		}],
 	"resources":[
 		{
-			"name":"letter-bg_png",
+			"name":"price-4_png",
 			"type":"image",
-			"url":"letter-bg.png"
+			"url":"price-4.png"
 		},
 		{
-			"name":"share_png",
+			"name":"sec-1_png",
 			"type":"image",
-			"url":"share.png"
+			"url":"sec-1.png"
 		},
 		{
-			"name":"sweet-card_png",
+			"name":"sec-2_png",
 			"type":"image",
-			"url":"sweet-card.png"
+			"url":"sec-2.png"
 		},
 		{
-			"name":"tips_png",
+			"name":"sec-3_png",
 			"type":"image",
-			"url":"tips.png"
+			"url":"sec-3.png"
 		},
 		{
-			"name":"banner-cake_png",
+			"name":"sec-4_png",
 			"type":"image",
-			"url":"banner-cake.png"
+			"url":"sec-4.png"
 		},
 		{
-			"name":"banner-wap_jpg",
+			"name":"sec-5_png",
 			"type":"image",
-			"url":"banner-wap.jpg"
+			"url":"sec-5.png"
+		},
+		{
+			"name":"sec-foot_png",
+			"type":"image",
+			"url":"sec-foot.png"
+		},
+		{
+			"name":"t-1_png",
+			"type":"image",
+			"url":"t-1.png"
+		},
+		{
+			"name":"t-2_png",
+			"type":"image",
+			"url":"t-2.png"
+		},
+		{
+			"name":"t-3_png",
+			"type":"image",
+			"url":"t-3.png"
+		},
+		{
+			"name":"t-4_png",
+			"type":"image",
+			"url":"t-4.png"
+		},
+		{
+			"name":"txt_png",
+			"type":"image",
+			"url":"txt.png"
+		},
+		{
+			"name":"banner_png",
+			"type":"image",
+			"url":"banner.png"
 		},
 		{
 			"name":"cake-1_png",
@@ -45,24 +80,34 @@
 			"url":"cake-2.png"
 		},
 		{
-			"name":"cake-cover_png",
+			"name":"cake-3_png",
 			"type":"image",
-			"url":"cake-cover.png"
+			"url":"cake-3.png"
 		},
 		{
-			"name":"chakan_png",
+			"name":"cake-4_png",
 			"type":"image",
-			"url":"chakan.png"
+			"url":"cake-4.png"
 		},
 		{
-			"name":"close_png",
+			"name":"card_png",
 			"type":"image",
-			"url":"close.png"
+			"url":"card.png"
 		},
 		{
-			"name":"hd-title-1_png",
+			"name":"price-1_png",
 			"type":"image",
-			"url":"hd-title-1.png"
+			"url":"price-1.png"
+		},
+		{
+			"name":"price-2_png",
+			"type":"image",
+			"url":"price-2.png"
+		},
+		{
+			"name":"price-3_png",
+			"type":"image",
+			"url":"price-3.png"
 		}
 	]
 }

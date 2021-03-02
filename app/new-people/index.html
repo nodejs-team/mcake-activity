@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>mcake活动</title>
+
+    <!-- build:css styles/index.css -->
+    <link rel="stylesheet" href="../commoncss/wap-normalize.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <!-- endbuild-->
+
+</head>
+<body>
+
+<div id="evt_container">
+    <div id="iscroll">
+        <div class="wrap">
+            <header>
+                <a href="http://m.mcake.com/wap" class="icon-back"></a>
+                <div class="title">
+                    <span>活动</span><br><span>activity</span>
+                </div>
+                <a href="http://m.mcake.com/wap" class="icon-home"></a>
+            </header>
+            <div id="evt_loading" style="display:none;">0%</div>
+            <div id="evt_content" style="display:none;">
+                <div class="sec sec-top"></div>
+
+                <div class="sec-quan">
+                    <div class="quan"><img src="images/quan.png" alt=""></div>
+                    <div class="yq-btn"><img src="images/lq-btn.png" alt=""></div>
+                </div>
+                <div class="sec-record">
+                    <div class="hy-title"><img src="images/t-1_02.png" alt=""></div>
+                    <div class="record-form">
+                        <div class="form-title"><img src="images/from-t.png" alt=""></div>
+                        <div class="form">
+                            <ul>
+                                <li><b class="tel">13485565425</b><span>已注册</span></li>
+                                <li><b class="tel">13485565425</b><span>已下单</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sec-footer">
+                    <div class="txt">
+                        <h2>活动规则:</h2>
+                        <p>1、活动时间：2021年1月1日-2021年12月31日</p>
+                        <p>2、活动城市：上海、苏州、杭州 、北京</p>
+                        <p>3、活动内容：<br>
+                            该活动仅限老用户参与，邀请2位好友注册会员，即可获得一张满298减60的优惠券，有效期至领取日起180天内有效；好友注册且首单订单完成后，老用户即可获得一张蛋糕升磅券（仅限1磅升2磅的），有效期至领取日起180天内有效</p>
+                        <p>4、优惠券和升磅券使用时单笔订单仅可使用一张，且不与其他优惠同享</p>
+                        <p>5、本活动与会员等级制度、积分同享，但不与其他优惠同享</p>
+                        <p>6、本活动最终解释权归MCAKE所有</p>
+                    </div>
+                </div>
+                
+
+                <div class="share" ontouchmove="return false;"><img src="images/share.png" alt=""></div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://act.mcake.com/fangli/2019/wap/commonjs/jquery.min.js"></script>
+<script src="https://act.mcake.com/fangli/2019/wap/commonjs/flexible.js"></script>
+<!--从2月会员日开始，因为新版移动端，点击链接跳转出去再返回，页面无法滑动了，需要把加载进入的全部动画效果（initScroll）去掉-->
+<!-- build:js scripts/index.js -->
+<script src="../commonjs/fastclick.js"></script>
+<script src="../commonjs/pubsub.js"></script>
+<script src="../commonjs/loader.js"></script>
+
+<script src="scripts/resdata.js"></script>
+<script src="scripts/index.js"></script>
+<!-- endbuild -->
+<script>
+    $(".yq-btn").click(function () {
+        $(".share").fadeIn(50);
+    });
+    $(".share").click(function () {
+        $(this).fadeOut(50);
+    });
+</script>
+</body>
+</html>

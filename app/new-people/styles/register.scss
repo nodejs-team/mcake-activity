@@ -1,0 +1,48 @@
+@function px2rem($n) {
+  @return ($n * 10 / 750) * 1rem; //设计稿一般都是750宽
+}
+#evt_content *{ vertical-align: baseline!important;}  /*价格符号不对齐*/
+#evt_content{ background:#ffeac1; background-size: 100%;
+  img{width:100%;}
+  .sec{position: relative; }
+
+  .sec-register{padding-bottom: px2rem(170); background:url("../images/register.png") repeat; background-size: 100%; z-index: 1; overflow: hidden; text-align: center;
+    .register-content{ width: px2rem(669); height: px2rem(1158); background: url("../images/register-content.png"); background-size: 100%; margin: px2rem(170) auto 0; overflow: hidden;
+      h2{ font-size: px2rem(36); color: #6c4700; margin: px2rem(70) auto px2rem(50);}
+      .register{ width: px2rem(620); margin: 0 auto; color: #a4a4a4;
+        ul{
+          li{position: relative; display: flex;flex-wrap: wrap;align-content: flex-start; background: #fff5df; line-height: px2rem(84); margin-bottom: px2rem(23); font-size: px2rem(26);
+            b{display: block; width: px2rem(120); height: px2rem(84); text-align: left; background: url("../images/star.png") px2rem(20) center no-repeat; background-size: 12%; padding-left: px2rem(40); font-weight:normal;
+              &.yzm{width: px2rem(200); background-size: 7%;}
+              &.tel{width: px2rem(160); background-size: 9%;}
+              &.noStar{background: none; padding-left: px2rem(20);}
+            }
+            input{flex: 1;  background: none; font-size: px2rem(26); border:none; }
+            input.radio {flex: 0; opacity:0; display:inline-block; width:0; height: px2rem(83);}
+            span.sex-span{display: block; width: px2rem(30); text-align: right; margin-right: px2rem(10);}
+
+            .kind-sex{vertical-align: middle; width:px2rem(30); height:px2rem(84); margin-right:px2rem(60); margin-left: px2rem(10); cursor: pointer; background: url("../images/icon.png") center center no-repeat; background-size: 100%; border: none;}
+            .kind-sex.hot{background: url("../images/icon-on.png") center center no-repeat; background-size: 100%;}
+
+            &.flavorWrap{ padding: px2rem(20) 0;
+              .noStar{line-height:px2rem(60);}
+              span.label{display: block; width: px2rem(78); line-height:px2rem(60); text-align: right; margin-right: px2rem(10);}
+              .kind{vertical-align: middle; width:px2rem(30); height:px2rem(60); margin-right:0;cursor: pointer; background: url("../images/icon.png") center center no-repeat; border: none; background-size: 100%;}
+              .kind.hot{background: url("../images/icon-on.png") center center no-repeat; background-size: 100%;}
+              .check-box{display: flex; flex: 1; flex-wrap: wrap;align-content: flex-start;}
+            }
+
+            .tyzm{position: absolute; width: px2rem(200); height: px2rem(66); top: px2rem(9); right:px2rem(22);
+              img{height: 100%;}
+            }
+
+            .send{position: absolute; width: px2rem(200); height: px2rem(84); text-align: right; top:0; right:px2rem(22); color: #d39c3a;}
+          }
+        }
+      }
+      .register-btn{width: px2rem(174); margin:px2rem(37) auto;}
+      p{font-size: px2rem(19); color: #6c4700;}
+    }
+  }
+}
+

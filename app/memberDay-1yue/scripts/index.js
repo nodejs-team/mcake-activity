@@ -44,6 +44,55 @@
 
 
     var loadComplete = function () {
+        /**蛋糕*/
+        $(".pro-list  li:not(.one)").each(function () {
+            var self = this;
+            /*立即购买*/
+            $(this).find('.go-btn').click(function () {
+                $(".s-prices-t").html("会员日专享价：");
+                $(".go-car").fadeOut(0);
+                $(".go-buy").fadeIn(0);
+                $(".d-p").removeClass("dh");
+                $(".s-num").fadeIn(0);
+                SelectShow(self,[15,30,0,0],1,true,1,0);
+            });
+            /*立即兑换*/
+            $(this).find('.go-dh').click(function () {
+                $(".s-prices-t").html("兑换价：");
+                $(".d-p").addClass("dh");
+                $(".go-car").fadeIn(0);
+                $(".go-buy").fadeOut(0);
+                SelectShow(self,[30,60,0,0],1,true,1,0);
+                $(".s-num").fadeOut(0);
+            });
+        });
+        $(".pro-list  li.one").each(function () {
+            var self = this;
+            /*立即购买*/
+            $(this).find('.go-btn').click(function () {
+                $(".s-prices-t").html("会员日专享价：");
+                $(".go-car").fadeOut(0);
+                $(".go-buy").fadeIn(0);
+                $(".d-p").removeClass("dh");
+                $(".s-num").fadeIn(0);
+                SelectShow(self,[30],1,true,1,0);
+            });
+            /*立即兑换*/
+            $(this).find('.go-dh').click(function () {
+                $(".s-prices-t").html("兑换价：");
+                $(".d-p").addClass("dh");
+                $(".go-car").fadeIn(0);
+                $(".go-buy").fadeOut(0);
+                SelectShow(self,[60],1,true,1,0);
+                $(".s-num").fadeOut(0);
+            });
+        });
+        $(".go-car").click(function () {
+            SelectHide();
+        });
+        $(".go-buy,.s-closes").click(function () {
+            SelectHide();
+        });
 
 
         /*initScroll();  新版wap端跳转新页面再返回来之后，页面无法滑动了*/

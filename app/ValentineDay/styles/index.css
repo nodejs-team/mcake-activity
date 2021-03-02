@@ -1,208 +1,162 @@
 @charset "UTF-8";
-* {
+#evt_content * {
   vertical-align: baseline !important; }
 
 /*价格符号不对齐*/
 #evt_content {
-  background: url("../images/sec-bg.png") repeat-y;
+  background: #630b09;
   background-size: 100%; }
   #evt_content img {
-    width: 100%;
-    display: block; }
+    width: 100%; }
   #evt_content .sec {
     position: relative; }
   #evt_content .sec-top {
-    height: 7.65333rem;
-    background: url("../images/banner-wap.jpg") repeat;
+    height: 15.98667rem;
+    background: url("../images/banner.png") no-repeat;
     background-size: 100%;
     z-index: 1;
     overflow: hidden; }
-  #evt_content .banner-cake {
-    height: 8.38667rem;
-    background: url("../images/banner-cake.png") repeat;
+  #evt_content .item {
+    position: absolute; }
+  #evt_content .sq {
+    position: absolute;
+    width: 1.06667rem;
+    height: 0.72rem;
+    background: url("../images/sq.png");
     background-size: 100%;
-    z-index: 1;
-    overflow: hidden; }
-  #evt_content .sec-letter {
-    height: 10.28rem;
-    background: url("../images/letter-bg.png") repeat;
-    background-size: 100%;
-    z-index: 1;
-    overflow: hidden; }
-    #evt_content .sec-letter .closeX {
-      position: absolute;
-      top: 0.13333rem;
-      right: 0.13333rem;
-      width: 0.53333rem;
-      height: 0.53333rem;
-      background: url("../images/close.png") center no-repeat;
-      background-size: 60%;
-      cursor: pointer; }
-    #evt_content .sec-letter .tips {
-      position: absolute;
-      top: 7.06667rem;
-      left: 2.66667rem;
-      width: 3.65333rem;
-      text-align: left;
-      color: #8a8989;
-      font-size: 0.16rem; }
-    #evt_content .sec-letter textarea {
-      position: absolute;
-      top: 2.66667rem;
-      left: 2.49333rem;
-      resize: none;
-      width: 4.8rem;
-      height: 4.26667rem;
-      line-height: 0.54667rem;
-      font-size: 0.29333rem;
-      color: #9a96a3;
-      display: block;
-      border: #bfbbcd 1px dashed;
-      border-radius: 0.06667rem;
-      background: none;
-      padding: 0.13333rem;
-      z-index: -1; }
-    #evt_content .sec-letter textarea {
-      outline: none; }
-    #evt_content .sec-letter textarea:disabled {
-      -webkit-text-fill-color: #9d96a4;
-      /*是用来做填充色使用的*/
-      -webkit-opacity: 1;
-      color: #9d96a4; }
-    #evt_content .sec-letter .data-time {
-      position: absolute;
-      top: 1.13333rem;
-      left: 3.73333rem;
-      line-height: 0.50667rem;
-      font-size: 0.16rem;
-      color: #958eb0; }
-    #evt_content .sec-letter .buttombtn {
-      position: absolute;
-      top: 7.73333rem;
-      left: 3.6rem;
-      width: 2.66667rem;
-      height: 0.66667rem;
-      border: none;
-      cursor: pointer;
-      background: #000;
-      opacity: 0; }
-  #evt_content .letter-tip {
-    width: 10rem;
-    height: 3.41333rem;
-    background: url("../images/tips.png");
-    background-size: 100%;
-    z-index: 5; }
+    bottom: -0.86667rem;
+    right: 1.86667rem; }
+  #evt_content .buy_btn span {
+    display: block;
+    padding: 0 0.4rem;
+    line-height: 0.53333rem;
+    font-size: 0.24rem;
+    background: #910e06;
+    color: #fff; }
   #evt_content .hy-title {
-    width: 10rem;
-    margin: 1.06667rem auto 0.66667rem; }
-  #evt_content .sec-main {
-    padding: 1px 0 0.26667rem; }
-    #evt_content .sec-main .dis-1 {
-      position: absolute;
-      top: 6.66667rem;
-      left: -0.66667rem;
-      width: 2.66667rem;
-      z-index: 5; }
-    #evt_content .sec-main .row {
-      position: relative;
-      padding: 1px 0; }
-    #evt_content .sec-main .cake-cover {
-      position: absolute;
-      top: 0;
-      left: 0;
+    width: 9.46667rem;
+    margin: 0.66667rem auto; }
+  #evt_content .sec-1 {
+    height: 11.50667rem;
+    background: url("../images/sec-1.png") no-repeat;
+    background-size: 100%;
+    overflow: hidden; }
+    #evt_content .sec-1 .title {
       width: 10rem;
-      height: 7.53333rem;
-      background: url("../images/cake-cover.png");
-      background-size: 100%;
-      z-index: 2; }
-    #evt_content .sec-main .cake {
-      width: 8.76rem;
-      height: 6.08rem;
-      margin: 0.53333rem auto 0.53333rem;
+      margin-top: 2rem; }
+    #evt_content .sec-1 .cake {
+      top: 4.13333rem;
+      left: 0.4rem;
+      width: 4.64rem;
       z-index: 1; }
-    #evt_content .sec-main .sq {
-      position: absolute;
-      width: 2.93333rem;
-      bottom: 0;
-      right: 0.13333rem; }
-    #evt_content .sec-main .price {
-      position: relative;
-      width: 10rem;
-      text-align: center;
-      color: #2e2044;
+    #evt_content .sec-1 .tip {
+      top: 2.4rem;
+      left: 50%;
+      width: 9.49333rem;
+      margin-left: -4.74667rem;
+      z-index: 2;
+      display: none; }
+    #evt_content .sec-1 .close {
+      top: 2.53333rem;
+      right: 0.4rem;
+      width: 0.26667rem;
+      height: 0.4rem;
+      background: url("../images/close.png") center no-repeat;
+      background-size: 50%;
       z-index: 3; }
-      #evt_content .sec-main .price i, #evt_content .sec-main .price strong, #evt_content .sec-main .price b {
-        font-weight: normal;
-        font-style: normal; }
-      #evt_content .sec-main .price h2 {
-        font-size: 0.29333rem;
-        font-weight: normal; }
-        #evt_content .sec-main .price h2 span {
-          font-size: 0.45333rem; }
-      #evt_content .sec-main .price .huangou {
-        position: relative;
-        width: 4rem;
-        text-align: center;
-        font-size: 0.32rem;
-        margin: 0.4rem auto; }
-        #evt_content .sec-main .price .huangou .icnone {
-          position: absolute;
-          left: 0;
-          top: 50%;
-          width: 0.4rem;
-          height: 0.4rem;
-          margin-top: -0.2rem;
-          z-index: 1; }
-        #evt_content .sec-main .price .huangou .icon {
-          position: absolute;
-          left: 0;
-          top: 50%;
-          width: 0.4rem;
-          height: 0.4rem;
-          margin-top: -0.2rem;
-          z-index: 2; }
-        #evt_content .sec-main .price .huangou .icon {
-          background: url("../images/icon-2.png") center no-repeat !important;
-          background-size: 80% !important; }
-        #evt_content .sec-main .price .huangou .icon.on {
-          background: url("../images/icon-2-h.png") center no-repeat !important;
-          background-size: 80% !important; }
-    #evt_content .sec-main .buy_btn {
-      width: 2.78667rem;
-      margin: 0 auto;
-      line-height: 0.73333rem;
-      border: #716780 1px solid;
-      font-size: 0.32rem;
-      color: #2e2044;
-      text-align: center; }
-    #evt_content .sec-main .card {
+    #evt_content .sec-1 .price {
+      top: 4.13333rem;
+      left: 5.33333rem;
+      width: 4.88rem; }
+    #evt_content .sec-1 .txt {
+      bottom: 1.6rem;
+      width: 10rem; }
+    #evt_content .sec-1 .buy_btn {
+      top: 7.93333rem;
+      left: 5.4rem; }
+  #evt_content .sec-2 {
+    height: 10.97333rem;
+    background: url("../images/sec-2.png") no-repeat;
+    background-size: 100%;
+    overflow: hidden; }
+    #evt_content .sec-2 .title {
       width: 10rem;
-      margin-top: 0.66667rem; }
-    #evt_content .sec-main .chakan {
-      width: 1.61333rem;
-      margin: 0.4rem auto 0.49333rem; }
-    #evt_content .sec-main .liwu {
+      margin-top: 2rem; }
+    #evt_content .sec-2 .cake {
+      top: 4.53333rem;
+      left: 5.06667rem;
+      width: 4.64rem; }
+    #evt_content .sec-2 .price {
+      top: 3.86667rem;
+      left: 0.8rem;
+      width: 4.88rem; }
+    #evt_content .sec-2 .buy_btn {
+      top: 8.26667rem;
+      left: 0.86667rem; }
+  #evt_content .sec-3 {
+    height: 11.21333rem;
+    background: url("../images/sec-3.png") no-repeat;
+    background-size: 100%;
+    overflow: hidden; }
+    #evt_content .sec-3 .title {
       width: 10rem;
-      margin-top: 1.73333rem; }
+      margin-top: 2rem; }
+    #evt_content .sec-3 .cake {
+      top: 4.4rem;
+      left: 0.4rem;
+      width: 4.64rem; }
+    #evt_content .sec-3 .price {
+      top: 4.13333rem;
+      left: 5.33333rem;
+      width: 4.88rem; }
+    #evt_content .sec-3 .buy_btn {
+      top: 8.2rem;
+      left: 5.4rem; }
+  #evt_content .sec-4 {
+    height: 11.73333rem;
+    background: url("../images/sec-4.png") no-repeat;
+    background-size: 100%;
+    overflow: hidden; }
+    #evt_content .sec-4 .title {
+      width: 10rem;
+      margin-top: 2rem; }
+    #evt_content .sec-4 .cake {
+      top: 4.93333rem;
+      left: 5.33333rem;
+      width: 4.64rem; }
+    #evt_content .sec-4 .price {
+      top: 4.13333rem;
+      left: 0.8rem;
+      width: 4.88rem; }
+    #evt_content .sec-4 .buy_btn {
+      top: 8.6rem;
+      left: 0.86667rem; }
+  #evt_content .sec-5 {
+    height: 10.68rem;
+    background: url("../images/sec-5.png") no-repeat;
+    background-size: 100%;
+    overflow: hidden; }
+    #evt_content .sec-5 .card {
+      width: 10rem; }
   #evt_content .sec-footer {
+    background: url("../images/sec-foot.png") no-repeat;
+    background-size: 100%;
     position: relative;
-    padding-bottom: 1.06667rem;
-    z-index: 1;
-    background: url("../images/foot-bg.png") bottom no-repeat;
-    background-size: 100%; }
+    padding-bottom: 0.66667rem;
+    z-index: 1; }
     #evt_content .sec-footer .txt {
       position: relative;
       width: 9.33333rem;
-      padding-top: 1.06667rem;
+      padding-top: 0.66667rem;
       margin: 0 auto;
-      color: #56466b; }
+      color: #fdf4e3; }
       #evt_content .sec-footer .txt h2 {
-        font-size: 0.37333rem;
+        font-size: 0.32rem;
         font-weight: normal; }
       #evt_content .sec-footer .txt p {
         font-size: 0.29333rem;
         padding-left: 0.46667rem;
-        line-height: 0.53333rem;
+        line-height: 0.46667rem;
         text-indent: -0.46667rem;
         margin: 0.06667rem 0; }
         #evt_content .sec-footer .txt p span {
@@ -210,123 +164,26 @@
           padding-left: 0.13333rem;
           text-indent: -0.13333rem; }
 
-/*彈窗*/
-.Dialogbg {
-  background-color: #000;
-  height: 100%;
-  left: 0;
-  opacity: 0.7;
-  position: fixed;
-  top: 0;
+.huangou {
+  position: relative;
   width: 100%;
-  z-index: 200;
-  display: none;
-  -moz-opacity: .7;
-  filter: alpha(opacity=70); }
+  font-size: 0.29333rem;
+  color: #9b4245;
+  margin: 0.13333rem auto 0.26667rem;
+  text-align: left; }
 
-.DialogBox {
-  box-shadow: 0 0 0 #999;
-  font-size: 0.18667rem;
-  width: 8rem;
-  height: auto !important;
-  padding: 0.01333rem;
+.huangou p {
+  padding-left: 0.6rem; }
+
+.huangou .icon {
+  position: absolute;
   top: 50%;
-  left: 50%;
-  margin: -4rem auto 0 -4rem !important;
-  position: fixed;
-  z-index: 99999;
-  display: none; }
-  .DialogBox .closes {
-    width: 0.8rem;
-    height: 0.8rem;
-    position: absolute;
-    top: 0.13333rem;
-    right: 0.13333rem;
-    cursor: pointer;
-    z-index: 8;
-    background: url("../images/close.png") center no-repeat;
-    background-size: 60%; }
-  .DialogBox .quan {
-    position: relative;
-    padding: 0;
-    border-radius: 0.13333rem;
-    overflow: hidden; }
-    .DialogBox .quan img {
-      margin: 0 auto;
-      width: 100%; }
-    .DialogBox .quan .txt {
-      width: 5.33333rem;
-      position: absolute;
-      text-align: center;
-      top: 1.86667rem;
-      left: 50%;
-      margin-left: -2.66667rem;
-      letter-spacing: 0.04rem;
-      vertical-align: baseline !important; }
-      .DialogBox .quan .txt h2 {
-        font-size: 0.32rem;
-        color: #83481b;
-        line-height: 0.66667rem; }
-      .DialogBox .quan .txt span {
-        vertical-align: baseline !important; }
-      .DialogBox .quan .txt p {
-        font-size: 0.32rem;
-        line-height: 0.53333rem;
-        color: #8d0d0a;
-        vertical-align: baseline !important; }
-        .DialogBox .quan .txt p span {
-          font-weight: bold; }
-      .DialogBox .quan .txt .go-use {
-        display: block;
-        width: 2.4rem;
-        margin: 0.4rem auto;
-        line-height: 0.57333rem;
-        cursor: pointer;
-        background: #a80600;
-        color: #fae4c5;
-        border-radius: 0.57333rem;
-        text-align: center;
-        font-size: 0.32rem; }
-  .DialogBox .quan-2 .go-use {
-    bottom: 1.33333rem; }
+  margin-top: -0.26667rem;
+  width: 0.53333rem;
+  height: 0.53333rem;
+  background: url("../images/icon-1.png") center no-repeat;
+  background-size: 60%; }
 
-.swiper-container {
-  position: relative !important;
-  width: 8.76rem;
-  height: 6.08rem;
-  margin-left: auto;
-  margin-right: auto;
-  overflow: hidden; }
-
-.swiper-slide {
-  text-align: center;
-  width: 100%;
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center; }
-
-.swiper-slide img {
-  width: 100%; }
-
-.swiper-pagination {
-  width: 100%;
-  position: absolute !important;
-  bottom: 0.13333rem !important; }
-
-.swiper-pagination-bullet {
-  margin: 0 0.06667rem !important;
-  background: #fff !important;
-  opacity: 1 !important; }
-
-.swiper-pagination-bullet.swiper-pagination-bullet-active {
-  background: #626262 !important; }
+.huangou .icon.on {
+  background: url("../images/icon-1-h.png") center no-repeat;
+  background-size: 60%; }

@@ -63,34 +63,24 @@
     startLoading();
 
     var loadComplete = function () {
-        /*日期判断，更换日历*/
-        var vDate = new Date();
-        var myDate = vDate.getFullYear() + '-' + (vDate.getMonth() + 1) + '-' + vDate.getDate(); /*解决安卓浏览器时间显示问题*/
-        var myDay = vDate.getDate();
-        switch (myDay){
-            case 3:
-                $(".calendar img").attr("src","https://act.mcake.com/fangli/2020/wap/memberDay-3yue/images/calendar-1.png");
-                break;
-            case 10:
-                $(".calendar img").attr("src","https://act.mcake.com/fangli/2020/wap/memberDay-3yue/images/calendar-2.png");
-                break;
-            case 17:
-                $(".calendar img").attr("src","https://act.mcake.com/fangli/2020/wap/memberDay-3yue/images/calendar-3.png");
-                break;
-            case 24:
-                $(".calendar img").attr("src","https://act.mcake.com/fangli/2020/wap/memberDay-3yue/images/calendar-4.png");
-                break;
-            case 31:
-                $(".calendar img").attr("src","https://act.mcake.com/fangli/2020/wap/memberDay-3yue/images/calendar-5.png");
-                break;
-        }
 
-
-        /*initScroll();  新版wap端跳转新页面再返回来之后，页面无法滑动了*/
     };
 
 })();
 
 
+function choujiang(obj, data){
+
+    $(obj).find(".scratch_container").delay(200).fadeOut(500);
+    /*显示抽奖结果*/
+    $(obj).find(".cover").fadeOut("1000");
+    $(".sb").html(data.money);
+    $(".youhuiquan").addClass("quan-"+data.money);
+    /*    $(".money").html(data.money);*/
+    $(".buy_btn").attr("data-money",data.money);
+    $(".buy_btn").attr("data-pid",data.pid);
+    $(".shou").fadeOut(100);
+
+}
 
 

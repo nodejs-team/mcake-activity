@@ -1,0 +1,37 @@
+var resData = [
+    {
+        "name":"quan_png",
+        "type":"image",
+        "url":"quan.png"
+    },
+    {
+        "name":"share_png",
+        "type":"image",
+        "url":"share.png"
+    },
+    {
+        "name":"t-1_02_png",
+        "type":"image",
+        "url":"t-1_02.png"
+    },
+    {
+        "name":"banner_png",
+        "type":"image",
+        "url":"banner.png"
+    },
+    {
+        "name":"from-bg_png",
+        "type":"image",
+        "url":"from-bg.png"
+    },
+    {
+        "name":"from-t_png",
+        "type":"image",
+        "url":"from-t.png"
+    },
+    {
+        "name":"lq-btn_png",
+        "type":"image",
+        "url":"lq-btn.png"
+    }
+];

@@ -1,0 +1,139 @@
+@charset "UTF-8";
+#evt_content * {
+  vertical-align: baseline !important; }
+
+/*价格符号不对齐*/
+#evt_content {
+  background: #ffeac1;
+  background-size: 100%; }
+  #evt_content img {
+    width: 100%; }
+  #evt_content .sec {
+    position: relative; }
+  #evt_content .sec-register {
+    padding-bottom: 2.26667rem;
+    background: url("../images/register.png") repeat;
+    background-size: 100%;
+    z-index: 1;
+    overflow: hidden;
+    text-align: center; }
+    #evt_content .sec-register .register-content {
+      width: 8.92rem;
+      height: 15.44rem;
+      background: url("../images/register-content.png");
+      background-size: 100%;
+      margin: 2.26667rem auto 0;
+      overflow: hidden; }
+      #evt_content .sec-register .register-content h2 {
+        font-size: 0.48rem;
+        color: #6c4700;
+        margin: 0.93333rem auto 0.66667rem; }
+      #evt_content .sec-register .register-content .register {
+        width: 8.26667rem;
+        margin: 0 auto;
+        color: #a4a4a4; }
+        #evt_content .sec-register .register-content .register ul li {
+          position: relative;
+          display: flex;
+          flex-wrap: wrap;
+          align-content: flex-start;
+          background: #fff5df;
+          line-height: 1.12rem;
+          margin-bottom: 0.30667rem;
+          font-size: 0.34667rem; }
+          #evt_content .sec-register .register-content .register ul li b {
+            display: block;
+            width: 1.6rem;
+            height: 1.12rem;
+            text-align: left;
+            background: url("../images/star.png") 0.26667rem center no-repeat;
+            background-size: 12%;
+            padding-left: 0.53333rem;
+            font-weight: normal; }
+            #evt_content .sec-register .register-content .register ul li b.yzm {
+              width: 2.66667rem;
+              background-size: 7%; }
+            #evt_content .sec-register .register-content .register ul li b.tel {
+              width: 2.13333rem;
+              background-size: 9%; }
+            #evt_content .sec-register .register-content .register ul li b.noStar {
+              background: none;
+              padding-left: 0.26667rem; }
+          #evt_content .sec-register .register-content .register ul li input {
+            flex: 1;
+            background: none;
+            font-size: 0.34667rem;
+            border: none; }
+          #evt_content .sec-register .register-content .register ul li input.radio {
+            flex: 0;
+            opacity: 0;
+            display: inline-block;
+            width: 0;
+            height: 1.10667rem; }
+          #evt_content .sec-register .register-content .register ul li span.sex-span {
+            display: block;
+            width: 0.4rem;
+            text-align: right;
+            margin-right: 0.13333rem; }
+          #evt_content .sec-register .register-content .register ul li .kind-sex {
+            vertical-align: middle;
+            width: 0.4rem;
+            height: 1.12rem;
+            margin-right: 0.8rem;
+            margin-left: 0.13333rem;
+            cursor: pointer;
+            background: url("../images/icon.png") center center no-repeat;
+            background-size: 100%;
+            border: none; }
+          #evt_content .sec-register .register-content .register ul li .kind-sex.hot {
+            background: url("../images/icon-on.png") center center no-repeat;
+            background-size: 100%; }
+          #evt_content .sec-register .register-content .register ul li.flavorWrap {
+            padding: 0.26667rem 0; }
+            #evt_content .sec-register .register-content .register ul li.flavorWrap .noStar {
+              line-height: 0.8rem; }
+            #evt_content .sec-register .register-content .register ul li.flavorWrap span.label {
+              display: block;
+              width: 1.04rem;
+              line-height: 0.8rem;
+              text-align: right;
+              margin-right: 0.13333rem; }
+            #evt_content .sec-register .register-content .register ul li.flavorWrap .kind {
+              vertical-align: middle;
+              width: 0.4rem;
+              height: 0.8rem;
+              margin-right: 0;
+              cursor: pointer;
+              background: url("../images/icon.png") center center no-repeat;
+              border: none;
+              background-size: 100%; }
+            #evt_content .sec-register .register-content .register ul li.flavorWrap .kind.hot {
+              background: url("../images/icon-on.png") center center no-repeat;
+              background-size: 100%; }
+            #evt_content .sec-register .register-content .register ul li.flavorWrap .check-box {
+              display: flex;
+              flex: 1;
+              flex-wrap: wrap;
+              align-content: flex-start; }
+          #evt_content .sec-register .register-content .register ul li .tyzm {
+            position: absolute;
+            width: 2.66667rem;
+            height: 0.88rem;
+            top: 0.12rem;
+            right: 0.29333rem; }
+            #evt_content .sec-register .register-content .register ul li .tyzm img {
+              height: 100%; }
+          #evt_content .sec-register .register-content .register ul li .send {
+            position: absolute;
+            width: 2.66667rem;
+            height: 1.12rem;
+            text-align: right;
+            top: 0;
+            right: 0.29333rem;
+            color: #d39c3a; }
+      #evt_content .sec-register .register-content .register-btn {
+        width: 2.32rem;
+        margin: 0.49333rem auto; }
+      #evt_content .sec-register .register-content p {
+        font-size: 0.25333rem;
+        color: #6c4700; }

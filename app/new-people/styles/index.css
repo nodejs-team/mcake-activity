@@ -1,0 +1,89 @@
+@charset "UTF-8";
+#evt_content * {
+  vertical-align: baseline !important; }
+
+/*价格符号不对齐*/
+#evt_content {
+  background: #ffeac1;
+  background-size: 100%; }
+  #evt_content img {
+    width: 100%; }
+  #evt_content .sec {
+    position: relative; }
+  #evt_content .sec-top {
+    height: 15.13333rem;
+    background: url("../images/banner.png") repeat;
+    background-size: 100%;
+    z-index: 1;
+    overflow: hidden; }
+  #evt_content .hy-title {
+    width: 10rem;
+    margin: 0.66667rem auto; }
+  #evt_content .sec-quan {
+    padding-top: 0.8rem; }
+    #evt_content .sec-quan .quan {
+      width: 10rem; }
+    #evt_content .sec-quan .yq-btn {
+      width: 4.22667rem;
+      margin: 1.06667rem auto; }
+  #evt_content .sec-record {
+    padding-bottom: 2rem; }
+    #evt_content .sec-record .record-form {
+      width: 9.48rem;
+      margin: 0 auto;
+      overflow: hidden;
+      border-radius: 0.13333rem; }
+      #evt_content .sec-record .record-form .form-title {
+        width: 9.48rem;
+        height: 1.58667rem;
+        background: url("../images/from-t.png") repeat-y;
+        background-size: 100%; }
+      #evt_content .sec-record .record-form .form {
+        width: 9.48rem;
+        background: url("../images/from-bg.png") repeat-y;
+        background-size: 100%; }
+        #evt_content .sec-record .record-form .form li {
+          display: flex;
+          text-align: center;
+          color: #6d4700;
+          line-height: 1.06667rem; }
+          #evt_content .sec-record .record-form .form li b {
+            flex: 1.43;
+            font-weight: normal; }
+          #evt_content .sec-record .record-form .form li span {
+            flex: 1; }
+  #evt_content .sec-footer {
+    background: #ffe4af;
+    background-size: 100%;
+    position: relative;
+    padding-bottom: 0.66667rem;
+    z-index: 1; }
+    #evt_content .sec-footer .txt {
+      position: relative;
+      width: 9.33333rem;
+      padding-top: 0.66667rem;
+      margin: 0 auto;
+      color: #826016; }
+      #evt_content .sec-footer .txt h2 {
+        font-size: 0.37333rem;
+        font-weight: normal; }
+      #evt_content .sec-footer .txt p {
+        font-size: 0.32rem;
+        padding-left: 0.46667rem;
+        line-height: 0.6rem;
+        text-indent: -0.46667rem;
+        margin: 0.06667rem 0; }
+        #evt_content .sec-footer .txt p span {
+          display: block;
+          padding-left: 0.13333rem;
+          text-indent: -0.13333rem; }
+
+.share {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  width: 10rem;
+  margin-left: -5rem;
+  height: 100%;
+  z-index: 2;
+  display: none; }

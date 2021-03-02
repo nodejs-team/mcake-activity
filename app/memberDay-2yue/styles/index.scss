@@ -2,69 +2,57 @@
   @return ($n * 10 / 750) * 1rem; //设计稿一般都是750宽
 }
 *{ vertical-align: baseline !important;}  /*价格符号不对齐*/
-#evt_content{background: #ffffff;
+#evt_content{width: px2rem(750); background:#ffdbae;
   img{width:100%; display: block;}
   .sec{position: relative; }
 
-  .sec-top{height: px2rem(940); background:url("../images/banner-wap.jpg") repeat; background-size: 100%; z-index: 1; overflow: hidden;
+  .sec-top{ width: px2rem(750); height: px2rem(596); background:url("../images/banner.png") no-repeat; background-size: 100%; z-index: 1; overflow: hidden;}
+
+
+  .hy-title{ width: px2rem(750); margin:px2rem(40) auto px2rem(60); }
+
+
+  .icon{position: absolute; width:px2rem(94); height:px2rem(114); right:px2rem(15); top:0; z-index: 2;}
+  .icon_30{ background: url("../images/icon_30.png"); background-size: 100%; }
+  .icon_50{ background: url("../images/icon_50.png"); background-size: 100%; }
+
+  .more{width: px2rem(159); margin:0 auto;}
+
+  .sec-1{ width: px2rem(750); overflow: hidden;
+    .prize{margin:0 auto;
+      ul{ width: px2rem(709); margin: 0 auto; background: #ffebd2; padding:px2rem(70) 0 px2rem(10); border-radius:px2rem(10);
+        li{position: relative; float: left; width:px2rem(180); height:px2rem(300); background:url("../images/bag.png") center top no-repeat; background-size: 100%; margin: 0 px2rem(25) px2rem(50);
+          .bagTxt{position: absolute; top:px2rem(250); left: 50%; margin-left:px2rem(-25);}
+          .select{ position: absolute; bottom:px2rem(5); left: 50%; margin-left:px2rem(-17); width:px2rem(34); height:px2rem(34); background: url("../images/select.png") no-repeat; background-size: 100%; cursor: pointer;
+            &.on{ background: url("../images/select-ed.png") no-repeat; background-size: 100%;}
+          }
+
+          &:nth-of-type(1){ background:url("../images/bag-bg-1.png") center top no-repeat; background-size: 100%;}
+          &:nth-of-type(2){ background:url("../images/bag-bg-2.png") center top no-repeat; background-size: 100%;}
+          &:nth-of-type(3){ background:url("../images/bag-bg-3.png") center top no-repeat; background-size: 100%;}
+          &:nth-of-type(4){ background:url("../images/bag-bg-4.png") center top no-repeat; background-size: 100%;}
+          &:nth-of-type(5){ background:url("../images/bag-bg-5.png") center top no-repeat; background-size: 100%;}
+          &:nth-of-type(6){ background:url("../images/bag-bg-6.png") center top no-repeat; background-size: 100%;}
+
+        }
+      }
+    }
+    .confirm{ width: px2rem(225); margin:px2rem(30) auto 0; cursor: pointer;}
+    .confirm-txt{ width: px2rem(283); margin:px2rem(30) auto;}
   }
 
+  .sec-2{ width: px2rem(750); padding-bottom: px2rem(50); padding-left: px2rem(8); background:#ffdbae;  overflow: hidden;
 
-  .hy-title{ width: px2rem(750); margin:px2rem(77) auto px2rem(77); }
-
-  .sec-calendar{ margin-top: px2rem(-50); z-index: 2;
-    .calendar{width:px2rem(750); margin: 0 auto;}
-  }
-
-  .sec-cake{ position: relative; z-index: 2;
-    .cake{ position: relative; width:px2rem(750); margin: 0 auto;}
-    .price{position: absolute; bottom: px2rem(30); left: px2rem(50); line-height: px2rem(20) !important;
-      h2{ color: #78433f; }
-      s{ color: #78433f; margin-left: 0 !important; }
-    }
-    .buy-btn{position: absolute; width: px2rem(184); bottom:px2rem(60); left: px2rem(500); background: #e4adb3; color: #fff; line-height: px2rem(50); border-radius: px2rem(50); text-align: center; z-index: 2;}
+    .row{ position: relative; width: px2rem(370); float: left; margin: 0 0 px2rem(30) 0; overflow:hidden; }
 
   }
 
-  .sec-main{ padding:1px 0 px2rem(20);
-    .dis{position: absolute; width: px2rem(52); left: 0; top:px2rem(100);}
-    .pro-num{ position: relative; float: left; width: px2rem(200); height: px2rem(45); display: inline-block; border: #8fa783 1px solid; border-radius: px2rem(45);
-      a{ position: absolute; top:px2rem(-20); width:px2rem(80); height:px2rem(80); display:block;}
-      .minus{display:inline-block;background:url(../images/in-a-1.png) center no-repeat; left:px2rem(-20); background-size: 50%;}
-      .plus{display:inline-block;background:url(../images/in-a-2.png) center no-repeat; right:px2rem(-20); background-size: 50%;}
-      .bang{ display:inline-block; width:px2rem(130); line-height:px2rem(45); position:absolute; top:0; left:px2rem(35); text-align:center; color:#8fa783; background: none; font-size:px2rem(20); padding:0;}
-    }
+  .sec-3{ width: px2rem(750); overflow: hidden;}
 
-    .row{ position: relative;
-      .cake{position: absolute;}
-      .price{position: absolute;}
-    }
-    .row1{height: px2rem(400);
-      .cake{width:px2rem(280); top:0; left:px2rem(30); z-index: 1;}
-      .price{top:px2rem(30); left: auto; right:0;}
-
-
-    }
-    .row2{height: px2rem(400);
-      .cake{ width:px2rem(280); top:0; right:px2rem(30); z-index: 1;}
-      .price{ top: px2rem(30); left:px2rem(30); z-index: 2; }
-    }
-
-    .row3{height: px2rem(400);
-      .cake{width:px2rem(280); top:0; left:px2rem(30); z-index: 1;}
-      .price{top:px2rem(30); left: auto; right:0;}
-    }
-
-    .code{width: px2rem(750); padding: px2rem(50) 0;}
-    .more{width:px2rem(200);position: relative; margin:px2rem(40) auto; background: #cd686d; border-radius:px2rem(50); text-align: center;
-      span{ display: block; color: #fff; font-size:px2rem(22); line-height:px2rem(50);}
-    }
-  }
-
-  .sec-footer{background:url("../images/foot-bg.png") repeat; background-size: 10%; position: relative; padding-bottom: px2rem(50); z-index:1;
-    .txt{ position: relative; width:px2rem(700); padding-top: px2rem(80); margin: 0 auto;  color: #000;
-      h2{font-size: px2rem(28); font-weight: normal; }
-      p{ font-size: px2rem(22); padding-left: px2rem(35); line-height:px2rem(40);  text-indent: px2rem(-35); margin:px2rem(5) 0;
+  .sec-footer{ position: relative; padding-bottom: px2rem(70); z-index:1; background:#fdd098;
+    .txt{ position: relative; width:px2rem(700); padding-top: px2rem(70); margin: 0 auto;  color: #835e2f;
+      h2{font-size: px2rem(22); font-weight: normal; }
+      p{ font-size: px2rem(21); padding-left: px2rem(35); line-height:px2rem(35);  text-indent: px2rem(-35); margin:px2rem(5) 0;
         span{display: block; text-indent: px2rem(80);}
       }
     }
@@ -72,25 +60,51 @@
 
 
   /*价格计算【通用】*/
-  .price{ position: absolute;  width: px2rem(400); text-align: left; z-index: 2;
+  .price{position: relative; width: px2rem(361); text-align: left; z-index: 2; height: px2rem(220); overflow: hidden;
 
-    .title{position: relative; width: px2rem(353); margin:px2rem(10) 0 px2rem(50) 0;}
-    h2{font-size:  px2rem(20); font-weight: normal; line-height: px2rem(50); color: #8fa783;
+    .title{position: relative; width: px2rem(200); margin:px2rem(20) auto 0; font-size: px2rem(28); text-align: center; color: #de4747;}
+    h2{position: relative; font-size:  px2rem(20); font-weight: normal; line-height: px2rem(60); color:#de4747; text-align: center;
       i{font-size:  px2rem(20); line-height: px2rem(30); font-style: normal;vertical-align:middle; }
-      span{font-size: px2rem(34); }
+      span{font-size: px2rem(32); color: #de4747; }
       em{font-style:normal;}
     }
-    s{ font-size:  px2rem(20); color: #000; font-weight: normal; margin-left: px2rem(10);
+    s{ font-size:  px2rem(20); color:#de4747; font-weight: normal; margin-left: px2rem(10);
       span{font-size: px2rem(20); }
       b{font-weight:normal;}
     }
 
-    ul.buy_btn_box { width: px2rem(150); overflow: hidden; margin:0 px2rem(20) 0 0; float: left;   }
-    ul.buy_btn_box li span { display: block; background: #8fa783 none repeat scroll 0 0;  color: #fff; cursor: pointer; line-height: px2rem(42); padding-top: px2rem(2); font-size: px2rem(22); text-align: center; border-radius: px2rem(27.5); width: px2rem(150); }
+    ul.buy_btn_box { width: px2rem(174); overflow: hidden; margin:0; float: left;   }
+    ul.buy_btn_box li span {display: block; width: px2rem(175); height: px2rem(72); text-align: center; background: url("../images/btn-bg.png") no-repeat; background-size: 100%; font-size: px2rem(16); line-height: px2rem(72); color: #fff; }
+    .buy_btn_box.one{ width: px2rem(360); margin: 0 auto; text-align: center;
+        li span{margin: 0 auto;}
+    }
+
+  }
+
+  .pro-num{ position: relative; float: right; width: px2rem(175); height: px2rem(72); display: inline-block;background: url("../images/btn-bg.png") no-repeat; background-size: 100%;
+    a{ position: absolute; top:0; width:px2rem(70); height:px2rem(72); display:block; z-index: 2;}
+    .minus{display:inline-block;background:url(../images/in-a-1.png) center no-repeat; left:px2rem(-10); background-size: 20%;}
+    .plus{display:inline-block;background:url(../images/in-a-2.png) center no-repeat; right:px2rem(-10); background-size: 20%;}
+    .bang{ display:inline-block; width:px2rem(135); line-height:px2rem(72); position:absolute; top:0; left:px2rem(25); text-align:center; color:#fff; background: none; font-size:px2rem(18); padding:0; z-index: 1;}
   }
 
 }
 
 
+/*彈窗*/
+.Dialogbg-quan{  background-color: #000;  height: 100%;  left: 0;  opacity: 0.7;  position: fixed;  top: 0;  width: 100%; z-index: 200; display: none; }
 
-
+.Dialog-quan{   position: fixed; width:px2rem(730); height: px2rem(703); background: url("../images/quan-bg.png"); background-size: 100%;  top: 50%; left: 50%;  z-index: 99999; margin: px2rem(-351) 0 0 px2rem(-365); display: none;
+  img{width: 100%;}
+  .closes{ width:px2rem(30); height:px2rem(30); position: absolute; top:px2rem(-40); right:0;  cursor: pointer; z-index: 8; background: url("../images/close2.png") no-repeat; background-size: 100%;}
+  .quan{position: relative; display: none; text-align: center;  width:px2rem(730); height: px2rem(703);
+    .go-use {display: block; position: absolute; bottom:px2rem(92); left: 50%; width: px2rem(298); height: px2rem(72); margin-left:px2rem(-148); cursor: pointer; background: #000;  opacity: 0;
+    }
+  }
+  .quan-1{ background: url("../images/quan-1.png"); background-size: 100%;}
+  .quan-2{ background: url("../images/quan-2.png"); background-size: 100%;}
+  .quan-3{ background: url("../images/quan-3.png"); background-size: 100%;}
+  .quan-4{ background: url("../images/quan-4.png"); background-size: 100%;}
+  .quan-5{ background: url("../images/quan-5.png"); background-size: 100%;}
+  .quan-6{ background: url("../images/quan-6.png"); background-size: 100%;}
+}
