@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+<link rel="stylesheet" href="css/guaguaka.css">
+</head>
+<body>
+	<div class="sec sec-main">
+                    <div class="row row1">
+                        <div class="guaguaka" ontouchmove="return false;">
+                            <img src="images/dot.png" class="imageBackground" style="display: none;" alt="">
+                            <img src="images/guagua-cover.png" class="pictureOver" style="display: none;" alt="">
+                            <!--刮刮卡-->
+                            <div class="scratch_container">
+                                <div class="scratch_viewport">
+                                    <!-- result picture -->
+                                    <canvas id="js-canvas0"></canvas>
+                                </div>
+                            </div>
+                            <div class="youhuiquan">+<span class="money">?</span>元升磅</div>
+                            <div class="shou shoudong"></div>
+                        </div>
+                    </div>
+                    <div class="row row1">
+                        <div class="guaguaka" ontouchmove="return false;">
+                            <img src="images/dot.png" class="imageBackground" style="display: none;" alt="">
+                            <img src="images/cover.png" class="pictureOver" style="display: none;" alt="">
+                            <!--刮刮卡-->
+                            <div class="scratch_container">
+                                <div class="scratch_viewport">
+                                    <!-- result picture -->
+                                    <canvas id="js-canvas1"></canvas>
+                                </div>
+                            </div>
+                            <div class="youhuiquan">+<span class="money">?</span>元升磅</div>
+                            <div class="shou shoudong"></div>
+                        </div>
+                    </div>
+       </div>
+       <script src="js/jquery.min.js"></script>
+       <script src="js/guaguaka.js"></script>
+       <script>
+    function guaguaEnd(ele){
+        console.log("擦除结束"+ele);
+    }
+
+    var arr = [40,48,50,58];
+
+    var money = [];
+    $(".row").each(function (i) {
+        var self = $(this);
+        money.push(arr[Math.floor(Math.random()*(3-0+1))+0]);
+        /*刮刮卡*/
+        var imageBackground=$(this).find(".imageBackground").attr("src");   /*刮开之后的底图*/
+        var pictureOver=$(this).find(".pictureOver").attr("src");  /*覆盖图*/
+        var canvasId=$(this).find('js-canvas'+i).selector;
+        var scratch = new Scratch({
+            canvasId: 'js-canvas'+i,
+            imageBackground: imageBackground,
+            pictureOver: pictureOver,
+            cursor: {
+                x: '-20',
+                y: '-20'
+            },
+            radius: 20,
+            nPoints: 1000,
+            percent: 30,
+            pointSize: { x: 25, y:25},
+            callback: function () {/*刮刮之后的函数*/
+                self.find(".scratch_container").fadeOut(100);
+                self.find(".sb").html(money[i]);
+                self.find(".money").html(money[i]);
+                self.find(".buy_btn").attr("data-money",money[i]);
+                self.find(".shou").fadeOut(100);
+                guaguaEnd(canvasId);
+            }
+        });
+    });
+</script>
+</body>
+</html>

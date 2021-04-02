@@ -1,0 +1,156 @@
+@function px2rem($n) {
+  @return ($n * 10 / 750) * 1rem; //设计稿一般都是750宽
+}
+*{ vertical-align: baseline !important;}  /*价格符号不对齐*/
+#evt_content{ background: #f0e5dc;
+  img{width:100%; display: block;}
+  .sec{position: relative; }
+
+  .sec-top{ }
+
+  .hy-title{ width: px2rem(750); margin:px2rem(50) auto px2rem(50); }
+
+
+
+  .sec-main{ padding:1px 0 px2rem(20);
+
+    .row{ position: relative;
+      .cake{position: absolute;}
+      .price{position: absolute;}
+    }
+    .row1{height: px2rem(530);
+      .cake{width:px2rem(450); top:0; left:px2rem(-50); z-index: 1;}
+      .price{top:px2rem(30); left: auto; right:0;}
+    }
+    .row2{height: px2rem(530);
+      .cake{ width:px2rem(600); top:0; right:px2rem(-40); z-index: 1;}
+      .price{ top:0; left:px2rem(40); z-index: 2; }
+    }
+
+    .row3{height: px2rem(530);
+      .cake{width:px2rem(510); top:0; left:px2rem(-130); z-index: 1;}
+      .price{top:0; left: auto; right:0;}
+    }
+
+
+  }
+
+  .sec-footer{background:#efdccc; position: relative; padding-bottom: px2rem(50); z-index:1;
+    .txt{ position: relative; width:px2rem(700); padding-top: px2rem(80); margin: 0 auto;  color: #5b3c23; text-align: left;
+      h2{font-size: px2rem(28); font-weight: normal; }
+      p{ font-size: px2rem(22); padding-left: px2rem(35); line-height:px2rem(40);  text-indent: px2rem(-35); margin:px2rem(5) 0;
+        span{display: block; padding-left: px2rem(10); text-indent: px2rem(-10);}
+      }
+    }
+  }
+
+
+  /*价格计算【通用】*/
+  .price{ position: absolute;  width: px2rem(340); text-align: left; z-index: 2;
+    .title{position: relative; width: px2rem(300); margin:px2rem(10) 0 px2rem(30) 0;}
+    h2{font-size:  px2rem(20); font-weight: normal; line-height: px2rem(50); color: #a46630;
+      span{font-size: px2rem(20); }
+    }
+    s{ font-size:  px2rem(20); color: #f4f6d2; font-weight: normal; margin-left: px2rem(10);
+      span{font-size: px2rem(20); }
+      b{font-weight:normal;}
+    }
+
+
+  }
+
+}
+
+
+.shoudong{animation: shoudong 1.5s infinite alternate;}
+@keyframes shoudong {
+  0%{transform:translate3d(-10px,0,0);transform-origin:50% 100%; }
+  100%{transform:translate3d(10px,0,0);transform-origin:50% 100%; }
+}
+
+/*抽奖*/
+.cjIframe{width:px2rem(750); height:px2rem(1700);/* border: blue 1px solid;*/}
+body{margin: 0;}
+/*通iframe嵌套抽奖页面*/
+img{width: 100%;}
+.hy-title{ width: px2rem(750); margin:px2rem(30) auto; }
+.choujiang{position: relative; width: px2rem(750); margin: 0 auto;
+
+  .sec-main{ padding:1px 0 px2rem(20);
+
+    /*刮刮卡*/
+    .guaguaka{position: relative; margin: 0 auto; width:px2rem(718); height:px2rem(484); z-index: 90; display: none; }
+    .scratch_container {
+      position: absolute;
+      top: 0; left: 0;
+      width:px2rem(718); height:px2rem(484);
+    }
+
+    .scratch_viewport {
+      position: relative;
+      width:px2rem(718); height:px2rem(484);
+      margin: 0 auto;
+      z-index: 0;
+    }
+
+    .scratch_picture-under {
+      width:px2rem(718); height:px2rem(484);
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      z-index: -1;
+    }
+
+    .scratch_container canvas { background-size: 100%;
+      position: relative;
+      width:px2rem(718) !important; height:px2rem(484) !important;
+      z-index: 1;
+    }
+
+
+
+    .youhuiquan{background: url("../images/quan-48.png");  background-size: 100%; width: 100%; height: 100%; font-size:px2rem(23); text-align: center; line-height:px2rem(60); color: #cc2924; letter-spacing: 2px; z-index: 1;}
+
+    .shou{position: absolute; bottom:px2rem(-20); right: 10px; width:px2rem(36); height:px2rem(55); background: url("../images/shou.png"); background-size: 100%; z-index: 5;}
+
+    .row{ position: relative;
+      .cake{position: absolute;}
+      .price{position: absolute;}
+    }
+    .row1{height: px2rem(530);
+      .cake{width:px2rem(450); top:0; left:px2rem(-50); z-index: 1;}
+      .price{top:px2rem(30); left: auto; right:0;}
+
+
+    }
+    .row2{height: px2rem(530);
+      .cake{ width:px2rem(600); top:0; right:px2rem(-40); z-index: 1;}
+      .price{ top:0; left:px2rem(40); z-index: 2; }
+    }
+
+    .row3{height: px2rem(530);
+      .cake{width:px2rem(510); top:0; left:px2rem(-130); z-index: 1;}
+      .price{top:0; left: auto; right:0;}
+    }
+
+
+  }
+
+  .buy_btn { width: px2rem(250); overflow: hidden; margin:px2rem(30) px2rem(10) 0 0; float: left;   }
+  .buy_btn span { display: block; border: #ca996f 1px solid;  color: #ca996f; cursor: pointer; line-height: px2rem(42); padding-top: px2rem(2); font-size: px2rem(22); text-align: center; width: px2rem(150); }
+  /*价格计算【通用】*/
+  .price{ position: absolute;  width: px2rem(340); text-align: left; z-index: 2;
+    .title{position: relative; width: px2rem(300); margin:px2rem(10) 0 px2rem(30) 0;}
+    h2{font-size:  px2rem(20); font-weight: normal; line-height: px2rem(50); color: #a46630;
+      span{font-size: px2rem(20); }
+    }
+    s{ font-size:  px2rem(20); color: #f4f6d2; font-weight: normal; margin-left: px2rem(10);
+      span{font-size: px2rem(20); }
+      b{font-weight:normal;}
+    }
+
+
+  }
+}
+
