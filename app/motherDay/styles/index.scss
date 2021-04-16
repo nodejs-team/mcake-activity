@@ -1,0 +1,93 @@
+@function px2rem($n) {
+  @return ($n * 10 / 750) * 1rem; //设计稿一般都是750宽
+}
+*{ vertical-align: baseline !important;}  /*价格符号不对齐*/
+#evt_content{width: px2rem(750);
+  img{width:100%; display: block;}
+  .sec{position: relative; }
+
+  .sec-top{ width: px2rem(750); height: px2rem(1364); background:url("../images/banner.png") no-repeat; background-size: 100%; z-index: 1; overflow: hidden;
+  }
+
+  .hy-title{ width: px2rem(750); margin:px2rem(60) auto px2rem(40); }
+
+
+  .buy_btns,.buy_btn{ width:px2rem(145); height: px2rem(35); background: url("../images/buy-btn.png"); background-size: 100%;
+  }
+  .buy_btns{position: absolute; bottom:px2rem(170); left:px2rem(465);}
+  .buy_btn{ position: relative; margin:px2rem(30) auto px2rem(50);}
+
+  .sec-1{ width: px2rem(750); height: px2rem(957); padding:0; background:url("../images/sec-1.jpg") no-repeat; background-size: 100%; overflow: hidden; z-index: 1;
+    .message{height:px2rem(450); margin: 0 auto; text-align: center;
+      .message-content{ position:relative; height:px2rem(260);}
+      .messageInput{width:px2rem(638); height:px2rem(77); margin:0 auto; background: url("../images/message-bg.png"); background-size: 100%; line-height:px2rem(77); text-align: center; font-size:px2rem(28); color: #e6b7af; border: none;}
+      .messageInput::-webkit-input-placeholder {
+        color: #e6b7af;
+      }
+      .message-btn{margin:px2rem(30) auto; width:px2rem(145); cursor: pointer;}
+    }
+  }
+
+  .sec-2{ width: px2rem(750); height: px2rem(1679); padding:0; background:url("../images/sec-2.jpg") no-repeat; background-size: 100%; overflow: hidden;
+    .group{width: px2rem(533); margin: 0 auto;
+      &:first-child{margin-top: px2rem(70);}
+    }
+
+  }
+
+  .sec-3{ width: px2rem(750); height: px2rem(1513); padding:0; background:url("../images/sec-3.jpg") no-repeat; background-size: 100%; overflow: hidden;
+    .cake{position:relative;
+      &:first-child{margin-top: px2rem(70);}
+      &:first-child .buy_btns{ bottom:px2rem(100); left: px2rem(40);}
+      &:nth-of-type(2) .buy_btns{margin-top: px2rem(100); bottom:px2rem(120); left: px2rem(370);}
+      &:nth-of-type(3) .buy_btns{margin-top: px2rem(100); bottom:px2rem(60); left: px2rem(35);}
+    }
+  }
+
+  .sec-4{ width: px2rem(750); height: px2rem(646); padding:0; background:url("../images/sec-4.jpg") no-repeat; background-size: 100%; overflow: hidden;
+   .zp{margin-top: px2rem(130);}
+  }
+
+
+  .sec-footer{ position: relative; padding-bottom: px2rem(30); z-index:1; background:#ffe4dd;
+    .txt{ position: relative; width:px2rem(700); padding-top: px2rem(30); margin: 0 auto;  color:#70716f;
+      h2{font-size: px2rem(22); font-weight: normal; }
+      p{ font-size: px2rem(21); padding-left: px2rem(35); line-height:px2rem(38);  text-indent: px2rem(-35); margin:px2rem(5) 0;
+        span{display: block; text-indent: px2rem(80);}
+      }
+    }
+  }
+}
+
+/*彈窗*/
+.Dialogbg-quan{  background-color: #000;  height: 100%;  left: 0;  opacity: 0.7;  position: fixed;  top: 0;  width: 100%; z-index: 200; display: none; }
+
+.Dialog-quan{   position: fixed; width:px2rem(637); height: px2rem(469);background-size: 100%;  top: 50%; left: 50%;  z-index: 99999; margin: px2rem(-234.5) 0 0 px2rem(-318.5); display: none;
+  img{width: 100%;}
+  .closes{ width:px2rem(30); height:px2rem(30); position: absolute; top:px2rem(-40); right:0;  cursor: pointer; z-index: 8; background: url("../images/close.png") no-repeat; background-size: 100%;}
+  .quan{position: relative; display: none; text-align: center; width:px2rem(637); height: px2rem(469);
+    .go-use {display: block; position: absolute; bottom:px2rem(50); left: 50%; width: px2rem(145); height: px2rem(35); margin-left:px2rem(-72.5); cursor: pointer; background:url("../images/buy-btn2.png"); background-size: 100%;
+    }
+  }
+  .quan-1{ background: url("../images/card-1.png"); background-size: 100%;}
+  .quan-2{ background: url("../images/card-2.png"); background-size: 100%;}
+  .quan-3{ background: url("../images/card-3.png"); background-size: 100%;}
+
+}
+
+/*弹幕*/
+.barrage.barrage1{ bottom:px2rem(90); right:px2rem(-200);}
+.barrage{position: absolute; bottom:px2rem(70);  right:px2rem(-600);display: inline-block; width:px2rem(600);z-index: 99999}
+.barrage_box{background-color:#fff;padding-right:px2rem(8); height:px2rem(50);display: inline-block;border-radius:px2rem(25);transition: all .3s; box-shadow:#f3d7d7 1px 5px 5px;}
+.barrage_box .portrait{ display: inline-block;margin-top: 4px; margin-left:px2rem(4); width: px2rem(32);height:px2rem(32);border-radius: 50%;overflow: hidden;}
+.barrage_box .portrait img{width: 100%;height: 100%;}
+.barrage_box div.p a{ margin-right:px2rem(2); font-size:px2rem(26);color: #d39389; line-height:px2rem(50); margin-left:px2rem(18); }
+.barrage_box div.p a:hover{text-decoration: none;}
+.barrage_box .close{visibility: hidden;opacity: 0; text-align: center; width:px2rem(25);height:px2rem(25);margin-left: px2rem(20);border-radius: 50%;}
+.barrage_box:hover .close{visibility:visible;opacity: 1;}
+.barrage_box .close a{display:block;}
+.barrage_box .close .icon-close{font-size:px2rem(14);color:rgba(255,255,255,.5);display: inline-block;margin-top:px2rem(5); }
+.barrage .z {float: left !important;}
+.barrage  a{text-decoration:none;}
+
+

@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>mcake活动</title>
+    <!--<link rel="stylesheet" href="styles/swiper.min.css">-->
+    <!-- build:css styles/index.css -->
+    <link rel="stylesheet" href="../commoncss/wap-normalize.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <!-- endbuild-->
+
+</head>
+<body>
+
+<div id="evt_container">
+    <header>
+        <a href="http://m.mcake.com/wap" class="icon-back"></a>
+        <div class="title">
+            <span>活动</span><br><span>activity</span>
+        </div>
+        <a href="http://m.mcake.com/wap" class="icon-home"></a>
+    </header>
+    <div id="evt_loading" style="display:none;">0%</div>
+    <div id="evt_content" style="display:none;">
+        <div class="sec sec-top"></div>
+
+        <div class="sec sec-1">
+            <div class="message">
+                <div class="message-content">
+                    <div class="barrage barrage1">
+                        <div class="barrage_box cl">
+                            <div class="z p">
+                                <a>祝母亲节快乐！</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <input class="messageInput" name="info" type="text" maxlength="20" placeholder="留下您内心的寄语">
+                <div class="message-btn"><img src="images/message-btn.png" alt=""></div>
+            </div>
+            <div class="cake-new" id="cakeLink">
+                <div class="buy_btns"></div>
+                <img src="images/cake-new.png" alt="">
+            </div>
+        </div>
+        <div class="sec sec-2">
+            <div class="group"><img src="images/group-1.png" alt=""></div>
+            <div class="buy_btn"></div>
+            <div class="group"><img src="images/group-2.png" alt=""></div>
+            <div class="buy_btn"></div>
+        </div>
+        <div class="sec sec-3">
+            <div class="cake">
+                <img src="images/cake-1.png" alt="">
+                <div class="buy_btns"></div>
+            </div>
+            <div class="cake">
+                <img src="images/cake-2.png" alt="">
+                <div class="buy_btns"></div>
+            </div>
+            <div class="cake">
+                <img src="images/cake-3.png" alt="">
+                <div class="buy_btns"></div>
+            </div>
+        </div>
+        <div class="sec sec-4">
+            <div class="zp"><img src="images/zp.png" alt=""></div>
+        </div>
+
+        <div class="sec-footer">
+            <div class="txt">
+                <h2>活动规则：</h2>
+                <p>1、活动时间：2021年4月13日-2021年5月13日</p>
+                <p>2、活动城市：上海、北京、苏州、杭州</p>
+                <p>3、支付方式：微信、支付宝，本活动仅限使用微信、支付宝全额支付的用户参与</p>
+                <p>4、活动内容：活动页面购买罗曼花影立减30元，下单用户送气韵御酵塑颜抚纹霜体验装（1份），数量有限，先到先得；<br>活动页面购买罗曼花影，即可9.9元加购小食萝拉小朵原味（200g），半熟芝士原味（175g），每位用户仅可选择一款，且仅有一次加购机会，加购下单用户送气韵御酵塑颜抚纹霜体验装（1份），数量有限，先到先得；<br>
+                    活动页面89折购买花漾·年华（2磅/908g）、蔓越莓红丝绒（2磅/908g）、甜愿·生日蛋糕（1.7磅/772g），下单用户送气韵御酵塑颜抚纹霜体验装（1份），数量有限，先到先得；</p>
+                <p>5、每位用户ID有且仅有一次参与话题互动并且抽奖的机会：优惠券有效期为：自领取之日起至2021年5月13日</p>
+                <p>6、本活动与会员等级制度、积分同享，但不与其他优惠同享</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="Dialogbg-quan"></div>
+    <div class="Dialog-quan">
+        <div class="closes"></div>
+        <div class="quan quan-1" style="display: block;">
+            <a href="#cakeLink"><div class="go-use"></div></a>
+        </div>
+        <div class="quan quan-2" style="display: none;">
+            <a href="#cakeLink"><div class="go-use"></div></a>
+        </div>
+        <div class="quan quan-3" style="display: none;">
+            <a href="#cakeLink"><div class="go-use"></div></a>
+        </div>
+
+
+    </div>
+
+
+<script src="https://act.mcake.com/fangli/2020/wap/commonjs/jquery.min.js"></script>
+<script src="https://act.mcake.com/fangli/2020/wap/commonjs/flexible.js"></script>
+<!--从2月会员日开始，因为新版移动端，点击链接跳转出去再返回，页面无法滑动了，需要把加载进入的全部动画效果（initScroll）去掉-->
+<!-- build:js scripts/index.js -->
+<script src="../commonjs/fastclick.js"></script>
+<script src="../commonjs/pubsub.js"></script>
+<script src="../commonjs/loader.js"></script>
+<script src="scripts/resdata.js"></script>
+<script src="scripts/jquery.barrager.js"></script>
+<script src="scripts/index.js"></script>
+<!-- endbuild -->
+
+<script>
+    /*初始化弹幕*/
+    var text2=[
+        "妈妈永远健康、年轻漂亮！",
+        "祝万能的妈妈，母亲节快乐！",
+        "母亲节快乐！",
+        "虽然您很唠叨，但我知道您是爱我的",
+        "感谢母亲赋予我生命，感谢生命中有您！",
+        "不当家，不知柴米贵;不养儿，不知报母恩",
+        "看你长大不容易，看你越长越大更不容易"
+    ];
+    retfun(text2);
+    var time1= setInterval(function () {
+        retfun(text2);
+    }, 6000);
+    $(".message-btn").click(function () {
+        run(2,text2);
+    });
+</script>
+</body>
+</html>
