@@ -1,0 +1,325 @@
+@charset "UTF-8";
+* {
+  vertical-align: baseline !important; }
+
+/*价格符号不对齐*/
+#evt_content {
+  width: 10rem;
+  background: #ade8ff;
+  /*价格计算【通用】*/ }
+  #evt_content img {
+    width: 100%;
+    display: block; }
+  #evt_content .sec {
+    position: relative; }
+  #evt_content .sec-top {
+    width: 10rem;
+    height: 9.14667rem;
+    background: url("../images/banner.png") no-repeat;
+    background-size: 100%;
+    z-index: 1;
+    overflow: hidden; }
+  #evt_content .sec-top.bj {
+    background: url("../images/banner-bj.png") no-repeat;
+    background-size: 100%; }
+  #evt_content .hy-title {
+    width: 10rem;
+    margin: 0.53333rem auto 0.8rem; }
+  #evt_content .icon {
+    position: absolute;
+    width: 1.25333rem;
+    height: 1.52rem;
+    right: 0.2rem;
+    top: 0;
+    z-index: 2; }
+  #evt_content .icon_15 {
+    background: url("../images/icon_15.png");
+    background-size: 100%; }
+  #evt_content .icon_30 {
+    background: url("../images/icon_30.png");
+    background-size: 100%; }
+  #evt_content .more {
+    width: 2.12rem;
+    margin: 0 auto; }
+  #evt_content .sec-1 {
+    width: 10rem;
+    height: 23.32rem;
+    overflow: hidden;
+    background: url("../images/sec-1.png") no-repeat;
+    background-size: 100%; }
+    #evt_content .sec-1 .jiang-wrap {
+      width: 10rem; }
+    #evt_content .sec-1 .tip-1 {
+      width: 3.98667rem;
+      margin: 0.4rem auto 0.26667rem; }
+    #evt_content .sec-1 .jiang {
+      margin: 0 auto;
+      width: 7.6rem;
+      height: 8.52rem;
+      background: url("../images/jiang-bg-1.png") center top no-repeat;
+      background-size: 100%;
+      overflow: hidden; }
+      #evt_content .sec-1 .jiang ul {
+        width: 6.26667rem;
+        margin: 0.66667rem auto 0.2rem;
+        display: flex;
+        flex-wrap: wrap; }
+        #evt_content .sec-1 .jiang ul li {
+          position: relative;
+          width: 2.58667rem;
+          height: 2.58667rem;
+          background: url("../images/jiangpin-bg.png") center top no-repeat;
+          margin: 0 0.26667rem 0.26667rem;
+          background-size: 100%; }
+          #evt_content .sec-1 .jiang ul li .award {
+            width: 2.58667rem;
+            height: 2.58667rem; }
+          #evt_content .sec-1 .jiang ul li:nth-of-type(1) .award {
+            background: url("../images/jiangpin-1.png") center top no-repeat;
+            background-size: 100%; }
+          #evt_content .sec-1 .jiang ul li:nth-of-type(2) .award {
+            background: url("../images/jiangpin-2.png") center top no-repeat;
+            background-size: 100%; }
+          #evt_content .sec-1 .jiang ul li:nth-of-type(3) .award {
+            background: url("../images/jiangpin-3.png") center top no-repeat;
+            background-size: 100%; }
+          #evt_content .sec-1 .jiang ul li:nth-of-type(4) .award {
+            background: url("../images/jiangpin-4.png") center top no-repeat;
+            background-size: 100%; }
+          #evt_content .sec-1 .jiang ul li.on {
+            background: url("../images/jiangpin-bg-on.png") center top no-repeat;
+            background-size: 100%; }
+      #evt_content .sec-1 .jiang.jiang-2 {
+        margin-top: 0.66667rem;
+        background: url("../images/jiang-bg-2.png") center top no-repeat;
+        background-size: 100%; }
+        #evt_content .sec-1 .jiang.jiang-2 li:nth-of-type(1) .award {
+          background: url("../images/jiangpin-5.png") center top no-repeat;
+          background-size: 100%; }
+        #evt_content .sec-1 .jiang.jiang-2 li:nth-of-type(2) .award {
+          background: url("../images/jiangpin-6.png") center top no-repeat;
+          background-size: 100%; }
+        #evt_content .sec-1 .jiang.jiang-2 li:nth-of-type(3) .award {
+          background: url("../images/jiangpin-7.png") center top no-repeat;
+          background-size: 100%; }
+        #evt_content .sec-1 .jiang.jiang-2 li:nth-of-type(4) .award {
+          background: url("../images/jiangpin-8.png") center top no-repeat;
+          background-size: 100%; }
+      #evt_content .sec-1 .jiang.jiang-2.bj li:nth-of-type(2) .award {
+        background: url("../images/jiangpin-9.png") center top no-repeat;
+        background-size: 100%; }
+      #evt_content .sec-1 .jiang .confirm {
+        width: 2.73333rem;
+        height: 0.65333rem;
+        background: url("../images/start-btn.png") no-repeat;
+        margin: 0 auto;
+        cursor: pointer;
+        background-size: 100%; }
+  #evt_content .sec-2 {
+    width: 10rem;
+    padding-bottom: 0.66667rem;
+    overflow: hidden; }
+    #evt_content .sec-2 .row {
+      position: relative;
+      width: 4.76rem;
+      float: left;
+      margin: 0 0.12rem 0.66667rem 0.12rem; }
+  #evt_content .sec-footer {
+    position: relative;
+    padding: 0.93333rem 0 1.33333rem;
+    z-index: 1; }
+    #evt_content .sec-footer .txt {
+      position: relative;
+      width: 9.33333rem;
+      margin: 0 auto;
+      color: #61818e; }
+      #evt_content .sec-footer .txt h2 {
+        font-size: 0.29333rem;
+        font-weight: normal; }
+      #evt_content .sec-footer .txt p {
+        font-size: 0.28rem;
+        padding-left: 0.46667rem;
+        line-height: 0.46667rem;
+        text-indent: -0.46667rem;
+        margin: 0.06667rem 0; }
+        #evt_content .sec-footer .txt p span {
+          display: block;
+          text-indent: 1.06667rem; }
+  #evt_content .price {
+    position: relative;
+    width: 4.76rem;
+    text-align: left;
+    z-index: 2;
+    overflow: hidden; }
+    #evt_content .price .title {
+      position: relative;
+      width: 2.66667rem;
+      margin: 0.26667rem auto 0;
+      font-size: 0.37333rem;
+      text-align: center;
+      color: #d25200; }
+    #evt_content .price h2 {
+      position: relative;
+      font-size: 0.26667rem;
+      font-weight: normal;
+      line-height: 0.8rem;
+      color: #d25200;
+      text-align: center; }
+      #evt_content .price h2 i {
+        font-size: 0.26667rem;
+        line-height: 0.4rem;
+        font-style: normal;
+        vertical-align: middle; }
+      #evt_content .price h2 span {
+        font-size: 0.42667rem;
+        color: #d25200; }
+      #evt_content .price h2 em {
+        font-style: normal; }
+    #evt_content .price s {
+      font-size: 0.26667rem;
+      color: #d25200;
+      font-weight: normal;
+      margin-left: 0.13333rem; }
+      #evt_content .price s span {
+        font-size: 0.26667rem; }
+      #evt_content .price s b {
+        font-weight: normal; }
+    #evt_content .price ul.buy_btn_box {
+      width: 2.33333rem;
+      overflow: hidden;
+      margin: 0;
+      float: left; }
+    #evt_content .price ul.buy_btn_box li span {
+      display: block;
+      width: 2.33333rem;
+      height: 0.68rem;
+      text-align: center;
+      background: url("../images/btn-bg.png") no-repeat;
+      background-size: 100%;
+      font-size: 0.21333rem;
+      line-height: 0.68rem;
+      color: #fff; }
+    #evt_content .price .buy_btn_box.one {
+      width: 2.33333rem;
+      margin: 0 auto;
+      text-align: center;
+      float: none; }
+      #evt_content .price .buy_btn_box.one li span {
+        margin: 0 auto; }
+  #evt_content .pro-num {
+    position: relative;
+    float: right;
+    width: 2.33333rem;
+    height: 0.68rem;
+    display: inline-block;
+    background: url("../images/btn-bg.png") no-repeat;
+    background-size: 100%; }
+    #evt_content .pro-num a {
+      position: absolute;
+      top: 0;
+      width: 0.93333rem;
+      height: 0.68rem;
+      display: block;
+      z-index: 2; }
+    #evt_content .pro-num .minus {
+      display: inline-block;
+      background: url(../images/in-a-1.png) center no-repeat;
+      left: -0.13333rem;
+      background-size: 20%; }
+    #evt_content .pro-num .plus {
+      display: inline-block;
+      background: url(../images/in-a-2.png) center no-repeat;
+      right: -0.13333rem;
+      background-size: 20%; }
+    #evt_content .pro-num .bang {
+      display: inline-block;
+      width: 1.8rem;
+      line-height: 0.68rem;
+      position: absolute;
+      top: 0;
+      left: 0.26667rem;
+      text-align: center;
+      color: #fff;
+      background: none;
+      font-size: 0.24rem;
+      padding: 0;
+      z-index: 1; }
+
+/*彈窗*/
+.Dialogbg-quan {
+  background-color: #000;
+  height: 100%;
+  left: 0;
+  opacity: 0.7;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 200;
+  display: none; }
+
+.Dialog-quan {
+  position: fixed;
+  width: 6.28rem;
+  height: 4.25333rem;
+  background-size: 100%;
+  top: 50%;
+  left: 50%;
+  z-index: 99999;
+  margin: -2.12rem 0 0 -3.13333rem;
+  display: none; }
+  .Dialog-quan img {
+    width: 100%; }
+  .Dialog-quan .closes {
+    width: 0.4rem;
+    height: 0.4rem;
+    position: absolute;
+    top: -0.53333rem;
+    right: 0;
+    cursor: pointer;
+    z-index: 8;
+    background: url("../images/close.png") no-repeat;
+    background-size: 100%; }
+  .Dialog-quan .quan {
+    position: relative;
+    display: none;
+    text-align: center;
+    width: 100%;
+    height: 100%; }
+    .Dialog-quan .quan .go-use {
+      display: block;
+      position: absolute;
+      bottom: 1.22667rem;
+      left: 50%;
+      width: 3.97333rem;
+      height: 0.96rem;
+      margin-left: -1.97333rem;
+      cursor: pointer;
+      background: #000;
+      opacity: 0; }
+  .Dialog-quan .quan-1 {
+    background: url("../images/quan-1.png");
+    background-size: 100%; }
+  .Dialog-quan .quan-2 {
+    background: url("../images/quan-2.png");
+    background-size: 100%; }
+  .Dialog-quan .quan-3 {
+    background: url("../images/quan-3.png");
+    background-size: 100%; }
+  .Dialog-quan .quan-4 {
+    background: url("../images/quan-4.png");
+    background-size: 100%; }
+  .Dialog-quan .quan-5 {
+    background: url("../images/quan-5.png");
+    background-size: 100%; }
+  .Dialog-quan .quan-6 {
+    background: url("../images/quan-6.png");
+    background-size: 100%; }
+  .Dialog-quan .quan-6.bj {
+    background: url("../images/quan-9.png");
+    background-size: 100%; }
+  .Dialog-quan .quan-7 {
+    background: url("../images/quan-7.png");
+    background-size: 100%; }
+  .Dialog-quan .quan-8 {
+    background: url("../images/quan-8.png");
+    background-size: 100%; }

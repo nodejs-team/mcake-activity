@@ -1,0 +1,266 @@
+@charset "UTF-8";
+* {
+  vertical-align: baseline !important; }
+
+/*价格符号不对齐*/
+#evt_content {
+  width: 10rem;
+  background: #fff1dc;
+  /*价格计算【通用】*/ }
+  #evt_content img {
+    width: 100%;
+    display: block; }
+  #evt_content .sec {
+    position: relative; }
+  #evt_content .sec-top {
+    width: 10rem;
+    height: 13.94667rem;
+    background: url("../images/banner.png") no-repeat;
+    background-size: 100%;
+    z-index: 1;
+    overflow: hidden; }
+  #evt_content .sec-cake {
+    position: relative;
+    width: 10rem;
+    height: 11.93333rem;
+    background: url("../images/cake.png") no-repeat;
+    background-size: 100%;
+    z-index: 1;
+    overflow: hidden; }
+    #evt_content .sec-cake .buy-btn {
+      position: absolute;
+      top: 7.86667rem;
+      left: 0.50667rem;
+      width: 2.25333rem;
+      background: #7f402a;
+      border-radius: 0.66667rem;
+      line-height: 0.66667rem;
+      text-align: center;
+      font-size: 0.24rem;
+      color: #fff;
+      letter-spacing: 0.05333rem; }
+  #evt_content .hy-title {
+    width: 10rem;
+    margin: 1.06667rem auto 1.06667rem; }
+  #evt_content .icon {
+    position: absolute;
+    width: 1.29333rem;
+    height: 1.32rem;
+    right: 0rem;
+    top: -0.66667rem;
+    z-index: 2; }
+  #evt_content .icon_15 {
+    background: url("../images/icon_15.png") no-repeat;
+    background-size: 100%; }
+  #evt_content .icon_30 {
+    background: url("../images/icon_30.png") no-repeat;
+    background-size: 100%; }
+  #evt_content .more {
+    width: 2.12rem;
+    margin: 0 auto; }
+  #evt_content .sec-2 {
+    width: 10rem;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden; }
+    #evt_content .sec-2 .row {
+      position: relative; }
+      #evt_content .sec-2 .row .cake {
+        position: absolute; }
+      #evt_content .sec-2 .row .price {
+        position: absolute; }
+    #evt_content .sec-2 .row1 {
+      height: 4.66667rem; }
+      #evt_content .sec-2 .row1 .cake {
+        width: 6rem;
+        top: 0;
+        right: 0.06667rem;
+        z-index: 1; }
+      #evt_content .sec-2 .row1 .icon {
+        left: auto;
+        right: 0.26667rem; }
+      #evt_content .sec-2 .row1 .price {
+        top: 1.06667rem;
+        left: 0.33333rem;
+        z-index: 2; }
+        #evt_content .sec-2 .row1 .price h2 i {
+          color: #3c814a; }
+        #evt_content .sec-2 .row1 .price h2 span {
+          color: #3c814a; }
+        #evt_content .sec-2 .row1 .price s {
+          color: #77ab81; }
+        #evt_content .sec-2 .row1 .price ul.buy_btn_box li span {
+          background: #3c814a; }
+        #evt_content .sec-2 .row1 .price .pro-num {
+          border: 1px solid #3c814a; }
+          #evt_content .sec-2 .row1 .price .pro-num .minus {
+            display: inline-block;
+            background: url(../images/in-a-3.png) center no-repeat;
+            background-size: 50%; }
+          #evt_content .sec-2 .row1 .price .pro-num .plus {
+            display: inline-block;
+            background: url(../images/in-a-4.png) center no-repeat;
+            background-size: 50%; }
+          #evt_content .sec-2 .row1 .price .pro-num .bang {
+            color: #3c814a; }
+    #evt_content .sec-2 .row2 {
+      height: 5.33333rem; }
+      #evt_content .sec-2 .row2 .cake {
+        width: 4.66667rem;
+        top: 0.53333rem;
+        left: 0.06667rem;
+        z-index: 1; }
+      #evt_content .sec-2 .row2 .price {
+        top: 0.66667rem;
+        left: auto;
+        right: -0.13333rem; }
+      #evt_content .sec-2 .row2 .icon {
+        left: 0.53333rem;
+        right: auto; }
+    #evt_content .sec-2 .row3 {
+      height: 5.33333rem; }
+      #evt_content .sec-2 .row3 .cake {
+        width: 5.46667rem;
+        top: 0;
+        right: 0.06667rem;
+        z-index: 1; }
+      #evt_content .sec-2 .row3 .icon {
+        left: auto;
+        right: 0.26667rem; }
+      #evt_content .sec-2 .row3 .price {
+        top: 0.93333rem;
+        left: 0.33333rem;
+        z-index: 2; }
+  #evt_content .sec-quan {
+    height: 9.93333rem;
+    background: url("../images/quan-bg.png") no-repeat;
+    background-size: 100%;
+    z-index: 1;
+    overflow: hidden; }
+    #evt_content .sec-quan .hy-title {
+      margin: 0.93333rem auto 0.53333rem; }
+    #evt_content .sec-quan .quan {
+      width: 9.36rem;
+      margin: 0 auto 0.53333rem; }
+    #evt_content .sec-quan .get-btn {
+      width: 2rem;
+      margin: 0 auto 0.13333rem; }
+    #evt_content .sec-quan p {
+      font-size: 0.29333rem;
+      line-height: 0.53333rem;
+      text-align: center;
+      color: #f47847; }
+  #evt_content .sec-footer {
+    position: relative;
+    padding-bottom: 0.93333rem;
+    z-index: 1;
+    background: url("../images/sec-foot.png") repeat;
+    background-size: 10%; }
+    #evt_content .sec-footer .txt {
+      position: relative;
+      width: 9.33333rem;
+      padding-top: 0.93333rem;
+      margin: 0 auto;
+      color: #c6632b; }
+      #evt_content .sec-footer .txt h2 {
+        font-size: 0.29333rem;
+        font-weight: normal; }
+      #evt_content .sec-footer .txt p {
+        font-size: 0.28rem;
+        padding-left: 0.46667rem;
+        line-height: 0.46667rem;
+        text-indent: -0.46667rem;
+        margin: 0.06667rem 0; }
+        #evt_content .sec-footer .txt p span {
+          display: block;
+          text-indent: 1.06667rem; }
+  #evt_content .price {
+    position: absolute;
+    width: 5.33333rem;
+    text-align: left;
+    z-index: 2; }
+    #evt_content .price .title {
+      position: relative;
+      width: 4.29333rem;
+      margin: 0 0 0.66667rem 0; }
+    #evt_content .price h2 {
+      position: relative;
+      font-size: 0.26667rem;
+      font-weight: normal;
+      line-height: 1.06667rem;
+      color: #000; }
+      #evt_content .price h2 i {
+        font-size: 0.32rem;
+        line-height: 0.4rem;
+        font-style: normal;
+        vertical-align: middle;
+        color: #7e4029; }
+      #evt_content .price h2 span {
+        font-size: 0.50667rem;
+        color: #7e4029; }
+      #evt_content .price h2 em {
+        font-style: normal; }
+    #evt_content .price s {
+      font-size: 0.26667rem;
+      color: #ad7b5e;
+      font-weight: normal;
+      margin-left: 0.13333rem; }
+      #evt_content .price s span {
+        font-size: 0.26667rem; }
+      #evt_content .price s b {
+        font-weight: normal; }
+    #evt_content .price ul.buy_btn_box {
+      width: 2.25333rem;
+      overflow: hidden;
+      margin: 0;
+      float: left; }
+    #evt_content .price ul.buy_btn_box li span {
+      display: block;
+      width: 2.25333rem;
+      background: #7e4029;
+      border-radius: 0.66667rem;
+      line-height: 0.66667rem;
+      text-align: center;
+      font-size: 0.24rem;
+      color: #fff;
+      letter-spacing: 0.05333rem; }
+  #evt_content .pro-num {
+    position: relative;
+    float: left;
+    width: 2.50667rem;
+    height: 0.66667rem;
+    display: inline-block;
+    border: 1px solid #7e4029;
+    margin-left: 0.13333rem;
+    border-radius: 0.66667rem; }
+    #evt_content .pro-num a {
+      position: absolute;
+      top: 50%;
+      width: 1.06667rem;
+      height: 1.06667rem;
+      margin-top: -0.53333rem;
+      display: block;
+      z-index: 2; }
+    #evt_content .pro-num .minus {
+      display: inline-block;
+      background: url(../images/in-a-1.png) center no-repeat;
+      left: -0.2rem;
+      background-size: 50%; }
+    #evt_content .pro-num .plus {
+      display: inline-block;
+      background: url(../images/in-a-2.png) center no-repeat;
+      right: -0.13333rem;
+      background-size: 50%; }
+    #evt_content .pro-num .bang {
+      display: inline-block;
+      width: 1.73333rem;
+      line-height: 0.64rem;
+      position: absolute;
+      top: 0;
+      left: 0.33333rem;
+      text-align: center;
+      color: #7e4029;
+      background: none;
+      font-size: 0.24rem;
+      padding: 0;
+      z-index: 1; }

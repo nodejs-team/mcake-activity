@@ -1,0 +1,180 @@
+@charset "UTF-8";
+* {
+  vertical-align: baseline !important; }
+
+/*价格符号不对齐*/
+#evt_content {
+  width: 10rem; }
+  #evt_content img {
+    width: 100%;
+    display: block; }
+  #evt_content .sec {
+    position: relative; }
+  #evt_content .sec-top {
+    width: 10rem;
+    height: 13.85333rem;
+    z-index: 1;
+    overflow: hidden;
+    background: url("../images/banner.png") no-repeat;
+    background-size: 100%; }
+  #evt_content .buy_btn1 {
+    position: absolute;
+    bottom: 1.06667rem;
+    left: 50%;
+    margin-left: -1.18rem;
+    width: 2.36rem;
+    height: 0.52rem;
+    background: url("../images/buy_btn1.png") no-repeat;
+    background-size: 100%; }
+  #evt_content .buy_btn2 {
+    position: relative;
+    margin: 20px auto 0;
+    width: 2.36rem;
+    height: 0.52rem;
+    background: url("../images/buy_btn2.png") no-repeat;
+    background-size: 100%; }
+  #evt_content .buy_btn3 {
+    position: absolute;
+    bottom: 0.26667rem;
+    left: 5.33333rem;
+    width: 1.90667rem;
+    height: 0.46667rem;
+    background: url("../images/buy_btn3.png") no-repeat;
+    background-size: 100%; }
+  #evt_content .hy-title {
+    width: 5.12rem;
+    margin: 0.66667rem auto 0.8rem; }
+  #evt_content .more {
+    width: 2.12rem;
+    margin: 0 auto; }
+  #evt_content .sec-1 {
+    position: relative;
+    width: 10rem;
+    margin: -3.33333rem auto;
+    padding: 2rem 0 4.66667rem;
+    overflow: hidden;
+    background: url("../images/sec-1.png") repeat;
+    background-size: 5%; }
+    #evt_content .sec-1 .txt {
+      position: relative;
+      width: 10rem; }
+      #evt_content .sec-1 .txt .recording {
+        position: absolute;
+        top: 0.86667rem;
+        right: 1.73333rem;
+        width: 0.72rem;
+        height: 0.66667rem;
+        z-index: 5;
+        cursor: pointer; }
+        #evt_content .sec-1 .txt .recording .rec-1 {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 0.72rem;
+          height: 0.66667rem;
+          background: url("../images/music.png") no-repeat;
+          background-size: 100%; }
+        #evt_content .sec-1 .txt .recording .rec-2 {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 0.72rem;
+          height: 0.66667rem;
+          display: none;
+          background: url("../images/music.gif") no-repeat;
+          background-size: 100%; }
+  #evt_content .sec-2 {
+    width: 10rem;
+    height: 16rem;
+    padding: 0;
+    background: url("../images/sec-2.png") repeat;
+    background-size: 5%;
+    z-index: 2; }
+    #evt_content .sec-2 .xiaoshi {
+      position: relative; }
+  #evt_content .sec-3 {
+    width: 10rem;
+    margin-top: -3.33333rem;
+    padding: 3.73333rem 0 0.66667rem;
+    overflow: hidden;
+    background: url("../images/sec-3.png") repeat;
+    background-size: 5%;
+    z-index: 1; }
+    #evt_content .sec-3 .row {
+      position: relative; }
+      #evt_content .sec-3 .row .cake {
+        width: 10rem; }
+      #evt_content .sec-3 .row .buy_btn2 {
+        position: absolute; }
+    #evt_content .sec-3 .row1 .buy_btn3 {
+      bottom: 1.86667rem;
+      left: 5.4rem; }
+    #evt_content .sec-3 .row2 .buy_btn3 {
+      bottom: 1.86667rem;
+      left: 0.33333rem; }
+    #evt_content .sec-3 .row3 .buy_btn3 {
+      bottom: 1.73333rem;
+      left: 5.26667rem; }
+    #evt_content .sec-3 .lipin {
+      margin: 0.66667rem auto; }
+  #evt_content .float {
+    position: fixed;
+    width: 1.88rem;
+    bottom: 4.93333rem;
+    right: 0;
+    z-index: 3; }
+  #evt_content .sec-footer {
+    position: relative;
+    z-index: 1;
+    background: url("../images/sec-4.png") repeat;
+    background-size: 5%; }
+    #evt_content .sec-footer .txt {
+      position: relative;
+      width: 9.33333rem;
+      padding: 1.33333rem 0;
+      margin: 0 auto;
+      color: #f7e7ea; }
+      #evt_content .sec-footer .txt h2 {
+        font-size: 0.29333rem;
+        font-weight: normal; }
+      #evt_content .sec-footer .txt p {
+        font-size: 0.28rem;
+        padding-left: 0.46667rem;
+        line-height: 0.46667rem;
+        text-indent: -0.46667rem;
+        margin: 0.06667rem 0; }
+        #evt_content .sec-footer .txt p span {
+          display: block;
+          text-indent: 1.06667rem; }
+
+.huangou-wrap {
+  position: absolute;
+  bottom: 1rem;
+  width: 9.73333rem;
+  left: 50%;
+  margin-left: -4.86667rem; }
+
+.huangou {
+  position: relative;
+  float: left;
+  width: 3.24rem;
+  font-size: 0.32rem;
+  font-weight: bold;
+  color: #421800;
+  margin: 0.26667rem auto;
+  cursor: pointer;
+  text-align: left; }
+
+.huangou .icon-hg {
+  width: 0.66667rem;
+  height: 0.66667rem;
+  z-index: 2;
+  margin: 0 auto; }
+
+.icon-hg {
+  background: url("../images/gou.png") center no-repeat;
+  background-size: 70%; }
+
+.icon-hg.on {
+  background: url("../images/gou-on.png") center no-repeat;
+  background-size: 70%; }

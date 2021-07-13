@@ -1,0 +1,115 @@
+@function px2rem($n) {
+  @return ($n * 10 / 750) * 1rem; //设计稿一般都是750宽
+}
+*{ vertical-align: baseline !important;}  /*价格符号不对齐*/
+#evt_content{ background: #c1ebff;
+  img{width:100%; display: block;}
+  .sec{position: relative; }
+  .sec-top{height: px2rem(911); background:url("../images/banner.png") no-repeat; background-size: 100%; z-index: 2;}
+
+  .sec-1{width: px2rem(750); height: px2rem(609); background:url("../images/sec-1.png") no-repeat; background-size: 100%;
+    .ice-txt{width: px2rem(692); margin: 0 auto;
+      .go-btn{position: absolute;  bottom: px2rem(40); left: 50%; width: px2rem(169); margin-left: px2rem(-76); background:#008dcc; border-radius: px2rem(50); line-height: px2rem(50); text-align: center; font-size: px2rem(20); letter-spacing: px2rem(4); color: #fff; }
+    }
+  }
+
+
+
+  .hy-title{ width: px2rem(750); margin:px2rem(10) auto px2rem(60); }
+
+
+  .icon{position: absolute; width:px2rem(111); height:px2rem(107); top:0; z-index: 2;}
+  .icon_15{ background: url("../images/icon_15.png") no-repeat; background-size: 100%; }
+  .icon_30{ background: url("../images/icon_30.png") no-repeat; background-size: 100%; }
+
+  .sec-2{ width: px2rem(750); height: px2rem(1782); background:url("../images/sec-2.png") no-repeat; background-size: 100%;
+    overflow: hidden;
+
+    .row{ position: relative;
+      .cake{position: absolute;}
+      .price{position: absolute;}
+    }
+    .row1{height: px2rem(431); background: url("../images/shanghai/cake-1.png") no-repeat; background-size: 100%;
+      .icon{left: 0;}
+      .price{top:px2rem(100); left: auto; right:px2rem(-20);}
+    }
+    .row2{height: px2rem(385); background: url("../images/shanghai/cake-2.png") no-repeat; background-size: 100%;
+      .icon{left: auto; right:0;}
+      .price{ top: px2rem(80); left:px2rem(25); z-index: 2;}
+    }
+
+    .row3{height: px2rem(406); background: url("../images/shanghai/cake-3.png") no-repeat; background-size: 100%;
+      .icon{left: 0; }
+      .price{top:px2rem(80); left: auto; right:px2rem(-20);}
+    }
+    .row4{height: px2rem(388); background: url("../images/shanghai/cake-4.png") no-repeat; background-size: 100%;
+      .icon{left: auto; right:0;}
+      .price{ top: px2rem(60); left:px2rem(25); z-index: 2;}
+    }
+    &.cake-bj{
+      .row1{height: px2rem(380); background: url("../images/beijing/cake-1.png") no-repeat; background-size: 100%;
+        .icon{left: 0;}
+        .price{top:px2rem(20); left: auto; right:px2rem(-20);}
+      }
+      .row2{height: px2rem(414); background: url("../images/beijing/cake-2.png") no-repeat; background-size: 100%;
+        .icon{left: auto; right:0;}
+        .price{ top: px2rem(100); left:px2rem(25); z-index: 2;}
+      }
+
+      .row3{height: px2rem(420); background: url("../images/beijing/cake-3.png") no-repeat; background-size: 100%;
+        .icon{left: 0; }
+        .price{top:px2rem(80); left: auto; right:px2rem(-20);}
+      }
+      .row4{height: px2rem(386); background: url("../images/beijing/cake-4.png") no-repeat; background-size: 100%;
+        .icon{left: auto; right:0;}
+        .price{ top: px2rem(90); left:px2rem(25); z-index: 2;}
+      }
+    }
+  }
+
+  .sec-zp{width: px2rem(750); height: px2rem(1073); background:url("../images/sec-3.png") no-repeat; background-size: 100%; overflow: hidden;
+    .zp{width: px2rem(750); padding-top: px2rem(160); }
+  }
+
+  .sec-footer{height: px2rem(740); background:url("../images/sec-4.png") no-repeat; background-size: 100%; overflow: hidden;
+    .f-txt{ position: relative; width:px2rem(700); padding-top: px2rem(150); margin: 0 auto; color:#000;
+      h2{font-size: px2rem(22); font-weight: normal; }
+      p{ font-size: px2rem(22); padding-left: px2rem(35); line-height:px2rem(30);  text-indent: px2rem(-35); margin:px2rem(5) 0;
+        span{display: block; padding-left: px2rem(10); text-indent: px2rem(-10);}
+      }
+    }
+  }
+
+}
+
+
+
+/*价格计算【通用】*/
+.price{ position: absolute;  width: px2rem(400); text-align: left; z-index: 2;
+
+  .title{position: relative; width: px2rem(333); margin:0 0 px2rem(10) 0;}
+  h2{position: relative; font-size:  px2rem(20); font-weight: normal; line-height: px2rem(40); color:#008dcc;
+    i{font-size:  px2rem(20); line-height: px2rem(30); font-style: normal;vertical-align:middle; }
+    span{font-size: px2rem(34); }
+    em{font-style:normal;}
+  }
+  s{display: block; font-size:  px2rem(20); color:#a2c5d4; font-weight: normal;
+    span{font-size: px2rem(20); }
+    b{font-weight:normal;}
+  }
+
+  ul.buy_btn_box { width: px2rem(169); overflow: hidden; margin:px2rem(15) 0; float: left;   }
+  ul.buy_btn_box li span {display: block; width: px2rem(169); background:#008dcc;  border-radius: px2rem(50); line-height: px2rem(50); text-align: center; font-size: px2rem(20); letter-spacing: px2rem(4); color: #fff; }
+
+  .pro-num{ position: relative; float: left; width: px2rem(188); height: px2rem(50); display: inline-block; border: 2px solid #008dcc; border-radius: px2rem(50); margin:px2rem(15) 0 0 px2rem(5);
+    a{ position: absolute; top:50%; width:px2rem(80); height:px2rem(80); margin-top: px2rem(-40); display:block; z-index: 2;}
+    .minus{display:inline-block;background:url(../images/in-a-1.png) center no-repeat; left:px2rem(-15); background-size: 50%;}
+    .plus{display:inline-block;background:url(../images/in-a-2.png) center no-repeat; right:px2rem(-10); background-size: 50%;}
+    .bang{ display:inline-block; width:px2rem(130); line-height:px2rem(48); position:absolute; top:0; left:px2rem(25); text-align:center; color:#008dcc; background: none; font-size:px2rem(18); padding:0; z-index: 1;}
+  }
+}
+
+
+
+
+

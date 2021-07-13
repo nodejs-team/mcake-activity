@@ -1,0 +1,401 @@
+.hongbao {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10; }
+
+.nov-float {
+  position: fixed;
+  top: 2.4rem;
+  left: calc(50% - 740px);
+  z-index: 88; }
+
+.hob-inlet {
+  position: fixed;
+  width: 8.14667rem;
+  height: 6.57333rem;
+  top: 50%;
+  left: 50%;
+  margin-top: -3.28rem;
+  margin-left: -4.07333rem;
+  z-index: 10;
+  background-image: url(../images/tcc.png);
+  background-size: 100%;
+  cursor: pointer;
+  display: none; }
+
+.fls-btn {
+  position: absolute;
+  width: 2.26667rem;
+  bottom: 0.53333rem;
+  left: 50%;
+  margin-left: -0.93333rem; }
+
+.fls2 {
+  left: 4.8rem; }
+
+.hob-inlet:not(.disable) .hob-inlet-02 {
+  animation: hob_shake 1s infinite; }
+
+.hob-inlet:not(.disable):hover .hob-inlet-02 {
+  animation: hob 1s 1; }
+
+.for-get-now {
+  z-index: 33;
+  animation: hob_btn 2.5s infinite; }
+
+.flower-cake {
+  width: 10rem;
+  position: absolute;
+  bottom: -1.33333rem;
+  left: 50%;
+  margin-left: -5rem; }
+
+.flower-1 {
+  position: absolute;
+  width: 0.8rem;
+  height: 0.8rem;
+  background: url("../images/flower-1.png");
+  background-size: 100%;
+  bottom: 2rem;
+  left: 50%;
+  margin-left: 0.8rem;
+  z-index: 2;
+  display: none; }
+
+.flower-2 {
+  position: absolute;
+  width: 0.8rem;
+  height: 0.8rem;
+  background: url("../images/flower-2.png");
+  background-size: 100%;
+  bottom: 1.46667rem;
+  left: 50%;
+  margin-left: 1.2rem;
+  z-index: 2;
+  display: none; }
+
+img {
+  width: 100%; }
+
+@keyframes hob_shake {
+  15%, 45% {
+    -webkit-transform: rotate(3deg);
+    transform: rotate(3deg);
+    transform-origin: 50% 100%; }
+  30% {
+    -webkit-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+    transform-origin: 50% 100%; }
+  60%, 100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    transform-origin: 50% 100%; } }
+
+@keyframes hob {
+  10%, 30%, 50% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px); }
+  20%, 40% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px); }
+  60%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); } }
+
+@keyframes hob_btn {
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  20%, 40%, 60%, 80% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9); } }
+
+.hob-mb {
+  display: none; }
+
+@media (max-width: 1400px) {
+  .nov-float {
+    left: 0;
+    transform: scale(0.7); } }
+
+@media (max-width: 1199px) {
+  .nov-float {
+    display: none; } }
+
+@media (max-width: 768px) {
+  .mb-nav {
+    position: fixed;
+    top: 0.8rem;
+    left: 0;
+    width: 100%;
+    font-size: 0;
+    text-align: center;
+    z-index: 66;
+    background-image: linear-gradient(0deg, #FFE6C8 0%, #FEFCF9 100%);
+    box-shadow: 6px 2px 9px 0 rgba(110, 33, 12, 0.34); }
+  .mb-nav a {
+    display: inline-block;
+    width: 33.333333%;
+    padding: 5px 0;
+    color: #f66f6a;
+    font-size: 0.18667rem;
+    font-weight: 700;
+    line-height: 0.26667rem; }
+  .mb-nav a.active {
+    color: #fff;
+    background-image: linear-gradient(-13deg, #6A00FF 0%, #ED0F55 100%); }
+  .hob-mb {
+    display: block;
+    position: fixed;
+    width: 0.77333rem;
+    height: 0.89333rem;
+    right: 0;
+    top: 30%;
+    z-index: 8; }
+  .hob-mb.disable {
+    display: none; } }
+
+.hongbao-wrapper {
+  display: none;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 200; }
+
+.hongbao-wrapper i {
+  display: block;
+  position: absolute;
+  cursor: pointer;
+  width: 0.8rem;
+  height: 1.4rem;
+  z-index: 8;
+  top: -2.66667rem;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: none;
+  background: url(../images/flower-1.png) center no-repeat;
+  background-size: 100%;
+  /* -webkit-transform: rotate(-15deg);
+  -ms-transform: rotate(-15deg);
+  -o-transform: rotate(-15deg);
+  transform: rotate(-15deg);*/
+  -webkit-transition: 1s transform;
+  -moz-transition: 1s transform;
+  -ms-transition: 1s transform;
+  -o-transition: 1s transform;
+  transition: 1s transform; }
+
+.hongbao-wrapper i b {
+  position: absolute;
+  top: -0.2rem;
+  right: -0.13333rem;
+  color: #ffdf83;
+  font-size: 0.32rem;
+  opacity: 0;
+  font-style: normal; }
+
+.hongbao-wrapper i.gethb b {
+  transition: all 0.2s;
+  top: -0.26667rem;
+  right: -0.26667rem;
+  opacity: 0.9; }
+
+.hongbao-wrapper i.rotate {
+  -webkit-transform: rotate(7200deg);
+  -ms-transform: rotate(7200deg);
+  -o-transform: rotate(7200deg);
+  transform: rotate(7200deg); }
+
+.hob-cd {
+  position: absolute;
+  color: #fff;
+  z-index: 33;
+  font-size: 0.4rem;
+  top: 2.66667rem;
+  left: 2.66667rem; }
+
+.btn-red {
+  position: absolute;
+  color: #fff;
+  font-size: 0.4rem;
+  width: 8.36rem;
+  top: 0.66667rem;
+  left: 50%;
+  margin-left: -4.17333rem;
+  z-index: 10; }
+
+.hob-close, .mod-close {
+  position: absolute;
+  width: 0.66667rem;
+  height: 0.66667rem;
+  top: 0.13333rem;
+  right: 0.53333rem;
+  cursor: pointer;
+  z-index: 18; }
+
+.mod-close {
+  right: 0.4rem; }
+
+.hob-inlet .mod-close {
+  top: 0.13333rem;
+  right: 0.4rem; }
+
+.hob-close::before, .mod-close::before, .hob-close::after, .mod-close::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0.4rem;
+  height: 0.02667rem;
+  top: 0.25333rem;
+  left: 0.06667rem;
+  background-color: #008dcc;
+  border-radius: 2px;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
+
+.mod-close::before, .mod-close::after {
+  background-color: #008dcc; }
+
+.hob-close::after, .mod-close::after {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+.shade1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.8;
+  z-index: 4;
+  display: none; }
+
+.shade {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.8;
+  z-index: 24; }
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 7.90667rem;
+  height: 6.57333rem;
+  margin-top: -3.28667rem;
+  margin-left: -3.95333rem;
+  z-index: 25;
+  display: none; }
+
+.mod-body {
+  width: 7.90667rem;
+  height: 6.57333rem; }
+
+.quan-1 {
+  background: url("../images/quan-1.png");
+  background-size: 100%; }
+
+.quan-2 {
+  background: url("../images/quan-2.png");
+  background-size: 100%; }
+
+.quan-3 {
+  background: url("../images/quan-3.png");
+  background-size: 100%; }
+
+.quan-4 {
+  background: url("../images/quan-4.png");
+  background-size: 100%; }
+
+.txt {
+  width: 4.61333rem;
+  margin: 0 auto; }
+
+.txt-c {
+  width: 4.61333rem;
+  margin: 0 auto; }
+
+.flower-num {
+  position: absolute;
+  width: 0.4rem;
+  top: 0.06667rem;
+  left: 50%;
+  margin-left: 1.53333rem;
+  line-height: 0.34667rem;
+  font-size: 0.34667rem;
+  text-align: center;
+  color: #B80709; }
+
+.go-use {
+  position: absolute;
+  bottom: 0.93333rem;
+  left: 50%;
+  margin-left: -1.13333rem;
+  width: 2.26667rem;
+  height: 0.68rem;
+  background: url("../images/go-use.png");
+  background-size: 100%;
+  cursor: pointer; }
+
+.go-use img {
+  width: 100%; }
+
+[mod-relation=hobCoupon] {
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+[mod-relation=hobCoupon] p {
+  margin-bottom: 0.26667rem; }
+
+.mod-body {
+  position: relative;
+  display: none; }
+
+.mod-footer {
+  position: relative;
+  height: 1.04rem;
+  background: #feefd7; }
+
+.hobCoupon-img {
+  margin: 0 auto; }
+
+@media (max-width: 768px) {
+  [mod-relation=hobCoupon] h5 {
+    font-size: 0.26667rem; }
+  .hobCoupon-img {
+    max-width: 100%; }
+  .hob-cd {
+    top: 2rem;
+    left: 50%;
+    font-size: 0.4rem;
+    width: 2.28rem;
+    margin-left: -1.14rem; }
+  .hob-cd .time {
+    position: absolute;
+    top: -0.06667rem;
+    right: 0; }
+  .hob-close {
+    top: 2rem;
+    right: 0.26667rem; } }
+
+@media (max-width: 360px) {
+  [mod-relation=hobCoupon] h5 {
+    font-size: 18px; } }
+
+@media (max-width: 320px) {
+  [mod-relation=hobCoupon] h5 {
+    font-size: 16px; } }

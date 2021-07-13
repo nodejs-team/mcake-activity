@@ -1,0 +1,323 @@
+@function px2rem($n) {
+  @return ($n * 10 / 750) * 1rem; //设计稿一般都是750宽
+}
+
+
+.hongbao{position: fixed; top: 0; width: 100%; height: 100%; z-index: 10;}
+.nov-float {
+  position: fixed;
+  top: px2rem(180);
+  left: calc(50% - 740px);
+  z-index: 88
+}
+
+.hob-inlet {
+  position: fixed;
+  width:px2rem(611);
+  height:px2rem(493);
+  top: 50%; left:50%; margin-top: px2rem(-246); margin-left: px2rem(-305.5);
+  z-index: 10;background-image: url(../images/tcc.png); background-size: 100%;
+  cursor: pointer; display: none;
+}
+
+.fls-btn{position:absolute; width: px2rem(170); bottom: px2rem(40); left:50%; margin-left: px2rem(-70);}
+.fls2{ left: px2rem(360);}
+
+.hob-inlet:not(.disable) .hob-inlet-02 {
+  animation: hob_shake 1s infinite
+}
+
+.hob-inlet:not(.disable):hover .hob-inlet-02 {
+  animation: hob 1s 1
+}
+
+.for-get-now {
+  z-index: 33;
+  animation: hob_btn 2.5s infinite
+}
+
+.flower-cake{width:px2rem(750); position: absolute; bottom:px2rem(-100); left: 50%; margin-left: px2rem(-375); }
+.flower-1{position: absolute; width:px2rem(60); height: px2rem(60); background: url("../images/flower-1.png"); background-size: 100%;  bottom:px2rem(150); left: 50%; margin-left: px2rem(60); z-index: 2; display: none; }
+.flower-2{position: absolute; width:px2rem(60);  height: px2rem(60); background: url("../images/flower-2.png"); background-size: 100%;  bottom:px2rem(110); left: 50%; margin-left: px2rem(90); z-index: 2; display: none;}
+
+img{width: 100%;}
+
+@keyframes hob_shake {
+  15%,45% {
+    -webkit-transform: rotate(3deg);
+    transform: rotate(3deg);
+    transform-origin: 50% 100%
+  }
+
+  30% {
+    -webkit-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+    transform-origin: 50% 100%
+  }
+
+  60%,100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    transform-origin: 50% 100%
+  }
+}
+
+@keyframes hob {
+  10%,30%,50% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px)
+  }
+
+  20%,40% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px)
+  }
+
+  60%,100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0)
+  }
+}
+
+@keyframes hob_btn {
+  10%,30%,50%,70%,90% {
+    -webkit-transform: scale(1);
+    transform: scale(1)
+  }
+
+  20%,40%,60%,80% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9)
+  }
+}
+
+.hob-mb {
+  display: none
+}
+
+@media(max-width:1400px) {
+  .nov-float {
+    left: 0;
+    transform: scale(.7)
+  }
+}
+
+@media(max-width:1199px) {
+  .nov-float {
+    display: none
+  }
+}
+
+@media(max-width:768px) {
+  .mb-nav {
+    position: fixed;
+    top: px2rem(60);
+    left: 0;
+    width: 100%;
+    font-size: 0;
+    text-align: center;
+    z-index: 66;
+    background-image: linear-gradient(0deg,#FFE6C8 0%,#FEFCF9 100%);
+    box-shadow: 6px 2px 9px 0 rgba(110,33,12,.34)
+  }
+
+  .mb-nav a {
+    display: inline-block;
+    width: 33.333333%;
+    padding: 5px 0;
+    color: #f66f6a;
+    font-size: px2rem(14);
+    font-weight: 700;
+    line-height: px2rem(20);
+  }
+
+  .mb-nav a.active {
+    color: #fff;
+    background-image: linear-gradient(-13deg,#6A00FF 0%,#ED0F55 100%)
+  }
+
+  .hob-mb {
+    display: block;
+    position: fixed;
+    width: px2rem(58);
+    height: px2rem(67);
+    right: 0;
+    top: 30%;
+    z-index: 8
+  }
+
+
+  .hob-mb.disable {
+    display: none
+  }
+}
+
+.hongbao-wrapper {
+  display: none;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.8);
+  z-index: 200
+}
+
+.hongbao-wrapper i {
+  display: block;
+  position: absolute; cursor: pointer;
+  width: px2rem(60);
+  height: px2rem(105); z-index:8;
+  top: px2rem(-200); -webkit-tap-highlight-color: transparent; -webkit-appearance: none;
+  background: url(../images/flower-1.png) center no-repeat; background-size: 100%;
+ /* -webkit-transform: rotate(-15deg);
+  -ms-transform: rotate(-15deg);
+  -o-transform: rotate(-15deg);
+  transform: rotate(-15deg);*/
+  -webkit-transition: 1s transform;
+  -moz-transition: 1s transform;
+  -ms-transition: 1s transform;
+  -o-transition: 1s transform;
+  transition: 1s transform
+}
+.hongbao-wrapper i b{ position: absolute; top: px2rem(-15); right: px2rem(-10); color: #ffdf83; font-size:px2rem(24); opacity: 0; font-style: normal;}
+
+.hongbao-wrapper i.gethb b{ transition: all 0.2s; top: px2rem(-20); right: px2rem(-20); opacity:0.9;}
+
+.hongbao-wrapper i.rotate {
+  -webkit-transform: rotate(7200deg);
+  -ms-transform: rotate(7200deg);
+  -o-transform: rotate(7200deg);
+  transform: rotate(7200deg)
+}
+
+.hob-cd {
+  position: absolute;
+  color: #fff; z-index: 33;
+  font-size: px2rem(30);
+  top: px2rem(200);
+  left: px2rem(200)
+}
+
+.btn-red {
+  position: absolute;
+  color: #fff;
+  font-size: px2rem(30);
+  width: px2rem(627);
+  top: px2rem(50);
+  left: 50%;
+  margin-left: px2rem(-313);z-index: 10;
+}
+
+
+.hob-close,.mod-close {
+  position: absolute;
+  width: px2rem(50);
+  height: px2rem(50);
+  top: px2rem(10);
+  right: px2rem(40);
+  cursor: pointer; z-index: 18;
+}
+.mod-close{right: px2rem(30); }
+.hob-inlet .mod-close{ top: px2rem(10); right:px2rem(30);}
+
+.hob-close::before,.mod-close::before,.hob-close::after,.mod-close::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: px2rem(30);
+  height: px2rem(2);
+  top: px2rem(19);
+  left: px2rem(5);
+  background-color: #008dcc;
+  border-radius: 2px;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg)
+}
+.mod-close::before,.mod-close::after{background-color: #008dcc;}
+.hob-close::after ,.mod-close::after{
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg)
+}
+.shade1{ position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #000; opacity: 0.8; z-index:4; display: none;}
+.shade{ position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #000; opacity: 0.8; z-index:24;}
+.modal{position: fixed; top: 50%; left: 50%;  width: px2rem(593); height: px2rem(493); margin-top:px2rem(-246.5); margin-left: px2rem(-296.5); z-index: 25;  display: none;}
+.mod-body{width: px2rem(593); height: px2rem(493);}
+.quan-1{background: url("../images/quan-1.png"); background-size: 100%;}
+.quan-2{background: url("../images/quan-2.png"); background-size: 100%;}
+.quan-3{background: url("../images/quan-3.png"); background-size: 100%;}
+.quan-4{background: url("../images/quan-4.png"); background-size: 100%;}
+
+.txt{ width: px2rem(346); margin:0 auto; }
+.txt-c{width: px2rem(346); margin: 0 auto; }
+.flower-num{position: absolute; width: px2rem(30); top: px2rem(5); left: 50%; margin-left:px2rem(115); line-height: px2rem(26); font-size: px2rem(26);text-align: center; color: #B80709;}
+
+
+.go-use{ position: absolute; bottom: px2rem(70); left: 50%; margin-left: px2rem(-85); width: px2rem(170); height: px2rem(51); background: url("../images/go-use.png"); background-size: 100%; cursor: pointer; }
+.go-use img{width:100%;}
+
+[mod-relation=hobCoupon] {
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}[mod-relation=hobCoupon] p {
+   margin-bottom: px2rem(20)
+ }
+.mod-body{position: relative; display: none;}
+.mod-footer { position: relative; height: px2rem(78);
+  background: #feefd7
+}
+
+.hobCoupon-img {
+  margin: 0 auto
+}
+
+@media(max-width:1199px) {
+}
+
+@media(max-width:768px) {
+  [	mod-relation=hobCoupon] h5 {
+    font-size: px2rem(20)
+  }
+
+  .hobCoupon-img {
+    max-width: 100%
+  }
+
+  .hob-cd{ top: px2rem(150); left:50%; font-size: px2rem(30); width: px2rem(171); margin-left: px2rem(-85.5);  }
+  .hob-cd .time{position: absolute; top: px2rem(-5); right:0;}
+
+  .hob-close {
+    top: px2rem(150);
+    right: px2rem(20)
+  }
+}
+
+@media(max-width:720px) {
+}
+
+@media(max-width:480px) {
+}
+
+@media(max-width:414px) {
+}
+
+@media(max-width:375px) {
+}
+
+@media(max-width:360px) {
+  [	mod-relation=hobCoupon] h5 {
+    font-size: 18px
+  }
+}
+
+@media(max-width:320px) {
+  [	mod-relation=hobCoupon] h5 {
+    font-size: 16px
+  }
+}

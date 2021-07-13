@@ -1,0 +1,37 @@
+var resData = [
+    {
+        "name":"hydd-sec_png",
+        "type":"image",
+        "url":"hydd-sec.png"
+    },
+    {
+        "name":"tast-btn_png",
+        "type":"image",
+        "url":"tast-btn.png"
+    },
+    {
+        "name":"close_png",
+        "type":"image",
+        "url":"close.png"
+    },
+    {
+        "name":"hydd-banner_png",
+        "type":"image",
+        "url":"hydd-banner.png"
+    },
+    {
+        "name":"hydd-dd_png",
+        "type":"image",
+        "url":"hydd-dd.png"
+    },
+    {
+        "name":"hydd-footer_png",
+        "type":"image",
+        "url":"hydd-footer.png"
+    },
+    {
+        "name":"hydd-img_png",
+        "type":"image",
+        "url":"hydd-img.png"
+    }
+];
